@@ -12,6 +12,7 @@ MODEL = "anthropic/claude-opus-4.5" # any openrouter-compatible model should wor
 RSS_HOURS = 48
 RECENT_NEWSLETTERS_TO_INCLUDE = 7
 OTHER_SOURCE_MAX_CHARS = 20000
+REFERENCE_NEWSLETTER_FILE = ""  # Optional: filename in data/ to use as format reference (full HTML)
 
 RSS_FEEDS = [
   # Add RSS feed URLs here

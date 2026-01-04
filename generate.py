@@ -30,6 +30,7 @@ from utils import (
   fetch_other_sources_for_prompt,
   load_history,
   load_recent_newsletters_for_prompt,
+  load_reference_newsletter,
   open_in_browser,
   save_history,
   save_newsletter,
@@ -38,6 +39,7 @@ from config import (
   NEWSLETTER_NAME, RECIPIENT_EMAIL, FROM_EMAIL,
   MODEL, TEST_MODEL, RSS_HOURS,
   RECENT_NEWSLETTERS_TO_INCLUDE, OTHER_SOURCE_MAX_CHARS,
+  REFERENCE_NEWSLETTER_FILE,
   RSS_FEEDS, OTHER_SOURCES, PROMPT,
 )
 
@@ -88,6 +90,7 @@ def build_prompt():
 
   history = load_history(DATA_DIR)
   recent_newsletters_text = load_recent_newsletters_for_prompt(DATA_DIR, history, RECENT_NEWSLETTERS_TO_INCLUDE)
+  reference_html = load_reference_newsletter(DATA_DIR, REFERENCE_NEWSLETTER_FILE)
 
   prompt = f"""You are a personalized newsletter curator.
 
@@ -101,8 +104,13 @@ TODAY'S DATE: {day_of_week}, {current_date}
 === OTHER SOURCES (PRE-SCRAPED CONTENT) ===
 {other_sources_content}
 
-=== RECENT NEWSLETTERS (AVOID REPEATS) ===
+=== RECENT NEWSLETTERS (last {RECENT_NEWSLETTERS_TO_INCLUDE} newsletters to avoid repeating information) ===
 {recent_newsletters_text}
+
+=== REFERENCE NEWSLETTER (USE THIS FORMAT/STYLE) ===
+<reference_newsletter>
+{reference_html}
+</reference_newsletter>
 
 RESEARCH INSTRUCTIONS:
 1. Review the RSS feed posts above and the pre-scraped other sources content above.

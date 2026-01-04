@@ -52,8 +52,12 @@ def clean_html_output(content: str) -> str:
 def strip_tags(text: str) -> str:
   if not text:
     return ""
+  text = re.sub(r"<style[^>]*>.*?</style>", "", text, flags=re.DOTALL | re.IGNORECASE)
+  text = re.sub(r"<script[^>]*>.*?</script>", "", text, flags=re.DOTALL | re.IGNORECASE)
   text = re.sub(r"<[^>]+>", " ", text)
-  text = re.sub(r"\s+", " ", text)
+  text = re.sub(r"[^\S\n]+", " ", text)  # collapse spaces/tabs but keep newlines
+  text = re.sub(r" *\n", "\n", text)  # remove trailing spaces before newlines
+  text = re.sub(r"\n{3,}", "\n\n", text)  # max 2 newlines
   return text.strip()
 
 
@@ -113,6 +117,7 @@ def fetch_other_sources_for_prompt(other_sources: list[tuple[str, str]], max_cha
 
 
 def load_recent_newsletters_for_prompt(data_dir: Path, history: dict, n: int) -> str:
+  """Load recent newsletters as plain text (stripped HTML) to avoid repeats."""
   ensure_data_dir(data_dir)
   items = history.get("newsletters", [])[-n:]
   lines = ["<recent_newsletters>"]
@@ -137,4 +142,12 @@ def load_recent_newsletters_for_prompt(data_dir: Path, history: dict, n: int) ->
     lines.append("</newsletter>")
   lines.append("\n</recent_newsletters>")
   return "\n".join(lines)
+
+
+def load_reference_newsletter(data_dir: Path, filename: str) -> str:
+  """Load a specific newsletter as full HTML for format reference."""
+  path = data_dir / filename
+  if path.exists():
+    return path.read_text()
+  return ""
 
