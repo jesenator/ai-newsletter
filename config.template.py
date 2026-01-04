@@ -1,0 +1,53 @@
+"""
+Template for your personalized newsletter config.
+
+Copy this file to config.py and customize it for your interests.
+config.py is gitignored so your personal preferences stay private.
+"""
+
+NEWSLETTER_NAME = "My Daily Newsletter"
+RECIPIENT_EMAIL = "you@example.com"
+FROM_EMAIL = "newsletter@example.com"
+MODEL = "anthropic/claude-opus-4.5" # any openrouter-compatible model should work
+RSS_HOURS = 48
+RECENT_NEWSLETTERS_TO_INCLUDE = 7
+OTHER_SOURCE_MAX_CHARS = 20000
+
+RSS_FEEDS = [
+  # Add RSS feed URLs here
+  # "https://example.com/feed.xml",
+]
+
+OTHER_SOURCES = [
+  # Add (name, url) tuples for non-RSS sources to scrape
+  # ("Hacker News", "https://news.ycombinator.com"),
+]
+
+PROMPT = """
+I would like a daily summary of the latest and most important happenings in [YOUR FIELD/INTERESTS].
+
+BACKGROUND: [Brief description of who you are and what you do]
+
+## Priority ranking (highest to lowest):
+1. [Most important topic]
+2. [Second most important]
+3. [Third most important]
+4. [Fourth most important]
+5. Everything else
+
+## Also interested in:
+- [Topic 1]
+- [Topic 2]
+- [Topic 3]
+- [Add more as needed]
+
+## Examples of things I would want to know:
+- [Example 1]
+- [Example 2]
+- [Example 3]
+
+## DO NOT include:
+- [Things you don't care about]
+- [More exclusions]
+"""
+
