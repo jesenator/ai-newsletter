@@ -214,10 +214,15 @@ async def main():
       print("ERROR: RECIPIENT_EMAIL not set in config.py")
       sys.exit(1)
     subject = f"{NEWSLETTER_NAME} - {datetime.now().strftime('%B %d, %Y')}"
-    if send_email(subject, content, RECIPIENT_EMAIL):
-      print(f"\nNewsletter sent to {RECIPIENT_EMAIL}")
-    else:
-      print("\nFailed to send email")
+    recipients = RECIPIENT_EMAIL if isinstance(RECIPIENT_EMAIL, list) else [RECIPIENT_EMAIL]
+    all_sent = True
+    for email in recipients:
+      if send_email(subject, content, email):
+        print(f"\nNewsletter sent to {email}")
+      else:
+        print(f"\nFailed to send email to {email}")
+        all_sent = False
+    if not all_sent:
       sys.exit(1)
 
 

@@ -6,7 +6,7 @@ config.py is gitignored so your personal preferences stay private.
 """
 
 NEWSLETTER_NAME = "My Daily Newsletter"
-RECIPIENT_EMAIL = "you@example.com"
+RECIPIENT_EMAIL = "you@example.com"  # Can also be a list: ["a@example.com", "b@example.com"]
 FROM_EMAIL = "newsletter@example.com"
 MODEL = "anthropic/claude-opus-4.5" # any openrouter-compatible model should work
 RSS_HOURS = 48
