@@ -90,23 +90,23 @@ def scrape_url_markdown(url: str) -> str:
     return f"Error scraping {url}: {e}"
 
 
-def fetch_other_sources_for_prompt(other_sources: list[tuple[str, str]], max_chars: int) -> str:
+def fetch_other_sources_for_prompt(other_sources: list[str], max_chars: int) -> str:
   if not os.getenv("SERPER_API_KEY"):
     print("[OTHER] SERPER_API_KEY is not set. Skipping pre-scrape.")
     lines = ["<other_sources>"]
-    for name, url in other_sources:
-      lines.append(f"\n<source name=\"{name}\" url=\"{url}\">")
+    for url in other_sources:
+      lines.append(f"\n<source url=\"{url}\">")
       lines.append("<content>Skipped (SERPER_API_KEY not set).</content>")
       lines.append("</source>")
     lines.append("\n</other_sources>")
     return "\n".join(lines)
 
   lines = ["<other_sources>"]
-  for name, url in other_sources:
-    print(f"[OTHER] Scraping {name}: {url}")
+  for url in other_sources:
+    print(f"[OTHER] Scraping {url}")
     content = scrape_url_markdown(url)
     content = truncate(content, max_chars)
-    lines.append(f"\n<source name=\"{name}\" url=\"{url}\">")
+    lines.append(f"\n<source url=\"{url}\">")
     if content.strip():
       lines.append(f"<content>\n{content}\n</content>")
     else:

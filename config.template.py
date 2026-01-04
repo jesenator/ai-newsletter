@@ -20,8 +20,8 @@ RSS_FEEDS = [
 ]
 
 OTHER_SOURCES = [
-  # Add (name, url) tuples for non-RSS sources to scrape
-  # ("Hacker News", "https://news.ycombinator.com"),
+  # Add URLs for non-RSS sources to scrape
+  # "https://news.ycombinator.com",
 ]
 
 PROMPT = """
