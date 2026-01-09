@@ -7,6 +7,9 @@ wait_for_internet() {
     sleep 5
   done
 }
+
+wait_for_internet
+sleep 60
 wait_for_internet
 
 # Create venv if it doesn't exist
@@ -21,5 +24,5 @@ fi
 # Ensure deps are installed
 pip3 install -q -r requirements.txt
 
-python3 generate.py --send-email --no-open
+caffeinate -i python3 generate.py --send-email --no-open
 
