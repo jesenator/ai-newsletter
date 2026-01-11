@@ -20,7 +20,7 @@ load_dotenv()
 
 from agents import ModelSettings
 from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+from sendgrid.helpers.mail import Mail, ReplyTo
 
 from agent import Agent
 from tools import ALL_TOOLS
@@ -36,7 +36,7 @@ from utils import (
   save_newsletter,
 )
 from config import (
-  NEWSLETTER_NAME, RECIPIENT_EMAIL, FROM_EMAIL,
+  NEWSLETTER_NAME, RECIPIENT_EMAIL, FROM_EMAIL, REPLY_TO_EMAIL,
   MODEL, TEST_MODEL, RSS_HOURS,
   RECENT_NEWSLETTERS_TO_INCLUDE, OTHER_SOURCE_MAX_CHARS,
   REFERENCE_NEWSLETTER_FILE,
@@ -61,6 +61,8 @@ def send_email(subject: str, html_content: str, to_email: str):
     subject=subject,
     html_content=html_content
   )
+  if REPLY_TO_EMAIL:
+    message.reply_to = ReplyTo(REPLY_TO_EMAIL)
 
   try:
     sg = SendGridAPIClient(api_key)
