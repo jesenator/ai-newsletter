@@ -5,8 +5,8 @@ Newsletter Generator - A personalized AI newsletter curator.
 Run directly:
   python generate.py
   python generate.py --test
+  python generate.py --open
   python generate.py --send-email
-  python generate.py --send-email --no-open
 """
 
 import argparse
@@ -205,7 +205,7 @@ async def generate_newsletter(test_mode=False, send_email=False):
 async def main():
   parser = argparse.ArgumentParser(description="Generate a personalized AI newsletter")
   parser.add_argument('--send-email', action='store_true', help='Send the newsletter via email')
-  parser.add_argument('--no-open', action='store_true', help='Do not open in browser')
+  parser.add_argument('--open', action='store_true', help='Open in browser after generating')
   parser.add_argument('--test', action='store_true', help='Use cheaper test model (claude-haiku-4.5)')
   args = parser.parse_args()
 
@@ -229,7 +229,7 @@ async def main():
     filepath = save_newsletter(DATA_DIR, content, current_date)
     print(f"\nSaved to: {filepath}")
 
-  if not args.no_open:
+  if args.open:
     print("Opening in browser...")
     open_in_browser(filepath)
 

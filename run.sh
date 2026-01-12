@@ -24,5 +24,5 @@ fi
 # Ensure deps are installed
 pip3 install -q -r requirements.txt
 
-caffeinate -i python3 generate.py --send-email --no-open
+caffeinate -i python3 generate.py --send-email
 

@@ -20,8 +20,11 @@ cp config.template.py config.py
 # Run directly
 ./run.sh
 
-# Run without sending email (just generate and open)
+# Generate only (no email, no browser)
 python generate.py
+
+# Generate and open in browser
+python generate.py --open
 
 # Run with cheaper test model
 python generate.py --test
