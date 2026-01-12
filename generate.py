@@ -50,7 +50,7 @@ DATA_DIR = Path(__file__).parent / "data"
 
 FOOTER_HTML = '''
 <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center;">
-  <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · Reply to this email to unsubscribe or give feedback.
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · Reply to unsubscribe or give feedback.
 </div>
 '''
 
