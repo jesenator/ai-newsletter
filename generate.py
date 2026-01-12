@@ -4,6 +4,7 @@ Newsletter Generator - A personalized AI newsletter curator.
 
 Run directly:
   python generate.py
+  python generate.py --test
   python generate.py --send-email
   python generate.py --send-email --no-open
 """
@@ -28,11 +29,9 @@ from feeds import fetch_recent_posts, format_posts_for_prompt
 from utils import (
   clean_html_output,
   fetch_other_sources_for_prompt,
-  load_history,
   load_recent_newsletters_for_prompt,
   load_reference_newsletter,
   open_in_browser,
-  save_history,
   save_newsletter,
 )
 from config import (
@@ -48,6 +47,17 @@ DATA_DIR = Path(__file__).parent / "data"
 # =============================================================================
 # EMAIL SENDING
 # =============================================================================
+
+FOOTER_HTML = '''
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center;">
+  <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · Reply to this email to unsubscribe or give feedback.
+</div>
+'''
+
+def append_footer(html_content: str) -> str:
+  if '</body>' in html_content:
+    return html_content.replace('</body>', FOOTER_HTML + '</body>')
+  return html_content + FOOTER_HTML
 
 def send_email(subject: str, html_content: str, to_email: str):
   api_key = os.getenv('SENDGRID_API_KEY')
@@ -90,8 +100,7 @@ def build_prompt():
   print("\nFetching non-RSS sources (pre-scrape)...")
   other_sources_content = fetch_other_sources_for_prompt(OTHER_SOURCES, OTHER_SOURCE_MAX_CHARS)
 
-  history = load_history(DATA_DIR)
-  recent_newsletters_text = load_recent_newsletters_for_prompt(DATA_DIR, history, RECENT_NEWSLETTERS_TO_INCLUDE)
+  recent_newsletters_text = load_recent_newsletters_for_prompt(DATA_DIR, RECENT_NEWSLETTERS_TO_INCLUDE)
   reference_html = load_reference_newsletter(DATA_DIR, REFERENCE_NEWSLETTER_FILE)
 
   prompt = f"""You are a personalized newsletter curator.
@@ -150,12 +159,17 @@ IMAGES:
   return prompt
 
 
-async def generate_newsletter(test_mode=False):
+async def generate_newsletter(test_mode=False, send_email=False):
   model = TEST_MODEL if test_mode else MODEL
+  recipients = RECIPIENT_EMAIL if isinstance(RECIPIENT_EMAIL, list) else [RECIPIENT_EMAIL]
   print(f"\n{'='*60}")
   print(f"Generating {NEWSLETTER_NAME}")
   print(f"Date: {datetime.now().strftime('%A, %B %d, %Y')}")
   print(f"Model: {model}" + (" [TEST MODE]" if test_mode else ""))
+  if send_email:
+    print(f"Sending to: {', '.join(recipients)}")
+  else:
+    print("Email: Not sending")
   print(f"{'='*60}\n")
 
   prompt = build_prompt()
@@ -195,25 +209,25 @@ async def main():
   parser.add_argument('--test', action='store_true', help='Use cheaper test model (claude-haiku-4.5)')
   args = parser.parse_args()
 
-  content = await generate_newsletter(test_mode=args.test)
+  content = await generate_newsletter(test_mode=args.test, send_email=args.send_email)
 
   if not content:
     print("\nERROR: No content generated")
     sys.exit(1)
 
   content = clean_html_output(content)
-  history = load_history(DATA_DIR)
-  current_date = datetime.now().strftime("%Y-%m-%d")
+  content = append_footer(content)
 
-  filepath = save_newsletter(DATA_DIR, content, current_date)
-  history["newsletters"].append({
-    "date": current_date,
-    "filename": filepath.name,
-  })
-  history["newsletters"] = history["newsletters"][-50:]
-  save_history(DATA_DIR, history)
-
-  print(f"\nSaved to: {filepath}")
+  if args.test:
+    import tempfile
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False) as f:
+      f.write(content)
+      filepath = Path(f.name)
+    print(f"\n[TEST MODE] Saved to temp file: {filepath}")
+  else:
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    filepath = save_newsletter(DATA_DIR, content, current_date)
+    print(f"\nSaved to: {filepath}")
 
   if not args.no_open:
     print("Opening in browser...")

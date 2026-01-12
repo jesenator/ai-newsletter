@@ -10,17 +10,6 @@ def ensure_data_dir(data_dir: Path):
   data_dir.mkdir(exist_ok=True)
 
 
-def load_history(data_dir: Path) -> dict:
-  history_file = data_dir / "history.json"
-  if history_file.exists():
-    return json.loads(history_file.read_text())
-  return {"newsletters": []}
-
-
-def save_history(data_dir: Path, history: dict):
-  ensure_data_dir(data_dir)
-  history_file = data_dir / "history.json"
-  history_file.write_text(json.dumps(history, indent=2))
 
 
 def save_newsletter(data_dir: Path, content: str, date: str) -> Path:
@@ -116,25 +105,20 @@ def fetch_other_sources_for_prompt(other_sources: list[str], max_chars: int) -> 
   return "\n".join(lines)
 
 
-def load_recent_newsletters_for_prompt(data_dir: Path, history: dict, n: int) -> str:
+def load_recent_newsletters_for_prompt(data_dir: Path, n: int) -> str:
   """Load recent newsletters as plain text (stripped HTML) to avoid repeats."""
   ensure_data_dir(data_dir)
-  items = history.get("newsletters", [])[-n:]
+  files = sorted(f for f in data_dir.glob("newsletter_*.html") if "reference" not in f.name)[-n:]
   lines = ["<recent_newsletters>"]
-  if not items:
+  if not files:
     lines.append("<none>No prior newsletters saved.</none>")
     lines.append("</recent_newsletters>")
     return "\n".join(lines)
 
-  for item in items:
-    date = item.get("date", "unknown")
-    filename = item.get("filename", "")
-    path = data_dir / filename if filename else None
-    raw = ""
-    if path and path.exists():
-      raw = path.read_text()
-    text = strip_tags(raw)
-    lines.append(f"\n<newsletter date=\"{date}\" filename=\"{filename}\">")
+  for path in files:
+    date = path.stem.replace("newsletter_", "")
+    text = strip_tags(path.read_text())
+    lines.append(f"\n<newsletter date=\"{date}\" filename=\"{path.name}\">")
     if text.strip():
       lines.append(f"<text>\n{text}\n</text>")
     else:
