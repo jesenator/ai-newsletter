@@ -25,10 +25,9 @@ from sendgrid.helpers.mail import Mail, ReplyTo
 
 from agent import Agent
 from tools import ALL_TOOLS
-from feeds import fetch_recent_posts, format_posts_for_prompt
+from feeds import fetch_all_sources, format_sources_for_prompt
 from utils import (
   clean_html_output,
-  fetch_other_sources_for_prompt,
   load_recent_newsletters_for_prompt,
   load_reference_newsletter,
   open_in_browser,
@@ -39,7 +38,7 @@ from config import (
   MODEL, TEST_MODEL, RSS_HOURS,
   RECENT_NEWSLETTERS_TO_INCLUDE, OTHER_SOURCE_MAX_CHARS,
   REFERENCE_NEWSLETTER_FILE,
-  RSS_FEEDS, OTHER_SOURCES, PROMPT,
+  SOURCES, PROMPT,
 )
 
 DATA_DIR = Path(__file__).parent / "data"
@@ -93,12 +92,9 @@ def build_prompt():
   current_date = now.strftime("%B %d, %Y")
   day_of_week = now.strftime("%A")
 
-  print(f"\nFetching RSS feeds (last {RSS_HOURS} hours)...")
-  rss_posts = fetch_recent_posts(RSS_FEEDS, hours=RSS_HOURS, max_per_feed=30)
-  rss_content = format_posts_for_prompt(rss_posts, hours=RSS_HOURS)
-
-  print("\nFetching non-RSS sources (pre-scrape)...")
-  other_sources_content = fetch_other_sources_for_prompt(OTHER_SOURCES, OTHER_SOURCE_MAX_CHARS)
+  print(f"\nFetching sources (last {RSS_HOURS} hours)...")
+  sources_data = fetch_all_sources(SOURCES, hours=RSS_HOURS, max_per_feed=30, max_scrape_chars=OTHER_SOURCE_MAX_CHARS)
+  sources_content = format_sources_for_prompt(sources_data, hours=RSS_HOURS)
 
   recent_newsletters_text = load_recent_newsletters_for_prompt(DATA_DIR, RECENT_NEWSLETTERS_TO_INCLUDE)
   reference_html = load_reference_newsletter(DATA_DIR, REFERENCE_NEWSLETTER_FILE)
@@ -109,11 +105,8 @@ TODAY'S DATE: {day_of_week}, {current_date}
 
 {PROMPT}
 
-=== RECENT POSTS FROM RSS FEEDS (last {RSS_HOURS} hours) ===
-{rss_content}
-
-=== OTHER SOURCES (PRE-SCRAPED CONTENT) ===
-{other_sources_content}
+=== SOURCES (RSS FEEDS + SCRAPED PAGES, last {RSS_HOURS} hours) ===
+{sources_content}
 
 === RECENT NEWSLETTERS (last {RECENT_NEWSLETTERS_TO_INCLUDE} newsletters to avoid repeating information) ===
 {recent_newsletters_text}

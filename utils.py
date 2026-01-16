@@ -1,15 +1,11 @@
 """Utility functions for newsletter generation."""
 
-import json
-import os
 import re
 from pathlib import Path
 
 
 def ensure_data_dir(data_dir: Path):
   data_dir.mkdir(exist_ok=True)
-
-
 
 
 def save_newsletter(data_dir: Path, content: str, date: str) -> Path:
@@ -48,61 +44,6 @@ def strip_tags(text: str) -> str:
   text = re.sub(r" *\n", "\n", text)  # remove trailing spaces before newlines
   text = re.sub(r"\n{3,}", "\n\n", text)  # max 2 newlines
   return text.strip()
-
-
-def truncate(text: str, max_chars: int) -> str:
-  if not text:
-    return ""
-  if len(text) <= max_chars:
-    return text
-  return text[:max_chars] + "\n...[truncated]..."
-
-
-def scrape_url_markdown(url: str) -> str:
-  """Scrape a webpage via Serper."""
-  import http.client
-  try:
-    conn = http.client.HTTPSConnection("scrape.serper.dev")
-    payload = json.dumps({"url": url, "includeMarkdown": True})
-    headers = {
-      'X-API-KEY': os.getenv("SERPER_API_KEY"),
-      'Content-Type': 'application/json'
-    }
-    conn.request("POST", "/", payload, headers)
-    res = conn.getresponse()
-    data = json.loads(res.read().decode("utf-8"))
-    md = data.get("markdown") or data.get("text") or data.get("message")
-    if md:
-      return str(md)
-    return json.dumps(data)
-  except Exception as e:
-    return f"Error scraping {url}: {e}"
-
-
-def fetch_other_sources_for_prompt(other_sources: list[str], max_chars: int) -> str:
-  if not os.getenv("SERPER_API_KEY"):
-    print("[OTHER] SERPER_API_KEY is not set. Skipping pre-scrape.")
-    lines = ["<other_sources>"]
-    for url in other_sources:
-      lines.append(f"\n<source url=\"{url}\">")
-      lines.append("<content>Skipped (SERPER_API_KEY not set).</content>")
-      lines.append("</source>")
-    lines.append("\n</other_sources>")
-    return "\n".join(lines)
-
-  lines = ["<other_sources>"]
-  for url in other_sources:
-    print(f"[OTHER] Scraping {url}")
-    content = scrape_url_markdown(url)
-    content = truncate(content, max_chars)
-    lines.append(f"\n<source url=\"{url}\">")
-    if content.strip():
-      lines.append(f"<content>\n{content}\n</content>")
-    else:
-      lines.append("<content>No content fetched.</content>")
-    lines.append("</source>")
-  lines.append("\n</other_sources>")
-  return "\n".join(lines)
 
 
 def load_recent_newsletters_for_prompt(data_dir: Path, n: int) -> str:

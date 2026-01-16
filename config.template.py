@@ -15,13 +15,9 @@ RECENT_NEWSLETTERS_TO_INCLUDE = 7
 OTHER_SOURCE_MAX_CHARS = 20000
 REFERENCE_NEWSLETTER_FILE = ""  # Optional: filename in data/ to use as format reference (full HTML)
 
-RSS_FEEDS = [
-  # Add RSS feed URLs here
+SOURCES = [
+  # Add URLs here - RSS feeds are auto-detected, others are scraped
   # "https://example.com/feed.xml",
-]
-
-OTHER_SOURCES = [
-  # Add URLs for non-RSS sources to scrape
   # "https://news.ycombinator.com",
 ]
 
