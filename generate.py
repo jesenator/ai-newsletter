@@ -108,7 +108,7 @@ TODAY'S DATE: {day_of_week}, {current_date}
 === SOURCES (RSS FEEDS + SCRAPED PAGES, last {RSS_HOURS} hours) ===
 {sources_content}
 
-=== RECENT NEWSLETTERS (last {RECENT_NEWSLETTERS_TO_INCLUDE} newsletters to avoid repeating information) ===
+=== RECENT NEWSLETTERS (last {RECENT_NEWSLETTERS_TO_INCLUDE}). CRITICAL: DO NOT REPEAT THESE ITEMS ===
 {recent_newsletters_text}
 
 === REFERENCE NEWSLETTER (USE THIS FORMAT/STYLE) ===
@@ -120,15 +120,19 @@ RESEARCH INSTRUCTIONS:
 1. Review the RSS feed posts above and the pre-scraped other sources content above.
 2. If you need more detail, you should call scrape_webpage / search_web / ask_perplexity for specific followups.
 3. Your research should be VERY comprehensive, but the output should be VERY brief and skimmable.
-4. ONLY include things from the past 24-48 hours.
-5. Do NOT repeat items already covered in <recent_newsletters>. If something is still important, mention only a very short update and link the new source.
+4. ONLY include things from the past 24 hours that are NOT in recent newsletters.
+5. CRITICAL ANTI-REPETITION RULE: If a story appeared in ANY recent newsletter, DO NOT include it unless there's a genuinely new development. When in doubt, leave it out.
+  If the same story/topic was covered in any recent newsletter, you MUST either:
+  a. SKIP IT ENTIRELY (preferred if no meaningful update)
+  b. Include ONLY a brief "Update:" with the new information and link
+
 
 HTML OUTPUT:
 - Title: "{NEWSLETTER_NAME} - {day_of_week}, {current_date}" (use this EXACT title in both <title> and <h1> tags)
 - Bulleted list broken into sections, very information dense, very concise. Only the most important things.
 - EACH bullet MUST include link(s) to the source AND mention which source (e.g. "Zvi", "Transformer News") with hyperlink
 - Most important items at the TOP
-- Keep it brief: ~40 lines max, fewer if slow news day. Don't pad with old news.
+- Keep it brief: ~40 lines max, fewer if slow news day. It's BETTER to have a short newsletter than to repeat old news.
 - Use a two-column layout with CSS grid or flexbox, max page width ~900px centered
 - Use <h1> for title, <h2> for section headers, <ul>/<li> for items
 - No emojis! Use inline SVG icons instead. Use these to make the newsletter more visually interesting.
@@ -166,7 +170,10 @@ async def generate_newsletter(test_mode=False, send_email=False):
   print(f"{'='*60}\n")
 
   prompt = build_prompt()
-  model_settings = ModelSettings(parallel_tool_calls=True)
+  model_settings = ModelSettings(
+    parallel_tool_calls=True,
+    extra_body={'reasoning': {'effort': 'medium'}},
+  )
 
   agent = Agent(
     name="newsletter_agent",
@@ -203,7 +210,8 @@ async def main():
   args = parser.parse_args()
 
   content = await generate_newsletter(test_mode=args.test, send_email=args.send_email)
-
+  # print("email finished")
+  # exit(0)
   if not content:
     print("\nERROR: No content generated")
     sys.exit(1)
