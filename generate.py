@@ -131,7 +131,7 @@ RESEARCH INSTRUCTIONS:
 5. Do NOT repeat items already covered in <recent_newsletters>. If something is still important, mention only a very short update and link the new source.
 
 HTML OUTPUT:
-- Title: "{NEWSLETTER_NAME} - {day_of_week}, {current_date}"
+- Title: "{NEWSLETTER_NAME} - {day_of_week}, {current_date}" (use this EXACT title in both <title> and <h1> tags)
 - Bulleted list broken into sections, very information dense, very concise. Only the most important things.
 - EACH bullet MUST include link(s) to the source AND mention which source (e.g. "Zvi", "Transformer News") with hyperlink
 - Most important items at the TOP
