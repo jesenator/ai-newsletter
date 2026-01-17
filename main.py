@@ -124,4 +124,15 @@ if __name__ == "__main__":
   if platform.system() == "Darwin":
     import asyncio.selector_events
     asyncio.selector_events._SelectorSocketTransport.__del__ = lambda self: None
-  asyncio.run(main())
+  
+  if sys.version_info >= (3, 10):
+    asyncio.run(main())
+  else:
+    # Python 3.9 has issues with event loop cleanup on macOS
+    loop = asyncio.new_event_loop()
+    try:
+      loop.run_until_complete(main())
+    finally:
+      # Give pending tasks time to clean up
+      loop.run_until_complete(asyncio.sleep(0.25))
+      loop.close()
