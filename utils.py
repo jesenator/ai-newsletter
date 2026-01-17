@@ -10,8 +10,13 @@ def ensure_data_dir(data_dir: Path):
 
 def save_newsletter(data_dir: Path, content: str, date: str) -> Path:
   ensure_data_dir(data_dir)
-  filename = f"newsletter_{date.replace(' ', '_').replace(',', '')}.html"
-  newsletter_file = data_dir / filename
+  base_filename = f"newsletter_{date.replace(' ', '_').replace(',', '')}"
+  newsletter_file = data_dir / f"{base_filename}.html"
+  if newsletter_file.exists():
+    counter = 2
+    while (data_dir / f"{base_filename}_{counter}.html").exists():
+      counter += 1
+    newsletter_file = data_dir / f"{base_filename}_{counter}.html"
   newsletter_file.write_text(content)
   return newsletter_file
 
@@ -47,9 +52,14 @@ def strip_tags(text: str) -> str:
 
 
 def load_recent_newsletters_for_prompt(data_dir: Path, n: int) -> str:
-  """Load recent newsletters as plain text (stripped HTML) to avoid repeats."""
+  """Load recent newsletters as plain text (stripped HTML) to avoid repeats.
+  Excludes counter-suffixed files (e.g. newsletter_2026-01-16_2.html)."""
   ensure_data_dir(data_dir)
-  files = sorted(f for f in data_dir.glob("newsletter_*.html") if "reference" not in f.name)[-n:]
+  counter_pattern = re.compile(r"newsletter_.*_\d+\.html$")
+  files = sorted(
+    f for f in data_dir.glob("newsletter_*.html")
+    if "reference" not in f.name and not counter_pattern.match(f.name)
+  )[-n:]
   if not files:
     return "<none>No prior newsletters saved.</none>"
 
