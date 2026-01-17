@@ -1,0 +1,178 @@
+"""Notion integration for Newsletter Generator."""
+
+from __future__ import annotations
+import os
+import httpx
+from dataclasses import dataclass
+from datetime import datetime
+from typing import Optional
+
+def get_headers():
+  return {
+    'Authorization': f'Bearer {os.getenv("NOTION_API_KEY")}',
+    'Notion-Version': '2022-06-28',
+    'Content-Type': 'application/json'
+  }
+
+@dataclass
+class NewsletterConfig:
+  page_id: str
+  name: str
+  model: str
+  sources: list[str]
+  emails: list[str]
+  prompt: str
+
+def extract_plain_text(rich_text_list: list) -> str:
+  return ''.join(item.get('plain_text', '') for item in rich_text_list)
+
+def parse_sources(rich_text_list: list) -> list[str]:
+  text = extract_plain_text(rich_text_list)
+  lines = [line.strip() for line in text.split('\n') if line.strip()]
+  return [line for line in lines if line.startswith('http')]
+
+def fetch_page_content(page_id: str) -> str:
+  """Fetch all blocks from a page and convert to plain text prompt."""
+  headers = get_headers()
+  blocks = []
+  cursor = None
+  
+  while True:
+    url = f'https://api.notion.com/v1/blocks/{page_id}/children?page_size=100'
+    if cursor:
+      url += f'&start_cursor={cursor}'
+    resp = httpx.get(url, headers=headers, timeout=30)
+    data = resp.json()
+    blocks.extend(data.get('results', []))
+    if not data.get('has_more'):
+      break
+    cursor = data.get('next_cursor')
+  
+  lines = []
+  for block in blocks:
+    block_type = block.get('type')
+    content = block.get(block_type, {})
+    rich_text = content.get('rich_text', [])
+    text = extract_plain_text(rich_text)
+    
+    if block_type == 'heading_1':
+      lines.append(f'\n# {text}')
+    elif block_type == 'heading_2':
+      lines.append(f'\n## {text}')
+    elif block_type == 'heading_3':
+      lines.append(f'\n### {text}')
+    elif block_type == 'bulleted_list_item':
+      lines.append(f'- {text}')
+    elif block_type == 'numbered_list_item':
+      lines.append(f'1. {text}')
+    elif block_type == 'paragraph' and text:
+      lines.append(text)
+    elif block_type == 'divider':
+      lines.append('---')
+  
+  return '\n'.join(lines)
+
+def fetch_subscribers_for_newsletter(newsletter_page_id: str) -> list[str]:
+  """Fetch email addresses of subscribed users for a newsletter."""
+  headers = get_headers()
+  
+  # Query subscribers who are linked to this newsletter and are subscribed
+  resp = httpx.post(
+    f'https://api.notion.com/v1/databases/{os.getenv("NOTION_SUBSCRIBERS_DB_ID")}/query',
+    headers=headers,
+    json={
+      'filter': {
+        'and': [
+          {
+            'property': 'Newsletter',
+            'relation': {'contains': newsletter_page_id}
+          },
+          {
+            'property': 'Select',
+            'select': {'equals': 'Subscribed'}
+          }
+        ]
+      }
+    },
+    timeout=30
+  )
+  data = resp.json()
+  
+  emails = []
+  for page in data.get('results', []):
+    email = page.get('properties', {}).get('Email', {}).get('email')
+    if email:
+      emails.append(email)
+  return emails
+
+def fetch_active_newsletters() -> list[NewsletterConfig]:
+  """Fetch all newsletters with Status = Active."""
+  headers = get_headers()
+  
+  resp = httpx.post(
+    f'https://api.notion.com/v1/databases/{os.getenv("NOTION_DATABASE_ID")}/query',
+    headers=headers,
+    json={
+      'filter': {
+        'property': 'Status',
+        'select': {'equals': 'Active'}
+      }
+    },
+    timeout=30
+  )
+  data = resp.json()
+  
+  newsletters = []
+  for page in data.get('results', []):
+    page_id = page['id']
+    props = page.get('properties', {})
+    
+    name = extract_plain_text(props.get('Name', {}).get('title', []))
+    model_select = props.get('Model', {}).get('select')
+    model = model_select.get('name') if model_select else 'anthropic/claude-opus-4.5'
+    sources = parse_sources(props.get('Sources', {}).get('rich_text', []))
+    emails = fetch_subscribers_for_newsletter(page_id)
+    prompt = fetch_page_content(page_id)
+    
+    newsletters.append(NewsletterConfig(
+      page_id=page_id,
+      name=name,
+      model=model,
+      sources=sources,
+      emails=emails,
+      prompt=prompt,
+    ))
+  
+  return newsletters
+
+def update_log(page_id: str, log_entry: str):
+  """Prepend a log entry to the Log field of a newsletter page."""
+  headers = get_headers()
+  
+  # First get current log content
+  resp = httpx.get(f'https://api.notion.com/v1/pages/{page_id}', headers=headers, timeout=30)
+  data = resp.json()
+  current_log = extract_plain_text(data.get('properties', {}).get('Log', {}).get('rich_text', []))
+  
+  # Prepend new entry
+  new_log = f"{log_entry}\n{current_log}".strip()
+  
+  # Update the page
+  httpx.patch(
+    f'https://api.notion.com/v1/pages/{page_id}',
+    headers=headers,
+    json={
+      'properties': {
+        'Log': {
+          'rich_text': [{'type': 'text', 'text': {'content': new_log[:2000]}}]
+        }
+      }
+    },
+    timeout=30
+  )
+
+def format_log_entry(sent_to: list[str], cost: Optional[float] = None) -> str:
+  """Format a log entry with timestamp and details."""
+  now = datetime.now().strftime('%Y-%m-%d %H:%M')
+  cost_str = f'${cost:.4f}' if cost is not None else 'N/A'
+  return f"[{now}] Sent to {len(sent_to)} recipient(s). Cost: {cost_str}"

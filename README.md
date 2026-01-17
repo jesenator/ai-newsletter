@@ -1,15 +1,11 @@
 # AI Newsletter Generator
 
-Automated personalized AI newsletter using an LLM agent with web search tools.
+Automated personalized AI newsletter using an LLM agent with web search tools. Configuration is stored in a Notion database.
 
 ## Quick Start
 
 ```bash
-# Copy and customize config
-cp config.template.py config.py
-
 # Create .env with your API keys (see Environment Variables below)
-
 # Run
 ./run.sh
 ```
@@ -17,51 +13,34 @@ cp config.template.py config.py
 ## Commands
 
 ```bash
-# Run directly
-./run.sh
-
-# Generate only (no email, no browser)
-python generate.py
+# Generate only (no email)
+python main.py
 
 # Generate and open in browser
-python generate.py --open
+python main.py --open
 
 # Run with cheaper test model
-python generate.py --test
-```
+python main.py --test
 
-## macOS LaunchAgent (Optional)
-
-To run automatically every morning, create a LaunchAgent plist at `~/Library/LaunchAgents/com.yourname.newsletter.plist`.
-
-```bash
-# Run manually via launchd
-launchctl start org.jesenator.newsletter
-
-# View logs
-tail -f ~/Library/Logs/jesenator-newsletter.log
-tail -f ~/Library/Logs/jesenator-newsletter-error.log
-
-# Reload after editing plist
-launchctl unload ~/Library/LaunchAgents/org.jesenator.newsletter.plist
-launchctl load ~/Library/LaunchAgents/org.jesenator.newsletter.plist
-
-# Check if loaded
-launchctl list | grep jesenator
+# Generate and send emails
+python main.py --send-email
 ```
 
 ## Configuration
 
-Copy `config.template.py` to `config.py` and customize:
-- `NEWSLETTER_NAME` - title of newsletter
-- `RECIPIENT_EMAIL` / `FROM_EMAIL` - email addresses
-- `MODEL` / `TEST_MODEL` - which AI models to use
-- `RSS_HOURS` - how far back to look for posts
-- `RSS_FEEDS` - list of RSS feeds to monitor
-- `OTHER_SOURCES` - non-RSS sites to scrape
-- `PROMPT` - what you want in the newsletter
+Newsletter configuration is stored in a Notion database. Each row represents a newsletter with:
+- **Name** - title of the newsletter
+- **Status** - Active or Paused (only Active newsletters are sent)
+- **Model** - which AI model to use
+- **Sources** - line-separated list of RSS feeds and URLs
+- **Page body** - the prompt describing what you want
 
-`config.py` is gitignored so your personal preferences stay private.
+Subscribers are managed in a linked Notion database with Name, Email, and subscription status.
+
+General settings in `config.py`:
+- `FROM_EMAIL` / `REPLY_TO_EMAIL` - sender email addresses
+- `TEST_MODEL` - cheaper model for testing
+- `RSS_HOURS` - how far back to look for posts
 
 ## Environment Variables
 
@@ -69,8 +48,10 @@ Stored in `.env`:
 - `OPENROUTER_API_KEY` - for AI model access
 - `SERPER_API_KEY` - for web search/scraping
 - `SENDGRID_API_KEY` - for sending email
+- `NOTION_API_KEY` - for Notion database access
+- `NOTION_DATABASE_ID` - ID of the newsletters database
+- `NOTION_SUBSCRIBERS_DB_ID` - ID of the subscribers database
 
 ## Output
 
-Generated newsletters saved to `data/newsletter_YYYY-MM-DD.html`
-
+Generated newsletters saved to `data/{newsletter_id}/newsletter_YYYY-MM-DD.html`

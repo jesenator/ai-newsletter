@@ -50,22 +50,19 @@ def load_recent_newsletters_for_prompt(data_dir: Path, n: int) -> str:
   """Load recent newsletters as plain text (stripped HTML) to avoid repeats."""
   ensure_data_dir(data_dir)
   files = sorted(f for f in data_dir.glob("newsletter_*.html") if "reference" not in f.name)[-n:]
-  lines = ["<recent_newsletters>"]
   if not files:
-    lines.append("<none>No prior newsletters saved.</none>")
-    lines.append("</recent_newsletters>")
-    return "\n".join(lines)
+    return "<none>No prior newsletters saved.</none>"
 
+  lines = []
   for path in files:
     date = path.stem.replace("newsletter_", "")
     text = strip_tags(path.read_text())
-    lines.append(f"\n<newsletter date=\"{date}\" filename=\"{path.name}\">")
+    lines.append(f"<newsletter date=\"{date}\" filename=\"{path.name}\">")
     if text.strip():
       lines.append(f"<text>\n{text}\n</text>")
     else:
       lines.append("<text>No content available.</text>")
     lines.append("</newsletter>")
-  lines.append("\n</recent_newsletters>")
   return "\n".join(lines)
 
 

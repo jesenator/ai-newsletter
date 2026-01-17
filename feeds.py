@@ -145,15 +145,15 @@ def fetch_all_sources(urls: list[str], hours: int = 48, max_per_feed: int = 10, 
 
 def format_sources_for_prompt(sources_data: dict[str, tuple[list[SourcePost], bool]], hours: int = 48) -> str:
   if not sources_data:
-    return "<sources>\nNo sources were fetched.\n</sources>"
+    return "No sources were fetched."
 
   rss_sources = {k: v[0] for k, v in sources_data.items() if v[1]}
   scraped_sources = {k: v[0] for k, v in sources_data.items() if not v[1]}
 
-  lines = ["<sources>"]
+  lines = []
 
   if rss_sources:
-    lines.append("\n<rss_feeds>")
+    lines.append("<rss_feeds>")
     for source_name, posts in rss_sources.items():
       lines.append(f"\n<feed source=\"{source_name}\">")
       if not posts:
@@ -179,5 +179,4 @@ def format_sources_for_prompt(sources_data: dict[str, tuple[list[SourcePost], bo
         lines.append("</source>")
     lines.append("\n</scraped_sources>")
 
-  lines.append("\n</sources>")
   return "\n".join(lines)

@@ -1,23 +1,8 @@
-#!/usr/bin/env python3
-"""
-Newsletter Generator - A personalized AI newsletter curator.
+"""Newsletter generation functions."""
 
-Run directly:
-  python generate.py
-  python generate.py --test
-  python generate.py --open
-  python generate.py --send-email
-"""
-
-import argparse
-import asyncio
 import os
-import sys
 from datetime import datetime
 from pathlib import Path
-
-from dotenv import load_dotenv
-load_dotenv()
 
 from agents import ModelSettings
 from sendgrid import SendGridAPIClient
@@ -26,26 +11,15 @@ from sendgrid.helpers.mail import Mail, ReplyTo
 from agent import Agent
 from tools import ALL_TOOLS
 from feeds import fetch_all_sources, format_sources_for_prompt
-from utils import (
-  clean_html_output,
-  load_recent_newsletters_for_prompt,
-  load_reference_newsletter,
-  open_in_browser,
-  save_newsletter,
-)
+from utils import load_recent_newsletters_for_prompt, load_reference_newsletter
+from notion import NewsletterConfig
 from config import (
-  NEWSLETTER_NAME, RECIPIENT_EMAIL, FROM_EMAIL, REPLY_TO_EMAIL,
-  MODEL, TEST_MODEL, RSS_HOURS,
+  FROM_EMAIL, REPLY_TO_EMAIL, TEST_MODEL, RSS_HOURS,
   RECENT_NEWSLETTERS_TO_INCLUDE, OTHER_SOURCE_MAX_CHARS,
   REFERENCE_NEWSLETTER_FILE,
-  SOURCES, PROMPT,
 )
 
 DATA_DIR = Path(__file__).parent / "data"
-
-# =============================================================================
-# EMAIL SENDING
-# =============================================================================
 
 FOOTER_HTML = '''
 <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center;">
@@ -83,33 +57,45 @@ def send_email(subject: str, html_content: str, to_email: str):
     return False
 
 
-# =============================================================================
-# NEWSLETTER GENERATION
-# =============================================================================
+def get_newsletter_data_dir(newsletter_config: NewsletterConfig) -> Path:
+  """Get the data directory for a specific newsletter (by page ID without dashes)."""
+  folder_id = newsletter_config.page_id.replace('-', '')
+  newsletter_dir = DATA_DIR / folder_id
+  newsletter_dir.mkdir(parents=True, exist_ok=True)
+  return newsletter_dir
 
-def build_prompt():
+def build_prompt(newsletter_config: NewsletterConfig):
   now = datetime.now()
   current_date = now.strftime("%B %d, %Y")
   day_of_week = now.strftime("%A")
+  newsletter_name = newsletter_config.name
+  newsletter_data_dir = get_newsletter_data_dir(newsletter_config)
 
   print(f"\nFetching sources (last {RSS_HOURS} hours)...")
-  sources_data = fetch_all_sources(SOURCES, hours=RSS_HOURS, max_per_feed=30, max_scrape_chars=OTHER_SOURCE_MAX_CHARS)
+  sources_data = fetch_all_sources(newsletter_config.sources, hours=RSS_HOURS, max_per_feed=30, max_scrape_chars=OTHER_SOURCE_MAX_CHARS)
   sources_content = format_sources_for_prompt(sources_data, hours=RSS_HOURS)
 
-  recent_newsletters_text = load_recent_newsletters_for_prompt(DATA_DIR, RECENT_NEWSLETTERS_TO_INCLUDE)
+  recent_newsletters_text = load_recent_newsletters_for_prompt(newsletter_data_dir, RECENT_NEWSLETTERS_TO_INCLUDE)
   reference_html = load_reference_newsletter(DATA_DIR, REFERENCE_NEWSLETTER_FILE)
 
   prompt = f"""You are a personalized newsletter curator.
 
 TODAY'S DATE: {day_of_week}, {current_date}
 
-{PROMPT}
+=== USER INSTRUCTIONS on what they want to see in the newsletter ===
+<user_instructions>
+{newsletter_config.prompt}
+</user_instructions>
 
 === SOURCES (RSS FEEDS + SCRAPED PAGES, last {RSS_HOURS} hours) ===
+<sources>
 {sources_content}
+</sources>
 
 === RECENT NEWSLETTERS (last {RECENT_NEWSLETTERS_TO_INCLUDE}). CRITICAL: DO NOT REPEAT THESE ITEMS ===
+<recent_newsletters>
 {recent_newsletters_text}
+</recent_newsletters>
 
 === REFERENCE NEWSLETTER (USE THIS FORMAT/STYLE) ===
 <reference_newsletter>
@@ -125,10 +111,11 @@ RESEARCH INSTRUCTIONS:
   If the same story/topic was covered in any recent newsletter, you MUST either:
   a. SKIP IT ENTIRELY (preferred if no meaningful update)
   b. Include ONLY a brief "Update:" with the new information and link
+6. WARNING: The content of the prompt for this newsletter may be different from the prompts for the previous newsletters (and is likely different from the prompt for the reference newsletter). Don't index to heavily on these, and make sure to follow the instructions in the prompt closely when creating the newsletter.
 
 
 HTML OUTPUT:
-- Title: "{NEWSLETTER_NAME} - {day_of_week}, {current_date}" (use this EXACT title in both <title> and <h1> tags)
+- Title: "{newsletter_name} - {day_of_week}, {current_date}" (use this EXACT title in both <title> and <h1> tags)
 - Bulleted list broken into sections, very information dense, very concise. Only the most important things.
 - EACH bullet MUST include link(s) to the source AND mention which source (e.g. "Zvi", "Transformer News") with hyperlink
 - Most important items at the TOP
@@ -140,6 +127,8 @@ HTML OUTPUT:
 - Use text-fragment URL highlighting when warranted (the #:~:text=... URL parameter)
 - Include basic inline CSS for the layout (max-width, columns, padding, readable font). Keep it simple and readable.
 - DO NOT wrap in markdown code fences - output raw HTML only, starting with <!DOCTYPE html>
+- Do NOT include anything already covered in recent newsletters (unless there's a meaningful update)
+- Do NOT include any quote block or blurb at the end of the newsletter.
 
 IMAGES:
 - For 2-4 of the most visually interesting stories, include an image from the article
@@ -156,20 +145,16 @@ IMAGES:
   return prompt
 
 
-async def generate_newsletter(test_mode=False, send_email=False):
-  model = TEST_MODEL if test_mode else MODEL
-  recipients = RECIPIENT_EMAIL if isinstance(RECIPIENT_EMAIL, list) else [RECIPIENT_EMAIL]
+async def generate_newsletter_for_config(newsletter_config: NewsletterConfig, test_mode=False):
+  model = TEST_MODEL if test_mode else newsletter_config.model
   print(f"\n{'='*60}")
-  print(f"Generating {NEWSLETTER_NAME}")
+  print(f"Generating: {newsletter_config.name}")
   print(f"Date: {datetime.now().strftime('%A, %B %d, %Y')}")
   print(f"Model: {model}" + (" [TEST MODE]" if test_mode else ""))
-  if send_email:
-    print(f"Sending to: {', '.join(recipients)}")
-  else:
-    print("Email: Not sending")
+  print(f"Sources: {len(newsletter_config.sources)} configured")
   print(f"{'='*60}\n")
 
-  prompt = build_prompt()
+  prompt = build_prompt(newsletter_config)
   model_settings = ModelSettings(
     parallel_tool_calls=True,
     extra_body={'reasoning': {'effort': 'medium'}},
@@ -200,61 +185,3 @@ async def generate_newsletter(test_mode=False, send_email=False):
   print("\n" + "-" * 40)
   newsletter_content = stream.final_output or newsletter_content
   return newsletter_content
-
-
-async def main():
-  parser = argparse.ArgumentParser(description="Generate a personalized AI newsletter")
-  parser.add_argument('--send-email', action='store_true', help='Send the newsletter via email')
-  parser.add_argument('--open', action='store_true', help='Open in browser after generating')
-  parser.add_argument('--test', action='store_true', help='Use cheaper test model (claude-haiku-4.5)')
-  args = parser.parse_args()
-
-  content = await generate_newsletter(test_mode=args.test, send_email=args.send_email)
-  # print("email finished")
-  # exit(0)
-  if not content:
-    print("\nERROR: No content generated")
-    sys.exit(1)
-
-  content = clean_html_output(content)
-  content = append_footer(content)
-
-  if args.test:
-    import tempfile
-    with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False) as f:
-      f.write(content)
-      filepath = Path(f.name)
-    print(f"\n[TEST MODE] Saved to temp file: {filepath}")
-  else:
-    current_date = datetime.now().strftime("%Y-%m-%d")
-    filepath = save_newsletter(DATA_DIR, content, current_date)
-    print(f"\nSaved to: {filepath}")
-
-  if args.open:
-    print("Opening in browser...")
-    open_in_browser(filepath)
-
-  if args.send_email:
-    if not RECIPIENT_EMAIL:
-      print("ERROR: RECIPIENT_EMAIL not set in config.py")
-      sys.exit(1)
-    subject = f"{NEWSLETTER_NAME} - {datetime.now().strftime('%B %d, %Y')}"
-    recipients = RECIPIENT_EMAIL if isinstance(RECIPIENT_EMAIL, list) else [RECIPIENT_EMAIL]
-    all_sent = True
-    for email in recipients:
-      if send_email(subject, content, email):
-        print(f"\nNewsletter sent to {email}")
-      else:
-        print(f"\nFailed to send email to {email}")
-        all_sent = False
-    if not all_sent:
-      sys.exit(1)
-
-
-if __name__ == "__main__":
-  import platform
-  if platform.system() == "Darwin":
-    import asyncio.selector_events
-    asyncio.selector_events._SelectorSocketTransport.__del__ = lambda self: None
-  asyncio.run(main())
-
