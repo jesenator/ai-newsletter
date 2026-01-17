@@ -19,6 +19,3 @@ __pycache__/
 
 # Data (optional - remove if you want to track newsletters)
 data/
-
-# Personal config (use config.template.py as a starting point)
-config.py

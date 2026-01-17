@@ -14,7 +14,7 @@ from feeds import fetch_all_sources, format_sources_for_prompt
 from utils import load_recent_newsletters_for_prompt, load_reference_newsletter
 from notion import NewsletterConfig
 from config import (
-  FROM_EMAIL, REPLY_TO_EMAIL, TEST_MODEL, RSS_HOURS,
+  TEST_MODEL, RSS_HOURS,
   RECENT_NEWSLETTERS_TO_INCLUDE, OTHER_SOURCE_MAX_CHARS,
   REFERENCE_NEWSLETTER_FILE,
 )
@@ -38,14 +38,17 @@ def send_email(subject: str, html_content: str, to_email: str):
     print("ERROR: SENDGRID_API_KEY not set")
     return False
 
+  from_email = os.getenv('FROM_EMAIL')
+  reply_to_email = os.getenv('REPLY_TO_EMAIL')
+
   message = Mail(
-    from_email=FROM_EMAIL,
+    from_email=from_email,
     to_emails=to_email,
     subject=subject,
     html_content=html_content
   )
-  if REPLY_TO_EMAIL:
-    message.reply_to = ReplyTo(REPLY_TO_EMAIL)
+  if reply_to_email:
+    message.reply_to = ReplyTo(reply_to_email)
 
   try:
     sg = SendGridAPIClient(api_key)
