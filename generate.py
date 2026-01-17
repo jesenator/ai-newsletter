@@ -81,29 +81,15 @@ def build_prompt(newsletter_config: NewsletterConfig):
   recent_newsletters_text = load_recent_newsletters_for_prompt(newsletter_data_dir, RECENT_NEWSLETTERS_TO_INCLUDE)
   reference_html = load_reference_newsletter(DATA_DIR, REFERENCE_NEWSLETTER_FILE)
 
-  prompt = f"""You are a personalized newsletter curator.
+  system_prompt = f"""You are a personalized newsletter creator.
 
 TODAY'S DATE: {day_of_week}, {current_date}
 
-=== USER INSTRUCTIONS on what they want to see in the newsletter ===
-<user_instructions>
+=== USER INSTRUCTIONS on what they want to see in the newsletter. HONOR THESE INSTRUCTIONS CLOSELY ===
+These should override any other instructions you may have.
+<user_instructions_and_personalization>
 {newsletter_config.prompt}
-</user_instructions>
-
-=== SOURCES (RSS FEEDS + SCRAPED PAGES, last {RSS_HOURS} hours) ===
-<sources>
-{sources_content}
-</sources>
-
-=== RECENT NEWSLETTERS (last {RECENT_NEWSLETTERS_TO_INCLUDE}). CRITICAL: DO NOT REPEAT THESE ITEMS ===
-<recent_newsletters>
-{recent_newsletters_text}
-</recent_newsletters>
-
-=== REFERENCE NEWSLETTER (USE THIS FORMAT/STYLE) ===
-<reference_newsletter>
-{reference_html}
-</reference_newsletter>
+</user_instructions_and_personalization>
 
 RESEARCH INSTRUCTIONS:
 1. Review the RSS feed posts above and the pre-scraped other sources content above.
@@ -115,7 +101,6 @@ RESEARCH INSTRUCTIONS:
   a. SKIP IT ENTIRELY (preferred if no meaningful update)
   b. Include ONLY a brief "Update:" with the new information and link
 6. WARNING: The content of the prompt for this newsletter may be different from the prompts for the previous newsletters (and is likely different from the prompt for the reference newsletter). Don't index to heavily on these, and make sure to follow the instructions in the prompt closely when creating the newsletter.
-
 
 HTML OUTPUT:
 - Title: "{newsletter_name} - {day_of_week}, {current_date}" (use this EXACT title in both <title> and <h1> tags)
@@ -142,10 +127,35 @@ IMAGES:
 - If you can't find a good image for a story, skip it - don't force it
 """
 
-  print("-" * 40)
-  print(prompt)
-  print("-" * 40)
-  return prompt
+  user_prompt = f"""
+Generate a newsletter for today based on the user instructions and personalization above.
+
+TODAY'S DATE: {day_of_week}, {current_date}
+=== SOURCES (RSS FEEDS + SCRAPED PAGES, last {RSS_HOURS} hours) ===
+<sources>
+{sources_content}
+</sources>
+
+=== RECENT NEWSLETTERS (last {RECENT_NEWSLETTERS_TO_INCLUDE}). CRITICAL: DO NOT REPEAT THESE ITEMS ===
+<recent_newsletters>
+{recent_newsletters_text}
+</recent_newsletters>
+
+=== REFERENCE NEWSLETTER (USE THIS FORMAT/STYLE) ===
+<reference_newsletter>
+{reference_html}
+</reference_newsletter>
+"""
+
+  print("\033[94mSystem prompt:\033[0m")
+  print("\033[94m" + "-" * 40 + "\033[0m")
+  print("\033[96m" + system_prompt + "\033[0m")
+  print("\033[94m" + "-" * 40 + "\033[0m")
+  print("\033[93mUser prompt:\033[0m")
+  print("\033[93m" + "-" * 40 + "\033[0m")
+  print("\033[33m" + user_prompt + "\033[0m")
+  print("\033[93m" + "-" * 40 + "\033[0m")
+  return (system_prompt, user_prompt)
 
 
 async def generate_newsletter_for_config(newsletter_config: NewsletterConfig, test_mode=False):
@@ -157,7 +167,7 @@ async def generate_newsletter_for_config(newsletter_config: NewsletterConfig, te
   print(f"Sources: {len(newsletter_config.sources)} configured")
   print(f"{'='*60}\n")
 
-  prompt = build_prompt(newsletter_config)
+  system_prompt, user_prompt = build_prompt(newsletter_config)
   model_settings = ModelSettings(
     parallel_tool_calls=True,
     extra_body={'reasoning': {'effort': 'medium'}},
@@ -165,7 +175,7 @@ async def generate_newsletter_for_config(newsletter_config: NewsletterConfig, te
 
   agent = Agent(
     name="newsletter_agent",
-    instructions=prompt,
+    instructions=system_prompt,
     tools=ALL_TOOLS,
     model=model,
     default_max_turns=30,
@@ -176,7 +186,7 @@ async def generate_newsletter_for_config(newsletter_config: NewsletterConfig, te
   print("-" * 40)
 
   newsletter_content = ""
-  stream = agent.stream("Generate today's newsletter based on the configured sources and interests.")
+  stream = agent.stream(user_prompt)
 
   async for event in stream:
     if event.kind == "message_delta" and event.text:
