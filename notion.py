@@ -145,7 +145,7 @@ def fetch_active_newsletters() -> list[NewsletterConfig]:
   
   return newsletters
 
-def update_log(page_id: str, log_entry: str):
+def update_log(page_id: str, log_entry: str) -> bool:
   """Prepend a log entry to the Log field of a newsletter page."""
   headers = get_headers()
   
@@ -158,7 +158,7 @@ def update_log(page_id: str, log_entry: str):
   new_log = f"{log_entry}\n{current_log}".strip()
   
   # Update the page
-  httpx.patch(
+  resp = httpx.patch(
     f'https://api.notion.com/v1/pages/{page_id}',
     headers=headers,
     json={
@@ -170,6 +170,10 @@ def update_log(page_id: str, log_entry: str):
     },
     timeout=30
   )
+  if resp.status_code != 200:
+    print(f"WARNING: Failed to update Notion log: {resp.status_code} - {resp.json().get('message', 'Unknown error')}")
+    return False
+  return True
 
 def format_log_entry(sent_to: list[str], cost: Optional[float] = None) -> str:
   """Format a log entry with timestamp and details."""
