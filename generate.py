@@ -159,7 +159,7 @@ TODAY'S DATE: {day_of_week}, {current_date}
 
 
 async def generate_newsletter_for_config(newsletter_config: NewsletterConfig):
-    print(f"\n{'='*60}")
+  print(f"\n{'='*60}")
   print(f"Generating: {newsletter_config.name}")
   print(f"Date: {datetime.now().strftime('%A, %B %d, %Y')}")
   print(f"Model: {newsletter_config.model}")
@@ -184,16 +184,12 @@ async def generate_newsletter_for_config(newsletter_config: NewsletterConfig):
   print("Starting agent...")
   print("-" * 40)
 
-  newsletter_content = ""
-  stream = agent.stream(user_prompt)
+  result = await agent.run(user_prompt)
+  newsletter_content = result.final_output
 
-  async for event in stream:
-    if event.kind == "message_delta" and event.text:
-      print(event.text, end='', flush=True)
-      newsletter_content += event.text
-    elif event.kind == "tool_call":
-      print(f"\n[Calling: {event.tool_name}]", flush=True)
+  print(newsletter_content)
+  print("-" * 40)
 
-  print("\n" + "-" * 40)
-  newsletter_content = stream.final_output or newsletter_content
+  agent.print_usage()
+
   return newsletter_content
