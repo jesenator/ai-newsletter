@@ -73,37 +73,40 @@ def fetch_page_content(page_id: str) -> str:
   return '\n'.join(lines)
 
 def fetch_subscribers_for_newsletter(newsletter_page_id: str) -> list[str]:
-  """Fetch email addresses of subscribed users for a newsletter."""
+  """Fetch email addresses of subscribed users for a newsletter.
+  
+  Handles subscribe/unsubscribe by checking the most recent form submission per email.
+"""
   headers = get_headers()
   
-  # Query subscribers who are linked to this newsletter and are subscribed
+  # Fetch all entries for this newsletter, sorted by created time descending
   resp = httpx.post(
     f'https://api.notion.com/v1/databases/{os.getenv("NOTION_SUBSCRIBERS_DB_ID")}/query',
     headers=headers,
     json={
       'filter': {
-        'and': [
-          {
-            'property': 'Newsletter',
+                    'property': 'Newsletter',
             'relation': {'contains': newsletter_page_id}
           },
-          {
-            'property': 'Select',
-            'select': {'equals': 'Subscribed'}
-          }
-        ]
-      }
+          'sorts': [{'timestamp': 'created_time', 'direction': 'descending'}]
     },
     timeout=30
   )
   data = resp.json()
   
-  emails = []
+  # Track most recent status per email (first seen = most recent due to sort)
+  email_status: dict[str, str] = {}
   for page in data.get('results', []):
-    email = page.get('properties', {}).get('Email', {}).get('email')
-    if email:
-      emails.append(email)
-  return emails
+    props = page.get('properties', {})
+    email = props.get('Email', {}).get('email')
+    status_select = props.get('Status', {}).get('select')
+    status = status_select.get('name') if status_select else None
+    
+    if email and email not in email_status:
+      email_status[email] = status
+  
+  # Return only emails whose most recent status is Subscribe
+  return [email for email, status in email_status.items() if status == 'Subscribe']
 
 def fetch_active_newsletters() -> list[NewsletterConfig]:
   """Fetch all newsletters with Status = Active."""
