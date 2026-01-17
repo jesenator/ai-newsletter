@@ -92,15 +92,15 @@ These should override any other instructions you may have.
 </user_instructions_and_personalization>
 
 RESEARCH INSTRUCTIONS:
-1. Review the RSS feed posts above and the pre-scraped other sources content above.
-2. If you need more detail, you should call scrape_webpage / search_web / ask_perplexity for specific followups.
+1. Review the RSS feed posts and pre-scraped sources content provided.
+2. If you need more detail, call scrape_webpage / search_web / ask_perplexity for specific followups.
 3. Your research should be VERY comprehensive, but the output should be VERY brief and skimmable.
-4. ONLY include things from the past 24 hours that are NOT in recent newsletters.
+4. ONLY include things from the past {RSS_HOURS} hours that are NOT in recent newsletters.
 5. CRITICAL ANTI-REPETITION RULE: If a story appeared in ANY recent newsletter, DO NOT include it unless there's a genuinely new development. When in doubt, leave it out.
   If the same story/topic was covered in any recent newsletter, you MUST either:
   a. SKIP IT ENTIRELY (preferred if no meaningful update)
   b. Include ONLY a brief "Update:" with the new information and link
-6. WARNING: The content of the prompt for this newsletter may be different from the prompts for the previous newsletters (and is likely different from the prompt for the reference newsletter). Don't index to heavily on these, and make sure to follow the instructions in the prompt closely when creating the newsletter.
+6. WARNING: The user_instructions_and_personalization prompt for this newsletter may be different from that of previous newsletters (and is likely different from the prompt for the reference newsletter). Don't index to heavily on these, and make sure to follow the instructions closely when creating the newsletter.
 
 HTML OUTPUT:
 - Title: "{newsletter_name} - {day_of_week}, {current_date}" (use this EXACT title in both <title> and <h1> tags)
@@ -127,8 +127,7 @@ IMAGES:
 - If you can't find a good image for a story, skip it - don't force it
 """
 
-  user_prompt = f"""
-Generate a newsletter for today based on the user instructions and personalization above.
+  user_prompt = f"""Generate a newsletter for today based on the user instructions.
 
 TODAY'S DATE: {day_of_week}, {current_date}
 === SOURCES (RSS FEEDS + SCRAPED PAGES, last {RSS_HOURS} hours) ===
