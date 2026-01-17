@@ -14,7 +14,7 @@ from feeds import fetch_all_sources, format_sources_for_prompt
 from utils import load_recent_newsletters_for_prompt, load_reference_newsletter
 from notion import NewsletterConfig
 from config import (
-  TEST_MODEL, RSS_HOURS,
+  RSS_HOURS,
   RECENT_NEWSLETTERS_TO_INCLUDE, OTHER_SOURCE_MAX_CHARS,
   REFERENCE_NEWSLETTER_FILE,
 )
@@ -158,12 +158,11 @@ TODAY'S DATE: {day_of_week}, {current_date}
   return (system_prompt, user_prompt)
 
 
-async def generate_newsletter_for_config(newsletter_config: NewsletterConfig, test_mode=False):
-  model = TEST_MODEL if test_mode else newsletter_config.model
-  print(f"\n{'='*60}")
+async def generate_newsletter_for_config(newsletter_config: NewsletterConfig):
+    print(f"\n{'='*60}")
   print(f"Generating: {newsletter_config.name}")
   print(f"Date: {datetime.now().strftime('%A, %B %d, %Y')}")
-  print(f"Model: {model}" + (" [TEST MODE]" if test_mode else ""))
+  print(f"Model: {newsletter_config.model}")
   print(f"Sources: {len(newsletter_config.sources)} configured")
   print(f"{'='*60}\n")
 
@@ -177,7 +176,7 @@ async def generate_newsletter_for_config(newsletter_config: NewsletterConfig, te
     name="newsletter_agent",
     instructions=system_prompt,
     tools=ALL_TOOLS,
-    model=model,
+    model=newsletter_config.model,
     default_max_turns=30,
     default_model_settings=model_settings,
   )

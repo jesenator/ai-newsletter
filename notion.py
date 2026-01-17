@@ -108,8 +108,8 @@ def fetch_subscribers_for_newsletter(newsletter_page_id: str) -> list[str]:
   # Return only emails whose most recent status is Subscribe
   return [email for email, status in email_status.items() if status == 'Subscribe']
 
-def fetch_active_newsletters() -> list[NewsletterConfig]:
-  """Fetch all newsletters with Status = Active."""
+def fetch_newsletters(status: str = 'Active') -> list[NewsletterConfig]:
+  """Fetch all newsletters with the given Status."""
   headers = get_headers()
   
   resp = httpx.post(
@@ -118,7 +118,7 @@ def fetch_active_newsletters() -> list[NewsletterConfig]:
     json={
       'filter': {
         'property': 'Status',
-        'select': {'equals': 'Active'}
+        'select': {'equals': status}
       }
     },
     timeout=30

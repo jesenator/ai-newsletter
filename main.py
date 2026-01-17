@@ -25,15 +25,15 @@ from generate import (
   append_footer,
 )
 from utils import clean_html_output, open_in_browser, save_newsletter
-from notion import fetch_active_newsletters, update_log, format_log_entry
-from config import TEST_MODEL
+from notion import fetch_newsletters, update_log, format_log_entry
 
 
 def print_overview(newsletters, send_email: bool, test_mode: bool):
   print(f"\n{'='*60}")
   print(f"NEWSLETTER OVERVIEW - {datetime.now().strftime('%A, %B %d, %Y')}")
   print(f"{'='*60}")
-  print(f"Found {len(newsletters)} active newsletter(s):\n")
+  status = "Test" if test_mode else "Active"
+  print(f"Found {len(newsletters)} {status.lower()} newsletter(s):\n")
   for i, nl in enumerate(newsletters, 1):
     folder_id = nl.page_id.replace('-', '')
     print(f"{i}. {nl.name}")
@@ -50,7 +50,7 @@ def print_overview(newsletters, send_email: bool, test_mode: bool):
   else:
     print("MODE: Dry run (no emails will be sent)")
   if test_mode:
-    print(f"MODEL: Using test model ({TEST_MODEL})")
+    print("STATUS: Running newsletters with 'Test' status")
   print(f"{'='*60}\n")
 
 
@@ -58,23 +58,21 @@ async def main():
   parser = argparse.ArgumentParser(description="Generate personalized AI newsletters from Notion config")
   parser.add_argument('--send-email', action='store_true', help='Actually send the newsletter via email')
   parser.add_argument('--open', action='store_true', help='Open in browser after generating')
-  parser.add_argument('--test', action='store_true', help='Use cheaper test model (claude-haiku-4.5)')
+  parser.add_argument('--test', action='store_true', help='Run newsletters with Test status instead of Active')
   args = parser.parse_args()
 
-  print("Fetching active newsletters from Notion...")
-  newsletters = fetch_active_newsletters()
+  status = 'Test' if args.test else 'Active'
+  print(f"Fetching {status.lower()} newsletters from Notion...")
+  newsletters = fetch_newsletters(status)
   
   if not newsletters:
-    print("No active newsletters found in Notion database.")
+    print(f"No {status.lower()} newsletters found in Notion database.")
     sys.exit(0)
   
   print_overview(newsletters, args.send_email, args.test)
   
   for newsletter_config in newsletters:
-    content = await generate_newsletter_for_config(
-      newsletter_config,
-      test_mode=args.test,
-    )
+    content = await generate_newsletter_for_config(newsletter_config)
     
     if not content:
       print(f"\nERROR: No content generated for {newsletter_config.name}")
@@ -84,16 +82,9 @@ async def main():
     content = append_footer(content)
 
     newsletter_data_dir = get_newsletter_data_dir(newsletter_config)
-    if args.test:
-      import tempfile
-      with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False) as f:
-        f.write(content)
-        filepath = Path(f.name)
-      print(f"\n[TEST MODE] Saved to temp file: {filepath}")
-    else:
-      current_date = datetime.now().strftime("%Y-%m-%d")
-      filepath = save_newsletter(newsletter_data_dir, content, current_date)
-      print(f"\nSaved to: {filepath}")
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    filepath = save_newsletter(newsletter_data_dir, content, current_date)
+    print(f"\nSaved to: {filepath}")
 
     if args.open:
       print("Opening in browser...")
