@@ -76,7 +76,7 @@ def fetch_subscribers_for_newsletter(newsletter_page_id: str) -> list[str]:
   """Fetch email addresses of subscribed users for a newsletter.
   
   Handles subscribe/unsubscribe by checking the most recent form submission per email.
-"""
+  """
   headers = get_headers()
   
   # Fetch all entries for this newsletter, sorted by created time descending
@@ -85,10 +85,10 @@ def fetch_subscribers_for_newsletter(newsletter_page_id: str) -> list[str]:
     headers=headers,
     json={
       'filter': {
-                    'property': 'Newsletter',
-            'relation': {'contains': newsletter_page_id}
-          },
-          'sorts': [{'timestamp': 'created_time', 'direction': 'descending'}]
+        'property': 'Newsletter',
+        'relation': {'contains': newsletter_page_id}
+      },
+      'sorts': [{'timestamp': 'created_time', 'direction': 'descending'}]
     },
     timeout=30
   )
@@ -180,6 +180,9 @@ def update_log(page_id: str, log_entry: str) -> bool:
 
 def format_log_entry(sent_to: list[str], cost: Optional[float] = None) -> str:
   """Format a log entry with timestamp and details."""
-  now = datetime.now().strftime('%Y-%m-%d %H:%M')
-  cost_str = f'${cost:.4f}' if cost is not None else 'N/A'
-  return f"[{now}] Sent to {len(sent_to)} recipient(s). Cost: {cost_str}"
+  now = datetime.now().strftime('%Y-%m-%d %I:%M %p')
+  count = len(sent_to)
+  recipient_str = f"{count} recipient" if count == 1 else f"{count} recipients"
+  if cost is not None:
+    return f"[{now}] Sent to {recipient_str}. Cost: ${cost:.4f}"
+  return f"[{now}] Sent to {recipient_str}"
