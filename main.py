@@ -72,7 +72,7 @@ async def main():
   print_overview(newsletters, args.send_email, args.test)
   
   for newsletter_config in newsletters:
-    content = await generate_newsletter_for_config(newsletter_config)
+    content, cost = await generate_newsletter_for_config(newsletter_config)
     
     if not content:
       print(f"\nERROR: No content generated for {newsletter_config.name}")
@@ -104,10 +104,9 @@ async def main():
             print(f"Failed to send email to {email}")
     
     # Update the log in Notion
-    log_entry = format_log_entry(sent_emails if args.send_email else [], cost=None)
-    if not args.test:
-      update_log(newsletter_config.page_id, log_entry)
-      print(f"Updated Notion log: {log_entry}")
+    log_entry = format_log_entry(sent_emails if args.send_email else [], cost=cost)
+    update_log(newsletter_config.page_id, log_entry)
+    print(f"Updated Notion log: {log_entry}")
 
 
 if __name__ == "__main__":

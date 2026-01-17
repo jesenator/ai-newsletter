@@ -184,5 +184,5 @@ def format_log_entry(sent_to: list[str], cost: Optional[float] = None) -> str:
   count = len(sent_to)
   recipient_str = f"{count} recipient" if count == 1 else f"{count} recipients"
   if cost is not None:
-    return f"[{now}] Sent to {recipient_str}. Cost: ${cost:.4f}"
+    return f"[{now}] Sent to {recipient_str}. Cost: ${cost:.2f}"
   return f"[{now}] Sent to {recipient_str}"

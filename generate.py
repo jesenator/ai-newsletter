@@ -191,5 +191,6 @@ async def generate_newsletter_for_config(newsletter_config: NewsletterConfig):
   print("-" * 40)
 
   agent.print_usage()
+  cost = agent.get_cost()
 
-  return newsletter_content
+  return newsletter_content, cost
