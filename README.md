@@ -52,6 +52,26 @@ Stored in `.env`:
 - `NOTION_DATABASE_ID` - ID of the newsletters database
 - `NOTION_SUBSCRIBERS_DB_ID` - ID of the subscribers database
 
+## macOS LaunchAgent (Optional)
+
+To run automatically every morning, create a LaunchAgent plist at `~/Library/LaunchAgents/org.jesenator.newsletter.plist`.
+
+```bash
+# Run manually via launchd
+launchctl start org.jesenator.newsletter
+
+# View logs
+tail -f ~/Library/Logs/jesenator-newsletter.log
+tail -f ~/Library/Logs/jesenator-newsletter-error.log
+
+# Reload after editing plist
+launchctl unload ~/Library/LaunchAgents/org.jesenator.newsletter.plist
+launchctl load ~/Library/LaunchAgents/org.jesenator.newsletter.plist
+
+# Check if loaded
+launchctl list | grep jesenator
+```
+
 ## Output
 
 Generated newsletters saved to `data/{newsletter_id}/newsletter_YYYY-MM-DD.html`
