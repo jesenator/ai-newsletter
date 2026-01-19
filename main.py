@@ -43,6 +43,7 @@ def print_overview(newsletters, send_email: bool, test_mode: bool):
     print(f"   Recipients ({len(nl.emails)}):")
     for email in nl.emails:
       print(f"     - {email}")
+    # print(f"   Prompt: \n\n{'-'*40}\n{nl.prompt}\n\n{'-'*40}\n\n")
     print()
   print(f"{'='*60}")
   if send_email:

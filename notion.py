@@ -31,24 +31,35 @@ def parse_sources(rich_text_list: list) -> list[str]:
   lines = [line.strip() for line in text.split('\n') if line.strip()]
   return [line for line in lines if line.startswith('http')]
 
-def fetch_page_content(page_id: str) -> str:
-  """Fetch all blocks from a page and convert to plain text prompt."""
-  headers = get_headers()
+def fetch_blocks_recursive(block_id: str, headers: dict) -> list[dict]:
+  """Recursively fetch all blocks including nested children."""
   blocks = []
   cursor = None
   
   while True:
-    url = f'https://api.notion.com/v1/blocks/{page_id}/children?page_size=100'
+    url = f'https://api.notion.com/v1/blocks/{block_id}/children?page_size=100'
     if cursor:
       url += f'&start_cursor={cursor}'
     resp = httpx.get(url, headers=headers, timeout=30)
     data = resp.json()
-    blocks.extend(data.get('results', []))
+    
+    for block in data.get('results', []):
+      blocks.append(block)
+      if block.get('has_children'):
+        children = fetch_blocks_recursive(block['id'], headers)
+        block['_children'] = children
+    
     if not data.get('has_more'):
       break
     cursor = data.get('next_cursor')
   
+  return blocks
+
+def blocks_to_text(blocks: list[dict], indent: int = 0) -> list[str]:
+  """Convert blocks to text lines, handling nested children."""
   lines = []
+  indent_str = '  ' * indent
+  
   for block in blocks:
     block_type = block.get('type')
     content = block.get(block_type, {})
@@ -62,14 +73,38 @@ def fetch_page_content(page_id: str) -> str:
     elif block_type == 'heading_3':
       lines.append(f'\n### {text}')
     elif block_type == 'bulleted_list_item':
-      lines.append(f'- {text}')
+      lines.append(f'{indent_str}- {text}')
     elif block_type == 'numbered_list_item':
-      lines.append(f'1. {text}')
+      lines.append(f'{indent_str}1. {text}')
+    elif block_type == 'to_do':
+      checked = content.get('checked', False)
+      marker = '[x]' if checked else '[ ]'
+      lines.append(f'{indent_str}- {marker} {text}')
+    elif block_type == 'toggle':
+      lines.append(f'{indent_str}> {text}')
+    elif block_type == 'quote':
+      lines.append(f'{indent_str}> {text}')
+    elif block_type == 'callout':
+      lines.append(f'{indent_str}> {text}')
+    elif block_type == 'code':
+      lang = content.get('language', '')
+      lines.append(f'```{lang}\n{text}\n```')
     elif block_type == 'paragraph' and text:
-      lines.append(text)
+      lines.append(f'{indent_str}{text}')
     elif block_type == 'divider':
       lines.append('---')
+    
+    if '_children' in block:
+      child_lines = blocks_to_text(block['_children'], indent + 1)
+      lines.extend(child_lines)
   
+  return lines
+
+def fetch_page_content(page_id: str) -> str:
+  """Fetch all blocks from a page (including nested) and convert to plain text prompt."""
+  headers = get_headers()
+  blocks = fetch_blocks_recursive(page_id, headers)
+  lines = blocks_to_text(blocks)
   return '\n'.join(lines)
 
 def fetch_subscribers_for_newsletter(newsletter_page_id: str) -> list[str]:
