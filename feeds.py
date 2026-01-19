@@ -116,7 +116,7 @@ def fetch_source(url: str, hours: int, max_per_feed: int, max_scrape_chars: int)
       return source_name, recent, True
 
   is_rss, source_name, posts = try_parse_rss(url)
-  if is_rss and posts:
+  if is_rss:
     recent = [p for p in posts if p.published is None or p.published >= cutoff][:max_per_feed]
     print(f"[RSS] {source_name}: {len(recent)} recent posts")
     return source_name, recent, True
