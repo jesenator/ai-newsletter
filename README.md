@@ -38,9 +38,9 @@ Newsletter configuration is stored in a Notion database. Each row represents a n
 Subscribers are managed in a linked Notion database with Name, Email, and subscription status.
 
 General settings in `config.py`:
-- `FROM_EMAIL` / `REPLY_TO_EMAIL` - sender email addresses
-- `TEST_MODEL` - cheaper model for testing
-- `RSS_HOURS` - how far back to look for posts
+- `RSS_HOURS` - how far back to look for RSS posts
+- `RECENT_NEWSLETTERS_TO_INCLUDE` - number of past newsletters to check for duplicates
+- `REFERENCE_NEWSLETTER_FILE` - optional HTML file to use as format reference
 
 ## Environment Variables
 

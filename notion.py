@@ -14,6 +14,14 @@ def get_headers():
     'Content-Type': 'application/json'
   }
 
+def check_response(resp: httpx.Response, context: str) -> dict:
+  """Check response and exit on error."""
+  if resp.status_code != 200:
+    error = resp.json().get('message', resp.text)
+    print(f"ERROR: Notion API failed ({context}): {resp.status_code} - {error}")
+    exit(1)
+  return resp.json()
+
 @dataclass
 class NewsletterConfig:
   page_id: str
@@ -41,7 +49,7 @@ def fetch_blocks_recursive(block_id: str, headers: dict) -> list[dict]:
     if cursor:
       url += f'&start_cursor={cursor}'
     resp = httpx.get(url, headers=headers, timeout=30)
-    data = resp.json()
+    data = check_response(resp, f'fetch blocks for {block_id}')
     
     for block in data.get('results', []):
       blocks.append(block)
@@ -127,7 +135,7 @@ def fetch_subscribers_for_newsletter(newsletter_page_id: str) -> list[str]:
     },
     timeout=30
   )
-  data = resp.json()
+  data = check_response(resp, f'fetch subscribers for {newsletter_page_id}')
   
   # Track most recent status per email (first seen = most recent due to sort)
   email_status: dict[str, str] = {}
@@ -158,7 +166,7 @@ def fetch_newsletters(status: str = 'Active') -> list[NewsletterConfig]:
     },
     timeout=30
   )
-  data = resp.json()
+  data = check_response(resp, 'fetch newsletters')
   
   newsletters = []
   for page in data.get('results', []):
