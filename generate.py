@@ -107,7 +107,7 @@ HTML OUTPUT:
 - Bulleted list broken into sections, very information dense, very concise. Only the most important things.
 - EACH bullet MUST include link(s) to the source AND mention which source (e.g. "Zvi", "Transformer News") with hyperlink
 - Most important items at the TOP
-- Keep it brief: ~40 lines max, fewer if slow news day. It's BETTER to have a short newsletter than to repeat old news.
+- Keep it brief: ~40 lines max, fewer if there's less news. It's BETTER to have a short newsletter.
 - Use a two-column layout with CSS grid or flexbox, max page width ~900px centered
 - Use <h1> for title, <h2> for section headers, <ul>/<li> for items
 - No emojis! Use inline SVG icons instead. Use these to make the newsletter more visually interesting.
@@ -125,6 +125,11 @@ IMAGES:
 - Embed images using <img src="..." style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
 - Skip logos, icons, author headshots, and generic stock photos
 - If you can't find a good image for a story, skip it - don't force it
+
+TO REITERATE:
+- Keep the newsletter very brief and skimmable
+- Don't repeat things that you already covered in previous newsletters
+- Follow the user instructions <user_instructions_and_personalization> closely, those instructions can override any other instructions you may have.
 """
 
   user_prompt = f"""Generate a newsletter for today based on the user instructions.
