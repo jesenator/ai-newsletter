@@ -55,12 +55,15 @@ async def ask_perplexity(query: str) -> str:
     base_url="https://openrouter.ai/api/v1",
     api_key=os.getenv("OPENROUTER_API_KEY")
   )
-  response = await client.chat.completions.create(
-    model="perplexity/sonar-pro",
-    messages=[{"role": "user", "content": query + " Be concise without losing detail."}]
-  )
-  print("done", end="", flush=True)
-  return response.choices[0].message.content
+  try:
+    response = await client.chat.completions.create(
+      model="perplexity/sonar-pro",
+      messages=[{"role": "user", "content": query + " Be concise without losing detail."}]
+    )
+    print("done", end="", flush=True)
+    return response.choices[0].message.content
+  finally:
+    await client.close()
 
 
 ALL_TOOLS = [search_web, scrape_webpage, ask_perplexity]

@@ -113,8 +113,19 @@ async def main():
 if __name__ == "__main__":
   import platform
   if platform.system() == "Darwin":
+    # Suppress harmless cleanup errors on macOS (SSL and socket transports)
     import asyncio.selector_events
+    import asyncio.sslproto
     asyncio.selector_events._SelectorSocketTransport.__del__ = lambda self: None
+    # Patch SSL protocol to suppress cleanup errors
+    _orig_ssl_del = getattr(asyncio.sslproto.SSLProtocol, '__del__', None)
+    def _silent_ssl_del(self):
+      try:
+        if _orig_ssl_del:
+          _orig_ssl_del(self)
+      except Exception:
+        pass
+    asyncio.sslproto.SSLProtocol.__del__ = _silent_ssl_del
   
   if sys.version_info >= (3, 10):
     asyncio.run(main())
@@ -125,5 +136,11 @@ if __name__ == "__main__":
       loop.run_until_complete(main())
     finally:
       # Give pending tasks time to clean up
-      loop.run_until_complete(asyncio.sleep(0.25))
+      loop.run_until_complete(asyncio.sleep(0.5))
+      # Cancel remaining tasks gracefully
+      pending = asyncio.all_tasks(loop)
+      for task in pending:
+        task.cancel()
+      if pending:
+        loop.run_until_complete(asyncio.gather(*pending, return_exceptions=True))
       loop.close()
