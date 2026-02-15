@@ -18,6 +18,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
 
+from logger import log_info, log_error, log_warning, log_run_start, log_run_end, log_email
+
 from generate import (
   generate_newsletter_for_config,
   get_newsletter_data_dir,
@@ -60,23 +62,43 @@ async def main():
   parser.add_argument('--send-email', action='store_true', help='Actually send the newsletter via email')
   parser.add_argument('--open', action='store_true', help='Open in browser after generating')
   parser.add_argument('--test', action='store_true', help='Run newsletters with Test status instead of Active')
+  parser.add_argument('--just', metavar='ID', help='Only run the newsletter with this ID (page_id)')
   args = parser.parse_args()
 
   status = 'Test' if args.test else 'Active'
   print(f"Fetching {status.lower()} newsletters from Notion...")
   newsletters = fetch_newsletters(status)
   
+  if args.just:
+    target_id = args.just.replace('-', '')
+    newsletters = [nl for nl in newsletters if nl.page_id.replace('-', '') == target_id]
+    if not newsletters:
+      print(f"No newsletter found with ID: {args.just}")
+      sys.exit(1)
+  
   if not newsletters:
-    print(f"No {status.lower()} newsletters found in Notion database.")
+    msg = f"No {status.lower()} newsletters found in Notion database."
+    print(msg)
+    log_info(msg)
     sys.exit(0)
   
+  mode = f"{'send_email' if args.send_email else 'dry_run'}, {'test' if args.test else 'active'}"
+  log_run_start(len(newsletters), mode)
   print_overview(newsletters, args.send_email, args.test)
   
   for newsletter_config in newsletters:
-    content, cost = await generate_newsletter_for_config(newsletter_config)
+    log_info(f"Starting generation for: {newsletter_config.name}")
+    try:
+      content, cost = await generate_newsletter_for_config(newsletter_config)
+    except Exception as e:
+      log_error(f"Generation failed for {newsletter_config.name}", e)
+      print(f"\nERROR: Generation failed for {newsletter_config.name}: {e}")
+      continue
     
     if not content:
-      print(f"\nERROR: No content generated for {newsletter_config.name}")
+      msg = f"No content generated for {newsletter_config.name}"
+      print(f"\nERROR: {msg}")
+      log_error(msg)
       continue
 
     content = clean_html_output(content)
@@ -86,6 +108,7 @@ async def main():
     current_date = datetime.now().strftime("%Y-%m-%d")
     filepath = save_newsletter(newsletter_data_dir, content, current_date)
     print(f"\nSaved to: {filepath}")
+    log_info(f"Saved newsletter to: {filepath}")
 
     if args.open:
       print("Opening in browser...")
@@ -94,20 +117,27 @@ async def main():
     sent_emails = []
     if args.send_email:
       if not newsletter_config.emails:
-        print(f"WARNING: No subscribers for {newsletter_config.name}")
+        msg = f"No subscribers for {newsletter_config.name}"
+        print(f"WARNING: {msg}")
+        log_warning(msg)
       else:
         subject = f"{newsletter_config.name} - {datetime.now().strftime('%B %d, %Y')}"
         for email in newsletter_config.emails:
           if send_email(subject, content, email):
             print(f"Newsletter sent to {email}")
             sent_emails.append(email)
+            log_email(email, True)
           else:
             print(f"Failed to send email to {email}")
+            log_email(email, False, "send_email returned False")
     
     # Update the log in Notion
     log_entry = format_log_entry(sent_emails if args.send_email else [], cost=cost)
     update_log(newsletter_config.page_id, log_entry)
     print(f"Updated Notion log: {log_entry}")
+    log_info(f"Updated Notion log for {newsletter_config.name}: {log_entry}")
+  
+  log_run_end()
 
 
 if __name__ == "__main__":

@@ -18,6 +18,7 @@ from config import (
   RECENT_NEWSLETTERS_TO_INCLUDE, OTHER_SOURCE_MAX_CHARS,
   REFERENCE_NEWSLETTER_FILE,
 )
+from logger import log_info, log_error, log_prompt, log_generation
 
 DATA_DIR = Path(__file__).parent / "data"
 
@@ -36,6 +37,7 @@ def append_footer(html_content: str) -> str:
 def send_email(subject: str, html_content: str, to_email: str):
   api_key = os.getenv('SENDGRID_API_KEY')
   if not api_key:
+    log_error("SENDGRID_API_KEY not set")
     print("ERROR: SENDGRID_API_KEY not set")
     return False
 
@@ -55,8 +57,10 @@ def send_email(subject: str, html_content: str, to_email: str):
     sg = SendGridAPIClient(api_key)
     response = sg.send(message)
     print(f"Email sent! Status: {response.status_code}")
+    log_info(f"Email sent to {to_email}, status={response.status_code}")
     return True
   except Exception as e:
+    log_error(f"Failed to send email to {to_email}", e)
     print(f"ERROR sending email: {e}")
     return False
 
@@ -160,6 +164,9 @@ TODAY'S DATE: {day_of_week}, {current_date}
   print("\033[93m" + "-" * 40 + "\033[0m")
   print("\033[33m" + user_prompt + "\033[0m")
   print("\033[93m" + "-" * 40 + "\033[0m")
+
+  log_prompt(f"SYSTEM PROMPT for {newsletter_config.name}", system_prompt)
+  log_prompt(f"USER PROMPT for {newsletter_config.name}", user_prompt)
   return (system_prompt, user_prompt)
 
 
@@ -188,6 +195,7 @@ async def generate_newsletter_for_config(newsletter_config: NewsletterConfig):
 
   print("Starting agent...")
   print("-" * 40)
+  log_info(f"Starting agent for {newsletter_config.name} with model {newsletter_config.model}")
 
   result = await agent.run(user_prompt)
   newsletter_content = result.final_output
@@ -198,4 +206,5 @@ async def generate_newsletter_for_config(newsletter_config: NewsletterConfig):
   agent.print_usage()
   cost = agent.get_cost()
 
+  log_generation(f"GENERATED NEWSLETTER: {newsletter_config.name}", newsletter_content or "(empty)")
   return newsletter_content, cost

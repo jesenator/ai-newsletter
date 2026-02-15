@@ -19,3 +19,6 @@ __pycache__/
 
 # Data (optional - remove if you want to track newsletters)
 data/
+
+# Logs
+newsletter.log

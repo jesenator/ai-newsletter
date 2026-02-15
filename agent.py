@@ -7,6 +7,8 @@ from dataclasses import dataclass
 from agents import Agent as BaseAgent, Runner, ModelSettings
 from agents.run import RunResult
 
+from logger import log_usage, log_info
+
 
 MODEL_PRICING: dict[str, tuple[float, float]] = {
   # (input_price, output_price) per million tokens
@@ -123,3 +125,4 @@ class Agent:
     print(f"Output tokens: {usage['output_tokens']:,}")
     print(f"Total tokens: {usage['total_tokens']:,}")
     print(f"\033[32mEstimated cost: ${cost:.4f}\033[0m")
+    log_usage(self._model_name, usage['input_tokens'], usage['output_tokens'], cost)

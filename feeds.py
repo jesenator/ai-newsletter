@@ -9,6 +9,8 @@ from datetime import datetime, timedelta, timezone
 from dataclasses import dataclass
 from typing import Optional
 
+from logger import log_info, log_error, log_debug
+
 
 @dataclass
 class SourcePost:
@@ -74,16 +76,19 @@ def try_parse_rss(url: str, timeout: float = 15.0) -> tuple[bool, str, list[Sour
           source=source_name,
         )
         posts.append(post)
+      log_debug(f"[RSS] Parsed {source_name}: {len(posts)} entries")
       return True, source_name, posts
     return False, url, []
   except Exception as e:
     print(f"[RSS] Error trying RSS for {url}: {e}")
+    log_error(f"RSS parse failed for {url}", e)
     return False, url, []
 
 
 def scrape_url_markdown(url: str, max_chars: int = 20000) -> str:
   """Scrape a webpage via Serper."""
   if not os.getenv("SERPER_API_KEY"):
+    log_error("SERPER_API_KEY not set, skipping scrape")
     return "Skipped (SERPER_API_KEY not set)."
   try:
     import http.client
@@ -100,8 +105,10 @@ def scrape_url_markdown(url: str, max_chars: int = 20000) -> str:
     text = str(md) if md else json.dumps(data)
     if len(text) > max_chars:
       text = text[:max_chars] + "\n...[truncated]..."
+    log_debug(f"[SCRAPE] {url}: {len(text)} chars")
     return text
   except Exception as e:
+    log_error(f"Scrape failed for {url}", e)
     return f"Error scraping {url}: {e}"
 
 
@@ -113,15 +120,18 @@ def fetch_source(url: str, hours: int, max_per_feed: int, max_scrape_chars: int)
     if is_rss:
       recent = [p for p in posts if p.published is None or p.published >= cutoff][:max_per_feed]
       print(f"[RSS] {source_name}: {len(recent)} recent posts")
+      log_info(f"[SOURCE] RSS {source_name}: {len(recent)} recent posts from {url}")
       return source_name, recent, True
 
   is_rss, source_name, posts = try_parse_rss(url)
   if is_rss:
     recent = [p for p in posts if p.published is None or p.published >= cutoff][:max_per_feed]
     print(f"[RSS] {source_name}: {len(recent)} recent posts")
+    log_info(f"[SOURCE] RSS {source_name}: {len(recent)} recent posts from {url}")
     return source_name, recent, True
 
   print(f"[SCRAPE] {url}")
+  log_info(f"[SOURCE] Scraping {url}")
   content = scrape_url_markdown(url, max_scrape_chars)
   domain = url.split('/')[2].replace('www.', '')
   post = SourcePost(
