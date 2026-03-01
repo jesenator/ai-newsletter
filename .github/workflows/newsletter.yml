@@ -1,0 +1,53 @@
+name: Daily Newsletter
+
+on:
+  schedule:
+    # 7 AM PST = 15:00 UTC (will be 8 AM during daylight saving)
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+    inputs:
+      just:
+        description: 'Run only this newsletter ID (leave empty for all active)'
+        required: false
+      test:
+        description: 'Run test newsletters instead of active'
+        type: boolean
+        default: false
+
+jobs:
+  send-newsletter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - run: |
+          ARGS="--send-email"
+          if [ "${{ inputs.test }}" = "true" ]; then ARGS="$ARGS --test"; fi
+          if [ -n "${{ inputs.just }}" ]; then ARGS="$ARGS --just ${{ inputs.just }}"; fi
+          python main.py $ARGS
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          NOTION_SUBSCRIBERS_DB_ID: ${{ secrets.NOTION_SUBSCRIBERS_DB_ID }}
+          FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+          REPLY_TO_EMAIL: ${{ secrets.REPLY_TO_EMAIL }}
+
+      - name: Commit new newsletters
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Add newsletter $(date -u +%Y-%m-%d)"
+          git push
