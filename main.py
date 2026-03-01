@@ -7,6 +7,7 @@ Usage:
   python main.py --test
   python main.py --open
   python main.py --send-email
+  python main.py --just <page_id>
 """
 
 import argparse

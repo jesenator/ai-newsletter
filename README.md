@@ -1,36 +1,39 @@
 # AI Newsletter Generator
 
-Automated personalized AI newsletter using an LLM agent with web search tools. Configuration is stored in a Notion database.
+Automated personalized AI newsletter using an LLM agent with web search tools. Configuration is stored in a Notion database. Runs daily via GitHub Actions.
 
-## Quick Start
+## Setup
+
+1. Fork/clone this repo
+2. Add secrets in GitHub: **Settings > Secrets and variables > Actions**:
+   - `OPENROUTER_API_KEY` - for AI model access
+   - `SERPER_API_KEY` - for web search/scraping
+   - `SENDGRID_API_KEY` - for sending email
+   - `NOTION_API_KEY` - for Notion database access
+   - `NOTION_DATABASE_ID` - ID of the newsletters database
+   - `NOTION_SUBSCRIBERS_DB_ID` - ID of the subscribers database
+   - `FROM_EMAIL` - sender address
+   - `REPLY_TO_EMAIL` - reply-to address
+3. The workflow runs daily at 7 AM PST. You can also trigger it manually from the Actions tab.
+
+## Local Development
 
 ```bash
-# Create .env with your API keys (see Environment Variables below)
-# Run
-./run.sh
-```
+# Create .env with the same keys listed above
+pip install -r requirements.txt
 
-## Commands
-
-```bash
-# Generate only (no email)
-python main.py
-
-# Generate and open in browser
-python main.py --open
-
-# Run with cheaper test model
-python main.py --test
-
-# Generate and send emails
-python main.py --send-email
+python main.py                # Generate only (no email)
+python main.py --open         # Generate and open in browser
+python main.py --test         # Run newsletters with Test status
+python main.py --send-email   # Generate and send emails
+python main.py --just <ID>    # Run a single newsletter by ID
 ```
 
 ## Configuration
 
 Newsletter configuration is stored in a Notion database. Each row represents a newsletter with:
 - **Name** - title of the newsletter
-- **Status** - Active or Paused (only Active newsletters are sent)
+- **Status** - Active, Paused, or Test (only active newsletters are sent)
 - **Model** - which AI model to use
 - **Sources** - line-separated list of RSS feeds and URLs
 - **Page body** - the prompt describing what you want
@@ -41,36 +44,6 @@ General settings in `config.py`:
 - `RSS_HOURS` - how far back to look for RSS posts
 - `RECENT_NEWSLETTERS_TO_INCLUDE` - number of past newsletters to check for duplicates
 - `REFERENCE_NEWSLETTER_FILE` - optional HTML file to use as format reference
-
-## Environment Variables
-
-Stored in `.env`:
-- `OPENROUTER_API_KEY` - for AI model access
-- `SERPER_API_KEY` - for web search/scraping
-- `SENDGRID_API_KEY` - for sending email
-- `NOTION_API_KEY` - for Notion database access
-- `NOTION_DATABASE_ID` - ID of the newsletters database
-- `NOTION_SUBSCRIBERS_DB_ID` - ID of the subscribers database
-
-## macOS LaunchAgent (Optional)
-
-To run automatically every morning, create a LaunchAgent plist at `~/Library/LaunchAgents/org.jesenator.newsletter.plist`.
-
-```bash
-# Run manually via launchd
-launchctl start org.jesenator.newsletter
-
-# View logs
-tail -f ~/Library/Logs/jesenator-newsletter.log
-tail -f ~/Library/Logs/jesenator-newsletter-error.log
-
-# Reload after editing plist
-launchctl unload ~/Library/LaunchAgents/org.jesenator.newsletter.plist
-launchctl load ~/Library/LaunchAgents/org.jesenator.newsletter.plist
-
-# Check if loaded
-launchctl list | grep jesenator
-```
 
 ## Output
 
