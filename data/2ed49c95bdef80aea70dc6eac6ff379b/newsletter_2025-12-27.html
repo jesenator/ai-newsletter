@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesse's AI Daily - Saturday, December 27, 2025</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+    .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+    .date { color: #666; margin-bottom: 30px; font-size: 14px; }
+    .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+    @media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+    h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+    ul { list-style: none; }
+    li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+    .item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+    .source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+    a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover { border-bottom-color: #2563eb; }
+    mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+    .note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+    .full-width { grid-column: 1 / -1; }
+    svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+    .image-float { max-width: 160px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Daily AI Newsletter</h1>
+  <div class="date">Saturday, December 27, 2025</div>
+
+  <div class="layout">
+    <div>
+      <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg> AI Models & Products</h2>
+      <ul>
+        <li>
+          <span class="item-title">Apple SHARP: 2D photos → 3D in under 1 second</span>
+          <span class="source"><a href="https://github.com/apple/ml-sharp">GitHub</a></span>
+          <span class="source"><a href="https://news.ycombinator.com/item?id=46401539">HN</a></span>
+          Open-source model converts single photos to 3D Gaussian splats via one feedforward pass. <mark>25-34% LPIPS improvement</mark> over prior SOTA. Metric-scale output. 147 pts on HN. Good demo potential.
+        </li>
+        <li>
+          <span class="item-title">Transformer: 13 worst AI takes of 2025</span>
+          <span class="source"><a href="https://www.transformernews.ai/p/worst-funniest-ai-takes-2025">Transformer</a></span>
+          Year-end roundup: AI 2027 authors extending timelines, Zuck's "superintelligence = glasses," Gary Marcus self-identifying as clown, Mechanize Hard Fork interview, Schmidhuber vs. King Charles. Entertaining summary of the year's discourse failures.
+        </li>
+        <li>
+          <span class="item-title">exe.dev: persistent SSH dev environments</span>
+          <span class="source"><a href="https://exe.dev/">exe.dev</a></span>
+          <span class="source"><a href="https://news.ycombinator.com/item?id=46397609">HN</a></span>
+          330 pts on HN. Minimalist persistent Linux shell via SSH with sudo. Useful for quick remote dev.
+        </li>
+      </ul>
+
+      <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Developer Tools</h2>
+      <ul>
+        <li>
+          <span class="item-title">How uv got so fast (1000+ pts on HN)</span>
+          <span class="source"><a href="https://nesbitt.io/2025/12/26/how-uv-got-so-fast.html">Nesbitt</a></span>
+          <span class="source"><a href="https://news.ycombinator.com/item?id=46393992">HN</a></span>
+          Deep dive: speed comes from <mark>dropping legacy support</mark> (eggs, pip.conf, bytecode), exploiting PEP 658 metadata, parallel downloads, global cache with hardlinks. Rust helps but architecture matters more. Worth reading.
+        </li>
+        <li>
+          <span class="item-title">QNX self-hosted developer desktop</span>
+          <span class="source"><a href="https://devblog.qnx.com/qnx-self-hosted-developer-desktop-initial-release/">QNX</a></span>
+          <span class="source"><a href="https://news.ycombinator.com/item?id=46398201">HN</a></span>
+          Initial release. No more cross-compilation for QNX 8.0 RTOS development. 214 pts, 116 comments on HN.
+        </li>
+        <li>
+          <span class="item-title">Mysti: multi-model code synthesis</span>
+          <span class="source"><a href="https://github.com/DeepMyst/Mysti">GitHub</a></span>
+          Show HN: Claude, Codex, Gemini debate your code, then synthesize consensus. 78 pts. Interesting approach to ensemble code review.
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> AI Safety & Policy</h2>
+      <ul>
+        <li>
+          <span class="item-title">China drafts rules for emotional AI interaction</span>
+          <span class="source"><a href="https://money.usnews.com/investing/news/articles/2025-12-27/china-issues-drafts-rules-to-regulate-ai-with-human-like-interaction">Reuters</a></span>
+          CAC requires providers to <mark>detect addiction/extreme emotions and intervene</mark>. Must warn against excessive use, establish algorithm review + data security. Applies to AI with simulated personality traits.
+        </li>
+        <li>
+          <span class="item-title">Forethought: collective epistemics design sketches</span>
+          <span class="source"><a href="https://www.forethought.org/research/design-sketches-collective-epistemics">Forethought</a></span>
+          Christmas release: 5 near-term AI tools for trust infrastructure—community notes everywhere, rhetoric highlighting, reliability tracking, epistemic virtue evals, provenance tracing. <mark>Good CivAI demo ideas.</mark>
+        </li>
+        <li>
+          <span class="item-title">NYT: AI job displacement debate heats up</span>
+          <span class="source"><a href="https://www.nytimes.com/2025/12/27/opinion/artificial-intelligence-jobs-worker-training.html">NYT</a></span>
+          Op-ed proposes 1% profit donation from AI companies for worker retraining. Policy debate ongoing.
+        </li>
+      </ul>
+
+      <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Events & Forecasting</h2>
+      <ul>
+        <li>
+          <span class="item-title">ACX/Metaculus 2026 prediction contest live</span>
+          <span class="source"><a href="https://www.metaculus.com/tournament/ACX2026/">Metaculus</a></span>
+          <span class="source"><a href="https://www.astralcodexten.com/p/acxmetaculus-prediction-contest-2026">ACX</a></span>
+          $10k prize pool. Submit by Jan 17. Questions from ACX readers on US politics, AI, international affairs, culture. Winners announced for best question submissions.
+        </li>
+        <li>
+          <span class="item-title">Mox 2026 planning: year-one retrospective</span>
+          <span class="source"><a href="https://moxsf.substack.com/p/the-mox-since-christmas-past-part">Mox</a></span>
+          Berkeley AI safety community space shares origin story + programs hosted (PIBBSS, Seldon Lab, FLF). Part II tomorrow.
+        </li>
+      </ul>
+
+      <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> World Events</h2>
+      <ul>
+        <li><span class="source"><a href="https://www.bbc.com/news/articles/c1dzvpg1341o">BBC</a></span> Russia launches massive attack on Kyiv; 1/3 of residents without heating in freezing weather.</li>
+        <li><span class="source"><a href="https://www.bbc.com/news/articles/cj69j8l918do">BBC</a></span> US strikes ISIS in Nigeria—first US strikes there targeting Lakurawa militants.</li>
+        <li><span class="source"><a href="https://www.bbc.com/news/articles/ce3wyplnev1o">BBC</a></span> AI influencer piece: comparing human vs AI-generated social media creators, adoption growing.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Slow holiday weekend.</strong> Apple SHARP is the most notable technical release. Transformer's year-end worst-takes roundup is worth a read for levity. Forethought's collective epistemics piece has good CivAI demo inspiration. China's emotional AI regulation draft is significant policy signal. Vatican AI encyclical still expected early January.
+  </div>
+</div>
+</body>
+</html>

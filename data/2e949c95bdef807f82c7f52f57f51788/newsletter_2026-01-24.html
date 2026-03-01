@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Saturday, January 24, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Saturday, January 24, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> CivAI-Relevant: "How AI Is Learning to Think in Secret"</h2>
+<ul>
+<li><span class="item-title">LessWrong curated post on Thinkish, Neuralese, and the end of readable reasoning</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/gpyqWzWYADWmLYLeX/how-ai-is-learning-to-think-in-secret">LessWrong</a></span> Excellent explainer by Nicholas Andresen. Key insight: <mark>Chain-of-Thought was "cosmically lucky"</mark>—an accident where smarter-by-thinking-longer happened to produce readable reasoning. Now facing pressures toward opacity: "Thinkish" (compressed pseudo-English) and "Neuralese" (internal vectors). OpenAI's "Monitoring Monitorability" paper finds current models are "fairly, not perfectly" monitorable (G-mean² of 0.65-0.82). <mark>Highly relevant demo material for CivAI</mark> on why AI transparency is fragile.</li>
+<li><span class="item-title">Key quote on the coordination problem</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/gpyqWzWYADWmLYLeX/how-ai-is-learning-to-think-in-secret#:~:text=monitorability%20tax">LessWrong</a></span> "Right now, the [monitorability] tax is small. Frontier labs can pay it and remain competitive...But suppose Neuralese cracks the scaling problem. If thinking-in-vectors proves substantially faster, cheaper, more capable...the tax explodes."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Coding Agents</h2>
+<ul>
+<li><span class="item-title">Cursor agents built a web browser from scratch in under a week</span>
+<span class="source"><a href="https://cursor.com/blog/scaling-agents">Cursor</a></span> <span class="source"><a href="https://simonwillison.net/2026/Jan/23/fastrender/">Simon Willison</a></span> "FastRender" browser built entirely by agent swarms with no human coding. Simon Willison: <mark>"I may have been off by three years"</mark> (had predicted 2029).</li>
+<li><span class="item-title">OpenAI: "Unrolling the Codex Agent Loop"</span>
+<span class="source"><a href="https://openai.com/index/unrolling-the-codex-agent-loop/">OpenAI</a></span> Deep technical dive on Codex CLI architecture. Covers agent loop, context window management, prompt caching for efficiency, and compaction. First in a series on how Codex works.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Industry</h2>
+<ul>
+<li><span class="item-title">Google DeepMind hires Hume AI CEO and engineers</span>
+<span class="source"><a href="https://www.wired.com/story/google-hires-hume-ai-ceo-licensing-deal-gemini/">Wired</a></span> <span class="source"><a href="https://www.theverge.com/ai-artificial-intelligence/865983/google-deepmind-hired-the-ceo-and-top-engineers-from-a-voice-ai-startup">The Verge</a></span> Alan Cowen and ~7 engineers join DeepMind as part of licensing deal. Will work to improve Gemini's voice features.</li>
+<li><span class="item-title">Waymo launches in Miami</span>
+<span class="source"><a href="https://waymo.com/blog/2026/01/miami-your-waymo-ride-is-ready">Waymo</a></span> Now operating in 6 US cities. 60-square-mile service area, plans to expand to airport.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">EA Forum: Will automated alignment research come before takeoff?</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/mNJ8f3sZrquFvYXgi/will-we-get-automated-alignment-research-before-an-ai">EA Forum</a></span> Forecasts capabilities automation 10x speedup before safety research—mainly due to clearer feedback signals and more engineering vs. novel insight. Proposes interventions: build safety research automation tools now, create benchmarks and model organisms.</li>
+<li><span class="item-title">Daniel Filan joins METR</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-ceos-want-to-slow-down-the-worlds-davos-demis-hassabis-dario-amodei">Transformer</a></span> Will work on assessing loss-of-control risk.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg> Transformer Weekly Highlights</h2>
+<ul>
+<li><span class="item-title">YouTube Shorts to let creators star as AI avatars</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-ceos-want-to-slow-down-the-worlds-davos-demis-hassabis-dario-amodei">Transformer</a></span> Creators can make Shorts with deepfakes of themselves. YouTube also cracking down on non-consensual deepfakes and spam.</li>
+<li><span class="item-title">SpaceX racing for IPO to fund space data centers</span>
+<span class="source"><a href="https://www.wsj.com/tech/why-elon-musk-is-racing-to-take-spacex-public-38f3de9b">WSJ</a></span> <span class="source"><a href="https://www.transformernews.ai/p/ai-ceos-want-to-slow-down-the-worlds-davos-demis-hassabis-dario-amodei">Transformer</a></span> Preparing to go public by July. Musk pivoting toward "orbital AI ambitions."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Transformer Weekly: Full AI CEO Davos roundup + policy updates</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-ceos-want-to-slow-down-the-worlds-davos-demis-hassabis-dario-amodei">Transformer</a></span> Comprehensive weekly briefing. New moves: Ann O'Leary (ex-Newsom chief of staff) joins OpenAI as VP global policy. Greg Yang leaves xAI after Lyme diagnosis. Tino Cuéllar joins Anthropic's Long-Term Benefit Trust. Research: Anthropic's "Assistant Axis" paper on persona drift during jailbreaks; DeepMind built probes detecting harmful activations in real-world Gemini conversations.</li>
+<li><span class="item-title">Gold Takes: "Corporate Character"</span>
+<span class="source"><a href="https://bengoldhaber.substack.com/p/corporate-character">Gold Takes</a></span> Interesting fiction piece on AI-as-corporate-entity. Imagines corporations with "Askell constitutions" and neo-Carlsmith value frameworks. Inspired by Claude's new constitution.</li>
+<li><span class="item-title">Useful Fictions: "The lies I used to tell myself"</span>
+<span class="source"><a href="https://usefulfictions.substack.com/p/the-lies-i-used-to-tell-myself">Useful Fictions</a></span> 8 belief changes: "What doesn't kill you makes you stronger" → false; "Money can't buy happiness" → <mark>Killingsworth research shows steady returns to well-being with rising income, no plateau</mark>; "Intuition is fake" → overriding intuitions led to terrible decisions.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Berkeley Local</h2>
+<ul>
+<li><span class="item-title">Leptospirosis outbreak near Northwest Berkeley encampment</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/01/23/eighth-harrison-encampment-lepto-outbreak-treatment-prevention-precaution">Berkeleyside</a></span> Health officials report rare bacterial disease spreading near Eighth & Harrison homeless encampment. Transmissible to humans and pets through contact with infected animal urine. Symptoms include high fever, headache, muscle aches; can be severe if untreated. Prevention: avoid contact with floodwater/standing water in affected area.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · Reply to unsubscribe or give feedback.
+</div>
+</body>
+</html>

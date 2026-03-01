@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse's AI Daily - Monday, December 22, 2025</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .date {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .layout { grid-template-columns: 1fr; }
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2563eb;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            margin-bottom: 18px;
+            padding-left: 0;
+        }
+        .item {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .item-title {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .source {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #444;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 6px;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        a:hover {
+            border-bottom-color: #2563eb;
+        }
+        mark {
+            background-color: #fef08a;
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+        .note {
+            background: #eff6ff;
+            border-left: 3px solid #2563eb;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 13px;
+            border-radius: 3px;
+        }
+        svg {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-right: 4px;
+            vertical-align: -2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily AI Newsletter</h1>
+        <div class="date">Monday, December 22, 2025</div>
+
+        <div class="layout">
+            <!-- LEFT COLUMN: AI MODELS & PRODUCTS -->
+            <div>
+                <h2>🔬 AI Models & Products</h2>
+                <ul>
+                    <li class="item">
+                        <span class="item-title"><mark>GLM-4.7 launched</mark> with major coding improvements</span>
+                        Zhipu's GLM-4.7 achieves #1 open-source on WebDev leaderboard (1449 points, +83 vs 4.6). Hits 73.8% on SWE-bench. Features interleaved/preserved thinking modes. Now available on HuggingFace with vLLM/SGLang support.
+                        <br><span class="source"><a href="https://news.ycombinator.com/item?id=46357287">HN</a></span>
+                        <span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title"><mark>Claude Code gets native LSP support</mark></span>
+                        Language Server Protocol integration for better editor performance. 383 points on HN—devs excited about the quality improvement for actual coding work.
+                        <br><span class="source"><a href="https://news.ycombinator.com/item?id=46355165">HN</a></span>
+                        <span class="source"><a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md">GitHub Changelog</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title"><mark>OpenAI hardens ChatGPT Atlas</mark> against prompt injection</span>
+                        Automated red teaming + RL loop to discover and patch exploits for the browser agent. Proactive hardening as agentic AI becomes mainstream.
+                        <br><span class="source"><a href="https://openai.com/index/hardening-atlas-against-prompt-injection">OpenAI Blog</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">ERNIE-5.0-Preview tops Text Arena (1451 points)</span>
+                        Baidu's model now #1 Chinese text model, +23pts since ERNIE-5.0-1103. Chinese labs consolidating gains in open-weight space.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">Meta releases SAM Audio for AI-powered audio editing</span>
+                        New model transforms audio editing workflows. 75 points on HN but likely important for audio-native applications.
+                        <br><span class="source"><a href="https://news.ycombinator.com/item?id=46293932">HN</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">Xiaomi MiMo-V2-Flash: cost-optimized MoE</span>
+                        $0.1/1M tokens pricing; positioned for practical deployment over benchmark performance. Practical engineers are noting this over academia-focused models.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">Soprano-80M: ultra-fast TTS (&lt;15ms latency, 2000x realtime)</span>
+                        Apache 2.0 release. Impressive speed but audio quality degrades after ~1 min; tradeoff between speed and fidelity worth noting for your demos.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+                </ul>
+
+                <h2>🛠 Developer Tools & Productivity</h2>
+                <ul>
+                    <li class="item">
+                        <span class="item-title"><mark>Cursor 2.0 multi-agent update</mark></span>
+                        Manage up to 8 agents in parallel with isolated git worktrees/remote machines. Cloud agents now 99.9% reliable. New sandboxed terminals GA on macOS. Team command management via dashboard.
+                        <br><span class="source"><a href="https://www.cursor.com/changelog">Cursor Changelog</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">Vercel AI SDK 6 goes all-in on agents + MCP</span>
+                        Full Model Context Protocol integration, local agent support, tool-execution approval, standardized JSON schema tooling. Batteries-included agentic stack for frontend teams.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">TorchAO v0.15.0: MXFP8 MoE training speedup</span>
+                        1.2× end-to-end speedup on Llama4 Scout (64-node GB200). Binary builds for CUDA 12.8+. Production-grade low-precision kernels now pip-installable.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">QSInference: 8× faster than FlashAttention-2</span>
+                        Quantized sparse attention for long contexts (128k). Triton implementation. Targets inference where attention compute dominates.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+                </ul>
+
+                <h2>🤖 Robotics & Embodied AI</h2>
+                <ul>
+                    <li class="item">
+                        <span class="item-title"><mark>OSMO: Open-source tactile glove for human-robot skill transfer</mark></span>
+                        Wearable from Meta/Michigan/Penn with rich contact sensing. Bridges visual-tactile gap: humans wear it during demos, robots wear it during execution. Solves domain shift problem for dexterous manipulation.
+                        <br><span class="source"><a href="https://jack-clark.net/2025/12/22/import-ai-438-cyber-capability-overhang-robot-hands-for-human-use-and-the-plumbing-required-for-ai-chip-design/">Import AI</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">Reachy Mini gaining traction for local assistants</span>
+                        Multiple builders experimenting with polished UX (manual + app + SDK). Robot-to-robot transfer still hard; sim-to-real gaps remain stubborn.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">Video-action models emerging as new robot learning primitive</span>
+                        Beyond "LLM controls robot": tighter coupling between perception backbones and action policies. Chelsea Finn sharing fine-tuning results on Robot Olympics tasks.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: AI SAFETY, POLICY, RESEARCH -->
+            <div>
+                <h2>🔒 AI Safety & Security</h2>
+                <ul>
+                    <li class="item">
+                        <span class="item-title"><mark>Cyber capability overhang: ARTEMIS shows AI matches security pros</mark></span>
+                        Stanford/CMU/Gray Swan research: AI agents find same vulnerabilities as human penetration testers on real university networks (8,000 hosts, Kerberos auth). <mark>ARTEMIS scaffold costs $18/hr vs $60/hr for humans</mark>. Key insight: LLMs are under-elicited—proper scaffolding unlocks true capability.
+                        <br><span class="source"><a href="https://jack-clark.net/2025/12/22/import-ai-438-cyber-capability-overhang-robot-hands-for-human-use-and-the-plumbing-required-for-ai-chip-design/">Import AI</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title"><mark>Vatican encyclical on AI coming soon</mark> (likely Jan 6, 25, or 28)</span>
+                        Pope Leo XIV modeled after Leo XIII's "Rerum Novarum" on industrial revolution. <mark>Focus on near-term harms (child safety, labor, democracy)</mark> not just existential risk. Paolo Benanti co-signed statement with Hinton, Bengio, Bannon, Gordon-Levitt, Markle calling for superintelligence development ban until guidelines met. May reshape policy landscape if impactful like industrial-era encyclical.
+                        <br><span class="source"><a href="https://www.transformernews.ai/p/pope-artificial-intelligence-encyclical-vatican-regulation-policy-rerum-novarum">Transformer News</a></span>
+                        <span class="source"><a href="https://www.transformernews.ai/p/paolo-benanti-catholic-church-vatican-superintelligence-artificial-intelligence-pope">Benanti op-ed</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">METR: Common Elements of Frontier AI Safety Policies (Dec 2025)</span>
+                        Shared components of lab commitments to evaluate/mitigate severe risks. Latest framework update from the org measuring AI capabilities.
+                        <br><span class="source"><a href="https://www.metr.org/blog/2025-12-09-common-elements-of-frontier-ai-safety-policies/">METR Blog</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">Implicit backdoors via metadata: new control vector approach</span>
+                        Eleuther interpretability research: encode latent switches in training with cheap metadata prefixes (author, date, source). Post-hoc finetuning can nudge perceived time/cultural frame without relabeling. Powerful but concerning for unintended behaviors.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+                </ul>
+
+                <h2>📊 Benchmarks & Evals</h2>
+                <ul>
+                    <li class="item">
+                        <span class="item-title">Open-model catch-up on SWE-bench verified</span>
+                        GLM-4.7 (73.8%), Kimi K2 (73.4%), DeepSeek-V3.2 (73.1%) vs Claude Sonnet 4.5 (77.2%). Chinese labs closing frontier gap on code tasks.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">FrontierMath access asymmetry: OpenAI ahead by ~7 months</span>
+                        Epoch AI notes: open-weight Chinese models lag frontier by ~7 months on FrontierMath tiers 1–3, and OpenAI has exclusive access to portions of benchmark data.
+                        <br><span class="source"><a href="https://news.smol.ai/issues/25-12-22-not-much/">AINews</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">ChipMind: RL for semiconductor specification comprehension</span>
+                        Southeast University + EDA teams built domain-specific knowledge graphs + RL to help LLMs reason over chip specs. SOTA F1 0.95 on SpecEval-QA. Shows <mark>unglamorous but crucial plumbing needed for AI to impact real industries</mark>.
+                        <br><span class="source"><a href="https://jack-clark.net/2025/12/22/import-ai-438-cyber-capability-overhang-robot-hands-for-human-use-and-the-plumbing-required-for-ai-chip-design/">Import AI</a></span>
+                    </li>
+                </ul>
+
+                <h2>💼 Policy & Ecosystem</h2>
+                <ul>
+                    <li class="item">
+                        <span class="item-title">Trump AI policy: federal preemption + crypto czar direction</span>
+                        Executive order centralizes AI regulatory authority, neuters state guardrails. 57% voter opposition (YouGov Nov). Religious staffers reportedly disappointed; JD Vance bridges tech libertarians & religious conservatives. Vatican hopes for moral leadership where US government lacks it.
+                        <br><span class="source"><a href="https://www.transformernews.ai/p/pope-artificial-intelligence-encyclical-vatican-regulation-policy-rerum-novarum">Transformer News</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">OpenAI hits 1M enterprise customers milestone</span>
+                        Companies like PayPal, Virgin Atlantic, BBVA, Cisco, Moderna, Canva using GPT APIs. Business adoption accelerating.
+                        <br><span class="source"><a href="https://openai.com/index/one-in-a-million-customers">OpenAI Blog</a></span>
+                    </li>
+                </ul>
+
+                <h2>🌍 World Events (AI-Relevant)</h2>
+                <ul>
+                    <li class="item">
+                        <span class="item-title">Amazon blocks 1,800 suspected NK agents from job applications</span>
+                        North Korean threat actors attempting to infiltrate remote IT roles using stolen/fake identities. Growing state-sponsored AI abuse vector.
+                        <br><span class="source"><a href="https://www.bbc.com/news/articles/c3d03943zg8o">BBC</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">Flock AI cameras exposed on internet; researchers tracked themselves</span>
+                        Serious surveillance/privacy risk. 534 points on HN—raises questions about deployment safety of AI-powered cameras.
+                        <br><span class="source"><a href="https://news.ycombinator.com/item?id=46355548">HN</a></span>
+                    </li>
+                </ul>
+
+                <h2>📚 Productivity Picks</h2>
+                <ul>
+                    <li class="item">
+                        <span class="item-title">Peter Wildeford's quarterly review + planning template</span>
+                        3-hour structured planning session (7 pomodoros). 3 major rocks + 2 optional pebbles per quarter. Designed to be achievable, minimal, customizable. Useful for keeping your CivAI work aligned.
+                        <br><span class="source"><a href="https://peterwildeford.substack.com/p/my-template-for-a-quarterly-review">The Power Law</a></span>
+                    </li>
+
+                    <li class="item">
+                        <span class="item-title">Opinionated takes on rationality meetup organizing</span>
+                        Don't burn out, boss people around, enforce readings, close meetings for contentious topics, reward regulars. Relevant for community/demo work at CivAI.
+                        <br><span class="source"><a href="https://www.lesswrong.com/posts/HmXhnc3XaZnEwe8eM/opinionated-takes-on-meetups-organizing">LessWrong</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Slow news day overall.</strong> Post-holiday cycle + Vatican encyclical timing uncertainty. Most important: <mark>Claude Code LSP support</mark> (immediate productivity), <mark>GLM-4.7 coding gains</mark> (China closing gap), <mark>ARTEMIS cyber capability overhang</mark> (scary demo material), and <mark>OSMO tactile glove</mark> (novel robotics interface). Vatican encyclical could be huge for policy narrative if it emphasizes near-term harms—good to watch for.
+        </div>
+    </div>
+</body>
+</html>

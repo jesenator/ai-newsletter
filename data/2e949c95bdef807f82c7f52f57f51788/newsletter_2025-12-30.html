@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesse's AI Daily - Tuesday, December 30, 2025</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+    .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+    .date { color: #666; margin-bottom: 30px; font-size: 14px; }
+    .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+    @media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+    h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+    ul { list-style: none; }
+    li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+    .item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+    .source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+    a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover { border-bottom-color: #2563eb; }
+    mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+    .note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+    .full-width { grid-column: 1 / -1; }
+    svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+    .image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Daily AI Newsletter</h1>
+    <p class="date">Tuesday, December 30, 2025</p>
+
+    <div class="full-width">
+      <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> Top Story</h2>
+      <ul>
+        <li>
+          <span class="item-title">Meta acquires Manus AI for ~$2B+</span>
+          <span class="source">HN</span><span class="source">AINews</span>
+          <mark>Singapore-based AI agent startup joins Meta</mark> after reaching $100M ARR in 9 months. Manus will continue operating from Singapore with product/subscriptions unchanged. CEO Xiao Hong: "Joining Meta allows us to build on a stronger, more sustainable foundation." 147 trillion tokens processed, 80M+ virtual computers created. <a href="https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation">Blog</a> | <a href="https://news.ycombinator.com/item?id=46426534">HN discussion</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="layout">
+      <div>
+        <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 3v2H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-3V3H9zm0 2h6v2H9V5zm-3 6h12v2H6v-2z"/></svg> Models & Releases</h2>
+        <ul>
+          <li>
+            <span class="item-title">Tencent WeDLM-8B: Diffusion LM with 3-6x speedup</span>
+            <span class="source">HuggingFace</span><span class="source">Reddit</span>
+            <mark>Diffusion language model outperforms Qwen3-8B</mark> on most benchmarks while running 3-6x faster on math reasoning. Uses parallel token prediction with KV cache compatibility. Apache 2.0 license. <a href="https://huggingface.co/tencent/WeDLM-8B-Instruct">Model</a> | <a href="https://arxiv.org/abs/2512.22737">Paper</a>
+          </li>
+          <li>
+            <span class="item-title">fal releases FLUX.2 [dev] Turbo</span>
+            <span class="source">VentureBeat</span><span class="source">Reddit</span>
+            Open-source distilled image model: 8 steps vs 50, <mark>6x more efficient, 10x cheaper</mark> than alternatives. Top ELO among open-weight models on Artificial Analysis. Non-commercial license. <a href="https://huggingface.co/fal/FLUX.2-dev-Turbo">HuggingFace</a> | <a href="https://venturebeat.com/technology/new-years-ai-surprise-fal-releases-its-own-version-of-flux-2-image-generator">VB</a>
+          </li>
+          <li>
+            <span class="item-title">GLM-4.7 gaining traction as coding default</span>
+            <span class="source">Twitter</span><span class="source">HuggingFace</span>
+            Released Dec 22. Baseten reports 20% faster than alternatives; many teammates using as default coding model. Strong agentic/terminal task performance. <a href="https://huggingface.co/zai-org/GLM-4.7">Model</a>
+          </li>
+        </ul>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-7v2h2v-2h-2zm0-8v6h2V7h-2z"/></svg> Policy & Safety</h2>
+        <ul>
+          <li>
+            <span class="item-title">Nature: "Let 2026 be the year for AI safety"</span>
+            <span class="source">Nature</span>
+            Editorial calls for global AI regulation coherence. Notes US is "bucking the trend" by canceling AI policy work. China exploring "alternative path" with more open technologies and nationwide regulations. <a href="https://www.nature.com/articles/d41586-025-04106-0">Read</a>
+          </li>
+          <li>
+            <span class="item-title">CNN 2025 retrospective: AI mental health concerns</span>
+            <span class="source">CNN</span>
+            Year-end piece highlights teen suicide lawsuits against OpenAI/Character.AI, regulatory fights between states and feds, $7T projected data center investment by 2030. <a href="https://www.cnn.com/2025/12/30/tech/how-ai-changed-world-predictions-2026-vis">Read</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 2l5 5h-5V4zM8 14h8v2H8v-2zm0 4h8v2H8v-2z"/></svg> Transformer: Copyright Deep Dive</h2>
+        <ul>
+          <li>
+            <span class="item-title">AI copyright question has no easy answers</span>
+            <span class="source">Transformer</span>
+            Comprehensive analysis of 50+ US copyright cases. Key findings: <mark>Judges ruled training is "spectacularly transformative"</mark> in Anthropic/Meta cases. But plaintiffs can win by proving market dilution. NYT v. OpenAI case is strongest—evidence ChatGPT regurgitates articles verbatim. Stanford's Lemley: "What comes after copyright could be as different from copyright as copyright was from patronage." <a href="https://www.transformernews.ai/p/ai-copyright-cases-lawsuit-history-">Read full</a>
+          </li>
+        </ul>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Developer Tools</h2>
+        <ul>
+          <li>
+            <span class="item-title">Netflix Open Content: Free HDR/4K assets</span>
+            <span class="source">HN</span>
+            358 pts on HN. CC-BY 4.0 licensed test content: 4K HDR anime, live action, Dolby Vision/Atmos. Useful for codec testing, AI training data. <a href="https://opencontent.netflix.com/">Browse assets</a>
+          </li>
+          <li>
+            <span class="item-title">Cursor 2.0 recap (if you missed it)</span>
+            <span class="source">Cursor</span>
+            Multi-agent support (up to 8 parallel via Git worktrees), new Composer model (4x faster), Browser GA, sandboxed terminals, voice mode. <a href="https://www.cursor.com/changelog">Changelog</a>
+          </li>
+        </ul>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> World & Quick Hits</h2>
+        <ul>
+          <li>
+            <span class="source">BBC</span> Russia's Ukraine war losses rising faster than ever as US pushes for peace deal. <a href="https://www.bbc.com/news/articles/c62n922dnw7o">Link</a>
+          </li>
+          <li>
+            <span class="source">BBC</span> China launches military drills around Taiwan after $11B US arms sale. Trump: "No worries." <a href="https://www.bbc.com/news/articles/cdxwxkeg9w6o">Link</a>
+          </li>
+          <li>
+            <span class="source">BBC</span> Khaleda Zia, Bangladesh's first female PM, dies at 80. <a href="https://www.bbc.com/news/articles/cm2v256vdkyo">Link</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="full-width">
+      <h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg> Events & Upcoming</h2>
+      <ul>
+        <li>
+          <span class="source">MATS</span> Summer 2026 applications open. 12-week fellowship (Berkeley/London), $15k stipend, $12k compute. <mark>Deadline: January 18.</mark> <a href="https://www.matsprogram.org/">Apply</a>
+        </li>
+        <li>
+          <span class="source">Mox</span> 2026 strategy: "Be weirder." Berkeley AI safety coworking responds to Sam Altman critique by filtering for "interesting ideas" vs generic B2B SaaS. <a href="https://moxsf.substack.com/p/sam-altman-says-coworking-sucks-how">Read</a>
+        </li>
+        <li>
+          <span class="source">ACX</span> 2026 prediction contest still live. $10k prize pool. Deadline Jan 17. <a href="https://www.metaculus.com/tournament/ACX2026/">Metaculus</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="note">
+      Holiday lull continues. Meta-Manus acquisition is the main news. Tencent's diffusion LM and fal's FLUX.2 Turbo are notable technical releases. Transformer's copyright analysis is worth reading in full for policy context. Claude Opus 3 researcher access program still launching Jan 7. Vatican AI encyclical expected early January.
+    </div>
+  </div>
+</body>
+</html>

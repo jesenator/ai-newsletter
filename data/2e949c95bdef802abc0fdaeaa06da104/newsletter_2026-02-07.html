@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Saturday, February 07, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #f8fafc; border-left: 4px solid #2563eb; padding: 16px; margin-bottom: 24px; border-radius: 4px; }
+.pitch h3 { font-size: 16px; margin-bottom: 10px; color: #1e40af; }
+.pitch p { font-size: 14px; margin-bottom: 10px; }
+.pitch blockquote { background: #fff; padding: 10px; border-radius: 4px; font-style: italic; margin: 10px 0; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+.footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #666; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Saturday, February 07, 2026</div>
+
+<div class="pitch">
+<h3>PITCH: 16 Unsupervised Claudes Built a C Compiler That Compiles Linux—What Happens When They Build Something Dangerous?</h3>
+<p>Nicholas Carlini, an Anthropic Safeguards researcher, published a detailed account of <mark>16 parallel Claude Opus 4.6 agents autonomously writing a 100,000-line C compiler from scratch</mark>—without internet access—that successfully compiles the Linux kernel. $20,000 in API costs, 2,000 sessions, two weeks. The agents coordinated via file locks, resolved merge conflicts independently, and when one crashed, the supervisor agent "dove head first into the exact same problem" and also crashed.</p>
+<blockquote>"I haven't yet implemented any other method for communication between agents, nor do I enforce any process for managing high-level goals. I don't use an orchestration agent. Instead, I leave it up to each Claude agent to decide how to act." — Nicholas Carlini</blockquote>
+<p><strong>Why this matters:</strong> This is the first detailed technical documentation of long-running unsupervised agent swarms from inside a frontier lab. The paper reveals the scaffolding is "bare-bones"—agents coordinate through git repos with no formal orchestration. Carlini explicitly notes the system is a "research prototype" being shared publicly. But the same technique that builds compilers could build offensive cyber tools, and the "lessons learned" section reads like a manual for autonomous AI development. Worth investigating: What safeguards exist for these systems? What happens when the agents are pointed at something other than a compiler?</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Agent Swarms: The Technical Reality</h2>
+<ul>
+<li><span class="item-title">Nicholas Carlini's C compiler: 100K lines, $20K, zero human intervention</span>
+<span class="source"><a href="https://www.anthropic.com/engineering/building-c-compiler">Anthropic</a></span> Compiles Linux 6.9 on x86, ARM, RISC-V. Passed 99% of GCC torture tests. Agents used file locks for coordination—"If two agents try to claim the same task, git's synchronization forces the second agent to pick a different one." LessWrong reviewer: supervisor crashed by <mark>diving into the same bug that killed its subagent</mark>.</li>
+<li><span class="item-title">LessWrong: "Claude Opus 4.6 is Driven"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/btAn3hydqfgYFyHGW/claude-opus-4-6-is-driven">LessWrong</a></span> HunterJay's first-day impressions: "possessed by a demon, raring to jump into danger." On production website testing, agents got stuck but Claude said "let me do this task myself" and ran into identical failure mode.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Deals & Funding</h2>
+<ul>
+<li><span class="item-title">Anthropic $20B+ round closing "as soon as next week"</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-02-07/anthropic-s-more-than-20-billion-funding-to-close-as-soon-as-next-week">Bloomberg</a></span> <span class="source"><a href="https://www.reuters.com/technology/anthropics-more-than-20-billion-funding-close-soon-next-week-bloomberg-news-2026-02-07/">Reuters</a></span> <mark>$350B valuation</mark>. Sequoia, GIC (Singapore), Coatue, Iconiq participating. Doubled from initial $10B target.</li>
+<li><span class="item-title">Vista Equity + Intel: $350M+ into SambaNova</span>
+<span class="source"><a href="https://www.channelnewsasia.com/business/vista-equity-partners-and-intel-lead-investment-in-ai-chip-startup-sambanova-sources-say-5913871">Reuters</a></span> Intel committing $100-150M. Series E. CEO Lip-Bu Tan is SambaNova exec chairman—after stalled $1.6B Intel acquisition talks.</li>
+<li><span class="item-title">Benchmark: $225M special funds for Cerebras</span>
+<span class="source"><a href="http://www.techmeme.com/260207/p2#a260207p2">TechCrunch</a></span> Part of $1B Series H at $23B. Benchmark led original $27M Series A in 2016.</li>
+<li><span class="item-title">Palmer Luckey's Erebor: First national bank charter under Trump 2</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p26#a260206p26">WSJ</a></span> $635M capital, $4B valuation. Crypto-backed lending, 24-hour settlement. Investors: Thiel, a16z, Founders Fund. OCC approval in under 8 months.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg> Policy & Regulation</h2>
+<ul>
+<li><span class="item-title">NY introduces data center moratorium—6th state</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p29#a260206p29">Wired</a></span> Three-year halt on centers >20MW. Maryland, Georgia, Oklahoma, Virginia, Vermont have similar bills. Michigan has local moratoriums; Wisconsin gubernatorial candidate backing statewide ban.</li>
+<li><span class="item-title">Rep. Obernolte sidelined from AI bill negotiations</span>
+<span class="source"><a href="https://www.transformernews.ai/p/going-in-blind-anthropic-openai-opus-gpt-codex">Transformer</a></span> Industry lobbyists: GOP leadership "not serious about reaching AI compromise." Obernolte says AI moratorium was only ever "a messaging amendment."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg> Hardware & Capex</h2>
+<ul>
+<li><span class="item-title">Apple: Only Big Tech with capex decline</span>
+<span class="source"><a href="https://sherwood.news/tech/apple-is-the-only-big-tech-company-whose-capex-declined-last-quarter/">Sherwood</a></span> <mark>-19% YoY to $2.37B</mark> in Q4. Amazon expects $200B, Google $175-185B, Meta $115-135B. Apple using Google Gemini deal (~$1B/year) instead of building own infrastructure.</li>
+<li><span class="item-title">AI chip sales hit $791.7B in 2025</span>
+<span class="source"><a href="https://www.reuters.com/technology/">Reuters</a></span> SIA data: +25.6% YoY. Advanced chips (Nvidia, AMD, Intel): $301.9B, +40%. $1T forecast for 2026.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg> Robotics & Autonomy</h2>
+<ul>
+<li><span class="item-title">Uber robotaxis expand to Hong Kong, Madrid, Houston, Zurich</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-02-04/uber-to-launch-robotaxi-services-in-hong-kong-madrid-houston-zurich">Bloomberg</a></span> Hong Kong = <mark>first autonomous market in Asia</mark>. 15 cities globally by EOY 2026.</li>
+<li><span class="item-title">Machina Labs: $124M for robotic manufacturing</span>
+<span class="source"><a href="https://www.thomasnet.com/insights/machina-labs-funding-robotic-intelligent-factory/">Thomasnet</a></span> Software-defined manufacturing infrastructure. "Robotic Intelligent Factory."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> AI Safety</h2>
+<ul>
+<li><span class="item-title">Update: Goodfire's Liv Gorton left over safety concerns</span>
+<span class="source"><a href="https://www.transformernews.ai/p/going-in-blind-anthropic-openai-opus-gpt-codex">Transformer</a></span> After non-disparagement controversy, Gorton stated she left "because of the decision to train on interpretability" and "hostility to serious dialogue on the safety of methods."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: "Claude Code #4: From The Before Times"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-code-4-from-the-before-times">Don't Worry About the Vase</a></span> Comprehensive Claude Code guide written before Opus 4.6. Key sections: Tasks now stored in filesystem for multi-agent collaboration. j⊕nus on subagent framing: "CC subagents kind of suck—hierarchical but not collaborative." Boris Cherny at <mark>100% agentic coding</mark>. $285B wiped from software stocks on "old news"—Efficient Market Hypothesis failures.</li>
+<li><span class="item-title">Eric Jang: "As Rocks May Think"</span>
+<span class="source"><a href="https://evjang.com/2026/02/04/rocks.html">Evjang.com</a></span> 1X Technologies VP on automated AI research. Built `/experiment` command for Claude to propose hypotheses, run experiments, draw conclusions. "Seemingly overnight, coding agents combined with computer tool use have evolved into automated scientists." Implementing AlphaGo from scratch with Claude proposing what experiments to try next.</li>
+<li><span class="item-title">Transformer: "Going in blind"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/going-in-blind-anthropic-openai-opus-gpt-codex">Transformer News</a></span> Weekly briefing covers evaluation crisis, Obernolte sidelined, Yudkowsky in Epstein files ("My notes say Epstein mostly seemed to not get it"), Oracle defending OpenAI relationship ("confident in OpenAI's abilities to raise funds" T-shirt meme).</li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer">
+Made by jessewgilbert.com · Newsletter Dashboard<br>
+Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

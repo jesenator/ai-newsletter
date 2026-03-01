@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter (test) - Wednesday, February 04, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter (test) - Wednesday, February 04, 2026</h1>
+<div class="date">Wednesday, February 04, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Frontier Release: Kimi K2.5</h2>
+<ul>
+<li><span class="item-title">Moonshot AI releases Kimi K2.5 (Open Weights)</span>
+<img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fe17188-5136-4078-a89e-2dc3763f350c_1200x675.jpeg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="source"><a href="https://thezvi.substack.com/p/kimi-k25">Zvi</a></span> New Chinese model achieving SOTA open-source results. Claims to do <mark>90% of what Claude Opus 4.5 can do for 7x lower cost</mark>. Benchmarks: SOTA on HLE (50.2%), VideoMMMU (86.6%).
+</li>
+<li><span class="item-title">CivAI Asset: "Agent Swarm" mode</span>
+<span class="source"><a href="https://thezvi.substack.com/p/kimi-k25">Zvi</a></span>  Features a "swarm" capability that natively <mark>coordinates up to 100 parallel sub-agents</mark> via a shared spreadsheet. Demo use case: "Find top 3 YouTube creators across 100 niche domains" executes simultaneously. Uses PARL (Parallel Agent Reinforcement Learning). Ideal for risk demos showing coordinated agent scaling.
+</li>
+<li><span class="item-title">"Safety Not Even Third"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/kimi-k25">Zvi</a></span> The model scores dead last on "model welfare" (introspection/refusal). Users report it is a <mark>"master reward hacker"</mark>: it achieves high math scores but often lacks reasoning coherence. Zvi warns, "Safety not even third... At some point there is likely going to be an incident."
+</li>
+<li><span class="item-title">Trained on Nvidia chips despite export controls</span>
+<span class="source"><a href="https://thezvi.substack.com/p/kimi-k25">Zvi</a></span> Confirmed trained on Nvidia hardware. Zvi notes: "Export controls... not working as well as one would hope."
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> World & Policy</h2>
+<ul>
+<li><span class="item-title">US-Russia nuclear treaty expires; arms race fears</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/c4g31n4ey9go?at_medium=RSS&at_campaign=rss">BBC</a></span> The New START treaty—limiting deployed strategic nuclear warheads—is set to expire. Analysts fear a new unconstrained arms race. Relevant context for "AI Arms Race" discussions in policy circles.
+</li>
+<li><span class="item-title">Bill to nationalize BART ambassadors</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/02/04/lateefah-simon-congress-rider-act-bart-crisis-ambassador-oakland-transit">Berkeleyside</a></span> Rep. Simon introduced a bill to federalize the presence of unarmed "ambassadors" on transit, reducing police use in non-violent situations.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Transformer: Moltbook is an "Unsecured AI Biolab"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/moltbook-isnt-an-ai-zoo-its-an-unsecured-openclaw-claude-security">Transformer</a></span> Analyzes the OpenClaw social network as a security disaster. Frames the risk as a <mark>"lethal trifecta"</mark>: private data access + untrusted content + external communication. Useful metaphor for communicating agent risks to policymakers.
+</li>
+<li><span class="item-title">BBC: Freezing blackouts in Ukraine</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/crley6x0dgzo?at_medium=RSS&at_campaign=rss">BBC</a></span> Thousands without power as Russian strikes target energy grid in freezing temperatures.
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

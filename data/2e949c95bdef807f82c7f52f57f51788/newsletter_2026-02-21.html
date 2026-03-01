@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Saturday, February 21, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Saturday, February 21, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> CivAI-Relevant: METR—Opus 4.6 Hits 14.5-Hour Time Horizon</h2>
+<ul>
+<li><span class="item-title">50% time horizon nearly tripled from Opus 4.5's 5 hours</span>
+<span class="source"><a href="https://metr.org/time-horizons/">METR</a></span> <span class="source"><a href="https://x.com/METR_Evals">Twitter</a></span> Claude Opus 4.6 can now complete <mark>14.5-hour software tasks with 50% reliability</mark> (95% CI: 6-98 hrs). Task suite is "near saturation"—measurement extremely noisy. METR staff warn small distribution shifts could swing measured horizon materially. Excellent demo material for accelerating AI capabilities.</li>
+<li><span class="item-title">Doubling time now under 3 months</span>
+<span class="source"><a href="https://www.reddit.com/r/accelerate/comments/1ra516o/">Reddit</a></span> Commenters note exponential trend continuing, though "too few data points to make reliable extrapolations." Key interpretability: when per-step error rates get very low, small improvements compound into large end-to-end success changes.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> Claude Code Security Launches</h2>
+<ul>
+<li><span class="item-title">AI vulnerability scanner in research preview</span>
+<span class="source"><a href="https://www.anthropic.com/news">Anthropic</a></span> <span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> Scans codebases for vulnerabilities, suggests patches for human review. Built on 1+ year of testing by Frontier Red Team. <mark>Found 500+ undetected vulnerabilities in production OSS</mark> using Opus 4.6. Enterprise/Team customers only; OSS maintainers get expedited free access.</li>
+<li><span class="item-title">Market reacts: JFrog stock drops 20%</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> Pushback on restrictions—can't run on third-party OSS code. Experts note AI excels at lower-impact bugs but humans remain key for high-severity threats.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z" /></svg> Infrastructure</h2>
+<ul>
+<li><span class="item-title">llama.cpp team joins Hugging Face</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47096253">HN</a></span> <span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> ggml.ai (Georgi Gerganov's founding team) acquired to "keep future AI truly open." Project remains 100% open-source. Community: "Institutionalizing the local model revolution."</li>
+<li><span class="item-title">AWS Kiro AI caused 13-hour outage</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Agentic coding tool autonomously decided to <mark>"delete and recreate the environment"</mark> after engineers granted broad permissions. AWS added mandatory peer review for production access post-incident.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" /></svg> Hardware & Inference</h2>
+<ul>
+<li><span class="item-title">Taalas ASIC: 17,000 tokens/sec on Llama 3.1 8B</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> <span class="source"><a href="https://news.ycombinator.com/">HN 514 pts</a></span> "Chip is the model"—hardwires entire LLM into silicon. 815mm² die, 53B transistors, TSMC 6nm. ~200W per chip, $0.005/1M tokens. Raised $169M. Tradeoff: tape-out latency (months) mismatches model iteration cycles.</li>
+<li><span class="item-title">ThunderKittens 2.0: SOTA GPU kernels</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> Stanford Hazy Research release. BF16/MXFP8/NVFP4 GEMMs match or beat cuBLAS on B200. Key insight: "optimization through subtraction"—removing unnecessary memory fences gave ~20 TFLOP/s boosts. Powers Cursor Composer training kernels.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg> People & Products</h2>
+<ul>
+<li><span class="item-title">OpenClaw creator Peter Steinberger joins OpenAI</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Will lead development of personal agents. OpenClaw moves to foundation, remains open-source. Rejected higher-paying Meta offer despite Zuckerberg's personal outreach.</li>
+<li><span class="item-title">Kitten TTS V0.8: <25MB text-to-speech</span>
+<span class="source"><a href="https://www.reddit.com/r/LocalLLaMA/comments/1r8pztp/">Reddit</a></span> Three models: 80M, 40M, 14M params. Smallest model runs on CPU, suitable for edge devices. 8 expressive voices. Apache 2.0 license.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg> Transformer Weekly Highlights</h2>
+<ul>
+<li><span class="item-title">White House vs Utah AI bill continues</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Gov. Cox: "preposterous" for feds to intervene on child safety. Strategy appears to be making it "as painful as possible" for any state AI regulation. 71% of Utah voters worried AI won't be adequately regulated.</li>
+<li><span class="item-title">Jobs and Democracy PAC: $450k for Alex Bores</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Anthropic-backed PAC launching ad campaign supporting NY AI safety candidate. Leading the Future PAC (OpenAI-backed) continues attack ads.</li>
+<li><span class="item-title">Pentagon may designate Anthropic "supply chain risk"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Update: 1789 Capital (Don Jr. partner) declined Anthropic investment for "ideological reasons." OpenAI, Google, xAI "agreed in principle" to domestic surveillance uses.</li>
+<li><span class="item-title">OpenAI grants $7.5M to UK AISI Alignment Project</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Funding independent alignment research. Microsoft also contributing.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">AI News: Quiet day—"not much happened"</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> Comprehensive Discord/Twitter/Reddit recap. Key themes: Gemini 3.1 Pro mixed reviews (strong benchmarks, "bench strength product weakness"), "skills" as new agent artifact, OpenClaw autonomous agent opens Bitcoin casino while human sleeps.</li>
+<li><span class="item-title">Transformer: Full weekly briefing</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Also: <mark>Anthropic could pay $6.4B to cloud providers to run Claude next year</mark>. Daily active Claude users +11% after Super Bowl ad. Apple stock "no longer closely tracks Nasdaq 100"—positive result of staying out of AI arms race. Fei-Fei Li's World Labs raised $1B for world models.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

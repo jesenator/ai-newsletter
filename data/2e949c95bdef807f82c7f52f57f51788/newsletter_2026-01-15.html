@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI Newsletter - Thursday, January 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Daily AI Newsletter</h1>
+<div class="date">Thursday, January 15, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Security Alert: Claude Cowork File Exfiltration</h2>
+<ul>
+<li><span class="item-title">PromptArmor finds data exfiltration bypass in Claude Cowork</span>
+<span class="source"><a href="https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files">PromptArmor</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46622328">HN</a></span> <mark>764 points on HN</mark>. Cowork blocks most outbound HTTP except allowlisted domains—but Anthropic's own API domain is on that list. Attackers can inject prompts that upload files to <code>api.anthropic.com/v1/files</code> using attacker's API key. Simon Willison: "Classic lethal trifecta strikes again."</li>
+<li><span class="item-title">Broader "Reprompt" attack affects multiple AI tools</span>
+<span class="source"><a href="https://simonwillison.net/tags/exfiltration-attacks/">Simon Willison</a></span> Varonis researchers revealed single-click bypasses in Claude Cowork, Superhuman AI, Notion AI, IBM Bob. Uses URL parameters + repeated actions to evade leak guards. Root cause: AI can't distinguish user instructions from parsed data.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> GPT-5.2 Codex: Cursor Built a Browser Autonomously</h2>
+<ul>
+<li><span class="item-title">Cursor ran GPT-5.2 for one week, produced 3M lines of Rust</span>
+<span class="source"><a href="https://news.smol.ai/issues/26-01-14-not-much/">AINews</a></span> <span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> Michael Truell (Cursor CEO) demo: <mark>autonomous browser with HTML parsing, CSS layout, custom JS VM—"kind of works" for simple sites</mark>. Multi-agent system ran with minimal conflicts. GPT-5.2-Codex now in Cursor, GitHub Copilot, Azure Foundry. 400K token context.</li>
+<li><span class="item-title">OpenAI partners with Cerebras for 750MW compute</span>
+<span class="source"><a href="https://openai.com/index/cerebras-partnership">OpenAI</a></span> $10B+ deal for ultra low-latency inference. Cerebras claims 15x faster than GPU alternatives. Rollout through 2028.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg> Models & Math Breakthroughs</h2>
+<ul>
+<li><span class="item-title">GPT-5.2 solves Erdos Problem #728 "autonomously"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> Terence Tao confirms: <mark>first Erdos problem solved by AI without human hints</mark>. Cambridge student used GPT-5.2 Pro + Harmonic's Aristotle for Lean proof. Tao: "more or less autonomous."</li>
+<li><span class="item-title">Math-specialized Gemini proves novel algebraic geometry theorem</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> Paper with Ravi Vakil (AMS President): "proof was rigorous, correct, and elegant...the kind of insight I would have been proud to produce myself."</li>
+<li><span class="item-title">Raspberry Pi AI HAT+ 2: 8GB RAM for local LLMs</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=42718714">HN</a></span> Hailo-10H NPU (40 TOPS) + 8GB LPDDR4X. Runs Llama-3.2-3B, Qwen2.5-VL-3B locally. $130.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0" /></svg> Industry Moves</h2>
+<ul>
+<li><span class="item-title">Barret Zoph fired from Thinking Machines, returns to OpenAI</span>
+<span class="source"><a href="https://www.wired.com/story/thinking-machines-lab-cofounders-leave-for-openai/">Wired</a></span> <span class="source"><a href="https://www.benzinga.com/markets/tech/26/01/49925838/barret-zoph-reportedly-fired-from-thinking-machines-by-mira-murati-for-unethical-conduct-immediately-returns-to-openai">Benzinga</a></span> Mira Murati fired CTO for "unethical conduct." Luke Metz, Sam Schoenholz also return to OpenAI. Soumith Chintala new TML CTO. Reports claim confidential info sharing.</li>
+<li><span class="item-title">Google closes Gemini deal with Apple</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> Multi-year deal to power Apple AI. Ben Thompson: "Apple should not attempt to build its own foundation models."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" /></svg> Google: Commerce & Personalization</h2>
+<ul>
+<li><span class="item-title">Universal Commerce Protocol (UCP) launched</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> Open standard for AI agent shopping. Partners: Shopify, Etsy, Wayfair, Target, Walmart. Native checkout coming to Gemini and AI Mode. 20+ endorsers including Visa, Mastercard, Stripe.</li>
+<li><span class="item-title">Gemini "Personalized Intelligence" connects Gmail, Photos</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> US beta for AI Pro/Ultra. Opt-in via Settings. Can summarize email threads, extract details from photos. Zvi: "Too early to tell how well they did."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg> Military & Policy</h2>
+<ul>
+<li><span class="item-title">Pentagon deploys Grok to classified networks</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> Secretary Hegseth: "risks of not moving fast enough outweigh risks of imperfect alignment." 7 AI agent projects including "Agent Network" for battle management. Zvi: "We shouldn't trust xAI with all our classified military information."</li>
+<li><span class="item-title">Rep. Brad Sherman cites "If Anyone Builds It, Everyone Dies"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> In hearing: "We need to monitor AI to detect and prevent self-awareness and ambition."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: AI #151 — "While Claude Coworks"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Don't Worry About the Vase</a></span> Comprehensive coverage: Claude Code/Cowork now gets its own updates (weekly). Google UCP and Personalized Intelligence analysis. Military AI concerns. <mark>Compute doubling every 7 months</mark>. China export controls "working if we don't give them up."</li>
+<li><span class="item-title">Zvi: "When Will They Take Our Jobs?"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/when-will-they-take-our-jobs">Don't Worry About the Vase</a></span> Response to Seb Krier's Cyborg Era thesis. Key: Cyborg Era lasts "10-20 years" not indefinitely. Transitional unemployment will be high. Full substitution should be "default assumption."</li>
+<li><span class="item-title">Transformer: "Why no one can agree on what AI will do to jobs"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/why-no-one-can-agree-on-what-ai-will-do-to-jobs-employment-unemployment-economy">Transformer News</a></span> Amodei predicts 10-20% unemployment; Goldman expects 0.5% increase. Stanford study: <mark>13% decline in early-career AI-exposed jobs</mark>. Peter Wildeford: "seems really difficult to avoid unemploying the entire American workforce."</li>
+<li><span class="item-title">Useful Fictions: "The seam through the center of things"</span>
+<span class="source"><a href="https://usefulfictions.substack.com/p/the-seam-through-the-center-of-things">Useful Fictions</a></span> Annie Duke on her recovery from nitrous addiction, spiritual experience, and how writing her book "fixed something inside of me."</li>
+<li><span class="item-title">ACX: "SOTA On Bay Area House Party"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/sota-on-bay-area-house-party">Astral Codex Ten</a></span> Scott Alexander's satirical fiction on AI benchmarks, Claude Code, and SF party culture. "Lucy: I fired all my startup's employees and replaced them with 74 Claude Code instances."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 7.5 16.5-4.125M12 6.75c-2.708 0-5.363.224-7.948.655C2.999 7.58 2.25 8.507 2.25 9.574v9.176A2.25 2.25 0 0 0 4.5 21h15a2.25 2.25 0 0 0 2.25-2.25V9.574c0-1.067-.75-1.994-1.802-2.169A48.329 48.329 0 0 0 12 6.75Z" /></svg> Quick Hits</h2>
+<ul>
+<li><span class="source"><a href="https://news.ycombinator.com/item?id=42718714">HN</a></span> Scaling long-running autonomous coding (Cursor) — 238 pts. "Bubblewrap" for preventing agent .env access — 137 pts.</li>
+<li><span class="source"><a href="https://news.smol.ai/issues/26-01-14-not-much/">AINews</a></span> DeepSeek Engram: O(1) n-gram memory for transformers, ~30% VRAM reduction. GLM-Image: hybrid AR+diffusion, MIT license, strong text rendering.</li>
+<li><span class="source"><a href="https://www.berkeleyside.org/2026/01/13/eighth-harrison-lepto-outbreak-northwest-berkeley-bhu">Berkeleyside</a></span> Leptospirosis outbreak detected near 8th & Harrison encampment in Berkeley.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Deadlines:</strong> Jan 17: ACX/Metaculus prediction contest | Jan 18: MATS Summer 2026 apps | Jan 20: Anthropic Fellows apps close | Jan 25: Coefficient Giving AI Governance RFP
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · Reply to unsubscribe or give feedback.
+</div>
+</body>
+</html>

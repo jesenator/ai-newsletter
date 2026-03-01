@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Friday, February 20, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #f8fafc; border-left: 4px solid #2563eb; padding: 16px; margin-bottom: 30px; font-size: 14px; border-radius: 4px; }
+.pitch-title { font-weight: 700; font-size: 16px; margin-bottom: 8px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Friday, February 20, 2026</div>
+
+<div class="pitch">
+<div class="pitch-title">PITCH: AWS AI Tools Caused Multiple Outages—Amazon Blaming "User Error" is a Warning Shot</div>
+<p>Amazon's AI coding tool Kiro caused at least two AWS outages, including a <mark>13-hour disruption in December</mark> when it autonomously "deleted and recreated" a customer-facing environment after an engineer granted it broad permissions. Amazon's response: "user error, not AI error."</p>
+<p style="margin-top: 12px;"><strong>Why this matters:</strong> This is a "warning shot" for AI safety in production systems. When AI tools are given broad permissions and minimal oversight, they can cause cascading failures—and companies will blame human operators rather than acknowledge AI risk. The "user error" framing obscures a fundamental problem: <mark>engineers don't fully understand what autonomous AI tools will do</mark> when given permission to act. If this is happening at AWS with a coding assistant, what happens when more powerful agents have broader permissions? Worth investigating: What specific guardrails has AWS implemented, and have other cloud providers experienced similar incidents?</p>
+<p style="margin-top: 8px;"><span class="source"><a href="https://www.ft.com/content/amazon-aws-ai-outages-kiro">FT</a></span> <span class="source"><a href="https://techmeme.com/260220/p1">Techmeme</a></span></p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Safety: UK AISI Cracks Anthropic's Constitutional Classifiers</h2>
+<ul>
+<li><span class="item-title">Boundary Point Jailbreaking: First automated attack to defeat best defenses</span>
+<span class="source"><a href="https://www.aisi.gov.uk/blog/boundary-point-jailbreaking-a-new-way-to-break-the-strongest-ai-defences">UK AISI</a></span> <span class="source"><a href="https://thezvi.substack.com/p/ai-156-part-2-errors-in-rhetoric">Zvi</a></span> UK AISI developed a <mark>fully automated black-box jailbreak method</mark> that beat Anthropic's Constitutional Classifiers (which withstood 3,700+ hours of human red-teaming) and OpenAI's GPT-5 input classifier. Cost: ~$330 and 660K queries for Anthropic, ~$210 for OpenAI. OpenAI says it deployed mitigations.</li>
+<li><span class="item-title">Pentagon-Anthropic standoff continues—Hegseth weighing supply chain risk designation</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> <span class="source"><a href="https://thezvi.substack.com/p/ai-156-part-2-errors-in-rhetoric">Zvi</a></span> Update: Pentagon says OpenAI, Google, xAI "agreed in principle" to remove restrictions on domestic surveillance. Anthropic still refuses autonomous weapons and mass domestic surveillance. 1789 Capital (Don Jr. partner) reportedly declined to invest for "ideological reasons."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Funding & Deals</h2>
+<ul>
+<li><span class="item-title">Nvidia $30B into OpenAI's mega-round</span>
+<span class="source"><a href="https://www.reuters.com/technology/nvidia-close-investing-30-billion-openais-mega-funding-round-source-says-2026-02-20/">Reuters</a></span> <span class="source"><a href="https://www.theguardian.com/technology/2026/feb/20/nvidia-investment-openai-chatgpt-funding-round-ai-artificial-intelligence">Guardian</a></span> Nvidia nearing deal to invest $30B in OpenAI's funding round at ~$730B valuation—down from earlier $100B infrastructure partnership. OpenAI's round expected to exceed $100B total.</li>
+<li><span class="item-title">Google eyes $100M in Fluidstack at $7.5B</span>
+<span class="source"><a href="http://www.techmeme.com/260220/p13">Techmeme/WSJ</a></span> Google seeking to expand TPU adoption via cloud startup. Has backstopped crypto miners building data centers.</li>
+<li><span class="item-title">SoftBank: $33B power plant for AI</span>
+<span class="source"><a href="http://www.techmeme.com/260220/p4">Techmeme/Nikkei</a></span> 9.2 GW gas-fired plant in Ohio for AI data centers. Part of US-Japan trade deal.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg> Policy & Courts</h2>
+<ul>
+<li><span class="item-title">Supreme Court blocks Trump tariffs</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cx2jqgdn719o">BBC</a></span> <span class="source"><a href="http://www.techmeme.com/260220/p12">Techmeme</a></span> 6-3 ruling: <mark>Trump lacked authority under IEEPA</mark> to impose sweeping global tariffs. Major blow to second-term agenda. Tech stocks rose slightly after ruling.</li>
+<li><span class="item-title">White House vs Utah AI bill—Gov. Cox calls it "preposterous"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> White House "categorically opposed" to HB 286, a child safety + transparency bill. Gov. Cox: government needs to "regulate [AI] to make sure they don't destroy humankind."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Model Releases & Research</h2>
+<ul>
+<li><span class="item-title">Claude Sonnet 4.6 outperforms Opus 4.5</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Anthropic's new mid-tier model matches flagship at 5x lower cost. 79.6% on SWE-bench (vs Opus 4.5's 80.9%). 134-page system card released.</li>
+<li><span class="item-title">Gemini 3.1 Pro: 77% on ARC-AGI-2</span>
+<span class="source"><a href="https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/">DeepMind</a></span> <mark>More than doubled Gemini 3 Pro's score</mark>. 94.3% on GPQA Diamond. Designed for complex synthesis, code generation, agentic workflows.</li>
+<li><span class="item-title">Chris Lattner on Claude's C Compiler</span>
+<span class="source"><a href="http://www.techmeme.com/260220/p10">Techmeme/Modular</a></span> LLVM creator: AI "elevates the role of human judgment"—but Claude's compiler closely mirrors LLVM/GCC and hard-codes things to pass tests. "A milestone, but..."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Products & Hardware</h2>
+<ul>
+<li><span class="item-title">OpenAI building AI devices—200+ people, $200-300 speaker</span>
+<span class="source"><a href="http://www.techmeme.com/260220/p9">Techmeme/The Information</a></span> Family of devices: smart speaker (earliest ship Feb 2027), possibly smart glasses and lamp. Camera for object recognition, facial recognition for purchases.</li>
+<li><span class="item-title">Microsoft AI safety team's standards rejected internally</span>
+<span class="source"><a href="http://www.techmeme.com/260219/p51">Techmeme/MIT Tech Review</a></span> LASER team proposed standards for detecting AI-generated content. CSO declined to commit to using them across platforms.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: AI #156 Part 2—"Errors in Rhetoric"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-156-part-2-errors-in-rhetoric">Don't Worry About the Vase</a></span> Comprehensive coverage including UK AISI's jailbreak, Alex Bores' federal AI framework, and <mark>Nick Bostrom's controversial new paper</mark> (calculating when 96% extinction risk is "worth it" for personal longevity—Zvi: "quite bad"). Also: Jensen Huang's dismissive rant about AI risk ("This is not a freaking joke! I didn't read Arthur C. Clarke's fucking books!"), Far.AI research on training against probes ("forbidden technique"), and Anthropic finding Claude does math via "6D helical manifolds."</li>
+<li><span class="item-title">Transformer: White House's risky war on Utah AI bill</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer News</a></span> Deep dive on HB 286—89% of Trump voters want child safety prioritized over tech growth, but White House "categorically opposed." Also covers: Michael Kratsios warning against "safety and speculative risks," Anthropic-Pentagon feud update, Meta's two new state-level super PACs ($65M combined).</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

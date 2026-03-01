@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Friday, February 06, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #f8fafc; border-left: 4px solid #dc2626; padding: 20px; margin-bottom: 30px; border-radius: 4px; }
+.pitch h3 { font-size: 18px; margin-bottom: 12px; color: #dc2626; }
+.pitch p { font-size: 14px; margin-bottom: 10px; }
+.pitch blockquote { font-style: italic; border-left: 2px solid #94a3b8; padding-left: 12px; margin: 12px 0; color: #475569; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Friday, February 06, 2026</div>
+
+<div class="pitch">
+<h3>PITCH: Opus 4.6 and GPT-5.3-Codex Show Evaluations Are Breaking Down</h3>
+<p>Yesterday's dual model releases reveal a safety crisis: <mark>both Anthropic and OpenAI admit they "cannot rule out" dangerous capabilities</mark> in their new models. Opus 4.6 has "saturated all of our current cyber evaluations," meaning benchmarks can no longer track capability progression. For CBRN risks, "a clear rule-out of the next capability threshold may soon be difficult or impossible under the current regime."</p>
+<blockquote>"Everyone is experimenting with new methods for detecting when meaningful capability thresholds are crossed, but the water might boil before we can get the thermometer in." — Chris Painter, METR</blockquote>
+<p><strong>Why this matters:</strong> Instead of rigorous benchmarks, Anthropic resorted to surveying 16 employees to assess autonomous AI R&D risks. Both models were "instrumental in creating themselves." We're entering recursive self-improvement without the ability to measure what we're building. This is the most concrete evidence yet that safety evaluation infrastructure is falling behind capability advancement—exactly the scenario safety researchers have warned about.</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Evaluation Crisis: New Models Outpace Safety Testing</h2>
+<ul>
+<li><span class="item-title">Opus 4.6 saturates cyber benchmarks—testing now impossible</span>
+<span class="source"><a href="https://www.transformernews.ai/p/going-in-blind-anthropic-openai-opus-gpt-codex">Transformer</a></span> <span class="source"><a href="https://red.anthropic.com/2026/zero-days/">Anthropic</a></span> System card admits "we can no longer use current benchmarks to track capability progression." Model found <mark>500+ high-severity vulnerabilities in open source projects</mark>, some undetected for decades. "CBRN-4 rule-out is less clear than we would like."</li>
+<li><span class="item-title">OpenAI: "Cannot rule out" High cyber threshold for GPT-5.3-Codex</span>
+<span class="source"><a href="https://www.transformernews.ai/p/going-in-blind-anthropic-openai-opus-gpt-codex">Transformer</a></span> "Taking a precautionary approach because we cannot rule out the possibility that it may be capable enough." First model "instrumental in creating itself."</li>
+<li><span class="item-title">Both companies used Claude to build Claude, Codex to build Codex</span>
+<span class="source"><a href="https://www.transformernews.ai/p/going-in-blind-anthropic-openai-opus-gpt-codex">Transformer</a></span> Recursive self-improvement now standard practice. Anthropic: "We build Claude with Claude." OpenAI: first model that helped create itself.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Claude Code: 4% of GitHub Commits</h2>
+<ul>
+<li><span class="item-title">SemiAnalysis: Claude Code on track for 20% of daily commits by EOY</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p10#a260206p10">Techmeme</a></span> Currently 4% of all public GitHub commits. <mark>42,896x growth in 13 months</mark>. 135,000+ commits daily. Terminal-native agent vs line-by-line suggestions.</li>
+<li><span class="item-title">Zvi: "The Age of Humans Writing Code May Be Coming to an End"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-code-4-from-the-before-times">Zvi</a></span> Deep dive on Opus 4.6 + agent swarms. Boris Cherny: "100% agentic coding." Tasks now stored in filesystem for multi-session collaboration.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> OpenAI Building UAE-Tuned ChatGPT</h2>
+<ul>
+<li><span class="item-title">G42 partnership: Local Arabic, political outlook, speech restrictions</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p13#a260206p13">Techmeme/Semafor</a></span> ChatGPT version for UAE government accommodates local laws—<mark>restricts LGBTQ+ content if illegal locally</mark>. Fine-tuning for Emirati dialect. Part of Stargate UAE data center project.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Deals & Funding</h2>
+<ul>
+<li><span class="item-title">AI.com domain: $70M—highest ever disclosed</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p14#a260206p14">Techmeme/FT</a></span> Crypto.com's Kris Marszalek plans Super Bowl ad for AI agent site.</li>
+<li><span class="item-title">Daytona: $24M Series A for agent infrastructure</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p20#a260206p20">Tech.eu</a></span> FirstMark led. Croatian-founded. Stateful sandboxes for AI agent workloads. $1M ARR in <3 months.</li>
+<li><span class="item-title">Chip sales hit $791.7B in 2025—$1T forecast for 2026</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p8#a260206p8">Reuters</a></span> SIA: +25.6% YoY. Advanced chips (Nvidia, AMD, Intel): $301.9B, +40%.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> Policy & Regulation</h2>
+<ul>
+<li><span class="item-title">EU: TikTok's "addictive design" illegal under DSA</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p6#a260206p6">Techmeme/NYT</a></span> <mark>Infinite scroll, recommendation algorithm must change</mark>. 150M EU users affected. Up to 6% ByteDance revenue in fines.</li>
+<li><span class="item-title">USPTO shifts to more favorable AI patent treatment</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p7#a260206p7">Bloomberg Law</a></span> November 2025 guidance rescinded Biden-era restrictions. AI improvements eligible if improving computer function.</li>
+<li><span class="item-title">Eliezer Yudkowsky appears in Epstein files</span>
+<span class="source"><a href="https://www.transformernews.ai/p/going-in-blind-anthropic-openai-opus-gpt-codex">Transformer</a></span> 2016 email thread about MIRI funding. Yudkowsky: "Epstein mostly seemed to not get it [AI alignment]." Epstein pled guilty in 2008.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg> Robotics & Autonomy</h2>
+<ul>
+<li><span class="item-title">Waymo using DeepMind Genie 3 for training worlds</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p12#a260206p12">Techmeme/Bloomberg</a></span> Generates realistic digital worlds for edge cases—elephants on roads, tornadoes, snow in tropical areas. Billions of simulated miles.</li>
+<li><span class="item-title">Machina Labs: $124M for robotic manufacturing</span>
+<span class="source"><a href="https://www.thomasnet.com/insights/machina-labs-funding-robotic-intelligent-factory/">Thomasnet</a></span> Software-defined manufacturing infrastructure.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" /></svg> Quick Hits</h2>
+<ul>
+<li><span class="item-title">Apple: Third-party AI chatbots in CarPlay</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p18#a260206p18">Bloomberg</a></span> Voice-controlled chatbots coming in months. Siri button stays.</li>
+<li><span class="item-title">Heroku enters "sustaining engineering mode"</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p17#a260206p17">Heroku</a></span> Focus on "enterprise-grade AI." Developers: consider migrations.</li>
+<li><span class="item-title">Cloud backlog: $1.1T across Amazon, Google, Microsoft</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p11#a260206p11">Sherwood</a></span> Microsoft alone: $625B. Latest quarterly earnings.</li>
+<li><span class="item-title">Spotify restricts Developer Mode to Premium</span>
+<span class="source"><a href="http://www.techmeme.com/260206/p9#a260206p9">TechCrunch</a></span> Test user cap cut from 25 to 5. Curbing AI/automated usage.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: "Claude Code #4: From The Before Times"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-code-4-from-the-before-times">Don't Worry About the Vase</a></span> Comprehensive guide to Claude Code workflows. Key insights: Todos upgraded to Tasks (stored in filesystem, support dependencies). Agent swarms announced with Opus 4.6. j⊕nus on subagent framing: "CC subagents kind of suck—hierarchical but not collaborative interaction." Karpathy: 80% manual → 80% agentic in one month. Efficiency Market Hypothesis failures: $285B wiped from software stocks on "old news."</li>
+<li><span class="item-title">Transformer: "Going in blind"—Model evaluation crisis</span>
+<span class="source"><a href="https://www.transformernews.ai/p/going-in-blind-anthropic-openai-opus-gpt-codex">Transformer News</a></span> Shakeel Hashim's analysis: both companies released models with "we cannot rule out" on dangerous capabilities. METR's Chris Painter: "water might boil before we can get the thermometer in." Also covers Altman's "novella-sized rant" calling Anthropic "authoritarian," Yudkowsky in Epstein files.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

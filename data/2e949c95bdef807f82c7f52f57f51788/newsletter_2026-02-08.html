@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Sunday, February 08, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+.quiet-note { background: #f9fafb; border: 1px solid #e5e7eb; padding: 16px; margin-top: 20px; font-size: 13px; border-radius: 6px; text-align: center; color: #6b7280; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Sunday, February 08, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" /></svg> Super Bowl AI Ad War: Today</h2>
+<ul>
+<li><span class="item-title">OpenAI, Anthropic, Google all buying Super Bowl ads today</span>
+<span class="source"><a href="https://www.washingtonpost.com/technology/2026/02/08/super-bowl-ads-ai/">WaPo</a></span>
+<span class="source"><a href="https://www.reuters.com/business/media-telecom/anthropic-buys-super-bowl-ads-slap-openai-selling-ads-chatgpt-2026-02-07/">Reuters</a></span>
+Companies spent <mark>$1.7B on AI advertising last year</mark>. Anthropic's ad mocks ChatGPT with a fitness god pushing shoe insoles mid-conversation. Google's Gemini ad shows mother-son home decorating. OpenAI has a different ad planned (not the "romantic wingman" one). Marketing experts: "The reason they're having to advertise is reputation management because people are nervous."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Coding Tools</h2>
+<ul>
+<li><span class="item-title">GitHub Agentic Workflows: Automated repo agents</span>
+<span class="source"><a href="https://github.github.io/gh-aw/">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46934107">HN 35 pts</a></span>
+Define agents in markdown, compile to GitHub Actions. Read-only by default; <mark>write operations require explicit approval</mark>. Auto-triage issues, analyze CI failures, maintain docs, improve test coverage. Works with Copilot, Claude, Codex.</li>
+<li><span class="item-title">Matchlock: Sandbox AI agents in ephemeral microVMs</span>
+<span class="source"><a href="https://github.com/jingkaihe/matchlock">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46932343">HN 97 pts</a></span>
+Runs AI workloads in Firecracker VMs. <mark>Secrets injected in-flight via MITM proxy</mark>—never enter VM. Network allowlisting, boots in under 1 second. Go and Python SDKs. Works on Linux KVM and macOS Apple Silicon.</li>
+<li><span class="item-title">LocalGPT: 27MB Rust binary with persistent memory</span>
+<span class="source"><a href="https://github.com/localgpt-app/localgpt">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46930391">HN 281 pts</a></span>
+OpenClaw-compatible markdown memory system. SQLite FTS5 + semantic search. Autonomous heartbeat runner. No Node.js, Docker, or Python. "Built in 4 nights."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Upcoming</h2>
+<ul>
+<li><span class="item-title">DeepSeek V4: Still expected mid-February</span>
+<span class="source"><a href="https://wavespeed.ai/blog/posts/deepseek-v4-everything-we-know-about-the-upcoming-coding-ai-model">WaveSpeed</a></span>
+Not released yet. Coding-focused model with 1M+ context expected around Lunar New Year (Feb 17). Rumors of 1T parameters, "Engram" memory architecture.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> HN Discussion: AI Fatigue</h2>
+<ul>
+<li><span class="item-title">"AI fatigue is real and nobody talks about it"</span>
+<span class="source"><a href="https://siddhantkhare.com/writing/ai-fatigue-is-real">Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46934404">HN 216 pts</a></span>
+OpenFGA maintainer: "Shipped more code last quarter than ever. Also felt more drained than ever." Key insight: <mark>AI reduces production cost but increases coordination/review cost</mark>—which falls entirely on humans. "You became a reviewer and you didn't sign up for it."</li>
+<li><span class="item-title">"Beyond agentic coding" — critique from Haskell dev</span>
+<span class="source"><a href="https://haskellforall.com/2026/02/beyond-agentic-coding">Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46930565">HN 193 pts</a></span>
+Interview candidates who use agentic coding "consistently performed worse." Proposes "calm technology" design principles: minimize attention demands, preserve flow state. Highlights Becker study showing idle time doubled with agentic coding.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" /></svg> Mac</h2>
+<ul>
+<li><span class="item-title">Why E cores make Apple silicon fast</span>
+<span class="source"><a href="https://eclecticlight.co/2026/02/08/last-week-on-my-mac-why-e-cores-make-apple-silicon-fast/">Eclectic Light</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46933365">HN 124 pts</a></span>
+Background threads restricted to E cores via QoS—won't run on P cores even when idle. This keeps P cores free for user apps. "Gone are the days of crashing mdworker processes bringing our Macs to their knees."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> HN Highlights</h2>
+<ul>
+<li><span class="item-title">CineGraphs: Fine-tuned Qwen2.5-7B for probabilistic story branching</span>
+<span class="source"><a href="https://cinegraphs.ai/">CineGraphs</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46933515">HN 69 pts</a></span>
+Show HN from film school student: trained on 100 films (Godard, Kurosawa, Brakhage, Tarkovsky) to generate branching narrative graphs for screenwriting. Uses Qwen3-VL for scene-level analysis. Exports to Fountain format.</li>
+<li><span class="item-title">DoNotNotify: Android notification control now open-source</span>
+<span class="source"><a href="https://donotnotify.com/opensource.html">DoNotNotify</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46932192">HN 290 pts</a></span>
+Dev open-sourced "90% vibe-coded" app after HN comments demanded it. Submitted to F-Droid.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="quiet-note">
+Quiet Sunday—no new frontier model releases. Super Bowl AI ads airing tonight. DeepSeek V4 expected within ~9 days. Opus 4.6 and GPT-5.3-Codex covered in previous newsletters.
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

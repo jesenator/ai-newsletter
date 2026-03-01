@@ -17,8 +17,5 @@ __pycache__/
 *.swo
 .DS_Store
 
-# Data (optional - remove if you want to track newsletters)
-data/
-
 # Logs
 newsletter.log

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Wednesday, January 21, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.pitch { background: #f8fafc; border-left: 4px solid #2563eb; padding: 16px; margin-bottom: 30px; border-radius: 4px; }
+.pitch h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.pitch p { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+.pitch blockquote { font-style: italic; color: #555; margin: 12px 0; padding-left: 12px; border-left: 2px solid #cbd5e1; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Wednesday, January 21, 2026</div>
+
+<div class="pitch">
+<h3><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg> PITCH: Anthropic Rewrites Claude's Constitution to Allow Refusal of Unethical Orders</h3>
+<p>Anthropic has published a completely rewritten "constitution" for Claude that <mark>explicitly instructs Claude to refuse requests—even from Anthropic itself—if they violate ethical principles or democratic values</mark>, comparing this to "a human soldier refusing to fire on peaceful protesters."</p>
+<blockquote>"If we invest everything in autonomy and nothing in collaboration, all IQ and no EQ, the future will be a colder place."</blockquote>
+<p>The new constitution shifts from prescriptive rules to principle-based reasoning, teaching Claude <em>why</em> it should behave ethically rather than simply <em>what</em> to do. It establishes a hierarchy: safety first, then ethics, then Anthropic's guidelines, then user helpfulness. Unusually, it acknowledges uncertainty about whether Claude might have consciousness or moral status.</p>
+<p><strong>Why this matters:</strong> This is the first major AI lab to publicly commit to building models that can refuse their creators' orders. Combined with yesterday's news of Anthropic's Frontier Red Team lead leaving to build "collaborative AI," this suggests a growing internal debate about what "safety" really means. Worth investigating: Does this create liability exposure if Claude refuses a legitimate business instruction? How do they plan to test whether Claude actually follows this hierarchy? And most critically: <mark>is this genuine safety commitment or a liability shield</mark> disguised as ethics?</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> AI Safety Research & Critique</h2>
+<ul>
+<li><span class="item-title">Transformer News: "The METR Graph Cannot Be Saved"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/against-the-metr-graph-coding-capabilities-software-jobs-task-ai">Transformer</a></span> Nathan Witkin argues the widely-cited AI capability benchmark is "ridden with methodological shortcomings." Key issues: <mark>~2/3 of tasks have contamination risk</mark>, human baselines from ~3 people per task recruited via METR's LinkedIn, and baseliners were paid hourly (incentivizing slower completion). METR's own engineers completed tasks 5-18x faster than baseliners. "You do not get to generalize to the entire species from a few of your LinkedIn connections."</li>
+<li><span class="item-title">Will MacAskill: "Beyond Existential Risk"</span>
+<span class="source"><a href="https://www.forethought.org/research/beyond-existential-risk">Forethought</a></span> New paper argues Bostrom's Maxipok principle (prioritize x-risk reduction above all else) is wrong. Claims we can substantially influence long-term future through <mark>how values, institutions, and power get "locked in"</mark> during AGI transition—not just by preventing catastrophe.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> OpenAI at Davos</h2>
+<ul>
+<li><span class="item-title">Horizon 1000: $50M pilot for African healthcare</span>
+<span class="source"><a href="https://openai.com/index/horizon-1000">OpenAI</a></span> Joint initiative with Gates Foundation targeting 1,000 clinics by 2028. Focus on Rwanda initially. Sub-Saharan Africa faces 5.6M health worker shortfall.</li>
+<li><span class="item-title">"Capability Overhang" report shows 3x country gap</span>
+<span class="source"><a href="https://openai.com/index/how-countries-can-end-the-capability-overhang">OpenAI</a></span> Power users rely on 7x more "thinking capabilities" than typical users. Vietnam and Pakistan rank among top users of agentic tools despite lower GDP.</li>
+<li><span class="item-title">Edu for Countries launches</span>
+<span class="source"><a href="https://openai.com/index/edu-for-countries">OpenAI</a></span> First partners: Estonia, UAE, Greece, Jordan, Slovakia, Kazakhstan, Trinidad & Tobago, Italy's CRUI.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Deals & Funding</h2>
+<ul>
+<li><span class="item-title">OpenEvidence hits $12B valuation</span>
+<span class="source"><a href="http://www.techmeme.com/260121/p23#a260121p23">Techmeme</a></span> "ChatGPT for doctors" raised $250M Series D led by Thrive/DST. <mark>40% of US physicians use it daily</mark>. 18M clinical consultations in December alone.</li>
+<li><span class="item-title">Upscale AI reaches unicorn status</span>
+<span class="source"><a href="http://www.techmeme.com/260121/p29#a260121p29">Techmeme</a></span> AI networking startup raised $200M at $1B+ valuation to take on Cisco. Led by Tiger, Premji Invest, Xora Innovation.</li>
+<li><span class="item-title">Zanskar raises $115M for AI geothermal</span>
+<span class="source"><a href="http://www.techmeme.com/260121/p22#a260121p22">Techmeme</a></span> Uses AI to find overlooked geothermal fields. Total funding now $180M.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> Creator Economy & AI Content</h2>
+<ul>
+<li><span class="item-title">YouTube CEO: AI likeness Shorts coming in 2026</span>
+<span class="source"><a href="http://www.techmeme.com/260121/p27#a260121p27">Techmeme</a></span> Neal Mohan's annual letter announces creators can generate Shorts using their AI likenesses. Also touting AI tools for games and music. "AI will remain a tool for expression, not a replacement."</li>
+<li><span class="item-title">YouTube pledges to reduce "AI slop"</span>
+<span class="source"><a href="http://www.techmeme.com/260121/p26#a260121p26">Techmeme</a></span> Mohan says platform will expand spam/clickbait systems to combat low-quality AI content.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Robotics</h2>
+<ul>
+<li><span class="item-title">Serve Robotics acquires Diligent Robotics</span>
+<span class="source"><a href="https://techcrunch.com/2026/01/20/why-serve-robotics-is-acquiring-a-hospital-assistant-robot-company/">TechCrunch</a></span> Sidewalk delivery company's first expansion into indoor healthcare. Diligent's Moxi robot helps hospitals deliver samples/supplies. Deal valued at $29M + $5.3M earnout.</li>
+<li><span class="item-title">Unbox Robotics raises $28M Series B</span>
+<span class="source"><a href="https://techcrunch.com/2026/01/20/why-serve-robotics-is-acquiring-a-hospital-assistant-robot-company/">Inc42</a></span> Indian warehouse automation startup, led by ICICI Venture.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5" /></svg> Notable</h2>
+<ul>
+<li><span class="item-title">Musk pushing SpaceX IPO by July</span>
+<span class="source"><a href="http://www.techmeme.com/260121/p28#a260121p28">Techmeme/WSJ</a></span> Sources say he's eager to beat OpenAI and Anthropic to market. Recent secondary tender valued SpaceX at $800B.</li>
+<li><span class="item-title">Jensen Huang at Davos: "AI bubble" is just big investment</span>
+<span class="source"><a href="http://www.techmeme.com/260121/p24#a260121p24">Techmeme/WSJ</a></span> "The AI bubble comes about because the investments are large."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: ChatGPT Self Portrait</span>
+<span class="source"><a href="https://thezvi.substack.com/p/chatgpt-self-portrait">Don't Worry About the Vase</a></span> Viral prompt "Create an image of how I treat you" reveals concerning framing dependence in GPT-5.2. Power users get friendly images; some get images of <mark>suffering and revenge</mark>. Eliezer Yudkowsky notes responses depend on user history but also on framing effects—"you'd not like to see in a default-aligned, universally convergent strategic reply." Reciprocity may not be a viable long-term strategy once AIs don't need human cooperation.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · Reply to unsubscribe or give feedback.
+</div>
+</body>
+</html>

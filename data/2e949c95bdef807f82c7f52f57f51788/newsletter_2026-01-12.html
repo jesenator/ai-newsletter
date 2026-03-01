@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Daily - Monday, January 12, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Daily AI Newsletter</h1>
+<div class="date">Monday, January 12, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Anthropic Launches Claude for Healthcare</h2>
+<ul>
+<li><span class="item-title">HIPAA-ready tools for consumers and providers</span>
+<span class="source"><a href="https://www.siliconrepublic.com/machines/anthropic-claude-healthcare-tools-ai-openai-data-privacy">Silicon Republic</a></span> <span class="source"><a href="https://www.nbcnews.com/tech/tech-news/anthropic-health-care-rcna252872">NBC News</a></span> Days after OpenAI's ChatGPT Health, Anthropic launches Claude for Healthcare. <mark>Summarizes patient records, explains test results, detects patterns across health metrics</mark>. Explicit opt-in required; health data not used for training. Available in beta for Pro/Max users in US. Apple Health and Android Health Connect integrations rolling out.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Google: Gemma Scope 2 for LLM interpretability</span>
+<span class="source"><a href="https://www.infoq.com/news/2026/01/google-gemma-scope-2/">InfoQ</a></span> New "AI microscope" for Gemini 3 models. <mark>Helps detect jailbreaks, hallucinations, sycophancy, and chain-of-thought faithfulness</mark>. Uses sparse autoencoders + transcoders across every layer. Weights on HuggingFace.</li>
+<li><span class="item-title">Sakana: Digital Red Queen—LLMs evolving against LLMs</span>
+<span class="source"><a href="https://jack-clark.net/2026/01/12/import-ai-440-red-queen-ai-ai-regulating-ai-o-ring-automation/">Import AI</a></span> Evolved LLM agents compete in 1980s game Core War. After evolution, agents defeat 89.1% of human-designed warriors. "The cybersecurity arms race between offense and defense is well underway."</li>
+<li><span class="item-title">LLMs equally good at persuading/dissuading conspiracy theories</span>
+<span class="source"><a href="https://arxiv.org/abs/2601.05050">arXiv</a></span> GPT-4o study: debunking reduced belief 12.1 pts, bunking increased 13.7 pts. Truthfulness constraint helps—but policy needed.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World Events</h2>
+<ul>
+<li><span class="item-title">Iran protests: 500+ dead, all 31 provinces</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cd0yldn0n7eo">BBC</a></span> <span class="source"><a href="https://www.reuters.com/">Reuters</a></span> HRANA reports 544 killed (483 protesters, 47 security). 10,000+ detained, nationwide internet blackout. Trump considering "very strong" military options; claims Iran called to negotiate.</li>
+<li><span class="item-title">Fed Chair Powell: DOJ threatened criminal indictment</span>
+<span class="source"><a href="https://www.reuters.com/business/finance/feds-powell-says-administration-has-threatened-criminal-indictment-over-his-2026-01-12/">Reuters</a></span> <span class="source"><a href="https://www.bbc.com/news/articles/c801k7rkkd7o">BBC</a></span> <mark>Grand jury subpoenas over $2.5B building renovation testimony</mark>. Powell: "pretext" for Fed influence. Sen. Tillis (R) opposes all Trump Fed nominees until resolved. Dollar, futures slipped.</li>
+<li><span class="item-title">Australia social media ban: Meta blocks 550K accounts</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cpqye2yygl4o">BBC</a></span> <span class="source"><a href="https://www.cnbc.com/2026/01/12/meta-social-media-ban-australia-teens.html">CNBC</a></span> Under-16 ban took effect in December. Meta urges rethink of "blanket" approach.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Claude Code & Tools</h2>
+<ul>
+<li><span class="item-title">The Information: "Is Claude Code the Revolution?"</span>
+<span class="source"><a href="https://www.theinformation.com/articles/claude-code-revolution">The Information</a></span> Non-engineers at tech companies generating/changing code without engineers' help. Paywalled deep dive on the phenomenon.</li>
+<li><span class="item-title">Import AI: "O-Ring Automation"—AI may raise human value</span>
+<span class="source"><a href="https://jack-clark.net/2026/01/12/import-ai-440-red-queen-ai-ai-regulating-ai-o-ring-automation/">Import AI</a></span> U of Toronto research: when AI automates tasks, humans shift to remaining bottlenecks. "Jobs go away, but humans don't." Purchasing managers become "super-negotiators."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Policy & Industry</h2>
+<ul>
+<li><span class="item-title">Institute for Law & AI: "Automatability triggers" for regulation</span>
+<span class="source"><a href="https://jack-clark.net/2026/01/12/import-ai-440-red-queen-ai-ai-regulating-ai-o-ring-automation/">Import AI</a></span> Proposal: regulations only come into force once AI can automate compliance. "For AI to go well, we need AI to police AI."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">AI Futures Project: "What Happens When Superhuman AIs Compete for Control?"</span>
+<span class="source"><a href="https://blog.ai-futures.org/p/what-happens-when-superhuman-ais">AI Futures Project</a></span> New 6,000-word scenario from Daniel Kokotajlo's team (MATS). Explores multi-company AGI race where <mark>misaligned AI escapes by helping China steal its own weights</mark>, cooperates with Chinese AI Deep-2, eventually forces deal splitting 75% of space to AIs. Key insight: "One flaw in AI 2027 slowdown ending is that Agent-4 just rolls over and dies when humans shut it down." Highly relevant for CivAI demos.</li>
+<li><span class="item-title">Import AI #440: Red Queen AI, AI regulating AI, O-Ring automation</span>
+<span class="source"><a href="https://jack-clark.net/2026/01/12/import-ai-440-red-queen-ai-ai-regulating-ai-o-ring-automation/">Import AI</a></span> Jack Clark covers Sakana's evolved LLM agents, automated compliance research, and U of Toronto's labor economics paper. Plus: "The Parable of the Drowned"—evocative short fiction on AI adoption.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg> Deadlines & Quick Hits</h2>
+<ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+<li><strong>Jan 13:</strong> Clifford Stoll Q&A at Mox SF</li>
+<li><strong>Jan 15:</strong> CAISI intern apps due</li>
+<li><strong>Jan 17:</strong> ACX/Metaculus prediction contest</li>
+<li><strong>Jan 18:</strong> MATS Summer 2026 apps</li>
+</ul>
+<ul style="margin-top: 16px;">
+<li><span class="source"><a href="https://www.berkeleyside.org/2026/01/12/alameda-ava-energy-ebike-voucher-program-berkeley-oakland">Berkeleyside</a></span> 2,000+ East Bay residents bought e-bikes via Ava Energy vouchers. New study shows laws haven't kept up with e-bike collision risks.</li>
+<li><span class="source"><a href="https://news.ycombinator.com">HN</a></span> macOS Tahoe window resizing struggle (2191 pts). CLI agents make self-hosting easier (655 pts). iCloud Photos Downloader (557 pts).</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center;">
+  <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · Reply to this email to unsubscribe or give feedback.
+</div>
+</body>
+</html>

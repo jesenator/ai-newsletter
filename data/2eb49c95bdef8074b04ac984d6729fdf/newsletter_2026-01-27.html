@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's Mom's Newsletter - Tuesday, January 27, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #fefcf8; color: #1a1a1a; line-height: 1.7; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: relative; border: 3px solid #d4a5a5; }
+.flower-border { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); }
+.corner-flower { position: absolute; width: 50px; height: 50px; }
+.corner-flower.tl { top: 5px; left: 5px; }
+.corner-flower.tr { top: 5px; right: 5px; transform: scaleX(-1); }
+.corner-flower.bl { bottom: 5px; left: 5px; transform: scaleY(-1); }
+.corner-flower.br { bottom: 5px; right: 5px; transform: scale(-1, -1); }
+h1 { font-size: 26px; margin-bottom: 8px; font-weight: 700; color: #5a3e3e; text-align: center; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; text-align: center; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 25px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #c9a0a0; display: flex; align-items: center; gap: 8px; color: #5a3e3e; }
+ul { list-style: none; }
+li { margin-bottom: 14px; padding-left: 0; font-size: 13px; line-height: 1.7; }
+.item-title { font-weight: 700; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f5ebe0; color: #5a3e3e; padding: 2px 7px; border-radius: 3px; font-size: 10px; font-weight: 600; margin-right: 5px; }
+a { color: #8b5a5a; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #8b5a5a; }
+mark { background-color: #fef3c7; padding: 2px 4px; border-radius: 2px; font-weight: 600; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Corner flowers -->
+<svg class="corner-flower tl" viewBox="0 0 50 50"><circle cx="25" cy="20" r="4" fill="#e8a0a0"/><ellipse cx="25" cy="12" rx="4" ry="6" fill="#f5b5b5"/><ellipse cx="18" cy="17" rx="4" ry="6" fill="#f5c5c5" transform="rotate(-45 18 17)"/><ellipse cx="32" cy="17" rx="4" ry="6" fill="#f5c5c5" transform="rotate(45 32 17)"/><ellipse cx="20" cy="25" rx="4" ry="6" fill="#f5d5d5" transform="rotate(-90 20 25)"/><ellipse cx="30" cy="25" rx="4" ry="6" fill="#f5d5d5" transform="rotate(90 30 25)"/><path d="M25 24 Q25 35 25 45" stroke="#6a9a6a" stroke-width="2" fill="none"/><ellipse cx="20" cy="38" rx="6" ry="3" fill="#8bc78b" transform="rotate(-30 20 38)"/></svg>
+<svg class="corner-flower tr" viewBox="0 0 50 50"><circle cx="25" cy="20" r="4" fill="#a0c8e8"/><ellipse cx="25" cy="12" rx="4" ry="6" fill="#b5d5f5"/><ellipse cx="18" cy="17" rx="4" ry="6" fill="#c5e0f5" transform="rotate(-45 18 17)"/><ellipse cx="32" cy="17" rx="4" ry="6" fill="#c5e0f5" transform="rotate(45 32 17)"/><ellipse cx="20" cy="25" rx="4" ry="6" fill="#d5eaf5" transform="rotate(-90 20 25)"/><ellipse cx="30" cy="25" rx="4" ry="6" fill="#d5eaf5" transform="rotate(90 30 25)"/><path d="M25 24 Q25 35 25 45" stroke="#6a9a6a" stroke-width="2" fill="none"/><ellipse cx="30" cy="38" rx="6" ry="3" fill="#8bc78b" transform="rotate(30 30 38)"/></svg>
+<svg class="corner-flower bl" viewBox="0 0 50 50"><circle cx="25" cy="20" r="4" fill="#e8d0a0"/><ellipse cx="25" cy="12" rx="4" ry="6" fill="#f5e0b5"/><ellipse cx="18" cy="17" rx="4" ry="6" fill="#f5e5c5" transform="rotate(-45 18 17)"/><ellipse cx="32" cy="17" rx="4" ry="6" fill="#f5e5c5" transform="rotate(45 32 17)"/><ellipse cx="20" cy="25" rx="4" ry="6" fill="#f5edd5" transform="rotate(-90 20 25)"/><ellipse cx="30" cy="25" rx="4" ry="6" fill="#f5edd5" transform="rotate(90 30 25)"/><path d="M25 24 Q25 35 25 45" stroke="#6a9a6a" stroke-width="2" fill="none"/><ellipse cx="20" cy="38" rx="6" ry="3" fill="#8bc78b" transform="rotate(-30 20 38)"/></svg>
+<svg class="corner-flower br" viewBox="0 0 50 50"><circle cx="25" cy="20" r="4" fill="#d0a0e8"/><ellipse cx="25" cy="12" rx="4" ry="6" fill="#e0b5f5"/><ellipse cx="18" cy="17" rx="4" ry="6" fill="#e5c5f5" transform="rotate(-45 18 17)"/><ellipse cx="32" cy="17" rx="4" ry="6" fill="#e5c5f5" transform="rotate(45 32 17)"/><ellipse cx="20" cy="25" rx="4" ry="6" fill="#edd5f5" transform="rotate(-90 20 25)"/><ellipse cx="30" cy="25" rx="4" ry="6" fill="#edd5f5" transform="rotate(90 30 25)"/><path d="M25 24 Q25 35 25 45" stroke="#6a9a6a" stroke-width="2" fill="none"/><ellipse cx="30" cy="38" rx="6" ry="3" fill="#8bc78b" transform="rotate(30 30 38)"/></svg>
+
+<h1>Jesse's Mom's Newsletter</h1>
+<div class="date">Tuesday, January 27, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World Events</h2>
+<ul>
+<li><img src="https://www.aljazeera.com/wp-content/uploads/2026/01/Interactive_ICE_killed_Jan27_2026-01-1769512374.png" alt="ICE deaths graphic" class="image-float"><span class="item-title">Update: At least 9 ICE-related deaths in 2026; protests intensify</span>
+<span class="source"><a href="https://www.aljazeera.com/news/2026/1/27/us-witnessed-many-ice-related-deaths-in-2026-here-are-their-stories">Al Jazeera</a></span> <span class="source"><a href="https://www.nytimes.com/2026/01/27/us/minneapolis-nicollet-avenue-alex-pretti.html">NYT</a></span> <mark>6 immigrants died in ICE custody</mark> + 3 shot by agents. Cuban detainee death ruled <b>homicide by asphyxiation</b> after guards restrained him. 26 arrested at Minneapolis protest outside hotel where Border Patrol chief staying.</li>
+<li><span class="item-title">U.S. officials to present military options against Iran</span>
+<span class="source"><a href="https://understandingwar.org/research/middle-east/iran-update-january-26-2026/">ISW</a></span> <span class="source"><a href="https://www.reuters.com/business/aerospace-defense/us-aircraft-carrier-enters-middle-east-region-officials-say-2026-01-26/">Reuters</a></span> Officials told Israeli media <b>strike would seek regime change</b>. USS Abraham Lincoln carrier group now in Middle East. Iran warns any attack is "all-out war." Axis of Resistance militias threaten retaliation.</li>
+<li><span class="item-title">Nipah virus outbreak triggers COVID-style airport screenings</span>
+<span class="source"><a href="https://nypost.com/2026/01/26/world-news/airports-launch-covid-style-health-checks-after-outbreak-of-deadly-virus/">NY Post</a></span> 5 confirmed cases in India (Kerala, West Bengal). Thailand, other Asian nations implementing <b>traveler screening and tracking</b>. Virus has 40-75% fatality rate.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" /></svg> Boston & New England</h2>
+<ul>
+<li><span class="item-title">Update: Storm Fern totals—23.2" in Boston</span>
+<span class="source"><a href="https://www.cbsnews.com/boston/video/no-school-in-worcester-tuesday-as-snow-cleanup-continues/">CBS Boston</a></span> <mark>8th largest snowstorm in city history</mark>. Boston schools reopened today; Worcester, Gloucester remain closed. Snow emergency lifted Monday 8pm. <b>One killed by plow in Norwood</b>; train struck minivan in Belmont.</li>
+<li><span class="item-title">Update: Winter storm death toll rises to 30 nationally</span>
+<span class="source"><a href="https://www.fox13memphis.com/news/30-people-dead-from-effects-of-winter-storm-as-more-freezing-cold-pummels-us/article_6a98d2b2-e2a3-4ba4-b49c-cfe8d50ec4ad.html">AP</a></span> Bitter cold persisting; roads still icy across region.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg> Medicine & Health</h2>
+<ul>
+<li><span class="item-title">Update: Measles outbreak status still uncertain</span>
+<span class="source"><a href="https://www.advisory.com/daily-briefing/2026/01/27/measles-update">Advisory Board</a></span> CDC still analyzing whether TX and SC outbreaks are linked. <b>416 confirmed cases</b> in 14 states this month. PAHO decision April 13. CDC deputy: losing status is "cost of doing business."</li>
+<li><span class="item-title">Suzetrigine: First non-opioid for severe pain</span>
+<span class="source"><a href="https://www.freep.com/story/news/health/2026/01/27/nipah-virus-outbreak-india-disease-who-cdc-travel/88375101007/">Detroit Free Press</a></span> NaV1.8 sodium channel blocker (brand: Journavax) enables <b>opioid-free moderate-severe pain management</b>.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI in Healthcare</h2>
+<ul>
+<li><img src="https://nypost.com/wp-content/uploads/sites/2/2026/01/thailands-department-disease-control-screens-119751824.jpg" alt="Nipah screening" class="image-float"><span class="item-title">FDA updates clinical decision support rules</span>
+<span class="source"><a href="https://www.linkedin.com/posts/nicola-zetola-7b508214_the-fdas-january-2026-cds-update-quietly-activity-7419503419557847041-nRlo">LinkedIn</a></span> January 2026 CDS update <b>increases scrutiny on AI recommendations</b>. New guidance affects how AI diagnostic tools are classified.</li>
+<li><span class="item-title">CMS testing new AI payment codes for 2026</span>
+<span class="source"><a href="https://www.pymnts.com/news/artificial-intelligence/2026/federal-initiatives-aim-to-move-ai-beyond-simple-diagnostics/">PYMNTS</a></span> Category III codes for AI-augmented <b>ECG, echocardiograms, breast/thyroid ultrasound</b>. Existing diabetic retinopathy AI screening already reimbursed.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Safety</h2>
+<ul>
+<li><span class="item-title">Colorado AI Act delayed to June 30, 2026</span>
+<span class="source"><a href="https://aihealthcarecompliance.com/weekly-news-and-updates-jan-12-16-2026/">AI Healthcare Compliance</a></span> <mark>Requires impact assessments, bias monitoring</mark> for high-risk AI in healthcare/employment/finance. Texas TRAIGA requires red-teaming, annual reviews.</li>
+<li><span class="item-title">Trump EO targets state AI laws</span>
+<span class="source"><a href="https://aihealthcarecompliance.com/weekly-news-and-updates-jan-12-16-2026/">AI Healthcare Compliance</a></span> Dec 2025 order directs Commerce to evaluate "burdensome" state AI regulations by March 11.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg> Natural World</h2>
+<ul>
+<li><span class="item-title">Richest 1% exhausted 2026 carbon budget in 10 days</span>
+<span class="source"><a href="https://www.theguardian.com/environment/2026/jan/27/richest-one-percent-carbon-budget">Guardian</a></span> Billionaire investments emitted <b>586M tonnes CO2 in 2024</b>—more than 118 countries combined. Linked to 1.3M projected heat deaths by century's end.</li>
+<li><span class="item-title">Courts block Trump clean energy halts</span>
+<span class="source"><a href="https://www.theguardian.com/environment/2026/jan/27/courts-block-trump-clean-energy">Guardian</a></span> Two federal courts ruled against administration pauses on clean energy grants and $5B Rhode Island offshore wind farm (90% complete).</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12M12.265 3.11a.375.375 0 1 1-.53 0L12 2.845l.265.265Zm-3 0a.375.375 0 1 1-.53 0L9 2.845l.265.265Zm6 0a.375.375 0 1 1-.53 0L15 2.845l.265.265Z" /></svg> Vegan & Vegetarian</h2>
+<ul>
+<li><span class="item-title">Post-storm comfort cooking</span>
+<span class="source"><a href="https://veganuary.com/recipes/">Veganuary</a></span> Perfect for cold cleanup days: <b>Parsnip, peas & rosemary soup</b>; Maple roasted parsnip & celeriac soup; Vegan white bean chili (348 kcal, 24g protein, 45 min); Mushroom & chestnut Wellington.</li>
+<li><span class="item-title">Peak season now</span>
+Parsnips, celeriac, kale, leeks, Bramley apples at their best.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

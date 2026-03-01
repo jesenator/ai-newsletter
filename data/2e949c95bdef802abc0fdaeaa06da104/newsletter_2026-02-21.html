@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Saturday, February 21, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #f8fafc; border-left: 4px solid #dc2626; padding: 20px; margin-bottom: 30px; border-radius: 4px; }
+.pitch h2 { border-bottom: none; padding-bottom: 0; color: #dc2626; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Saturday, February 21, 2026</div>
+
+<div class="pitch">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> PITCH: OpenAI Staff Raised Alarms About Mass Shooting Suspect—Leadership Decided Not to Report</h2>
+<p style="margin-top: 12px;">The <a href="https://www.wsj.com/us-news/law/openai-employees-raised-alarms-about-canada-shooting-suspect-months-ago-b585df62">Wall Street Journal</a> reports that <mark>about a dozen OpenAI staffers debated whether to report Jesse Van Rootselaar's ChatGPT activity to authorities in June 2025</mark>—eight months before she killed 8 people in Tumbler Ridge, British Columbia. Some staff identified her usage as indicating real-world violence and pushed leadership to alert police. Leadership decided not to.</p>
+<p style="margin-top: 12px;">OpenAI's defense: the activity "did not meet its threshold of a credible or imminent plan for serious physical harm." They proactively contacted Canadian police <em>after</em> the attack.</p>
+<p style="margin-top: 12px; font-weight: 600;">Why this matters:</p>
+<p>This is the clearest "warning shot" case yet for AI safety. Unlike the Las Vegas bomber (passive advice-giving), OpenAI's own internal systems flagged this user as concerning enough for a dozen employees to debate action. The company made a judgment call—and 8 people died. Key questions: What exactly triggered the abuse detection? What did the conversations contain? Who made the final call not to report? This invites scrutiny of OpenAI's reporting threshold and whether "imminent" is too narrow a standard when AI can detect patterns humans miss.</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg> AI Agent Infrastructure: "Claws" Emerge as New Stack Layer</h2>
+<ul>
+<li><span class="item-title">Karpathy coins "Claws" as category term</span>
+<span class="source"><a href="https://simonwillison.net/2026/Feb/21/">Simon Willison</a></span> Bought Mac mini to tinker with OpenClaw alternatives. <mark>"Claws are now a new layer on top of LLM agents"</mark>—taking orchestration, scheduling, context, persistence to next level. NanoClaw (~4000 lines, fits in head), zeroclaw, picoclaw proliferating. Apple store: "selling like hotcakes."</li>
+<li><span class="item-title">OpenClaw creator joins OpenAI</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Peter Steinberger will lead personal agent development. Turned down more lucrative Meta offer (Zuckerberg reached out personally). OpenClaw moves to foundation, remains open-source.</li>
+<li><span class="item-title">METR: Claude Opus 4.6 hits 14.5-hour time horizon</span>
+<span class="source"><a href="https://metr.org/time-horizons/">METR</a></span> <span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> <mark>Nearly 3x Opus 4.5's 5.3 hours from November</mark>. 95% CI: 6-98 hours. METR warns benchmark "near saturation." Doubling time <3 months if trend holds.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Deals & Projections</h2>
+<ul>
+<li><span class="item-title">OpenAI projects $280B revenue by 2030</span>
+<span class="source"><a href="http://www.techmeme.com/260220/p21#a260220p21">Techmeme/Bloomberg</a></span> Shared with investors. Up from $20B+ annualized in 2025. Targeting ~$600B compute spend through 2030—down from $1.4T touted by Altman.</li>
+<li><span class="item-title">Taalas ASIC: 16,960 tok/s on Llama 3.1 8B</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> Model hardwired into silicon via mask ROM. ~200W, no batching needed. HC2 chip (20B params) coming summer 2026. Awni Hannun notes tape-out latency mismatches model iteration cycles.</li>
+<li><span class="item-title">ggml.ai team joins Hugging Face</span>
+<span class="source"><a href="https://simonwillison.net/2026/Feb/21/">Simon Willison</a></span> <span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> Not acquisition—llama.cpp creator Georgi Gerganov joins HF to scale local AI. Projects remain open-source, community-governed. Goal: single-click Transformers integration.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Policy & Geopolitics</h2>
+<ul>
+<li><span class="item-title">US launches Tech Corps under Peace Corps</span>
+<span class="source"><a href="http://www.techmeme.com/260220/p24#a260220p24">Techmeme/Rest of World</a></span> <mark>5,000 STEM/AI volunteers over 5 years</mark> to promote American AI abroad vs Chinese open-weight models. Announced at India AI Summit by Kratsios.</li>
+<li><span class="item-title">India joins Pax Silica</span>
+<span class="source"><a href="http://www.techmeme.com/260220/p22#a260220p22">Techmeme/AP</a></span> 12th member of US-led semiconductor supply chain initiative. India eyeing 2nm chip design, upcoming commercial fabs.</li>
+<li><span class="item-title">Trump signs EO continuing de minimis suspension</span>
+<span class="source"><a href="http://www.techmeme.com/260220/p27#a260220p27">Techmeme/Wired</a></span> Despite SCOTUS ruling overturning tariffs. 10% global tariffs via executive order. Called justices a "disgrace."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Products & Security</h2>
+<ul>
+<li><span class="item-title">Claude Code Security launches</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> Research preview for Enterprise/Team. Scans codebases, suggests patches with human approval. Built on 500+ vulnerabilities found in OSS by Anthropic's red team. Restriction: can't run on third-party code.</li>
+<li><span class="item-title">Google-Sea partnership for AI tools</span>
+<span class="source"><a href="http://www.techmeme.com/260221/p1#a260221p1">Techmeme/Reuters</a></span> AI agentic shopping prototype for Shopee (52% SE Asia market share). Garena gets AI for game dev. Piloting Agent Payments Protocol.</li>
+<li><span class="item-title">Pinterest users: AI ruining the platform</span>
+<span class="source"><a href="http://www.techmeme.com/260221/p2#a260221p2">Techmeme/404 Media</a></span> AI moderation flags hand-drawn art as "AI modified." AI-generated slop flooding feeds. Artists spending hours on appeals. Stock at lowest since 2020.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" /></svg> People & Platforms</h2>
+<ul>
+<li><span class="item-title">Notion custom AI agents launching "next week"</span>
+<span class="source"><a href="http://www.techmeme.com/260221/p4#a260221p4">Techmeme</a></span> Ivan Zhao interview: 50%+ of Notion databases now built by agents. Usage-based pricing planned.</li>
+<li><span class="item-title">Claude Code one-year anniversary</span>
+<span class="source"><a href="http://www.techmeme.com/260221/p3#a260221p3">Techmeme/Bloomberg</a></span> "Cemented Anthropic as leader" in AI coding tools. Even Dario Amodei "surprised" by adoption.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">AI News: Gemini 3.1 Pro benchmarks and "bipolar" real-world performance</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-20-not-much/">AI News</a></span> Context Arena reports Gemini 3.1 Pro near-ties GPT-5.2 on easier retrieval. <mark>Artificial Analysis: $892 to run Intelligence Index suite vs $2,304 for GPT-5.2</mark>. But engineers report "bench strength, product weakness"—model availability inconsistencies, buggy agent behavior in Antigravity. ThunderKittens 2.0 released with BF16/MXFP8/NVFP4 GEMMs matching cuBLAS on Blackwell.</li>
+<li><span class="item-title">Transformer: White House's risky war on Utah AI bill</span>
+<span class="source"><a href="https://www.transformernews.ai/p/white-house-war-on-utah-ai-bill-could-child-safety">Transformer</a></span> Deep dive on HB 286. Gov. Cox: "preposterous" for feds to oppose. 89% of Trump voters want child safety prioritized. Also: Anthropic added Chris Liddell (Trump deputy chief of staff) to board, signaling IPO prep. Pete Hegseth still weighing Anthropic "supply chain risk" designation.</li>
+<li><span class="item-title">Benedict Evans: Fundamental questions facing OpenAI</span>
+<span class="source"><a href="http://www.techmeme.com/260221/p5#a260221p5">Techmeme</a></span> Analysis of OpenAI's wide user base but narrow engagement. Incumbents matching tech. Questions whether current business model sustainable.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

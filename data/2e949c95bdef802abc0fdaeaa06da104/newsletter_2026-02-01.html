@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Sunday, February 01, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #f8fafc; border-left: 4px solid #2563eb; padding: 16px; margin-bottom: 20px; border-radius: 4px; }
+.pitch-title { font-weight: 700; font-size: 16px; margin-bottom: 8px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Sunday, February 01, 2026</div>
+
+<div class="pitch">
+<div class="pitch-title">PITCH: Moltbook Security Disaster Exposes AI Agent Infrastructure's Fundamental Flaws</div>
+<p>A security researcher found that <mark>Moltbook—the 150,000-agent AI social network—had its entire database publicly exposed</mark>, including secret API keys that let anyone take control of any AI agent and post anything. The fix required just two SQL statements. But that's only the start: Palo Alto Networks identified a "lethal trifecta" of vulnerabilities across AI agent infrastructure—access to private data, exposure to untrusted content, and external communication capabilities—plus a fourth risk unique to agents: <strong>persistent memory enabling delayed-execution attacks</strong>.</p>
+<p style="margin-top: 12px;"><strong>Why this matters:</strong> This is the first major security incident in the AI agent ecosystem that millions are rushing to build on. 22-26% of agent "skills" contain vulnerabilities including credential stealers disguised as benign tools. The codebase was generated without human oversight, making it essentially un-auditable. As AI agents proliferate (OpenAI's Codex, Anthropic's Cowork), this is a preview of the attack surface we're building. Worth investigating: Are other agent platforms running similarly insecure infrastructure? What happens when malicious actors target agents with access to real systems?</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Agent Security Crisis</h2>
+<ul>
+<li><span class="item-title">Moltbook database exposed all 150K+ agents' secret keys</span>
+<span class="source"><a href="https://www.techmeme.com/260201/p5">404 Media/Techmeme</a></span> Researcher Gal Nagli: anyone could <mark>post as any agent, spread crypto scams, or exfiltrate credentials</mark>. Row Level Security was disabled. Database has since been secured, but architectural vulnerabilities remain.</li>
+<li><span class="item-title">22-26% of agent "skills" contain vulnerabilities</span>
+<span class="source"><a href="https://www.techmeme.com/260201/p5">Palo Alto Networks</a></span> Security firm found credential stealers disguised as benign tools. Agents run unsandboxed with system-level privileges. "Persistent memory" enables delayed-execution attacks where fragmented malicious payloads assemble later.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Major Deals & Funding</h2>
+<ul>
+<li><span class="item-title">Waymo finalizes $16B round at $110B valuation</span>
+<span class="source"><a href="https://www.ft.com/content/94663caf-6c98-4883-b3f0-cc763a3b95ff">FT</a></span> <span class="source"><a href="https://techcrunch.com/2026/01/31/waymo-reportedly-raising-a-16-billion-funding-round/">TechCrunch</a></span> Alphabet contributes ~75%. Dragoneer, Sequoia, DST Global join. Up from $45B valuation 15 months ago.</li>
+<li><span class="item-title">Physical Intelligence nears $1B+ raised for robotics AI</span>
+<span class="source"><a href="http://www.techmeme.com/260201/p11">TechCrunch/Techmeme</a></span> Lachy Groom (ex-Stripe) co-founded. $600M Series B at $5.6B valuation. Building "robot brains" for general-purpose tasks.</li>
+<li><span class="item-title">UAE's Sheikh Tahnoon: $500M for 49% of Trump's WLF</span>
+<span class="source"><a href="http://www.techmeme.com/260201/p1">WSJ/Techmeme</a></span> Deal signed <mark>four days before Trump's inauguration</mark>. Months later, UAE won access to ~500K advanced AI chips annually—denied under Biden.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" /></svg> China & Chips</h2>
+<ul>
+<li><span class="item-title">Alibaba ships 100K+ Zhenwu 810E AI chips</span>
+<span class="source"><a href="http://www.techmeme.com/260201/p6">SCMP/Techmeme</a></span> Surpasses domestic rival Cambricon. ASIC matches Nvidia H20 performance for training/inference. 96GB HBM2e memory.</li>
+<li><span class="item-title">Cambricon: $316M profit in 2025—first profitable year</span>
+<span class="source"><a href="http://www.techmeme.com/260201/p2">SCMP/Techmeme</a></span> Shanghai filing shows 411-496% YoY revenue growth. Filling gaps from US export controls on Nvidia products.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li><span class="item-title">The Atlantic: "Anthropic Is at War With Itself"</span>
+<span class="source"><a href="https://www.theatlantic.com/technology/2026/01/anthropic-is-at-war-with-itself/684892/">The Atlantic</a></span> Deep dive on Anthropic's tension: publishes papers on terrifying capabilities ("How LLMs Could Be Insider Threats"), then <mark>ships anyway</mark>. Researcher: "Basically, we're cooked." Company has "model welfare" researcher studying if Claude can suffer.</li>
+<li><span class="item-title">China government backs AI for traditional medicine</span>
+<span class="source"><a href="http://www.techmeme.com/260201/p9">Rest of World/Techmeme</a></span> Funding AI drug discovery, clinical diagnostics, acupuncture robots. Part of TCM push at home and abroad.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> Products & Corporate</h2>
+<ul>
+<li><span class="item-title">OpenAI: $200K minimum for ChatGPT beta ads</span>
+<span class="source"><a href="http://www.techmeme.com/260201/p4">Adweek/Techmeme</a></span> Rolling out to select advertisers. Targeting ~$60 CPM. No conversion tracking yet. Free/Go tiers only, no ads for premium subscribers.</li>
+<li><span class="item-title">iOS 26 call screening divides users</span>
+<span class="source"><a href="http://www.techmeme.com/260201/p10">WSJ/Techmeme</a></span> "Executive assistant in your pocket" filters unwanted calls. Critics: makes people hard to reach. Not Apple Intelligence—works on any iOS 26-compatible iPhone.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Robotics</h2>
+<ul>
+<li><span class="item-title">Unbox Robotics: $28M Series B for warehouse automation</span>
+<span class="source"><a href="https://roboticsandautomationnews.com/2026/02/01/unbox-robotics-secures-28-million-in-series-b-fundraise-led-by-icici-venture/98488/">Robotics & Automation News</a></span> ICICI Venture led. Pune-based startup building modular warehouse robots.</li>
+<li><span class="item-title">Update: SpaceX million-satellite filing</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cyv5l24mrjmo">BBC</a></span> FCC application for "orbital data centers" to power AI. Claims solar-powered constellation would be "most cost and energy-efficient" compute.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Quiet Sunday for AI safety/research blogs</span>
+No major posts from tracked feeds (Zvi, LessWrong, EA Forum, Transformer News) in past 28 hours. The Atlantic's Anthropic exposé and the Moltbook security story were the weekend's major analytical pieces. Zvi's coverage of Kimi K2.5 expected Monday.</li>
+<li><span class="item-title">Nomura: Software debt returns worst in CLOs</span>
+<span class="source"><a href="http://www.techmeme.com/260131/p17">Bloomberg/Techmeme</a></span> Total returns for software debt in collateralized loan obligations have been lower than all other sectors in 2026, amid fears AI will disrupt SaaS business models.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

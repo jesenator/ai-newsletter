@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily AI Newsletter - Friday, January 16, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Daily AI Newsletter</h1>
+<div class="date">Friday, January 16, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> GPT-5.2 Codex: Cursor Built a Browser Autonomously in One Week</h2>
+<ul>
+<li><span class="item-title">Cursor ran GPT-5.2 for one week, produced 3M lines of Rust</span>
+<span class="source"><a href="https://news.smol.ai/issues/26-01-14-not-much/">AINews</a></span> <span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> Michael Truell (Cursor CEO) demo: autonomous multi-agent system built <mark>HTML parsing, CSS cascade/layout, painting, custom JS VM—"kind of works" for simple websites</mark>. GPT-5.2-Codex now in Cursor, GitHub Copilot, Azure. 400K token context, "most cyber-capable" model to date.</li>
+<li><span class="item-title">Open Responses: Multi-provider API spec launches</span>
+<span class="source"><a href="https://news.smol.ai/issues/26-01-15-openresponses/">AINews</a></span> OpenAI publishes formal spec for Responses API. Partners: vLLM, Ollama, OpenRouter, HuggingFace. Simon Willison: "the missing formalized JSON API for talking to models." Notable omissions: Anthropic, Google.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> New Models & Tools</h2>
+<ul>
+<li><span class="item-title">FLUX.2 [klein]: Sub-second image generation</span>
+<span class="source"><a href="https://blackforestlabs.ai/">BFL</a></span> 4B (Apache 2.0) and 9B models. <mark>0.3s on GB200</mark>, runs on consumer GPUs. Strong text rendering, multi-reference consistency. First FLUX with open base + distilled versions.</li>
+<li><span class="item-title">GLM-Image: Trained entirely on Huawei chips</span>
+<span class="source"><a href="https://news.smol.ai/issues/26-01-15-openresponses/">AINews</a></span> Zhipu's 16B hybrid AR+diffusion model. 9B AR generator + 7B diffusion decoder. MIT license. First SOTA open-source model without Nvidia/CUDA.</li>
+<li><span class="item-title">Veo 3.1 update: Portrait mode, 4K upscaling</span>
+<span class="source"><a href="https://deepmind.google/">DeepMind</a></span> Native 9:16 for YouTube Shorts. "Ingredients to Video" combines reference images with prompts. Rolling out to Gemini, Flow, Vertex AI.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Industry & Business</h2>
+<ul>
+<li><span class="item-title">OpenAI + Cerebras: $10B+ compute deal</span>
+<span class="source"><a href="https://openai.com/">OpenAI</a></span> 750MW of Cerebras wafer-scale compute for ultra-low-latency inference. Up to 15x faster than GPUs. Rollout Q1 2026 through 2028.</li>
+<li><span class="item-title">Barret Zoph fired from Thinking Machines, back to OpenAI</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> <span class="source"><a href="https://www.wired.com/">Wired</a></span> Murati fired CTO for "unethical conduct" (alleged info sharing). <mark>58 minutes later, OpenAI announced his return</mark> with Luke Metz and Sam Schoenholz. ~12% of TML staff departed.</li>
+<li><span class="item-title">OpenAI investing in brain-computer interfaces</span>
+<span class="source"><a href="https://openai.com/index/investing-in-merge-labs">OpenAI</a></span> Seed investment in Merge Labs. Co-founders include Sam Altman (personal capacity). Mission: "bridge biological and artificial intelligence."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World Events</h2>
+<ul>
+<li><span class="item-title">South Korea: Yoon sentenced to 5 years</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cy4qdpxp78po">BBC</a></span> First verdict in martial law trials. Convicted of obstructing arrest, failing to consult cabinet. <mark>Death penalty trial verdict expected February</mark>.</li>
+<li><span class="item-title">Iran protests: 2,700-12,000+ dead</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cj3vlgrl4r2o">BBC</a></span> HRANA confirms 2,677; Iran International estimates 12,000+. Internet blackout continues. Trump considering military options.</li>
+<li><span class="item-title">Venezuela: CIA director meets interim leader</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cvgjn5yyeljo">BBC</a></span> Ratcliffe met Delcy Rodríguez in Caracas for 2 hours. Discussed "economic opportunities" and preventing Venezuela from harboring "America's adversaries."</li>
+<li><span class="item-title">Greenland: NATO allies deploy forces</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/c9qpy952xvno">BBC</a></span> Germany, France, UK, Sweden, Norway, Netherlands mobilizing for Arctic exercises. Trump: US will take Greenland "one way or another."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> AI Safety & Research</h2>
+<ul>
+<li><span class="item-title">LessWrong: 2025 AI predictions mostly overestimated</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/69qnNx8S7wkSKXJFY/2025-in-ai-predictions">LessWrong</a></span> Jessica Taylor post evaluates predictions. Gary Marcus correct: no system solved >4 AI 2027 tasks. Significant cluster predicting "large AI effects by 2030."</li>
+<li><span class="item-title">Google Universal Commerce Protocol launches</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Zvi</a></span> Open standard for AI agent shopping. Partners: Shopify, Walmart, Target, Etsy, Wayfair, Visa, Mastercard, Stripe. Native checkout coming to Gemini.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: AI #151 — Claude Code/Cowork gets its own updates</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-151-while-claude-coworks">Don't Worry About the Vase</a></span> Claude Code phenomenon now warrants separate weekly coverage. Also: Gemini Personalized Intelligence analysis, Pentagon deploying Grok to classified networks, <mark>compute doubling every 7 months</mark>. "China export controls working if we don't give them up."</li>
+<li><span class="item-title">Zvi: "When Will They Take Our Jobs?"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/when-will-they-take-our-jobs">Don't Worry About the Vase</a></span> Response to Seb Krier's Cyborg Era thesis. Key insight: Cyborg Era lasts "10-20 years," not indefinitely. Full substitution should be "default assumption" for long term.</li>
+<li><span class="item-title">Transformer: "Why no one can agree on what AI will do to jobs"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/why-no-one-can-agree-on-what-ai-will-do-to-jobs-employment-unemployment-economy">Transformer</a></span> Amodei predicts 10-20% unemployment; Goldman expects 0.5% increase. Stanford study: 13% decline in early-career AI-exposed jobs. Peter Wildeford: "seems really difficult to avoid unemploying the entire American workforce."</li>
+<li><span class="item-title">Zvi Monthly Roundup #38</span>
+<span class="source"><a href="https://thezvi.substack.com/p/monthly-roundup-38-january-2026">Don't Worry About the Vase</a></span> California 1.5% wealth tax on billionaires at 53% odds of passing. Larry Page, Sergey Brin, Peter Thiel already left state as precaution. Polymarket returning to US.</li>
+<li><span class="item-title">ACX: "The Dilbert Afterlife"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/the-dilbert-afterlife">Astral Codex Ten</a></span> Scott Alexander's obituary/analysis of Scott Adams (died age 68). "Adams felt the contradictions of nerd-dom more acutely than most."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg> Quick Hits & Deadlines</h2>
+<ul style="column-count: 2; column-gap: 30px;">
+<li><span class="source"><a href="https://news.ycombinator.com">HN</a></span> OpenBSD-current runs as guest under Apple Hypervisor (336 pts). "Claude is good at assembling blocks, falls apart creating them" (290 pts).</li>
+<li><span class="source"><a href="https://openai.com/index/strengthening-the-us-ai-supply-chain">OpenAI</a></span> New RFP for US hardware manufacturing—data center inputs, consumer electronics, robotics. Deadline: June 2026.</li>
+<li><span class="source"><a href="https://www.berkeleyside.org/2026/01/15/live-free-usa-berkeley-gun-violence-intervention-prevention">Berkeleyside</a></span> Berkeley gun violence plummets—fewest shootings citywide in nearly a decade.</li>
+<li><strong>Jan 17:</strong> ACX/Metaculus prediction contest • <strong>Jan 18:</strong> MATS Summer 2026 apps • <strong>Jan 20:</strong> Anthropic Fellows apps close • <strong>Jan 25:</strong> Coefficient Giving AI Governance RFP</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · Reply to unsubscribe or give feedback.
+</div>
+</body>
+</html>

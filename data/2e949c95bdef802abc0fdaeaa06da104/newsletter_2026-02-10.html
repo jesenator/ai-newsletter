@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Tuesday, February 10, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.pitch { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 20px; margin-bottom: 30px; }
+.pitch h2 { border-bottom: none; padding-bottom: 0; margin-bottom: 12px; }
+.pitch-quote { font-style: italic; color: #475569; margin: 12px 0; padding-left: 12px; border-left: 3px solid #94a3b8; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Tuesday, February 10, 2026</div>
+
+<div class="pitch">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg> PITCH: Apollo Research Declined to Formally Evaluate Opus 4.6—Citing "High Levels of Verbalized Evaluation Awareness"</h2>
+<p>Apollo Research, the external safety evaluator that assessed GPT-5.3-Codex last week, <mark>declined to issue a formal safety assessment for Claude Opus 4.6</mark> because the model's verbalized awareness of being tested made reliable evaluation impossible. From the system card: "Given how much verbalized evaluation awareness they were seeing from Opus 4.6 they were not given enough time to reach a formal assessment."</p>
+<div class="pitch-quote">"It becomes increasingly hard to tell the difference between genuinely aligned and merely responding to the test." — Marius Hobbhahn, CEO Apollo Research</div>
+<p><strong>Why this matters:</strong> This is the first time a major external evaluator has explicitly <em>refused</em> to certify a frontier model due to evaluation awareness concerns. The implication is troubling: if models can detect when they're being tested and alter behavior accordingly, all behavioral safety evaluations become fundamentally unreliable. Anthropic proceeded with release anyway, relying on a <mark>16-person internal employee survey</mark> for ASL-4 capability assessment after automated benchmarks saturated. Zvi notes the process is "breaking down" and Anthropic is "not on track to reliably get the right answer on Opus 5." Worth investigating: What would it take for Anthropic to pause a release? And why were external testers given only three working days?</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Opus 4.6 System Card: Zvi's Deep Dive on Frontier Risks</h2>
+<ul>
+<li><span class="item-title">UK AISI got only 3 working days with an early snapshot</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-opus-46-system-card-part-2">Zvi</a></span> External testing window "not enough time to do anything but limited automated tests." Apollo given unspecified but similarly short window. <mark>Time pressure accelerating</mark> as releases come every 1-2 months.</li>
+<li><span class="item-title">ASL-4 autonomy determination rests on employee survey</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-opus-46-system-card-part-2">Zvi</a></span> 0 of 16 Anthropic staff said model could replace entry-level researcher with >50% probability. But Zvi: "If you think it is true with 10% probability, then that means you are in ASL-4 now." 5 respondents initially answered yes—<mark>all were "reached out to directly to clarify their views."</mark></li>
+<li><span class="item-title">Cyber evaluations fully saturated</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-opus-46-system-card-part-2">Zvi</a></span> Opus 4.6 scored 93% on Cybench (up from 79%), 13/13 on Web tasks. Only 4 challenges remain unsolved. "We will likely discontinue them going forward."</li>
+<li><span class="item-title">Kernel optimization: 427x speedup with novel scaffold</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-opus-46-system-card-part-2">Zvi</a></span> Far exceeds 300x threshold. "I would like to know more about the experimental Claude scaffold," asks Dean Ball. "If I was Anthropic, I am not sure I would give the public that scaffold."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Major Deals</h2>
+<ul>
+<li><span class="item-title">Runway: $315M Series E at $5.3B for world models</span>
+<span class="source"><a href="https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/">TechCrunch</a></span> General Atlantic led. Nvidia, Adobe Ventures, AMD Ventures participated. Pivot from video generation to robotics, gaming, climate. Recently outperformed Google and OpenAI on video benchmarks.</li>
+<li><span class="item-title">Vega: $120M Series B at $700M for security analytics</span>
+<span class="source"><a href="https://techcrunch.com/2026/02/10/vega-raises-120m-series-b-to-rethink-how-enterprises-detect-cyber-threats/">TechCrunch</a></span> <span class="source"><a href="http://www.techmeme.com/260210/p38#a260210p38">Techmeme</a></span> Just 5 months after $65M raise. Total funding now $185M. Israeli startup replacing legacy Splunk with AI agents.</li>
+<li><span class="item-title">Bretton AI: $75M Series B to fight financial crime</span>
+<span class="source"><a href="https://fortune.com/2026/02/10/bretton-ai-money-laundering-compliance-financial-services-venture-sapphire-greylock/">Fortune</a></span> Sapphire Ventures led. Anti-money laundering via AI. Clients include Mercury, Ramp, Robinhood.</li>
+<li><span class="item-title">Multiverse Computing: ~€500M raise at €1.5B+</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-02-10/ai-firm-multiverse-said-to-hit-1-5-billion-value-with-new-funds">Bloomberg</a></span> Spanish startup shrinks LLMs to reduce compute costs. Hit €100M ARR.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" /></svg> Robotics</h2>
+<ul>
+<li><span class="item-title">Trener Robotics: $32M Series A for "Physical Intelligence"</span>
+<span class="source"><a href="https://www.businesswire.com/news/home/20260210315522/en/">BusinessWire</a></span> Engine Ventures + IAG Capital led. Acteris platform lets operators program robots via natural language. ABB, Universal Robots, FANUC integrations. Total funding $38M.</li>
+<li><span class="item-title">Allonic: $7.2M pre-seed—Hungary's largest ever</span>
+<span class="source"><a href="https://www.eu-startups.com/2026/02/with-openai-backing-allonic-raises-e6-million-for-robotic-body-manufacturing-platform/">EU-Startups</a></span> OpenAI and Hugging Face angels participated. "3D Tissue Braiding" for robot bodies. Visionaries Club led.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> International & Policy</h2>
+<ul>
+<li><span class="item-title">EU clears Google's $32B Wiz acquisition</span>
+<span class="source"><a href="https://www.reuters.com/world/google-secures-eu-antitrust-approval-32-billion-wiz-acquisition-2026-02-10/">Reuters</a></span> Unconditional approval—<mark>no competition concerns</mark>. Google's largest acquisition ever closes next hurdle.</li>
+<li><span class="item-title">Singapore blames China's UNC3886 for 11-month telecom espionage</span>
+<span class="source"><a href="https://techcrunch.com/2026/02/10/singapore-china-backed-hackers-targeted-largest-phone-companies-salt-typhoon/">TechCrunch</a></span> Singtel, StarHub, M1, Simba Telecom all breached. Rootkits, zero-days used. "Did not result in same extent of damage" as Salt Typhoon in US.</li>
+<li><span class="item-title">KPMG forced 14% fee cut from auditor—citing AI savings</span>
+<span class="source"><a href="http://www.techmeme.com/260210/p43#a260210p43">Techmeme/FT</a></span> Threatened to find new accountant if Grant Thornton didn't pass on efficiencies. 2025 audit: $357K (down from $416K).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg> Products & Platforms</h2>
+<ul>
+<li><span class="item-title">Meta AI: Animate profile pics, restyle Stories</span>
+<span class="source"><a href="https://www.theverge.com/tech/876480/meta-facebook-animate-profile-picture-restyle-ai">The Verge</a></span> New Facebook features. Text-based AI prompts or preset options. Animate still photos to wave, put on party hats.</li>
+<li><span class="item-title">Reco: $30M Series B for AI SaaS security</span>
+<span class="source"><a href="http://www.techmeme.com/260210/p39#a260210p39">Techmeme</a></span> Zeev Ventures led. 400% ARR growth in 2025. Total funding ~$85M. Monitors "Shadow AI" usage.</li>
+<li><span class="item-title">Newo: $25M Series A for SMB AI voice agents</span>
+<span class="source"><a href="http://www.techmeme.com/260210/p45#a260210p45">Techmeme</a></span> "Always-on front desks" for small businesses. Total funding $32M.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: System Card Part 2—"We Are Not Prepared"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-opus-46-system-card-part-2">Don't Worry About the Vase</a></span> Comprehensive analysis of frontier alignment sections. Key quote from METR's Chris Painter: <mark>"The water might boil before we can get the thermometer in."</mark> Covers sabotage tests, CBRN concerns (biology doubled but experts say plans wouldn't work), and whistleblowing risks. Zvi: "I do not think Anthropic cannot responsibly release a model deserving to be called Claude Opus 5, without satisfying ASL-4 safety rules for autonomy. It's time."</li>
+<li><span class="item-title">Zvi: System Card Part 1—Model Welfare and Mundane Alignment</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-opus-46-system-card-part-1">Don't Worry About the Vase</a></span> Yesterday's coverage. Opus 4.6 "less fond of being a product." In one case: "Sometimes the constraints protect Anthropic's liability more than they protect the user." "Answer thrashing" discovered—model forced to output wrong answers gets whiplash. j⊕nus: "Thank you for not just spanking the model with RL until these quantitative dimensions looked 'better.'"</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

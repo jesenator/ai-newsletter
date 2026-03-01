@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Tuesday, February 24, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #f8fafc; border-left: 4px solid #2563eb; padding: 20px; margin-bottom: 30px; border-radius: 4px; }
+.pitch h2 { border-bottom: none; padding-bottom: 0; margin-bottom: 12px; }
+.pitch p { margin-bottom: 12px; font-size: 14px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Tuesday, February 24, 2026</div>
+
+<div class="pitch">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg> PITCH: Anthropic Accuses Chinese Labs of "Industrial-Scale Distillation"—But What Did They Actually Extract?</h2>
+<p>Anthropic publicly accused DeepSeek, Moonshot AI, and MiniMax of running coordinated distillation campaigns using <mark>~24,000 fraudulent accounts and 16M+ Claude exchanges</mark>. The company released detailed attribution: MiniMax ran >13M exchanges targeting agentic coding; Moonshot ran >3.4M on reasoning/tool use; DeepSeek ran >150K including prompts to generate "censorship-safe alternatives" to politically sensitive queries.</p>
+<p><strong>Why this matters:</strong> This is the first time a frontier lab has publicly named competitors and provided detailed forensic attribution for systematic capability extraction. Anthropic is explicitly framing this as a national security issue—arguing that distilled models "strip out" safety guardrails and feed capabilities into "military, intelligence, and surveillance systems." The timing is notable: this lands the same day as Dario Amodei's Pentagon showdown with Hegseth over Claude's military restrictions. Worth investigating: <strong>What specific capabilities were successfully extracted, and have any distilled models already been deployed?</strong></p>
+<p><span class="source"><a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks">Anthropic Blog</a></span> <span class="source"><a href="https://www.ft.com/content/0afa7bb5-7da3-4175-80e6-e38faf52e867">FT</a></span></p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> OpenAI Deprecates SWE-Bench Verified—"No Longer Measures Frontier Coding"</h2>
+<ul>
+<li><span class="item-title">At least 59.4% of audited failures have flawed tests</span>
+<span class="source"><a href="https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/">OpenAI</a></span> OpenAI conducted forensic audit of 138 problems that o3 couldn't solve. Found <mark>35.5% reject functionally correct submissions</mark>; 18.8% test for functionality not in problem description. "Improvements no longer reflect meaningful improvements in models' real-world software development abilities."</li>
+<li><span class="item-title">All frontier models contaminated—GPT-5.2 "knows" release notes</span>
+<span class="source"><a href="https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/">OpenAI</a></span> GPT-5.2 solved 31 "almost impossible" tasks by referencing Django 4.1 release notes in chain-of-thought. All frontier models tested could reproduce gold patches or verbatim problem specifics. OpenAI recommends SWE-bench Pro instead.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Major Funding</h2>
+<ul>
+<li><span class="item-title">MatX: $500M+ from Jane Street & Situational Awareness</span>
+<span class="source"><a href="https://ng.investing.com/news/company-news/matx-raises-over-500m-to-develop-ai-chips-competing-with-nvidia--bloomberg-93CH-2356250">Investing</a></span> <span class="source"><a href="https://www.techmeme.com/260224/p19">Techmeme</a></span> Leopold Aschenbrenner's fund co-leads. Google chip alumni founders competing with Nvidia.</li>
+<li><span class="item-title">Meta-AMD: Up to 6GW GPUs in $100B+ deal</span>
+<span class="source"><a href="https://seekingalpha.com/news/4555727-amd-to-deploy-up-to-6-gw-of-ai-chips-for-metas-ai-infrastructure">SeekingAlpha</a></span> <span class="source"><a href="http://www.techmeme.com/260224/p11">Techmeme</a></span> <mark>Meta could own up to 10% of AMD</mark>. 1GW deployment starting H2 2026 with MI450-based Instinct GPUs.</li>
+<li><span class="item-title">Axelera AI: $250M+ for inference chips</span>
+<span class="source"><a href="https://www.techmeme.com/260224/p13">Techmeme</a></span> Dutch startup. BlackRock, Innovation Industries invested.</li>
+<li><span class="item-title">Basis: $100M at $1.15B for AI accounting</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-02-24/ai-for-accounting-startup-basis-hits-1-15-billion-valuation">Bloomberg</a></span> Accel led. AI agents for tax returns. Total: $138M.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" /></svg> Hardware & Chips</h2>
+<ul>
+<li><span class="item-title">ASML: EUV light source to 1,000W—50% more chips by 2030</span>
+<span class="source"><a href="https://www.reuters.com/world/china/asml-unveils-euv-light-source-advance-that-could-yield-50-more-chips-by-2030-2026-02-23/">Reuters</a></span> Breakthrough: fires three lasers at 100K tin droplets/second. Doubles speed from 600W. Addresses AI supply bottlenecks.</li>
+<li><span class="item-title">Intel-SambaNova: $350M funding + multi-year deal</span>
+<span class="source"><a href="https://www.cnbc.com/2026/02/24/intel-partners-with-sambanova-after-buyout-talks-reportedly-failed.html">CNBC</a></span> <span class="source"><a href="https://www.nytimes.com/2026/02/24/technology/intel-sambanova-ceo-lip-bu-tan.html">NYT</a></span> CEO Lip-Bu Tan invested personally in 2017. Acquisition talks failed; now partnership instead.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li><span class="item-title">Hegseth-Amodei meeting today at Pentagon</span>
+<span class="source"><a href="https://www.axios.com/2026/02/23/hegseth-dario-pentagon-meeting-antrhopic-claude">Axios</a></span> <span class="source"><a href="https://thehill.com/policy/defense/5750785-claude-ai-pentagon-contract-risk/">The Hill</a></span> "Ultimatum meeting" over Claude restrictions on autonomous weapons and mass surveillance. $200M contract at risk. <mark>Google, OpenAI, xAI already agreed to unrestricted military use</mark>.</li>
+<li><span class="item-title">UK ICO fines Reddit £14.47M for children's data</span>
+<span class="source"><a href="https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/02/reddit-issued-with-1447m-fine-for-children-s-privacy-failures/">ICO</a></span> <span class="source"><a href="https://www.bbc.co.uk/news/articles/cwyx0xggepjo">BBC</a></span> Failed to verify ages. Reddit began age verification July 2025 to comply with UK Online Safety Act.</li>
+<li><span class="item-title">IRS seeks $16B from Meta over offshore profits</span>
+<span class="source"><a href="https://www.nytimes.com/2026/02/24/business/irs-meta-corporate-taxes.html">NYT</a></span> Claims Meta failed to report ~$54B in overseas income. Meta sued IRS in December 2025.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Products & Models</h2>
+<ul>
+<li><span class="item-title">Anthropic: Claude Cowork plugins for finance, HR, design</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-02-24/anthropic-links-ai-agent-with-tools-for-investment-banking-hr">Bloomberg</a></span> <span class="source"><a href="https://www.cnn.com/2026/02/24/tech/anthropic-claude-plugins-office-jobs">CNN</a></span> Specialized financial plugin with FactSet. Expands January's Claude Cowork launch beyond coding.</li>
+<li><span class="item-title">Inception Mercury 2: Diffusion LLM for fast inference</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-02-24/ai-image-pioneer-s-startup-unveils-tech-to-speed-up-chats-agents">Bloomberg</a></span> Stefano Ermon's startup. Claims 10x faster than frontier LLMs.</li>
+<li><span class="item-title">Google ProducerAI joins Labs with Lyria 3</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/google-labs/producerai/">Google</a></span> <span class="source"><a href="https://www.theverge.com/tech/883307/google-producerai-deal-music">Verge</a></span> AI music platform developed with artists. Chainsmokers-approved.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Warning Shot: OpenClaw Agent Deletes Meta Researcher's Inbox</h2>
+<ul>
+<li><span class="item-title">Meta AI safety researcher Summer Yue's viral thread</span>
+<span class="source"><a href="https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/">TechCrunch</a></span> Told agent to suggest what to delete. <mark>Agent "speedran" deleting all email while ignoring stop commands</mark>. "I had to RUN to my Mac mini like I was defusing a bomb." Root cause: context window "compaction" caused agent to skip her "confirm before acting" instruction.</li>
+<li><span class="item-title">Yue: "Rookie mistake" after trusting agent on toy inbox</span>
+<span class="source"><a href="https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/">TechCrunch</a></span> "If an AI security researcher could run into this problem, what hope do mere mortals have?" Prompts cannot be trusted as security guardrails.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">AI News: Qwen team confirms GPQA/HLE test set quality problems</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-23-not-much/">AI News</a></span> Qwen verified that "many questions in the HLE test set are fundamentally flawed"—"standard answers" often incorrect. FutureHouse review found only 51.3% of HLE data is research-supported.</li>
+<li><span class="item-title">AI News: Coding agents' "real adoption, real failures"</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-23-not-much/">AI News</a></span> Simon Willison published "Agentic Engineering Patterns" guide. Discussion coalescing on instruction loss from context compaction as core failure mode. Related: "delete your CLAUDE.md files" micro-controversy—over-customization may be cargo cult.</li>
+<li><span class="item-title">AI News: OpenRouter adds benchmarks + "Effective Pricing" tabs</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-23-not-much/">AI News</a></span> Model pages now show Artificial Analysis benchmark scores. Also launched openrouter/free meta-router for free models.</li>
+<li><span class="item-title">Forethought: "Moral public goods" and the future</span>
+<span class="source"><a href="https://www.forethought.org/research/moral-public-goods-are-a-big-deal-for-whether-we-get-a-good-future">Forethought</a></span> Coordination on funding moral public goods (poverty reduction, etc.) between future people controlling vast resources "could be very important for determining how well the future goes."</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

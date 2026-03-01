@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's Mom's Newsletter - Tuesday, February 03, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Georgia, 'Times New Roman', serif; background: linear-gradient(to bottom, #fef7f0, #fff8f5); color: #2d2d2d; line-height: 1.7; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 12px; padding: 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 3px solid #e8d4c8; position: relative; }
+.flower-border { position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; overflow: hidden; border-radius: 12px; }
+.flower-corner { position: absolute; width: 70px; height: 70px; }
+.flower-corner.top-left { top: 8px; left: 8px; }
+.flower-corner.top-right { top: 8px; right: 8px; transform: scaleX(-1); }
+.flower-corner.bottom-left { bottom: 8px; left: 8px; transform: scaleY(-1); }
+.flower-corner.bottom-right { bottom: 8px; right: 8px; transform: scale(-1, -1); }
+h1 { font-size: 26px; margin-bottom: 8px; font-weight: 700; color: #5a3e36; }
+.date { color: #8b7355; margin-bottom: 25px; font-size: 14px; font-style: italic; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 25px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #c9a88e; display: flex; align-items: center; gap: 8px; color: #6b4423; }
+ul { list-style: none; }
+li { margin-bottom: 14px; padding-left: 0; font-size: 13px; line-height: 1.7; }
+.source { display: inline-block; background: #f0e6dc; color: #6b4423; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #8b5a2b; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #8b5a2b; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px; }
+.footer { margin-top: 30px; padding-top: 15px; border-top: 1px solid #e8d4c8; font-size: 12px; color: #8b7355; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="flower-border">
+<div class="flower-corner top-left"><svg viewBox="0 0 70 70"><circle cx="15" cy="15" r="6" fill="#f8b4c4"/><circle cx="10" cy="20" r="5" fill="#f8b4c4"/><circle cx="20" cy="20" r="5" fill="#f8b4c4"/><circle cx="12" cy="25" r="5" fill="#f8b4c4"/><circle cx="18" cy="25" r="5" fill="#f8b4c4"/><circle cx="15" cy="20" r="4" fill="#ffd700"/><path d="M15 25 Q15 40 25 50" stroke="#6b8e23" stroke-width="2" fill="none"/><ellipse cx="30" cy="52" rx="8" ry="4" fill="#90c990"/><circle cx="45" cy="12" r="5" fill="#c9a0dc"/><circle cx="40" cy="16" r="4" fill="#c9a0dc"/><circle cx="50" cy="16" r="4" fill="#c9a0dc"/><circle cx="45" cy="14" r="3" fill="#ffd700"/><path d="M45 18 Q48 30 55 38" stroke="#6b8e23" stroke-width="2" fill="none"/><ellipse cx="58" cy="42" rx="6" ry="3" fill="#90c990"/></svg></div>
+<div class="flower-corner top-right"><svg viewBox="0 0 70 70"><circle cx="15" cy="15" r="6" fill="#f8b4c4"/><circle cx="10" cy="20" r="5" fill="#f8b4c4"/><circle cx="20" cy="20" r="5" fill="#f8b4c4"/><circle cx="12" cy="25" r="5" fill="#f8b4c4"/><circle cx="18" cy="25" r="5" fill="#f8b4c4"/><circle cx="15" cy="20" r="4" fill="#ffd700"/><path d="M15 25 Q15 40 25 50" stroke="#6b8e23" stroke-width="2" fill="none"/><ellipse cx="30" cy="52" rx="8" ry="4" fill="#90c990"/><circle cx="45" cy="12" r="5" fill="#87ceeb"/><circle cx="40" cy="16" r="4" fill="#87ceeb"/><circle cx="50" cy="16" r="4" fill="#87ceeb"/><circle cx="45" cy="14" r="3" fill="#ffd700"/><path d="M45 18 Q48 30 55 38" stroke="#6b8e23" stroke-width="2" fill="none"/><ellipse cx="58" cy="42" rx="6" ry="3" fill="#90c990"/></svg></div>
+<div class="flower-corner bottom-left"><svg viewBox="0 0 70 70"><circle cx="15" cy="15" r="6" fill="#ffb347"/><circle cx="10" cy="20" r="5" fill="#ffb347"/><circle cx="20" cy="20" r="5" fill="#ffb347"/><circle cx="15" cy="20" r="4" fill="#8b4513"/><path d="M15 25 Q15 40 25 50" stroke="#6b8e23" stroke-width="2" fill="none"/><ellipse cx="30" cy="52" rx="8" ry="4" fill="#90c990"/><circle cx="50" cy="18" r="5" fill="#dda0dd"/><circle cx="45" cy="22" r="4" fill="#dda0dd"/><circle cx="55" cy="22" r="4" fill="#dda0dd"/><circle cx="50" cy="20" r="3" fill="#ffd700"/></svg></div>
+<div class="flower-corner bottom-right"><svg viewBox="0 0 70 70"><circle cx="15" cy="15" r="6" fill="#ffb347"/><circle cx="10" cy="20" r="5" fill="#ffb347"/><circle cx="20" cy="20" r="5" fill="#ffb347"/><circle cx="15" cy="20" r="4" fill="#8b4513"/><path d="M15 25 Q15 40 25 50" stroke="#6b8e23" stroke-width="2" fill="none"/><ellipse cx="30" cy="52" rx="8" ry="4" fill="#90c990"/><circle cx="50" cy="18" r="5" fill="#98d8c8"/><circle cx="45" cy="22" r="4" fill="#98d8c8"/><circle cx="55" cy="22" r="4" fill="#98d8c8"/><circle cx="50" cy="20" r="3" fill="#ffd700"/></svg></div>
+</div>
+
+<h1>Jesse's Mom's Newsletter</h1>
+<div class="date">Tuesday, February 03, 2026</div>
+
+<div class="layout">
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World Events</h2>
+<ul>
+<li><strong>Update: House votes today to end shutdown</strong><br>
+<span class="source"><a href="https://www.cbsnews.com/live-updates/government-shutdown-latest-dhs-funding-house-returns/">CBS News</a></span> Rules Committee advanced funding package Monday night. <mark>Trump urging lawmakers to pass "WITHOUT DELAY"</mark>. Vote expected Tuesday; if passed, partial shutdown ends.</li>
+<li><strong>Ukraine-Russia peace talks begin tomorrow</strong><br>
+<span class="source"><a href="https://www.reuters.com/world/europe/zelenskiy-says-new-trilateral-talks-set-feb-4-5-abu-dhabi-2026-02-01/">Reuters</a></span> Trilateral talks with US mediation set for Feb 4-5 in Abu Dhabi. Kremlin confirmed attendance.</li>
+<li><strong>Massive fire engulfs Tehran market</strong><br>
+<span class="source"><a href="https://www.reuters.com/world/middle-east/fire-breaks-out-tehran-shopping-centre-state-media-reports-2026-02-03/">Reuters</a></span> <span class="source"><a href="https://www.aljazeera.com/video/newsfeed/2026/2/3/huge-fire-breaks-out-at-tehran-market">Al Jazeera</a></span> Fire at Jannat Abad Market visible across city; <strong>100+ kiosks burned</strong>. No casualties reported so far.</li>
+<li><strong>Grammy Awards: Bad Bunny makes history</strong><br>
+<span class="source"><a href="https://www.nytimes.com/2026/02/01/arts/music/grammys-winners-list-2026.html">NYT</a></span> <mark>First Spanish-language album to win Album of the Year</mark>. Kendrick Lamar now most-awarded rapper ever with 5 wins.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Z" /></svg> Boston & New England</h2>
+<ul>
+<li><strong>Patriots Super Bowl practice begins</strong><br>
+<span class="source"><a href="https://www.patriots.com/video/patriots-super-bowl-day-1-practice-highlights">Patriots.com</a></span> <span class="source"><a href="https://www.nbcsportsboston.com/nfl/new-england-patriots/2026-super-bowl-mike-vrabel-drake-maye-future/764684/">NBC Sports</a></span> Day 1 practice at Stanford Stadium. Game vs Seahawks Feb 8. Pats 4.5-point underdogs.</li>
+<li><strong>City Council backs rent stabilization ballot question</strong><br>
+<span class="source"><a href="https://www.boston.gov/news">Boston.gov</a></span> Resolution adopted Monday supporting 2026 statewide rent control measure.</li>
+<li><strong>Winter Festival announced for Feb 19-21</strong><br>
+<span class="source"><a href="https://www.boston.gov/news">Boston.gov</a></span> Free family event at Franklin Park.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg> Medicine & Health</h2>
+<ul>
+<li><strong>Update: SC measles outbreak at 847 cases</strong><br>
+<span class="source"><a href="https://dph.sc.gov/diseases-conditions/infectious-diseases/measles-rubeola/2025-measles-outbreak">SC DPH</a></span> 58 new cases since Friday. Largest US outbreak since elimination status in 2000.</li>
+<li><strong>350+ drug price hikes planned for 2026</strong><br>
+<span class="source"><a href="https://www.statnews.com/2026/02/03/new-data-shows-how-hhs-is-implementing-trump-ai-mandates/">STAT</a></span> <mark>40% more drugs repriced than 2025</mark>. Pfizer raising prices on 80 products. Median increase: 4%.</li>
+<li><strong>Jobs report delayed by shutdown</strong><br>
+<span class="source"><a href="https://www.cbsnews.com/live-updates/government-shutdown-latest-dhs-funding-house-returns/">CBS</a></span> Labor Dept won't issue Friday hiring data as planned.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI in Healthcare</h2>
+<ul>
+<li><img src="https://www.cleveland.com/resizer/v2/ZPOO2UE3WVEFJDJORCRQHT3W2M.jpg?auth=14bae09fb320d6d3ec85505ce9ee5b2237ba7ef2dcc68cae4b72f6780713fb6a&width=400&smart=true&quality=90" alt="AI chatbot hazards" class="image-float"><strong>AI chatbots top health tech hazards list</strong><br>
+<span class="source"><a href="https://www.cleveland.com/medical/2026/02/ai-chatbots-top-2026-list-of-health-tech-hazards.html">Cleveland.com</a></span> ECRI report: <mark>40M+ daily ChatGPT health queries</mark> despite tools suggesting wrong diagnoses, inventing body parts. Not regulated as medical devices.</li>
+<li><strong>HHS reveals AI implementation data</strong><br>
+<span class="source"><a href="https://www.statnews.com/2026/02/03/new-data-shows-how-hhs-is-implementing-trump-ai-mandates/">STAT</a></span> First look at Trump AI mandates in action. Missing: monitoring for adverse impacts, appeal processes.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Safety</h2>
+<ul>
+<li><strong>India demands "non-negotiable" AI boundaries</strong><br>
+<span class="source"><a href="https://economictimes.indiatimes.com/">Economic Survey</a></span> 2025-26 survey calls for <strong>bans on predictive policing, facial recognition, emotion detection</strong>. Urges red-teaming and enhanced AI Safety Institute.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 1 0 6.712 14.374" /></svg> Natural World</h2>
+<ul>
+<li><strong>Global plastics treaty talks resume Feb 7</strong><br>
+<span class="source"><a href="https://www.nature.com/nature/articles?year=2026">Nature</a></span> Extraordinary session after INC 5.2 stalemate. New chair appointed following October resignation.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12" /></svg> Vegan & Vegetarian</h2>
+<ul>
+<li><strong>Winter soup recipes for cold nights</strong><br>
+<span class="source"><a href="https://www.occasionallyeggs.com/cozy-cold-weather-soup-recipes/">Occasionally Eggs</a></span> Try: <strong>Lentil Sweet Potato Soup</strong> with coconut milk (40 min), <strong>Apple Parsnip Soup</strong> with hidden white beans, or <strong>Lemon White Bean Kale Soup</strong> (50 min).</li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer">
+Made by <a href="https://jessewgilbert.com">jessewgilbert.com</a> · Reply to unsubscribe or give feedback.
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's Mom's Newsletter - Thursday, February 05, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: linear-gradient(to bottom, #fef7f0, #fff8f5);
+  color: #2d2d2d;
+  line-height: 1.7;
+  padding: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 3px solid #e8d4c8;
+  position: relative;
+}
+.flower-border {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.flower-corner {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+.flower-corner.top-left { top: 5px; left: 5px; }
+.flower-corner.top-right { top: 5px; right: 5px; transform: scaleX(-1); }
+.flower-corner.bottom-left { bottom: 5px; left: 5px; transform: scaleY(-1); }
+.flower-corner.bottom-right { bottom: 5px; right: 5px; transform: scale(-1, -1); }
+h1 { font-size: 26px; margin-bottom: 8px; font-weight: 700; color: #5a3e36; }
+.date { color: #8b7355; margin-bottom: 25px; font-size: 14px; font-style: italic; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 25px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #c9a88e; display: flex; align-items: center; gap: 8px; color: #6b4423; }
+ul { list-style: none; }
+li { margin-bottom: 14px; padding-left: 0; font-size: 13px; line-height: 1.7; }
+.source { display: inline-block; background: #f5ebe0; color: #6b4423; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #8b5a3c; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #8b5a3c; }
+mark { background-color: #fef3c7; padding: 2px 4px; border-radius: 2px; font-weight: 600; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="flower-border">
+  <svg class="flower-corner top-left" viewBox="0 0 80 80"><path d="M10 40 Q20 20, 40 10 Q30 25, 35 40 Q25 35, 10 40" fill="#f8b4c4"/><path d="M15 50 Q25 35, 45 25 Q35 38, 38 52 Q28 48, 15 50" fill="#d4a5a5"/><circle cx="25" cy="35" r="4" fill="#ffd700"/><path d="M5 60 Q12 50, 25 45 Q18 55, 20 65 Q12 62, 5 60" fill="#98d8aa"/><path d="M50 5 Q55 15, 55 30 Q48 20, 40 18 Q45 12, 50 5" fill="#98d8aa"/></svg>
+  <svg class="flower-corner top-right" viewBox="0 0 80 80"><path d="M10 40 Q20 20, 40 10 Q30 25, 35 40 Q25 35, 10 40" fill="#f8b4c4"/><path d="M15 50 Q25 35, 45 25 Q35 38, 38 52 Q28 48, 15 50" fill="#d4a5a5"/><circle cx="25" cy="35" r="4" fill="#ffd700"/><path d="M5 60 Q12 50, 25 45 Q18 55, 20 65 Q12 62, 5 60" fill="#98d8aa"/><path d="M50 5 Q55 15, 55 30 Q48 20, 40 18 Q45 12, 50 5" fill="#98d8aa"/></svg>
+  <svg class="flower-corner bottom-left" viewBox="0 0 80 80"><path d="M10 40 Q20 20, 40 10 Q30 25, 35 40 Q25 35, 10 40" fill="#f8b4c4"/><path d="M15 50 Q25 35, 45 25 Q35 38, 38 52 Q28 48, 15 50" fill="#d4a5a5"/><circle cx="25" cy="35" r="4" fill="#ffd700"/><path d="M5 60 Q12 50, 25 45 Q18 55, 20 65 Q12 62, 5 60" fill="#98d8aa"/><path d="M50 5 Q55 15, 55 30 Q48 20, 40 18 Q45 12, 50 5" fill="#98d8aa"/></svg>
+  <svg class="flower-corner bottom-right" viewBox="0 0 80 80"><path d="M10 40 Q20 20, 40 10 Q30 25, 35 40 Q25 35, 10 40" fill="#f8b4c4"/><path d="M15 50 Q25 35, 45 25 Q35 38, 38 52 Q28 48, 15 50" fill="#d4a5a5"/><circle cx="25" cy="35" r="4" fill="#ffd700"/><path d="M5 60 Q12 50, 25 45 Q18 55, 20 65 Q12 62, 5 60" fill="#98d8aa"/><path d="M50 5 Q55 15, 55 30 Q48 20, 40 18 Q45 12, 50 5" fill="#98d8aa"/></svg>
+</div>
+
+<h1>Jesse's Mom's Newsletter</h1>
+<div class="date">Thursday, February 05, 2026</div>
+
+<div class="layout">
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World Events</h2>
+<ul>
+<li><span class="source"><a href="https://www.theguardian.com/world/2026/feb/05/second-day-of-ukraine-russia-peace-talks-in-uae-end-without-breakthrough">Guardian</a></span> <strong>Ukraine-Russia talks end without breakthrough</strong> — Two days of Abu Dhabi talks concluded; <mark>US and Russia agreed to restore military-to-military dialogue</mark> (suspended since 2021). 314 POWs exchanged. Witkoff: "Significant work remains."</li>
+<li><span class="source"><a href="https://www.reuters.com/business/aerospace-defense/iran-crisis-issues-dividing-washington-tehran-2026-02-05/">Reuters</a></span> <strong>US-Iran nuclear talks in Oman tomorrow</strong> — Trump threatens military action if no deal. Key issues: nuclear program, ballistic missiles, regional proxies. Iran says it will only discuss nuclear issues.</li>
+<li><span class="source"><a href="https://www.nytimes.com/2026/02/04/business/media/washington-post-layoffs.html">NYT</a></span> <strong>Washington Post lays off 300+ journalists</strong> — <mark>30% of all employees cut</mark>. Sports, local, and international coverage decimated. Editor: "Too rooted in a different era."</li>
+<li><span class="source"><a href="https://www.nbcnews.com/news/us-news/live-blog/live-updates-savannah-guthrie-makes-tearful-plea-search-mother-enters-rcna257533">NBC News</a></span> <strong>Savannah Guthrie's mother still missing</strong> — Day 5 of search for Nancy Guthrie, 84, possibly kidnapped from Arizona home. Trump pledged federal resources. Ransom notes reported to news outlets.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg> Boston & New England</h2>
+<ul>
+<li><span class="source"><a href="https://www.iheart.com/podcast/1248-the-loop-from-wbz-newsrad-79477125/episode/morning-report-thursday-february-5-2026-321156263/">WBZ</a></span> <strong>Parking space dispute turns violent</strong> — Man and woman stabbed in Dorchester over snow-cleared parking spot. Suspect charged with assault with dangerous weapon.</li>
+<li><span class="source"><a href="https://www.iheart.com/podcast/1248-the-loop-from-wbz-newsrad-79477125/episode/morning-report-thursday-february-5-2026-321156263/">WBZ</a></span> <strong>Amtrak cancels 20+ Northeast trains</strong> — "Equipment unavailability" causes widespread cancellations from Boston to NYC and Philly. Check bookings.</li>
+<li><span class="source"><a href="https://www.boston.com/news/local-news/2026/02/05/after-25-years-metrowest-jewish-day-school-will-shut-its-doors/">Boston.com</a></span> <strong>MetroWest Jewish Day School closing</strong> — After 25 years, personalized approach became too costly to sustain.</li>
+<li><span class="source"><a href="https://www.patriots.com/news/three-to-watch-key-patriots-seahawks-matchups-in-super-bowl-lx">Patriots.com</a></span> <strong>Super Bowl LX Sunday</strong> — Pats vs. Seahawks. Drake May listed as full go. More snow (2-4") expected this weekend plus <mark>bitter cold, wind chills below zero</mark>.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Medicine & Health</h2>
+<img src="https://www.who.int/images/default-source/wpro/health-topics/cancer/cancer_infographic_generic.png" alt="Cancer prevention" class="image-float" style="max-width: 150px;">
+<ul>
+<li><span class="source"><a href="https://www.who.int/news/item/03-02-2026-four-in-ten-cancer-cases-could-be-prevented-globally">WHO</a></span> <strong>40% of cancers preventable, WHO finds</strong> — New global analysis: <mark>7.1 million cases annually linked to preventable causes</mark>. Tobacco (15%), infections (10%), alcohol (3%) lead the list.</li>
+<li><span class="source"><a href="https://www.nbcnews.com/news/us-news/live-blog/live-updates-savannah-guthrie-makes-tearful-plea-search-mother-enters-rcna257533">Perplexity</a></span> <strong>Update: SC measles at 876 cases</strong> — Sumter County case may be unrelated to Spartanburg cluster. Free MMR vaccines tomorrow at Macedonia Missionary Baptist Church, Spartanburg.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" /></svg> AI in Healthcare</h2>
+<ul>
+<li><span class="source"><a href="https://histalk2.com/2026/02/04/healthcare-ai-news-2-4-26/">HIStalk</a></span> <strong>Oracle Health AI drafts orders via ambient listening</strong> — Clinical AI Agent now creates review-ready orders for labs, imaging, prescriptions, and referrals.</li>
+<li><span class="source"><a href="https://histalk2.com/2026/02/04/healthcare-ai-news-2-4-26/">HIStalk</a></span> <strong>Mass General Brigham's AI virtual care</strong> — Care Connect uses K Health AI for 24/7 primary care. 12 physicians see 40-50 patients/day each via video visits.</li>
+<li><span class="source"><a href="https://histalk2.com/2026/02/04/healthcare-ai-news-2-4-26/">HIStalk</a></span> <strong>NHS publishes registry of 19 ambient AI vendors</strong> — Self-certified for safety, tech, and data protection standards.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Safety</h2>
+<ul>
+<li><span class="source"><a href="https://www.cnbc.com/2026/02/04/amazon-alexa-plus-us-releas.html">CNBC</a></span> <strong>Amazon Alexa+ now available to all US users</strong> — $19.99/month (free for Prime). Can book appointments, order Ubers. <mark>"Tens of millions" already using</mark>; engagement up 2-3x.</li>
+<li><span class="source"><a href="https://quantumzeitgeist.com/ai-data-safety-system-guarantees-reliable/">Quantum Zeitgeist</a></span> <strong>New data safety system for AI pipelines</strong> — Scientists address growing problem of unreliable AI analytics with new safeguards.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 1 0 6.712 14.396M12.75 3.031a9 9 0 0 1 6.712 14.396" /></svg> Natural World</h2>
+<img src="https://www.detroitnews.com/gcdn/authoring/authoring-images/2026/02/05/PDTN/88525313007-usnewsenvillrewildinglawtb.jpg" alt="Illinois wetlands" class="image-float">
+<ul>
+<li><span class="source"><a href="https://www.detroitnews.com/story/news/nation/2026/02/05/illinois-rewilding-law-first-us-step-toward-state-wetland-protection/88525295007/">Detroit News</a></span> <strong>Illinois passes first US "rewilding" law</strong> — Empowers restoration of wetlands after Supreme Court weakened federal protections. <mark>Over half of IL wetlands now unprotected</mark>. Next step: Wetlands Protection Act.</li>
+<li><span class="source"><a href="https://www.wcs.org/">WCS</a></span> <strong>Good news for sharks</strong> — Panama leads turning point for oceanic whitetip shark protection, per Time Magazine.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12M12.265 3.11a.375.375 0 1 1-.53 0L12 2.845l.265.265Zm-3 0a.375.375 0 1 1-.53 0L9 2.845l.265.265Zm6 0a.375.375 0 1 1-.53 0L15 2.845l.265.265Z" /></svg> Vegan & Vegetarian</h2>
+<ul>
+<li><span class="source"><a href="https://vegoutmag.com/food-and-drink/s-st-5-vegan-stews-hearty-enough-to-make-you-forget-its-freezing-outside/">VegOut</a></span> <strong>5 hearty vegan stews for bitter cold</strong> — Try: <strong>Moroccan Chickpea & Sweet Potato</strong> (cumin, cinnamon, tahini finish), <strong>West African Peanut Stew</strong> (peanut butter, tomatoes, greens), or <strong>Italian White Bean & Kale</strong> (silky, Tuscan-inspired).</li>
+<li><span class="source"><a href="https://www.seriouseats.com/hearty-winter-vegetable-soup-vegan-recipe">Serious Eats</a></span> <strong>Hearty Winter Vegetable Soup</strong> — Root vegetables, warming spices, perfect for cold nights.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

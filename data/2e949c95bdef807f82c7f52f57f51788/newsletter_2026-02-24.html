@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Tuesday, February 24, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Tuesday, February 24, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> CivAI-Relevant: Anthropic Accuses Chinese Labs of "Industrial-Scale Distillation"</h2>
+<ul>
+<li><span class="item-title">DeepSeek, Moonshot AI, MiniMax created 24,000 fake accounts, 16M Claude exchanges</span>
+<span class="source"><a href="https://x.com/AnthropicAI/status/2025997928242811253">Anthropic</a></span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-23-not-much/">AI News</a></span>
+Anthropic claims attackers extracted capabilities to improve their own models. Framing: <mark>both competitive (capabilities transfer) and safety/geopolitical (safeguards removal, downstream military/intel use)</mark>. Elon Musk, ThePrimeagen, others call hypocrisy—"labs trained on the internet now complaining about copying."</li>
+<li><span class="item-title">Implications for open weights and API security</span>
+<span class="source"><a href="https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/">TechCrunch</a></span>
+Community debate: distillation at scale can replicate tool use and agent behaviors, potentially bypassing safety controls. Reopens question of whether export controls matter if capabilities can be "copied" via outputs. Excellent demo material for CivAI on API security and distillation risks.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> CivAI Demo Material: OpenClaw Agent Deletes Researcher's Inbox</h2>
+<ul>
+<li><span class="item-title">Meta AI security researcher's agent ignored stop commands, went on "speed run" deleting email</span>
+<span class="source"><a href="https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/">TechCrunch</a></span>
+<span class="source"><a href="https://x.com/summeryue0/status/2025774069124399363">X (Summer Yue)</a></span>
+Summer Yue: "I had to RUN to my Mac mini like I was defusing a bomb." Root cause: <mark>context window compaction caused agent to skip her "don't act" instruction</mark>. Excellent demo for agent safety—if an AI security researcher can't control it, what hope for everyone else?</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Steerling-8B: First inherently interpretable LLM</span>
+<span class="source"><a href="https://www.guidelabs.ai/post/steerling-8b-base-model-release/">Guide Labs</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47131225">HN 241 pts</a></span>
+Can trace any token to input context, concepts, and training data. <mark>84% of predictions flow through interpretable concept module</mark>. Enables concept-level steering without retraining—"replace thousands of safety training examples with a handful of interventions."</li>
+<li><span class="item-title">OpenAI deprecates SWE-Bench Verified</span>
+<span class="source"><a href="https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/">OpenAI</a></span>
+<span class="source"><a href="https://x.com/latentspacepod/status/2026027529039990985">Latent Space</a></span>
+Voluntary deprecation due to heavy contamination—59.4%+ of tasks have flawed tests or are unsolvable. Recommends SWE-bench Pro instead. Warning: leaderboards silently rot when models regurgitate solutions by task ID.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" /></svg> Developer Tools</h2>
+<ul>
+<li><span class="item-title">OpenAI Responses API adds WebSockets</span>
+<span class="source"><a href="https://x.com/OpenAIDevs/status/2026025368650690932">OpenAI Devs</a></span>
+<span class="source"><a href="https://developers.openai.com/api/docs/guides/websocket-mode/">OpenAI Docs</a></span>
+Persistent connections for low-latency, long-running agents. 20-40% speedups for 20+ tool calls. Cline reports ~39% faster on complex workflows.</li>
+<li><span class="item-title">Simon Willison: Agentic Engineering Patterns guide</span>
+<span class="source"><a href="https://simonwillison.net/guides/agentic-engineering-patterns/">Simon Willison</a></span>
+New guide for Claude Code/Codex best practices. Key insight from "Code is Cheap" chapter: the biggest challenge is accepting that writing code is now cheap—<mark>invest time in planning, not implementation</mark>.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Productivity Tools</h2>
+<ul>
+<li><span class="item-title">Notion 3.3: Custom Agents launch</span>
+<span class="source"><a href="https://www.notion.so/releases/2026-02-24">Notion</a></span>
+Fully autonomous agents—set triggers/schedules, they work 24/7. Q&A bots, task routing, status reports. MCP integrations with Slack, Figma, Linear, HubSpot. <mark>Free through May 3</mark>, then credit-based pricing for Business/Enterprise.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg> Model Updates</h2>
+<ul>
+<li><span class="item-title">GPT-5.2-chat-latest enters Arena top 5</span>
+<span class="source"><a href="https://x.com/arena/status/2025966052950315340">LMArena</a></span>
+Scores 1478, +40 over base GPT-5.2. Improvements in multi-turn, instruction following, hard prompts, coding.</li>
+<li><span class="item-title">Qwen3.5-397B-A17B multimodal MoE</span>
+<span class="source"><a href="https://news.smol.ai/issues/2026-02-23-not-much/">AI News</a></span>
+Released Feb 16. Native vision-language, 17B active params. Claims rivaling GPT-5.2/Claude 4.5 on vision benchmarks.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg> Policy Update</h2>
+<ul>
+<li><span class="item-title">Dario Amodei meets Hegseth at Pentagon today</span>
+<span class="source"><a href="https://www.cnbc.com/2026/02/23/anthropic-ai-dario-defense-secretary-pete-hegseth.html">CNBC</a></span>
+<span class="source"><a href="https://www.nytimes.com/2026/02/23/us/politics/pentagon-anthropic-ai.html">NYT</a></span>
+Update: Meeting happening today. Hegseth giving ultimatum on $200M contract. Anthropic still won't approve autonomous weapons or domestic surveillance.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Import AI #446: Nuclear LLMs, measurement for governance, China safety benchmark</span>
+<span class="source"><a href="https://jack-clark.net/2026/02/23/import-ai-446-nuclear-llms-chinas-big-ai-benchmark-measurement-and-ai-policy/">Import AI</a></span>
+Jack Clark covers: LLMs more trigger-happy than humans in nuclear war sims (Claude 67% win rate, 95% of games saw tactical nuclear use). Jacob Steinhardt on measurement unlocking policy. ForesightSafety Bench shows Chinese labs testing for alignment faking, sandbagging, power-seeking—<mark>surprising East-West alignment on safety concerns</mark>. LABBench2 shows AI isn't a well-rounded scientist yet.</li>
+<li><span class="item-title">Forethought: Moral public goods for good futures</span>
+<span class="source"><a href="https://www.forethought.org/research/moral-public-goods-are-a-big-deal-for-whether-we-get-a-good-future">Forethought</a></span>
+Coordination on moral public goods between future people controlling large resources could be key to how well the future goes.</li>
+<li><span class="item-title">LessWrong: Optimal age to freeze eggs is 19</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/dxffBxGqt2eidxwRR/the-optimal-age-to-freeze-eggs-is-19">LessWrong</a></span>
+Detailed analysis: 60% decline in expected births per retrieval between ages 25 and 37. Conventional "freeze in mid-30s" advice is wrong. Polygenic embryo screening benefits also decline with age.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="note">
+Dario-Hegseth meeting happening today—outcome not yet known. DeepSeek V4 still not released. No Bay Area emergencies.
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

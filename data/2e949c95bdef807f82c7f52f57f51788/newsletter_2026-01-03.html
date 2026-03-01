@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Daily - Saturday, January 03, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 160px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+.breaking { background: #fef2f2; border-left: 4px solid #dc2626; padding: 16px; margin-bottom: 24px; border-radius: 4px; }
+.breaking h2 { border-bottom: none; color: #dc2626; margin-bottom: 10px; padding-bottom: 0; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Daily AI Newsletter</h1>
+<p class="date">Saturday, January 03, 2026</p>
+
+<div class="breaking">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg> BREAKING: US Strikes Venezuela, Maduro Captured</h2>
+<p><mark>US military struck Venezuela overnight; Trump says Maduro and wife captured and flown out.</mark> Most direct US intervention in Latin America since 1989 Panama invasion. Delta Force-led operation; Maduro facing drug trafficking charges in US courts. VP Delcy Rodriguez reportedly in Russia. Opposition leader Maria Corina Machado's whereabouts unknown. Oil markets expected to jump. <a href="https://www.reuters.com/world/americas/loud-noises-heard-venezuela-capital-southern-area-without-electricity-2026-01-03/">Reuters</a> | <a href="https://www.cnn.com/world/live-news/venezuela-explosions-caracas-intl-hnk-01-03-26">CNN</a> | <a href="https://www.bbc.com/news/articles/crmlz7r0zrxo">BBC</a></p>
+</div>
+
+<div class="layout">
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg> Models & Research</h2>
+<ul>
+<li><span class="item-title">IQuest-Coder-V1 40B: Chinese hedge fund model rivals Claude Sonnet 4.5</span>
+<span class="source">HuggingFace</span> From Ubiquant-backed IQuest Lab. <mark>81.4% SWE-Bench Verified, 49.9% BigCodeBench</mark> with only 40B params (10-20x smaller than competitors). Loop variant uses recurrent transformer design. Apache 2.0-ish license. <a href="https://huggingface.co/IQuestLab/IQuest-Coder-V1-40B-Instruct">Model</a> | <a href="https://www.reddit.com/r/LocalLLaMA/comments/1q0x19t/anyone_tried_iquestcoderv1_yet_the_40b_numbers/">Discussion</a></li>
+
+<li><span class="item-title">Prime Intellect: Recursive Language Models (RLMs)</span>
+<span class="source">Prime Intellect</span> New research direction for long-horizon agents. <mark>Model manages its own context</mark> via Python REPL and sub-LLM calls instead of external files. Outperforms standard LLMs on DeepDive and Oolong long-context tasks. Training with RL expected to unlock further gains. <a href="https://www.primeintellect.ai/blog/rlm">Blog</a> | <a href="https://arxiv.org/abs/2512.24601">Paper</a></li>
+
+<li><span class="item-title">DeepSeek mHC paper (update)</span>
+<span class="source">arXiv</span> Manifold-Constrained Hyper-Connections: fixes instability in residual-path design via Birkhoff polytope constraints. ~6.7% training overhead for 4x residual streams. "2026 is the year of the residuals." <a href="https://arxiv.org/pdf/2512.24880">Paper</a></li>
+
+<li><span class="item-title">GPT-5.2 Pro: 29.2% on FrontierMath Tier 4</span>
+<span class="source">AINews</span> New SOTA on hardest math tier. Just one year ago, Tier 1-3 at 2% seemed insurmountable. <a href="https://news.smol.ai/issues/26-01-02-not-much/">AINews</a></li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg> Transformer: 2026 Predictions</h2>
+<ul>
+<li><span class="item-title">AI bubble may pop—with contagion risk</span>
+<span class="source">Transformer</span> $120B+ data center spending moved to SPVs; early securitization spreading risk to pension funds. Oracle CDS highest since 2009. Bain expects $800B revenue shortfall vs compute demand by 2030. <a href="https://www.transformernews.ai/p/ai-predictions-2026-sam-altman-openai-bubble-anthropic-midterms">Full piece</a></li>
+
+<li><span class="item-title">Opus 4.5 + Claude Code: "genuinely transformative"</span>
+Shakeel Hashim: "First truly impressive autonomous agent I've used." Expects 2026 to end "AI slowdown" talk.</li>
+
+<li><span class="item-title">Progressives will run against AI in midterms</span>
+Bernie Sanders endorsed data center moratorium. Leading the Future PAC faces counter-PAC + public hostility.</li>
+
+<li><span class="item-title">Anthropic timeline reckoning coming</span>
+Claimed "Nobel Prize-level AI" by late 2026/early 2027. If not delivered, credibility hit for short-timelines crowd.</li>
+
+<li><span class="item-title">"Sam Altman will snap"</span>
+Prediction: public meltdown in 2026 as stakes rise. Scenarios include Musk cage match, leaked preparedness emails, late-night tweets.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg> Tools & Products</h2>
+<ul>
+<li><span class="item-title">OpenAI Grove Cohort 2 applications open</span>
+<span class="source">OpenAI</span> 5-week founder program, 15 participants. $50k API credits, early AI tool access, SF mentorship. <a href="https://openai.com/index/openai-grove">Apply</a></li>
+
+<li><span class="item-title">xAI Grok Business/Enterprise</span>
+<span class="source">xAI</span> $30/seat/mo. "Your data stays yours: no training on it." Google Drive integration, enterprise SSO, customer-managed encryption. <a href="https://x.ai/grok-business">Details</a></li>
+
+<li><span class="item-title">Cursor 2.0 recap (if you missed it)</span>
+<span class="source">Cursor</span> Multi-agent (up to 8 parallel via Git worktrees), new Composer model (4x faster), Browser GA, sandboxed terminals, voice mode. <a href="https://www.cursor.com/changelog">Changelog</a></li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg> Other Notable</h2>
+<ul>
+<li><span class="item-title">ACX: "Permanent underclass" satire</span>
+<span class="source">ACX</span> Scott Alexander mocks Silicon Valley anxiety: "You have only X years to escape being permanently boring when galactic humanity scrutinizes your life forever." <a href="https://www.astralcodexten.com/p/you-have-only-x-years-to-escape-permanent">Post</a></li>
+
+<li><span class="item-title">HN: "2026 will be my year of Linux desktop"</span>
+<span class="source">xeiaso.net</span> 649 pts. Xe Iaso commits to Linux after Windows/Mac frustrations. <a href="https://xeiaso.net/notes/2026/year-linux-desktop/">Blog</a></li>
+
+<li><span class="item-title">39C3: RP2350 secure boot bypass</span>
+<span class="source">CCC</span> Talk on breaking Raspberry Pi RP2350 security via boot vectors and double glitches. <a href="https://streaming.media.ccc.de/39c3/relive/2149">Watch</a></li>
+
+<li><span class="item-title">BYD overtakes Tesla as world's top EV seller</span>
+<span class="source">BBC</span> First time ever. BYD 2.26M (+28%) vs Tesla 1.63M (-8.6%). <a href="https://www.bbc.com/news/articles/cj9rjwpvmpzo">Story</a></li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> Deadlines & Upcoming</h2>
+<ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+<li><strong>Jan 7:</strong> Claude Opus 3 researcher access program launches</li>
+<li><strong>Jan 8:</strong> Z.ai (Zhipu AI) IPO in Hong Kong—first AI-native LLM company to list</li>
+<li><strong>Jan 15:</strong> CAISI intern applications due</li>
+<li><strong>Jan 17:</strong> ACX/Metaculus 2026 prediction contest deadline</li>
+<li><strong>Jan 18:</strong> MATS Summer 2026 applications deadline</li>
+<li><strong>Early Jan:</strong> Vatican AI encyclical still expected</li>
+</ul>
+</div>
+</div>
+
+<div class="note">
+<strong>Today's context:</strong> Breaking Venezuela news dominates headlines. In AI: IQuest-Coder's 40B efficiency gains and Prime Intellect's RLM research are the technical highlights. Transformer's 2026 predictions piece is worth reading in full—particularly the bubble risk analysis and Anthropic timeline skepticism.
+</div>
+
+</div>
+</body>
+</html>

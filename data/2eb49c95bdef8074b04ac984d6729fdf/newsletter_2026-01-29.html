@@ -1,0 +1,55 @@
+Now I have enough information to create the newsletter. Let me compile all the new items that weren't covered in recent newsletters.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's Mom's Newsletter - Thursday, January 29, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+  font-family: Georgia, 'Times New Roman', serif; 
+  background: linear-gradient(to bottom, #fef7f0, #fff8f5); 
+  color: #2d2d2d; 
+  line-height: 1.7; 
+  padding: 20px;
+}
+.container { 
+  max-width: 900px; 
+  margin: 0 auto; 
+  background: white; 
+  border-radius: 12px; 
+  padding: 40px; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 3px solid #e8d4c8;
+  position: relative;
+}
+.flower-border {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.flower-corner {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+.flower-corner.top-left { top: 5px; left: 5px; }
+.flower-corner.top-right { top: 5px; right: 5px; transform: scaleX(-1); }
+.flower-corner.bottom-left { bottom: 5px; left: 5px; transform: scaleY(-1); }
+.flower-corner.bottom-right { bottom: 5px; right: 5px; transform: scale(-1, -1); }
+h1 { font-size: 26px; margin-bottom: 8px; font-weight: 700; color: #5a3e36; }
+.date { color: #8b7355; margin-bottom: 25px; font-size: 14px; font-style: italic; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 25px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #c9a88e; display: flex; align-items: center; gap: 8px; color: #6b4423; }
+ul { list-style: none; }
+li { margin-bottom: 14px; padding-left: 0; font-size: 13px; line-height: 1.7; }
+.item
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>

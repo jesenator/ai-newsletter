@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Monday, January 26, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Monday, January 26, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Claude Code: 100K Lines TypeScript to Rust in One Month</h2>
+<ul>
+<li><img src="https://blog.vjeux.com/wp-content/uploads/2026/01/image-6.png" alt="Divergence fixing progress" class="image-float"><span class="item-title">Vjeux ported Pokemon Showdown codebase with zero Rust experience</span>
+<span class="source"><a href="https://blog.vjeux.com/2026/analysis/porting-100k-lines-from-typescript-to-rust-using-claude-code-in-a-month.html">Vjeux</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46765694">HN</a></span> Meta engineer's detailed writeup: <mark>5,000 commits over 4 weeks, Claude Code running 24/7</mark>. Created auto-approval scripts with AppleScript, docker sandboxing for Rust compilation. Agent fixed hundreds of issues autonomously, averaging one fix every 20 minutes. Final result: only 80 divergences out of 2.4M test seeds (0.003%). Rust port is "significantly faster" than JS. Outstanding CivAI-relevant demo of agent capabilities.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> AI Workers Break Silence on Minnesota Shooting</h2>
+<ul>
+<li><span class="item-title">Jeff Dean, Chris Olah, and hundreds speak out—CEOs stay silent</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-workers-minnesota-shooting-ice-dhs-trump-alex-pretti">Transformer</a></span> After federal agents shot Alex Pretti on Saturday, <mark>AI workers publicly criticized the administration while lab CEOs remain quiet</mark>. Jeff Dean (Google DeepMind): "Absolutely shameful...executing a defenseless citizen." Chris Olah (Anthropic): "shock the conscience." OpenAI's Josh Achiam: "pretty beyond the pale." 450+ tech workers signed letter urging CEOs to cancel ICE contracts. Altman, Amodei, Hassabis, Zuckerberg all silent. Alex Turner: "pretty hard to do good research in a 'masked men execute civilians on the street' political environment."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety & Research</h2>
+<ul>
+<li><span class="item-title">LLMs approaching "industrialized" cyber exploit generation</span>
+<span class="source"><a href="https://jack-clark.net/2026/01/26/import-ai-442-winners-and-losers-in-the-ai-economy-math-proof-automation-and-industrialization-of-cyber-espionage/">Import AI #442</a></span> Researcher Sean Heelan tested Opus 4.5 and GPT-5.2 on zeroday exploit generation for QuickJS. Both succeeded. <mark>"The limiting factor...is going to be token throughput, not the number of hackers employed."</mark> Altman said OpenAI expects to reach "Cybersecurity High" level on their preparedness framework soon.</li>
+<li><span class="item-title">Numina-Lean-Agent solves all Putnam 2025 problems</span>
+<span class="source"><a href="https://jack-clark.net/2026/01/26/import-ai-442-winners-and-losers-in-the-ai-economy-math-proof-automation-and-industrialization-of-cyber-espionage/">Import AI #442</a></span> General-purpose foundation models + Lean theorem prover. Used "Discussion Partner" tool letting Claude Code seek help from other LLMs during proof work. Also formalized Brascamp-Lieb theorem—8,000 lines of Lean in under two weeks.</li>
+<li><span class="item-title">"Vibe coding kills open source" — new economics paper</span>
+<span class="source"><a href="https://arxiv.org/abs/2601.15494">arXiv</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46765120">HN 175 pts</a></span> Model shows vibe coding weakens user engagement that funds OSS maintainers. "Sustaining OSS under widespread vibe coding requires major changes in how maintainers are paid."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Policy & Platforms</h2>
+<ul>
+<li><span class="item-title">EU investigates X over Grok sexual deepfakes</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/clye99wg0y8o">BBC</a></span> <span class="source"><a href="https://www.reuters.com/world/europe/eu-opens-investigation-into-x-over-groks-sexualised-imagery-lawmaker-says-2026-01-26/">Reuters</a></span> Commission investigating whether "manipulated sexually explicit images" shown to EU users. VP Virkkunen: "Non-consensual sexual deepfakes of women and children are a violent, unacceptable form of degradation."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Apple: New AirTag with 50% longer range</span>
+<span class="source"><a href="https://www.apple.com/newsroom/2026/01/apple-introduces-new-airtag-with-expanded-range-and-improved-findability/">Apple</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46765819">HN 99 pts</a></span> Second-gen Ultra Wideband chip. Precision Finding now works on Apple Watch. 50% louder speaker. Same $29/unit price. Share Item Location feature reduced "truly lost" luggage by 90%.</li>
+<li><span class="item-title">Browser as coding agent sandbox</span>
+<span class="source"><a href="https://simonwillison.net/2026/Jan/25/the-browser-is-the-sandbox/">Simon Willison</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46762150">HN 250 pts</a></span> Paul Kinlan built "Co-do" demo—browser-based Claude Cowork alternative using File System Access API, CSP headers, WebAssembly. No container needed.</li>
+<li><span class="item-title">"After two years of vibecoding, I'm back to writing by hand"</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46765460">HN 195 pts</a></span> Contrarian perspective gaining traction on HN.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg> Economics of AI</h2>
+<ul>
+<li><span class="item-title">Stanford economist: AI "most important technology we have ever developed"</span>
+<span class="source"><a href="https://jack-clark.net/2026/01/26/import-ai-442-winners-and-losers-in-the-ai-economy-math-proof-automation-and-industrialization-of-cyber-espionage/">Import AI #442</a></span> Chad Jones paper: "10x the internet" over 50 years. If P-Doom is 1%, willing to pay >100% of GDP to mitigate. Proposes GPU/TPU tax to fund safety research.</li>
+<li><span class="item-title">Who's vulnerable to AI displacement?</span>
+<span class="source"><a href="https://jack-clark.net/2026/01/26/import-ai-442-winners-and-losers-in-the-ai-economy-math-proof-automation-and-industrialization-of-cyber-espionage/">Import AI #442</a></span> Centre for Governance of AI study: 6.1M workers (4.2%) in high-exposure, low-adaptive-capacity roles. Concentrated in clerical/admin. Marketing managers, web designers well-positioned.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Import AI #442: Full issue</span>
+<span class="source"><a href="https://jack-clark.net/2026/01/26/import-ai-442-winners-and-losers-in-the-ai-economy-math-proof-automation-and-industrialization-of-cyber-espionage/">Import AI</a></span> Major coverage: LLM cyber exploit generation approaching industrialization, Numina-Lean-Agent math proofs, Chad Jones economics paper, AI job displacement study. Tech Tale: "War Story" on cyberwarfare fought at machine speed.</li>
+<li><span class="item-title">ACX Open Thread 418</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-thread-418">ACX</a></span> Inkhaven blogging bootcamp returning April (apply by March 1). Aerolamp giving away free far-UVC lamps (~$500 value) to coworking spaces/group houses willing to display poster and take survey.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

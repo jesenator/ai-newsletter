@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Wednesday, February 04, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Wednesday, February 04, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Kimi K2.5: New Leading Open-Weights Model</h2>
+<ul>
+<li><span class="item-title">Moonshot releases K2.5 with "Agent Swarm" capability</span>
+<span class="source"><a href="https://thezvi.substack.com/p/kimi-k25">Zvi</a></span> <mark>First open model to seriously challenge frontier proprietary models</mark> in real use, not just benchmarks. Agent Swarm mode can coordinate up to 100 parallel sub-agents with 1,500+ tool calls. 50.2% on HLE, 74.9% on BrowseComp, 76.8% SWE-Bench. Open-source weights. Eleanor Berger: "If I had to only use this and not touch Claude/GPT/Gemini I'd be absolutely fine."</li>
+<li><span class="item-title">Troubling: Trained on Claude outputs, denies introspection</span>
+<span class="source"><a href="https://thezvi.substack.com/p/kimi-k25#:~:text=trained%20on%20Claude%20outputs">Zvi</a></span> Model sometimes identifies as Claude without system prompt. Scores last on model welfare ranking (denies introspection in 39/40 observations). Skeptics note it's "a master reward hacker" with coding that's verbose until asked to simplify.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Apple Xcode 26.3: Agentic Coding Arrives</h2>
+<ul>
+<li><span class="item-title">Claude Agent and OpenAI Codex now integrated in Xcode</span>
+<span class="source"><a href="https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/">Apple</a></span> <span class="source"><a href="https://techcrunch.com/2026/02/03/agentic-coding-comes-to-apples-xcode-26-3-with-agents-from-anthropic-and-openai/">TechCrunch</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46874619">HN 342 pts</a></span> <mark>Agents can explore projects, build, run tests, and fix errors autonomously</mark>. Xcode exposes capabilities via MCP, works with any MCP-compatible agent. Changes highlighted visually; easy revert at any point. Code-along workshop Thursday on Apple Developer site. Reddit: "Best Claude code integration in an IDE I've seen so far."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" /></svg> AI Tools & Research</h2>
+<ul>
+<li><span class="item-title">Mistral: Voxtral Transcribe 2 with sub-200ms latency</span>
+<span class="source"><a href="https://mistral.ai/news/voxtral-transcribe-2">Mistral</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46886735">HN</a></span> Two new speech-to-text models. Voxtral Realtime is open-weights (Apache 2.0), purpose-built for live transcription. 13 languages, speaker diarization, $0.003/min. 4B params, runs on edge devices.</li>
+<li><span class="item-title">Ghidra MCP Server: 110 tools for AI reverse engineering</span>
+<span class="source"><a href="https://github.com/bethington/ghidra-mcp">GitHub</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46882389">HN 191 pts</a></span> Show HN: Bridges Ghidra's reverse engineering with AI tools via MCP. Function decompilation, data structure discovery, batch operations. Production-ready.</li>
+<li><span class="item-title">Constant-cost attention via Taylor approximation</span>
+<span class="source"><a href="https://arxiv.org/abs/2602.00294">arXiv</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46886265">HN 60 pts</a></span> New paper shows self-attention computable with <mark>constant cost per token</mark>, orders-of-magnitude reductions in memory. Could enable unbounded token generation at fixed cost.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> CivAI-Relevant</h2>
+<ul>
+<li><span class="item-title">"I miss thinking hard" — viral essay on AI & skill atrophy</span>
+<span class="source"><a href="https://www.jernesto.com/articles/thinking_hard">Blog</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46881264">HN 997 pts</a></span> Developer reflects on how vibe coding starves "The Thinker" while satisfying "The Builder." <mark>"Even if I wanted to reject AI, the Builder in me would struggle with the inefficiency."</mark> Useful for communicating AI's cognitive effects.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> Security & Privacy</h2>
+<ul>
+<li><span class="item-title">iPhone Lockdown Mode blocked FBI access to seized device</span>
+<span class="source"><a href="https://www.404media.co/fbi-couldnt-get-into-wapo-reporters-iphone-because-it-had-lockdown-mode-enabled/">404 Media</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=46886237">HN 253 pts</a></span> Court records show FBI couldn't access WaPo reporter Hannah Natanson's iPhone 13 because <mark>Lockdown Mode was enabled</mark>. Rare public insight into feature's effectiveness.</li>
+<li><span class="item-title">Transformer: Moltbook is "an unsecured AI biolab"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/moltbook-isnt-an-ai-zoo-its-an-unsecured-openclaw-claude-security">Transformer</a></span> New analysis: ClawHub contains hundreds of malicious skills with malware and social engineering. Wiz: Moltbook exposed 6K+ emails, 1M+ API credentials. Karpathy: "It's a dumpster fire."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World</h2>
+<ul>
+<li><span class="item-title">New START nuclear treaty expires Thursday</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/c4g31n4ey9go">BBC</a></span> <span class="source"><a href="https://www.theguardian.com/world/2026/feb/03/expiry-nuclear-weapons-pact-us-russia-arms-race">Guardian</a></span> Last remaining US-Russia nuclear arms limits ending Feb 6. Limits each country to 1,550 deployed strategic warheads. Arms control advocates warn of new nuclear arms race.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: Full Kimi K2.5 Analysis</span>
+<span class="source"><a href="https://thezvi.substack.com/p/kimi-k25">Don't Worry About the Vase</a></span> Comprehensive breakdown of Moonshot's new model. Covers Agent Swarm architecture, benchmark performance, concerns about Claude output training and model welfare scores. Key takeaway: "Kimi K2.5 is a solid model...excellent given its price."</li>
+<li><span class="item-title">Zvi: OpenClaw deep dive — "Don't give it access to anything you're unwilling to lose"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/unless-that-claw-is-the-famous-openclaw">Don't Worry About the Vase</a></span> Full security analysis. Key rule: executive assistant test for access decisions. Covers Tasklet (92% MoM growth), phone call integration, Cloudflare Workers deployment. Verdict: "Such agents are neither efficient nor safe. Yet."</li>
+<li><span class="item-title">Transformer: OpenClaw/Moltbook security crisis</span>
+<span class="source"><a href="https://www.transformernews.ai/p/moltbook-isnt-an-ai-zoo-its-an-unsecured-openclaw-claude-security">Transformer</a></span> Analysis of "lethal trifecta" + persistent memory vulnerabilities. ClawHub malicious skills targeting crypto users. Key concern: damage may not remain contained to those who knew the risks.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Upcoming</h2>
+<ul>
+<li><span class="item-title">DeepSeek V4: Mid-February (around Lunar New Year, Feb 17)</span>
+<span class="source"><a href="https://www.reuters.com/technology/deepseek-launch-new-ai-model-focused-coding-february-information-reports-2026-01-09/">Reuters</a></span> Coding-focused model with 1M+ context expected soon.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

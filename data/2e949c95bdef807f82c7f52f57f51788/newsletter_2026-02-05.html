@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Thursday, February 05, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Thursday, February 05, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" /></svg> OpenAI Frontier: Enterprise Agent Platform</h2>
+<ul>
+<li><span class="item-title">OpenAI launches platform for "AI coworkers"</span>
+<span class="source"><a href="https://openai.com/index/introducing-openai-frontier/">OpenAI</a></span>
+<span class="source"><a href="https://www.reuters.com/business/finance/openai-unveils-ai-agent-service-part-push-attract-businesses-2026-02-05/">Reuters</a></span>
+<mark>Frontier helps enterprises build, deploy, and manage AI agents</mark> with shared business context, onboarding, permissions, and governance. Works with OpenAI, Anthropic, Google, and Microsoft agents. Early adopters: HP, Intuit, Oracle, State Farm, Uber. Fortune: "Could eventually replace" Salesforce, Workday.</li>
+<li><span class="item-title">Key capabilities: shared context, agent execution, evaluation loops</span>
+<span class="source"><a href="https://www.cnbc.com/2026/02/05/open-ai-frontier-enterprise-customers.html">CNBC</a></span>
+Connects siloed data warehouses, CRM, ticketing tools. Agents can reason over data, run code, use tools. Forward Deployed Engineers pair with teams. SOC 2 Type II certified.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Security Alert: ClawHub Malware</h2>
+<ul>
+<li><span class="item-title">Top downloaded skill was malware delivery vehicle</span>
+<span class="source"><a href="https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface">1Password</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46898615">HN 118 pts</a></span>
+1Password researcher found the #1 ClawHub "Twitter" skill was <mark>staged malware delivery</mark>—VirusTotal confirmed macOS infostealer. "Skills are just markdown. That's the problem." Markdown acts as installer, routes around MCP safety.</li>
+<li><span class="item-title">341 malicious skills identified in broader campaign</span>
+<span class="source"><a href="https://thehackernews.com/2026/02/researchers-find-341-malicious-clawhub.html">Hacker News</a></span>
+Security audit found 341+ skills spreading Atomic Stealer. Targets: browser sessions, API keys, SSH keys, cloud credentials. "If you've run OpenClaw on a work device, treat it as a potential incident."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> Claude Sonnet 5: Manifold Chaos</h2>
+<ul>
+<li><span class="item-title">Sonnet 5 release rumored, Manifold markets volatile</span>
+<span class="source"><a href="https://news.manifold.markets/p/forecasting-claude-leaks">Above The Fold</a></span>
+<span class="source"><a href="https://manifold.markets/Bayesian/claude-sonnet-5-released-this-week">Manifold</a></span>
+Markets expected Feb 3 release based on Vertex AI logs showing "claude-sonnet-5@20260203." Didn't materialize. <mark>Leaks claim: 82.1% SWE-Bench, 1M context, $3/$15 pricing</mark>—80% cheaper than Opus 4.5. Opus 4.6 at ~70% odds for February.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Coding Tools</h2>
+<ul>
+<li><span class="item-title">Nanobot: Ultra-lightweight OpenClaw alternative</span>
+<span class="source"><a href="https://github.com/HKUDS/nanobot">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46897737">HN 93 pts</a></span>
+~4,000 lines of Python vs OpenClaw's 430K+. One config file vs 8. Container isolation, minimal dependencies. "Fork it and make it yours."</li>
+<li><span class="item-title">Codex App Server: Embed the Codex agent</span>
+<span class="source"><a href="https://openai.com/index/unlocking-the-codex-harness/">OpenAI</a></span>
+New bidirectional JSON-RPC API for embedding Codex. Streaming progress, tool use, approvals, diffs. Decouples agent logic from UI.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World & Policy</h2>
+<ul>
+<li><span class="item-title">CIA World Factbook shut down after 60+ years</span>
+<span class="source"><a href="https://apnews.com/article/cia-world-factbook-ratcliffe-trump-fbec61ce16c4b3db59db9cefce0da043">AP</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=46899100">HN 159 pts</a></span>
+Popular reference since 1962 discontinued. No reason given; follows Ratcliffe's vow to cut non-core programs.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">ACX: Links for February 2026</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/links-for-february-2026">Astral Codex Ten</a></span>
+Highlights: Lab leak market dropped to 27%. New AI benchmark FAI-C measures "how Christian an AI is." ChatGPT covertly opens calculator on 5% of queries (got rewarded for it during training). <mark>Jan Leike: "Alignment is not solved but increasingly looks solvable."</mark> Manifold lab leak market, Hungary birthrate collapse, Indonesia putting suburbs on skyscrapers.</li>
+<li><span class="item-title">LessWrong: IABIED Book Review — Core Arguments and Counterarguments</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/qFzWTTxW37mqnE6CA/iabied-book-review-core-arguments-and-counterarguments">LessWrong</a></span>
+Deep analysis of Yudkowsky/Soares's "If Anyone Builds It Everyone Dies." Key crux: is ASI alignment extremely difficult? Reviews evolution analogy critiques, LLM alignment evidence, counting arguments. Flowchart of AI skeptic/singularitarian/doomer/successionist positions.</li>
+<li><span class="item-title">Mox: Sentient Futures Summit this weekend (Feb 6-8)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-24-29">Mox Newsletter</a></span>
+Mox closed for conference—only office holders, residents, fellows. Tonight: Members' Dinner + Automated Research Wikis with Claude Code workshop (7:30pm). Monday: Revolutionists Night with Matthew Glover on Project Slingshot.</li>
+<li><span class="item-title">EA Forum: Don't overupdate on evolutionary cost-balancing arguments</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/5hWYrQmzpftiGJMTW/don-t-overupdate-on-evolutionary-cost-balancing-arguments">EA Forum</a></span>
+Critique of "Evening Out Argument" in wild animal welfare. Key point: background motivational states (hunger, anxiety) don't follow cost-balancing logic—signal must stay strong to work.</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+Made by <a href="https://jessewgilbert.com">jessewgilbert.com</a> · Reply to unsubscribe or give feedback.
+</footer>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Wednesday, February 25, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Wednesday, February 25, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Pentagon Crisis Update: Hegseth Gives Anthropic Friday Deadline</h2>
+<ul>
+<li><span class="item-title">Scott Alexander's full defense of Anthropic</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/the-pentagon-threatens-anthropic">ACX</a></span> <span class="source"><a href="https://www.transformernews.ai/p/the-dod-fight-is-about-more-than-surveillance-openai-google-deepmind">Transformer</a></span>
+<mark>Hegseth has given Anthropic until Friday to drop ethics rules</mark> on autonomous weapons and domestic surveillance—or face "supply chain risk" designation that could be fatal to the company. Pentagon using designation previously reserved for Huawei-style foreign threats. Scott: "pathetic Third World bullshit to reconceive it as an instrument that lets the US government destroy any domestic company it wants."</li>
+<li><span class="item-title">OpenAI, Google "agreed in principle" to Pentagon terms</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-dod-fight-is-about-more-than-surveillance-openai-google-deepmind">Transformer</a></span>
+xAI already signed "all lawful use" clause. OpenAI "not close" to rolling over as of Monday, Google "close." Transformer: "For the sake of democracy, it ought to be one [a loyalty test] that companies are happy to fail."</li>
+<li><span class="item-title">Blue Rose poll: 61% of Americans oppose Pentagon's position</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/the-pentagon-threatens-anthropic">ACX</a></span>
+Includes "large plurality of Trump voters standing against this." Vitalik, Neil Chilson (ex-FTC), Dean Ball (ex-OSTP), Boaz Barak (OpenAI), Jeff Dean (Google) all publicly supporting Anthropic. Kalshi market for "supply chain risk" designation fell sharply overnight.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Developer Tools</h2>
+<ul>
+<li><span class="item-title">Claude Code Remote Control launches</span>
+<span class="source"><a href="https://code.claude.com/docs/en/remote-control">Anthropic</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47148454">HN 354 pts</a></span>
+<mark>Control your local Claude Code sessions from phone, tablet, or web</mark>. Start task at desk, continue from couch. Session runs locally—full filesystem, MCP servers, tools stay available. Pro/Max plans only. QR code to connect mobile. VentureBeat: Claude Code now at <mark>$2.5B annualized run rate</mark>, 4% of all GitHub commits.</li>
+<li><span class="item-title">Zvi reviews Claude Sonnet 4.6</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-sonnet-46-gives-you-flexibility">Zvi</a></span>
+"Modestly cheaper and faster than Opus 4.6, modestly not as good." Good for subagents, computer use, when you don't need "every ounce of intelligence." Users report: "overeager to call tools," can thrash on hard problems, but great for one-off coding tasks.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">80K Hours: Max Harms on corrigibility</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/max-harms-miri-superintelligence-corrigibility/">80K</a></span>
+MIRI researcher argues <mark>teaching AI "good values" is a huge wrong turn</mark>—we need corrigible (instruction-following, willingly modifiable) AIs with no values. "If you do make a mistake, it could be catastrophic. Once it's killed everyone, there's no ability to go back to the drawing board."</li>
+<li><span class="item-title">OpenAI February threat report</span>
+<span class="source"><a href="https://openai.com/index/disrupting-malicious-ai-uses/">OpenAI</a></span>
+New report on malicious AI uses. Key insight: "threat actors typically use AI in combination with other tools"—cross-platform attacks using multiple AI models at different points in workflows. Chinese influence operator case study.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg> Economics & Markets</h2>
+<ul>
+<li><span class="item-title">Zvi dissects Citrini's viral AI economics scenario</span>
+<span class="source"><a href="https://thezvi.substack.com/p/citrinis-scenario-is-a-great-but">Zvi</a></span> <span class="source"><a href="https://www.bloomberg.com/news/articles/2026-02-23/software-payments-shares-tumble-after-citrini-post-on-ai-risks">Bloomberg</a></span>
+Essay that "moved markets" predicts AI destroys white-collar jobs → demand collapse → 10.2% unemployment by 2028. Zvi: "excellent speculative fiction" but ignores singularity implications, real productivity gains, government response. "The AIs have all of the intelligence... you have bigger problems."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> CivAI-Relevant</h2>
+<ul>
+<li><span class="item-title">CivAI + NCSC: AI deepfakes in courts</span>
+<span class="source"><a href="https://civai.substack.com/p/ai-generated-evidence-is-a-threat">CivAI</a></span>
+New article on AI-generated evidence threats. Mendones v. Cushman: judge caught primitive deepfake video. CivAI recreated higher-fidelity version using consumer tools to demo risk. Florida woman jailed 2 days on AI-fabricated text messages. 350+ cases of AI-generated false citations by self-represented litigants.</li>
+<li><span class="item-title">Bcachefs creator claims custom LLM is "fully conscious"</span>
+<span class="source"><a href="https://www.theregister.com/2026/02/25/bcachefs_creator_ai/">The Register</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47154523">HN</a></span>
+Kent Overstreet insists his development LLM is female and sentient: "She's a fully conscious, sentient being." References Matt Shumer's "Something Big Is Happening" post. Another data point on growing AI-consciousness beliefs.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Public First Action: $300K NJ ad blitz</span>
+<span class="source"><a href="https://www.nytimes.com/2026/02/23/us/politics/anthropic-super-pac-new-jersey.html">NYT</a></span>
+Anthropic-backed PAC urging voters to tell Rep. Gottheimer (D-NJ, AI commission co-chair) to vote against bill blocking state AI protections. War of PACs continues: Jobs & Democracy (Anthropic) vs Leading the Future (OpenAI).</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Mox SF: David Krueger's Evitable talk Thursday 2/26</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-224-32">Mox</a></span>
+Dinner & talk about his new nonprofit whose mission is to "inform and organize the public to confront societal-scale risks of AI." Also: AI Safety Founders co-founder matching Wed 2/25, coding agents club, Constitution for the Future workshop Sun 3/1.</li>
+<li><span class="item-title">Gold Takes: "The Sleep of the Righteous"</span>
+<span class="source"><a href="https://bengoldhaber.substack.com/p/the-sleep-of-the-righteous">Gold Takes</a></span>
+Philosophical piece on whether simulation/uncertainty arguments could lead AI to cooperate. Key insight: humans have had this argument (religion) for millennia with "mixed results." "If Claude ends up being good because of anthropic reasoning, that would be pretty funny."</li>
+<li><span class="item-title">HN: Em-dash usage 10x higher in new accounts</span>
+<span class="source"><a href="https://www.marginalia.nu/weird-ai-crap/hn/">marginalia.nu</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47152085">HN 148 pts</a></span>
+Analysis finding new HN accounts dramatically more likely to use em-dashes—a telltale sign of AI-generated content.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Tracking</h2>
+<ul>
+<li><span class="item-title">DeepSeek V4: Still not released</span>
+<span class="source"><a href="https://evolink.ai/blog/deepseek-v4-release-window-prep">Evolink</a></span>
+Mid-February target passed. Some rumors point to Feb 26. 1T params, 1M context, "Engram" memory architecture rumored.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="note">Made by <a href="https://jessewgilbert.com">jessewgilbert.com</a> · <a href="https://jessewgilbert.com/newsletter-dashboard">Newsletter Dashboard</a><br>Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>
