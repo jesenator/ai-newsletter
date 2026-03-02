@@ -1,7 +1,6 @@
 """Newsletter generation functions."""
 
 import os
-from datetime import datetime
 from pathlib import Path
 
 from agents import ModelSettings
@@ -11,7 +10,7 @@ from sendgrid.helpers.mail import Mail, ReplyTo
 from agent import Agent
 from tools import ALL_TOOLS
 from feeds import fetch_all_sources, format_sources_for_prompt
-from utils import load_recent_newsletters_for_prompt, load_reference_newsletter
+from utils import load_recent_newsletters_for_prompt, load_reference_newsletter, now_pacific
 from notion import NewsletterConfig
 from config import (
   RSS_HOURS,
@@ -73,7 +72,7 @@ def get_newsletter_data_dir(newsletter_config: NewsletterConfig) -> Path:
   return newsletter_dir
 
 def build_prompt(newsletter_config: NewsletterConfig):
-  now = datetime.now()
+  now = now_pacific()
   current_date = now.strftime("%B %d, %Y")
   day_of_week = now.strftime("%A")
   newsletter_name = newsletter_config.name
@@ -173,7 +172,7 @@ TODAY'S DATE: {day_of_week}, {current_date}
 async def generate_newsletter_for_config(newsletter_config: NewsletterConfig):
   print(f"\n{'='*60}")
   print(f"Generating: {newsletter_config.name}")
-  print(f"Date: {datetime.now().strftime('%A, %B %d, %Y')}")
+  print(f"Date: {now_pacific().strftime('%A, %B %d, %Y')}")
   print(f"Model: {newsletter_config.model}")
   print(f"Sources: {len(newsletter_config.sources)} configured")
   print(f"{'='*60}\n")

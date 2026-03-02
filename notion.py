@@ -6,6 +6,9 @@ import httpx
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
+from zoneinfo import ZoneInfo
+
+PACIFIC = ZoneInfo("America/Los_Angeles")
 
 def get_headers():
   return {
@@ -223,7 +226,7 @@ def update_log(page_id: str, log_entry: str) -> bool:
 
 def format_log_entry(sent_to: list[str], cost: Optional[float] = None) -> str:
   """Format a log entry with timestamp and details."""
-  now = datetime.now().strftime('%Y-%m-%d %I:%M %p')
+  now = datetime.now(PACIFIC).strftime('%Y-%m-%d %I:%M %p')
   count = len(sent_to)
   recipient_str = f"{count} recipient" if count == 1 else f"{count} recipients"
   if cost is not None:

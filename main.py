@@ -13,7 +13,6 @@ Usage:
 import argparse
 import asyncio
 import sys
-from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -27,13 +26,13 @@ from generate import (
   send_email,
   append_footer,
 )
-from utils import clean_html_output, open_in_browser, save_newsletter
+from utils import clean_html_output, open_in_browser, save_newsletter, now_pacific
 from notion import fetch_newsletters, update_log, format_log_entry
 
 
 def print_overview(newsletters, send_email: bool, test_mode: bool):
   print(f"\n{'='*60}")
-  print(f"NEWSLETTER OVERVIEW - {datetime.now().strftime('%A, %B %d, %Y')}")
+  print(f"NEWSLETTER OVERVIEW - {now_pacific().strftime('%A, %B %d, %Y')}")
   print(f"{'='*60}")
   status = "Test" if test_mode else "Active"
   print(f"Found {len(newsletters)} {status.lower()} newsletter(s):\n")
@@ -106,7 +105,7 @@ async def main():
     content = append_footer(content)
 
     newsletter_data_dir = get_newsletter_data_dir(newsletter_config)
-    current_date = datetime.now().strftime("%Y-%m-%d")
+    current_date = now_pacific().strftime("%Y-%m-%d")
     filepath = save_newsletter(newsletter_data_dir, content, current_date)
     print(f"\nSaved to: {filepath}")
     log_info(f"Saved newsletter to: {filepath}")
@@ -122,7 +121,7 @@ async def main():
         print(f"WARNING: {msg}")
         log_warning(msg)
       else:
-        subject = f"{newsletter_config.name} - {datetime.now().strftime('%B %d, %Y')}"
+        subject = f"{newsletter_config.name} - {now_pacific().strftime('%B %d, %Y')}"
         for email in newsletter_config.emails:
           if send_email(subject, content, email):
             print(f"Newsletter sent to {email}")

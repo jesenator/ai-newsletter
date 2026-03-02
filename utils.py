@@ -1,7 +1,14 @@
 """Utility functions for newsletter generation."""
 
 import re
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+PACIFIC = ZoneInfo("America/Los_Angeles")
+
+def now_pacific() -> datetime:
+  return datetime.now(PACIFIC)
 
 
 def ensure_data_dir(data_dir: Path):

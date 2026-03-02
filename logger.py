@@ -4,6 +4,9 @@ import logging
 import sys
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+PACIFIC = ZoneInfo("America/Los_Angeles")
 
 LOG_FILE = Path(__file__).parent / "newsletter.log"
 
@@ -22,6 +25,7 @@ def get_logger() -> logging.Logger:
     "[%(asctime)s] %(levelname)s: %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S"
   )
+  fmt.converter = lambda *args: datetime.now(PACIFIC).timetuple()
 
   file_handler = logging.FileHandler(LOG_FILE, encoding="utf-8")
   file_handler.setLevel(logging.DEBUG)
@@ -83,10 +87,10 @@ def log_email(to: str, success: bool, error: str = None) -> None:
 
 def log_run_start(newsletters_count: int, mode: str) -> None:
   sep = "#" * 60
-  get_logger().info(f"\n{sep}\nNEWSLETTER RUN STARTED - {datetime.now().strftime('%A, %B %d, %Y %H:%M:%S')}\n"
+  get_logger().info(f"\n{sep}\nNEWSLETTER RUN STARTED - {datetime.now(PACIFIC).strftime('%A, %B %d, %Y %H:%M:%S')}\n"
                     f"Mode: {mode} | Newsletters: {newsletters_count}\n{sep}")
 
 
 def log_run_end() -> None:
   sep = "#" * 60
-  get_logger().info(f"\n{sep}\nNEWSLETTER RUN COMPLETED - {datetime.now().strftime('%H:%M:%S')}\n{sep}\n")
+  get_logger().info(f"\n{sep}\nNEWSLETTER RUN COMPLETED - {datetime.now(PACIFIC).strftime('%H:%M:%S')}\n{sep}\n")
