@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Thursday, March 05, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #666; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Thursday, March 05, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Transformer: Autonomous Weapons Deep Dive</h2>
+<ul>
+<li><span class="item-title">OpenAI's "cloud-only" deployment is not a meaningful safeguard against autonomous weapons</span>
+<span class="source"><a href="https://www.transformernews.ai/p/what-you-need-to-know-about-autonomous-openai-anthropic-pentagon-dod-dow">Transformer</a></span> Comprehensive explainer on why OpenAI's red line against autonomous weapons has huge loopholes. Anthropic rejects the cloud/edge distinction: <mark>"Drones on the battlefield can now be orchestrated through mesh networks that include cloud data centers."</mark> Ukrainian drones already use cheap Raspberry Pi for on-device targeting while cloud handles everything else. "A frontier model doesn't need to be in a drone to help it autonomously kill someone." Strong CivAI demo material.</li>
+<li><span class="item-title">Both Anthropic and OpenAI view fully autonomous weapons as inevitable</span>
+<span class="source"><a href="https://www.transformernews.ai/p/what-you-need-to-know-about-autonomous-openai-anthropic-pentagon-dod-dow">Transformer</a></span> Dario Amodei: autonomous weapons "may prove critical for our national defense." Key disagreement is timing—Anthropic says frontier AI "simply not reliable enough" yet. Pentagon launched $100M prize challenge for "voice-controlled, autonomous drone swarming technology." Both SpaceX and Anthropic reportedly made pitches.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Developer Tools</h2>
+<ul>
+<li><span class="item-title">Cursor now available in JetBrains IDEs</span>
+<span class="source"><a href="https://cursor.com/changelog/03-04-26">Cursor</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47262523">HN</a></span> Install via Agent Client Protocol (ACP) Registry. Use any frontier model from OpenAI, Anthropic, Google in IntelliJ, PyCharm, WebStorm.</li>
+<li><span class="item-title">Google Workspace CLI: One CLI for all of Workspace</span>
+<span class="source"><a href="https://github.com/googleworkspace/cli">GitHub</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47255881">HN 764 pts</a></span> <mark>Built for humans and AI agents</mark>—Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin. Dynamically built from Google Discovery APIs. 100+ agent skills included. MCP server support.</li>
+<li><span class="item-title">Nvidia PersonaPlex 7B runs on Apple Silicon</span>
+<span class="source"><a href="https://blog.ivan.digital/nvidia-personaplex-7b-on-apple-silicon-full-duplex-speech-to-speech-in-native-swift-with-mlx-0aa5276f2e23">Blog</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47258801">HN 250 pts</a></span> Full-duplex speech-to-speech in native Swift. Audio in, audio out—no transcribe-think-synthesize pipeline. 4-bit quantized ~5.3 GB, runs faster than real-time (~68ms/step) on M2 Max.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World Events</h2>
+<ul>
+<li><span class="item-title">US-Israel-Iran War: Day 6</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/c0e55g03v2zo">BBC</a></span> <span class="source"><a href="https://www.aljazeera.com/video/newsfeed/2026/3/5/video-intense-us-israeli-bombardment-across-iran">Al Jazeera</a></span> US submarine sinks Iranian warship in Indian Ocean (100+ crew). Israel F-35 shot down Iranian fighter jet over Tehran—first F-35 air-to-air kill. 11 US soldiers now dead. Iran threatens Strait of Hormuz. Trump says strikes could continue 4-5 weeks.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg> Industry</h2>
+<ul>
+<li><span class="item-title">OpenAI eyeing NATO contract</span>
+<span class="source"><a href="https://www.theinformation.com/briefings/openai-considering-contract-nato-classified-networks">The Information</a></span> <span class="source"><a href="https://gizmodo.com/altman-reportedly-tells-staff-openai-wants-another-classified-contract-this-time-with-nato-2000729253">Gizmodo</a></span> Altman told staff OpenAI considering agreement to deploy AI on NATO unclassified networks. Would expand OpenAI's defense footprint beyond US.</li>
+<li><span class="item-title">BMW deploying humanoid robots in Germany</span>
+<span class="source"><a href="https://www.press.bmwgroup.com/global/article/detail/T0455864EN/bmw-group-to-deploy-humanoid-robots-in-production-in-germany-for-the-first-time?language=en">BMW</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47253892">HN 186 pts</a></span> First humanoid robots in European car production. AEON robot at Leipzig plant from summer 2026, used in high-voltage battery assembly.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li><span class="item-title">ACX endorses new LessWrong analysis of OpenAI contract loopholes</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-hidden-open-thread-4235">ACX</a></span> <span class="source"><a href="https://www.lesswrong.com/posts/FSGfzDLFdFtRDADF4/openai-s-surveillance-language-has-many-potential-loopholes">LessWrong</a></span> Scott Alexander: "For up-to-date analysis of the latest contract, I endorse this LW post." Post argues <mark>OpenAI's amended surveillance language still has many potential loopholes</mark>.</li>
+<li><span class="item-title">Altman: "We do not get to make operational decisions"</span>
+<span class="source"><a href="https://www.cnbc.com/2026/03/03/sam-altman-tells-openai-staff-operational-decisions-up-to-government.html">CNBC</a></span> Told OpenAI staff that what Pentagon does with the technology is government's call, not OpenAI's.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: "Gemini 3.1 Pro Aces Benchmarks, I Suppose"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/gemini-31-pro-aces-benchmarks-i-suppose">Don't Worry About the Vase</a></span> Gemini 3.1 Pro leads most benchmarks (77.1% ARC-AGI-2, LiveBench 79.93), but "most of us had the same reaction: 'It's a Gemini model.'" <mark>Frontier safety framework tests run but details not shared</mark>—Zvi calls this "unacceptable." Gemini 3 Deep Think at 84.6% ARC-AGI-2.</li>
+<li><span class="item-title">HN: "The L in LLM Stands for Lying"</span>
+<span class="source"><a href="https://acko.net/blog/the-l-in-llm-stands-for-lying/">Acko.net</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47257394">HN 470 pts</a></span> Essay reframes LLM outputs as "forgeries"—imitations of authentic work. "It's perfectly okay not to use AI." Argues vibe-coding PRs from new employees should be doubted: "if a new employee produces an extremely detailed PR with lots of explanation and comments, doubt every word."</li>
+<li><span class="item-title">80K Hours: Half-year update Q3-Q4 2025</span>
+<span class="source"><a href="https://80000hours.org/2026/03/half-year-update-q3-q4-2025/">80K Hours</a></span> New career guide with Penguin Random House in May. Two new chapters on AI effects on job market and why AI is "the most pressing issue facing society." Org now at 50 staff.</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+Made by <a href="https://jessewgilbert.com">jessewgilbert.com</a> · <a href="#">Newsletter Dashboard</a><br>
+Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>
