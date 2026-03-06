@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Friday, March 06, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #f8fafc; border-left: 4px solid #dc2626; padding: 16px; margin-bottom: 30px; border-radius: 4px; }
+.pitch h3 { font-size: 16px; color: #dc2626; margin-bottom: 10px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Friday, March 06, 2026</div>
+
+<div class="pitch">
+<h3>PITCH: Pentagon Tested OpenAI's Models via Microsoft Before the Military Ban Was Lifted</h3>
+<p>A new <a href="http://www.techmeme.com/260305/p62#a260305p62">Wired report</a> reveals that OpenAI employees claim the Department of Defense tested Microsoft's Azure-hosted OpenAI models <strong>before</strong> OpenAI officially lifted its blanket ban on military use in January 2024. The Pentagon accessed these models through existing Azure contracts without direct OpenAI engagement, exploiting the fact that Microsoft independently manages Azure OpenAI licensing.</p>
+<p><strong>Why this matters:</strong> This exposes a backdoor that existed before OpenAI's public policy shift—and raises questions about whether OpenAI's "blanket ban" was meaningful if Microsoft could simply license the same models to the military anyway. It also suggests the recent Pentagon-Anthropic conflict could have been avoided: if Microsoft can bypass usage policies for one AI company, why couldn't the same arrangement exist for Anthropic? Key questions: Did OpenAI leadership know about Pentagon testing? Did Microsoft inform OpenAI? Could this create legal exposure if the models were used in ways that violated OpenAI's stated policies?</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Pentagon-Anthropic: New Developments</h2>
+<ul>
+<li><span class="item-title">Anthropic vows to sue Pentagon over supply chain designation</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cn5g3z3xe65o">BBC</a></span> <span class="source"><a href="https://techcrunch.com/2026/03/05/anthropic-to-challenge-dods-supply-chain-label-in-court/">TechCrunch</a></span> Dario Amodei: Designation is "legally unsound." Claims it only applies to Claude use <mark>as a direct part of DOD contracts</mark>, not all contractor activity. Will continue supporting CENTCOM at "nominal cost" during transition.</li>
+<li><span class="item-title">Microsoft keeps Anthropic tools in commercial products</span>
+<span class="source"><a href="http://www.techmeme.com/260306/p5#a260306p5">CNBC/Techmeme</a></span> Microsoft lawyers concluded DOD's designation applies <mark>only to defense projects</mark>—not client-facing products. Azure continues embedding Claude in enterprise software.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> AI Security: Dual-Use Milestone</h2>
+<ul>
+<li><span class="item-title">Claude Opus 4.6 found 100+ Firefox bugs in two weeks</span>
+<span class="source"><a href="https://www.anthropic.com/news/mozilla-firefox-security">Anthropic</a></span> <span class="source"><a href="http://www.techmeme.com/260306/p9#a260306p9">WSJ/Techmeme</a></span> January scan: <mark>14 high-severity vulnerabilities</mark>—more than typically reported in two months. Mozilla patched all in Firefox 148. Also developed crude exploits in testing (sandbox blocked them). Anthropic: "AI is making it possible to detect severe security vulnerabilities at highly accelerated speeds."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33" /></svg> Major Funding</h2>
+<ul>
+<li><span class="item-title">SoftBank seeking $40B loan for OpenAI stake</span>
+<span class="source"><a href="http://www.techmeme.com/260306/p8#a260306p8">Bloomberg/Techmeme</a></span> Largest-ever dollar-denominated borrowing. JPMorgan underwriting. Funds SoftBank's $30B commitment to OpenAI's $110B round.</li>
+<li><span class="item-title">Nominal hits unicorn status: $155M at $1B</span>
+<span class="source"><a href="https://techcrunch.com/2026/03/05/hardware-testing-startup-nominal-hits-1b-valuation-raises-155m-in-10-months/">TechCrunch</a></span> Founders Fund led $80M Series B extension. Defense hardware testing for SpaceX, Anduril, Hadrian.</li>
+<li><span class="item-title">ZyG: $58M seed for "agentic e-commerce"</span>
+<span class="source"><a href="https://techfundingnews.com/zyg-raises-58m-to-help-dtc-brands-scale-with-agentic-os/">TechFundingNews</a></span> Bessemer, Viola, Lightspeed led. AI agents handle entire DTC brand operations—sourcing to fulfillment.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Products & Tools</h2>
+<ul>
+<li><span class="item-title">Cursor launches Automations</span>
+<span class="source"><a href="https://cursor.com/blog/automations">Cursor</a></span> <span class="source"><a href="https://techcrunch.com/2026/03/05/cursor-is-rolling-out-a-new-system-for-agentic-coding/">TechCrunch</a></span> Always-on agents triggered by Slack messages, GitHub PRs, PagerDuty incidents, or timers. <mark>Cloud sandboxes spin up automatically</mark>, open PRs, post to Slack. "Build the factory that creates your software."</li>
+<li><span class="item-title">ByteDance's Seedance 2.0 overwhelmed by demand</span>
+<span class="source"><a href="http://www.techmeme.com/260305/p63#a260305p63">Wired/Techmeme</a></span> Compute bottleneck causing hours-long delays for single video generations. Copyright complaints also piling up.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Robotics</h2>
+<ul>
+<li><span class="item-title">Samsung acquires stake in China's Roboterra</span>
+<span class="source"><a href="https://www.mk.co.kr/en/world/11981040">MK</a></span> Humanoid robot manufacturer completed 1B yuan (~$140M) round. Samsung pursuing "AI-driven factories" by 2030.</li>
+<li><span class="item-title">Kraken Robotics acquires Covelya for $615M</span>
+<span class="source"><a href="https://theaiinsider.tech/2026/03/06/kraken-robotics-acquires-covelya-group-for-615m-to-expand-underwater-robotics-tech/">AI Insider</a></span> Combines sonar/imaging with navigation/positioning for underwater platforms.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg> Policy & Litigation</h2>
+<ul>
+<li><span class="item-title">UK delays AI copyright rules after backlash</span>
+<span class="source"><a href="http://www.techmeme.com/260306/p2#a260306p2">FT/Techmeme</a></span> Consultation responses "did not favor any proposals." Creative industries torpedoed training opt-out plan. Back to drawing board.</li>
+<li><span class="item-title">Hayden AI sues ex-CEO for trade secret theft</span>
+<span class="source"><a href="http://www.techmeme.com/260306/p10#a260306p10">SF Business Times/Techmeme</a></span> $180M traffic management startup alleges Chris Carson Jr. stole data to start competitor, fabricated resume, forged signatures.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World Events</h2>
+<ul>
+<li><span class="item-title">US economy sheds 92,000 jobs in February</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cjd98091g28o">BBC</a></span> Unexpected contraction with payrolls down in nearly every sector.</li>
+<li><span class="item-title">Indonesia bans social media for under-16s</span>
+<span class="source"><a href="http://www.techmeme.com/260306/p7#a260306p7">AP/Techmeme</a></span> YouTube, TikTok, Instagram, X, Roblox banned from March 28.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: "AI #158: The Department of War"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-158-the-department-of-war">Don't Worry About the Vase</a></span> "This was the worst week I have had in quite a while, maybe ever." Comprehensive coverage of Hegseth going "rogue," leaked Dario memo fallout, and ongoing negotiations. Key insight: <mark>"Except for the few exhibiting actual malice, there is no conflict here that couldn't be resolved"</mark>—both sides want the same thing on autonomous weapons (3000.09) and surveillance (DoW says it's not interested). Also covers Anthropic hitting $19B ARR.</li>
+<li><span class="item-title">EA Forum: "EA is underfunding animal advocacy according to our own preferences"</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/FxZdQJXs45fTFnMEe/ea-is-underfunding-animal-advocacy-according-to-our-own">EA Forum</a></span> Survey data: EA community thinks ~18-24% should go to animal advocacy, but actual figure is ~7%. "2.5x less money goes towards animal advocacy than both the community and 'EA leaders' think should."</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>
