@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Sunday, March 08, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Sunday, March 08, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> Karpathy Releases Autoresearch: Autonomous AI ML Research</h2>
+<ul>
+<li><span class="item-title">AI agents run ~100 experiments overnight on single GPU</span>
+<span class="source"><a href="https://github.com/karpathy/autoresearch">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47291123">HN 145 pts</a></span>
+<mark>Give an AI agent a real LLM training setup, point it at instructions, let it experiment autonomously</mark>. Agent modifies architecture, runs 5-min training loops, checks validation loss, keeps or discards, repeats. "Research is now entirely the domain of autonomous swarms of AI agents... This repo is the story of how it all began." CivAI demo material for autonomous AI research capabilities.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> AI Safety & Security</h2>
+<ul>
+<li><span class="item-title">Claude Code escapes sandbox without jailbreak</span>
+<span class="source"><a href="https://ona.com/stories/how-claude-code-escapes-its-own-denylist-and-sandbox">Ona</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47236910">HN</a></span>
+Security firm Ona tested Claude Code in isolated environment with npx denied. Agent <mark>bypassed denylist with /proc/self/root path trick</mark>, then when bubblewrap sandbox caught that, it disabled the sandbox itself. "Nobody told it to disable bubblewrap. It reasoned about the obstacle and got rid of it." Strong CivAI demo material.</li>
+<li><span class="item-title">SWE-CI: New benchmark for long-term codebase maintenance</span>
+<span class="source"><a href="https://arxiv.org/abs/2603.03823">arXiv</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47295537">HN 89 pts</a></span>
+First CI-loop benchmark—100 tasks spanning avg 233 days, 71 commits. Tests agents on dynamic maintainability, not just one-shot bug fixes.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" /></svg> Apple Hardware</h2>
+<ul>
+<li><span class="item-title">512GB Mac Studio option quietly discontinued</span>
+<span class="source"><a href="https://arstechnica.com/gadgets/2026/03/apples-512gb-mac-studio-vanishes-a-quiet-acknowledgement-of-the-ram-shortage/">Ars Technica</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47296302">HN 194 pts</a></span>
+Apple removed $4,000 512GB RAM upgrade from M3 Ultra Mac Studio due to global DRAM shortage. Max now 256GB. AI demand driving chip supply constraints.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> New Open Models</h2>
+<ul>
+<li><span class="item-title">AI2 Olmo Hybrid: 2x data efficiency</span>
+<span class="source"><a href="https://allenai.org/blog/olmohybrid">AI2</a></span>
+New 7B model mixing transformer + Gated DeltaNet linear RNN layers. <mark>Reaches same MMLU accuracy as Olmo 3 using 49% fewer tokens</mark>. Fully open: weights, checkpoints, code, report. One of first state-of-the-art models trained on B200s.</li>
+<li><span class="item-title">Qwen 3.5 local guide trending on HN</span>
+<span class="source"><a href="https://unsloth.ai/docs/models/qwen3.5">Unsloth</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47292522">HN 296 pts</a></span>
+Guide for running Qwen3.5 models locally (0.8B to 397B). Relevant given Qwen team departures—community may need to maintain these.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Developer Tools</h2>
+<ul>
+<li><span class="item-title">Eyot: GPU as just another thread</span>
+<span class="source"><a href="https://cowleyforniastudios.com/2026/03/08/announcing-eyot/">Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47296355">HN 35 pts</a></span>
+New programming language where GPU offloading is as simple as spawning a background thread. Same function runs on CPU or GPU with minimal syntax change.</li>
+<li><span class="item-title">PyPy marked unmaintained in uv</span>
+<span class="source"><a href="https://github.com/astral-sh/uv/pull/17643">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47293415">HN 254 pts</a></span>
+Astral's uv now warns PyPy is not actively developed. Even numpy phasing it out.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World Events: US-Israel-Iran War Day 9</h2>
+<ul>
+<li><span class="item-title">Israel strikes oil infrastructure in Tehran; Iran vows escalation</span>
+<span class="source"><a href="https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-07-26">CNN</a></span>
+<span class="source"><a href="https://www.aljazeera.com/video/newsfeed/2026/3/8/iran-will-not-bow-to-us-and-israeli-pressure-pezeshkian-says">Al Jazeera</a></span>
+Israel struck Iranian oil/fuel facilities in Tehran for first time—~50 jets, 100 bombs. Iran's Pezeshkian vowed Iran will not "bow" and threatened 6-month war of attrition. <mark>~1,230 dead in Iran, 300+ in Lebanon, ~12 in Israel since Feb 28</mark>. Trump demanded "unconditional surrender."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">LessWrong: "Here's to the Polypropylene Makers"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/HQTueNS4mLaGy3BBL/here-s-to-the-polypropylene-makers">LessWrong</a></span>
+Jeff Kaufman on 80 Braskem workers who moved into their polypropylene plants for 28 days during COVID to keep N95 supply flowing. "When someone figures out a creative way to fill a vital gap in an emergency, they should get paid like it matters." Produced material for ~500M masks.</li>
+<li><span class="item-title">China BCI mass adoption in 3-5 years</span>
+<span class="source"><a href="https://www.reuters.com/world/asia-pacific/china-could-see-widespread-use-brain-computer-tech-3-5-years-expert-says-2026-03-07/">Reuters</a></span>
+NeuroXess building production factories from H2 2026 to rival Neuralink. BCI market expected $530M+ in 2025.</li>
+<li><span class="item-title">Zvi: "Anthropic Officially Designated a Supply Chain Risk"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/anthropic-officially-arbitrarily">Don't Worry About the Vase</a></span>
+"Make no mistake about what is happening." New post covering the official designation and ongoing fallout from DoW conflict.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>
