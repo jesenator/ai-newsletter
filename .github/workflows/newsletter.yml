@@ -2,8 +2,8 @@ name: Daily Newsletter
 
 on:
   schedule:
-    # 7 AM PST = 15:00 UTC (will be 8 AM during daylight saving)
-    - cron: '0 15 * * *'
+    # 5:52 AM PST = 13:52 UTC (will be 6:52 AM during daylight saving)
+    - cron: '52 13 * * *'
   workflow_dispatch:
     inputs:
       just:
