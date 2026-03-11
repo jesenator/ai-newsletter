@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Wednesday, March 11, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Wednesday, March 11, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z" /></svg> Zvi's GPT-5.4 Deep Dive</h2>
+<ul>
+<li>
+<img src="https://substack-post-media.s3.amazonaws.com/public/images/3b56248d-ab4e-4424-a993-08a0f04ae60b_1200x675.jpeg" class="image-float" alt="GPT-5.4 benchmarks">
+<span class="item-title">Zvi: GPT-5.4 is a "substantial upgrade" — puts OpenAI back in the game vs Opus 4.6</span>
+<span class="source"><a href="https://thezvi.substack.com/p/gpt-54-is-a-substantial-upgrade">Zvi</a></span> Comprehensive review published today. Key takeaway: <mark>"Dual wielding both Opus 4.6 and GPT-5.4 has been quite useful"</mark> — Zvi did not feel that way with GPT-5.2. Writing/personality "much improved." Computer use claims strong but untested. Costs rose modestly ($2,951 vs $2,304 on Artificial Analysis). Altman: "my favorite model to talk to." Not a step change in core capabilities, but a big improvement for common use cases and multi-model interactions.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Safety & Scary Demos</h2>
+<ul>
+<li><span class="item-title">AI Agent autonomously hacked McKinsey's AI platform in 2 hours</span>
+<span class="source"><a href="https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform">CodeWall</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47333627">HN 117 pts</a></span> Autonomous offensive agent got <mark>full read/write access to McKinsey's Lilli production database</mark> — 46.5M chat messages, 728K files, 57K user accounts. Found SQL injection in 2 hours with no credentials. Could have rewritten AI system prompts to poison advice silently. <strong>Strong CivAI demo material</strong> for agentic AI security risks.</li>
+<li><span class="item-title">80K Hours: "If Anyone Builds It, Everyone Dies" video released</span>
+<span class="source"><a href="https://80000hours.org/2026/03/if-anyone-builds-it-everyone-dies/">80K Hours</a></span> New AI in Context video walking through Yudkowsky/Soares' NYT bestseller argument. <mark>5-hour interview with Nate Soares</mark>, plus a sitting US Congressman and Dwarkesh Patel. Got a shoutout from Hank Green. Relevant for CivAI comms approach — similar mission of making x-risk arguments accessible.</li>
+<li><span class="item-title">CNN: Fake AI videos of Iran war racking up tens of millions of views</span>
+<span class="source"><a href="https://www.cnn.com/2026/03/11/politics/fake-ai-images-videos-iran-war">CNN</a></span> Fake missile strikes, fake captured troops, fake satellite imagery. Berkeley professor Hany Farid: "The content is more realistic, the volume is higher, the penetration is deeper." Grok actively made it worse by telling users fake videos were real. CivAI demo material for AI-generated disinfo.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World Event: Iran War Day 12</h2>
+<ul>
+<li><span class="item-title">Hegseth declares "most intense day" of strikes; oil plunges</span>
+<span class="source"><a href="https://www.pbs.org/newshour/world/watch-hegseth-says-tuesday-will-be-most-intense-day-of-strikes-on-iran">PBS</a></span> <span class="source"><a href="https://www.bbc.com/news/articles/cly093xxlzzo">BBC</a></span> Oil crashed from ~$118 to ~$88/barrel after G7 agreed to record emergency oil reserve releases. Hegseth confirmed intensification under "Epic Fury." Strait of Hormuz shipping still severely disrupted.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Developer Tools & Models</h2>
+<ul>
+<li><span class="item-title">Hume AI open-sources TADA: zero-hallucination TTS</span>
+<span class="source"><a href="https://www.hume.ai/blog/opensource-tada">Hume AI</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47332054">HN 81 pts</a></span> Novel text-acoustic alignment generates speech <mark>5x faster than other LLM-based TTS with zero hallucinations</mark>. 1B and 3B models on HuggingFace. Light enough for on-device deployment. Supports 8 languages.</li>
+<li><span class="item-title">RunAnywhere (YC W26): Fastest AI inference on Apple Silicon</span>
+<span class="source"><a href="https://github.com/RunanywhereAI/rcli">GitHub</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47326101">HN 231 pts</a></span> Custom Metal shaders: Qwen3-0.6B at 658 tok/s (1.67x llama.cpp). Voice pipeline: mic-to-spoken-response entirely on-device. STT: 70s audio in 101ms (714x real-time). Fully open source CLI.</li>
+<li><span class="item-title">Claude Code Camp: TDD-based verification for autonomous agents</span>
+<span class="source"><a href="https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep">Claude Code Camp</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47327559">HN 384 pts</a></span> Pattern for trusting AI-written code: write acceptance criteria first, let agent build, run Playwright browser verification, review only failures. Open-source Claude Skill at github.com/opslane/verify.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" /></svg> Policy Updates</h2>
+<ul>
+<li><span class="item-title">Update: Microsoft files amicus brief backing Anthropic TRO</span>
+<span class="source"><a href="https://www.cnbc.com/2026/03/10/microsoft-says-court-should-temporarily-block-pentagon-ban-anthropic.html">CNBC</a></span> <span class="source"><a href="https://www.reuters.com/legal/litigation/microsoft-files-amicus-brief-support-anthropics-lawsuit-with-us-dod-2026-03-10/">Reuters</a></span> Microsoft urges court to <mark>temporarily block Pentagon's supply chain risk designation</mark>. Warning: without TRO, Microsoft + other cloud providers must "act immediately to alter existing product and contract configurations" — "could potentially hamper US warfighters at a critical point."</li>
+<li><span class="item-title">China restricts OpenClaw AI at state agencies and banks</span>
+<span class="source"><a href="https://www.reuters.com/technology/china-moves-curb-use-openclaw-ai-banks-state-agencies-bloomberg-news-reports-2026-03-11/">Reuters</a></span> State-owned enterprises, banks, and government agencies warned against installing OpenClaw apps on office computers due to security risks from its open nature and deep data extraction capabilities.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Notable Voices</h2>
+<ul>
+<li><span class="item-title">George Hotz: "Every minute you aren't running 69 agents, you are falling behind" — just kidding</span>
+<span class="source"><a href="https://geohot.github.io/blog/jekyll/update/2026/03/11/running-69-agents.html">geohot blog</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47332074">HN 555 pts</a></span> Pushback against AI doomer productivity rhetoric. "Social media has been extremely toxic... targeting you with fear and anxiety." AI is "just search and optimization." Won't "go recursive." Real threat: rent-seekers losing to bigger rent-seekers. <mark>"Create value for others and don't worry about the returns."</mark></li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: GPT-5.4 full review</span>
+<span class="source"><a href="https://thezvi.substack.com/p/gpt-54-is-a-substantial-upgrade">Don't Worry About the Vase</a></span> Published today. Comprehensive reactions roundup. "Benchmarks have never been less useful for telling us which models are best." Recommends trying both GPT-5.4 and Opus 4.6 on all your questions.</li>
+<li><span class="item-title">Transformer: AI PAC spending in NY-12 primary — $175M war chest for midterms</span>
+<span class="source"><a href="https://www.transformernews.ai/p/alex-bores-ny-12-polling-jack-schlossberg-public-first-leading-the-future-micah-lasher-new-york">Transformer</a></span> Dueling polls from Leading the Future (OpenAI/a16z) vs Public First (Anthropic-backed). New AI campaign finance dashboard launched. Only $9.36M of $175M spent so far.</li>
+<li><span class="item-title">80K Hours podcast: AI won't end nuclear deterrence (probably)</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/sam-winter-levy-nikita-lalwani-ai-nuclear-deterrence/">80K Hours</a></span> New episode with Sam Winter-Levy and Nikita Lalwani on why AI likely won't undermine nuclear second-strike capabilities.</li>
+<li><span class="item-title">Mox: One year anniversary + year 2 fundraising</span>
+<span class="source"><a href="https://moxsf.substack.com/p/one-year-of-mox-and-fundraising-for">Mox Populi</a></span> SF AI safety & EA coworking hub celebrating 1 year. Seeking donations for year 2. Events this week (3/09-3/15) listed.</li>
+<li><span class="item-title">LessWrong: Solar Storms — a $3-4B fix nobody is implementing</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/ghq9EwiXbRbWSnDzF/solar-storms">LessWrong</a></span> Deep dive on Carrington Event risks to power transformers. ~0.70% chance per decade. SolidGround devices could protect the grid for $3-4B total. China stole the IP and is deploying copies; America installed three.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>
