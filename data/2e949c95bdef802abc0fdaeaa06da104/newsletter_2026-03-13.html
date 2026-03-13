@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Friday, March 13, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+.pitch { background: #f8fafc; border-left: 4px solid #dc2626; padding: 16px; margin-bottom: 20px; border-radius: 0 6px 6px 0; }
+.pitch h3 { font-size: 16px; margin-bottom: 8px; color: #dc2626; }
+.pitch p { font-size: 14px; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Friday, March 13, 2026</div>
+
+<div class="pitch">
+<h3>PITCH: Anthropic Dropped Its Core Safety Commitment &mdash; Right Before the Pentagon Fight Made It a Martyr</h3>
+<p>The Guardian <a href="https://www.theguardian.com/technology/2026/mar/13/anthropic-pentagon-artificial-intelligence">reports today</a> that the Anthropic-Pentagon battle "shows how big tech has reversed course on AI and war." Meanwhile, the CAIS <a href="https://newsletter.safe.ai/p/ai-safety-newsletter-69-department">AI Safety Newsletter</a> highlights a detail getting buried in the Pentagon drama: <mark>Anthropic's RSP v3.0, released Feb 24, removed its commitment to never release catastrophically harmful AI</mark>. The old RSP pledged not to "train or deploy models capable of causing catastrophic harm unless we could guarantee in advance that safety measures were adequate." The new one replaces this with voluntary, flexible language.</p>
+<p><strong>Why this matters:</strong> Anthropic is receiving massive public sympathy for standing up to the Pentagon on safety principles&mdash;but it quietly weakened its most important safety commitment just days before the fight began. None of Anthropic, OpenAI, or DeepMind currently have robust commitments against releasing AIs they assess to be highly dangerous. The CAIS newsletter notes the RSP change is driven by competitive pressure, creating "a vicious cycle" where loosened commitments accelerate development, which incentivizes further loosening. As the <a href="https://time.com/7380854/exclusive-anthropic-drops-flagship-safety-pledge/">TIME exclusive</a> put it: Anthropic dropped its "flagship safety pledge." This juxtaposition&mdash;safety martyr in public, weakening commitments in private&mdash;deserves scrutiny.</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li><span class="item-title">CAIS Newsletter #69: Anthropic removed core safety commitment in RSP v3.0</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/ai-safety-newsletter-69-department">CAIS</a></span> The old RSP committed to never train or deploy catastrophically harmful models without guaranteed-adequate safety measures. <mark>RSP v3.0 replaces this with voluntary restraint and flexible language</mark>, citing competitive pressure. CAIS: "None of Anthropic, OpenAI, or DeepMind currently have robust commitments against releasing AIs they assess to be highly dangerous."</li>
+<li><span class="item-title">Guardian deep-dive: Big tech's reversal on AI and war</span>
+<span class="source"><a href="https://www.theguardian.com/technology/2026/mar/13/anthropic-pentagon-artificial-intelligence">Guardian</a></span> Long feature maps the industry's shift since 2018 Google Project Maven protests. Key: Google fired 50+ employees who protested Israeli military ties in 2024, then this week deployed Gemini to DoD's 3M workforce. <mark>Maven is now the name of the classified system running Anthropic's Claude</mark> for the military, per WaPo.</li>
+<li><span class="item-title">Politico: Utah's LDS-influenced AI safety push crushed by White House</span>
+<span class="source"><a href="https://www.politico.com/news/magazine/2026/03/13/utah-lds-church-ai-big-tech-trump-00823634">Politico</a></span> Deep feature on how Utah GOP Rep. Doug Fiefia's HB 286 (frontier AI transparency, child protection, whistleblower protections) was killed after a blunt White House letter: "We are categorically opposed." Rep. Fiefia: "It's disappointing to see an unelected federal bureaucrat discourage states from addressing issues that affect our own communities."</li>
+<li><span class="item-title">Palantir CEO Karp: AI will disrupt "humanities-trained, largely Democratic voters"</span>
+<span class="source"><a href="http://www.techmeme.com/260313/p2#a260313p2">HuffPost</a></span> In CNBC interview, Karp said AI strengthens economic power of "working-class, often male voters" while disrupting "highly educated, often female voters, who vote mostly Democrat."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75" /></svg> Deals & Funding</h2>
+<ul>
+<li><span class="item-title">Cursor in talks for $50B valuation</span>
+<span class="source"><a href="https://www.theinformation.com/briefings/cursor-said-raising-50-billion-valuation">The Information</a></span> <span class="source"><a href="https://www.bloomberg.com/news/articles/2026-03-12/ai-coding-startup-cursor-in-talks-for-about-50-billion-valuation">Bloomberg</a></span> Would roughly double last valuation. Hit <mark>$2B ARR in February</mark>.</li>
+<li><span class="item-title">PixVerse: $300M for AI video generation</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-03-12/alibaba-backed-video-ai-startup-pixverse-raises-300-million">Bloomberg</a></span> Alibaba-backed. 100M users, 2.1B videos generated. Hits unicorn status.</li>
+<li><span class="item-title">Gumloop: $50M Series B from Benchmark</span>
+<span class="source"><a href="https://techcrunch.com/2026/03/12/gumloop-lands-50m-from-benchmark-to-turn-every-employee-into-an-ai-agent-builder/">TechCrunch</a></span> AI agent builder for non-technical employees.</li>
+<li><span class="item-title">Rox AI hits $1.2B valuation</span>
+<span class="source"><a href="https://techcrunch.com/2026/03/12/sales-automation-startup-rox-ai-hits-1-2b-valuation-sources-say/">TechCrunch</a></span> Sales automation. Returning backer led.</li>
+<li><span class="item-title">Bold + Onyx Security: $40M each for AI cybersecurity</span>
+<span class="source"><a href="https://siliconangle.com/2026/03/12/bold-security-onyx-security-raise-40m-tackle-emerging-ai-cybersecurity-risks/">SiliconAngle</a></span> Both launched from stealth to secure AI agent use.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Robotics</h2>
+<ul>
+<li><span class="item-title">Sunday Robotics: $165M Series B at $1.15B for household robot</span>
+<span class="source"><a href="https://techcrunch.com/2026/03/12/humanoid-robotics-maker-sunday-reaches-1-15b-valuation-to-build-household-robots/">TechCrunch</a></span> <span class="source"><a href="https://www.bloomberg.com/news/articles/2026-03-12/dishwashing-home-robot-maker-sunday-hits-1-15-billion-valuation">Bloomberg</a></span> Coatue led. "Memo" robot handles dishes, laundry, table-clearing. Deployment expected late 2026.</li>
+<li><span class="item-title">STMicroelectronics deploying humanoid robots in chip plants</span>
+<span class="source"><a href="https://www.reuters.com/business/stmicroelectronics-plans-robots-retraining-avoid-closures-2026-03-13/">Reuters</a></span> <mark>100+ humanoid robots</mark> at semiconductor factories for repetitive tasks. Working with Oversonic Robotics. Aiming to avoid closures of older fabs.</li>
+<li><span class="item-title">Uber relaunches robotaxi with Motional in Las Vegas</span>
+<span class="source"><a href="http://www.techmeme.com/260313/p6#a260313p6">Bloomberg</a></span> Hyundai-backed Ioniq 5 vehicles. Safety driver until end of 2026. Pick-ups limited to Strip hotel-casinos.</li>
+<li><span class="item-title">Vitestro: $70M Series B for blood-drawing robots</span>
+<span class="source"><a href="https://www.bioxconomy.com/investment/vitestro-secures-70m-to-scale-robotic-blood-collection-globally">BioXconomy</a></span> Dutch startup scaling autonomous phlebotomy system "Aletta" globally.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z" /></svg> Chips & Infrastructure</h2>
+<ul>
+<li><span class="item-title">ByteDance deploying ~36K Nvidia B200 chips in Malaysia</span>
+<span class="source"><a href="http://www.techmeme.com/260312/p64#a260312p64">WSJ</a></span> Working with Aolani Cloud on ~500 Blackwell systems. <mark>Hardware could cost $2.5B+</mark>. Chips barred for export to China&mdash;Malaysia deployment sidesteps controls.</li>
+<li><span class="item-title">Pew: 39% of Americans say data centers bad for environment</span>
+<span class="source"><a href="https://www.pewresearch.org/short-reads/2026/03/12/how-americans-view-data-centers-impact-in-key-areas-from-the-environment-to-jobs/">Pew</a></span> 75% have heard of data centers. 38% say bad for home energy costs. Only 4% say good for environment.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> International</h2>
+<ul>
+<li><span class="item-title">China approves world's first commercial invasive BCI</span>
+<span class="source"><a href="https://www.reuters.com/business/healthcare-pharmaceuticals/china-approves-market-launch-brain-computer-interface-medical-device-world-first-2026-03-13/">Reuters</a></span> <span class="source"><a href="https://www.bloomberg.com/news/articles/2026-03-13/china-approves-first-brain-implant-for-commercial-use">Bloomberg</a></span> Neuracle's device helps restore hand movement. Electrodes implanted directly into brain. <mark>First global approval of an invasive BCI for commercial sale</mark>.</li>
+<li><span class="item-title">EU businesses warn "tech sovereignty" could hurt competitiveness</span>
+<span class="source"><a href="http://www.techmeme.com/260313/p7#a260313p7">FT</a></span> Banking, manufacturing sectors say cutting US tech reliance could hit profits.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Transformer: Anthropic employees say they'll give away billions. Where will it go?</span>
+<span class="source"><a href="https://www.transformernews.ai/p/anthropic-employees-philanthropy-billions-donations-effective-altruism-coefficient-giving-ai-safety">Transformer News</a></span> Deep investigative piece. All 7 co-founders pledged 80% of wealth (~$37.8B combined at current valuation). EA-aligned nonprofits&mdash;Coefficient Giving, METR, Longview, CAIS&mdash;would be major beneficiaries. <mark>METR says it won't accept money from AI company employees it works directly with</mark>. Key tension: Karnofsky (who led RSP v3.0 development) noted Anthropic employees "could be a major source of donations for the kinds of non-profits that could be potential external reviewers." PauseAI's Holly Elmore accuses Coefficient of not funding her org "because they serve Anthropic's interests."</li>
+<li><span class="item-title">CAIS: AI Safety Newsletter #69</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/ai-safety-newsletter-69-department">CAIS</a></span> Comprehensive recap of Pentagon-Anthropic conflict and RSP v3.0 changes. Also notes: OpenAI working on voice control for drone swarms; Florida Gov. DeSantis directed agencies to work with Future of Life Institute on AI child safety; Summer Yue (Meta alignment director) "had to run to unplug" her rogue OpenClaw agent.</li>
+<li><span class="item-title">EA Forum: "We won't solve non-alignment problems by doing research"</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/utSWKRBazPNTuvSPk/we-won-t-solve-non-alignment-problems-by-doing-research">EA Forum</a></span> Essay argues misuse, S-risks, gradual disempowerment, and moral error won't be solved by conventional research timelines. Concludes AI pause is the best answer, though acknowledges "doubts about whether a pause is achievable."</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>
