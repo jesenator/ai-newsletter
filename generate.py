@@ -22,10 +22,10 @@ from logger import log_info, log_error, log_prompt, log_generation
 DATA_DIR = Path(__file__).parent / "data"
 
 FOOTER_HTML = '''
-<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
   Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
   Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
-</div>
+</footer>
 '''
 
 def append_footer(html_content: str) -> str:
@@ -121,6 +121,7 @@ HTML OUTPUT:
 - DO NOT wrap in markdown code fences - output raw HTML only, starting with <!DOCTYPE html>
 - Do NOT include anything already covered in recent newsletters (unless there's a meaningful update)
 - Do NOT include any quote block or blurb at the end of the newsletter.
+- Do NOT include a footer. No "Made by" links, no unsubscribe text, no dashboard links. The footer is added automatically by the system.
 
 IMAGES:
 - For 2-4 of the most visually interesting stories, include an image from the article

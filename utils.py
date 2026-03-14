@@ -46,9 +46,20 @@ def clean_html_output(content: str) -> str:
   return content.strip()
 
 
+def strip_footer(text: str) -> str:
+  if not text:
+    return text
+  text = re.sub(r"<footer[^>]*>.*?</footer>", "", text, flags=re.DOTALL | re.IGNORECASE)
+  text = re.sub(
+    r'<div[^>]*>\s*Made by\s*<a[^>]*>jessewgilbert\.com</a>.*?</div>',
+    "", text, flags=re.DOTALL | re.IGNORECASE
+  )
+  return text
+
 def strip_tags(text: str) -> str:
   if not text:
     return ""
+  text = strip_footer(text)
   text = re.sub(r"<style[^>]*>.*?</style>", "", text, flags=re.DOTALL | re.IGNORECASE)
   text = re.sub(r"<script[^>]*>.*?</script>", "", text, flags=re.DOTALL | re.IGNORECASE)
   text = re.sub(r"<[^>]+>", " ", text)
@@ -87,6 +98,6 @@ def load_reference_newsletter(data_dir: Path, filename: str) -> str:
   """Load a specific newsletter as full HTML for format reference."""
   path = data_dir / filename
   if path.exists():
-    return path.read_text()
+    return strip_footer(path.read_text())
   return ""
 
