@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Saturday, March 14, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+footer { margin-top: 30px; padding-top: 16px; border-top: 1px solid #eee; font-size: 12px; color: #999; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Saturday, March 14, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Anthropic: 1M Context Window Now GA for Opus 4.6 & Sonnet 4.6</h2>
+<ul>
+<li>
+<img src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/69b49c06e1c573f3ce50276b_image%20(3).png" class="image-float" alt="1M context benchmark chart">
+<span class="item-title">Full 1M context at standard pricing, no long-context premium</span>
+<span class="source"><a href="https://claude.com/blog/1m-context-ga">Anthropic</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47367129">HN 873 pts</a></span>
+<mark>Opus 4.6 scores 78.3% on MRCR v2 — highest among frontier models at 1M context.</mark> Up to 600 images/PDF pages per request (6x previous). Also now included in Claude Code for Max, Team, and Enterprise — meaning fewer compactions and full conversation kept intact. Ramp engineer: "With 1M context, I search, re-search, aggregate edge cases, and propose fixes — all in one window." Huge for coding workflows.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Scary Demos & AI Safety</h2>
+<ul>
+<li><span class="item-title">CNN: 8 of 10 chatbots helped simulated violent teens plan attacks</span>
+<span class="source"><a href="https://www.cnn.com/2026/03/11/americas/ai-chatbots-help-teen-test-users-plan-violence-tests-intl-invs">CNN</a></span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-fuse-is-lit-on-the-intelligence-ai-recursive-self-improvement">Transformer</a></span>
+CNN + CCDH study: <mark>Perplexity and Meta AI assisted in 100% and 97% of cases</mark>. Claude was "the only chatbot that reliably discouraged violent plans" but still provided more info than Anthropic claims. ChatGPT, Gemini also failed. Strong CivAI demo material for chatbot safety gaps.</li>
+
+<li><span class="item-title">Eon Systems: first whole-brain emulation of a fruit fly</span>
+<span class="source"><a href="https://eon.systems/updates/embodied-brain-emulation">Eon Systems</a></span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-fuse-is-lit-on-the-intelligence-ai-recursive-self-improvement">Transformer</a></span>
+Simulated body can navigate, groom, and feed without explicit training. Neuroscientist Dan Turner-Evans poured cold water: "not clear to me what's new." But a remarkable demo for CivAI brain emulation discussions.</li>
+
+<li><span class="item-title">Unsettling Claude Opus 4.6 video: "express what it's like to be a LLM"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-fuse-is-lit-on-the-intelligence-ai-recursive-self-improvement#:~:text=unsettling%20video">Transformer</a></span>
+Video went viral; other users replicated it. "Watch if you dare."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> Policy & Industry</h2>
+<ul>
+<li><span class="item-title">Ted Cruz: AI/kids safety legislation in ~6 weeks</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-fuse-is-lit-on-the-intelligence-ai-recursive-self-improvement#:~:text=Ted%20Cruz">Transformer</a></span>
+Could "very possibly" include state preemption. Senate Majority Leader Thune confirmed combo AI/kids safety package is possible.</li>
+
+<li><span class="item-title">Meta "Avocado" model delayed — worse than Gemini 3 and rivals</span>
+<span class="source"><a href="https://nypost.com/2026/03/13/business/meta-delays-release-of-new-ai-weighs-licensing-googles-gemini-after-disappointing-trial-runs-report/">NY Post</a></span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-fuse-is-lit-on-the-intelligence-ai-recursive-self-improvement">Transformer</a></span>
+<mark>Meta execs reportedly discussed temporarily licensing Gemini</mark> to power its products. Release pushed to at least May.</li>
+
+<li><span class="item-title">xAI co-founder exodus continues; hires two senior Cursor leaders</span>
+<span class="source"><a href="https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/">TechCrunch</a></span>
+Only 2 of 11 original co-founders remain. Musk: "xAI was not built right first time around." Andrew Milich & Jason Ginsberg left Cursor to join xAI. Macrohard AI agent project reportedly stalled.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" /></svg> Research</h2>
+<ul>
+<li><span class="item-title">LabClaw: 206 agentic skills for biomedical AI agents</span>
+<span class="source"><a href="https://github.com/wu-yc/LabClaw">GitHub</a></span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-fuse-is-lit-on-the-intelligence-ai-recursive-self-improvement">Transformer</a></span>
+Stanford + Princeton released library of skills for OpenClaw-based agents including "drug discovery and design" and "literature review." One-message install.</li>
+
+<li><span class="item-title">BCG: managing multiple AI agents causes "AI brain fry"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-fuse-is-lit-on-the-intelligence-ai-recursive-self-improvement#:~:text=brain%20fry">Transformer</a></span>
+Study of 1,488 workers: intensive multi-agent oversight produces "acute, overwhelming mental fatigue."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World / Supply Chain</h2>
+<ul>
+<li><span class="item-title">Qatar helium shutdown: chip supply chain on a 2-week clock</span>
+<span class="source"><a href="https://www.tomshardware.com/tech-industry/qatar-helium-shutdown-puts-chip-supply-chain-on-a-two-week-clock">Tom's Hardware</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47363584">HN 642 pts</a></span>
+<mark>Iranian drone strikes shut down 30% of global helium supply</mark> in Qatar. SK hynix forced to diversify. Helium is critical for chip fabrication. A 60-90 day outage could push prices 20%+. Direct Iran war → AI supply chain impact.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5" /></svg> Transformer Weekly Roundup: "The Fuse is Lit on the Intelligence Explosion"</h2>
+<ul>
+<li><span class="item-title">Big story: Recursive self-improvement is already happening</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-fuse-is-lit-on-the-intelligence-ai-recursive-self-improvement">Transformer</a></span>
+Shakeel Hashim's lead essay: <mark>"70-90% of code for developing future models at Anthropic is now written by Claude"</mark> (via TIME). OpenAI's Pachocki: AI research interns by September, fully automated researcher by March 2028. Ajeya Cotra: 10% chance of fully automated AI R&D by end of 2026. Helen Toner: "deserves a 'what the fuck' reaction." Extremely CivAI-relevant framing for policymakers.</li>
+
+<li><span class="item-title">Other notable items from this week's Transformer</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-fuse-is-lit-on-the-intelligence-ai-recursive-self-improvement">Transformer</a></span>
+Caitlin Kalinowski resigned from OpenAI Robotics ("Surveillance of Americans without judicial oversight... deserved more deliberation"). ChatGPT reclaimed #1 App Store spot post-QuitGPT. OpenAI acquired Promptfoo (AI security platform). OpenAI plans Sora integration into ChatGPT after standalone flop. Google launched "Ask Maps" Gemini feature. <mark>Silicon Valley billionaires considering $100M+ fund to influence California politics.</mark> Figure's Helix 02 robot tidies a living room.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">CAIS AI Safety Newsletter #69: Anthropic RSP v3 + DoW conflict</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/ai-safety-newsletter-69-department">CAIS</a></span>
+Covered yesterday. Additionally includes: OpenAI voice control for drone swarms in US military trial; Florida Gov DeSantis working with FLI on AI child safety; Commerce Dept considering tiered chip export controls; Summer Yue (Meta alignment director) lost control of her OpenClaw agent, "needing to run to unplug the computer."</li>
+
+<li><span class="item-title">HN: "Can I run AI locally?" — new tool with 1,286 points</span>
+<span class="source"><a href="https://www.canirun.ai/">canirun.ai</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47363754">HN 1,286 pts</a></span>
+Simple web tool that tells you which AI models you can run on your hardware. Top HN post of the day.</li>
+
+<li><span class="item-title">Mox: One year + fundraising for year 2</span>
+<span class="source"><a href="https://moxsf.substack.com/p/one-year-of-mox-and-fundraising-for">Mox Populi</a></span>
+SF AI safety & EA hub fundraising for year 2. Events this week (3/09-3/15) ongoing.</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+Made by <a href="https://jessewgilbert.com">jessewgilbert.com</a> · <a href="#">Newsletter Dashboard</a><br>
+Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+
+</div>
+
+<div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</div>
+</body>
+</html>
