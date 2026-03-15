@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Sunday, March 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Sunday, March 15, 2026</div>
+
+<div class="note" style="margin-bottom: 20px;">Quiet Sunday — short newsletter today. GTC starts tomorrow.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Z" /></svg> Nvidia GTC 2026 Starts Tomorrow — San Jose</h2>
+<ul>
+<li><span class="item-title">Jensen Huang keynote Monday 11am PT at SAP Center</span>
+<span class="source"><a href="https://blogs.nvidia.com/blog/gtc-2026-news/">Nvidia Blog</a></span>
+<span class="source"><a href="https://finance.yahoo.com/news/nvidia-gtc-2026-what-to-expect-from-nvidias-biggest-event-of-the-year-132234592.html">Yahoo Finance</a></span>
+30K attendees from 190 countries. Expected: <mark>Vera Rubin GPU details, possible Groq inference integration, and Nvidia's first laptop CPUs (N1/N1X)</mark>. Wednesday panel on open models features leaders from A16Z, AI2, <strong>Cursor</strong>, and Thinking Machines Lab. Free livestream at <a href="https://www.nvidia.com/gtc/keynote/">nvidia.com/gtc/keynote</a>. Build-a-Claw event lets attendees deploy custom OpenClaw agents on-site. <em>If you're in the Bay Area, San Jose is ~45 min from Berkeley.</em></li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary Demos / CivAI Material</h2>
+<ul>
+<li><span class="item-title">NPR: How the US is using AI in the Iran war</span>
+<span class="source"><a href="https://www.wusf.org/2026-03-15/how-the-u-s-is-using-ai-in-the-war-in-iran">NPR</a></span>
+New piece today by Ayesha Rascoe on <mark>AI-assisted targeting and drone operations in the ongoing Iran conflict</mark>. Directly relevant to CivAI's work on AI capabilities and risks in military contexts.</li>
+
+<li><span class="item-title">$96 3D-printed guided rocket with mid-air trajectory correction</span>
+<span class="source"><a href="https://github.com/novatic14/MANPADS-System-Launcher-and-Rocket">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47385935">HN 205 pts</a></span>
+Proof-of-concept using ESP32 flight computer + $5 MPU6050 sensor. Folding fins, canard stabilization, GPS/compass telemetry. All 3D-printed with consumer electronics. Named "MANPADS-System" (HN commenters alarmed by the name). <mark>Strong CivAI demo material for democratization of weapons tech.</mark></li>
+
+<li><span class="item-title">BBC: "Gruesome" war bets on prediction markets</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cjwz8051y0lo">BBC</a></span>
+Millions of dollars bet on Iran war outcomes — casualty counts, strikes, escalation. Calls for crackdown growing.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> AI Research & Developer Tools</h2>
+<ul>
+<li><span class="item-title">Tree Search Distillation for LLMs using PPO</span>
+<span class="source"><a href="https://ayushtambde.com/blog/tree-search-distillation-for-language-models-using-ppo/">Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47383059">HN 71 pts</a></span>
+Applies AlphaZero-style MCTS over reasoning steps + PPO distillation to Qwen-2.5-1.5B. On Countdown game: <mark>11.3% mean@16 vs 8.4% for CISPO and 7.7% for best-of-N</mark> (3.1% base). Uses parallel MCTS with virtual losses on 8xH100. First in a series.</li>
+
+<li><span class="item-title">"The 100-hour gap between a vibecoded prototype and a working product"</span>
+<span class="source"><a href="https://kanfa.macbudkowski.com/vibecoding-cryptosaurus">Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47386636">HN 37 pts</a></span>
+Reality check on vibecoding hype — the gap between a demo and a shippable product is still substantial.</li>
+
+<li><span class="item-title">Signet: Autonomous wildfire tracking from satellite + weather data</span>
+<span class="source"><a href="https://signet.watch">signet.watch</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47386581">HN 27 pts</a></span>
+Go system using Gemini to orchestrate 23 tools across NASA FIRMS, GOES-19, NWS, LANDFIRE. Makes falsifiable predictions scored against later data. Bay Area–relevant for fire season.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Mox (3/09–3/15): AI Control Hackathon next weekend + vibecoding club</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-309-315">Mox Populi</a></span>
+Apart Research & Redwood Research hosting <strong>AI Control Hackathon March 20–22</strong> at Mox (<a href="https://apartresearch.com/sprints/ai-control-hackathon-2026-03-20-to-2026-03-22">sign up</a>). Also: vibecoding club Thursdays, EA SF "What is Cause X?" lightning talks, ML reading group (On-Policy Self-Distillation for Reasoning Compression). Fundraiser still active — aiming for $450K, with 1:1 match up to $100K. Patrick Duffy looking for AIS policy panelists for a DC event on CBRN/misuse risks.</li>
+
+<li><span class="item-title">LessWrong: "On The Independence Axiom" — decision theory deep dive</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/MsjWPWjAerDtiQ3Do/on-the-independence-axiom">LessWrong</a></span>
+Argues the independence axiom is the "fifth postulate" of decision theory — sufficient but not necessary for avoiding exploitation. Connects ergodicity economics with resolute choice and updateless decision theory. Highlights Scott Garrabrant's 2022 comment: "the point where we discover updatelessness is the point where we are supposed to realize that all of utility theory is wrong."</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
