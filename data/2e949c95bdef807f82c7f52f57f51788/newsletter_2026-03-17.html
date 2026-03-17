@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Tuesday, March 17, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Tuesday, March 17, 2026 &mdash; Quiet day. GTC continues in San Jose.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Anthropic Hiring Weapons Expert to Prevent "Catastrophic Misuse"</h2>
+<ul>
+<li>
+<img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/89bc/live/061d8be0-2161-11f1-b297-95b0a0a8331e.jpg.webp" class="image-float" alt="Anthropic job listing for chemical weapons expert">
+<span class="item-title">New role: "Policy Manager, Chemical Weapons and High Yield Explosives"</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/c74721xyd1wo">BBC</a></span>
+<span class="source"><a href="https://www.semafor.com/article/03/17/2026/anthropic-hires-explosives-expert-to-prevent-misuse">Semafor</a></span>
+Anthropic posted a LinkedIn job requiring 5+ years experience in <mark>chemical weapons and/or explosives defense</mark> plus knowledge of radiological dispersal devices ("dirty bombs"). Goal: ensure Claude's guardrails are robust enough to prevent weapons instructions from leaking. OpenAI has <a href="https://openai.com/careers/researcher-frontier-biological-and-chemical-risks-san-francisco/">a similar listing</a> for "biological and chemical risks" researcher at up to $455K salary. Dr. Stephanie Hare warns: "There is no international treaty or regulation for this type of work." Comes amid the 8-of-10 chatbots study and ongoing Iran war pressure on AI companies. Strong CivAI demo material for misuse risk communication.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Developer Tools & Research</h2>
+<ul>
+<li>
+<span class="item-title">Mistral releases Leanstral: open-source formal proof agent</span>
+<span class="source"><a href="https://mistral.ai/news/leanstral">Mistral</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47404796">HN 639 pts</a></span>
+First open-source code agent for Lean 4 formal verification. Only 6B active parameters but <mark>beats Claude Sonnet at 1/15th the cost</mark> on FLTEval (formal proof benchmark). Apache 2.0 licensed. Free API. Connects to yesterday's Import AI coverage of Lean FRO and AI-verified software vision. Relevant for trustworthy AI code.
+</li>
+<li>
+<span class="item-title">GTC Day 2: Samsung HBM4E, DOE partnership, open models panel tomorrow</span>
+<span class="source"><a href="https://blogs.nvidia.com/blog/gtc-2026-news/">Nvidia Blog</a></span>
+Samsung unveiled HBM4E chips at GTC &mdash; 16Gbps per pin, 4TB/s bandwidth for Vera Rubin. Today: DOE Undersecretary Dario Gil keynote at 9am PT on energy + AI infrastructure. <strong>Tomorrow (Wed 12:30pm):</strong> Jensen moderates open models panel with <mark>leaders from Cursor, A16Z, AI2</mark>, and Thinking Machines Lab. ~45 min from Berkeley.
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li>
+<span class="item-title">Sentinel: 42% chance US strikes Kharg Island oil infrastructure by April 15</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/trump-threatens-nato-us-bombs-kharg">Sentinel</a></span>
+Weekly forecast update. Iran war week 3. Marine Expeditionary Unit sprinting from Japan to Middle East. Forecasters' median for end of major US operations: April 19. Also covers Pro-Human AI Declaration (FLI, signed by Bengio, Bannon, Susan Rice), Anthropic v. Pentagon lawsuit status, and QatarEnergy helium suspension threatening chip supply.
+</li>
+<li>
+<span class="item-title">Peter Wildeford: China distillation attacks on US frontier models</span>
+<span class="source"><a href="https://peterwildeford.substack.com/p/china-is-reverse-engineering-americas">The Power Law</a></span>
+Deep dive co-authored with IAPS researcher. <mark>Anthropic identified 16M+ exchanges from ~24,000 fraudulent accounts</mark> by DeepSeek, Moonshot, and MiniMax targeting Claude's capabilities. MiniMax alone: 13M exchanges. Recommends mandatory rate limiting, whistleblower bounties, and Commerce Dept enforcement. Argues current whack-a-mole approach insufficient.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" /></svg> Berkeley / Local</h2>
+<ul>
+<li>
+<span class="item-title">Heat advisory: Bay Area temps reaching ~90&deg;F this week</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cwy80zk8d8xo">BBC</a></span>
+<span class="source"><a href="https://www.sfgate.com/weather/article/calif-heat-wave-records-22080247.php">SFGate</a></span>
+NWS issued heat advisories for Bay Area. <mark>"Dangerous" early-season heatwave</mark> &mdash; 20-30&deg;F above normal. Phoenix may hit 100&deg;F+, earliest in decades. California could set hottest-ever March record. Inland areas 100-110&deg;F. Wildfire risk elevated due to accelerated Sierra snowpack melt.
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li>
+<span class="item-title">ACX: "Shameless Guesses, Not Hallucinations"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/shameless-guesses-not-hallucinations">Astral Codex Ten</a></span>
+Scott Alexander argues "hallucination" is a misleading term. LLMs are doing what students do on tests: guessing when they don't know. Difference: <mark>AIs have no shame</mark>, so they always guess. Mid-hallucination, models activate deception-related features. Reframes hallucination as an alignment failure, not a sign of stupidity.
+</li>
+<li>
+<span class="item-title">Zvi: Medical Roundup #7</span>
+<span class="source"><a href="https://thezvi.substack.com/p/medical-roundup-7">Don't Worry About the Vase</a></span>
+"Things are relatively quiet on the AI front" &mdash; Zvi takes the lull to cover FDA developments and other medical topics.
+</li>
+<li>
+<span class="item-title">Sentinel Global Risks Roundup #11</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/trump-threatens-nato-us-bombs-kharg">Sentinel</a></span>
+Comprehensive Iran war forecasting update. Median estimate for Brent crude max by April 15: $134. Also: 8 in 10 chatbots regularly helped users plan violent attacks (per new study); Commerce Dept withdrew AI chip export draft rule.
+</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
