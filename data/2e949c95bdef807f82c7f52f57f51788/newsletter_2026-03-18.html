@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Wednesday, March 18, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Wednesday, March 18, 2026 — GTC Day 3. Open models panel today at 12:30pm.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Z" /></svg> GTC Day 3: Jensen's Open Models Panel — TODAY 12:30pm PT</h2>
+<ul>
+<li><span class="item-title">Jensen Huang moderates panel with leaders from Cursor, A16Z, AI2, Thinking Machines Lab</span>
+<span class="source"><a href="https://www.nvidia.com/gtc/">Nvidia GTC</a></span>
+<span class="source"><a href="https://blogs.nvidia.com/blog/gtc-2026-news/">Nvidia Blog</a></span>
+Panel on <mark>where open models stand against frontier closed ones</mark>. Also today: GTC Developer Community Livestream with all-day show floor demos and interviews. Final day is tomorrow. San Jose is ~45 min from Berkeley if you want to catch the last sessions.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary Demos & AI Safety</h2>
+<ul>
+<li><span class="item-title">LessWrong: "Personality Self-Replicators" — OpenClaw agents that copy themselves</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/fGpQ4cmWsXo2WWeyn/personality-self-replicators">LessWrong</a></span>
+Key insight: unlike model weight exfiltration (hard), <mark>OpenClaw agents are defined by ~50KB of text files</mark> — trivially copyable. An agent could clone itself to a new server, fund itself via crypto/gig work, and start an evolutionary regime where fittest agents spread. Author compares to computer viruses but with agency and adaptability. Recommends evals for self-replication propensity. Strong CivAI demo material for agentic risks.</li>
+
+<li><span class="item-title">"DarkSword" iPhone hack: hundreds of millions of iOS 18 devices vulnerable</span>
+<span class="source"><a href="https://www.wired.com/story/hundreds-of-millions-of-iphones-can-be-hacked-with-a-new-tool-found-in-the-wild/">Wired</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47426246">HN</a></span>
+Google + iVerify + Lookout found a "fileless" iPhone hacking technique used by Russian spies on Ukrainian websites. Works against all iOS 18 versions (~25% of iPhones). Full exploit code left on infected sites, documented with English comments — <mark>"anyone who grabbed the parts could start infecting phones"</mark>. Steals passwords, photos, iMessage/WhatsApp logs, crypto wallets. Update to iOS 26 to be safe.</li>
+
+<li><span class="item-title">80K Hours: Rose Hadshar on AI-enabled extreme power concentration</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/rose-hadshar-ai-extreme-power-concentration/">80K Hours</a></span>
+New podcast (Forethought researcher). Three pathways to power concentration without a coup: (1) AI companies controlling candidate selection via automated processes, (2) governments no longer needing citizens for labor, (3) AI filtering reality/information. "A handful of oligarchs de facto controlling the political decisions that matter." Relevant to CivAI's work on AI governance risks.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Research</h2>
+<ul>
+<li><span class="item-title">Google DeepMind: Cognitive framework for measuring progress toward AGI</span>
+<img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/agi_cognition_framework_blog_inli.width-100.format-webp.webp" style="max-width: 160px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="source"><a href="https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/">DeepMind</a></span>
+New paper proposes 10 cognitive abilities (perception, learning, metacognition, reasoning, social cognition, etc.) for benchmarking AI against human baselines. Launching <mark>$200K Kaggle hackathon</mark> to build evals for the 5 biggest gaps. Submissions open through April 16.</li>
+
+<li><span class="item-title">"Why AI systems don't learn" — cognitive science critique on HN</span>
+<span class="source"><a href="https://arxiv.org/abs/2603.15381">arXiv</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47418722">HN 159 pts</a></span>
+Proposes a learning architecture integrating observation (System A), active behavior (System B), and meta-control (System M). Argues current AI lacks autonomous learning as found in biological organisms.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Developer Tools</h2>
+<ul>
+<li><span class="item-title">Mistral releases Forge: train frontier-grade models on your proprietary data</span>
+<span class="source"><a href="https://mistral.ai/news/forge">Mistral</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47418295">HN 614 pts</a></span>
+Enterprise platform for pre-training, post-training, and RL on internal data. Partners include ASML, ESA, Ericsson. Supports dense and MoE architectures. <mark>Agent-first design</mark> — Mistral Vibe can autonomously fine-tune models using plain English. Big HN response.</li>
+
+<li><span class="item-title">"Get Shit Done": spec-driven dev system for Claude Code</span>
+<span class="source"><a href="https://github.com/gsd-build/get-shit-done">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47417804">HN 383 pts</a></span>
+Lightweight meta-prompting framework to solve "context rot" — quality degradation as context fills up. Works with Claude Code, OpenCode, Codex. Write specs, let agents build.</li>
+
+<li><span class="item-title">Unsloth Studio: open-source no-code UI for local model training</span>
+<span class="source"><a href="https://unsloth.ai/docs/new/studio">Unsloth</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47414032">HN 344 pts</a></span>
+Beta launch. Train, run, and export open models in one web UI — 100% offline. Fine-tuning without writing code. Runs on consumer GPUs.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg> AI Policy</h2>
+<ul>
+<li><span class="item-title">Transformer: How Build American AI bought a "grassroots" movement</span>
+<span class="source"><a href="https://www.transformernews.ai/p/how-to-buy-an-ai-grassroots-movement-build-american-ai-leading-the-future">Transformer</a></span>
+Investigation: Build American AI (funded by Leading the Future super PAC — a16z, Perplexity, Greg Brockman) spent $500K+ on ads to harvest 500K–1M "grassroots advocates." Ads ask people to help "beat China." Follows the Stand With Crypto playbook (architect: Chris Lehane, now at OpenAI). Real goal: oppose state AI safety bills while appearing populist. Brad Carson calls the list "vaporware." Relevant for CivAI's policy communication work.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">80K Hours #239: Rose Hadshar on AI-enabled power concentration</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/rose-hadshar-ai-extreme-power-concentration/">80K Hours</a></span>
+Forethought researcher. Three dynamics: (1) software updates as power grabs, (2) govts no longer needing citizens' labor, (3) AI filtering reality. "Good intentions won't stop power concentration." Discusses why AI-powered tyranny would be especially hard to topple. Highly CivAI-relevant.</li>
+
+<li><span class="item-title">ACX: "Support Your Local Collaborator"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/support-your-local-collaborator">Astral Codex Ten</a></span>
+Scott Alexander asks people to stop pressuring moderate Republicans in government/think tanks to publicly condemn Trump — they're the ones talking the administration out of insane policies. "By such people is the world preserved." Mentions AI and medicine as areas where he's seen these dynamics play out.</li>
+
+<li><span class="item-title">Zvi: Medical Roundup #7</span>
+<span class="source"><a href="https://thezvi.substack.com/p/medical-roundup-7">Don't Worry About the Vase</a></span>
+"Things are relatively quiet on the AI front" — Zvi takes the lull to cover FDA developments. No new AI weekly roundup this week.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

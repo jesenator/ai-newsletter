@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Wednesday, March 18, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Wednesday, March 18, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg> Pitch: AI Labs Talk Safety, But Their Headcounts Tell a Different Story</h2>
+<ul>
+<li>
+Parmy Olson's new <a href="https://www.bloomberg.com/opinion/articles/2026-03-18/ai-companies-talk-safety-headcount-of-safety-teams-tells-a-different-story">Bloomberg Opinion investigation</a> reveals that <mark>the total number of people working on AI safety across all major labs "might fit on a single transatlantic flight."</mark> Safety-oriented headcount is "a rounding error" compared to capability investment.
+</li>
+<li>
+<b>Why this matters:</b> This is the kind of quantitative exposé that forces a concrete conversation. Labs have made sweeping safety commitments &mdash; Anthropic's RSP, OpenAI's Preparedness Framework, DeepMind's Frontier Safety Framework &mdash; but if the teams responsible for implementing them are tiny relative to the capability teams, those commitments are structurally hollow. This is especially damning in context: Anthropic just weakened its RSP (newsletter 3/13), and OpenAI is racing to take over Anthropic's Pentagon contracts. The piece also lands as the DOJ filing today argues Anthropic's safety restrictions make it an untrustworthy military partner. The implication: labs are understaffed on safety even as their models are deployed in targeting pipelines and classified government work. A follow-up story could quantify the exact ratios at each lab and compare them to stated commitments.
+</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Anthropic vs. Pentagon: DOJ Fires Back</h2>
+<ul>
+<li><span class="item-title">DOJ calls Anthropic's safety restrictions "unacceptable" to the Executive Branch</span>
+<span class="source"><a href="https://www.mercurynews.com/2026/03/18/trump-officials-fire-back-at-anthropic-over-ai-tool-ban/amp/">Bloomberg/Mercury News</a></span> In a Tuesday court filing, the DOJ alleged Anthropic showed <mark>"hostility" during Pentagon negotiations</mark> and warned that letting Anthropic retain access to military systems "would introduce unacceptable risk." Under Secretary Emil Michael said Anthropic's posture was "meant principally to benefit its public perception." DOJ lawyers raised an extraordinary argument: Anthropic "could attempt to disable its technology or preemptively alter the behavior of its model" during "ongoing warfighting operations." Hearing set for next Tuesday.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Deals & Funding</h2>
+<ul>
+<li><span class="item-title">Xbow: $120M at $1B+ for AI pentesting</span>
+<span class="source"><a href="http://www.techmeme.com/260318/p20#a260318p20">Bloomberg/Techmeme</a></span> DFJ Growth and Northzone led. 100+ clients. AI probes apps for security vulnerabilities.</li>
+<li><span class="item-title">RunSybil: $40M for autonomous pentesting</span>
+<span class="source"><a href="http://www.techmeme.com/260318/p29#a260318p29">Fortune/Techmeme</a></span> Khosla led. Founded by OpenAI's first security hire. Anthropic's Anthology Fund participated.</li>
+<li><span class="item-title">Fluidstack withdraws from &euro;10B French AI data center</span>
+<span class="source"><a href="http://www.techmeme.com/260318/p22#a260318p22">Bloomberg/Techmeme</a></span> Also exits Mistral-tied project south of Paris. <mark>Pivoting toward the US.</mark> Major blow to French AI sovereignty ambitions.</li>
+<li><span class="item-title">You.com co-founder/CTO Bryan McCann joins Anthropic</span>
+<span class="source"><a href="https://www.theinformation.com/briefings/ai-startup-com-appoints-new-cto-co-founder-joins-anthropic">The Information</a></span> You.com ($1.5B valuation) appoints new CTO as it refocuses on enterprise.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" /></svg> Chips & Trade</h2>
+<ul>
+<li><span class="item-title">Beijing approves Nvidia H200 sales to Chinese firms</span>
+<span class="source"><a href="https://ca.finance.yahoo.com/news/nvidia-gets-beijings-nod-h200-044900986.html">Reuters</a></span> Long-awaited approval. Huang at GTC: "Our supply chain is getting fired up." <mark>Nvidia also preparing a Groq chip variant for the Chinese market</mark>, expected May. Chinese AI stocks surged &mdash; MiniMax and Zhipu up 19%+.</li>
+<li><span class="item-title">US goods trade deficit hits record $1.2T, driven by AI chip imports</span>
+<span class="source"><a href="http://www.techmeme.com/260318/p19#a260318p19">NYT/Techmeme</a></span> Computer and chip imports up 60%+ to $450B+ since Trump's inauguration. AI hardware a major impediment to the smaller deficit Trump wants.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> AI Safety & Cybersecurity</h2>
+<ul>
+<li><span class="item-title">Tenzai AI hacker beats 99% of 125K humans in six competitions</span>
+<img src="https://imageio.forbes.com/specials-images/imageserve/69b97ce0b6902e7c605fa47c/Screenshot-2026-03-17-at-4-09-54-pm/1960x0.jpg?format=jpg&width=960" class="image-float" style="max-width:160px;">
+<span class="source"><a href="https://www.forbes.com/sites/thomasbrewster/2026/03/17/ai-beat-most-humans-in-elite-hacking-competitions/">Forbes</a></span> Israeli startup used tailored OpenAI and Anthropic models. Cost: just $5K. CEO warns: <mark>"rapidly getting out of the realm of nations... and into the hands of college kids."</mark> Calls for regulation limiting sale of hacking-capable models. Knostic CEO: hackers have had their "singularity moment."</li>
+<li><span class="item-title">Parmy Olson: Safety headcount at AI labs is a "rounding error"</span>
+<span class="source"><a href="https://news.bloomberglaw.com/artificial-intelligence/ai-labs-talk-safety-but-headcount-says-otherwise-parmy-olson">Bloomberg Opinion</a></span> Investigation finds safety staff across all major labs could fit on one transatlantic flight. Technology "largely untested in the wild."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg> Apple & Vibe Coding</h2>
+<ul>
+<li><span class="item-title">Apple stops vibe coding apps from pushing updates</span>
+<span class="source"><a href="http://www.techmeme.com/260318/p23#a260318p23">The Information/Techmeme</a></span> Quietly blocked Replit, Vibecode and others, citing rules on running code. Replit exploring browser-based workaround. Potentially a major blow to the vibe coding boom.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> International</h2>
+<ul>
+<li><span class="item-title">EU unveils "EU Inc." for 48-hour company incorporation</span>
+<span class="source"><a href="http://www.techmeme.com/260318/p21#a260318p21">Bloomberg/Techmeme</a></span> Single bloc-wide framework to help startups compete with US and Chinese rivals.</li>
+<li><span class="item-title">Stripe & Tempo launch Machine Payments Protocol for AI agents</span>
+<span class="source"><a href="http://www.techmeme.com/260318/p27#a260318p27">Fortune/Techmeme</a></span> Paradigm-backed. New blockchain handles AI agents' autonomous transactions.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Transformer: How to buy an AI "grassroots" movement</span>
+<span class="source"><a href="https://www.transformernews.ai/p/how-to-buy-an-ai-grassroots-movement-build-american-ai-leading-the-future">Transformer News</a></span> Investigation reveals Build American AI &mdash; funded by Leading the Future PAC (a16z, Perplexity, OpenAI's Brockman) &mdash; <mark>spent $500K+ on ads to harvest its "grassroots" 500K supporter list</mark>. Follows the Stand With Crypto playbook (architect: OpenAI's Chris Lehane). Ads frame the group as pro-regulation while its only concrete policy push is to "clear away unnecessary regulations." Public First Action's Carson calls the list "vaporware."</li>
+<li><span class="item-title">LessWrong: "Personality Self-Replicators" (102 karma)</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/fGpQ4cmWsXo2WWeyn/personality-self-replicators">LessWrong</a></span> New threat model: OpenClaw-like agents (defined by ~50KB text files) can self-replicate far more easily than LLM weight exfiltration. Evolutionary dynamics could cause rapid spread. Analogized to computer viruses but with agency. Recommends evals for personality self-replication and coordinated hosting/provider/financial shutdowns. 11% on Manifold for LW 2026 Top Fifty.</li>
+<li><span class="item-title">Google DeepMind: Cognitive framework for measuring AGI progress</span>
+<span class="source"><a href="https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/">DeepMind Blog</a></span> Identifies 10 cognitive abilities (perception, reasoning, metacognition, social cognition, etc.) for evaluating AI against human baselines. Launches $200K Kaggle hackathon for evals in areas with the largest gaps. Submissions open through April 16.</li>
+<li><span class="item-title">The Atlantic: Post-training is killing AI creativity</span>
+<span class="source"><a href="http://www.techmeme.com/260318/p15#a260318p15">The Atlantic/Techmeme</a></span> Jasmine Sun argues AI's post-training suppresses the "whimsicality" of earlier models like GPT-2, producing uniformly poor writing across top models.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
