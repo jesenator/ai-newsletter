@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Friday, March 20, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Friday, March 20, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Claude Code Channels: Message Your Agent from Telegram & Discord</h2>
+<ul>
+<li>
+<img src="https://www.macstories.net/wp-content/uploads/2026/03/claude-code-telegram-hero.jpg" class="image-float" alt="Claude Code Telegram">
+<span class="item-title">Anthropic launches Channels — push events into running Claude Code sessions</span>
+<span class="source"><a href="https://code.claude.com/docs/en/channels">Anthropic Docs</a></span>
+<span class="source"><a href="https://venturebeat.com/orchestration/anthropic-just-shipped-an-openclaw-killer-called-claude-code-channels">VentureBeat</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47448524">HN 370 pts</a></span>
+New research preview feature: <mark>connect Telegram or Discord bots to a running Claude Code session via MCP</mark>. Claude reads incoming messages, executes code/tasks, and replies back through the same channel. Supports persistent background sessions — effectively an OpenClaw competitor built natively into Claude Code. MacStories hands-on: reviewer <a href="https://www.macstories.net/stories/first-look-hands-on-with-claude-codes-new-telegram-and-discord-integrations/">built and deployed an iOS app, ran podcast transcriptions, and organized Readwise articles</a> — all from an iPhone via Telegram. Requires Bun runtime + <code>--channels</code> flag. Enterprise/Team plans need admin opt-in. Big productivity boost if you use Claude Code.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Developer Tools</h2>
+<ul>
+<li><span class="item-title">Cursor Composer 2 is just Kimi K2.5 with RL fine-tuning</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47452404">HN 184 pts</a></span>
+<span class="source"><a href="https://www.reddit.com/r/singularity/comments/1ryrs2w/cursors_composer_2_model_is_apparently_just_kimi/">Reddit</a></span>
+<mark>Moonshot AI says they never paid or gave permission.</mark> Cursor took the open-weight Kimi K2.5, RL'd it for coding tasks, and shipped it as their proprietary "Composer 2." Community backlash: many saying they've already switched to VS Code + Codex or Claude Code. License may have been violated (modified MIT requires commercial agreement at >100M MAU). Relevant if you use Cursor.</li>
+
+<li><span class="item-title">Kitten TTS: 3 new tiny on-device speech models (14M–80M params)</span>
+<span class="source"><a href="https://github.com/KittenML/KittenTTS">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47441546">HN 486 pts</a></span>
+Open-source, Apache 2.0. Smallest model is under 25MB, runs on Raspberry Pi / browsers / phones with no GPU. ONNX runtime. SOTA expressivity for its size class. Multi-lingual coming soon.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Berkeley / Local</h2>
+<ul>
+<li><span class="item-title">Berkeley Hills fire burns 2 homes, ruptures gas line</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/03/19/olympus-avenue-fairlawn-drive-structure-fires">Berkeleyside</a></span>
+Two-alarm fire on Olympus Ave / Fairlawn Dr in La Loma Park neighborhood, started ~4am Wed. Two structures destroyed, gas line ruptured, power lines downed. No injuries. Two buildings evacuated. Not wildfire-related — structure fire.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li><span class="item-title">Joe Carlsmith: "On restraining AI development for the sake of safety"</span>
+<span class="source"><a href="https://joecarlsmith.substack.com/p/on-restraining-ai-development-for">Joe Carlsmith</a></span>
+New essay (10th in his alignment series). Argues <mark>a wiser civilization would employ significant capability restraint as we approach transformative AI</mark>. Key tension: idealized restraint is clearly good, but feasibility in an international competitive context is the hard part. Worried about algorithmic progress being much harder to restrain than compute. Concerned restraint regimes tend to centralize power. Notes AI's compute dependence gives leverage. Speaks for himself, not Anthropic.</li>
+
+<li><span class="item-title">Transformer: Six states copying Oregon's chatbot bill — with industry carve-outs</span>
+<span class="source"><a href="https://www.transformernews.ai/p/six-states-one-playbook-the-chatbot-child-safety-oregon-hawaii-colorado-arizona-georgia-nebraska-idaho">Transformer</a></span>
+CO, HI, AZ, GA, NE, ID all introduced bills structurally similar to Oregon SB 1546 but with weaker provisions: carve-outs for chatbots embedded in other services (exempts Meta/Google), no private right of action, and "actual knowledge" loopholes for minor detection. Google backed bills in HI, NE, AZ. Colorado hearing postponed, amendments possible. Critics: "tech lobbyists supply full bill text."</li>
+
+<li><span class="item-title">80K Hours: Meta's $16B scam economy — lessons for AI regulation</span>
+<span class="source"><a href="https://80000hours.org/2026/03/robs-meta-leaked-documents-scams/">80K Hours</a></span>
+Leaked docs show Meta earned ~$16B/yr from scam ads, involved in 1/3 of all US fraud. Anti-fraud team capped at 0.15% revenue impact. Conclusion: <mark>we should regulate AI companies like banks — with embedded supervisors</mark>, not voluntary commitments. Directly relevant to AI governance trust questions.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">80K Hours: Sable scenario comparison video</span>
+<span class="source"><a href="https://80000hours.org/videos/the-sable-scenario-in-if-anyone-builds-it-everyone-dies-vs-the-ai-in-context-retelling/">80K Hours</a></span>
+New video by Aric Floyd comparing the "Sable" AI takeover scenario from <em>If Anyone Builds It, Everyone Dies</em> with its retelling in <em>AI in Context</em>. Relevant CivAI demo material for communicating AI doom scenarios to a general audience.</li>
+
+<li><span class="item-title">Mox: AI Control Hackathon starts TONIGHT (Fri 6pm)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-0318-0322">Mox Populi</a></span>
+Co-organized with Redwood Research. Three days of building control protocols + eval tools using ControlArena and SHADE-Arena. <a href="https://luma.com/ai-control-hackathon-2026-san-francisco-mox?tk=p5zTVl">Register here</a>. Also this week: vibecoding club (Thu), Schelling coworking day (Fri), documentary screening of uX-3 (AI robot prank doc).</li>
+
+<li><span class="item-title">arXiv declares independence from Cornell — becomes standalone nonprofit July 1</span>
+<span class="source"><a href="https://www.science.org/content/article/arxiv-pioneering-preprint-server-declares-independence-cornell">Science</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47450478">HN 499 pts</a></span>
+The preprint server used by virtually all AI researchers will become an independent nonprofit, allowing it to raise funds from broader donors and modernize infrastructure.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
