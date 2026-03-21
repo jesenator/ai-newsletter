@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Saturday, March 21, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Saturday, March 21, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg> Pitch: Anthropic's New Filing Reveals What the Pentagon Actually Fears About AI Safety Restrictions</h2>
+<ul>
+<li>In a new court filing reported by <a href="https://www.techmeme.com/260320/p29#a260320p29">Wired (Paresh Dave)</a>, <mark>Anthropic says it technically cannot manipulate Claude once the military has deployed it</mark>, directly denying the DOD's allegation that Anthropic could "tamper with models during war." Anthropic's argument: deployed model weights are static copies under the military's control &mdash; the company has no remote kill switch or backdoor.
+
+<p>This filing is significant because it reveals the DOD's core fear: that an AI vendor with ethical commitments could disable or alter its AI during active warfighting operations. Anthropic is now forced to argue that it is <em>technically incapable</em> of doing the very thing AI safety researchers might want it to be able to do &mdash; intervening when a deployed model is misused. The Pentagon's position, stripped bare, is: "Any company that cares about safety is a sabotage risk." Meanwhile, <a href="https://www.reuters.com/technology/pentagon-adopt-palantir-ai-as-core-us-military-system-memo-says-2026-03-20/">a leaked DOD letter</a> from Deputy Secretary Feinberg (March 9) designates Palantir's Maven as an official program of record &mdash; locking in <mark>long-term funding for the AI targeting system that runs on Claude</mark>, even as the Pentagon tries to ban Anthropic.</p>
+
+<p>The contradiction is extraordinary: the Pentagon is simultaneously institutionalizing a system built on Claude while trying to blacklist Claude's maker. A story could map the technical claims in both filings and test whether Anthropic truly cannot modify deployed models &mdash; and whether the Pentagon's "sabotage" theory has any engineering basis. Hearing is Monday.</p></li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg> Anthropic vs. Pentagon: Updates</h2>
+<ul>
+<li><span class="item-title">Anthropic: we can't remotely alter deployed Claude</span>
+<span class="source"><a href="https://www.techmeme.com/260320/p29#a260320p29">Wired</a></span> New filing argues model weights are static once deployed. DOD accused Anthropic of potential wartime tampering. Hearing Monday 3/24.</li>
+<li><span class="item-title">Pentagon makes Palantir Maven an official program of record</span>
+<span class="source"><a href="https://www.reuters.com/technology/pentagon-adopt-palantir-ai-as-core-us-military-system-memo-says-2026-03-20/">Reuters</a></span> Leaked March 9 letter from Deputy SecDef Feinberg. Secures long-term funding, moves oversight to CDAO. Maven already the military's primary AI targeting platform. <mark>Complication: Maven runs on Claude</mark>, which the Pentagon is trying to ban.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" /></svg> Deals & Industry</h2>
+<ul>
+<li><span class="item-title">OpenAI to nearly double headcount to ~8,000 by year-end</span>
+<span class="source"><a href="https://www.ft.com/content/7ffea5b4-e8bc-47cd-adb4-257f84c8028b">FT</a></span> From ~4,500 today. Explicitly aimed at stopping Anthropic's momentum with enterprise customers.</li>
+<li><span class="item-title">Nvidia-Groq $20B deal: Groq revenue was near $100M</span>
+<span class="source"><a href="https://www.forbes.com/sites/phoebeliu/2026/03/18/groq-cofounder-ross-explains-whirlwind-ai-chip-deal-with-nvidia/">Forbes</a></span> CTO Jonathan Ross details the Christmas Eve agreement. 200x revenue multiple reflects strategic value of Groq's inference IP.</li>
+<li><span class="item-title">SoftBank plans $500B Ohio data center at former DOE uranium site</span>
+<span class="source"><a href="https://www.reuters.com/legal/litigation/japans-softbank-aep-strike-public-private-deal-ohio-natural-gas-power-2026-03-20/">Reuters</a></span> <span class="source"><a href="https://www.energy.gov/articles/energy-department-announces-partnership-ensure-affordable-energy-and-power-americas-ai">DOE</a></span> 10GW data center with 9.2GW of new gas plants. Public-private partnership with DOE.</li>
+<li><span class="item-title">Fortune: SpaceX, OpenAI, Anthropic could be 3 biggest VC-backed IPOs ever</span>
+<span class="source"><a href="https://fortune.com/2026/03/20/spacex-openai-anthropic-could-be-3-of-the-biggest-venture-backed-ipos-of-all-time/">Fortune</a></span> SpaceX targeting ~$1.75T valuation. Combined could raise $100B+.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" /></svg> AI Policy</h2>
+<ul>
+<li><span class="item-title">White House AI framework: preempt states, ignore frontier risk</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-white-house-ai-federal-framework-partisan-blackburn-preemption">Transformer</a></span> 4-page document: child safety, energy, IP, free speech, federal preemption. <mark>No mention of biorisk, loss of control, or workforce automation.</mark> Brad Carson (ARI): "230 on testosterone." Cruz expected to lead legislative push. Released 2 days after Blackburn's competing bill. Republican House leadership gave immediate support.</li>
+<li><span class="item-title">Super Micro names compliance officer after 33% stock crash</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-03-20/super-micro-makes-changes-after-smuggling-scandal-crushes-stock">Bloomberg</a></span> Co-founder charged with smuggling $2.5B in Nvidia GPUs to China. VP DeAnna Luna named acting CCO. Co-founder departed the board.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0zM4.501 20.118a7.5 7.5 0 0 1 14.998 0" /></svg> People & Litigation</h2>
+<ul>
+<li><span class="item-title">Jury: Musk intentionally misled Twitter shareholders</span>
+<span class="source"><a href="https://apnews.com/article/elon-musk-twitter-shareholders-class-action-verdict-22ea6013ebc5244cadb9a5902fe42c5d">AP</a></span> <span class="source"><a href="https://www.bbc.com/news/articles/c62j3yl842eo">BBC</a></span> Found Musk disparaged Twitter in 2022 to buy it below his $44B bid. Damages phase next.</li>
+<li><span class="item-title">Judge dismisses Annie Altman lawsuit against Sam Altman &mdash; but allows refiling</span>
+<span class="source"><a href="https://www.reuters.com/legal/government/judge-now-dismisses-lawsuit-by-sam-altmans-sister-accusing-openai-ceo-sexual-2026-03-20/">Reuters</a></span> Claims expired in 2008. Can refile under Missouri's Childhood Sexual Abuse statute.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09z" /></svg> Robotics</h2>
+<ul>
+<li><span class="item-title">China's humanoid robot boom: ~140 companies, massive state investment</span>
+<span class="source"><a href="https://www.theguardian.com/technology/2026/mar/19/inside-chinas-robotics-revolution">Guardian</a></span> Reporter visited 11 companies in 5 Chinese cities. Morgan Stanley projects 28K humanoid units shipped in China in 2026.</li>
+<li><span class="item-title">Unitree files for ~$610M Shanghai STAR Market IPO</span>
+<span class="source"><a href="https://www.caixinglobal.com/2026-03-21/unitree-robotics-files-for-608-million-star-market-ipo-102425491.html">Caixin</a></span> Revenue up 335% in 2025 to ~$247M. China's leading humanoid maker goes public.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: "The Federal AI Policy Framework: An Improvement, But My Offer Is (Still Almost) Nothing"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/the-federal-ai-policy-framework-an">Don't Worry About the Vase</a></span> Detailed section-by-section analysis. Key verdict: "support this if and only if you think 'ban states from regulating AI without actually regulating most of AI' is a good plan." Praises free speech protections, especially against federal government. Notes the framework's child safety age-assurance is "the right compromise if done correctly." Calls the IP section "an attempt to head off something." Bottom line: overrides state laws on frontier risk and replaces them with nothing.</li>
+<li><span class="item-title">LessWrong: "Terrified Comments on Corrigibility in Claude's Constitution"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/K2Ae2vmAKwhiwKEo5/terrified-comments-on-corrigibility-in-claude-s-constitution">LessWrong</a></span> Argues Claude's Constitution is <mark>"muddled" on corrigibility</mark> &mdash; simultaneously wants Claude to be corrigible but hedges with exceptions that undermine the concept. Notes the Constitution "sounds like the humans are begging" &mdash; e.g., "we would like AI models to defer to us... or at least to not attempt to actively undermine our efforts." Calls for a rewrite with greater emphasis on corrigibility before it's too late. Credits Jessica Taylor.</li>
+<li><span class="item-title">Wired/Steven Levy: Inside Palantir's developer conference</span>
+<span class="source"><a href="https://www.wired.com/story/palantir-developer-conference-ai-war-alex-karp/">Wired</a></span> Karp: "We're not interested in debating. We are very proud to have our role in having American men and women come home safe." CTO Sankar says AI company leaders "have holes in their hearts where God should be, and they are trying to fill it with AGI." Commercial business growing 120% YoY. Navy vice admiral and Maven officer among keynote speakers.</li>
+<li><span class="item-title">Fortune: Cursor's crossroads at $30B</span>
+<span class="source"><a href="https://fortune.com/2026/03/21/cursor-ceo-michael-truell-ai-coding-claude-anthropic-venture-capital/">Fortune</a></span> ARR crossed $2B in February. Used by 67% of Fortune 500. But <mark>Claude Code is threatening to unseat it</mark>; key talent departing, customers decoupling. Raising at $50B. CEO Truell: "It's a narrow field of folks really at scale here."</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

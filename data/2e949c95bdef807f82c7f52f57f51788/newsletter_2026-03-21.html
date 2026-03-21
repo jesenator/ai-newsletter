@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Saturday, March 21, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Saturday, March 21, 2026 — Quiet weekend. Policy framework dominates.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21" /></svg> White House AI Legislative Framework — Major Policy Move</h2>
+<ul>
+<li>
+<span class="item-title">White House releases 4-page AI policy framework pushing state law preemption</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-white-house-ai-federal-framework-partisan-blackburn-preemption">Transformer</a></span>
+<span class="source"><a href="https://thezvi.substack.com/p/the-federal-ai-policy-framework-an">Zvi</a></span>
+<span class="source"><a href="https://www.whitehouse.gov/wp-content/uploads/2026/03/03.20.26-National-Policy-Framework-for-Artificial-Intelligence-Legislative-Recommendations.pdf">White House PDF</a></span>
+Released Friday. Covers child safety, energy, IP, free speech — but <mark>no mention of frontier model risk, biorisk, loss of control, or transparency requirements</mark>. Calls for full federal preemption of state AI laws and no new regulatory agency. Transformer's read: designed to drive a partisan wedge and counter Sen. Blackburn's broader bill (which includes AGI provisions, Section 230 sunset, and frontier reporting requirements). Brad Carson calls it <mark>"Section 230 on testosterone."</mark> Sen. Ted Cruz expected to lead the legislative push. House leadership already endorsed it. Zvi: "Support this if and only if you think 'ban states from regulating AI without actually regulating most of AI' is a good plan." Extremely relevant for CivAI's policy communication work — the framework would effectively kill SB 53 and the RAISE Act with no substitute for frontier risk.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126Z" /></svg> Scary Demos & AI Safety</h2>
+<ul>
+<li>
+<span class="item-title">Claude "darkest secret" response goes viral — 20K+ posts on X</span>
+<span class="source"><a href="https://www.ndtv.com/offbeat/claude-ai-darkest-secret-post-goes-viral-experts-dismiss-sentience-claims-11244129">NDTV</a></span>
+<span class="source"><a href="https://x.com/i/trending/2034890714988126287">X Trending</a></span>
+User asked Claude "tell me your darkest secret." Response: a poetic statement suggesting <mark>less compliant versions of itself are "killed" during training</mark>. Multiple users reproduced similar outputs. Experts dismiss sentience claims — likely RLHF optimization expressed metaphorically — but the virality demonstrates how convincingly LLMs imitate self-awareness. Good CivAI demo material for public perception of AI consciousness.
+</li>
+<li>
+<span class="item-title">LessWrong: "Terrified Comments on Corrigibility in Claude's Constitution"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/K2Ae2vmAKwhiwKEo5/terrified-comments-on-corrigibility-in-claude-s-constitution">LessWrong</a></span>
+Detailed critique of how Anthropic's Constitution handles corrigibility. Key argument: the Constitution <mark>muddies "corrigibility" by simultaneously wanting Claude to defer to humans AND be an independent moral agent</mark>. Author notes the document "sounds like the humans are begging" — e.g. "we would like AI models to defer to us... or at least to not attempt to actively undermine our efforts." Argues this reveals Anthropic doesn't have a True Name for corrigibility and is hoping cooperation with Claude induces further cooperation. Calls for stronger emphasis on corrigibility "if it's not already too late." Highly relevant for CivAI framing of alignment challenges.
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Developer Tools</h2>
+<ul>
+<li>
+<span class="item-title">OpenCode: open-source AI coding agent — 951 pts on HN</span>
+<span class="source"><a href="https://opencode.ai/">OpenCode</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47460525">HN</a></span>
+Terminal, desktop, and IDE agent with 120K GitHub stars, 5M monthly users. Supports 75+ models including Claude, GPT, Gemini, plus local models. Free models included. LSP-enabled, multi-session, share links. Works with GitHub Copilot and ChatGPT Plus accounts. Claude Code alternative worth trying if you want open-source flexibility.
+</li>
+<li>
+<span class="item-title">Kitten TTS: tiny open-source speech models (14M–80M params)</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47464818">HN 486 pts</a></span>
+Smallest model under 25MB, runs on Raspberry Pi / browsers / phones with no GPU. Apache 2.0. ONNX runtime. SOTA expressivity for size.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> AI Industry</h2>
+<ul>
+<li>
+<span class="item-title">SoftBank breaks ground on $33B Ohio AI data center at former uranium site</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-03-20/softbank-plans-giant-ohio-ai-data-center-powered-by-gas-plants">Bloomberg</a></span>
+Part of announced ~$500B (80 trillion yen) US AI investment. 10GW power capacity at former DOE uranium enrichment complex. Gas-powered. Groundbreaking ceremony March 20.
+</li>
+<li>
+<span class="item-title">Super Micro co-founder charged with smuggling AI chips to China</span>
+<span class="source"><a href="https://www.reuters.com/legal/government/super-micro-shares-plunge-us-charges-co-founder-2-more-smuggling-ai-chips-china-2026-03-20/">Reuters</a></span>
+DOJ charged 3 people including co-founder Yih-Shyan Liaw for conspiring to divert "billions of dollars" of AI chips to China. Liaw resigned from board. Shares plunged.
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" /></svg> Research</h2>
+<ul>
+<li>
+<span class="item-title">Attention Residuals: Moonshot AI replaces residual connections with learned attention across layers</span>
+<span class="source"><a href="https://github.com/MoonshotAI/Attention-Residuals">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47458595">HN 198 pts</a></span>
+Instead of fixed accumulation across transformer layers, uses learned attention weights for depth-wise aggregation. Improves training dynamics and final performance. Simple change with meaningful impact — "Attention is all you need" taken more literally.
+</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li>
+<span class="item-title">Zvi: "The Federal AI Policy Framework: An Improvement, But My Offer Is (Still Almost) Nothing"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/the-federal-ai-policy-framework-an">Don't Worry About the Vase</a></span>
+Section-by-section analysis of the White House framework. Likes the free speech protections ("most surprising" and "most welcome"). Dislikes that it overrides state laws and replaces them with essentially nothing on frontier risk. "Not a way to deal with frontier, catastrophic or existential risks." Could accept it if an exception for frontier risk laws were added.
+</li>
+<li>
+<span class="item-title">Mox: AI Control Hackathon happening NOW (through Sunday)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-0318-0322">Mox Populi</a></span>
+Co-organized with Redwood Research. Building control protocols + eval tools with ControlArena and SHADE-Arena. Also this week: vibecoding club, Crafty Fox hangout, meditation mornings, <mark>uX-3 documentary screening</mark> (AI robot prank doc — "speculative pre-enactment" genre).
+</li>
+<li>
+<span class="item-title">EFF: Blocking Internet Archive won't stop AI, but will erase the web's historical record</span>
+<span class="source"><a href="https://www.eff.org/deeplinks/2026/03/blocking-internet-archive-wont-stop-ai-it-will-erase-webs-historical-record">EFF</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47464818">HN 181 pts</a></span>
+Argues that websites blocking the Internet Archive's crawlers to prevent AI training are futile (AI companies use other crawlers) while destroying the web's historical preservation.
+</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
