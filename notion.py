@@ -154,19 +154,18 @@ def fetch_subscribers_for_newsletter(newsletter_page_id: str) -> list[str]:
   # Return only emails whose most recent status is Subscribe
   return [email for email, status in email_status.items() if status == 'Subscribe']
 
-def fetch_newsletters(status: str = 'Active') -> list[NewsletterConfig]:
-  """Fetch all newsletters with the given Status."""
+def fetch_newsletters(status: Optional[str] = 'Active') -> list[NewsletterConfig]:
+  """Fetch newsletters, optionally filtered by Status. Pass None to fetch all."""
   headers = get_headers()
+  
+  body: dict = {}
+  if status:
+    body['filter'] = {'property': 'Status', 'select': {'equals': status}}
   
   resp = httpx.post(
     f'https://api.notion.com/v1/databases/{os.getenv("NOTION_DATABASE_ID")}/query',
     headers=headers,
-    json={
-      'filter': {
-        'property': 'Status',
-        'select': {'equals': status}
-      }
-    },
+    json=body,
     timeout=30
   )
   data = check_response(resp, 'fetch newsletters')
