@@ -49,6 +49,23 @@ def get_full_content(entry) -> str:
   return clean_html(summary)
 
 
+def parse_twitter_url(url: str) -> tuple[str, str] | None:
+  """Detect Twitter/X profile or list URLs.
+  Returns ('profile', username) or ('list', list_id) or None.
+  """
+  import re as _re
+  list_match = _re.match(r'https?://(?:twitter\.com|x\.com)/i/lists/(\d+)', url)
+  if list_match:
+    return ('list', list_match.group(1))
+  profile_match = _re.match(r'https?://(?:twitter\.com|x\.com)/([A-Za-z0-9_]+)/?$', url)
+  if profile_match:
+    username = profile_match.group(1)
+    reserved = {'i', 'home', 'explore', 'search', 'settings', 'notifications', 'messages', 'compose'}
+    if username.lower() not in reserved:
+      return ('profile', username)
+  return None
+
+
 def is_rss_url(url: str) -> bool:
   """Check if URL looks like an RSS feed based on path patterns."""
   patterns = ['/feed', '/rss', '.xml', '/atom', 'feed.xml', 'rss.xml', 'index.xml']
@@ -145,9 +162,11 @@ def fetch_source(url: str, hours: int, max_per_feed: int, max_scrape_chars: int)
 
 
 def fetch_all_sources(urls: list[str], hours: int = 48, max_per_feed: int = 10, max_scrape_chars: int = 20000) -> dict[str, tuple[list[SourcePost], bool]]:
-  """Fetch all sources. Returns {source_name: (posts, was_rss)}."""
+  """Fetch all sources (skips Twitter URLs). Returns {source_name: (posts, was_rss)}."""
   results = {}
   for url in urls:
+    if parse_twitter_url(url):
+      continue
     source_name, posts, was_rss = fetch_source(url, hours, max_per_feed, max_scrape_chars)
     results[source_name] = (posts, was_rss)
   return results

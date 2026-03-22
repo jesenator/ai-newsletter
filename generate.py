@@ -9,7 +9,8 @@ from sendgrid.helpers.mail import Mail, ReplyTo
 
 from agent import Agent
 from tools import ALL_TOOLS
-from feeds import fetch_all_sources, format_sources_for_prompt
+from feeds import fetch_all_sources, format_sources_for_prompt, parse_twitter_url
+from twitter import TwitterClient, format_tweets_xml
 from utils import load_recent_newsletters_for_prompt, load_reference_newsletter, now_pacific
 from notion import NewsletterConfig
 from config import (
@@ -78,9 +79,34 @@ def build_prompt(newsletter_config: NewsletterConfig):
   newsletter_name = newsletter_config.name
   newsletter_data_dir = get_newsletter_data_dir(newsletter_config)
 
+  rss_urls = []
+  twitter_profiles = []
+  twitter_lists = []
+  for url in newsletter_config.sources:
+    tw = parse_twitter_url(url)
+    if tw and tw[0] == 'profile':
+      twitter_profiles.append(tw[1])
+    elif tw and tw[0] == 'list':
+      twitter_lists.append(tw[1])
+    else:
+      rss_urls.append(url)
+
   print(f"\nFetching sources (last {RSS_HOURS} hours)...")
-  sources_data = fetch_all_sources(newsletter_config.sources, hours=RSS_HOURS, max_per_feed=30, max_scrape_chars=OTHER_SOURCE_MAX_CHARS)
+  print(f"  RSS/scrape URLs: {len(rss_urls)}, Twitter profiles: {len(twitter_profiles)}, Twitter lists: {len(twitter_lists)}")
+  sources_data = fetch_all_sources(rss_urls, hours=RSS_HOURS, max_per_feed=30, max_scrape_chars=OTHER_SOURCE_MAX_CHARS)
   sources_content = format_sources_for_prompt(sources_data, hours=RSS_HOURS)
+
+  twitter_content = ""
+  if twitter_profiles or twitter_lists:
+    try:
+      client = TwitterClient()
+      raw_tweets = client.fetch_all(twitter_profiles, twitter_lists, hours=RSS_HOURS)
+      filtered_tweets = client.filter_tweets(raw_tweets)
+      twitter_content = format_tweets_xml(filtered_tweets)
+      print(f"[Twitter] {len(raw_tweets)} raw -> {len(filtered_tweets)} filtered tweets")
+    except Exception as e:
+      print(f"[Twitter] Error fetching tweets: {e}")
+      log_error("[Twitter] Error fetching tweets", e)
 
   recent_newsletters_text = load_recent_newsletters_for_prompt(newsletter_data_dir, RECENT_NEWSLETTERS_TO_INCLUDE)
   reference_html = load_reference_newsletter(DATA_DIR, REFERENCE_NEWSLETTER_FILE)
@@ -96,7 +122,7 @@ These should override any other instructions you may have.
 </user_instructions_and_personalization>
 
 RESEARCH INSTRUCTIONS:
-1. Review the RSS feed posts and pre-scraped sources content provided.
+1. Review the RSS feed posts, tweets, and pre-scraped sources content provided.
 2. If you need more detail, call scrape_webpage / search_web / ask_perplexity for specific followups.
 3. Your research should be VERY comprehensive, but the output should be VERY brief and skimmable.
 4. ONLY include things from the past {RSS_HOURS} hours that are NOT in recent newsletters.
@@ -144,6 +170,11 @@ TODAY'S DATE: {day_of_week}, {current_date}
 <sources>
 {sources_content}
 </sources>
+
+=== TWITTER SOURCES (last {RSS_HOURS} hours) ===
+<tweets>
+{twitter_content}
+</tweets>
 
 === RECENT NEWSLETTERS (last {RECENT_NEWSLETTERS_TO_INCLUDE}). CRITICAL: DO NOT REPEAT THESE ITEMS ===
 <recent_newsletters>

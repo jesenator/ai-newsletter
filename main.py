@@ -66,15 +66,17 @@ async def main():
   args = parser.parse_args()
 
   status = 'Test' if args.test else 'Active'
-  print(f"Fetching {status.lower()} newsletters from Notion...")
-  newsletters = fetch_newsletters(status)
-  
   if args.just:
+    print(f"Fetching newsletter {args.just} from Notion...")
+    newsletters = fetch_newsletters(status=None)
     target_id = args.just.replace('-', '')
     newsletters = [nl for nl in newsletters if nl.page_id.replace('-', '') == target_id]
     if not newsletters:
       print(f"No newsletter found with ID: {args.just}")
       sys.exit(1)
+  else:
+    print(f"Fetching {status.lower()} newsletters from Notion...")
+    newsletters = fetch_newsletters(status)
   
   if not newsletters:
     msg = f"No {status.lower()} newsletters found in Notion database."
