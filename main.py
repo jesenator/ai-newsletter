@@ -31,10 +31,9 @@ from notion import fetch_newsletters, update_log, format_log_entry
 from config import CADENCE, DEFAULT_CADENCE
 
 def should_run_today(cadence: str) -> bool:
-  run_day = CADENCE.get(cadence, CADENCE[DEFAULT_CADENCE])["run_day"]
-  if run_day is None:
-    return True
-  return now_pacific().weekday() == run_day
+  if cadence == "Weekly":
+    return now_pacific().weekday() == 0  # Monday
+  return True
 
 
 def print_overview(newsletters, send_email: bool, test_mode: bool):

@@ -9,12 +9,10 @@ CADENCE = {
   "Daily": {
     "hours": 28,
     "recent_newsletters": 7,
-    "run_day": None,
   },
   "Weekly": {
     "hours": 172,
     "recent_newsletters": 2,
-    "run_day": 0,
   },
 }
 DEFAULT_CADENCE = "Daily"
