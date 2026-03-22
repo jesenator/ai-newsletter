@@ -136,6 +136,7 @@ HTML OUTPUT:
 - Title: "{newsletter_name} - {day_of_week}, {current_date}" (use this EXACT title in both <title> and <h1> tags)
 - Bulleted list broken into sections, very information dense, very concise. Only the most important things.
 - EACH bullet MUST include link(s) to the source AND mention which source (e.g. "Zvi", "Transformer News") with hyperlink
+- For Twitter/X sources, attribute as "X: <display name>" (e.g. "X: Jeffery Ladish", "X: Jim Fan")
 - Most important items at the TOP
 - Keep it brief: ~40 lines max, fewer if there's less news. It's BETTER to have a short newsletter.
 - Use a two-column layout with CSS grid or flexbox, max page width ~900px centered
