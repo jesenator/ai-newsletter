@@ -13,9 +13,8 @@ from sources import fetch_all, format_rss_for_prompt, format_scraped_for_prompt,
 from utils import load_recent_newsletters_for_prompt, load_reference_newsletter, now_pacific
 from notion import NewsletterConfig
 from config import (
-  RSS_HOURS,
-  RECENT_NEWSLETTERS_TO_INCLUDE, OTHER_SOURCE_MAX_CHARS,
-  REFERENCE_NEWSLETTER_FILE,
+  CADENCE, DEFAULT_CADENCE,
+  OTHER_SOURCE_MAX_CHARS, REFERENCE_NEWSLETTER_FILE,
 )
 from logger import log_info, log_error, log_prompt, log_generation
 
@@ -78,15 +77,19 @@ def build_prompt(newsletter_config: NewsletterConfig):
   newsletter_name = newsletter_config.name
   newsletter_data_dir = get_newsletter_data_dir(newsletter_config)
 
+  cadence_cfg = CADENCE.get(newsletter_config.cadence, CADENCE[DEFAULT_CADENCE])
+  hours = cadence_cfg["hours"]
+  recent_count = cadence_cfg["recent_newsletters"]
+
   rss_feeds, scraped_pages, tweets = fetch_all(
     newsletter_config.sources,
-    hours=RSS_HOURS, max_per_feed=30, max_scrape_chars=OTHER_SOURCE_MAX_CHARS,
+    hours=hours, max_per_feed=30, max_scrape_chars=OTHER_SOURCE_MAX_CHARS,
   )
-  rss_content = format_rss_for_prompt(rss_feeds, hours=RSS_HOURS)
+  rss_content = format_rss_for_prompt(rss_feeds, hours=hours)
   scraped_content = format_scraped_for_prompt(scraped_pages)
   twitter_content = format_tweets_for_prompt(tweets)
 
-  recent_newsletters_text = load_recent_newsletters_for_prompt(newsletter_data_dir, RECENT_NEWSLETTERS_TO_INCLUDE)
+  recent_newsletters_text = load_recent_newsletters_for_prompt(newsletter_data_dir, recent_count)
   reference_html = load_reference_newsletter(DATA_DIR, REFERENCE_NEWSLETTER_FILE)
 
   system_prompt = f"""You are a personalized newsletter creator.
@@ -103,7 +106,7 @@ RESEARCH INSTRUCTIONS:
 1. Review the three source types provided: RSS feed posts, scraped web pages, and tweets.
 2. If you need more detail, call scrape_webpage / search_web / ask_perplexity for specific followups.
 3. Your research should be VERY comprehensive, but the output should be VERY brief and skimmable.
-4. ONLY include things from the past {RSS_HOURS} hours that are NOT in recent newsletters.
+4. ONLY include things from the past {hours} hours that are NOT in recent newsletters.
 5. CRITICAL ANTI-REPETITION RULE: If a story appeared in ANY recent newsletter, DO NOT include it unless there's a genuinely new development. When in doubt, leave it out.
   If the same story/topic was covered in any recent newsletter, you MUST either:
   a. SKIP IT ENTIRELY (preferred if no meaningful update)
@@ -145,7 +148,7 @@ TO REITERATE:
   user_prompt = f"""Generate a newsletter for today based on the user instructions.
 
 TODAY'S DATE: {day_of_week}, {current_date}
-=== RSS FEEDS (last {RSS_HOURS} hours) ===
+=== RSS FEEDS (last {hours} hours) ===
 <rss_feeds>
 {rss_content}
 </rss_feeds>
@@ -155,12 +158,12 @@ TODAY'S DATE: {day_of_week}, {current_date}
 {scraped_content}
 </scraped_pages>
 
-=== TWEETS (last {RSS_HOURS} hours) ===
+=== TWEETS (last {hours} hours) ===
 <tweets>
 {twitter_content}
 </tweets>
 
-=== RECENT NEWSLETTERS (last {RECENT_NEWSLETTERS_TO_INCLUDE}). CRITICAL: DO NOT REPEAT THESE ITEMS ===
+=== RECENT NEWSLETTERS (last {recent_count}). CRITICAL: DO NOT REPEAT THESE ITEMS ===
 <recent_newsletters>
 {recent_newsletters_text}
 </recent_newsletters>

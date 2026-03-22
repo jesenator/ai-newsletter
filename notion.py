@@ -30,6 +30,7 @@ class NewsletterConfig:
   page_id: str
   name: str
   model: str
+  cadence: str
   sources: list[str]
   emails: list[str]
   prompt: str
@@ -178,6 +179,8 @@ def fetch_newsletters(status: Optional[str] = 'Active') -> list[NewsletterConfig
     name = extract_plain_text(props.get('Name', {}).get('title', []))
     model_select = props.get('Model', {}).get('select')
     model = model_select.get('name') if model_select else 'anthropic/claude-opus-4.5'
+    cadence_select = props.get('Cadence', {}).get('select')
+    cadence = cadence_select.get('name') if cadence_select else 'Daily'
     sources = parse_sources(props.get('Sources', {}).get('rich_text', []))
     emails = fetch_subscribers_for_newsletter(page_id)
     prompt = fetch_page_content(page_id)
@@ -186,6 +189,7 @@ def fetch_newsletters(status: Optional[str] = 'Active') -> list[NewsletterConfig
       page_id=page_id,
       name=name,
       model=model,
+      cadence=cadence,
       sources=sources,
       emails=emails,
       prompt=prompt,

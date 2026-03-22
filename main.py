@@ -28,6 +28,13 @@ from generate import (
 )
 from utils import clean_html_output, open_in_browser, save_newsletter, now_pacific
 from notion import fetch_newsletters, update_log, format_log_entry
+from config import CADENCE, DEFAULT_CADENCE
+
+def should_run_today(cadence: str) -> bool:
+  run_day = CADENCE.get(cadence, CADENCE[DEFAULT_CADENCE])["run_day"]
+  if run_day is None:
+    return True
+  return now_pacific().weekday() == run_day
 
 
 def print_overview(newsletters, send_email: bool, test_mode: bool):
@@ -39,6 +46,7 @@ def print_overview(newsletters, send_email: bool, test_mode: bool):
   for i, nl in enumerate(newsletters, 1):
     folder_id = nl.page_id.replace('-', '')
     print(f"{i}. {nl.name}")
+    print(f"   Cadence: {nl.cadence}")
     print(f"   Model: {nl.model}")
     print(f"   Sources: {len(nl.sources)}")
     print(f"   Folder: data/{folder_id}/")
@@ -88,7 +96,14 @@ async def main():
   log_run_start(len(newsletters), mode)
   print_overview(newsletters, args.send_email, args.test)
   
+  skip_cadence = args.just or args.test
   for newsletter_config in newsletters:
+    if not skip_cadence and not should_run_today(newsletter_config.cadence):
+      msg = f"Skipping {newsletter_config.name} ({newsletter_config.cadence} cadence, not scheduled today)"
+      print(f"\n{msg}")
+      log_info(msg)
+      continue
+
     log_info(f"Starting generation for: {newsletter_config.name}")
     try:
       content, cost = await generate_newsletter_for_config(newsletter_config)
