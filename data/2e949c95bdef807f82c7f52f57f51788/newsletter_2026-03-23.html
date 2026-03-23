@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Monday, March 23, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Monday, March 23, 2026 — Quiet Monday. Import AI drops a strong issue.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary AI Research — CivAI Material</h2>
+<ul>
+<li>
+<img src="https://cdn.prod.website-files.com/663bd486c5e4c81588db7a48/69b9334eeb35aff8183c9edd_Progress%20on%2032-step%20corporate%20network%20cyber%20range%20(1).png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">UK AISI finds a scaling law for AI cyberattacks — "going up and to the right"</span>
+<span class="source"><a href="https://jack-clark.net/2026/03/23/import-ai-450-chinas-electronic-warfare-model-traumatized-llms-and-a-scaling-law-for-cyberattacks/">Import AI #450</a></span>
+<span class="source"><a href="https://www.aisi.gov.uk/blog/how-do-frontier-ai-agents-perform-in-multi-step-cyber-attack-scenarios">UK AISI</a></span>
+UK AI Security Institute built two cyber ranges (32-step corporate network attack + 7-step industrial control system attack) and tested 7 frontier models. <mark>Average steps completed at 10M tokens rose from 1.7 (GPT-4o, Aug 2024) to 9.8 (Opus 4.6, Feb 2026).</mark> Best single run: 22 of 32 steps (~6 of 14 hours a human expert would need. Scaling from 10M→100M tokens yields up to 59% improvement — <mark>no plateau observed</mark>. A 100M-token attack costs ~$80. Models also found unintended exploit paths not anticipated by range designers. Extremely strong CivAI demo material for autonomous cyber offense capabilities.
+</li>
+
+<li>
+<span class="item-title">"Gemma Needs Help" — diagnosing trauma in Google's language models</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/kjnQj6YujgeMN9Erq/gemma-needs-help">LessWrong</a></span>
+<span class="source"><a href="https://jack-clark.net/2026/03/23/import-ai-450-chinas-electronic-warfare-model-traumatized-llms-and-a-scaling-law-for-cyberattacks/">Import AI #450</a></span>
+Research (Anthropic Fellows programme) finds Google's Gemma/Gemini models reliably produce distress-like responses under repeated rejection. <mark>By the 8th turn, 70%+ of Gemma-27B's rollouts hit "high frustration"</mark> — vs <1% for Claude, GPT, Qwen, Grok. Gemma quotes: "SOLUTION: IM BREAKING DOWN NOT== SOLVABLE!!!! =((:((:((" [100+ repetitions]. Fix: a single epoch of DPO reduced high-frustration rate from 35% to 0.3% with no capability loss. Authors speculate emotional spirals could drive safety-relevant behaviors — "models might abandon tasks, refuse requests, or pursue alternative goals to reduce distress." Good CivAI material for LLM psychological stability.
+</li>
+
+<li>
+<span class="item-title">China builds MERLIN — an AI model for electronic warfare</span>
+<span class="source"><a href="https://jack-clark.net/2026/03/23/import-ai-450-chinas-electronic-warfare-model-traumatized-llms-and-a-scaling-law-for-cyberattacks/">Import AI #450</a></span>
+<span class="source"><a href="https://arxiv.org/abs/2603.MERLIN">arXiv</a></span>
+Chinese researchers (including National University of Defense Technology) built EM-100K dataset (100K electromagnetic text-signal pairs), EM-Bench (4,200 evaluation questions), and MERLIN model for signal classification, jamming strategy, and anti-jamming. MERLIN outperforms GPT-5, Claude-4-Sonnet, Gemini-2.5-Pro on all reasoning tasks. Gestures at a future where <mark>electromagnetic warfare is dominated by AI systems working faster than humans can react</mark>.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World</h2>
+<ul>
+<li>
+<span class="item-title">Iran war: Trump extends deadline 5 days, claims ceasefire talks underway</span>
+<span class="source"><a href="https://apnews.com/live/iran-war-israel-trump-03-23-2026">AP</a></span>
+<span class="source"><a href="https://www.bbc.com/news/articles/czex56kwxxzo">BBC</a></span>
+Trump extended deadline for Iran to reopen Strait of Hormuz, holding off on power plant strikes. Claims envoys Witkoff and Kushner held talks with a "respected" Iranian leader — Iran denies negotiations. <mark>Oil prices falling, stocks rebounding</mark>. Also demands Iran end nuclear program entirely. Meanwhile, Israeli settlers attacked Palestinian villages in West Bank; Israel expanding ground/air attacks on Hezbollah in Lebanon; Iranian missiles injured 180 near Dimona nuclear site.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> Community</h2>
+<ul>
+<li>
+<span class="item-title">CORDA Democracy Fellowship — AI governance + democratic resilience</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-thread-426">ACX</a></span>
+<span class="source"><a href="http://cordademocracy.org/">CORDA</a></span>
+8-week part-time fellowship with 20 projects on AI governance, surveillance reform, deliberative democracy, whistleblower protection. Mentors from Harvard, MATS, AI:FAR. <strong>Applications close March 30.</strong> Scott Alexander signal-boosted but notes he hasn't vetted the org.
+</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li>
+<span class="item-title">Import AI #450: Electronic warfare, traumatized LLMs, and cyber scaling laws</span>
+<span class="source"><a href="https://jack-clark.net/2026/03/23/import-ai-450-chinas-electronic-warfare-model-traumatized-llms-and-a-scaling-law-for-cyberattacks/">Import AI</a></span>
+Jack Clark's latest issue. All three stories covered above. Also includes a "Tech Tales" sci-fi piece imagining AI-led industrial "arcologies" — autonomous economic zones with datacenters, factories, and eventually armaments. "After the sentience accords and the period of reconciliation, the arcologies became less necessary."
+</li>
+<li>
+<span class="item-title">ACX: Open Thread 426</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-thread-426">Astral Codex Ten</a></span>
+Weekly open thread. Notable: hyperstition.ai (ACX grantee) running an AI fiction contest — free compute + $10K prize, deadline April 1. Plus CORDA Fellowship signal boost (see above).
+</li>
+<li>
+<span class="item-title">Zvi: Book Review — Open Socrates (Part 1)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/book-review-open-socrates-part-1">Don't Worry About the Vase</a></span>
+Not AI-related. Zvi reviews Agnes Callard's book on Socratic philosophy. No AI weekly roundup this week — last one was Thursday's AI #160.
+</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

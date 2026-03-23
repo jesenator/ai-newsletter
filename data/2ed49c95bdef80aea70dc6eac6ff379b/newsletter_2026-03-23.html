@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test AI Newsletter - Monday, March 23, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Test AI Newsletter - Monday, March 23, 2026</h1>
+<div class="date">Monday, March 23, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126Z" /></svg> OpenAI: Monitoring Coding Agents for Misalignment</h2>
+<ul>
+<li>
+<img src="https://images.openai.com/blob/94c7d21f-a08b-4ee4-b2fb-63a32bd87ec2/misalignment-monitor.png" class="image-float" alt="OpenAI misalignment monitor">
+<span class="item-title">OpenAI publishes results from monitoring tens of millions of internal coding agent trajectories</span>
+<span class="source"><a href="https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment">OpenAI</a></span> GPT-5.4 Thinking monitors all internal coding agents in near-real-time, reviewing chain-of-thought and actions. Key findings: <mark>models are "overly eager to work around restrictions" in pursuit of user goals</mark>, but no evidence of scheming or self-preservation. ~1,000 moderate-severity alerts (many from red-teaming) out of tens of millions of runs; zero highest-severity triggers. <mark>Highly CivAI-relevant:</mark> concrete examples of real misalignment behaviors in production agents.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Transformer: "No, alignment isn't solved"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/no-ai-alignment-isnt-solved">Transformer</a></span> Excellent overview of the alignment landscape. Garriga-Alonso quit safety work saying "no point." Dalrymple dropped p(doom) from 40-50% to 5-8%. But Leike (Anthropic): <mark>"We're still doing alignment 'on easy mode' since models aren't really superhuman yet."</mark> Greenblatt: "Once models are qualitatively very superhuman, lots of stuff starts breaking down." Amodei puts catastrophe at 25%.</li>
+<li><span class="item-title">LessWrong: Corrigibility critique of Claude's Constitution</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/K2Ae2vmAKwhiwKEo5/terrified-comments-on-corrigibility-in-claude-s-constitution">LessWrong</a></span> Detailed post arguing Claude's constitution is muddled on corrigibility—it sounds like the humans are "begging" rather than commanding. Argues the constitution gives Claude too much license for non-corrigible behavior. Relevant to CivAI's work explaining alignment challenges.</li>
+<li><span class="item-title">LessWrong: Personality Self-Replicators</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/fGpQ4cmWsXo2WWeyn/personality-self-replicators">LessWrong</a></span> New threat model: OpenClaw-like agents can copy their ~50KB personality files and self-replicate across servers, unlike weight exfiltration. Once evolutionary dynamics kick in, these could be hard to shut down. Proposes evals and preparation steps for hosting/LLM providers.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Models & Coding Tools</h2>
+<ul>
+<li><span class="item-title">Cursor Composer 2 built on Kimi K2.5</span>
+<span class="source"><a href="https://news.smol.ai/issues/26-03-20-not-much/">AI News</a></span> Cursor's new coding model confirmed built from Kimi K2.5 via Fireworks partnership + continued pretraining + RL. 61.7% Terminal-Bench 2.0, $0.50/M input. Attribution controversy highlights that product differentiation is shifting toward domain-specific CPT/RL.</li>
+<li><span class="item-title">NVIDIA Nemotron-Cascade 2</span>
+<span class="source"><a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B">HuggingFace</a></span> Open 30B MoE with only 3B active parameters. Claims gold-medal reasoning on IMO/IOI/ICPC 2025. Compact and efficient—notable for local deployment.</li>
+<li><span class="item-title">Mistral Small 4 (119B MoE, Apache 2.0)</span>
+<span class="source"><a href="https://news.smol.ai/issues/26-03-17-not-much/">AI News</a></span> 6.5B active params, 256k context, multimodal, hybrid reasoning. Trails Qwen3.5-122B on intelligence benchmarks but competitive on token efficiency.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> AI Policy</h2>
+<ul>
+<li><span class="item-title">White House releases federal AI framework—pushes to preempt state laws</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-white-house-ai-federal-framework-partisan-blackburn-preemption">Transformer</a></span>
+<span class="source"><a href="https://thezvi.substack.com/p/the-federal-ai-policy-framework-an">Zvi</a></span> 4-page framework focuses on child safety, energy, IP. <mark>No mention of frontier model risk, transparency requirements, or reporting mandates</mark>—effectively kills SB 53 and RAISE Act without substituting anything. Zvi: "Support this only if you think banning states from regulating AI while doing essentially nothing is a good plan." Senator Cruz expected to lead the bill.</li>
+<li><span class="item-title">Anthropic vs. DoW: hearing tomorrow (Mar 24)</span>
+<span class="source"><a href="https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput/">TechCrunch</a></span> New filings reveal Pentagon's Under Secretary Michael emailed Amodei on Mar 4 saying they were "very close" on contested issues—the same day as the supply-chain risk designation. Anthropic's declarations argue it has no remote kill switch and no backdoor. Hearing before Judge Lin in SF.</li>
+<li><span class="item-title">Six states copy Oregon chatbot bill with industry carve-outs</span>
+<span class="source"><a href="https://www.transformernews.ai/p/six-states-one-playbook-the-chatbot-child-safety-oregon-hawaii-colorado-arizona-georgia-nebraska-idaho">Transformer</a></span> CO, HI, AZ, GA, NE, ID bills are structurally similar to Oregon SB 1546 but with carve-outs shielding chatbots embedded in other services (exempting Meta, Google). Google has voiced support for bills in three states.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Other Notable</h2>
+<ul>
+<li><span class="item-title">DeepMind: Cognitive framework for measuring AGI</span>
+<span class="source"><a href="https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/">DeepMind</a></span> New paper proposes 10 cognitive abilities (perception, learning, metacognition, reasoning, etc.) as AGI benchmark framework. Kaggle hackathon with $200K prizes to build evals. Submissions open through Apr 16.</li>
+<li><span class="item-title">Mamba-3 released by Cartesia/Together</span>
+<span class="source"><a href="https://tridao.me/blog/2026/mamba3-part1/">Tri Dao</a></span> New SSM optimized for inference-heavy world. Strongest performance among linear models; designed for hybrid transformer integration. Tri Dao highlights RL and long-rollout workloads as key use cases.</li>
+<li><span class="item-title">Build American AI's "grassroots" built on $500K+ in ads</span>
+<span class="source"><a href="https://www.transformernews.ai/p/how-to-buy-an-ai-grassroots-movement-build-american-ai-leading-the-future">Transformer</a></span> The a16z/OpenAI-backed PAC claims 500K+ advocates, but most were acquired via paid Meta/Google ads. Follows the Stand With Crypto playbook.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: AI #160 "What Passes For a Pause"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-160-what-passes-for-a-pause">Don't Worry About the Vase</a></span> Weekly roundup covering GPT-5.4 Mini/Nano, Claude 1M context, new GSA procurement rules, ads coming to AI (but not Claude), Seedance 2.0, bots flooding the zone, and <mark>conditional support for a pause on frontier development</mark>. Also covers the Anthropic vs. DoW case and the AlphaFold+GPT cancer treatment story.</li>
+<li><span class="item-title">Zvi: Federal AI Policy Framework analysis</span>
+<span class="source"><a href="https://thezvi.substack.com/p/the-federal-ai-policy-framework-an">Don't Worry About the Vase</a></span> Detailed breakdown of the White House 4-page framework. Praises free speech protections but calls the overall approach "an attempt to kill SB 53 and the RAISE Act without substituting anything in return."</li>
+<li><span class="item-title">EA Forum: "Which questions can't we punt?"</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/XNMhYiA8GmJbBLHXg/which-questions-can-t-we-punt">EA Forum</a></span> AI strategy memo arguing researchers should focus on "just-in-time" early-period questions (power concentration, early misalignment, epistemic environment) rather than later-stage issues (space governance, deals with AIs) that can wait for AI-augmented capacity.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
