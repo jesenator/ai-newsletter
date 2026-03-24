@@ -87,9 +87,14 @@ def _get_full_content(entry) -> str:
   return _clean_html(summary)
 
 
+RSS_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "Accept": "application/rss+xml, application/xml, text/xml, */*",
+}
+
 def _try_parse_rss(url: str, timeout: float = 15.0) -> tuple[bool, str, list[SourcePost]]:
   try:
-    response = httpx.get(url, timeout=timeout, follow_redirects=True)
+    response = httpx.get(url, timeout=timeout, follow_redirects=True, headers=RSS_HEADERS)
     response.raise_for_status()
     content_type = response.headers.get('content-type', '').lower()
     is_xml = 'xml' in content_type or 'rss' in content_type or 'atom' in content_type
