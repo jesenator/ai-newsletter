@@ -46,6 +46,7 @@ jobs:
           NOTION_SUBSCRIBERS_DB_ID: ${{ secrets.NOTION_SUBSCRIBERS_DB_ID }}
           FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
           REPLY_TO_EMAIL: ${{ secrets.REPLY_TO_EMAIL }}
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
 
       - name: Commit new newsletters
         run: |
