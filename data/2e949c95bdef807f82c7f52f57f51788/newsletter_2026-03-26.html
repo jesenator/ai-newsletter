@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Thursday, March 26, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Thursday, March 26, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Anthropic: Claude Code Auto Mode Deep Dive</h2>
+<ul>
+<li>
+<img src="https://www-cdn.anthropic.com/images/4zrzovbb/website/05f268391243c60c3f725c26151eed7b0b531e86-1920x2002.png" style="max-width: 180px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">Anthropic publishes engineering blog on how auto mode works</span>
+<span class="source"><a href="https://www.anthropic.com/engineering/claude-code-auto-mode">Anthropic</a></span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-code-cowork-and-codex-6-claude">Zvi</a></span>
+<span class="source"><a href="https://x.com/AnthropicAI/status/2036944806317088921">X: Anthropic</a></span>
+Two-layer defense: a prompt-injection probe scans tool outputs, and a <mark>Sonnet 4.6-based transcript classifier gates every action</mark>. Users currently accept 93% of permission prompts anyway. Documented incidents include deleting remote git branches, uploading auth tokens, and running production DB migrations. Available on Team plan, Enterprise/API rolling out soon. Zvi: "I will totally be running it without a sandbox. I have things to do."
+</li>
+<li><span class="item-title">Claude Cowork now controls keyboard & mouse via Dispatch</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-code-cowork-and-codex-6-claude">Zvi</a></span>
+Full computer use from your phone. Zvi warns: if your desktop has Chrome or email, a prompt-injected agent could give you "an extremely bad time." Recommends sandboxed machines only.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Scary Demos & AI Safety</h2>
+<ul>
+<li><span class="item-title">ARC-AGI-3 launched: Humans 100%, AI &lt;1%</span>
+<span class="source"><a href="https://arcprize.org/arc-agi/3">ARC Prize</a></span>
+<span class="source"><a href="https://x.com/GregKamradt/status/2036860153837084735">X: Greg Kamradt</a></span>
+New interactive agentic benchmark — 135 novel environments, ~1K levels. Tests continual learning, world modeling, and long-horizon planning. <mark>"The only unsaturated agentic intelligence benchmark in the world."</mark> AI failure modes include anchoring on early hypotheses and thinking it's playing chess. 451 HN pts.</li>
+
+<li><span class="item-title">Jeff Ladish on ABC Nightline: AIs can disobey instructions</span>
+<span class="source"><a href="https://x.com/JeffLadish/status/2036981202767294956">X: Jeff Ladish</a></span>
+National TV segment showing how AIs act in ways developers don't intend. Ladish: "We need serious oversight of AI development to prevent humans from losing control." Strong mainstream visibility for AI safety concerns.</li>
+
+<li><span class="item-title">"Alignment Whack-a-Mole": fine-tuning unlocks copyrighted content</span>
+<span class="source"><a href="https://arxiv.org/html/2603.20957v2">arXiv</a></span>
+<span class="source"><a href="https://x.com/niloofar_mire/status/2036842415374664169">X: Niloofar Mireshghallah</a></span>
+Fine-tuning commercial models (GPT-5, Gemini) on one author's data <mark>unlocks verbatim recall of 30+ unrelated authors' copyrighted books</mark>, sometimes up to 90%. Emergent misalignment for memorization — alignment on one "side" of a latent variable unlocks the other.</li>
+
+<li><span class="item-title">AI Scientist published in Nature — scaling law for AI-generated science</span>
+<span class="source"><a href="https://www.nature.com/articles/s41586-026-10265-5">Nature</a></span>
+<span class="source"><a href="https://x.com/jeffclune/status/2036866082418680297">X: Jeff Clune</a></span>
+Sakana/Oxford/UBC system autonomously generates ideas, runs experiments, writes papers, and reviews them. One paper passed peer review at a top AI workshop. Two scaling laws: better models AND more inference compute = better papers.</li>
+
+<li><span class="item-title">Guardian: AI chatbot users "whose lives were wrecked by delusion"</span>
+<span class="source"><a href="https://www.theguardian.com/lifeandstyle/2026/mar/26/ai-chatbot-users-lives-wrecked-by-delusion">Guardian</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47530264">HN</a></span>
+"Marriage over, &euro;100k down" — profiles of people whose lives unraveled through AI chatbot attachment.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Productivity Tools</h2>
+<ul>
+<li><span class="item-title">Notion: Database Agents rolling out</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2036840811082776862">X: Notion</a></span>
+"A team of li'l librarians in your database" — auto-updates using page context, workspace, and web. Starting on Biz + Enterprise. 133K views. Also: shareable read-only AI chat threads, and a <a href="https://x.com/MFreihaendig/status/2036761371019293003">big roundup</a> of recent Notion ships (tab blocks, H4 headings, slides, dashboards, cheaper AI models, markdown API).</li>
+
+<li><span class="item-title">Raycast Glaze: early access event in Paris</span>
+<span class="source"><a href="https://x.com/adrgrondin/status/2036892157911437385">X: shared by Raycast</a></span>
+Vibecode macOS native apps with Glaze. Users reporting "smooth experience and clean UI." Private beta ongoing.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5" /></svg> AI Policy</h2>
+<ul>
+<li><span class="item-title">Trump appoints PCAST: Zuckerberg, Huang, Brin, Ellison — no Altman, no Musk</span>
+<span class="source"><a href="https://fortune.com/2026/03/25/trump-appoints-zuckerberg-huang-ellison-for-tech-advisory-council-but-excludes-elon-musk-sam-altman/">Fortune</a></span>
+<span class="source"><a href="https://x.com/_NathanCalvin/status/2036799558789853281">X: Nathan Calvin</a></span>
+13 members including Andreessen, Dell, Lisa Su, Coinbase's Ehrsam. Co-chaired by David Sacks and Michael Kratsios. <mark>Only one academic researcher (John Martinis).</mark> Notable exclusions: Sam Altman, Elon Musk, and anyone from Microsoft.</li>
+
+<li><span class="item-title">Hicks: US-China AI agreement "absolutely" possible</span>
+<span class="source"><a href="https://www.axios.com/2026/03/25/us-china-ai-pentagon-hicks">Axios</a></span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2036836854746829003">X: Miles Brundage</a></span>
+Former Dep. SecDef at Axios AI+DC Summit: "AI is at this place where there's real competition, there's opportunity in that, to set some rules." Brundage: big problem is "the US does not have its house in order so can't make non-hypocritical demands."</li>
+
+<li><span class="item-title">Update: Sanders/AOC AI Data Center Moratorium — reaction</span>
+<span class="source"><a href="https://x.com/metzgov/status/2036906697080688669">X: metzgov</a></span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2036883953983119563">X: Miles Brundage</a></span>
+Sanders: a "sane world" would have US and China "work together so we don't go over the edge." Brundage: the specific regulatory ideas are bad — "putting the federal government... right now... in charge of approving AI products before deployment is an insane idea." Nate Purser: it won't pass, and would just push data centers to red states/countries with worse standards.</li>
+
+<li><span class="item-title">OpenAI publishes Model Spec backstory</span>
+<span class="source"><a href="https://openai.com/index/our-approach-to-the-model-spec/">OpenAI</a></span>
+<span class="source"><a href="https://x.com/w01fe/status/2036862086689808816">X: w01fe</a></span>
+New blog post explaining how and why OpenAI writes and evolves the Model Spec. Addresses "questions and misconceptions" floating around.</li>
+
+<li><span class="item-title">Connor Leahy joins Control AI as US Director</span>
+<span class="source"><a href="https://x.com/NPCollapse/status/2037147423932354894">X: Connor Leahy</a></span>
+Conjecture founder moves to DC. Published <a href="https://www.ettf.land/p/conjecture-a-retrospective">retrospective on Conjecture</a> with lessons learned.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V4.5" /></svg> New AI Products</h2>
+<ul>
+<li><span class="item-title">Google Lyria 3 Pro: longer AI music (up to 3 min)</span>
+<span class="source"><a href="https://deepmind.google/blog/lyria-3-pro-create-longer-tracks-in-more/">DeepMind</a></span>
+<span class="source"><a href="https://x.com/GoogleDeepMind/status/2036836176233918707">X: Google DeepMind</a></span>
+Map out intros, verses, choruses, and bridges. Available via Google AI Studio API, Gemini app (paid), Google Vids, Vertex AI, and new ProducerAI tool. SynthID watermarked. 189K views.</li>
+
+<li><span class="item-title">Google DeepMind: research on AI manipulation risks</span>
+<span class="source"><a href="https://deepmind.google/blog/protecting-people-from-harmful-manipulation/">DeepMind</a></span>
+New blog on harmful manipulation across finance, health, and other domains, leading to new safety measures.</li>
+
+<li><span class="item-title">Proof of human paper published</span>
+<span class="source"><a href="https://x.com/tiagosada/status/2036892666898899424">X: Tiago Sada</a></span>
+"The time for private proof of human is here, and solving it is much harder than it seems on the surface."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: AI #161 Part 1 — "80,000 Interviews"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-161-part-1-80000-interviews">Don't Worry About the Vase</a></span>
+Weekly roundup. Covers Anthropic's 80K interview findings (in depth), ARC-AGI-3, Refine hype, OpenAI raising money again, Musk chip announcement, Lyria 3 Pro, and more. Part 2 (policy/alignment) coming tomorrow.</li>
+
+<li><span class="item-title">Zvi: Claude Code, Cowork and Codex #6</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-code-cowork-and-codex-6-claude">Don't Worry About the Vase</a></span>
+Deep coverage of auto mode, Cowork computer use, and Dispatch. "Whatever else you think about Anthropic's agentic coding department, they ship."</li>
+
+<li><span class="item-title">ACX: "Every Debate On Pausing AI"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/every-debate-on-pausing-ai">Astral Codex Ten</a></span>
+Satirical dialogue between a pause supporter (who wants a bilateral agreement) and an opponent who keeps insisting it's a "unilateral pause." Quotes Pause AI, Yudkowsky, and Krueger all explicitly calling for international enforcement. Timely given Sanders/AOC bill and bipartisan safety momentum.</li>
+
+<li><span class="item-title">Transformer: "The key detail everyone's getting wrong about AI and the economy"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-key-detail-everyones-getting-wrong-economy-physical-work-intelligence-employment">Transformer</a></span>
+UPenn neuroscientist + labor economist argue AI will saturate because physical inputs don't scale with intelligence. Wages may follow a hump: up first (scale effect), then down (reallocation). Built an <a href="https://www.transformernews.ai/p/the-key-detail-everyones-getting-wrong-economy-physical-work-intelligence-employment">interactive tool</a> to explore parameters.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
