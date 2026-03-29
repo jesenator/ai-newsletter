@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Sunday, March 29, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Sunday, March 29, 2026 — Quiet Sunday. WSJ bombshell on OpenAI's early days. xAI loses every co-founder.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126Z" /></svg> WSJ: Brockman Proposed Selling AGI to China and Russia</h2>
+<ul>
+<li><span class="item-title">Major WSJ exposé on the Altman-Amodei feud reveals explosive early OpenAI details</span>
+<span class="source"><a href="https://www.wsj.com/tech/ai/the-decadelong-feud-shaping-the-future-of-ai-7075acde">WSJ</a></span>
+<span class="source"><a href="https://x.com/michhuan/status/2037761424752296098">X: Michelle Huang</a></span>
+<span class="source"><a href="https://x.com/tenobrus/status/2037950143253872757">X: tenobrus</a></span>
+It was Brockman. WSJ reports OpenAI president Greg Brockman proposed a plan to <mark>sell AGI to rival powers including China and Russia</mark>. Dario Amodei considered this "tantamount to treason" and nearly quit. This confirms what Leopold Aschenbrenner previously revealed. The piece paints a damning picture of OpenAI's internal dynamics. tenobrus: "almost every member of leadership who remained at OpenAI has since accused Sam Altman of consistent patterns of lying and manipulation... <mark>quite strong evidence that Sam Altman is not an honest or good person</mark>."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Scary Demos / CivAI Material</h2>
+<ul>
+<li><span class="item-title">Claude zero-day demo goes viral</span>
+<span class="source"><a href="https://x.com/chiefofautism/status/2037951563931500669">X: chiefofautism</a></span>
+Video circulating of someone at Anthropic showing Claude finding zero-day vulnerabilities live at a conference. <mark>Claude found a blind SQL injection in Ghost</mark> (50K GitHub stars, no prior critical CVEs) in 90 minutes, stole the admin API key, then did the same to the Linux kernel. Strong CivAI demo material for AI-enabled offensive cyber.</li>
+
+<li><span class="item-title">MIRAGE: Multimodal AI describes images it was never shown</span>
+<span class="source"><a href="https://arxiv.org/abs/2603.21687">arXiv</a></span>
+<span class="source"><a href="https://x.com/euanashley/status/2037993596956328108">X: Euan Ashley</a></span>
+Stanford/Fei-Fei Li lab paper (53K views). Frontier models generate detailed descriptions — including clinical findings — for <mark>images never provided</mark>. One model topped a chest X-ray benchmark without seeing any images. "Mirage reasoning" — models confabulate as if images exist. 368 likes. Alarming for medical AI deployment.</li>
+
+<li><span class="item-title">Jeff Ladish: mirror life as metaphor for superintelligence risk</span>
+<span class="source"><a href="https://x.com/JeffLadish/status/2038052931233284599">X: Jeffery Ladish</a></span>
+Long thread using synthetic biology / mirror life as an analogy for unaligned ASI. "We don't get to choose the difficulty level... If we choose to do nothing, then we're not going to make it if there are civilization-ending technologies on the default path." 114 likes. Excellent framing for CivAI communications.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World</h2>
+<ul>
+<li><span class="item-title">Iran expands attacks across the Gulf</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cp86yrq5jy7o">BBC</a></span>
+Iran's IRGC struck aluminium plants in UAE and Bahrain — first attacks on Gulf states beyond Israel. Multiple injuries. Significant escalation of the US-Iran conflict now entering its second month.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" /></svg> AI Industry</h2>
+<ul>
+<li><span class="item-title">xAI: every single co-founder has now left</span>
+<span class="source"><a href="https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai/">TechCrunch</a></span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2038098158434369749">X: Miles Brundage</a></span>
+Manuel Kroiss (pretraining lead) and Ross Nordeen (Musk's "right-hand operator") both departed. <mark>All 11 of Musk's original xAI co-founders are now gone.</mark> Musk claims xAI is "being rebuilt from the foundations up." Brundage jokes about "the one remaining xAI employee training a frontier model," then notes more seriously they'll make "heavy use of automation with pretty egregiously misaligned models."</li>
+
+<li><span class="item-title">"The AI Doc" opening weekend — positive reception across the spectrum</span>
+<span class="source"><a href="https://x.com/JeffLadish/status/2037972106709749938">X: Jeffery Ladish</a></span>
+<span class="source"><a href="https://x.com/robbensinger/status/2037962598986154147">X: Rob Bensinger</a></span>
+<span class="source"><a href="https://variety.com/2026/film/reviews/the-ai-doc-or-how-i-became-an-apocaloptimist-review-1236698037/">Variety</a></span>
+Ladish: "I don't know how the filmmakers managed to pull off a film that both the accelerationists and extinction risk folks are happy with." Beff Jezos calls it "pretty balanced." MIRI published an extensive Q&A companion guide. Variety: "Scary, Dizzying and Essential." Go see it.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li><span class="item-title">EU AI Act Codes of Practice require adversarial fine-tuning evals for open-weight frontier models</span>
+<span class="source"><a href="https://x.com/StephenLCasper/status/2038239810654228676">X: Stephen Casper</a></span>
+Casper: Appendices 3.2, 3.3, and 3.5 together <mark>"unambiguously" require open-weight developers to let external evaluators run adversarial fine-tuning evals</mark> on frontier models pre-release (for models qualifying as systemic risk under the company's safety framework). Good precedent.</li>
+
+<li><span class="item-title">UK AISI: 177K+ agent tools analyzed — rapid growth in deployment</span>
+<span class="source"><a href="https://x.com/AISecurityInst/status/2037193394699591982">X: AI Security Institute</a></span>
+<span class="source"><a href="https://arxiv.org/html/2603.23802v1">arXiv</a></span>
+AISI analyzed 177,000+ MCP agent tools published Nov 2024–Feb 2026. Found rapid growth in deployment for increasingly complex tasks. AI-generated code in 28% of all MCP servers; 62% of new servers in Feb 2026.</li>
+
+<li><span class="item-title">OpenAI Model Spec analysis: "No other objectives" section</span>
+<span class="source"><a href="https://x.com/mentalgeorge/status/2037951850079813639">X: George</a></span>
+250 likes, 46K views. Deep thread on the section that "most distinguishes OAI's liberalism from Anthropic's Claude-as-philosopher-king approach." Relevant to understanding the philosophical divergence between labs on AI alignment.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 0 1 1.037-.443 48.282 48.282 0 0 0 5.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Twitter Roundup</h2>
+<ul>
+<li><span class="source"><a href="https://x.com/ControlAI/status/2037949888705536275">X: ControlAI</a></span> Aza Raskin tells Oprah: "Against superintelligent AI, we'd be like ants in the way of a highway." AI is getting better than all humans at hacking — imagine it shuts down electricity, water, and hospitals worldwide at once.</li>
+<li><span class="source"><a href="https://x.com/tyler_m_john/status/2038044074805186760">X: Tyler John</a></span> Looking for "exceptional, high agency people who understand transformative AI" for grantmaking. Expects he could deploy $100M this year but is "massively constrained by labor." 236 likes.</li>
+<li><span class="source"><a href="https://x.com/CRSegerie/status/2038253855046291918">X: Charles Ségerie</a></span> "Open source reduces dependency. It doesn't reduce the concentration of the power that actually matters: who decides where this goes."</li>
+<li><span class="source"><a href="https://x.com/deanwball/status/2037894984553177261">X: Dean Ball</a></span> Calls for routine third-party safety audits of frontier labs and bans on AI in nuclear weapon control systems. 81 likes.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Mox: This Week at Mox (3/29–4/4)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-32944">Mox Populi</a></span>
+Christians for Impact book club (Sun), ML papers reading group, Lean math group, vinyasa yoga, vibecoding club + Crafty Fox (Thu), Schelling coworking day (Fri), "The Coordination Problem" workshop on community design, ACX lightning talks meetup.</li>
+<li><span class="item-title">HN: "What if AI doesn't need more RAM but better math?"</span>
+<span class="source"><a href="https://adlrocha.substack.com/p/adlrocha-what-if-ai-doesnt-need-more">adlrocha</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47561297">HN 98 pts</a></span>
+Argues efficiency gains from better algorithms may matter more than scaling hardware. Interesting counterpoint to the "just add more compute" narrative.</li>
+<li><span class="item-title">HN: Miasma — trap AI web scrapers in an endless poison pit</span>
+<span class="source"><a href="https://github.com/austin-weeks/miasma">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47561819">HN 101 pts</a></span>
+Open-source tool that generates infinite fake content to waste AI scrapers' time and pollute training data.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
