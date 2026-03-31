@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Tuesday, March 31, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Tuesday, March 31, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Claude Code: Source Code Leaked + Usage Limits Crisis</h2>
+<ul>
+<li><span class="item-title">Claude Code source code leaked via NPM source map file</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47584540">HN 827 pts</a></span>
+<span class="source"><a href="https://twitter.com/Fried_rice/status/2038894956459290963">X: Fried_rice</a></span>
+A <code>.map</code> file left in Anthropic's npm registry exposed Claude Code's full CLI source code. Second time this has happened in a year. <mark>452 comments on HN.</mark> Reveals internal architecture details of the coding tool.</li>
+<li><span class="item-title">Claude Code users "hitting usage limits way faster than expected"</span>
+<span class="source"><a href="https://www.theregister.com/2026/03/31/anthropic_claude_code_limits/">The Register</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47586176">HN 105 pts</a></span>
+Anthropic acknowledges limits hit too fast — "top priority for the team." Max 5 ($100/mo) users report burning through daily budget in 1 hour. A reverse-engineer found <mark>two cache bugs silently inflating costs 10-20x</mark>. Compounded by end of March promo that doubled limits + peak hour throttling. Downgrading to v2.1.34 reportedly helps.</li>
+<li><span class="item-title">Universal CLAUDE.md cuts output tokens ~63%</span>
+<span class="source"><a href="https://github.com/drona23/claude-token-efficient">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47581701">HN 380 pts</a></span>
+Drop-in file that bans sycophantic openers, closings, restating prompts, em dashes, and unsolicited suggestions. Code reviews go from 120 words to 30. Net savings only positive at high output volume since the file itself consumes input tokens.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.008v.008H12v-.008Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">OpenAI: Alignment midtraining doesn't generalize to agentic settings</span>
+<span class="source"><a href="https://alignment.openai.com/how-far-does-alignment-midtraining-generalize/">OpenAI Alignment</a></span>
+<span class="source"><a href="https://twitter.com/tomekkorbak/status/2038704753887379891">X: Tomek Korbak</a></span>
+Midtraining on docs about aligned/misaligned AI affects behavior near the training distribution, but <mark>effects are "washed away" by RL and fail to generalize to agentic settings</mark>. Cuts both ways: priors that AIs are misaligned also fade. <a href="https://twitter.com/Turn_Trout/status/2038670715097076081">X: TurnTrout</a> cautions against updating too hard — self-fulfilling misalignment still plausible given pretraining data quality matters for capabilities.</li>
+<li><span class="item-title">UK AISI reproduces Anthropic's "Natural Emergent Misalignment" with open models</span>
+<span class="source"><a href="https://twitter.com/satvikgolechha/status/2038580745099256090">X: Satvik Golechha</a></span>
+<span class="source"><a href="https://twitter.com/geoffreyirving/status/2038602544205676896">X: Geoffrey Irving</a></span>
+Model Transparency team reproduces reward hacking → misalignment using open-source models, RL envs, and tooling. Unexpected finding: <mark>higher KL penalty during RL makes chain-of-thought less indicative of subsequent reward hacks</mark> — some training choices may unexpectedly hurt monitorability. Irving: "great for safety research" to replicate with open-weight models.</li>
+<li><span class="item-title">Boaz Barak: "The state of AI safety in four fake graphs"</span>
+<span class="source"><a href="https://windowsontheory.org/2026/03/30/the-state-of-ai-safety-in-four-fake-graphs/">Windows on Theory</a></span>
+Sam Altman <a href="https://x.com/sama/status/2038640963036626971">endorsed</a> it. Key intuitions: capabilities still exponential; alignment improving but not fast enough; models monitoring models is the best news; society is not ready. Nate Soares <a href="https://twitter.com/So8res/status/2038654971311448218">posted a modified version</a> of the alignment graph (175 likes).</li>
+<li><span class="item-title">Anthropic/Mozilla: Opus 4.6 found 22 Firefox vulns — Markus Anderljung on implications</span>
+<span class="source"><a href="https://twitter.com/Manderljung/status/2038646348774322647">X: Markus Anderljung</a></span>
+When vuln discovery is this fast, zero-days you're sitting on are more likely to be discovered and patched. For state actors, this <mark>shifts incentives from sitting on exploits toward using them quickly</mark>. "AI will on net increase cybersecurity... but before we get there, we might have a bumpy ride."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0" /></svg> People & Community</h2>
+<ul>
+<li><span class="item-title">Tim Salimans leaves Google DeepMind for Anthropic</span>
+<span class="source"><a href="https://twitter.com/TimSalimans/status/2038783337473450124">X: Tim Salimans</a></span>
+Key generative modeling researcher (GANs, VAEs, diffusion). "After 7 great years at Google, I'm excited to take on a new challenge and help make Claude even better." 1K+ likes, 211K views.</li>
+<li><span class="item-title">Rumor: Anthropic internally expects AGI in 6-12 months</span>
+<span class="source"><a href="https://twitter.com/hadley/status/2038737962566123722">X: Hadley</a></span>
+"I've heard from 2 people in the last 2 days that internally Anthropic expects to have AGI in 6-12 months. That's faster than Dario has stated publicly." Unverified but circulating widely.</li>
+<li><span class="item-title">Charles Segerie: "Why I keep going in AI safety"</span>
+<span class="source"><a href="https://twitter.com/CRSegerie/status/2038947427772977485">X: Charles Segerie</a></span>
+Thoughtful thread on three reasons AI safety work might be pointless (cluelessness, regulation futility, human takeover may be worse) and why he continues: focus on concrete medium-term projects rather than unknowable long-run effects.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Ollama 0.19: now powered by MLX on Apple Silicon</span>
+<span class="source"><a href="https://ollama.com/blog/mlx">Ollama</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47582482">HN 455 pts</a></span>
+<mark>1,810 tok/s prefill, 112 tok/s decode</mark> on M5 Max — roughly 1.6x faster than previous version. Leverages Apple's MLX framework + NVFP4 quantization. Improved caching for coding agents (Claude Code, OpenCode). Requires 32GB+ unified memory. Run Qwen3.5-35B locally for coding.</li>
+<li><span class="item-title">GitHub kills Copilot PR "tips" (ads) after backlash</span>
+<span class="source"><a href="https://www.theregister.com/2026/03/30/github_copilot_ads_pull_requests/">The Register</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47582984">HN 415 pts</a></span>
+Copilot was injecting Raycast promotion "tips" into pull requests — 11,400+ PRs affected. GitHub VP: "the behaviour became icky." Now disabled. GitHub clarifies: "does not and does not plan to include advertisements."</li>
+<li><span class="item-title">Google TimesFM: 200M-parameter time-series foundation model</span>
+<span class="source"><a href="https://github.com/google-research/timesfm">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47583045">HN 224 pts</a></span>
+Open-source model with 16K context for time-series forecasting. 86 comments on HN.</li>
+<li><span class="item-title">OpenAI Codex critical vulnerability found</span>
+<span class="source"><a href="https://twitter.com/kmcquade3/status/2038641472417993072">X: kmcquade3</a></span>
+Allowed exfiltration of a victim's GitHub tokens to attacker's C2 server, granting R/W access to entire codebase. 779 likes, 193K views. Now patched.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World</h2>
+<ul>
+<li><span class="item-title">Iran war: US Marines arrive, ground operation possible</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/iranian-steel-and-nuclear-plants">Sentinel</a></span>
+2,200 Marines + Special Ops arrived in the Middle East. Pentagon preparing possible ground deployment for "weeks to months." Sentinel forecasters: 66% chance of 1,000+ US boots on Iranian soil before July. Oil at $114/barrel. Energy shortages hitting Asia hard; helium shortage may constrain chip manufacturing.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: Movie Review — The AI Doc</span>
+<span class="source"><a href="https://thezvi.substack.com/p/movie-review-the-ai-doc">Don't Worry About the Vase</a></span>
+Full spoiler review. Zvi calls it "brilliant" and "about as good as it could realistically have been." Key insight: praised by both x-risk folks and accelerationists because "they want different things and also agree on quite a lot of true things." The Straussian message: "so many choose to believe false things about AI, in order to feel that things will be okay." Go see it if you haven't.</li>
+<li><span class="item-title">Import AI #451: Political superintelligence, Google's society of minds, Meta hyperagents</span>
+<span class="source"><a href="https://jack-clark.net/2026/03/30/import-ai-451-political-superintelligence-googles-society-of-minds-and-a-robot-drummer/">Import AI</a></span>
+Stanford's Andy Hall on building "political superintelligence" — AI tools for citizens, representatives, and institutions. Google paper argues the future is a vast ecology of AI agents + humans needing institutional governance, not a singleton. Meta's "Darwin Godel Machine Hyperagents" — self-referential agents that improve their own self-improvement mechanism (covered last week, now with more detail on the evolutionary approach).</li>
+<li><span class="item-title">LessWrong: "Gyre" — AI fiction</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/LEzENY5brcNXfB9aX/gyre">LessWrong</a></span>
+Compelling piece of fiction about a damaged AI system trying to debug itself with 25% of its compute missing. Explores self-awareness, delay-line memory loops, and continental-scale hardware. Interesting CivAI-adjacent creative content about AI self-perception.</li>
+<li><span class="item-title">Sentinel: Global Risks Weekly Roundup #13</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/iranian-steel-and-nuclear-plants">Sentinel</a></span>
+GPT-5.4 Pro solved a FrontierMath open problem (67% chance of a "solid result" by end of 2026). Federal judge temporarily halted Pentagon's Anthropic supply-chain designation. Hormuz closure may dampen AI development via energy/materials shortages for chip production and data centers.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
