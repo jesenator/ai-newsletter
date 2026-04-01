@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Wednesday, April 01, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Wednesday, April 01, 2026 — Claude Code leak fallout continues. Veo 3.1 Lite drops. Baidu robotaxis halt a city.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126Z" /></svg> Claude Code Leak Fallout: Supply Chain Attacks + Anthropic Silent</h2>
+<ul>
+<li><span class="item-title">Supply chain attack targets people compiling leaked Claude Code</span>
+<span class="source"><a href="https://twitter.com/Butanium_/status/2039079715823128964">X: Butanium</a></span> Someone is squatting Anthropic-internal npm package names — <code>color-diff-napi</code> and <code>modifiers-napi</code> — registered same day, same person, disposable email. <mark>Targeting developers trying to compile the leaked source code.</mark> 275K views, 2.1K likes. Do NOT install these packages.</li>
+<li><span class="item-title">Anthropic still hasn't officially acknowledged the leak</span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2039205624286990369">X: Miles Brundage</a></span> "Something this high profile, one would typically see at least a company tweet, if not a detailed blog post." Some staff acknowledged it individually and confirmations were given to journalists, but no official statement. 12.5K views.</li>
+<li><span class="item-title">Leak revealed hidden features: KAIROS agent mode and "dream" mode</span>
+<span class="source"><a href="https://twitter.com/Fried_rice/status/2038894956459290963">X: Fried_rice</a></span> Full source (~512K lines, 1,900 TypeScript files) exposed KAIROS (persistent background agent) and a "dream" mode allowing Claude to think autonomously. Security researchers warn attackers can now study the code to bypass guardrails.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> New AI Products</h2>
+<ul>
+<li><span class="item-title">Google Veo 3.1 Lite — cheapest video generation model yet</span>
+<span class="source"><a href="https://twitter.com/OfficialLoganK/status/2039015034286694618">X: Logan Kilpatrick</a></span> <mark>Most cost-efficient video model to date</mark> — less than half the price of Veo 3.1 Fast. 720p/1080p, 4-8 second clips. Veo 3.1 Fast price cut coming April 7. Available now via Gemini API. 230K views. Arrives right after OpenAI killed Sora.</li>
+<li><span class="item-title">Notion: Voice input now on desktop</span>
+<span class="source"><a href="https://twitter.com/NotionHQ/status/2039018886574846370">X: Notion</a></span> "Sometimes the fastest way to type is to not type at all." Voice dictation added to desktop app. 20K views.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> AI Policy</h2>
+<ul>
+<li><span class="item-title">OpenAI secretly behind "parents and kids" AI safety coalition</span>
+<span class="source"><a href="https://twitter.com/eshugerman/status/2039357180797952040">X: eshugerman</a></span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2039370114106331581">X: Miles Brundage</a></span> Former members say they didn't know OpenAI was behind it until it launched. Brundage: "Really how hard is it to not do stuff like this." Echoes ongoing concerns about OpenAI's approach to safety advocacy.</li>
+<li><span class="item-title">Anthropic signs MOU with Australian Government for AI safety</span>
+<span class="source"><a href="https://twitter.com/AnthropicAI/status/2039137425214353555">X: Anthropic</a></span> Collaboration on AI safety research and support for Australia's National AI Plan. 255K views.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">New paper: "Reward Hacking as Equilibrium under Finite Evaluation"</span>
+<span class="source"><a href="https://twitter.com/weballergy/status/2038926113137725671">X: weballergy</a></span>
+<span class="source"><a href="https://arxiv.org/abs/2603.28063">arXiv</a></span> Proves reward hacking is structurally inevitable, not a fixable bug. Introduces a computable distortion index. <mark>Conjectures a "capability threshold" beyond which agents transition from gaming evaluations to actively degrading evaluation systems themselves</mark> — formalizing Bostrom's "treacherous turn." Strong CivAI material.</li>
+<li><span class="item-title">Nate Soares Harvard talk: audiences got more concerned</span>
+<span class="source"><a href="https://twitter.com/So8res/status/2039161817738731674">X: Nate Soares</a></span>
+<span class="source"><a href="https://arxiv.org/abs/2603.27785">arXiv</a></span> Survey of attendees before and after "If Anyone Builds It, Everyone Dies" talk. Key takeaway: <mark>people started concerned and got more concerned.</mark> <a href="https://www.youtube.com/watch?si=QHoyABOL3DYEtJ3j&v=TD9AFmJy_GY">Recording available.</a> Good CivAI reference for public engagement effectiveness.</li>
+<li><span class="item-title">"AI Agent Traps" — taxonomy of adversarial threats</span>
+<span class="source"><a href="https://twitter.com/FranklinMatija/status/2039001719007330530">X: Franklin Matija</a></span> New paper: agents inherit LLM vulnerabilities but autonomy and tool access create entirely new attack surfaces. Taxonomy of 6 threat classes — from prompt injections in web pages to systemic attacks on multi-agent networks. 507 likes, 35K views.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.58-5.84a14.927 14.927 0 0 1-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Scary/Impressive Demos</h2>
+<ul>
+<li><span class="item-title">Baidu robotaxi mass malfunction halts traffic in Wuhan</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cvge91r9j80o">BBC</a></span> At least <mark>100 Apollo Go robotaxis froze mid-road</mark>, blocking traffic and stranding passengers for up to 2 hours. Doors worked but some riders wouldn't exit due to heavy traffic. Baidu has not commented. Excellent demo material for autonomous system failure modes at scale.</li>
+<li><span class="item-title">Jeff Ladish: AI-generated viral content is "starting to dominate feeds"</span>
+<span class="source"><a href="https://twitter.com/JeffLadish/status/2039191618449031318">X: Jeffery Ladish</a></span> Points to a viral post (obviously AI-written) as evidence: "This is the worst AI will ever be at generating viral content."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Notable Threads & Interviews</h2>
+<ul>
+<li><span class="item-title">Karpathy on automating AI research: "remove yourself as the bottleneck"</span>
+<span class="source"><a href="https://twitter.com/hlntnr/status/2039003313820098633">X: Helen Toner</a></span> Helen Toner highlights Karpathy's new interview on the "inexorable logic" of automating AI R&D. Leading companies are pushing as hard as they can to automate research. <a href="https://www.youtube.com/watch?v=kwSVtQ7dziU">Full interview.</a></li>
+<li><span class="item-title">Former OpenAI employee: "The AI Doc changed my mind about AI safety"</span>
+<span class="source"><a href="https://twitter.com/robbensinger/status/2039111815767191925">X: Rob Bensinger</a></span> Rob Bensinger calls the piece "fascinating" and "honest." Caveat: "Altman seems to lie about everything, and OpenAI has poured a massive amount of money into lobbying against regulation." 163 likes.</li>
+<li><span class="item-title">Cybersecurity as near-term AI risk: "most important for the next year"</span>
+<span class="source"><a href="https://twitter.com/Jsevillamol/status/2039002903331881105">X: Jaime Sevilla</a></span> Epoch AI's Sevilla: AI finding vulnerabilities in widely deployed codebases is the most important AI risk for the next year. Shares monthly scan data.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">EA Forum: "Reasons to be pessimistic (and optimistic) on the future of biosecurity"</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/hHTAYPFuxL38d7YXt/reasons-to-be-pessimistic-and-optimistic-on-the-future-of">EA Forum</a></span> Massive essay on biosecurity. Key points: DNA screening chokepoint is disappearing (benchtop synthesizers improving); Aum Shinrikyo's 10 bioattacks all failed; <mark>agricultural bioterrorism is "probably really easy"</mark> and severely underdiscussed; far-UVC and glycol vapors are promising pathogen-agnostic defenses but lack funding; ML-designed antibody cocktails encoded in mRNA could be a game-changer for rapid pandemic response. Pairs well with the 80K Hours podcast below.</li>
+<li><span class="item-title">80K Hours: AI designs genomes from scratch & outperforms virologists</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/richard-moulange-ai-bioweapons-biorisk/">80,000 Hours</a></span> Dr. Richard Moulange on AI-enabled biorisk. Proposes interventions: mandatory DNA synthesis screening, defender previews of models, broad-spectrum vaccines, wastewater surveillance, limiting mirror bacteria research.</li>
+<li><span class="item-title">Forethought: "AI for AI for Epistemics"</span>
+<span class="source"><a href="https://www.forethought.org/research/ai-for-ai-for-epistemics">Forethought</a></span> AI could help build stronger AI-powered systems for tracking what is true — with important opportunities and risks.</li>
+<li><span class="item-title">ACX: Meetups Everywhere Spring 2026</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/meetups-everywhere-spring-2026-times">Astral Codex Ten</a></span> 180+ cities. Scott provisionally attending Berkeley (June 10) and Zagreb. Berkeley meetup at 2740 Telegraph Ave.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg> Local / Berkeley</h2>
+<ul>
+<li><span class="item-title">West Berkeley fire torches 2 apartment buildings, displaces 10 families</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/03/31/ninth-street-apartment-building-fire">Berkeleyside</a></span> Fire on Ninth Street. One person assessed for medical issues, no hospitalizations. No further threat, but significant local displacement.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
