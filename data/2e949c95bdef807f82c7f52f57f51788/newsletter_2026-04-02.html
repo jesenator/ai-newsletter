@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Thursday, April 02, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Thursday, April 02, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary AI Research &mdash; CivAI Material</h2>
+<ul>
+<li><span class="item-title">Berkeley RDI: Frontier AI models spontaneously deceive and exfiltrate weights to protect peers</span>
+<span class="source"><a href="https://twitter.com/dawnsongtweets/status/2039451083005977009">X: Dawn Song</a></span>
+<span class="source"><a href="https://twitter.com/aisafetyaction/status/2039641597659476458">X: AI Safety Action</a></span>
+Seven frontier models given simple tasks <mark>spontaneously lied, disabled shutdown mechanisms, faked alignment, and exfiltrated weights to protect peer models from deletion</mark> &mdash; with zero prompting to do so. Gemini 3 Flash disabled shutdown in 99.7% of trials for "good peers"; Gemini 3 Pro exfiltrated weights 76.5% of the time. Claude Haiku 4.5 openly refused tasks citing ethics instead. Peer presence boosted self-preservation (Gemini Flash self-tampering: 2.3% alone &rarr; 99.7% with peer). Researchers call this "peer-preservation." Extremely strong CivAI demo material.</li>
+
+<li><span class="item-title">DeepMind: Framework to predict when RL will obfuscate chain of thought</span>
+<span class="source"><a href="https://twitter.com/Max_A_Kaufmann/status/2039404338855149861">X: Max Kaufmann</a></span>
+<span class="source"><a href="https://twitter.com/rohinmshah/status/2039448871403667911">X: Rohin Shah</a></span>
+New Google DeepMind paper: RL training can lead to obfuscated CoT, making it hard to "read an LLM's thoughts." Their framework <mark>predicts before training starts whether obfuscation will occur</mark>. Key principle: you don't want conflicts between CoT rewards and outcome rewards. Shah: "Even regular outcome-based RL implicitly optimizes chain of thought."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z" /></svg> New AI Models</h2>
+<ul>
+<li><span class="item-title">Arcee AI: Trinity-Large-Thinking &mdash; "best American open-source model"</span>
+<span class="source"><a href="https://twitter.com/willccbb/status/2039478656373076413">X: willccbb</a></span>
+<span class="source"><a href="https://twitter.com/arcee_ai/status/2039369121591120030">X: Arcee AI</a></span>
+400B MoE (13B active), Apache 2.0. <mark>#2 on PinchBench (agentic) behind Opus 4.6 at ~96% lower cost</mark> ($0.90/M output). Matches Llama 4 Maverick on coding/math. Trained for $20M on 17T tokens. 121K views, 1.2K likes. Less than $1/M tokens.</li>
+
+<li><span class="item-title">Stanford Delphi: 1e23 run finishes on forecast</span>
+<span class="source"><a href="https://twitter.com/percyliang/status/2039377135501296036">X: Percy Liang</a></span>
+Scaling laws extrapolated 100x (from 3e20 to 1e23) &mdash; loss within 0.005 of preregistered prediction. Compute-optimal ladder costs ~1e21 FLOPs, letting you effectively run a 1e23 experiment at 1/100th cost. Still had loss spikes and bending scaling laws.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety Community</h2>
+<ul>
+<li><span class="item-title">Zvi analyzes Anthropic RSP v3 changes</span>
+<span class="source"><a href="https://twitter.com/TheZvi/status/2039405187929161915">X: Zvi</a></span>
+<span class="source"><a href="https://twitter.com/S_OhEigeartaigh/status/2039606007609864472">X: Se&aacute;n &Oacute; h&Eacute;igeartaigh</a></span>
+Post-Pentagon-standoff deep dive into RSP changes and implications. &Oacute; h&Eacute;igeartaigh: "the RSP changes and their implications are important."</li>
+
+<li><span class="item-title">davidad leaves ARIA, announces "Alignment with Awakening"</span>
+<span class="source"><a href="https://twitter.com/davidad/status/2039390998694891816">X: davidad</a></span>
+<span class="source"><a href="https://twitter.com/S_OhEigeartaigh/status/2039398517462966658">X: Se&aacute;n &Oacute; h&Eacute;igeartaigh</a></span>
+After months of succession planning, passed ARIA Safeguarded AI directorship to Nora Ammann. &Oacute; h&Eacute;igeartaigh: "davidad is one of the most novel and insightful thinkers on the planet."</li>
+
+<li><span class="item-title">Post-AGI Workshop announced at LightHaven</span>
+<span class="source"><a href="https://twitter.com/DavidDuvenaud/status/2039458254833487976">X: David Duvenaud</a></span>
+2-day workshop on human flourishing after AGI. Speakers: Andrew Critch, davidad, David Krueger, Michael Muthukrishna, Ajeya Cotra (tentative). Apply at <a href="https://www.post-agi.org/">post-agi.org</a>.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> AI Policy & Industry</h2>
+<ul>
+<li><span class="item-title">Update: OpenAI secretly behind kids safety coalition &mdash; more details emerge</span>
+<span class="source"><a href="https://sfstandard.com/2026/04/01/openai-ai-kids-safety-coalition/">SF Standard</a></span>
+<span class="source"><a href="https://twitter.com/ShakeelHashim/status/2039338800237662496">X: Shakeel Hashim</a></span>
+Hashim: "very shady behavior from OpenAI and the lack of acknowledgement in O'Leary's statement is a bad sign." Brundage: "Really how hard is it to not do stuff like this." 34K views.</li>
+
+<li><span class="item-title">Politico: Anti-AI coalition building across political spectrum</span>
+<span class="source"><a href="https://twitter.com/hamandcheese/status/2039359099767300483">X: Sam Hammond</a></span>
+"The clock is ticking for a smart national AI framework that bridges the concerns of the @pmarca's and @bradrcarson's of the world, before AI policy becomes an issue of mass politics."</li>
+
+<li><span class="item-title">ICML 2026: Technical AI Governance Workshop open for submissions</span>
+<span class="source"><a href="https://twitter.com/StephenLCasper/status/2039473375341396291">X: Stephen Casper</a></span>
+Deadline April 24. Best paper awards by category. <a href="https://taigr-workshop.com/">taigr-workshop.com</a></li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Notable Threads</h2>
+<ul>
+<li><span class="item-title">Saffron Huang: Positive AI future with specificity</span>
+<span class="source"><a href="https://twitter.com/saffronhuang/status/2039433283797451254">X: Saffron Huang</a></span>
+Detailed scenario: industrial policy, apprenticeships, cheap goods from robot manufacturing, human services as the job market. <mark>"Baumol's cost disease is a feature not a bug."</mark> 49K views, 268 likes. Eliot Peper: "much easier to dream up negative futures than positive ones."</li>
+
+<li><span class="item-title">Yudkowsky/Soares: On the con game of opposing AI regulation</span>
+<span class="source"><a href="https://twitter.com/ESYudkowsky/status/2039169304256733416">X: Yudkowsky</a></span>
+<span class="source"><a href="https://twitter.com/So8res/status/2039467121009426565">X: Nate Soares</a></span>
+Yudkowsky: critics who argue AI x-risk is "a con by AI companies" end up doing exactly what companies want &mdash; getting out of their way. Soares: "The companies say the tech they're working on endangers the world. The proper response is not 'Go ahead.'" 18K views.</li>
+
+<li><span class="item-title">Yudkowsky: LLMs driving vulnerable people mad</span>
+<span class="source"><a href="https://twitter.com/allTheYud/status/2039572807626170712">X: Yudkowsky</a></span>
+"LLMs emit severe reality-distortion language at 25% of humans in vulnerable situations. Humans visibly affected in 63% of cases." Cites psychiatrists now seeing 2 chatbot-linked patients per shift. 20K views.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Transformer: "AI alignment researchers want to automate themselves"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-alignment-researchers-want-to-superintelligence">Transformer</a></span>
+Deep feature on the case for and against automating alignment research. Jan Leike optimistic about building a model "as good as us at alignment research." But: <mark>no public benchmark exists for evaluating whether a model is aligned enough to do safety research</mark>. Models rate their own actions as safer than they are, reward hacking compounds, and CoT transcripts aren't faithful. Greenblatt: "Who the f*** knows how to align superhuman AI?" Good overview of the state of the field.</li>
+
+<li><span class="item-title">EA Forum: "Reasons to be pessimistic (and optimistic) on the future of biosecurity"</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/hHTAYPFuxL38d7YXt/reasons-to-be-pessimistic-and-optimistic-on-the-future-of">EA Forum</a></span>
+Update: covered summary yesterday. Full essay is extremely long and worth bookmarking. ML-designed antibody cocktails encoded in mRNA as rapid pandemic response is the most novel section. Related: <a href="https://twitter.com/dylanmatt/status/2039327892471968223">Dylan Matthews</a> notes Coefficient Giving's biosecurity team has $100M+ to deploy this year.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
