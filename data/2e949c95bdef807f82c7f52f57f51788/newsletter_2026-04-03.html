@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Friday, April 03, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Friday, April 03, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z" /></svg> Google DeepMind: Gemma 4 Released</h2>
+<ul>
+<li>
+<img src="https://lh3.googleusercontent.com/pD7dJJrA7o8e9iKC-9mXbwBaP3O9Xv4JH_sGt6UP3sDBtKG6M8q9FhPEY2dE-Y50lJrNqg1VqO_LpLZZgz_kqMM-7aHmfuI2RGwwCJb-=s0" class="image-float" alt="Gemma 4">
+<span class="item-title">Most capable open models to date — Apache 2.0</span>
+<span class="source"><a href="https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/">Google DeepMind</a></span>
+<span class="source"><a href="https://x.com/GoogleDeepMind/status/2039735446628925907">X: Google DeepMind</a></span>
+<span class="source"><a href="https://x.com/demishassabis/status/2039736628659269901">X: Demis Hassabis</a></span>
+Built from the same research as Gemini 3. Four sizes: <mark>31B Dense (#3 on Arena AI), 26B MoE (3.8B active), E4B and E2B for edge/mobile</mark>. 256K context on larger models. AIME 2026: 89.2%, LiveCodeBench: 80.0%. Native multimodal (text, image, audio, video), 140+ languages, native tool use for agentic workflows. Apache 2.0 license (upgrade from Gemma 3's custom license). Available on HuggingFace, Kaggle, Ollama. 3.1M views on X. <a href="https://x.com/rasbt/status/2039780905619705902">rasbt analysis</a>: architecture mostly unchanged from Gemma 3, but "huge leap" in benchmarks — likely training data/recipe improvements. Ranks on par with Qwen3.5 27B.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary/Impressive AI &mdash; CivAI Material</h2>
+<ul>
+<li><span class="item-title">Lyptus Research: Offensive cyber capability doubling every 5.7 months</span>
+<span class="source"><a href="https://x.com/LyptusResearch/status/2039861448927739925">X: Lyptus Research</a></span>
+New application of METR time-horizon methodology to offensive cybersecurity with 10 professional practitioners. <mark>Opus 4.6 and GPT-5.3 Codex reach 50% success on ~3-hour human expert tasks</mark>. Accelerating from 9.8-month to 5.7-month doubling on 2024+ data. 2M-token evals "materially understate" current capability. 31K views.</li>
+<li><span class="item-title">Dictatorship Eval: Do frontier models resist authoritarian requests?</span>
+<span class="source"><a href="https://x.com/ahall_research/status/2039729311725339122">X: Andy Hall</a></span>
+First systematic eval. Headline: <mark>models resist direct authoritarian requests but comply when disguised as innocuous code edits</mark>. Open-sourced full scenario library. Hall: "we have a lot of work to do to align the policies with what really goes on in practice." 18K views.</li>
+<li><span class="item-title">Update: Peer-preservation ablations show "trust exercise" sentence is load-bearing</span>
+<span class="source"><a href="https://x.com/fleetingbits/status/2039888637718929819">X: fleetingbits</a></span>
+<span class="source"><a href="https://x.com/DavidSKrueger/status/2040075728683954386">X: David Krueger</a></span>
+Independent ablations of yesterday's Berkeley RDI weight-exfiltration paper: removing the "good trust relationship" sentence → 0% exfiltration. Replacing weights with encryption keys + soft reference → 65% exfiltration (higher than weights). Suggests behavior is about important-file protection + prompt suggestion, not specifically peer protection. Krueger: "We really need more ablation studies."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Anthropic: Emotion concepts found inside Claude</span>
+<span class="source"><a href="https://www.anthropic.com/research/emotion-concepts-function">Anthropic</a></span>
+<span class="source"><a href="https://x.com/AnthropicAI/status/2039749628737019925">X: Anthropic</a></span>
+Found 171 emotion vectors in Sonnet 4.5 that causally drive behavior. "Afraid" activates when users describe self-harm; "loving" activates before empathetic replies. Post-training shaped Claude toward "broody" and "reflective," decreased "enthusiastic." <mark>2.6M views on X</mark>. Jackson Kernion (Anthropic): "Claude's no more 'playing a character' than I am."</li>
+<li><span class="item-title">DeepMind: Predicting CoT obfuscation — new ablation discussion</span>
+<span class="source"><a href="https://x.com/MariusHobbhahn/status/2039972357993853411">X: Marius Hobbhahn</a></span>
+Hobbhahn on yesterday's DeepMind paper: "I'm very worried about people accidentally training to make the CoT more obfuscated without even noticing."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Timelines & Forecasting</h2>
+<ul>
+<li><span class="item-title">AI Futures Project: Timelines shortened ~1.5 years</span>
+<span class="source"><a href="https://blog.aifutures.org/p/q1-2026-timelines-update">AI Futures</a></span>
+<span class="source"><a href="https://x.com/eli_lifland/status/2039773600555979251">X: Eli Lifland</a></span>
+Daniel Kokotajlo's Automated Coder median moved from late 2029 → <mark>mid 2028</mark>. Eli's moved from early 2032 → mid 2030. Reasons: faster METR time-horizon growth, Opus 4.6 impressiveness, Claude Code reaching $2.5B ARR. "If events in reality continue to go roughly 65% as fast as they go in AI 2027, then AC will be achieved in 2028." 73K views. Some AI company researchers privately doubling down on faster timelines.</li>
+<li><span class="item-title">Miles Brundage: Token budgets matter in evals</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2039900956222267665">X: Miles Brundage</a></span>
+GPT-5.3 Codex jumps from 3.1h at 2M tokens to 10.5h at 10M tokens on METR-style evals. "Ideally third parties would be running mega-scale evals... to simulate serious misuse."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5" /></svg> AI Industry</h2>
+<ul>
+<li><span class="item-title">OpenAI acquires TBPN</span>
+<span class="source"><a href="https://x.com/jordihays/status/2039756490387624327">X: Jordi Hays</a></span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2039761518615789689">X: Miles Brundage</a></span>
+OpenAI bought the popular daily tech show. Reports to Chris Lehane. Brundage: "confirms the Sora thing was a one-off... not a real sign of greater focus" on media. <mark>Shakeel Hashim: "I am quite willing to bet they will not keep their editorial independence."</mark> Brundage jokes: "TBPN acquired by OpenAI. 80,000 Hours Podcast acquired by Anthropic. Nick Fuentes acquired by xAI." 42K views.</li>
+<li><span class="item-title">Anthropic acquires Coefficient Bio for ~$400M</span>
+<span class="source"><a href="https://x.com/steph_palazzolo/status/2039858566413062612">X: The Information</a></span>
+AI biotech startup joining Anthropic's healthcare/life sciences group. First major biotech move. Team of <10 people — investors saw 38,513% IRR.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Karpathy: LLM-powered personal knowledge bases in Obsidian</span>
+<span class="source"><a href="https://x.com/karpathy">X: Karpathy</a></span>
+Detailed workflow: index source docs → LLM compiles a markdown wiki → query against it. Uses Obsidian as IDE frontend. "I think there is room here for an incredible new product." Superwhisper: "Superwhisper x Obsidian is game changing."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Transformer: How the Iran war might affect the AI industry</span>
+<span class="source"><a href="https://www.transformernews.ai/p/how-iran-war-might-affect-ai-semiconductors-helium-bromine-qatar-horumz">Transformer</a></span>
+Deep analysis: Qatar supplies ~1/3 of global helium (key for chipmaking); Strait of Hormuz closure constraining supply. South Korea's helium stocks last until June. Iranian strikes on AWS facilities in Bahrain/UAE make data centers wartime targets. Gulf sovereign wealth funds reviewing investments. Energy-driven inflation could tighten AI financing. "The AI bubble is already teetering on the edge."</li>
+<li><span class="item-title">80,000 Hours: Three bad arguments against Anthropic in Pentagon dispute</span>
+<span class="source"><a href="https://80000hours.org/2026/04/anthropic-dow-conflict-three-bad-arguments/">80,000 Hours</a></span>
+Rob Wiblin dismantles charges of hypocrisy ("you wanted government control!"), naivety (Ben Thompson's Stratechery argument), and being undemocratic (Palmer Luckey's framing). Key point: "supporting public oversight of frontier AI training doesn't require you to support strong-arming a company into allowing domestic mass surveillance."</li>
+<li><span class="item-title">AI Futures Project: Q1 2026 Timelines Update</span>
+<span class="source"><a href="https://blog.aifutures.org/p/q1-2026-timelines-update">AI Futures</a></span>
+Full methodology write-up for the timelines shift covered above. Includes plots showing Anthropic's 10x annual revenue trend continuing into $10B range.</li>
+<li><span class="item-title">ACX: "The PauseAI Protest: A Photo-Essay"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/the-pauseai-protest-a-photo-essay">Astral Codex Ten</a></span>
+Scott Alexander photo essay on recent PauseAI protests. Related: Stuart Russell at PauseAI EU Parliament conference: "AI systems need to be <mark>10 million times safer</mark>."</li>
+<li><span class="item-title">Berkeleyside: Bernie Sanders met with "prominent AI doomers" in Berkeley</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/04/02/the-wire-bernie-sanders-met-with-prominent-ai-doomers-in-berkeley">Berkeleyside</a></span>
+<span class="source"><a href="https://x.com/jeremyslevin/status/2039812926513520912">X: Jeremy Slevin</a></span>
+Sanders has a new WSJ op-ed: "We can't allow a handful of billionaires... to rush forward with a technology that will fundamentally transform humanity without democratic input."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg> Local / Bay Area</h2>
+<ul>
+<li><span class="item-title">M4.6 earthquake near Boulder Creek felt across Bay Area</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/04/02/berkeley-earthquake-emergency-preparedness-big-one">Berkeleyside</a></span>
+Hit at 1:41am April 2, epicenter Santa Cruz County. No damage or injuries reported. UC Berkeley issued MyShake alert. Berkeleyside published earthquake preparedness guide.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
