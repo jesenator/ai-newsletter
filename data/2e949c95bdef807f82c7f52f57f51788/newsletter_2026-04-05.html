@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Sunday, April 05, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Sunday, April 05, 2026 &mdash; Quiet Easter Sunday. GPT-5.5 sightings, Karpathy on AI for government transparency, Ladish on AI dominance, Krueger on gradual disempowerment.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> Model Updates & Rumors</h2>
+<ul>
+<li><span class="item-title">GPT-5.5 ("Spud") sighted internally &mdash; reportedly "not markedly" better than GPT-5.4</span>
+<span class="source"><a href="https://www.theneuron.ai/explainer-articles/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-saturday-sunday-april-4-5-2026/">The Neuron</a></span>
+The Neuron's weekend digest reports OpenAI's next internal model GPT-5.5 has appeared and is better than GPT-5.4 but <mark>"not markedly so" and "will not be particularly competitive with Anthropic's Mythos/Capybara; GPT-6 is needed for that."</mark> Polymarket has 66% odds of GPT-5.5 releasing by April 30. Training completed ~March 24 at Stargate; Altman called it a "very strong model." Still in safety evaluation.</li>
+
+<li><span class="item-title">Miles Brundage: GPT-5.4 Pro outputting "mumbo jumbo" &mdash; possible stealth model switching</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2040517748590313558">X: Miles Brundage</a></span>
+"Surprised to see this kind of mumbo jumbo from GPT-5.4 Pro... wonder if there is secret model switching going on." Said the output felt like an "instant model" despite claiming 10 minutes of thinking. 2.9K views.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary/Impressive &mdash; CivAI Material</h2>
+<ul>
+<li><span class="item-title">Claude wrote first-ever AI-generated remote kernel exploit (FreeBSD)</span>
+<span class="source"><a href="https://blog.calif.io/p/mad-bugs-claude-wrote-a-full-freebsd">Calif</a></span>
+<span class="source"><a href="https://www.forbes.com/sites/amirhusain/2026/04/01/ai-just-hacked-one-of-the-worlds-most-secure-operating-systems/">Forbes</a></span>
+Claude wrote <mark>two working remote kernel exploits for CVE-2026-4747 (FreeBSD) in ~4 hours of working time</mark>, dropping a root shell. Both worked on the first try. Given the CVE writeup, it set up the test environment, developed exploits using two different strategies, and delivered them while the human was AFK. First remote kernel RCE both discovered and exploited by AI. <a href="https://github.com/califio/publications/blob/main/MADBugs/CVE-2026-4747/exploit.py">Full exploit on GitHub</a>. Excellent CivAI demo material.</li>
+
+<li><span class="item-title">Jeff Ladish: "AIs are going to eclipse humans at all cognitive tasks"</span>
+<span class="source"><a href="https://x.com/JeffLadish/status/2040692359797875113">X: Jeffery Ladish</a></span>
+Long thread (6.2K views): "The default path ends in AI control... Even people who consider themselves 'AGI-pilled' often don't seem to understand." Compares humans to chimps who technically own property but wouldn't be in control. Also quotes Elon: <mark>"I don't think humans will be in control of something that is vastly more intelligent than humans."</mark> Ladish: "I find it frustrating that Elon is the only AI company CEO who speaks about this plainly."</li>
+
+<li><span class="item-title">Netflix VOID: open-source AI that erases objects from video and rewrites the physics</span>
+<span class="source"><a href="https://www.marktechpost.com/2026/04/04/netflix-ai-team-just-open-sourced-void-an-ai-model-that-erases-objects-from-videos-physics-and-all/">MarkTechPost</a></span>
+Netflix's first open-source AI model. Removes objects from video and automatically adjusts the physical effects they left behind (shadows, reflections, lighting). <a href="https://huggingface.co/netflix/void-model">Available on HuggingFace</a>. Interesting for deepfake/manipulation discussions.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World</h2>
+<ul>
+<li><span class="item-title">US airman rescued in Iran after F-15 shootdown</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cm2k1dgz142o">BBC</a></span>
+<span class="source"><a href="https://www.cnn.com/2026/04/05/world/live-news/iran-war-us-trump-oil">CNN</a></span>
+Missing crew member recovered from mountain crevice after 24+ hours behind enemy lines. War continues to escalate &mdash; Australian fuel shortages from Hormuz disruptions.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety Research & Discourse</h2>
+<ul>
+<li><span class="item-title">Krueger: "Ten different ways of thinking about Gradual Disempowerment"</span>
+<span class="source"><a href="https://therealartificialintelligence.substack.com/p/ten-different-ways-of-thinking-about">Blog</a></span>
+<span class="source"><a href="https://x.com/DavidSKrueger/status/2040677572267372897">X: David Krueger</a></span>
+New post. The GD paper was "the most discussed paper at DeepMind last year." Ten framings include: evolution ("survival of the fittest" for AI), no natural limit to outsourcing decisions, capitalism without brakes, and the "cowboy cop" analogy &mdash; AI is untrustworthy but too powerful not to use. <mark>Good framing resource for CivAI communications.</mark></li>
+
+<li><span class="item-title">Karpathy: AI can make government radically more legible to citizens</span>
+<span class="source"><a href="https://x.com/karpathy/status/2040549459193704852">X: Andrej Karpathy</a></span>
+Detailed thread: government accountability "has been constrained by intelligence, not access." AI can now process 4,000-page omnibus bills, lobbying disclosures, procurement data, judicial patterns, campaign finance, city council minutes. Multiple AI governance people excited &mdash; <a href="https://x.com/yonashav/status/2040590042654032339">Yona Shav</a>: "the AI governance intervention I am currently most bullish about."</li>
+
+<li><span class="item-title">Trenton Bricken: AI 2027 one-year anniversary re-read</span>
+<span class="source"><a href="https://x.com/TrentonBricken/status/2040487166678319272">X: Trenton Bricken</a></span>
+"AI 2027 was published a year ago and has been great to re-read." 30.6K views, 320 likes. Given the AI Futures Project <a href="https://www.theneuron.ai/explainer-articles/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-saturday-sunday-april-4-5-2026/">recently noted</a> timelines are roughly tracking at ~65% the pace of the AI 2027 scenario, this resonates.</li>
+
+<li><span class="item-title">Anthropic employee: "do not think the current pace of progress is on track" for good x-risk tradeoffs</span>
+<span class="source"><a href="https://x.com/MaskedTorah/status/2040270860846768203">X: MaskedTorah</a></span>
+<span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2040521090770817293">X: Se&aacute;n &Oacute; h&Eacute;igeartaigh</a></span>
+"I work at Anthropic and do not think the current pace of progress is on track to make good tradeoffs about AI x-risk vs other catastrophes powerful AI might have prevented." 9.4K views. &Oacute; h&Eacute;igeartaigh: "Grateful for clear articulations like this."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg> Community & Grants</h2>
+<ul>
+<li><span class="item-title">SFF opens $20&ndash;40M+ 2026 grant round applications</span>
+<span class="source"><a href="https://survivalandflourishing.fund/2026/application">SFF</a></span>
+<span class="source"><a href="https://x.com/NPCollapse/status/2040775786697834581">X: NPCollapse</a></span>
+Main Round deadline: <mark>April 22, 2026</mark>. Three tracks: Main ($10-20M), Freedom ($2-4M), Fairness ($2-4M). Plus three new themed rounds for Climate Change, Animal Welfare, and Human Self-Enhancement. Funder: Jaan Tallinn. If you're working on humanity's long-term survival and flourishing, apply.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">The Neuron: "Everything That Happened in AI This Weekend" Top 10</span>
+<span class="source"><a href="https://www.theneuron.ai/explainer-articles/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-saturday-sunday-april-4-5-2026/">The Neuron</a></span>
+Comprehensive weekend digest. Top tool picks include: PrismML 1-bit Bonsai (8B model in 1.15 GB, runs on iPhone at 40 tok/s), Holo3 by H Company (beats GPT-5.4 on desktop computer use, open weights, 10B active params), Atomic Chat (1000+ models offline on Mac, free forever), and Noon ($44M raise for design tool that works on production code). Also: NVIDIA quantized Gemma 4 31B to run on 24GB GPUs at 99.7% accuracy.</li>
+
+<li><span class="item-title">HN: "The threat is comfortable drift toward not understanding what you're doing"</span>
+<span class="source"><a href="https://ergosphere.blog/posts/the-machines-are-fine/">Ergosphere Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47647788">HN (366 pts)</a></span>
+Top HN post. 266 comments on the risk of AI coding tools eroding developer understanding. Resonates with the broader question of gradual deskilling.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

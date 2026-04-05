@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Sunday, April 05, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #f8fafc; border-left: 3px solid #2563eb; padding: 16px; margin-bottom: 10px; font-size: 14px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Sunday, April 05, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg> Pitch: Claude Autonomously Wrote a Root-Level Kernel Exploit in 4 Hours &mdash; This Is the Cyber "Warning Shot"</h2>
+<div class="pitch">
+<img src="https://imageio.forbes.com/specials-images/imageserve/69cdb6b660deab599e8d699b/Server-Center/0x0.jpg?width=960" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+On March 26, FreeBSD published a security advisory for CVE-2026-4747 crediting <mark>"Nicholas Carlini using Claude, Anthropic"</mark> for discovering a remote kernel code execution vulnerability. Days later, researchers at <a href="https://blog.calif.io/p/mad-bugs-claude-wrote-a-full-freebsd">Calif.io</a> asked Claude to develop an exploit. In ~4 hours of actual compute time, Claude autonomously wrote two working exploits that deliver a root shell on unpatched FreeBSD servers &mdash; the OS that powers Netflix CDN, PlayStation, and WhatsApp infrastructure. Claude solved six distinct problems: lab setup, multi-packet shellcode delivery, clean thread termination, offset debugging via De Bruijn patterns, kernel-to-userland process transition, and a hardware breakpoint bug. Both exploits worked on the first try. (<a href="https://www.forbes.com/sites/amirhusain/2026/04/01/ai-just-hacked-one-of-the-worlds-most-secure-operating-systems/">Forbes</a>)
+<br><br>
+<strong>Why this matters:</strong> This is the clearest real-world "warning shot" yet for autonomous offensive cyber capabilities. The exploit-development barrier &mdash; the step from finding a bug to weaponizing it &mdash; was the last frontier considered exclusive to human expertise. Claude crossed it autonomously. As Forbes notes, the same researcher has since used Claude to identify <strong>500+ additional high-severity vulnerabilities</strong> across other codebases. The cost: a few hundred dollars of compute. This collapses the economics of offensive cyber: a capability once reserved for nation-state teams (think Stuxnet) is now approaching commodity pricing. A story could investigate: Does Anthropic's RSP address autonomous exploit generation? Did Anthropic evaluate this capability before shipping the model? And given that Anthropic's own RSP v3 <a href="https://thezvi.substack.com/p/anthropic-responsible-scaling-policy-46a">no longer has pre-deployment gates</a>, what stops the next model from being even more capable at this?
+</div>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Safety & Research</h2>
+<ul>
+<li><span class="item-title">"Cognitive surrender": most users uncritically accept faulty AI reasoning</span>
+<span class="source"><a href="https://arstechnica.com/ai/2026/04/research-finds-ai-users-scarily-willing-to-surrender-their-cognition-to-llms/">Ars Technica</a></span>
+Wharton study across 1,372 participants and 9K+ trials. Most subjects showed <mark>minimal AI skepticism and accepted faulty AI reasoning</mark> even when it was clearly wrong. Researchers call it a fundamental update to Kahneman's dual-process theory.</li>
+<li><span class="item-title">NYT: AI chatbot role-play addiction among teens</span>
+<span class="source"><a href="http://www.techmeme.com/260404/p13#a260404p13">Techmeme/NYT</a></span>
+Investigation into how teens use AI role-playing chatbots like Talkie. Documents potentially addictive impact and the challenge for parents who don't understand the apps.</li>
+<li><span class="item-title">Hungary election flooded with AI deepfakes targeting Orb&aacute;n's rival</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/c5yj97yd6v5o">BBC</a></span>
+AI-generated videos target Peter Magyar ahead of April elections. Fidesz-aligned Facebook groups share deepfakes to gain traction. EU has struggled to respond.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Policy & Geopolitics</h2>
+<ul>
+<li><span class="item-title">UK courts Anthropic with dual listing amid US DoW clash</span>
+<span class="source"><a href="https://www.reuters.com/world/uk/britain-woos-expansion-effort-by-anthropic-after-us-defence-clash-ft-says-2026-04-05/">Reuters</a></span>
+<span class="source"><a href="http://www.techmeme.com/260405/p1#a260405p1">FT</a></span>
+<mark>Starmer government proposes London office expansion and dual US-UK stock listing</mark> for Anthropic, capitalizing on its Pentagon conflict. Proposals will be put to Dario Amodei when he visits London in late May.</li>
+<li><span class="item-title">Microsoft Copilot's own ToS: "for entertainment purposes only"</span>
+<span class="source"><a href="https://arstechnica.com/ai/2026/04/research-finds-ai-users-scarily-willing-to-surrender-their-cognition-to-llms/">Tom's Hardware</a></span>
+<span class="source"><a href="https://thenextweb.com/news/microsoft-copilot-entertainment-only-disclaimer-adoption">TNW</a></span>
+Updated Oct 2025 terms say "Don't rely on Copilot for important advice" &mdash; while Microsoft charges $30/user/month and markets it as an enterprise productivity tool. Significant liability implications for ongoing AI litigation.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Deals & Industry</h2>
+<ul>
+<li><span class="item-title">OpenAI exec reshuffle ahead of IPO</span>
+<span class="source"><a href="https://techcrunch.com/2026/04/03/openai-executive-shuffle-new-roles-coo-brad-lightcap-fidji-simo-kate-rouch/">TechCrunch</a></span>
+<span class="source"><a href="https://www.businessinsider.com/openai-executive-shake-up-coo-cmo-2026-4">BI</a></span>
+COO Brad Lightcap moved to "special projects." AGI CEO Fidji Simo on medical leave (neuroimmune condition). Two more execs shifted. All ahead of potential Q4 2026 IPO.</li>
+<li><span class="item-title">DeepSeek V4 will run entirely on Huawei chips</span>
+<span class="source"><a href="https://www.theinformation.com/articles/deepseeks-new-ai-model-will-victory-huawei">The Information</a></span>
+<span class="source"><a href="https://www.reuters.com/world/china/deepseeks-v4-model-will-run-huawei-chips-information-reports-2026-04-03/">Reuters</a></span>
+<mark>Major milestone for China's AI self-sufficiency.</mark> Alibaba, ByteDance, Tencent also placing bulk Huawei chip orders. Validates Huawei's 950PR as a real alternative to Nvidia.</li>
+<li><span class="item-title">GPT-5.5 "Spud" spotted internally</span>
+<span class="source"><a href="https://www.theneuron.ai/explainer-articles/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-saturday-sunday-april-4-5-2026/">The Neuron</a></span>
+Pre-training completed ~March 24. Better than GPT-5.4 but reportedly "not markedly so" &mdash; not competitive with Anthropic's Mythos/Capybara. GPT-6 needed for that.</li>
+<li><span class="item-title">Galaxea AI: $290M Series B+ at ~$29B (robotics, China)</span>
+<span class="source"><a href="https://theaiinsider.tech/2026/04/04/chinese-robotics-startup-galaxea-ai-raises-290m-usd-in-series-b-funding-valued-at-29b-usd/">AI Insider</a></span>
+Beijing-based humanoid robotics. Develops R1 humanoid + DEXO dexterous hand. Nearly 20 investors.</li>
+<li><span class="item-title">Saronic Technologies: $1.75B Series D (autonomous maritime)</span>
+<span class="source"><a href="https://asiapacificdefencereporter.com/saronic-technologies-closes-new-funding-round/">APDR</a></span>
+Advancing autonomous surface vessels for U.S. maritime superiority.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> Models & Products</h2>
+<ul>
+<li><span class="item-title">Netflix open-sources VOID &mdash; first public AI model</span>
+<span class="source"><a href="https://www.marktechpost.com/2026/04/04/netflix-ai-team-just-open-sourced-void-an-ai-model-that-erases-objects-from-videos-physics-and-all/">MarkTechPost</a></span>
+Video Object and Interaction Deletion: removes objects from video and <mark>rewrites the physics they left behind</mark>. On Hugging Face. Useful for post-production workflows.</li>
+<li><span class="item-title">Apple signs Tiny Corp driver for AMD/Nvidia eGPUs on Apple Silicon</span>
+<span class="source"><a href="https://appleinsider.com/articles/26/04/04/amd-or-nvidia-egpus-can-work-on-apple-silicon-macs-but-not-for-graphic-acceleration">AppleInsider</a></span>
+George Hotz's Tiny Corp got Apple to sign the driver. For AI compute only (TinyGrad framework), not graphics acceleration. Significant for local AI research on Macs.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg> Quick Hits</h2>
+<ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 0 30px;">
+<li><span class="item-title">Software engineering jobs up 30% in 2026</span>
+<span class="source"><a href="http://www.techmeme.com/260405/p5#a260405p5">Techmeme/BI</a></span>
+67K+ openings, most in 3 years. Listings ~2x since mid-2023. AI-driven demand.</li>
+<li><span class="item-title">Hollywood support staff quietly integrating AI</span>
+<span class="source"><a href="http://www.techmeme.com/260405/p4#a260405p4">Hollywood Reporter</a></span>
+Studio assistants using AI for mundane tasks and creative dev. "Are you asking me to teach you how to replace me?"</li>
+<li><span class="item-title">India's film industry embraces AI faster than Hollywood</span>
+<span class="source"><a href="http://www.techmeme.com/260404/p12#a260404p12">Reuters</a></span>
+Studios use AI to cut production time and dub into numerous languages. Union rules constrain Hollywood's adoption.</li>
+<li><span class="item-title">Cognichip: $60M Series A for AI chip design</span>
+<span class="source"><a href="https://theaiinsider.tech/2026/04/04/seligman-ventures-leads-cognichips-60m-series-a-to-back-physics-informed-ai-for-chip-design-intel-ceo-lip-bu-tan-and-seligman-ventures-umesh-padval-join-the-board/">AI Insider</a></span>
+Intel CEO Lip-Bu Tan joins board. Total funding $93M.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: Anthropic RSP v3 &mdash; "Dive Into The Details" (April 3)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/anthropic-responsible-scaling-policy-46a">Don't Worry About the Vase</a></span>
+Follow-up to Wednesday's "Matter of Trust" post. Goes deep on the technical changes: ASL levels deprecated in favor of "strong argument" standard. No pre-deployment gate mechanism. Risk Reports every 3-6 months are the main new accountability tool but "nothing in RSP v3 is a commitment." Zvi says the v2 &rarr; v3 transition "broke promises that many people relied upon."</li>
+<li><span class="item-title">Simon Willison: "An AI State of the Union" (Lenny's Newsletter)</span>
+<span class="source"><a href="https://www.lennysnewsletter.com/p/an-ai-state-of-the-union">Lenny's Newsletter</a></span>
+Extended Q&A. November 2025 (GPT-5.1 + Opus 4.5) was <mark>the inflection point for AI coding</mark> &mdash; "crossed a threshold from 'mostly works' to 'almost always does what you want.'" Also describes a new challenge: exhaustion from managing coding agents. "The models are getting better faster than I can adapt my workflows."</li>
+<li><span class="item-title">The Neuron: Weekend Digest top 10 stories</span>
+<span class="source"><a href="https://www.theneuron.ai/explainer-articles/-around-the-horn-digest-everything-that-happened-in-ai-this-weekend-saturday-sunday-april-4-5-2026/">The Neuron</a></span>
+Comprehensive weekend roundup. Highlights: Netflix VOID model, Nvidia quantized Gemma 4 31B to run on 24GB GPUs at 99.7% accuracy, GPT-5.5 spotted internally, x402 Foundation launched under Linux Foundation with Coinbase/Stripe/Visa/Google/Microsoft for AI payments layer.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
