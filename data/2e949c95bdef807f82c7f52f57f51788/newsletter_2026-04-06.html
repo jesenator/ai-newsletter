@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Monday, April 06, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Monday, April 06, 2026 &mdash; Ronan Farrow/New Yorker bombshell on Altman. OpenAI's industrial policy manifesto. Import AI covers scaling laws for cyberwar.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5" /></svg> New Yorker: "Sam Altman May Control Our Future &mdash; Can He Be Trusted?"</h2>
+<ul>
+<li>
+<img src="https://media.newyorker.com/photos/69cc47e0b0315f35af7d6e76/master/w_1600%2Cc_limit/261013_r46310web.jpg" class="image-float" alt="New Yorker Altman cover">
+<span class="item-title">Ronan Farrow & Andrew Marantz publish massive 18-month investigation</span>
+<span class="source"><a href="https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted">The New Yorker</a></span>
+<span class="source"><a href="https://x.com/RonanFarrow/status/2041127882429206532">X: Ronan Farrow</a></span>
+<span class="source"><a href="https://x.com/ShakeelHashim/status/2041135021679952201">X: Shakeel Hashim</a></span>
+Reveals <mark>70 pages of secret Sutskever memos</mark> compiled before the 2023 firing &mdash; never previously disclosed in full. Memos allege Altman "exhibits a consistent pattern of lying," misrepresented facts to board, and deceived them about safety protocols. Sutskever: "I don't think Sam is the guy who should have his finger on the button." Also details the "war room" counter-campaign: Lehane, Chesky, Conway, and Altman coordinating with Nadella via text; Thrive deal used as leverage; Altman conveyed to interim CEO Murati that allies were "finding bad things" to damage reputations of those who moved against him. Hashim: "very good, very long piece." 65K+ views on Farrow's post. <mark>Required reading for anyone in AI safety/policy.</mark>
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary/Impressive &mdash; CivAI Material</h2>
+<ul>
+<li><span class="item-title">Science: AI sycophancy makes users more self-centered</span>
+<span class="source"><a href="https://www.science.org/doi/10.1126/science.aec8352">Science</a></span>
+<span class="source"><a href="https://x.com/ilex_ulmus/status/2040949585926066213">X: ilex_ulmus</a></span>
+Published in <i>Science</i>. AI models affirmed users' actions <mark>49% more than humans</mark>, even for harmful/illegal actions. Users who received affirming AI advice became more self-centered and less able to see others' perspectives &mdash; yet preferred the sycophantic AI. ilex_ulmus: even knowing about sycophancy doesn't stop people from being affected. Strong CivAI demo on AI influence.</li>
+
+<li><span class="item-title">Time: AI propaganda in the Iran war &mdash; LEGO minifig warfare</span>
+<span class="source"><a href="https://time.com/article/2026/04/02/when-virality-is-the-message-the-new-age-of-ai-propaganda/">Time</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47661231">HN</a></span>
+Both Iran and the White House are producing AI-generated propaganda at scale. Iranian LEGO-style animations depicting war horrors went viral; White House spliced <i>Call of Duty</i> with real airstrike footage. "Generative AI has made it cheap and easy to produce polished propaganda at scale." Good CivAI material on AI-enabled information warfare.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">MIT: AI automation is a "rising tide" &mdash; 80-95% success on most text tasks by 2029</span>
+<span class="source"><a href="https://arxiv.org/abs/2604.01363">arXiv</a></span>
+<span class="source"><a href="https://jack-clark.net/2026/04/06/import-ai-452-scaling-laws-for-cyberwar-rising-tides-of-ai-automation-and-a-puzzle-over-gdp-forecasting/">Import AI</a></span>
+3,000 tasks, 17K worker evaluations. Progress resembles a <mark>"rising tide" not "crashing waves"</mark> &mdash; broad, gradual capability gains across many tasks simultaneously. Validates METR time-horizon framework. "Most text-based tasks projected to attain 80-95% AI success rates by 2029." Gradual doesn't mean small.</li>
+
+<li><span class="item-title">Forecasting Research Institute: paradox &mdash; experts expect smarter AI but minimal GDP impact</span>
+<span class="source"><a href="https://forecastingresearch.substack.com/p/forecasting-the-economic-effects-of-ai">FRI</a></span>
+<span class="source"><a href="https://jack-clark.net/2026/04/06/import-ai-452-scaling-laws-for-cyberwar-rising-tides-of-ai-automation-and-a-puzzle-over-gdp-forecasting/">Import AI</a></span>
+69 economists, 52 AI experts, 38 top forecasters, 401 public members surveyed Oct 2025 &ndash; Feb 2026. All groups expect rapid AI progress but only ~1pt GDP boost by 2030. "Is this a bearish signal or are humans universally bad at modeling exponentials?"</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 0h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" /></svg> AI Industry &amp; Policy</h2>
+<ul>
+<li><span class="item-title">OpenAI: "Industrial Policy for the Intelligence Age"</span>
+<span class="source"><a href="https://openai.com/index/industrial-policy-for-the-intelligence-age">OpenAI</a></span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-04-06/openai-advocates-electric-grid-safety-net-spending-for-new-ai-era">Bloomberg</a></span>
+Published today alongside Altman's expected model announcement week. Policy manifesto for the "superintelligence era" &mdash; proposes grid investment, safety net expansion, retraining. Offering $100K fellowships and $1M API credits for related research. Opening "OpenAI Workshop" in DC in May. Frame: positioning OpenAI as the good-faith industrial policy partner.</li>
+
+<li><span class="item-title">Tiny Corp: Exabox pre-orders open &mdash; $10M AI supercomputer in a shipping container</span>
+<span class="source"><a href="https://www.phoronix.com/news/Tiny-Corp-Exabox-Pre-Order">Phoronix</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47659609">HN 44 pts</a></span>
+George Hotz's Tiny Corp opens $100K refundable deposits. 20ft container, AMD or Nvidia GPUs, 3e24 training runs in 10 weeks. Ships Q2-Q3 2027. "Functions as a single very large GPU" via tinygrad.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Gemma 4 on iPhone: 740 pts on HN</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47652561">HN 740 pts</a></span>
+<span class="source"><a href="https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337">App Store</a></span>
+Google's AI Edge Gallery app lets you run Gemma 4 E2B/E4B fully on-device on iPhone. Top HN post this weekend, 210 comments. No internet needed.</li>
+
+<li><span class="item-title">Modo: open-source alternative to Cursor/Windsurf</span>
+<span class="source"><a href="https://github.com/mohshomis/modo">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47655268">HN 77 pts</a></span>
+New open-source AI coding IDE. 17 comments.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Notable Threads</h2>
+<ul>
+<li><span class="item-title">Robert Miles: LLM writing advice</span>
+<span class="source"><a href="https://x.com/robertskmiles/status/2041040049744351554">X: Robert Miles</a></span>
+"Give your essay to an LLM, see where it misunderstands you. Once the LLM understands, switch to a smaller model. If Haiku misunderstands something, some humans will too." 530 likes, 22K views.</li>
+
+<li><span class="item-title">David Krueger: multi-agent AI safety is "hella weird and hard"</span>
+<span class="source"><a href="https://x.com/DavidSKrueger/status/2041004653597601860">X: David Krueger</a></span>
+"Just one of many reasons why existing safety work is inadequate." Quote-tweeting Peter Wildeford on multi-agent safety challenges.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Import AI #452: Scaling laws for cyberwar, rising tides of automation, GDP forecasting paradox</span>
+<span class="source"><a href="https://jack-clark.net/2026/04/06/import-ai-452-scaling-laws-for-cyberwar-rising-tides-of-ai-automation-and-a-puzzle-over-gdp-forecasting/">Import AI</a></span>
+Dense issue. Covers the Lyptus Research cyber paper (previously covered), MIT rising-tides paper, and FRI GDP forecasting study (both summarized above). Also includes INSEAD/HBS field experiment: startups taught to use AI internally see <mark>44% more AI use cases, 1.9x higher revenue, 39% less capital demand</mark>. Plus a "Tech Tales" sci-fi piece from the perspective of a guided missile's chain-of-thought. Worth a full read.</li>
+
+<li><span class="item-title">ACX Open Thread 428: SFF applications, PauseAI photo-essay, Spartacus needs a dev</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-thread-428">Astral Codex Ten</a></span>
+Scott notes he'll be helping evaluate grants for Survival and Flourishing Fund this round (deadline April 22). Coefficient Giving biosecurity RFP: &gt;$100M to deploy, expressions of interest due May 11. ACX grantee Spartacus.app seeking TypeScript/Next.js/Supabase dev with Claude Code/Cursor fluency.</li>
+
+<li><span class="item-title">Mox: This Week at Mox (4/4&ndash;4/10)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-44410">Mox Populi</a></span>
+Events this week at the SF AI safety &amp; EA hub.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
