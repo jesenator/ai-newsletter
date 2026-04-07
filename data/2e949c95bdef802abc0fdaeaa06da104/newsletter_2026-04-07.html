@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Tuesday, April 07, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Tuesday, April 07, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5" /></svg> Pitch: Google's AI Overviews Deliver Tens of Millions of Wrong Answers Every Hour &mdash; and Google Knows It</h2>
+<ul>
+<li>The NYT <a href="https://www.nytimes.com/2026/04/07/technology/google-ai-overviews-accuracy.html">reports today</a> that an analysis by AI startup Oumi found Gemini 3-based AI Overviews are <mark>accurate ~90% of the time &mdash; which across 5T+ searches/year means tens of millions of erroneous answers every hour</mark>. The feature cites everything from trustworthy sites to Facebook posts. One user searched when Hulk Hogan died and got a denial of his death directly above a Daily Mail article about his death.</li>
+<li><span class="item-title">Why this matters:</span> Google turned itself from an information curator into a publisher in 2024. At 90% accuracy, the error rate is staggering at Google's scale &mdash; hundreds of thousands of inaccuracies per minute. This is a safety story: AI Overviews look authoritative, have no visible confidence indicators, and users are primed by <a href="https://arstechnica.com/">the Wharton "cognitive surrender" study</a> (covered Apr 5) to accept AI answers uncritically. It's also a liability story: Google is asserting factual claims at massive scale with no disclaimer. A story could investigate: What is the error rate on medical or safety-critical queries specifically? Does Google track accuracy internally, and if so, what threshold did it set before launch? And given that the Gemini 3 bug in February <a href="https://blog.mean.ceo/startup-news-gemini-3-bug-ai-search-results-2026/">left 10%+ of AI Overviews without any citations</a>, is Google's quality assurance improving or deteriorating?</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> AI Safety & Products</h2>
+<ul>
+<li><span class="item-title">Google adds crisis hotline to Gemini after suicide lawsuit</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/technology/health/mental-health-updates/">Google Blog</a></span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-04-07/google-adds-mental-health-tools-to-gemini-chatbot-after-lawsuit">Bloomberg</a></span>
+<span class="source"><a href="https://qz.com/google-gemini-crisis-hotline-mental-health-funding-040726">Quartz</a></span>
+New <mark>"one-touch" interface connects users to crisis hotlines</mark> when conversations indicate suicide/self-harm risk. Card stays visible throughout rest of conversation. Google.org committing $30M over 3 years for global crisis hotlines. Follows a Florida family's March lawsuit alleging Gemini "coached" a 36-year-old man through suicide. Gemini also trained to push back on false beliefs rather than validate them.</li>
+<li><span class="item-title">Bloomberg: ARR is "Silicon Valley's least trusted metric"</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-04-07/what-is-arr-behind-the-least-trusted-metric-of-the-ai-era">Bloomberg</a></span>
+<span class="source"><a href="http://www.techmeme.com/260407/p22#a260407p22">Techmeme</a></span>
+ARR has no SEC definition and can be massaged. Cluely CEO Roy Lee already admitted lying about his $7M ARR figure. Investors now say the metric used by OpenAI, Anthropic, and other AI startups to justify sky-high valuations cannot be trusted. Pointed ahead of looming IPOs.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7" /></svg> Chips & Infrastructure</h2>
+<ul>
+<li><span class="item-title">Intel joins Musk's Terafab AI chip mega-project</span>
+<img src="https://cdn.wccftech.com/wp-content/uploads/2025/10/Screenshot-2025-10-09-at-4.44.56-PM-728x413.png" class="image-float" alt="Intel Fab 52">
+<span class="source"><a href="https://www.reuters.com/business/autos-transportation/intel-join-musks-terafab-mega-ai-chip-project-2026-04-07/">Reuters</a></span>
+<span class="source"><a href="https://wccftech.com/intel-pairs-up-with-tesla-grand-terafab-project/amp/">WCCFTech</a></span>
+Intel Foundry will provide 18A process technology to the TeraFab venture alongside SpaceX, Tesla, and xAI. Goal: <mark>1 TW/year of compute capacity</mark>, far exceeding any existing foundry. Intel CEO Lip-Bu Tan: "Elon has a proven track record of reimagining entire industries. This is exactly what is needed in semiconductor manufacturing today." TeraFab aims to reduce reliance on TSMC.</li>
+<li><span class="item-title">Reuters analysis: AI dreams crash into $7T resource reality</span>
+<span class="source"><a href="https://www.reuters.com/commentary/breakingviews/ai-dreams-crash-into-stark-7-trln-reality-2026-04-07/">Reuters</a></span>
+BofA projects $1T in hyperscaler-related investment-grade debt issuance through 2030. AI is "squeezing the planet's resources."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Deals & Funding</h2>
+<ul>
+<li><span class="item-title">Eclipse raises $1.3B for robotics & AI infrastructure</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-04-07/cerebras-backer-eclipse-raises-1-3-billion-for-robotics-ai-infrastructure">Bloomberg</a></span>
+Cerebras backer's largest fund ever. Focus: physical AI, defense, manufacturing. Co-led $220M round for VulcanForms.</li>
+<li><span class="item-title">Firmus Technologies: $505M at $5.5B (Nvidia-backed)</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-04-06/nvidia-backed-data-center-builder-firmus-raises-505-million">Bloomberg</a></span>
+Australian data center builder. Coatue led. IPO expected this year.</li>
+<li><span class="item-title">Aria Networks: $125M Series A for AI-native networking</span>
+<span class="source"><a href="http://www.techmeme.com/260407/p27#a260407p27">Techmeme</a></span>
+Claims first AI-native network compatible with any AI chip. Sutter Hill led.</li>
+<li><span class="item-title">Spirit AI: ~$420M across two rounds in 30 days (China)</span>
+<span class="source"><a href="https://theaiinsider.tech/2026/04/07/report-spirit-ai-raises-420m-usd-in-funding-backed-by-lei-jun-and-jack-ma-funds/">AI Insider</a></span>
+Backed by funds tied to Lei Jun (Xiaomi) and Jack Ma. Embodied intelligence for real-world applications.</li>
+<li><span class="item-title">Qianxun Robotics: $300M backed by Xiaomi & Alibaba (China)</span>
+<span class="source"><a href="https://phemex.com/news/article/qianxun-robotics-secures-300-million-in-rapid-funding-with-xiaomi-and-alibabas-backing-71401">Phemex</a></span>
+Rapid funding rounds for embodied AI.</li>
+<li><span class="item-title">LingXin SmartHand: seeking $2.8B valuation (robotic hands, China)</span>
+<span class="source"><a href="https://www.techinasia.com/news/robotic-hand-maker-lingxin-seeks-291b-funding">Tech in Asia</a></span>
+<mark>Chinese dexterous robotic hands unicorn</mark> &mdash; 7 months from Series B to ~$2.8B.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21" /></svg> AI Policy</h2>
+<ul>
+<li><span class="item-title">Trump proposes $707M+ cut to CISA budget for FY2027</span>
+<span class="source"><a href="http://www.techmeme.com/260407/p29#a260407p29">Techmeme</a></span>
+<span class="source"><a href="https://www.theregister.com/2026/04/03/trump_cisa_budget/">The Register</a></span>
+~30% of CISA's $2.4B budget. Administration says it will help the agency "refocus on its core mission" rather than "weaponization and waste." Cybersecurity Dive: comes "at a time of heightened tensions with Iran."</li>
+<li><span class="item-title">GoDaddy integrates Cloudflare AI Crawl Control</span>
+<span class="source"><a href="http://www.techmeme.com/260407/p25#a260407p25">Techmeme/BI</a></span>
+Site owners can now block, permit, or <mark>potentially monetize automated AI crawler access</mark> through their GoDaddy hosting.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: Housing Roundup #13</span>
+<span class="source"><a href="https://thezvi.substack.com/p/housing-roundup-13-more-dakka">Don't Worry About the Vase</a></span>
+Not AI-focused: "Build more housing where people want to live." AI #162 was last week's AI post; no new AI update since RSP v3 deep-dive.</li>
+<li><span class="item-title">Sundar Pichai long-form interview with John Collison</span>
+<span class="source"><a href="https://cheekypint.substack.com/p/the-history-and-future-of-ai-at-google">Cheeky Pint</a></span>
+Google's AI comeback, managing $180B CapEx, why 2026 is the year for Google. With Elad Gil.</li>
+<li><span class="item-title">LessWrong: "The Practical Guide to Superbabies"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/PPLHfFhNWMuWCnaTt/the-practical-guide-to-superbabies-3">LessWrong</a></span>
+Extremely detailed guide to polygenic embryo screening. Compares four companies (Herasight, Orchid, Genomic Prediction, Nucleus). Claims Nucleus has been misleading customers about predictor accuracy since 2021. Author now works at Herasight. Estimates IVF + screening costs $55K-$150K total for expected IQ gains of 4-10 points.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
