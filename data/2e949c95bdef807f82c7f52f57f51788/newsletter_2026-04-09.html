@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Thursday, April 09, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Thursday, April 09, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> New Model: Meta Muse Spark</h2>
+<ul>
+<li>
+<img src="https://about.fb.com/wp-content/uploads/2026/04/muse-spark-hero.jpg" class="image-float" alt="Muse Spark">
+<span class="item-title">Meta Superintelligence Labs releases Muse Spark — first model from MSL</span>
+<span class="source"><a href="https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/">Meta</a></span>
+<span class="source"><a href="https://x.com/alexandr_wang/status/2041909376508985381">X: Alexander Wang</a></span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2041947954202988757">X: Epoch AI</a></span>
+Built from scratch — new infra, architecture, and data pipelines. <mark>Scores 39% on FrontierMath Tiers 1–3 and 15% on Tier 4</mark> per Epoch AI — competitive with recent frontier models, though behind GPT-5.4. Powers Meta AI chatbot. Closed-source (a shift for Meta). 3.8M views on Wang's thread. Open-source versions coming later after safety review.
+</li>
+<li><span class="item-title">Meta rewrites its safety framework alongside launch</span>
+<span class="source"><a href="https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/">Meta AI</a></span>
+<span class="source"><a href="https://x.com/_NathanCalvin/status/2041918418958360954">X: Nathan Calvin</a></span>
+<span class="source"><a href="https://x.com/summeryue0/status/2041956901769113948">X: Summer Yue</a></span>
+New "Advanced AI Scaling Framework" covers bio, chem, cyber, and loss of control risks. Calvin: "meaningful improvement that puts them closer to their peers." Muse Spark achieves 98% bioweapons refusal rate on BioTier-refuse, highest across benchmarked models. Daniel Kokotajlo: "Great to see Meta take loss-of-control risk more seriously!"
+</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Anthropic: Claude Managed Agents + Notion Integration</h2>
+<ul>
+<li><span class="item-title">Claude Managed Agents launches in public beta</span>
+<span class="source"><a href="https://www.anthropic.com/engineering/managed-agents">Anthropic Engineering</a></span>
+<span class="source"><a href="https://x.com/AnthropicAI/status/2041929199976640948">X: Anthropic</a></span>
+Hosted service for long-running agents — <mark>Anthropic runs the sandbox, harness, and state management for you</mark>. Architecture decouples "brain" (Claude) from "hands" (tools/sandboxes) — containers become disposable cattle, not fragile pets. Security: OAuth tokens stored in vault, never reachable from code execution sandbox. 365K views.
+</li>
+<li><span class="item-title">Notion announces Claude agents integration — your task board is Claude's to-do list</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2041982872698155398">X: Notion</a></span>
+<span class="source"><a href="https://x.com/EricTLiu/status/2041944092637327433">X: Eric Liu</a></span>
+<span class="source"><a href="https://x.com/geoffreylitt/status/2041955135073526203">X: Geoffrey Litt</a></span>
+Three ways to use Claude with Notion now: Custom Agents (Notion harness), Claude + MCP (Claude harness), and new Claude Managed Agents (Anthropic runs agent, Notion is collaboration layer). Dozens of tasks run in parallel. <a href="https://www.notion.com/partners/claude">Waitlist open</a>. Litt: "easy to miss the importance of this new API" — introduces a new kind of modularity into the AI stack. 332K views.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary/Impressive — CivAI Material</h2>
+<ul>
+<li><span class="item-title">0 out of 18 AI data analysis tools found real patterns in test data</span>
+<span class="source"><a href="https://www.leap-labs.com/blog/the-patterns-that-agents-miss">Leap Labs</a></span>
+<span class="source"><a href="https://x.com/JessicaRumbelow/status/2041963168805830981">X: Jessica Rumbelow</a></span>
+Synthetic clinical trial data with 5 planted signals. Two combinatorial interactions accounted for ~72% of variance. <mark>Not a single tool — including Claude and ChatGPT — found both key patterns.</mark> Only Leap's own Disco tool succeeded. Strong demo for overreliance risks.
+</li>
+<li><span class="item-title">Marius Hobbhahn: Mythos is a step change, not gradual improvement</span>
+<span class="source"><a href="https://x.com/MariusHobbhahn/status/2042162002907254883">X: Marius Hobbhahn</a></span>
+<span class="source"><a href="https://x.com/MariusHobbhahn/status/2041957442821468667">X: Marius Hobbhahn</a></span>
+"I've had multiple conversations along the lines of 'AI risk is containable because we have only gradual improvements.' Mythos seems more step than gradual to me." Also flags risks from internal-only deployment: "the rest of the world doesn't understand how powerful the most frontier systems are." <a href="https://arxiv.org/abs/2504.12170">Paper link</a>.
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> Cybersecurity & Mythos Fallout</h2>
+<ul>
+<li><span class="item-title">Turn_Trout: personal cybersecurity guide post-Mythos</span>
+<span class="source"><a href="https://docs.google.com/document/d/1hU1Xp1DOFpv58-RXnSDsxyt0GE7Rxd8fFfKqMJgAcr0/edit">Google Doc</a></span>
+<span class="source"><a href="https://x.com/Turn_Trout/status/2042108378852553067">X: Turn_Trout</a></span>
+Practical guide to hardening against supply chain attacks (npm, etc.) in the AI era. "Harden your systems ASAP!" 5.4K views.
+</li>
+<li><span class="item-title">UK MP Danny Kruger writes to Cabinet Office about Mythos risks</span>
+<span class="source"><a href="https://x.com/danny__kruger/status/2042189090070663588">X: Danny Kruger</a></span>
+<span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2042208894005448808">X: Seán Ó hÉigeartaigh</a></span>
+Urges UK government to engage with Anthropic on "catastrophic cybersecurity risks." Ó hÉigeartaigh: "Good to know folks are awake at the wheel on this!"
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21" /></svg> AI Policy & Legal</h2>
+<ul>
+<li><span class="item-title">DC appeals court rejects Anthropic's bid to block Pentagon designation</span>
+<span class="source"><a href="https://www.politico.com/news/2026/04/08/d-c-circuit-rejects-anthropic-plea-to-pause-supply-chain-risk-label-00864880">Politico</a></span>
+<span class="source"><a href="https://x.com/mirandanazzaro/status/2042019487440847094">X: Miranda Nazzaro</a></span>
+Anthropic "has not satisfied the stringent requirements" for emergency injunction. The supply chain risk label stands for now. Anthropic claims retaliation for protected speech. Full case continues.
+</li>
+<li><span class="item-title">OpenAI UK Stargate project halted</span>
+<span class="source"><a href="https://x.com/AndrewCurran_/status/2042218192781901886">X: Andrew Curran</a></span>
+<span class="source"><a href="https://x.com/pfau/status/2042233509993914604">X: pfau</a></span>
+Stalled due to energy costs, National Grid delays, and UK regulatory environment. pfau: "National Grid is set up in the most mind-bogglingly awful way."
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Casper: If mechinterp works, prove it with robust unlearning</span>
+<span class="source"><a href="https://x.com/StephenLCasper/status/2042226255815487908">X: Stephen Casper</a></span>
+"If we can't isolate and remove model capabilities for a given subject, then we seem to have failed at the most basic goal of mechinterp." Provocation to the field: mechinterp should competitively help fix unlearning.
+</li>
+<li><span class="item-title">Krueger: "Alignment" is a dangerous word</span>
+<span class="source"><a href="https://therealartificialintelligence.substack.com/p/alignment-vs-safety-part-2-alignment">Blog</a></span>
+<span class="source"><a href="https://x.com/DavidSKrueger/status/2041912003904893214">X: David Krueger</a></span>
+New post arguing AI companies and safety community misuse "alignment" in ways that confuse people and <mark>make AI seem less dangerous than it is</mark>.
+</li>
+<li><span class="item-title">Nate Soares: Yudkowsky/Soares book out in Korean</span>
+<span class="source"><a href="https://x.com/MIRIBerkeley/status/2042074405606760642">X: MIRI</a></span>
+<span class="source"><a href="https://x.com/So8res/status/2042133411431903245">X: Nate Soares</a></span>
+"AI, 신의 탄생 인간의 종말" — "The Birth of God, The End of Humanity." Korean translators insisted on printing the draft treaty text directly in the book. Soares: "imagine if we'd had the brass to title the English version like that."
+</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: AI #163 — Mythos Quest (non-Mythos coverage)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-163-mythos-quest">Don't Worry About the Vase</a></span>
+Covers everything else while promising full Mythos deep-dive tomorrow. Notes GLM-5.1 "could matter a lot," Suno upgrade, Meta employee compute-spending status games, and Anthropic passing $30B ARR. Also: Rob Miles suggests testing essay clarity by having progressively smaller LLMs read it.
+</li>
+<li><span class="item-title">EA Forum: Toby Ord — "Broad Timelines"</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/HCR2AE9it279ggiZT/broad-timelines">EA Forum</a></span>
+Argues the correct epistemic response to lasting expert disagreement is <mark>neither short nor long timelines, but broad timelines</mark>. Ord's own distribution: median 2038, 80% interval from 3 to 100 years. Key implication: the community may be underrating work that takes 5+ years to pay off. "We're in a race against AI timelines — we just don't know if it's a sprint or a marathon."
+</li>
+<li><span class="item-title">HN: "Clean Code in the Age of Coding Agents"</span>
+<span class="source"><a href="https://www.yanist.com/clean-code-in-the-age-of-coding-agents/">yanist.com</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47704285">HN</a></span>
+How coding standards change when agents write most of your code.
+</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
