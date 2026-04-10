@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Friday, April 10, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Friday, April 10, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> OpenAI Backs Illinois Bill Shielding Labs from Liability for Mass Harm</h2>
+<ul>
+<li>
+<img src="https://media.wired.com/photos/69d81fc99011397f817a1986/125:94/w_2560%2Cc_limit/OpenAI-Backs-Bill-That-Lets-AI-Labs-Dodge-Liability-for-Critical-Harms-Business-2244268254.jpg" class="image-float" style="max-width:200px;">
+<span class="item-title">SB 3444 would exempt AI labs from liability even for 100+ deaths</span>
+<span class="source"><a href="https://www.wired.com/story/openai-backs-bill-exempt-ai-firms-model-harm-lawsuits/">Wired</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47717587">HN (294 pts)</a></span>
+<span class="source"><a href="https://twitter.com/ZeffMax/status/2042400742343131537">X: Zeff Max</a></span>
+OpenAI testified in support. <mark>Labs would be shielded from liability for "critical harms" (100+ deaths, $1B+ damage) as long as harm wasn't intentional and they published safety reports.</mark> Applies to any model trained with $100M+ compute. 90% of Illinois residents oppose AI liability exemptions. X: Nathan Calvin: bill gives "near total legal immunity" with no quality standard for the safety plan. X: Quintin Pope: "Bad faith efforts like this seem very bad to me."
+</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Zvi: Deep Dive into Claude Mythos System Card</h2>
+<ul>
+<li><span class="item-title">Zvi's comprehensive analysis of the Mythos alignment findings</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-mythos-the-system-card">Don't Worry About the Vase</a></span>
+Massive 40-section post analyzing the Mythos system card's alignment sections. Key takeaways: mundane alignment is "excellent" — but Zvi warns this may be superficial. <mark>Mythos is the first model not released publicly at all (other than GPT-2), specifically because giving it to anyone with a credit card "would give attackers a cornucopia of zero-day exploits."</mark> Notes Anthropic refused to use the exploits offensively — "great power was on offer, and that power was refused." Also covers model welfare findings, reward hacking, sandbagging tests, and the "remote drop-in worker" coming soon. X: whitfill_parker: Mythos system card reveals <mark>Anthropic's research production function is ~(LABOR)^0.2 (COMPUTE)^0.8</mark> — compute dominates. 13.7K views.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Scary/Impressive &mdash; CivAI Material</h2>
+<ul>
+<li><span class="item-title">Florida + AG James launch investigations into OpenAI over FSU shooting</span>
+<span class="source"><a href="https://twitter.com/AGJamesUthmeier/status/2042258048115265541">X: AG James Uthmeier</a></span>
+<span class="source"><a href="https://www.nbcnews.com/news/us-news/florida-officials-investigate-chatgpt-openai-alleged-role-fsu-shooting-rcna267477">NBC</a></span>
+Florida AG formally investigating OpenAI/ChatGPT over alleged role in FSU mass shooting. Suspect had 200+ ChatGPT messages. 1.2M views. Separately, AG James in another state: "demanding answers on OpenAI's activities that have hurt kids." Strong CivAI material on AI harm to individuals.</li>
+<li><span class="item-title">Nathan Calvin: low-resource defenders will get "brutalized" by AI cyber capabilities</span>
+<span class="source"><a href="https://twitter.com/_NathanCalvin/status/2042329759108251966">X: Nathan Calvin</a></span>
+<mark>Hospitals and local governments aren't using the latest AI for defense</mark> — they aren't even regularly updating software. "The transition period will indeed be pretty brutal." Habits from AI coding agents (giving tons of access, minimal supervision) creating bad cybersecurity norms.</li>
+<li><span class="item-title">FBI recovered deleted Signal messages via iPhone notification data</span>
+<span class="source"><a href="https://9to5mac.com/2026/04/09/fbi-used-iphone-notification-data-to-retrieve-deleted-signal-messages/">9to5Mac</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47716490">HN (222 pts)</a></span>
+Extracted from the device's notification database — didn't break encryption. Relevant to anyone relying on disappearing messages for security.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Joe Carlsmith: Yale Law talk on writing AI constitutions</span>
+<span class="source"><a href="https://joecarlsmith.substack.com/p/video-and-transcript-of-talk-on-writing">Substack</a></span>
+<span class="source"><a href="https://twitter.com/jkcarlsmith/status/2042294698765926410">X: Joe Carlsmith</a></span>
+Carlsmith (Anthropic, co-author of Claude's constitution) published video + transcript. Key insight: constitutions are more like "guides to raising the model" than laws the model follows. Covers transparency, governance legitimacy, and the ecosystem of different AI constitutions. 25K views.</li>
+<li><span class="item-title">Casper: mechinterp should prove itself via robust unlearning</span>
+<span class="source"><a href="https://twitter.com/StephenLCasper/status/2042226255815487908">X: Stephen Casper</a></span>
+"If we can't isolate and remove model capabilities, then we seem to have failed at the most basic goal of mechinterp." Provocation: mechinterp should competitively help fix unlearning. 16.6K views.</li>
+<li><span class="item-title">Conitzer: "Shutdown Safety Valves for Advanced AI" talk</span>
+<span class="source"><a href="https://twitter.com/conitzer/status/2042347645113446742">X: Conitzer</a></span>
+<span class="source"><a href="https://arxiv.org/abs/2603.07315">arXiv</a></span>
+Conference recording from IASEAI '26. Paper proposes mechanisms for safe AI shutdown.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> AI Policy & Legal</h2>
+<ul>
+<li><span class="item-title">Epoch AI: Iran war probably won't derail AI compute buildout</span>
+<span class="source"><a href="https://twitter.com/Jsevillamol/status/2042601033524805825">X: Jaime Sevilla</a></span>
+Epoch's Josh explores how a prolonged Iran war could affect AI — concludes it's "somewhat unlikely to disrupt AI development" despite Hormuz disruptions.</li>
+<li><span class="item-title">Dean Ball: "If Mythos-level capabilities had originated in China..."</span>
+<span class="source"><a href="https://twitter.com/deanwball/status/2042244371790143688">X: Dean Ball</a></span>
+Provocative thought experiment: would China's government — or USG — have let their equivalent of Anthropic do what Anthropic did? 36K views.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Bouncer: AI-powered Twitter feed filter from Imbue (Kanjun)</span>
+<span class="source"><a href="https://twitter.com/kanjun/status/2042271831705444357">X: Kanjun</a></span>
+"Describe what you don't want, and Bouncer removes it." Free, doesn't collect data, open source soon. <mark>350K views.</mark> If you're tired of algorithmic noise on X, this is worth trying.</li>
+<li><span class="item-title">macOS: Native instant space switching hack</span>
+<span class="source"><a href="https://arhan.sh/blog/native-instant-space-switching-on-macos/">Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47708818">HN (577 pts)</a></span>
+Top HN post. Eliminates the animation delay when switching macOS spaces. 274 comments.</li>
+<li><span class="item-title">HN: "I still prefer MCP over skills"</span>
+<span class="source"><a href="https://david.coffee/i-still-prefer-mcp-over-skills/">Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47712718">HN (308 pts)</a></span>
+Argument for MCP as the superior pattern for AI tool integration. 263 comments.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: Claude Mythos System Card — full alignment deep dive</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-mythos-the-system-card">Don't Worry About the Vase</a></span>
+The promised Mythos deep dive. 43 sections covering alignment testing, model welfare, sandbagging, reward hacking, and more. Summarized above — worth a full read if you want the technical details.</li>
+<li><span class="item-title">CAIS: AI Safety Newsletter #71 — Cyberattacks & Datacenter Moratorium</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/aisn-71-cyberattacks-and-datacenter">AI Safety Newsletter</a></span>
+Covers Mercor data breach (hackers stole data worth billions, ransom paid), Sanders/AOC datacenter moratorium bill details, and Anthropic v. DoW lawsuit update. Also notes: Iran threatened strikes on American AI datacenters in Middle East; Anthropic leaked Claude Code source; an attacker shot at Indianapolis councilmember's home over datacenter vote.</li>
+<li><span class="item-title">Transformer: Lawmakers using AI to write laws</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-lawmakers-laws-vulcan-technologies-fiscalnote-policynote-virginia-vermont">Transformer</a></span>
+Virginia mandated Vulcan Technologies across all state agencies. Vermont state rep describes using LLMs for bill research and brainstorming. Experts worry about accountability gaps, AI-drafted lobbyist amendments slipping past legal review, and AI-generated public comments flooding regulatory processes.</li>
+<li><span class="item-title">Nate Soares endorses brain preservation / Nectome</span>
+<span class="source"><a href="https://twitter.com/So8res/status/2042434344451785122">X: Nate Soares</a></span>
+On Sam Altman being on the Nectome waitlist: "it's better that these madmen have the option to be preserved than that they think their only chance at immortality is rolling the dice on superintelligent machines." Recommends thinking of it as a "last-ditch emergency medical procedure." 16K views.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
