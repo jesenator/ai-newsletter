@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Sunday, April 12, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Sunday, April 12, 2026 &mdash; Quiet Sunday. GPT-5.5 rumored for mid-week. Anthropic cache TTL scandal. AI violence essay trends. BBC deep-dive on AI propaganda.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> GPT-5.5 "Spud" Expected This Week</h2>
+<ul>
+<li><span class="item-title">Polymarket: 78% chance GPT-5.5 ships by end of April; April 14&ndash;16 is the window to watch</span>
+<span class="source"><a href="https://polymarket.com/event/gpt-5pt5-released-on">Polymarket</a></span>
+<span class="source"><a href="https://www.reddit.com/r/ChatGPTcomplaints/comments/1sfn7ef/openai_will_be_launching_new_model_on_14th16th_of/">Reddit</a></span>
+Training completed ~March 24 at Stargate; now in safety eval. Altman called it "very strong" internally; Brockman: <mark>"big model feel &mdash; not an incremental improvement."</mark> Name TBD: GPT-5.5 if incremental, GPT-6 if generational leap. Designed as backbone for OpenAI's unified super-app. Previous newsletter noted it was "not markedly" better than GPT-5.4 per The Neuron &mdash; watch for updated takes as benchmarks leak.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" /></svg> Claude Code: Cache TTL Scandal</h2>
+<ul>
+<li><span class="item-title">Data proves Anthropic silently downgraded cache TTL from 1h to 5m on March 6th</span>
+<span class="source"><a href="https://github.com/anthropics/claude-code/issues/46829">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47736476">HN (205 pts)</a></span>
+Analysis of <mark>120K API calls across two machines</mark> shows Anthropic quietly reverted cache TTL, causing 17&ndash;26% cost inflation and explaining the quota crisis users have experienced since March. February (1h TTL) had ~0% waste; March onward shows 5m TTL dominant. Cache re-creation is 12.5x more expensive than cache reads.</li>
+
+<li><span class="item-title">Separately: Pro Max 5x quota exhausted in 1.5 hours</span>
+<span class="source"><a href="https://github.com/anthropics/claude-code/issues/45756">GitHub</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47739260">HN (200 pts)</a></span>
+Detailed bug report with token-level data. Cache read tokens appear to count at full rate against quota, negating all caching benefits. Background sessions also silently consume shared quota.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Tools &amp; Productivity</h2>
+<ul>
+<li><span class="item-title">OpenAI silently removed Study Mode from ChatGPT</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47739305">HN</a></span>
+User report on HN; multiple Reddit threads confirm it's gone for many users. No official announcement.</li>
+
+<li><span class="item-title">Apple iOS passcode bug locks users out</span>
+<span class="source"><a href="https://www.theregister.com/2026/04/12/ios_passcode_bug/">The Register</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47737383">HN (270 pts)</a></span>
+iOS update changed some users' passcodes. 160 comments. Separate from the iOS 26.4.1 iCloud sync fix shipped earlier this week.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Scary/Impressive &mdash; CivAI Material</h2>
+<ul>
+<li><span class="item-title">BBC: Inside Iran's AI Lego propaganda machine</span>
+<img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/b1ff/live/7a287980-35bd-11f1-aa65-43b95e4e356e.jpg.webp" class="image-float" style="max-width:180px;">
+<span class="source"><a href="https://www.bbc.com/news/articles/cjd8jrd1vnyo">BBC</a></span>
+Deep investigative piece. Creator ("Mr Explosive") <mark>admits Iranian government is a "customer"</mark> &mdash; first public confirmation. Videos viewed hundreds of millions of times. Expert: "slopaganda is too weak a term." AI enables Iran to create "culturally appropriate" Western-targeted content at scale. Excellent CivAI demo material on AI-enabled information warfare.</li>
+
+<li><span class="item-title">"AI Will Be Met With Violence, and Nothing Good Will Come of It"</span>
+<span class="source"><a href="https://www.thealgorithmicbridge.com/p/ai-will-be-met-with-violence-and">The Algorithmic Bridge</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47737563">HN (157 pts, 255 comments)</a></span>
+Trending essay connecting the Altman Molotov attack, Indianapolis councilman shooting, and historical Luddite violence. Argues <mark>as AI targets become unreachable, violence shifts to people</mark>. Draws the loom-to-datacenter parallel. 255 HN comments.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Mox: This Week at Mox (4/10&ndash;4/18)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-410418">Mox Populi</a></span>
+Events include Ghibli night, vibecoding club, EA SF talk by Andr&eacute;s G&oacute;mez Emilsson (QRI), Duncan Sabien on "anatomy of social dark arts," ML papers reading group, AIxAnimals party, yoga, Schelling coworking day (Fri).</li>
+
+<li><span class="item-title">HN: "Why AI Sucks at Front End"</span>
+<span class="source"><a href="https://nerdy.dev/why-ai-sucks-at-front-end">nerdy.dev</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47738864">HN</a></span>
+Analysis of why AI coding tools struggle specifically with frontend work. 30 comments.</li>
+
+<li><span class="item-title">HN: 447 TB/cm&sup2; atomic-scale memory on fluorographane</span>
+<span class="source"><a href="https://zenodo.org/records/19513269">Zenodo</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47733561">HN (234 pts)</a></span>
+Zero retention energy. Potential long-term implications for compute density.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
