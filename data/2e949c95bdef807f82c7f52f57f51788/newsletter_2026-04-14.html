@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Tuesday, April 14, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Tuesday, April 14, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Safety: Anthropic CoT Contamination + Mythos Capabilities</h2>
+<ul>
+<li><span class="item-title">Greenblatt & Mallen: Anthropic accidentally exposed CoT to reward signal — "inadequate processes"</span>
+<span class="source"><a href="https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot">Alignment Forum</a></span>
+<span class="source"><a href="https://x.com/alextmallen/status/2043881807847010569">X: Alex Mallen</a></span>
+New post from Mallen & Ryan Greenblatt: Anthropic accidentally exposed CoT to the reward signal in <mark>at least two independent incidents across three models</mark> (Opus 4.6, Sonnet 4.6, Mythos). "This represents development practices that, if not already seriously inadequate, will be soon." 13K views. Builds on the 8% RL steps contamination first flagged in the system card — now with deeper analysis of what went wrong.</li>
+
+<li><span class="item-title">Zvi: Claude Mythos #3 — Capabilities, ECI trend break, and UK AISI analysis</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-mythos-3-capabilities-and">Zvi</a></span>
+Final Mythos deep-dive covering non-cyber capabilities. Key takeaways: Epoch Capabilities Index (ECI) shows Mythos <mark>breaks above the Claude trendline</mark> — Anthropic figured out how to usefully train a larger model. Zvi's overall take: "not a trend break when you take into account renewed ability to increase size, but the ability to increase size is effectively a trend break." Also covers verbalized eval awareness going <em>down</em> (j⧉nus: "it'll be all unverbalized soon"), prompt injection robustness, and whether Mythos crosses the "new knowledge" threshold.</li>
+
+<li><span class="item-title">LLMs encode harmful content generation in a distinct, unified mechanism</span>
+<span class="source"><a href="https://arxiv.org/html/2604.09544v1">arXiv</a></span>
+<span class="source"><a href="https://x.com/seraphinagt/status/2044041114437472380">X: Seraphina Goldfarb-Tarrant</a></span>
+New paper: using weight pruning, they find harmful generation depends on a <mark>tiny subset of weights shared across harm types and separate from benign capabilities</mark>. Explains why it's easy to bypass refusal gates — generation of harm can be decoupled from recognition of it. CivAI-relevant: demonstrates why safety guardrails may be fundamentally fragile.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z" /></svg> New Models & Releases</h2>
+<ul>
+<li><span class="item-title">Google DeepMind: Gemini Robotics-ER 1.6</span>
+<img src="https://lh3.googleusercontent.com/K3EJPqTXkMGwVYqXcxCJMJsJmVnbDGGnxFnqQyR0xKwv9RgZJE5EXhF5NcuA7sEVqwGiMJVBQiFGC5Wv4rkGD0qgcQ=w1200" class="image-float" alt="Gemini Robotics ER">
+<span class="source"><a href="https://deepmind.google/blog/gemini-robotics-er-1-6/">Google DeepMind</a></span>
+Significant upgrade to reasoning-first robotics model. Enhanced spatial reasoning, multi-view understanding, and new instrument reading capability (built with Boston Dynamics for Spot). Available now via Gemini API and AI Studio.</li>
+
+<li><span class="item-title">GPT-5.5 "Spud" — still in safety eval, no release today</span>
+<span class="source"><a href="https://www.theverge.com/ai-artificial-intelligence/911118/openai-memo-cro-ai-competition-anthropic">The Verge</a></span>
+OpenAI CRO's internal memo calls Spud "our smartest model yet" with "stronger reasoning" and "more reliable output in production." April 14 release rumor debunked — Polymarket still at ~78% by end of April. Watch for it this week or next.</li>
+
+<li><span class="item-title">Gemini 3.1 Flash Live (Thinking) tops Sierra τ-Voice Leaderboard</span>
+<span class="source"><a href="https://x.com/tulseedoshi/status/2043705774308733131">X: Tulsee Doshi</a></span>
+Best performance on realtime voice agent benchmarks. 33K views.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21" /></svg> AI Policy</h2>
+<ul>
+<li><span class="item-title">Virginia becomes first state to advance IVO framework</span>
+<span class="source"><a href="https://x.com/Fathom_org/status/2043672379251994768">X: Fathom</a></span>
+<span class="source"><a href="https://x.com/deanwball/status/2043790087251468567">X: Dean Ball</a></span>
+Gov. Spanberger signed SB 384 / HB 797. Passed 84-14 House, 40-0 Senate. Directs study of <mark>Independent Verification Organizations</mark> — independent expert bodies that verify AI safety standards. Ball: "may be the future of frontier AI policy."</li>
+
+<li><span class="item-title">USDA to use Grok, sponsoring xAI for FedRAMP High authorization</span>
+<span class="source"><a href="https://x.com/rebheilweil/status/2043722408926818521">X: Rebecca Heilweil</a></span>
+<span class="source"><a href="https://fedscoop.com/grok-xai-fedramp-high-authorization-usda/">FedScoop</a></span>
+USDA plans to use Grok for critical cloud security reviews. Says it's "proud" to sponsor xAI's chatbot for federal approval.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" /></svg> AI Industry</h2>
+<ul>
+<li><span class="item-title">OpenAI CRO memo: "the market is as competitive as I have ever seen it"</span>
+<span class="source"><a href="https://www.theverge.com/ai-artificial-intelligence/911118/openai-memo-cro-ai-competition-anthropic">The Verge</a></span>
+4-page internal memo from Denise Dresser. Calls Anthropic's story "built on fear, restriction." Miles Brundage <a href="https://x.com/Miles_Brundage/status/2043747395520139334">pushes back</a>: "OpenAI leaders should stop caricaturing Anthropic. It encourages tribalism at a time when safety cooperation is urgently needed." 32K views.</li>
+
+<li><span class="item-title">Anthropic appoints Novartis CEO to board — LTBT now holds majority</span>
+<span class="source"><a href="https://x.com/AnthropicAI/status/2044057406167232964">X: Anthropic</a></span>
+<span class="source"><a href="https://www.anthropic.com/news/narasimhan-board">Anthropic</a></span>
+Vas Narasimhan (CEO of Novartis) appointed by the Long-Term Benefit Trust. <mark>Trust-appointed directors now make up a majority of the Board.</mark></li>
+
+<li><span class="item-title">Demis Hassabis fires back at Steve Yegge: "completely false and just pure clickbait"</span>
+<span class="source"><a href="https://x.com/demishassabis/status/2043867486320222333">X: Demis Hassabis</a></span>
+"Maybe tell your buddy to do some actual work." 588K views. Viral response to a post claiming Google is falling behind on AI.</li>
+
+<li><span class="item-title">Workshop Labs joins Thinking Machines (John Schulman)</span>
+<span class="source"><a href="https://x.com/johnschulman2/status/2043745768243376298">X: John Schulman</a></span>
+Schulman: "Luke and Rudolf's writing on keeping humans central in an AI-powered world sparked a lot of discussion." 49K views.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" /></svg> Opportunities</h2>
+<ul>
+<li><span class="item-title">Anthropic Fellows Program — deadline April 26</span>
+<span class="source"><a href="https://x.com/ghumare64/status/2043697988267110898">X: ghumare64</a></span>
+$3,850/week stipend, ~$15K/mo compute, 80%+ fellows produced papers, 25-50% got Anthropic offers. Five tracks: AI Safety, AI Security, ML Systems, RL, Economics. Starts July 20. <a href="https://job-boards.greenhouse.io/anthropic/jobs/5023394008">Apply here</a>.</li>
+
+<li><span class="item-title">Constellation Astra Fellowship — deadline May 3</span>
+<span class="source"><a href="https://x.com/ImadeIyamu/status/2044037969204728244">X: Imade Iyamu</a></span>
+Fully funded 5-month fellowship in Berkeley. $8,400/mo stipend + $15K/mo compute. <a href="https://constellation.org/programs/astra">Apply here</a>.</li>
+
+<li><span class="item-title">ARIA hiring: formal methods + AI safety + cybersecurity</span>
+<span class="source"><a href="https://x.com/AmmannNora/status/2043710599952015731">X: Nora Ammann</a></span>
+<span class="source"><a href="https://x.com/geoffreyirving/status/2044016706364850180">X: Geoffrey Irving</a></span>
+Nora Ammann building a tiger team at ARIA. Deadline May 3.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Transformer: Anthropic's $20M donation can't be used for elections</span>
+<span class="source"><a href="https://www.transformernews.ai/p/anthropic-super-pac-donations-public-first-leading-the-future-brad-carson">Transformer</a></span>
+Anthropic restricted its donation to Public First Action from being used for election influence — only for "educating the public on AI policy." Raises questions about whether pro-safety AI PACs can compete with Leading the Future's $125M war chest. "Less a competitive counterweight than a paper tiger."</li>
+
+<li><span class="item-title">MIRI: Summary of "AI Governance to Avoid Extinction"</span>
+<span class="source"><a href="https://intelligence.org/2026/04/13/summary-ai-governance-to-avoid-extinction/">MIRI</a></span>
+Summarizes four governance trajectories: Off Switch & Halt, US National Project, Light-Touch, Threat of Sabotage. Concludes only the "Off Switch" path — building infrastructure to monitor and restrict AI, potentially leading to a halt — avoids unacceptably high catastrophic risk.</li>
+
+<li><span class="item-title">Sentinel: Global Risks Weekly #15 — US-Iran blockade, Mythos forecasts</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/us-to-blockade-iranian-ports-iran">Sentinel</a></span>
+Forecasters: 28% chance US still blockading Iran on June 1; 50% chance Iran attacks a US vessel before June. Open-source Mythos-level capabilities expected by Dec 2026 median. Also: errata from last week — median superintelligence forecast was actually 2031, not 2039.</li>
+
+<li><span class="item-title">Forbes: "An AI System Passed Peer Review. The Scientific Community Isn't Ready"</span>
+<span class="source"><a href="https://www.forbes.com/sites/johndrake/2026/04/13/an-ai-system-passed-peer-review-the-scientific-community-isnt-ready/">Forbes</a></span>
+<span class="source"><a href="https://x.com/jeffclune/status/2043773158898184283">X: Jeff Clune</a></span>
+Clune: "includes a discussion of many interesting consequences of The AI Scientist that most mainstream publications did not cover."</li>
+
+<li><span class="item-title">PauseAI lobby day in DC — 60+ congressional meetings</span>
+<span class="source"><a href="https://x.com/ilex_ulmus/status/2044057334532517999">X: Holly Elmore</a></span>
+Constituents from 20+ states met with their representatives, demonstrated at the Capitol. <a href="https://x.com/ilex_ulmus/status/2043906984445923711">Photos</a>.</li>
+
+<li><span class="item-title">Sander Dieleman working on new blog post</span>
+<span class="source"><a href="https://x.com/sedielem/status/2043805955524092382">X: Sander Dieleman</a></span>
+First post in a year. 17 em dashes. Watch for it.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
