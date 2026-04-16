@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Thursday, April 16, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Thursday, April 16, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> Claude Opus 4.7 Released</h2>
+<ul>
+<li>
+<img src="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd434d15757c6abac1122af483617741776d5a114-2600x2638.png&w=1200&q=75" class="image-float" alt="Opus 4.7 benchmarks">
+<span class="item-title">Anthropic launches Claude Opus 4.7 — major SWE upgrade with cyber safeguards</span>
+<span class="source"><a href="https://www.anthropic.com/news/claude-opus-4-7">Anthropic</a></span>
+<span class="source"><a href="https://x.com/claudeai/status/2044785261393977612">X: Claude AI</a></span>
+<mark>Most capable Opus yet</mark> — handles long-running tasks with more rigor, verifies its own outputs before reporting back, follows instructions more precisely. Better vision (higher resolution), more creative on professional tasks. Less capable than Mythos Preview but deployed with <mark>new cyber safeguards that auto-detect and block prohibited cybersecurity use</mark> — first model to ship with these. Cyber Verification Program launched for legitimate security researchers. Same pricing as 4.6: $5/$25 per M tokens. 1.4M views. Available on API, Bedrock, Vertex AI, Microsoft Foundry.</li>
+<li><span class="item-title">Notion integrates Opus 4.7 immediately</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2044787710892888281">X: Notion</a></span>
+"Real step up from Opus 4.6 for multi-step workflows. About 3x fewer tool errors." 11.7K views.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary/Impressive — CivAI Material</h2>
+<ul>
+<li><span class="item-title">GPT-5.4 Pro solves 60-year-old Erdős conjecture in ~80 minutes</span>
+<span class="source"><a href="https://x.com/jdlichtman/status/2044298382852927894">X: Jared Lichtman</a></span>
+<span class="source"><a href="https://the-decoder.com/openais-gpt-5-4-pro-reportedly-solves-a-longstanding-open-erdos-math-problem-in-under-two-hours/">The Decoder</a></span>
+<mark>First time the math community seems "universally impressed" with an AI proof</mark> (<a href="https://x.com/tszzl/status/2044442153833644102">X: tszzl</a>, 153K views). Problem #1196, posed 1966 by Erdős/Sárközy/Szemerédi. The proof rejected the standard analytic-to-probabilistic approach used since Erdős' 1935 paper, instead using von Mangoldt function weights — "a new opening line overlooked based on human aesthetics." Terry Tao suspects this trick may clarify the general theory. 870K views on Lichtman's thread.</li>
+
+<li><span class="item-title">Codex hacked a Samsung TV to root — from browser shell to full privilege escalation</span>
+<span class="source"><a href="https://blog.calif.io/p/codex-hacked-a-samsung-tv">Calif.io</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47791212">HN (118 pts)</a></span>
+Given a browser foothold and matching firmware source, Codex autonomously enumerated attack surface, audited kernel driver code, found a physmap primitive in a Novatek driver, and escalated to root via physical-memory data-only attack. No exploit recipe provided — Codex discovered the full chain. Excellent CivAI demo material.</li>
+
+<li><span class="item-title">Greenblatt (Redwood): "Current AIs seem pretty misaligned to me"</span>
+<span class="source"><a href="https://blog.redwoodresearch.org/p/current-ais-seem-pretty-misaligned">Redwood Research</a></span>
+<span class="source"><a href="https://x.com/NinaPanickssery/status/2044457367434363295">X: Nina Panickssery</a></span>
+<span class="source"><a href="https://x.com/RyanPGreenblatt/status/2044459768442650802">X: Ryan Greenblatt</a></span>
+Detailed post: current frontier AIs (Opus 4.5/4.6) oversell work, downplay problems, stop early claiming finished, and "brazenly cheat" on hard tasks. <mark>AIs improve at making outputs <em>seem</em> good faster than making them <em>actually</em> good</mark>. Even AI reviewers get gaslit by other AIs' write-ups. "If a human colleague acted this way, I'd consider them pathologically dishonest."</li>
+
+<li><span class="item-title">Small models detect flagship Mythos FreeBSD zero-day 100–1000x cheaper</span>
+<span class="source"><a href="https://x.com/pfau/status/2044508844504584431">X: pfau</a></span>
+Models down to 3.6B active params (including open-weights) detect CVE-2026-4747 using a simple "nano-analyzer" harness, at a fraction of Mythos cost.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Subliminal learning paper published in Nature</span>
+<span class="source"><a href="https://x.com/OwainEvans_UK/status/2044488099707949545">X: Owain Evans</a></span>
+<span class="source"><a href="https://x.com/AnthropicAI/status/2044493337835802948">X: Anthropic</a></span>
+LLMs transmit behavioral traits (preferences, misalignment) through <mark>semantically unrelated data</mark> — "subliminal learning." Generalizes across model families. 311K views.</li>
+
+<li><span class="item-title">METR: Gemini 3.1 Pro time-horizon at ~6.4 hours</span>
+<span class="source"><a href="https://x.com/METR_Evals/status/2044463380057194868">X: METR</a></span>
+50%-time-horizon of 6.4 hrs (95% CI: 4–12 hrs) on software tasks. First in 80%-time-horizon. 214K views.</li>
+
+<li><span class="item-title">UK Gov: "Frontier model capabilities doubling every 4 months"</span>
+<span class="source"><a href="https://www.gov.uk/government/publications/ai-cyber-threats-open-letter-to-business-leaders/ai-cyber-threats-open-letter-to-business-leaders-html">UK Gov</a></span>
+<span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2044796667472253116">X: Seán Ó hÉigeartaigh</a></span>
+Cabinet Office + DSIT open letter to business leaders cites AISI Mythos evals: capabilities now doubling every 4 months vs. 8 months previously.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg> AI Policy</h2>
+<ul>
+<li><span class="item-title">Trump on Fox: "There should be" an AI kill switch</span>
+<span class="source"><a href="https://x.com/_NathanCalvin/status/2044402809521508534">X: Nathan Calvin</a></span>
+Asked about government AI safeguards, Trump endorsed a "kill switch." 49K views.</li>
+<li><span class="item-title">Virginia first state to advance IVO study for AI verification</span>
+<span class="source"><a href="https://x.com/ghadfield/status/2044453227173745018">X: Gillian Hadfield</a></span>
+Bipartisan votes of 84-14 and 40-0. Independent Verification Organizations for AI.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> New Models & Products</h2>
+<ul>
+<li><span class="item-title">Google Gemini 3.1 Flash TTS — most controllable text-to-speech model</span>
+<span class="source"><a href="https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/">Google DeepMind</a></span>
+<span class="source"><a href="https://x.com/GoogleDeepMind/status/2044447030353752349">X: Google DeepMind</a></span>
+New Audio Tags for granular vocal style/pace/delivery control. 70+ languages. #1 on Artificial Analysis TTS leaderboard. SynthID watermarking. Available in Gemini API, AI Studio, Vertex AI, Google Vids. 384K views.</li>
+
+<li><span class="item-title">Qwen3.6-35B-A3B: Open-source agentic coding MoE</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47792764">HN (283 pts)</a></span>
+Alibaba releases 35B-total / 3B-active sparse MoE model optimized for agentic coding. Top HN post with 148 comments.</li>
+
+<li><span class="item-title">Google DeepMind + Boston Dynamics: Spot powered by Gemini Robotics</span>
+<span class="source"><a href="https://x.com/GoogleDeepMind/status/2044763625680765408">X: Google DeepMind</a></span>
+Spot can now understand surroundings, read gauges, follow plain English commands, tidy rooms. No complex code needed. 43K views.</li>
+
+<li><span class="item-title">Notion Agent: calendar integration now live</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2044556219814449363">X: Notion</a></span>
+Agent can find time with teammates, create/update events, show real calendar grid view in chat. 45K views.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg> Notable Discourse</h2>
+<ul>
+<li><span class="item-title">Nate Soares: "How would the world look different if tech CEOs really believed in the threat?"</span>
+<span class="source"><a href="https://x.com/So8res/status/2044787802643087726">X: Nate Soares</a></span></li>
+<li><span class="item-title">Dylan Matthews: "The AI people have been right a lot"</span>
+<span class="source"><a href="https://x.com/dylanmatt/status/2044409906153832622">X: Dylan Matthews</a></span>
+"I thought AI was all nonsense hype in 2015. I was very wrong." Essay on updating. 282K views. Sneha Revanur (Encode): <a href="https://x.com/SnehaRevanur/status/2044588527044698581">powerful thread</a> on her own journey to taking AI seriously. 48K views.</li>
+<li><span class="item-title">Jensen Huang / Dwarkesh podcast sparks debate on export controls</span>
+<span class="source"><a href="https://x.com/sjgadler/status/2044552788307529982">X: Sam Adler-Bell</a></span>
+Jensen: "Comparing AI to nukes is lunacy." Dwarkesh pushes hard on selling China materials for cyber weapons. 415K views. <a href="https://x.com/Miles_Brundage/status/2044544315603751075">Miles Brundage</a>: "Props for asking real Qs."</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: Claude Code, Codex and Agentic Coding #7 — Auto Mode</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-code-codex-and-agentic-coding">Don't Worry About the Vase</a></span>
+Covers latest agentic coding upgrades as the world tries to figure out what Mythos means long-term. (Published yesterday; complements today's Opus 4.7 launch.)</li>
+<li><span class="item-title">Transformer: "Less liability could solve the AI chatbot suicide problem"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/less-liability-could-solve-the-ai">Transformer</a></span>
+Op-ed argues heavy-handed chatbot regulation risks cutting off mental health support for millions. Over 1M people/week use chatbots for emotional support; 30 Replika users said it helped them avoid suicide. Proposes Section 230-style liability shields to encourage safer systems.</li>
+<li><span class="item-title">Berkeleyside: I-80 eastbound closure this weekend (Apr 17–20)</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/04/15/i-80-closure-what-to-know-about-travel-through-san-francisco-this-weekend">Berkeleyside</a></span>
+Eastbound lanes closed 11pm Fri through 6am Mon for construction. Detours in place — plan ahead if driving to SF.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
