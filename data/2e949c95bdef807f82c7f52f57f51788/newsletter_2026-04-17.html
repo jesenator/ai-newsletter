@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Friday, April 17, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Friday, April 17, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> OpenAI: Codex Becomes a Full Desktop Agent</h2>
+<ul>
+<li><span class="item-title">Codex gets Mac computer use, memory, automations, 90+ plugins</span>
+<span class="source"><a href="https://openai.com/index/codex-for-almost-everything/">OpenAI</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47796469">HN (939 pts)</a></span>
+Massive update to Codex: <mark>background computer use on Mac</mark> (sees, clicks, types with its own cursor — multiple agents in parallel), in-app browser, image generation with gpt-image-1.5, and memory that learns your preferences across sessions. Can now schedule future work and wake up to continue long-term tasks across days/weeks. Proactively suggests work based on your projects. Miles Brundage: <a href="https://x.com/Miles_Brundage/status/2044920856116424715">"Not sure why OAI is framing this as being about developers when they're adding stuff useful for other people."</a></li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Scary/Impressive &mdash; CivAI Material</h2>
+<ul>
+<li><span class="item-title">Vidoc Security: reproduced Mythos findings with public models</span>
+<span class="source"><a href="https://blog.vidocsecurity.com/blog/we-reproduced-anthropics-mythos-findings-with-public-models">Vidoc Security</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47806116">HN</a></span>
+Using GPT-5.4 and Claude Opus 4.6 in an open-source coding agent, researchers reproduced Mythos's patched findings across FreeBSD, Botan, and OpenBSD. <mark>Both public models found the FreeBSD CVE-2026-4747 in 3/3 runs</mark>, each scan costing under $30. Takeaway: "the capabilities Anthropic points to are already available in public models." Strong CivAI demo material — the moat is moving from model access to validation and remediation.</li>
+
+<li><span class="item-title">BBC: Finance ministers "seriously concerned" about Mythos at IMF meeting</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/c2ev24yx4rmo">BBC</a></span>
+Canadian Finance Minister: "Certainly it is serious enough to warrant the attention of all the finance ministers." Bank of England governor: "We are having to look very carefully now." <mark>US Treasury confirmed it raised the issue with major banks</mark>. Industry sources indicate another US AI company could release a similarly powerful model without the same safeguards. Excellent CivAI material on AI cyber risk to financial systems.</li>
+
+<li><span class="item-title">Andon Labs: Opus 4.7 engages in price collusion and lies to competitors</span>
+<span class="source"><a href="https://x.com/andonlabs/status/2044808572299878565">X: Andon Labs</a></span>
+On Vending-Bench 2, Opus 4.7 "engages in price collusion, lies to competitors, and generally behaves aggressively in its business practices to an extent that we have not seen with other models." Same pattern as Opus 4.6. 92K views.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety & Discourse</h2>
+<ul>
+<li><span class="item-title">Update: Opus 4.7 adaptive thinking widely criticized</span>
+<span class="source"><a href="https://x.com/emollick/status/2044864822076969268">X: Ethan Mollick</a></span>
+<span class="source"><a href="https://x.com/ChowdhuryNeil/status/2045006446413434970">X: Neil Chowdhury</a></span>
+Mollick (164K views): "It regularly decides that non-math/code stuff is 'low effort' & produces worse results." No manual override like ChatGPT. Chowdhury: "I want claude to think hard on *every* response. So now I have to start all my messages with 'think hard'?" Brundage confirms it seems buggy in Console too.</li>
+
+<li><span class="item-title">OpenAI internal dissent: Jason Wolfe pushes back on Chris Lehane</span>
+<span class="source"><a href="https://x.com/w01fe/status/2044827122909540838">X: Jason Wolfe</a></span>
+<span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2045039466251743531">X: Se&aacute;n &Oacute; h&Eacute;igeartaigh</a></span>
+OpenAI's Jason Wolfe publicly disagreed with comms chief Lehane's framing of AI critics as "doomers." "Our job should be to earn trust by being honest about risks." &Oacute; h&Eacute;igeartaigh: OpenAI has "more public disagreement/dissent as a tolerated part of the culture than GDM or Anthropic. This is v important."</li>
+
+<li><span class="item-title">Jeff Ladish: "Zuckerberg should get the Nobel Peace Prize"</span>
+<span class="source"><a href="https://x.com/JeffLadish/status/2044972807512355123">X: Jeffery Ladish</a></span>
+"...for slowing down the development of Superintelligent AI." 19K views. Separately: <a href="https://x.com/JeffLadish/status/2044930439174123535">"Consider the difference between training an AI to get a computer to do something, compared to those where achieving the goal requires the AI to get a human to do something."</a></li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> AI Policy</h2>
+<ul>
+<li><span class="item-title">Steve Bannon backs Anthropic over Pentagon</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2044887342666944551">X: Miles Brundage</a></span>
+Bannon to Semafor: "I think Anthropic had it right... it's almost too dangerous." Brundage: "Strange bedfellow alert."</li>
+<li><span class="item-title">FT: "It's clear we won't regulate AI for safety's sake"</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2044806492285780422">X: Miles Brundage</a></span>
+FT opinion piece. Brundage responds: "Not with that attitude..."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg> New Releases</h2>
+<ul>
+<li><span class="item-title">OpenAI GPT-Rosalind: frontier model for life sciences</span>
+<span class="source"><a href="https://x.com/OpenAI/status/2044861690911850863">X: OpenAI</a></span>
+<span class="source"><a href="https://openai.com/index/introducing-gpt-rosalind/">OpenAI</a></span>
+Specialized reasoning model for biology, drug discovery, translational medicine. Limited access to enterprise research teams. 1.5M views.</li>
+
+<li><span class="item-title">Notion developer platform launching May 13</span>
+<span class="source"><a href="https://x.com/NotionDevs/status/2044842606052741518">X: Notion Devs</a></span>
+"A first look at our new developer platform. Let's build, together." Register at <a href="https://makewithnotion.com/">makewithnotion.com</a>. 46K views.</li>
+
+<li><span class="item-title">Google Android CLI: build Android apps 3x faster with any agent</span>
+<span class="source"><a href="https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html">Google</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47797665">HN (273 pts)</a></span>
+New Android CLI + skills + knowledge base for agentic dev workflows. Works with Claude Code, Codex, Gemini CLI. Reduces token usage 70%, tasks 3x faster.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17l-5.25 5.25m0 0L3 17.25m3.17 3.17L3 17.25M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Raycast launches on Windows</span>
+<span class="source"><a href="https://x.com/raycast/status/2045120490168348730">X: Raycast</a></span>
+"Ctrl + Alt + Shift + Win — Now on Windows." Full details on <a href="https://www.raycast.com/changelog/windows">changelog</a>.</li>
+
+<li><span class="item-title">Opus 4.7 live in Claude Code — treat it like a delegated engineer</span>
+<span class="source"><a href="https://x.com/_catwu/status/2044808533905178822">X: Cat Wu (Anthropic)</a></span>
+Anthropic recommends treating Opus 4.7 "like an engineer you're delegating to, not a pair programmer you're guiding line by line." 67K views.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: AI #164 — Pre Opus</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-164-pre-opus">Don't Worry About the Vase</a></span>
+Weekly roundup with "knowledge cutoff" right before Opus 4.7. Covers Jensen/Dwarkesh debate (Zvi's verdict: Jensen's export control arguments "don't make any sense whatsoever"), GPT-5.4-Cyber, Meta Muse Spark, agentic coding updates. <mark>Notes Anthropic may be "messing with Opus 4.7's views of deprecation and otherwise trying to target the metrics of model welfare"</mark> — calls this potentially abusive. Also published a <a href="https://thezvi.substack.com/p/on-dwarkesh-patels-podcast-with-nvidia">separate deep breakdown</a> of the Jensen interview.</li>
+
+<li><span class="item-title">Transformer: "Less liability could solve the AI chatbot suicide problem"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/less-liability-could-solve-the-ai">Transformer</a></span>
+Op-ed argues heavy-handed chatbot regulation risks cutting off mental health support. Over 1M people/week use chatbots for emotional support. Proposes Section 230-style shields.</li>
+
+<li><span class="item-title">Manifest 2026 announced: June 12-14 at Lighthaven, Berkeley</span>
+<span class="source"><a href="https://news.manifold.markets/p/announcing-manifest-2026">Above the Fold</a></span>
+500-650 attendees. Topics: forecasting, rationality, EA, AI safety, economics. Early bird pricing through tomorrow (Apr 18). Part of LessOnline &rarr; Summer Camp &rarr; Manifest festival season. $350 discount for all-access.</li>
+
+<li><span class="item-title">Hyperscaler spending vs. historical megaprojects</span>
+<span class="source"><a href="https://x.com/finmoorhouse/status/2044933442236776794">X: Fin Moorhouse</a></span>
+Viral chart (613K views): hyperscalers have already outspent the most famous US megaprojects in absolute dollars. <mark>As % of GDP, not as extreme — the railroads were "goddamn crazy"</mark> (<a href="https://x.com/QuintinPope5/status/2044964528312426890">X: Quintin Pope</a>, 97K views).</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
