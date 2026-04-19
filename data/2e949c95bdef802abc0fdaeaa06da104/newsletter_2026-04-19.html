@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Sunday, April 19, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter</h1>
+<div class="date">Sunday, April 19, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg> Pitch: Mythos Is Flooding Open-Source Maintainers With Bug Reports They Can't Keep Up With &mdash; and Anthropic Has No Plan to Fix the Bottleneck</h2>
+<ul>
+<li>
+<img src="https://storage.united24media.com/thumbs/1014x676/2/d0/2567bcbf73977852b25a061ecac67d02.png" class="image-float" alt="Hornet drone strike">
+Bloomberg <a href="http://www.techmeme.com/260418/p9#a260418p9">reports</a> that Anthropic's Mythos is compounding an already unsustainable workload for open-source maintainers, many of whom were already dealing with a "crazy" number of AI-generated bug reports before Mythos even launched. Mythos can find vulnerabilities <mark>faster than small volunteer teams can fix them</mark>, putting critical internet infrastructure at risk. Sophos <a href="https://www.sophos.com/en-us/blog/vulnerability-flood-is-here">warned</a> earlier this month: "We can't control the pace of AI-driven vulnerability discovery, but we can control how fast we respond." But the response infrastructure doesn't exist.
+</li>
+<li>
+<span class="item-title">Why this would be an impactful story:</span>
+This is a real-world "warning shot" story. Anthropic built Mythos to find vulnerabilities and launched Project Glasswing to patch them at scale &mdash; but the patching pipeline funnels through open-source maintainers who are mostly <em>unpaid volunteers</em>. The Curl project already had to stop accepting AI-generated submissions because quality was so poor. VentureBeat <a href="https://venturebeat.com/technology/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release">noted</a>: "Flooding open-source maintainers with an avalanche of critical bug reports could easily do more harm than good." A story could investigate: How many Mythos-discovered vulnerabilities are sitting in unpatched queues? Is Anthropic paying any maintainers directly? Is Glasswing's $100M credit program creating an unfunded mandate for the open-source community? And does this represent a new class of AI externality &mdash; where companies profit from finding problems that volunteers must fix for free?
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Robotics</h2>
+<ul>
+<li><span class="item-title">Humanoid robots beat human world record at Beijing half-marathon</span>
+<span class="source"><a href="https://www.reuters.com/business/autos-transportation/tesla-rolls-out-robotaxis-dallas-houston-2026-04-18/">Reuters</a></span>
+<span class="source"><a href="http://www.techmeme.com/260419/p4#a260419p4">Techmeme</a></span>
+Honor's "Lightning" robot finished the 21km course in <mark>50 minutes 26 seconds</mark>, beating Jacob Kiplimo's human world record (57:20) by nearly 7 minutes. Dozens of Chinese humanoid robots competed on parallel tracks. Major milestone for autonomous bipedal locomotion at scale.</li>
+<li><span class="item-title">Tesla robotaxi expands to Dallas and Houston</span>
+<span class="source"><a href="https://www.teslarati.com/tesla-expands-unsupervised-robotaxi-service-two-new-cities/">Teslarati</a></span>
+<span class="source"><a href="http://www.techmeme.com/260419/p3#a260419p3">Techmeme</a></span>
+Unsupervised service now in four Texas/California cities. Launched Austin last year, went driverless in January 2026.</li>
+<li><span class="item-title">Ukraine deploys ex-Google CEO-backed AI Hornet drones</span>
+<span class="source"><a href="https://united24media.com/latest-news/ukraine-deploys-ex-google-ceo-backed-ai-hornet-drones-against-russian-logistics-18044">United24</a></span>
+Azov unit using Eric Schmidt's "Project Eagle" Hornet drones to hit Russian logistics 65km behind front lines. AI identifies, classifies, and prioritizes targets; operator confirms before strike. Range ~100km, cost under &euro;5,000 each.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Deals & Industry</h2>
+<ul>
+<li><span class="item-title">Google in talks with Marvell for new TPU chips</span>
+<span class="source"><a href="http://www.techmeme.com/260419/p9#a260419p9">The Information</a></span>
+Google negotiating with Marvell Technology to develop a <mark>memory processing unit</mark> that works alongside TPUs, plus a new TPU for running AI models. Diversifying its custom silicon supply chain.</li>
+<li><span class="item-title">Iconiq: $4B invested in Anthropic, $3B+ in AI startups in 2025 alone</span>
+<span class="source"><a href="https://www.wealthmanagement.com/artificial-intelligence/iconiq-go-to-wealth-adviser-for-tech-s-elite-is-putting-billions-into-ai">Bloomberg</a></span>
+Wealth advisor to Zuckerberg, Dorsey, and other tech billionaires. Raised $5.75B for its last VC fund. Now rivaling top-tier VCs in AI deal flow.</li>
+<li><span class="item-title">Meta reportedly cutting ~8,000 jobs on May 20</span>
+<span class="source"><a href="https://www.sfchronicle.com/tech/article/meta-layoffs-may-reuters-22212763.php">Reuters</a></span>
+~10% of global workforce in first wave, with more cuts later in 2026. Linked to rising AI infrastructure costs.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li><span class="item-title">NYT profiles METR's time-horizon chart as industry's key metric</span>
+<span class="source"><a href="https://www.nytimes.com/2026/04/17/technology/how-do-you-measure-an-ai-boom.html">NYT</a></span>
+Kevin Roose deep-dive on the Berkeley nonprofit whose chart has become an "industrywide obsession" among AI researchers and Wall Street investors for tracking whether the AI boom is accelerating or tapering off.</li>
+<li><span class="item-title">Update: Anthropic-Trump thaw &mdash; "every agency" except DoD wants Anthropic</span>
+<span class="source"><a href="https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/">TechCrunch</a></span>
+New detail: an administration source told Axios that <mark>"every agency" except the Department of Defense wants to use Anthropic's technology</mark>. TechCrunch frames the Pentagon's supply-chain risk label as increasingly isolated within the administration.</li>
+<li><span class="item-title">Mistral pivots: "independence leaderboard" over performance</span>
+<span class="source"><a href="https://www.forbes.com/sites/iainmartin/2026/04/16/how-frances-mistral-built-a-14-billion-ai-empire-by-not-being-american/">Forbes</a></span>
+Deep profile. Mistral's best model loses to a 9-month-old Claude version on benchmarks. But it's on track for <mark>$80M/month revenue by December</mark> by selling sovereignty to HSBC, Tesco, CMA, and European governments spooked by US/China dependence. ASML led its $2B round.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" /></svg> Products & Research</h2>
+<ul>
+<li><span class="item-title">App releases surge 60% YoY in Q1, possibly driven by AI coding tools</span>
+<span class="source"><a href="http://www.techmeme.com/260419/p1#a260419p1">TechCrunch</a></span>
+Appfigures data: App Store releases alone up 80%. AI coding tools (Cursor, Claude Code, Copilot) may be fueling a mobile app boom rather than killing apps.</li>
+<li><span class="item-title">SemiAnalysis projects $100M+ in 2026 revenue</span>
+<span class="source"><a href="http://www.techmeme.com/260419/p2#a260419p2">The Information</a></span>
+Dylan Patel's AI newsletter and research firm. Revenue from subscriptions and AI supply chain research. Patel reportedly looking to jump into venture capital next.</li>
+<li><span class="item-title">Salesforce "Headless 360": entire platform now accessible to AI agents</span>
+<span class="source"><a href="https://www.salesforce.com/news/stories/salesforce-headless-360-announcement/">Salesforce</a></span>
+<span class="source"><a href="http://www.techmeme.com/260418/p7#a260418p7">VentureBeat</a></span>
+"No browser required." Full Salesforce + Agentforce + Slack exposed as APIs, MCP tools, and CLI commands. Most ambitious architectural overhaul in 27 years.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: AI #164 &mdash; Pre Opus (April 17)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-164-pre-opus">Don't Worry About the Vase</a></span>
+Published Friday. Includes deep breakdown of the Dwarkesh/Jensen Huang podcast. No new Zvi posts since. Next weekly AI update expected later this week.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

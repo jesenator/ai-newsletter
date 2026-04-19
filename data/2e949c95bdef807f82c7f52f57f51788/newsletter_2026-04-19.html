@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Sunday, April 19, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Sunday, April 19, 2026 &mdash; Quiet Sunday. Opus 4.7 inference concerns mounting. Robot wins half marathon. Floating ocean data centers revealed.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Update: Opus 4.7 Inference Concerns Growing</h2>
+<ul>
+<li><span class="item-title">Miles Brundage: "something's funky with Opus 4.7 [inference]"</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2045730535834837216">X: Miles Brundage</a></span> Multiple complaints continue post-launch-day fixes. Brundage reports <mark>Opus 4.7 "gives up a lot"</mark> &mdash; often abandoning tasks that other models can handle, even at max effort settings. 10K views. Seth Lazar (156 likes): "Absolutely <em>hate</em> adaptive thinking &mdash; I want max thinking every time." <a href="https://x.com/sethlazar/status/2045490834603491641">X: Seth Lazar</a></li>
+
+<li><span class="item-title">Community token comparison tool goes viral on HN (562 pts, 541 comments)</span>
+<span class="source"><a href="https://tokens.billchambers.me/leaderboard">Tokenomics</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47816960">HN</a></span> Anonymous community-sourced data comparing Opus 4.6 vs 4.7 request token counts on real inputs. Largest HN discussion of the weekend.</li>
+
+<li><span class="item-title">Simon Willison: detailed Opus 4.6&rarr;4.7 system prompt diff</span>
+<span class="source"><a href="https://simonwillison.net/2026/Apr/18/opus-system-prompt/">Simon Willison</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47823270">HN (65 pts)</a></span> Notable changes: expanded child safety instructions, new <code>&lt;acting_vs_clarifying&gt;</code> section (act first, ask later), anti-verbosity language, new disordered eating guardrails, and defenses against the "force a yes/no on controversial topics" screenshot attack. Also: Claude in Powerpoint is new, and the Trump presidency correction is no longer needed.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z" /></svg> Scary/Impressive &mdash; CivAI Material</h2>
+<ul>
+<li><span class="item-title">Beijing: robot "Lightning" wins half marathon in 50 minutes</span>
+<span class="source"><a href="https://www.theguardian.com/sport/video/2026/apr/19/humanoid-robots-race-past-humans-in-beijing-half-marathon-video">Guardian</a></span> <span class="source"><a href="https://www.bbc.com/news/videos/cz0e54yrppno">BBC</a></span> Honor's humanoid robot won the 2026 Beijing E-Town Humanoid Robot Half-Marathon on Sunday, <mark>finishing in ~50 minutes</mark> &mdash; well ahead of all human competitors. Over 70 robot teams participated. Good CivAI demo material on physical AI capabilities advancing rapidly.</li>
+
+<li><span class="item-title">LongCoT: frontier models score &lt;10% on long-horizon reasoning</span>
+<span class="source"><a href="https://arxiv.org/abs/2604.14140">arXiv</a></span> <span class="source"><a href="https://x.com/natashajaques/status/2045557384769413627">X: Natasha Jaques</a></span> New benchmark: 2.5K questions across chemistry, math, chess, logic, CS requiring tens&ndash;hundreds of thousands of reasoning tokens. GPT 5.2: 9.8%, Gemini 3 Pro: 6.1%. Jaques: "LLMs will supposedly cure cancer but can't do multi-turn reasoning." <mark>Agentic harnesses add 0% on math/chemistry.</mark></li>
+
+<li><span class="item-title">Grok 4.20 refuses authoritarian requests 42pp more than Grok 4</span>
+<span class="source"><a href="https://x.com/ahall_research/status/2045565767513763890">X: Adam Hall</a></span> <span class="source"><a href="https://www.dictatoreval.org/">Dictatorship Eval</a></span> Updated eval shows major improvement in Grok's refusal of authoritarian requests, though still at 0% refusal on codebase requests. Interesting safety eval for tracking model behavior over time.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> AI Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">David Shor data: AI now more important to voters than abortion &amp; climate change</span>
+<span class="source"><a href="https://x.com/DavidSKrueger/status/2045579373940805892">X: David Krueger</a></span> Krueger resurfaces Shor's Odd Lots data showing <mark>AI rose faster than any issue tracked</mark> &mdash; now ahead of climate change, child care, and abortion on voter concern lists. 9K views.</li>
+
+<li><span class="item-title">Nathan Calvin: OpenAI's policy team doesn't match its technical teams' seriousness</span>
+<span class="source"><a href="https://x.com/_NathanCalvin/status/2045714832737931545">X: Nathan Calvin</a></span> Encode's general counsel: "I do not see this level of seriousness in my interactions with the OpenAI global affairs team in the policy space &mdash; which looks much more like a typical reflexive company." 2.4K views.</li>
+
+<li><span class="item-title">Brundage: "I'd be more chill about AI if..."</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2045785083228164476">X: Miles Brundage</a></span> Critique of all three frontier labs: Google's safety talent not reflected in model behavior, OpenAI's AGI-pilledness not in policy, Anthropic's concern with AI R&D automation not in internal deployment care.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety</h2>
+<ul>
+<li><span class="item-title">Jeff Ladish thought experiment goes viral</span>
+<span class="source"><a href="https://x.com/JeffLadish/status/2045619828669706338">X: Jeffery Ladish</a></span> "If you had root access to every internet-connected phone and computer on earth, and had a million analysts working around the clock who didn't need to eat or sleep, what could you do?" 6.6K views, 31 replies exploring the implications. Vivid framing for AI capabilities demos.</li>
+
+<li><span class="item-title">CoopEval: benchmarking cooperation mechanisms for LLM agents</span>
+<span class="source"><a href="https://arxiv.org/abs/2604.15267">arXiv</a></span> <span class="source"><a href="https://x.com/conitzer/status/2045489660130935214">X: Vince Conitzer</a></span> New paper comparing game-theoretically sound cooperation mechanisms with LLM agents across social dilemmas. Relevant to multi-agent safety.</li>
+
+<li><span class="item-title">Dean Ball: "talking about AI risks is just marketing" is the new "Apple is just marketing"</span>
+<span class="source"><a href="https://x.com/deanwball/status/2045509635507913095">X: Dean Ball</a></span> "Mistaking cynicism for savvy." 12K views. Pushes back on the narrative that frontier lab safety messaging is purely strategic.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z" /></svg> Infrastructure & Industry</h2>
+<ul>
+<li><span class="item-title">Panthalassa: massive floating ocean data centers revealed</span>
+<img src="https://pbs.twimg.com/media/GnhXvXOasAAILy5?format=jpg&name=medium" class="image-float" alt="Panthalassa floating data center">
+<span class="source"><a href="https://x.com/ashleevance/status/2045541684054991080">X: Ashlee Vance</a></span> Company operated in secret for a decade. Built <mark>massive self-driving floating data centers that capture ocean water to spin turbines and power GPUs</mark>. 374K views. <a href="https://www.youtube.com/watch?v=Q4PCJRN7yGs">Full video</a>.</li>
+
+<li><span class="item-title">Vercel security incident &mdash; unauthorized access to internal systems</span>
+<span class="source"><a href="https://vercel.com/kb/bulletin/vercel-april-2026-security-incident">Vercel</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47824463">HN</a></span> Limited subset of customers impacted. Investigation ongoing with law enforcement. Recommend reviewing environment variables.</li>
+
+<li><span class="item-title">Prompt-to-Excalidraw with Gemma 4 running in browser (3.1GB)</span>
+<span class="source"><a href="https://teamchong.github.io/turboquant-wasm/draw.html">Demo</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47823460">HN</a></span> Show HN: Gemma 4 E2B running entirely in-browser via WASM, generating Excalidraw diagrams from prompts. Neat local-first AI demo.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">HN: Zero-Copy GPU Inference from WebAssembly on Apple Silicon (101 pts)</span>
+<span class="source"><a href="https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/">Abacus Noir</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47820195">HN</a></span> Technique for running GPU inference directly from WASM on M-series Macs with zero memory copies. Relevant to local AI on Mac.</li>
+
+<li><span class="item-title">HN: College instructor turns to typewriters to curb AI-written work (345 pts)</span>
+<span class="source"><a href="https://sentinelcolorado.com/uncategorized/a-college-instructor-turns-to-typewriters-to-curb-ai-written-work-and-teach-life-lessons/">Sentinel Colorado</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47818485">HN</a></span> 339 comments. The AI-in-education arms race continues.</li>
+
+<li><span class="item-title">Jack Clark teases Import AI #454 with Opus 4.7 fiction</span>
+<span class="source"><a href="https://x.com/jackclarkSF/status/2045605477808259182">X: Jack Clark</a></span> "The most satisfying use I've found for AI in writing is having AI systems write the words used by AI systems in my fiction." Excited about Opus 4.7 for creative work. Watch for Import AI #454.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
