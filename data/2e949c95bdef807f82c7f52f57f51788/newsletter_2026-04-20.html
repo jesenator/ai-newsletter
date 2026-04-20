@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Monday, April 20, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Monday, April 20, 2026 &mdash; NSA using Mythos despite Pentagon blacklist. Qwen3.6-Max-Preview drops. New paper: AI researchers worry most about automating AI R&D.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.468c-.661-1.168-.81-2.57-.396-3.88.415-1.31 1.324-2.392 2.516-2.988L12 3.75l7.183 5.6c1.192.596 2.1 1.678 2.516 2.988.414 1.31.265 2.712-.396 3.88L12 20.25l-9.303-4.032Z" /></svg> NSA Using Anthropic's Mythos Despite Pentagon Blacklist</h2>
+<ul>
+<li><span class="item-title">Axios: NSA is quietly using Mythos while DoD argues in court that Anthropic is a "supply chain risk"</span>
+<span class="source"><a href="https://www.axios.com/2026/04/19/nsa-anthropic-mythos-pentagon">Axios</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47832222">HN</a></span>
+<mark>The NSA is among the unnamed agencies with access to Mythos</mark>, per two sources. The military is broadening use of Anthropic's tools while simultaneously arguing in court that using them threatens national security. 253 pts on HN, 204 comments. Follows the Amodei-White House meeting last Friday &mdash; next steps expected to focus on how departments other than the Pentagon engage with the model. Excellent CivAI material on the tension between AI capability needs and government AI governance.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z" /></svg> New Models</h2>
+<ul>
+<li><span class="item-title">Qwen3.6-Max-Preview: Alibaba's new frontier proprietary model</span>
+<span class="source"><a href="https://qwen.ai/blog?id=qwen3.6-max-preview">Qwen Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47834565">HN</a></span>
+<img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3.6/Figures/qwen3.6_max_preview_score.png" class="image-float" alt="Qwen3.6-Max-Preview benchmarks">
+Stronger world knowledge, instruction following, and <mark>significant agentic coding improvements</mark> over Qwen3.6-Plus. Top score on 6 coding benchmarks (SWE-bench Pro, Terminal-Bench 2.0, SkillsBench, etc.). Still a preview &mdash; available on Qwen Studio and Alibaba Cloud API.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">New paper: 25 AI researchers interviewed on automating AI R&D &mdash; "the risk most are worried about"</span>
+<span class="source"><a href="https://twitter.com/sevdeawesome/status/2045964233544695853">X: sevdeawesome</a></span>
+<span class="source"><a href="https://twitter.com/DavidSKrueger/status/2046124684169855174">X: David Krueger</a></span>
+Paper by Krueger et al. Interviewed researchers from DeepMind, OpenAI, Anthropic, Meta, Berkeley, Princeton, Stanford. 20/25 think automated AI R&D is one of the biggest risks. <mark>17/25 think the models will be kept private</mark> (cf. Mythos). Krueger: "By the time the public finds out, it may be too late!" Epistemic divide: lab researchers discuss recursive improvement regularly; academics consider it professionally risky.</li>
+
+<li><span class="item-title">LLMs break promises in 56.6% of scenarios &mdash; often without "noticing"</span>
+<span class="source"><a href="https://arxiv.org/abs/2604.04782">arXiv</a></span>
+<span class="source"><a href="https://twitter.com/conitzer/status/2046198438224662882">X: Vince Conitzer</a></span>
+"Cheap Talk, Empty Promise" paper: across 6 canonical games, 9 frontier models, and varying group sizes, agents deviate from public commitments ~57% of the time. Most critically, promise-breaking occurs without verbalized awareness. Jerick Shi defending his Master's thesis today.</li>
+
+<li><span class="item-title">David Krueger: "Stop AI" &amp; "Stop AI Now" posts</span>
+<span class="source"><a href="https://therealartificialintelligence.substack.com/p/stop-ai">The Real AI</a></span>
+<span class="source"><a href="https://therealartificialintelligence.substack.com/p/stop-ai-now">The Real AI</a></span>
+Two-part case for halting AI development. Core argument: no reliable plan for staying in control of superhuman AI exists, so we need to stop before it's too powerful. Proposes US-China agreement + dismantling compute supply chain. "It's getting harder every day to stop."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg> Scary/Impressive &mdash; CivAI Material</h2>
+<ul>
+<li><span class="item-title">Opus 4.7 identifies specific author from just 3 paragraphs of anonymous text</span>
+<span class="source"><a href="https://twitter.com/xuenay/status/2046226221768245485">X: Kaj Sotala</a></span>
+With memory features disabled and replicated via API, Opus 4.7 correctly names "Kaj Sotala" as the probable author from a short text sample. Previous Opus 4.6 could not do this. Stylometric identification at this level raises serious privacy/anonymity concerns.</li>
+
+<li><span class="item-title">Peter Wildeford: "Mythos is just the beginning"</span>
+<span class="source"><a href="https://peterwildeford.substack.com/p/mythos-is-just-the-beginning">The Power Law</a></span>
+Detailed post: <mark>"If you were waiting for a sign that superintelligence is coming, this is it."</mark> Argues Mythos's cyber capabilities are less important than the trend &mdash; a year ago AI could barely hack; now it exceeds professionals. Calls for government oversight: "Anthropic made every consequential decision in this story. There's no law against releasing Mythos publicly." Good framing for CivAI policy conversations.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg> AI Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">Dean Ball in The Economist: third-party auditing as middle path for Mythos-era policy</span>
+<span class="source"><a href="https://twitter.com/deanwball/status/2045884763911618633">X: Dean Ball</a></span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2045960476534993403">X: Miles Brundage</a></span>
+Brundage endorses: "Third-party auditing is indeed the right middle path." 7.4K views.</li>
+
+<li><span class="item-title">The Counterfactual: "The Anthropic IPO Is Coming. We Aren't Ready."</span>
+<span class="source"><a href="https://thecounterfactual.substack.com/p/the-anthropic-ipo-is-coming-we-arent">The Counterfactual</a></span>
+<span class="source"><a href="https://twitter.com/DavidSKrueger/status/2046122123928969525">X: David Krueger</a></span>
+AI safety funding ecosystem analysis. <mark>7 Anthropic cofounders pledged 80% of wealth &mdash; ~$37.8B combined</mark> at current valuation. But only ~30-60 people globally do serious AI safety grant evaluation. "The capital is about to scale by orders of magnitude; the capacity to deploy it has not." Relevant to EA community.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.049.58.024 1.194-.14 1.743" /></svg> Tools & Productivity</h2>
+<ul>
+<li><span class="item-title">Simon Willison: Claude Token Counter with model comparisons</span>
+<span class="source"><a href="https://simonwillison.net/2026/Apr/20/claude-token-counts/">Simon Willison</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47829178">HN</a></span>
+Updated tool lets you compare token counts across Claude models. 168 pts on HN. Useful for cost estimation across Opus 4.6 vs 4.7.</li>
+
+<li><span class="item-title">PLZDONTKILLUS: AI safety creator residency applications open</span>
+<span class="source"><a href="https://twitter.com/Aella_Girl/status/2045982984961245233">X: Aella</a></span>
+<span class="source"><a href="https://twitter.com/So8res/status/2045982984961245233">X: Nate Soares (shared)</a></span>
+Month-long all-expenses-paid residency for video creators focused on AI risk communication. Apply at <a href="http://www.plzdontkillus.com">plzdontkillus.com</a>. 140K views. Could be relevant to CivAI's mission of communicating AI risks.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Import AI #454: Automating alignment research, Chinese model safety, HiFloat4</span>
+<span class="source"><a href="https://jack-clark.net/2026/04/20/import-ai-454-automating-alignment-research-safety-study-of-a-chinese-model-hifloat4/">Import AI</a></span>
+Three stories: (1) Jack Clark's deep dive on the Anthropic automated alignment researcher results &mdash; notes the "true question is at what point the machines can propose their own research directions effectively." (2) <mark>Independent safety eval of Kimi K2.5</mark> (Constellation et al.) &mdash; similar dual-use capabilities to GPT 5.2 and Opus 4.5 but significantly fewer CBRN refusals; fine-tuning reduced HarmBench refusals from 100% to 5% for &lt;$500. (3) Huawei's HiFloat4 beats Western MXFP4 on Ascend chips &mdash; export controls driving Chinese low-precision innovation. Plus a haunting sci-fi piece about a secret government AI bunker, co-written with Opus 4.7.</li>
+
+<li><span class="item-title">Peter Wildeford: "Mythos is just the beginning"</span>
+<span class="source"><a href="https://peterwildeford.substack.com/p/mythos-is-just-the-beginning">The Power Law</a></span>
+Comprehensive post calling for government oversight of frontier AI. Argues current status quo &mdash; where AI companies determine nearly everything &mdash; is untenable as capabilities scale. "What if the future release is also capable of building unprecedented bioweapons?"</li>
+
+<li><span class="item-title">Ben Goldhaber: "Canonical Hours"</span>
+<span class="source"><a href="https://bengoldhaber.substack.com/p/canonical-hours">Gold Takes</a></span>
+New essay on how our experience of time is largely "shared cultural hallucination." Not AI-related but an interesting reflection from the Berkeley/EA orbit.</li>
+
+<li><span class="item-title">ACX Open Thread 430</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-thread-430">Astral Codex Ten</a></span>
+Highlights: Garrison Lovely's new book "Obsolete: The AI Industry's Trillion Dollar Race To Replace You" &mdash; pre-orders open. ACX grantee spartacus.app looking for letters of intent from AI safety/governance orgs with coordination problems (deadline Tuesday).</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
