@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Wednesday, April 22, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 20px; font-size: 13px; border-radius: 3px; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Wednesday, April 22, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> Major Releases & Announcements</h2>
+<ul>
+<li>
+<img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/two_chips_for_the_agentic_era_her.width-200.format-webp.webp" class="image-float" alt="Google TPU 8">
+<span class="item-title">ChatGPT Images 2.0 launches</span>
+<span class="source"><a href="https://openai.com/index/introducing-chatgpt-images-2-0/">OpenAI</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47852835">HN (935 pts)</a></span>
+New image generation model with massive quality jump. <mark>Fuses code and image generation</mark> &mdash; can create functional mazes, detailed scientific posters, comics from text. <a href="https://x.com/goodside/status/2046715990763774007">X: Riley Goodside</a>: generated a solvable 32x48 maze in one shot. <a href="https://x.com/DeryaTR_/status/2046703244123222470">X: Derya</a>: created "one of the most detailed posters of the immune response ever made" with no significant errors (874 likes). Available via API as <code>gpt-image-2</code>. Excellent CivAI demo material.
+</li>
+<li>
+<span class="item-title">Google Cloud Next: TPU 8t and 8i &mdash; two specialized chips for training and inference</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/">Google</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47862497">HN (141 pts)</a></span>
+8th-gen TPUs split into two chips: TPU 8t (training, 3x compute per pod, superpod scales to 9,600 chips / 121 ExaFlops) and TPU 8i (inference, optimized for low-latency agentic workloads). Near-linear scaling to 1M chips via new Virgo Network.
+</li>
+<li>
+<span class="item-title">Google Deep Research & Deep Research Max (Gemini 3.1 Pro)</span>
+<span class="source"><a href="https://x.com/GoogleDeepMind/status/2046627044453134389">X: Google DeepMind</a></span>
+Two new autonomous research agents. Deep Research Max spends hours creating comprehensive reports with native infographics. MCP support for custom data sources. <a href="https://x.com/Miles_Brundage/status/2046785403131465826">X: Miles Brundage</a> (87 likes): "confused as to why Google is pushing Deep Research with a new Max mode when they previously struggled to give a small amount of Deep Think queries."
+</li>
+<li>
+<span class="item-title">OpenAI Codex testing free access for all plans</span>
+<span class="source"><a href="https://x.com/rohanvarma/status/2046769635350241292">X: Rohan Varma (OpenAI)</a></span>
+"Running a small test for ~100% of Codex users" making best models + Codex available to free and paid plans. <mark>364K views</mark>. <a href="https://x.com/thsottiaux/status/2046740759056162816">X: Thomas Sottiaux</a> (Claude Code) fires back: "Codex will continue to be available both in FREE and PLUS ($20) plans... Transparency and trust are two principles we will not break." 1.17M views.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> AI Safety & Security</h2>
+<ul>
+<li>
+<span class="item-title">Bloomberg: Mythos accessed by unauthorized users</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-04-21/anthropic-s-mythos-model-is-being-accessed-by-unauthorized-users">Bloomberg</a></span>
+<mark>Unauthorized access to Claude Mythos Preview via a third-party vendor environment</mark>. Anthropic investigating. <a href="https://x.com/Miles_Brundage/status/2046760823507591294">X: Miles Brundage</a> (88 likes): "One compromised account making non-cyber queries is not the threat model... the question is always 'how much misuse/how bad.'" <a href="https://x.com/_NathanCalvin/status/2046770578116231465">X: Nathan Calvin</a>: "(1) it's bad (2) could have been way worse (3) does not inspire confidence as stakes get higher."
+</li>
+<li>
+<span class="item-title">GovAI: Coding agents are changing the biosecurity risk landscape</span>
+<span class="source"><a href="https://www.governance.ai/analysis/coding-agents-are-changing-the-biosecurity-risk-landscape">GovAI</a></span>
+<span class="source"><a href="https://x.com/kamilelukosiute/status/2046677025747067050">X: Kamile Lukosiute</a></span>
+Non-biologist used Claude Code over a weekend (~$760) to <mark>fine-tune a biological AI model on human-infecting viral sequences</mark>, removing its safety mitigations. Three channels: agents help operate BAIMs, remove safeguards via fine-tuning, and speed up creation of new dangerous models. Strong CivAI material on biosecurity x AI agents.
+</li>
+<li>
+<span class="item-title">FAR.AI Deception Workshop: 5 requirements for detecting lying models</span>
+<span class="source"><a href="https://www.far.ai/news/what-we-learned-at-the-far-ai-deception-workshop">FAR.AI</a></span>
+<span class="source"><a href="https://x.com/farairesearch/status/2046633389432672309">X: FAR.AI</a></span>
+25 researchers from frontier labs, gov safety institutes, and academia. Five "must-have" principles: establish ground truth, document assumptions, evaluate transfer, specify target phenomenon, specify evaluated inputs. Top-rated eval: red-team/blue-team protocols where one team trains a model to deceive the other's monitor.
+</li>
+<li>
+<span class="item-title">Epoch AI: Opus 4.7 ECI score + Mythos time-horizon predictions</span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2046631622909558857">X: Epoch AI</a></span>
+<span class="source"><a href="https://x.com/AlexBarry4/status/2046951516754280600">X: Alex Barry</a></span>
+Opus 4.7 scores 156 on ECI &mdash; ahead of Opus 4.6, behind GPT-5.4, Gemini 3.1 Pro, and GPT-5.4 Pro. Alex Barry predicts <mark>Mythos 50% time-horizon at ~40 hours</mark>, Opus 4.7 at ~19 hours.
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21" /></svg> AI Policy</h2>
+<ul>
+<li>
+<span class="item-title">ControlAI: $50M/year plan for 10% chance of banning ASI</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/TnAR5Sf5hphfnzNTr/usd50-million-a-year-for-a-10-chance-to-ban-asi-1">LessWrong</a></span>
+<span class="source"><a href="https://x.com/andreamiotti/status/2046635262323589566">X: Andrea Miotti</a></span>
+<a href="https://x.com/So8res/status/2046666964077355060">Nate Soares endorses</a> (122 likes): "I agree... most folks concerned about AI have been far too coy about extinction risk, and ControlAI is one of few exceptions." Also: ControlAI CEO on <a href="https://x.com/TalkTV/status/2046940407993364758">TalkTV</a> warning about extinction risk.
+</li>
+<li>
+<span class="item-title">CISA doesn't have access to Mythos</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2046624867467051515">X: Miles Brundage</a></span>
+<span class="source"><a href="https://www.axios.com/2026/04/21/cisa-anthropic-mythos-ai-security">Axios</a></span>
+NIST is testing Mythos, but the top US cyber agency was not given access. Brundage: "I'd be more worried about CAISI or NSA not having access since CISA has been dysfunctional under this admin."
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Productivity & Tools</h2>
+<ul>
+<li>
+<span class="item-title">New Raycast rollout officially started</span>
+<span class="source"><a href="https://x.com/raycast/status/2046927183114092888">X: Raycast</a></span>
+The long-awaited new Raycast for Mac is rolling out in stages. <mark>Invites sent via email</mark>, not in-app updates. 778 likes, 60K views.
+</li>
+<li>
+<span class="item-title">SpaceX secures option to acquire Cursor for $60B</span>
+<span class="source"><a href="https://www.reuters.com/technology/spacex-says-it-has-option-acquire-startup-cursor-60-billion-2026-04-21/">Reuters</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47855293">HN (714 pts)</a></span>
+SpaceX can either buy Cursor outright for $60B or pay $10B for a collaboration. 884 HN comments. Massive deal that signals how valuable agentic coding has become.
+</li>
+<li>
+<span class="item-title">OpenAI Privacy Filter: open-weight PII detection model</span>
+<span class="source"><a href="https://openai.com/index/introducing-openai-privacy-filter">OpenAI</a></span>
+1.5B params (50M active), Apache 2.0 license. Detects and redacts PII in text with 97.4% F1 on benchmarks. Runs locally, 128K context window. Useful for privacy-preserving AI workflows.
+</li>
+<li>
+<span class="item-title">Notion: Custom Agent Directory + Image Gen + Kimi K2.6</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2046696804717089245">X: Notion</a></span>
+New full-page gallery for custom agents (Library &rarr; Agents tab). Image Gen now live: hit /image to generate diagrams, slides, infographics from any doc. Kimi K2.6 now available in Notion. <a href="https://x.com/ivanhzhao/status/2046692110959628774">Ivan Zhao</a>: "A comic based on your meeting notes."
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Notable Discourse</h2>
+<ul>
+<li>
+<span class="item-title">"If Anyone Builds It, Everyone Dies" — 150K copies sold, Japanese edition out</span>
+<span class="source"><a href="https://x.com/robbensinger/status/2046777530750005615">X: Rob Bensinger</a></span>
+<span class="source"><a href="https://x.com/MIRIBerkeley/status/2046893655047516388">X: MIRI</a></span>
+Yudkowsky/Soares book has sold ~150K English copies with "continuously strong" sales since September. Japanese edition just released; Dutch, Brazilian Portuguese, Korean also available. Many translations in pipeline.
+</li>
+<li>
+<span class="item-title">Meta to track employee keystrokes and mouse movements for AI training</span>
+<span class="source"><a href="https://www.reuters.com/sustainability/boards-policy-regulation/meta-start-capturing-employee-mouse-movements-keystrokes-ai-training-data-2026-04-21/">Reuters</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47851948">HN (697 pts)</a></span>
+Internal memo reveals Meta installing tracking software on US employee computers. <a href="https://x.com/ohlennart/status/2046660515682750641">X: Lennart Heim (Epoch)</a>: "We wrote about this publicly in 2022 in our 'Will we run out of data?' paper."
+</li>
+<li>
+<span class="item-title">Neil Chowdhury: "Opus 4.7 is buggy because nobody at Anthropic dogfooded it &mdash; they're all using Mythos"</span>
+<span class="source"><a href="https://x.com/ChowdhuryNeil/status/2046791854805639481">X: Neil Chowdhury</a></span>
+850 likes, 45K views. Resonates with ongoing Opus 4.7 complaints.
+</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li>
+<span class="item-title">Zvi: Opus 4.7 Part 2 &mdash; Capabilities and Reactions</span>
+<span class="source"><a href="https://thezvi.substack.com/p/opus-47-part-2-capabilities-and-reactions">Don't Worry About the Vase</a></span>
+Comprehensive review. Verdict: "most intelligent model in its class" and a "substantial improvement over 4.6." Best practices: treat it like a coworker, not a tool; use xhigh thinking; remove excess system prompts. Acknowledges jaggedness, adaptive thinking issues, and strange refusals. Daily driver for Zvi's coding; GPT-5.4 still preferred for web search / fact checks. Model welfare post coming tomorrow.
+</li>
+<li>
+<span class="item-title">Scott Alexander: "Half A Month Of Consolation Writing Advice"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/half-a-month-of-consolation-writing">Astral Codex Ten</a></span>
+15 pieces of writing advice for Inkhaven (Lighthaven's blogger bootcamp). Highlights: against microdishonesty in writing, the purpose of poetry as "closing off options so you have no choice but to avoid cliches," and the question "what can't the reader trivially regenerate from a prompt?" in the AI era.
+</li>
+<li>
+<span class="item-title">Mox: This week (4/20&ndash;4/26)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-420426">Mox Populi</a></span>
+First Animal Welfare coworking day, Arbor Trading Bootcamp (Apr 24-26), vibecoding club, community dinner.
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
