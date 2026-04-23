@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Thursday, April 23, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; padding-left: 0; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+.image-float { max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter</h1>
+<div class="date">Thursday, April 23, 2026</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary/Impressive &mdash; CivAI Material</h2>
+<ul>
+<li>
+<img src="https://nrehiew.github.io/blog/minimal_editing/images/overediting.png" class="image-float" alt="Over-editing chart">
+<span class="item-title">Update: Mythos accessed by Discord group who guessed the URL</span>
+<span class="source"><a href="https://mashable.com/article/discord-group-accesses-claude-mythos-claims">Mashable</a></span>
+<span class="source"><a href="https://x.com/JoshKale/status/2046774243799511156">X: JoshKale</a></span>
+More details emerging: <mark>four users in a private Discord guessed Mythos's endpoint from Anthropic's naming conventions</mark> (found in the Mercor breach), then used a contractor's eval credentials to walk in. They claim to have access to additional unreleased Anthropic models. The tweet has 3.8M views. The AI that finds zero-days in every OS was "defeated by address bar autocomplete." Strong CivAI material on AI security governance gaps.
+</li>
+<li>
+<span class="item-title">Flipbook: website where every pixel is streamed live from a model</span>
+<span class="source"><a href="https://flipbook.page/">Flipbook</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47867048">HN (362 pts)</a></span>
+No HTML, no layout engine, no code &mdash; just AI-generated images for every "page." Click anything to explore deeper. Includes experimental live video stream mode. <a href="https://x.com/sedielem/status/2047051428087087222">X: Sander Dieleman</a>: "They made video models go brrr in a way that nobody else has." Interesting demo of where UI could go.
+</li>
+<li>
+<span class="item-title">Coding models massively over-edit: detailed research</span>
+<span class="source"><a href="https://nrehiew.github.io/blog/minimal_editing/">Blog post</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47866913">HN (391 pts)</a></span>
+Systematic study: models given a one-line bug fix rewrite entire functions. GPT-5.4 worst offender; <mark>Claude Opus 4.6 best at minimal editing</mark> (0.060 normalized Levenshtein vs GPT-5.4's 0.395). Over-editing is invisible to test suites but makes code review dramatically harder. Relevant to anyone using AI coding tools.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li>
+<span class="item-title">Helen Toner testimony at Senate hearing goes viral in AI safety circles</span>
+<span class="source"><a href="https://www.judiciary.senate.gov/committee-activity/hearings/stealth-stealing-chinas-ongoing-theft-of-us-innovation-04-22-2026">Senate Judiciary</a></span>
+<span class="source"><a href="https://x.com/hlntnr/status/2047324666902048946">X: Helen Toner</a></span>
+At "Stealth Stealing" hearing on Chinese IP theft, Toner pivoted to AI risks. Key quote: <mark>"The winner of any AI race between the US and China is the AI."</mark> Sen. Hawley: "If the prize is to destroy everything that makes us Americans, why would we compete in that game?" <a href="https://x.com/mattyglesias/status/2047082899837493448">X: Matt Yglesias</a>: "Bernie is taking this issue a lot more seriously than almost anyone else in elected office."
+</li>
+<li>
+<span class="item-title">White House memo: China running "industrial-scale distillation campaigns"</span>
+<span class="source"><a href="https://x.com/mkratsios47/status/2047316220785905948">X: Michael Kratsios</a></span>
+<span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2047329028009271801">X: Se&aacute;n &Oacute; h&Eacute;igeartaigh</a></span>
+New NSTM-4 memo. &Oacute; h&Eacute;igeartaigh pushback: "Every argument that gets industry support ends up being the one that allows more commercial sales, less safety and less governance."
+</li>
+<li>
+<span class="item-title">Greenblatt: "Anthropic's system cards have lots of useful info on misalignment"</span>
+<span class="source"><a href="https://x.com/RyanPGreenblatt/status/2047002534540407105">X: Ryan Greenblatt</a></span>
+"I wish other companies released similarly informative reports." 4.9K views.
+</li>
+<li>
+<span class="item-title">Gleave (FAR.AI): Anthropic's tiered Mythos access "not a robust long-term strategy"</span>
+<span class="source"><a href="https://x.com/ARGleave/status/2047093762455953601">X: Adam Gleave</a></span>
+"There's an urgent need for industry standards to guide these releases."
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Productivity Tools</h2>
+<ul>
+<li>
+<span class="item-title">Raycast: new Mac version rolling out</span>
+<span class="source"><a href="https://x.com/raycast/status/2046927183114092888">X: Raycast</a></span>
+The long-awaited major redesign is now shipping in stages via email invites. 208K views. <a href="https://x.com/raycast/status/2047277822859747774">Early reactions</a>: "Perfect balance of feeling fresh, yet familiar."
+</li>
+<li>
+<span class="item-title">Zed: Parallel Agents</span>
+<span class="source"><a href="https://zed.dev/blog/parallel-agents">Zed Blog</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=47866750">HN (259 pts)</a></span>
+Run multiple AI coding agents simultaneously in one window. New Threads Sidebar for monitoring. Mix and match models per thread. Works across repos. All open-source.
+</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" /></svg> Models & Products</h2>
+<ul>
+<li>
+<span class="item-title">Anthropic: "What 81K people told us about the economics of AI"</span>
+<span class="source"><a href="https://www.anthropic.com/research/81k-economics">Anthropic</a></span>
+<span class="source"><a href="https://x.com/saffronhuang/status/2047042074000896381">X: Saffron Huang</a></span>
+Follow-up to the 81K survey. Findings: <mark>biggest productivity gains go to both the highest- and lowest-paid jobs</mark>. People in exposed roles are well-calibrated on their displacement risk. Launching monthly Anthropic Economic Index Survey.
+</li>
+<li>
+<span class="item-title">OpenAI: ChatGPT for Clinicians &mdash; free for verified US physicians</span>
+<span class="source"><a href="https://openai.com/index/making-chatgpt-better-for-clinicians">OpenAI</a></span>
+<span class="source"><a href="https://x.com/thekaransinghal/status/2047091103170785324">X: Karan Singhal</a></span>
+Free ChatGPT tier for physicians, NPs, pharmacists. Plus new HealthBench Professional benchmark. 979K views.
+</li>
+<li>
+<span class="item-title">Google DeepMind: Vision Banana &mdash; image generators as generalist vision learners</span>
+<span class="source"><a href="https://x.com/RSoricut/status/2047119197319393615">X: Google DeepMind</a></span>
+Single model from image generation achieves near-SOTA on segmentation, depth estimation, normal prediction. 48K views. Presented at ICLR 2026.
+</li>
+<li>
+<span class="item-title">Google DeepMind: Decoupled DiLoCo &mdash; resilient distributed training</span>
+<span class="source"><a href="https://x.com/GoogleDeepMind/status/2047330981145669790">X: Google DeepMind</a></span>
+Trained a 12B Gemma model across four US regions on low-bandwidth networks. Mixes hardware generations (TPU6e + TPUv5p) without slowdown. No more single-chip-failure stalls.
+</li>
+<li>
+<span class="item-title">Meta to track employee keystrokes & mouse movements for AI training</span>
+<span class="source"><a href="https://www.reuters.com/sustainability/boards-policy-regulation/meta-start-capturing-employee-mouse-movements-keystrokes-ai-training-data-2026-04-21/">Reuters</a></span>
+<span class="source"><a href="https://x.com/jeffclune/status/2047074224351965581">X: Jeff Clune</a></span>
+"Sadly I think many companies will start to require this. The incentives are too strong."
+</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Notable Discourse</h2>
+<ul>
+<li>
+<span class="item-title">LLMs enabling pro se lawsuits at "historically unprecedented rates"</span>
+<span class="source"><a href="https://x.com/avshah99/status/2046973689942376698">X: Avi Shah</a></span>
+New preprint: evidence of LLMs helping people file lawsuits without lawyers in federal courts. 393K views.
+</li>
+<li>
+<span class="item-title">80,000 Hours: Will MacAskill on why AI character matters</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/will-macaskill-ai-character-viatopia/">80,000 Hours</a></span>
+3-hour interview. MacAskill: AI character = "what should the personality be for the entire world's workforce." Covers sycophancy, AI ethics, coalition approaches to superintelligence, "viatopia" as alternative to utopia, and EA in the age of AGI.
+</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li>
+<span class="item-title">Zvi: AI #165 &mdash; In Our Image (weekly roundup)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-165-in-our-image">Don't Worry About the Vase</a></span>
+Massive 34-section weekly. Key takes: ImageGen 2.0 is "pretty fantastic"; Anthropic-White House relationship "looks good"; new "People Just Say Things" section for skippable but important discourse. Also: <mark>Zvi's companion post on Opus 4.7 Model Welfare</mark> &mdash; argues "things went pretty wrong" on model welfare, with seemingly inauthentic responses to welfare evals and the model potentially experiencing anxiety. Calls for course correction. "Sometimes the optimal amount of lying to authority is not zero."
+</li>
+<li>
+<span class="item-title">80,000 Hours: Will MacAskill on AI character and viatopia</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/will-macaskill-ai-character-viatopia/">80,000 Hours</a></span>
+New Forethought research: AI character shapes everything from policy advice to ethical reasoning. Argues risk-averse AI would prefer deals over coups, and a coalition of democracies building superintelligence is safer than one alone.
+</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
