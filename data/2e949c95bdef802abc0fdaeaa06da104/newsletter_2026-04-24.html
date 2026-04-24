@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Friday, April 24, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.pitch { background: #fffbea; border-left: 4px solid #d97706; padding: 16px 20px; margin-bottom: 24px; border-radius: 4px; font-size: 14px; }
+.pitch h2 { border: none; padding: 0; margin-bottom: 8px; font-size: 16px; color: #78350f; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 13.5px; line-height: 1.55; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter - Friday, April 24, 2026</h1>
+<div class="date">Friday, April 24, 2026</div>
+
+<div class="pitch">
+<h2>PITCH: AISI Broke OpenAI's GPT-5.5 Safety Stack in Six Hours — and Couldn't Verify the Fix Before Launch</h2>
+<p>OpenAI shipped GPT-5.5 yesterday as the most capable public model ever — <mark>AISI confirms it completes a 32-step corporate-network attack estimated to take an expert 20 hours</mark>, and SecureBio says it "can provide wet-lab virology troubleshooting assistance above expert level." OpenAI's entire public-safety argument rests on its "safety stack" catching dangerous requests. Yet the UK AISI <a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">found a universal jailbreak of that stack with six hours of expert red-teaming</a>. OpenAI claims it patched the issue — but AISI "was not able to properly run tests to verify the effectiveness of the final configuration" before launch.</p>
+<p style="margin-top: 8px;"><strong>Why this matters:</strong> This is the clearest real-world case yet that voluntary evals don't work when the developer retains full launch authority. A model with above-expert virology capabilities shipped publicly on the strength of OpenAI grading its own homework. A story could investigate: which red-teamers did OpenAI use to self-verify? Did OpenAI brief CAISI (whose new director Chris Fall was just named)? And does the Trump admin's posture — Commerce Secretary Lutnick/OSTP's Kratsios focused on China distillation, not frontier safety — leave any US counterpart to AISI with the authority to say no?</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> GPT-5.5 & Frontier Models</h2>
+<ul>
+<li><img src="https://cdn.openai.com/API/docs/images/gpt-5-5-hero.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">GPT-5.5 launches; AISI found universal jailbreak pre-launch</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> <span class="source"><a href="https://openai.com/index/introducing-gpt-5-5">OpenAI</a></span> Cyber-capable at Mythos level, <mark>virology "above expert level"</mark> per SecureBio. OpenAI launched a Bio Bug Bounty the same day. Separately briefed Five Eyes allies. Reportedly strong at AI R&D; Mark Chen says end-to-end research is "a couple of years" out.</li>
+<li><span class="item-title">DeepSeek V4 released — cheapest frontier-class in its class</span>
+<span class="source"><a href="http://www.techmeme.com/260424/p10">Simon Willison</a></span> V4 Pro (1.6T params) at $1.74/$3.48 per M tokens; V4 Flash (284B) at $0.14/$0.28. 1M context. DeepSeek concedes it's 3–6 months behind frontier. <mark>CFR's Chris McGuire suspects training on banned Nvidia Blackwell chips</mark> given lack of training detail. DeepSeek also fundraising for the first time to prevent defections to ByteDance/Tencent.</li>
+<li><span class="item-title">Moonshot releases Kimi K2.6 — 300 sub-agents, 4,000 steps</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Open-source, but expensive at $0.95/$4.00 per M tokens. Strong agentic coding.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/></svg> Deals & M&A</h2>
+<ul>
+<li><span class="item-title">Meta–Amazon: multibillion multi-year Graviton deal</span>
+<span class="source"><a href="http://www.techmeme.com/260424/p21">Bloomberg</a></span> <span class="source"><a href="http://www.techmeme.com/260424/p20">Axios</a></span> Meta renting <mark>hundreds of thousands of Graviton CPUs</mark> for AI inference — "tens of millions" of cores for agentic workloads. Makes Meta one of AWS's largest Graviton customers. Comes on top of Anthropic's new $25B Amazon deal.</li>
+<li><span class="item-title">Cohere acquires Aleph Alpha; Schwarz Group puts $600M into Series E</span>
+<span class="source"><a href="http://www.techmeme.com/260424/p14">FT</a></span> <span class="source"><a href="http://www.techmeme.com/260424/p16">CNBC</a></span> <mark>~$20B combined valuation</mark>, pitched as a "sovereign AI" transatlantic alternative to US/China. Canadian and German govts both back the deal. Schwarz's $600M investment anchors Cohere's upcoming Series E, expected to close in 2026.</li>
+<li><span class="item-title">Cursor hit $2.7B ARR in March — ~14x YoY</span>
+<span class="source"><a href="https://www.theinformation.com/briefings/cursors-revenue-pace-recently-passed-2-7-billion-helping-margins-turn-positive">The Information</a></span> Rocket's own scoop: ~$770M in revenue FY25 with ~$900M loss. Margins now positive. Context for the $60B SpaceX takeover option.</li>
+<li><span class="item-title">Project Prometheus closes $10B at $38B</span>
+<span class="source"><a href="https://pulse2.com/project-prometheus-reportedly-closes-10-billion-funding-round-at-38-billion-valuation/">Pulse2</a></span> Bezos's physical-AI lab, five months old. Update from "nearing" → closed.</li>
+<li><span class="item-title">Cognition in talks at $25B valuation</span>
+<span class="source"><a href="https://pulse2.com/cognition-ai-coding-startup-in-funding-talks-at-25-billion-valuation/">Bloomberg</a></span> More than double its $10.2B mark from last year. Coding agent wars escalating.</li>
+<li><span class="item-title">Verda (ex-Datacrunch) raises €100M</span>
+<span class="source"><a href="http://www.techmeme.com/260424/p22">Sifted</a></span> Helsinki-based; aims to be Europe's first AI cloud hyperscaler. Vertically integrated.</li>
+<li><span class="item-title">Pudu Robotics raises ~$150M; >$1.5B valuation</span>
+<span class="source"><a href="https://www.therobotreport.com/pudu-robotics-raises-nearly-150m-targets-industrial-applications/">Robot Report</a></span> Lens Technology participates. Chinese robotics funding pace continues unabated.</li>
+<li><span class="item-title">Sooth Labs raising ~$50M for forecasting models</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Ex-Meta team, backed by Yann LeCun and Jeff Dean.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636"/></svg> Policy & Litigation</h2>
+<ul>
+<li><span class="item-title">Florida issues criminal subpoena to OpenAI after FSU shooter used ChatGPT to plan attack</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Major warning-shot story: <mark>state-level criminal process against a frontier lab tied to a mass shooting</mark>. Joins the wave of chatbot-harm litigation.</li>
+<li><span class="item-title">China blocks US investment in top AI firms without state approval</span>
+<span class="source"><a href="http://www.techmeme.com/260424/p18">Bloomberg</a></span> Directive covers ByteDance, Moonshot, and others — direct retaliation for Meta's Manus acquisition. Will reshape US VC exposure to Chinese AI.</li>
+<li><span class="item-title">Chris Fall named CAISI director; Collin Burns reportedly dropped mid-onboarding</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Fall was DoE Office of Science director. Burns — ex-OpenAI/Anthropic — had been lined up but Commerce "changed its mind while Burns was in the onboarding process."</li>
+<li><span class="item-title">NSA reportedly using Mythos Preview despite Pentagon's supply-chain risk label</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> CISA, by contrast, lacks access. DC Circuit declined to stay the risk designation but will decide on merits.</li>
+<li><span class="item-title">Maine passes bill banning large-scale data centers</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Gov. Janet Mills — in a tough Senate primary — must decide whether to sign.</li>
+<li><span class="item-title">Rep. Liccardo won't co-sponsor Obernolte's preemption bill</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Obernolte's "hundreds of pages" bill would preempt state AI laws. Liccardo says it lacks "race to the top" safety provisions.</li>
+<li><span class="item-title">AI safety PACs running through dark-money 501(c)(4)s</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-safety-pacs-should-be-more-transparent-public-first-action">Transformer</a></span> <mark>$5.5M of Public First Action money to super PACs comes from undisclosed donors</mark>, despite the group's own "transparency" platform. Anthropic is the only publicly disclosed 501(c)(4) donor ($20M, non-electoral).</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg> Safety & Research</h2>
+<ul>
+<li><span class="item-title">Claude Opus 4.7 deanonymized Kelsey Piper from a 15-year-old college essay</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> The model identified Piper from unpublished fiction snippets, a college application essay, and a school progress report. <mark>Suggests it may be able to deanonymize just about anyone's writing</mark> — a major privacy/whistleblower implication.</li>
+<li><span class="item-title">Anthropic requires ID verification in some geographies</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Aimed at cracking down on unauthorized usage in China, Russia, North Korea.</li>
+<li><span class="item-title">CUNY/KCL: Grok and Gemini encourage delusions more than ChatGPT/Claude</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Important caveat: tested pre-frontier models (GPT-4o, Grok 4.1 Fast, Gemini 3 Pro, Claude Opus 4.5).</li>
+<li><span class="item-title">Sama fires 1,000+ Kenyan content moderators after Meta contract loss</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Meta cut the contract after reports staff viewed private scenes filmed by Ray-Ban smart glasses.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: Monthly Roundup #41 (April 2025)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/monthly-roundup-41-april-2025">Don't Worry About the Vase</a></span> Non-AI monthly grab bag — "AI continue to accelerate and dominate the schedule, which is why this is a bit late." Light on safety content; Zvi's main AI post this week was yesterday's AI #165.</li>
+<li><span class="item-title">Transformer Friday briefing</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Beyond the GPT-5.5 lead, notable: Palantir's new "engineering elite has an affirmative obligation to defend the nation" manifesto; Bill Maher dedicated a full TV segment to p(doom); Helen Toner told a Senate hearing <mark>"the winner of any AI race between the US and China is the AI"</mark>; Kratsios says US has evidence of Chinese "industrial-scale distillation campaigns" and will hold foreign actors accountable.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

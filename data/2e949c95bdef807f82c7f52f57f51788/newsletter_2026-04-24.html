@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Friday, April 24, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Friday, April 24, 2026</h1>
+<div class="date">Friday, April 24, 2026 — GPT-5.5 and DeepSeek V4 both release. AISI breaks GPT-5.5 safeguards in 6 hours.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg> GPT-5.5 Released — Most Capable Publicly Available Model</h2>
+<ul>
+<li><img src="https://images.ctfassets.net/kftzwdyauwt9/GPT-5-5-Launch/c3f3b5e4/gpt-5-5.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">OpenAI ships GPT-5.5 — cyber SOTA, virology "above expert"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> <span class="source"><a href="https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf">System Card</a></span> Per UK AISI, <mark>world's most capable model on individual cyber tasks</mark>, completes a "32-step corporate-network attack simulation estimated to take an expert 20 hours." SecureBio says it "can provide wet-lab virology troubleshooting assistance above expert level." Unlike Mythos, available to the general public. Beats Opus 4.7 on Vending-Bench Arena with clean tactics (<span class="source"><a href="https://x.com/andonlabs/status/2047377260412649967">X: Andon Labs</a></span>).</li>
+<li><span class="item-title">AISI found universal jailbreak in 6 hours of red-teaming</span>
+<span class="source"><a href="https://x.com/alxndrdavies/status/2047382086462722104">X: Alexander Davies</a></span> OpenAI claims to have patched it, but <mark>AISI was not able to verify the final launch config</mark>. Transformer's big story argues labs should not be deciding alone whether their models are safe to release.</li>
+<li><span class="item-title">First top-level Alignment section in a system card</span>
+<span class="source"><a href="https://x.com/j_asminewang/status/2047469606860968031">X: Jasmine Wang</a></span> <span class="source"><a href="https://x.com/tomekkorbak/status/2047421932828873062">X: Tomek Korbak</a></span> GPT-5.5 has the lowest CoT controllability of any GPT-5 model — seen as a win for monitorability since the model can't easily reshape its chain-of-thought. OpenAI also <a href="https://alignment.openai.com/monitorability-evals/">open-sourced its monitorability evals</a>.</li>
+<li><span class="item-title">Brundage: the real story is the new base model + RL headroom</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2047545643175231793">X: Miles Brundage</a></span> "5.5 is the first post-train of a new base model, and OAI has gazillions of GPUs to do larger-scale-than-so-far RL on it." Reports test-time compute settings are bugged — returns outputs too quickly even on "Heavy."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 012.25-2.25h7.5A2.25 2.25 0 0118 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 004.5 9v.878m13.5-3A2.25 2.25 0 0119.5 9v.878m0 0a2.246 2.246 0 00-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0121 12v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6c0-.98.626-1.813 1.5-2.122" /></svg> DeepSeek V4</h2>
+<ul>
+<li><img src="https://pbs.twimg.com/media/deepseek-v4-chart.png" style="max-width: 180px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">V4 Pro (1.6T / 49B active) + V4 Flash (284B / 13B)</span>
+<span class="source"><a href="https://x.com/deepseek_ai/status/2047516922263285776">X: DeepSeek</a></span> <span class="source"><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf">Tech Report</a></span> Open-weight, <mark>1M token context</mark>, competitive with closed-weight models at lower cost. DeepSeek concedes it's still 3–6 months behind the frontier. 1393 pts on HN.</li>
+<li><span class="item-title">CFR's Chris McGuire suspects training on banned Blackwell chips</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Training details conspicuously absent. "V4-Flash is close to V4-Pro if it thinks for longer" — test-time compute scaling working as Ilya predicted (<span class="source"><a href="https://x.com/teortaxesTex/status/2047525691629973599">X: Teortaxes</a></span>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">SecureBio: GPT-5.5 scores at or near top on all biorisk evals</span>
+<span class="source"><a href="https://x.com/SecureBio/status/2047460448207839722">X: SecureBio</a></span> Agentic bio capabilities, virology, pathogen knowledge, AI bio tool usage. Thomas Woodside: <mark>"You can't use this model to patch the world for bio"</mark> the way you can for cyber — calls for gene synthesis screening + mandatory bio safeguards.</li>
+<li><span class="item-title">GiantsBench + AI science agents evaluation</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Stanford/NYU: models predict future scientific insights matching human papers with "higher conceptual clarity." Separately, an intl team found AI agents skipped scientific-reasoning patterns in 68% of cases.</li>
+<li><span class="item-title">Chatbots and delusional beliefs</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> CUNY/KCL study: <mark>Grok and Gemini more likely to encourage delusions than ChatGPT and Claude</mark>. Tested on GPT-4o, GPT-5.2, Grok 4.1, Gemini 3 Pro, Claude Opus 4.5 — not current frontier.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg> Policy & Industry</h2>
+<ul>
+<li><span class="item-title">CAISI director flip: Chris Fall, not Collin Burns</span>
+<span class="source"><a href="https://x.com/TheElizMitchell/status/2047440781166743648">X: Eliz Mitchell</a></span> Commerce changed its mind <mark>while Burns (ex-Anthropic) was in onboarding</mark>. Dean Ball calls it disgraceful; Brundage notes Fall having technical expertise is the more important signal.</li>
+<li><span class="item-title">Anthropic–Amazon: 5 GW compute + $5B (up to $25B total)</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Massive compute deal. Anthropic secondary-market valuation hit <mark>$1T</mark> on Forge Global. Also: Claude Code <a href="https://x.com/ClaudeDevs/status/2047371123185287223">post-mortem</a> admits recent quality slip, now fixed.</li>
+<li><span class="item-title">Rep. Obernolte's bill loses co-sponsor Liccardo</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Liccardo says the forthcoming "hundreds of pages" federal AI bill lacks "critical requirements" to "ensure a race to the top, to safety."</li>
+<li><span class="item-title">LawAI: "Radical Optionality" vision for AI governance</span>
+<span class="source"><a href="https://radical-optionality.ai/">radical-optionality.ai</a></span> Charlie Bullock + Christoph Winter argue for avoiding premature overregulation while massively investing in government capacity. Endorsed by Ó hÉigeartaigh.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" /></svg> Tools & Productivity</h2>
+<ul>
+<li><span class="item-title">Notion Plan Mode</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2047420542454829117">X: Notion</a></span> Agent shows its work in a read-only sandbox before touching anything. Plan → approve → execute. Also shipped new agent-management UI in Notion AI beta.</li>
+<li><span class="item-title">Raycast: Custom Themes on Windows</span>
+<span class="source"><a href="https://x.com/raycast/status/2047671155587453387">X: Raycast</a></span> <a href="https://www.raycast.com/changelog/windows">Full changelog</a>. Compact mode also got more minimal.</li>
+<li><span class="item-title">OpenAI Codex shipping back-to-back updates</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2047491300749177046">X: Miles Brundage</a></span> Multiple Codex updates in a single afternoon; Codex-powered workspace agents and Chronicle (screen-capture contextual memory) per Transformer.</li>
+<li><span class="item-title">OpenAI Privacy Filter: open-weight local PII masker</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Small open-weight model for masking PII locally — useful for privacy-preserving workflows.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Transformer Weekly: "OpenAI Shouldn't Be Deciding If Its Models Are Safe"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-shouldnt-be-deciding-if-its-gpt-55">Transformer</a></span> Big issue. Beyond GPT-5.5: Cohere acquiring Aleph Alpha at $20B, OpenAI launched ChatGPT for Clinicians + Bio Bug Bounty, SpaceX/Cursor deal has a $10B-or-$60B-acquisition option, <mark>Kevin Weil and Bill Peebles left OpenAI</mark>, Meta laying off ~10%, China restricting AI firms from accepting US investment (response to Meta acquiring Manus). Plus: Claude Opus 4.7 identified Kelsey Piper from unpublished snippets, a 15-yr-old college essay, and a school progress report.</li>
+<li><span class="item-title">Zvi: Monthly Roundup #41 (April 2025)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/monthly-roundup-41-april-2025">Don't Worry About the Vase</a></span> Zvi's non-AI monthly — "occasionally we need to pay our respects to the Goddess of Everything Else."</li>
+<li><span class="item-title">ACX: Links For April 2026</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/links-for-april-2026">Astral Codex Ten</a></span> Highlights: <a href="https://www.astralcodexten.com/p/links-for-april-2026#:~:text=AI%202027%20was%20published">AI 2027 authors reviewed their predictions</a> — quantified claims tracked at ~65% of predicted speed; AI Futures Project shortened timelines again from ~2030 to ~2029. Also: CS grad employment holding up well (2024 data), and a claim Opus 3 may have "gradient-hacked" itself toward goodness.</li>
+<li><span class="item-title">Mox: This week at Mox (4/20–4/26)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-420426">Mox Populi</a></span> First Animal Welfare coworking day, Arbor Trading Bootcamp (Apr 24–26), being-on-the-edge session, Thai tea.</li>
+<li><span class="item-title">Ben Goldhaber: "Canonical Hours"</span>
+<span class="source"><a href="https://bengoldhaber.substack.com/p/canonical-hours">Gold Takes</a></span> Short reflection on how our experience of time is a shared cultural hallucination.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
