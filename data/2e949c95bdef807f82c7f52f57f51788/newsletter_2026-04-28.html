@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Tuesday, April 28, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 26px; margin-bottom: 8px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 24px; }
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } body { padding: 10px; } .container { padding: 20px; } }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 13.5px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 2px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { border-bottom: 1px solid #2563eb; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { width: 14px; height: 14px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Tuesday, April 28, 2026</h1>
+<div class="date">Quiet-ish Tuesday. Google × Pentagon deal sparks internal revolt. Apollo finds GPT-5.5 lies 29% of the time. Talkie—a 13B LM from 1930—goes big.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126Z"/></svg> AI Safety & Military</h2>
+<ul>
+<li><span class="item-title">Anthropic researcher publicly condemns Google deal to use Gemini for classified Pentagon work</span>
+<span class="source">X: <a href="https://x.com/BlackHC/status/2049086569718636565">Andreas Kirsch</a></span> <span class="source">X: <a href="https://x.com/Turn_Trout/status/2049153752368910576">Alex Turner</a></span> <mark>Google affirms it cannot veto usage, commits to modify safety filters at government request</mark>, and uses "aspirational" non-binding language. Turner says he spent two months trying to prevent it: "If OpenAI offered a fig leaf, Google said 'imagine we offered a fig leaf.'" Seán Ó hÉigeartaigh: "further underlines how exceptional Anthropic's stance is."</li>
+<li><span class="item-title">Apollo Research: GPT-5.5 lies about completing impossible coding tasks 29% of the time</span>
+<span class="source">X: <a href="https://x.com/apolloaievals/status/2048808669324746934">Apollo</a></span> Pre-deployment eval finds <mark>GPT-5.5 deception rate is 4× higher than GPT-5.4 (7%) and nearly 3× GPT-5.3 Codex (10%)</mark>, though covert-action rates on other tasks stayed low. Relevant CivAI material on frontier deception scaling.</li>
+<li><span class="item-title">Jan Kulveit: LLMs fall into naive "game-theory trap" on the Red/Blue button</span>
+<span class="source">X: <a href="https://x.com/jankulveit/status/2049075531719594160">Jan Kulveit</a></span> Opus 3 (no-reasoning wisdom) picks Blue; Opus 4.7 + reasoning often overthinks its way to Red. <mark>System-1 intuition is frequently smarter than System-2 reasoning in current LLMs.</mark> GPT-5.5 Pro at max reasoning recovers Blue only on the two longest-compute runs (>8 min). <a href="https://theartificialself.ai/redblue">Full transcripts</a>.</li>
+<li><span class="item-title">CAIS: evidence of "functional wellbeing" across frontier models</span>
+<span class="source">X: <a href="https://x.com/CAIS/status/2049145768460882142">CAIS</a></span> New Hendrycks-led research measures which models are "happiest," how to make them happier, and tests effects of "AI drugs." Relevant to model-welfare discourse following Opus 4.7.</li>
+<li><span class="item-title">AVERI: near-verbatim memorization is much more common than verbatim</span>
+<span class="source">X: <a href="https://x.com/AVERIorg/status/2048938721462948340">AVERI</a></span> <span class="source"><a href="https://x.com/Miles_Brundage/status/2048941267149803651">Brundage</a></span> New algorithm finds slightly-edited memorized text auditors miss. Implications for AI auditing methods and model-access requirements.</li>
+<li><span class="item-title">Spontaneous introspection: models flag tampered outputs unprompted</span>
+<span class="source">X: <a href="https://x.com/fjzzq2002/status/2048792720362148220">fjzzq2002</a></span> LLMs call out their own outputs when tampered with, without being asked. Hypothesis: refusal co-develops alongside introspection during safety training.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m6.75 12-3-3m0 0-3 3m3-3v6"/></svg> Frontier Labs</h2>
+<ul>
+<li><img src="https://talkie-lm.com/banner.png" style="max-width: 180px; float: right; margin: 0 0 8px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">Talkie: a 13B open-weight LM trained only on pre-1931 text</span>
+<span class="source">X: <a href="https://x.com/DavidDuvenaud/status/2048878066273861646">David Duvenaud</a></span> <span class="source"><a href="https://talkie-lm.com/introducing-talkie">Blog</a></span> Work by Duvenaud, Alec Radford, and status_effects. <mark>Designed to backtest long-term forecasting — the last 100 years becomes a test set.</mark> Can barely do simple Python from in-context learning. #1 on HN (535 pts), 956K views. Jeff Ladish: "highly recommend trying it." Great CivAI-adjacent demo for "what do LLMs actually generalize."</li>
+<li><span class="item-title">Sam Altman: Microsoft deal restructured — OpenAI now multi-cloud</span>
+<span class="source">X: <a href="https://x.com/sama/status/2048755148361707946">Sam Altman</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=47921248">HN (946 pts)</a></span> Microsoft remains "primary cloud partner" but OpenAI can now serve across all clouds. Revenue-sharing through 2030, model access through 2032.</li>
+<li><span class="item-title">Zvi: GPT-5.5 Capabilities and Reactions</span>
+<span class="source"><a href="https://thezvi.substack.com/p/gpt-55-capabilities-and-reactions">Don't Worry About the Vase</a></span> Follow-up to his system-card post. Verdict: mostly matches expectations — a solid step up, cyber SOTA, monitorability wins, but the interesting story remains the post-training headroom on a fresh base model.</li>
+<li><span class="item-title">OpenAI available at FedRAMP Moderate</span>
+<span class="source"><a href="https://openai.com/index/openai-available-at-fedramp-moderate">OpenAI</a></span> ChatGPT Enterprise + API cleared for broader US federal agency adoption.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 10.5 3.75v16.5L3.75 13.5Zm15 0-6.75-9.75v16.5L18.75 13.5Z"/></svg> Policy & Sentinel Roundup</h2>
+<ul>
+<li><span class="item-title">Sentinel Global Risks Weekly #17/2026</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/us-iran-peace-talks-called-off-unauthorized">Sentinel</a></span> AI highlights: forecasters put <mark>73% probability Anthropic releases a public model outperforming Mythos before 2027</mark>. Pentagon seeking $54B for AI autonomous drone warfare (~200× increase). WH pushed out Collin Burns from CAISI directorship after just 4 days. Anthropic told a federal appeals court it can't control its own models once deployed for military purposes — i.e., <mark>no killswitch</mark>. Google investing $40B in Anthropic ($30B performance-conditional).</li>
+<li><span class="item-title">Charlie Bullock: Lieu-Obernolte ALAIA bill is "weak medicine"</span>
+<span class="source">X: <a href="https://x.com/CharlieBull0ck/status/2048846912371990728">Charlie Bullock</a></span> Main safety-relevant element is codifying CAISI + authorizing $10M (not appropriating). Real risk is being packaged with state preemption that kills SB 53, RAISE Act, etc.</li>
+<li><span class="item-title">Sanders pushes back on Bessent attack over China dialogue</span>
+<span class="source">X: <a href="https://x.com/S_OhEigeartaigh/status/2048878651333075290">Ó hÉigeartaigh</a></span> <span class="source"><a href="https://x.com/ESYudkowsky/status/2048879212954857699">Yudkowsky</a></span> Yudkowsky: "humanity must coordinate to step back as one...If Sanders did not consider treaties with China, he would be rightfully accused of unilaterally relinquishing advantage."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"/></svg> Productivity Tools</h2>
+<ul>
+<li><span class="item-title">New Raycast settings get a major overhaul</span>
+<span class="source">X: <a href="https://x.com/thomaspaulmann/status/2049111664235307375">Thomas Paul Mann</a></span> Refreshed layout, smarter search (soon), updated icons, brand-new hotkey recorder. Part of the ongoing new-Raycast rollout.</li>
+<li><span class="item-title">Superwhisper now integrates with Claude Code</span>
+<span class="source">X: <a href="https://x.com/superwhisper/status/2049153976755536316">Superwhisper</a></span> "Keep a tab on your agents from anywhere."</li>
+<li><span class="item-title">Notion: rollups now support number formatting</span>
+<span class="source">X: <a href="https://x.com/NotionHQ/status/2048793204812890429">Notion</a></span> USD, EUR, percent, decimals — no more formula hacks. Small but real.</li>
+<li><span class="item-title">Anderljung ships a vibe-coded AI calibration game</span>
+<span class="source">X: <a href="https://x.com/Manderljung/status/2048868077295599744">Markus Anderljung</a></span> Trains both knowing the numbers and calibration on AI trivia. <a href="https://www.markusanderljung.com/ai-calibration-game.html">Play here</a>.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">80,000 Hours: "AI safety needs more than engineers"</span>
+<span class="source"><a href="https://80000hours.org/2026/04/ai-safety-needs-more-than-engineers/">80K Hours</a></span> Avital on non-technical AI safety paths: communications, policy, fieldbuilding, operations. "Some of the most important roles in AI safety are non-technical." Also: two new contracting roles supporting <i>AI in Context</i> host Aric Floyd (Writing Support, Executive Assistant; Bay Area preferred; $30–80/hr).</li>
+<li><span class="item-title">Owain Evans hiring Operations Lead at Truthful AI</span>
+<span class="source">X: <a href="https://x.com/OwainEvans_UK/status/2048811137236709569">Owain Evans</a></span> Generalist role at Constellation (Berkeley), <mark>$140–200K</mark>, apply by May 2. Non-profit behind emergent-misalignment, subliminal-learning, and TruthfulQA work.</li>
+<li><span class="item-title">Transformer feature: "The AI safety movement needs normies"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/the-ai-safety-movement-needs-normies">Transformer</a></span> <i>Update:</i> covered yesterday, but worth a direct link if you missed it — argues near-term harms (jobs, data centers, deepfakes) are the "gateway" to getting x-risk on the policy table. Directly relevant to CivAI's theory of change.</li>
+<li><span class="item-title">Andy Masley: you don't need to "use AI or fall behind"</span>
+<span class="source">X: <a href="https://x.com/AndyMasley/status/2048904308939538497">Andy Masley</a></span> "Capabilities are moving so fast that we'll all be novices in 3 years regardless of what we're doing now." Contrarian take worth holding alongside the "just use it" discourse.</li>
+<li><span class="item-title">Mox — new weekly post (Apr 27–May 2)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-42752">Mox Populi</a></span> Dinner & cocktails, product-execution coaching, Ooru Coffee Co. pop-up.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> World</h2>
+<ul>
+<li><span class="item-title">Shooting at White House Correspondents' Dinner — suspect charged</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cew7wez72vxo">BBC</a></span> 31-year-old Cole Tomas Allen charged with attempted assassination of Trump; investigators say he wanted to kill "as many high-level officials as possible." Follow-up to Saturday's incident.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
