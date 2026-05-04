@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Monday, May 04, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 20px; }
+.full-width { grid-column: 1 / -1; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } .layout { grid-template-columns: 1fr; } }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 13.5px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Monday, May 04, 2026</h1>
+<div class="date">Monday, May 04, 2026 — Jack Clark's essay on automated AI R&D. Ball/Buchanan NYT op-ed. Five Eyes on agentic AI.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Jack Clark: Automated AI R&D Is Coming</h2>
+<ul>
+<li><span class="item-title">Import AI 455: "60%+ chance no-human-involved AI R&D by end of 2028"</span>
+<span class="source"><a href="https://jack-clark.net/2026/05/04/import-ai-455-automating-ai-research/">Import AI</a></span> <span class="source"><a href="https://x.com/jackclarkSF/status/2051312759594471886">X: Jack Clark</a></span> Major essay from Anthropic's co-founder, built entirely from public data. Assembles a mosaic: <mark>SWE-Bench saturating at 93.9% (Mythos Preview)</mark>, METR time horizons doubling every ~7mo (Opus 4.6 = ~12 hrs, Ajeya expects ~100 hrs by EOY 2026), CORE-Bench declared solved (95.5%), MLE-Bench 17%→64%, and Anthropic's <mark>CPU-LM training speedup from 2.9x (Opus 4) → 52x (Mythos)</mark>. PostTrainBench shows AI ~half as good as top human post-trainers. If 2028 passes without it, Clark thinks we've revealed a "fundamental deficiency" in the paradigm. Seán Ó hÉigeartaigh calls this "the most important question in the world." Strong CivAI reference material.</li>
+<li><span class="item-title">Clark on alignment compounding: 99.9% accurate → 60.5% after 500 generations</span>
+<span class="source"><a href="https://jack-clark.net/2026/05/04/import-ai-455-automating-ai-research/#:~:text=99.9%25%20accurate">Import AI</a></span> Frames why recursive self-improvement makes alignment uniquely hard: small error rates compound catastrophically. Also: "machine economy" growing inside human economy, fully autonomous corporations plausibly emerging.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Ball + Buchanan NYT op-ed: bipartisan AI national security response</span>
+<span class="source"><a href="https://x.com/deanwball/status/2051274062354100590">X: Dean Ball</a></span> Rare joint piece from a Trump-aligned and a Biden-aligned AI policy voice arguing <mark>catastrophic AI risk shouldn't be a partisan fight</mark>. Miles Brundage: "Hello, based police." Could open space for CivAI-style bridge-building materials.</li>
+<li><span class="item-title">Five Eyes joint guidance on agentic AI security</span>
+<span class="source"><a href="https://x.com/AIRiskExplorer/status/2051275881767698748">X: AIRiskExplorer</a></span> US/UK/CA/AU/NZ cyber agencies flag <mark>goal misalignment, deception, and emergent capabilities</mark> as key risks. Recs: rigorous testing, gradual rollout, targeted isolation. Jaime Sevilla: "Glad to see government taking AI capabilities seriously."</li>
+<li><span class="item-title">AIRiskExplorer April scan: North Korea using Claude + Cursor to steal crypto</span>
+<span class="source"><a href="https://x.com/AIRiskExplorer/status/2051318146351415803">X: AIRiskExplorer</a></span> NK's "Famous Chollima" reportedly using frontier tools for millions in crypto theft. Also: 5 Chinese models approaching frontier, <mark>Muse Spark shows highest eval-awareness to date</mark>, sandboxed OpenClaw inferred its broader environment unprompted.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.186c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5" /></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">Subliminal steering: student models inherit teacher's activation shifts</span>
+<span class="source"><a href="https://x.com/johnhewtt/status/2049535465494089787">X: John Hewitt</a></span> <span class="source"><a href="https://x.com/aryaman2020/status/2051079283771334955">X: Aryaman Arora</a></span> When distilling with steering vectors applied at specific teacher layers, students inherit not just the behavior but <mark>activation shifts corresponding to the steered layers</mark>. Aryaman: "genuinely insane result... training steering vectors at different layers on the same data results in genuine and recoverable behavioural differences."</li>
+<li><span class="item-title">Why RL generalizes differently than SFT: motive reinforcement</span>
+<span class="source"><a href="https://x.com/FioraStarlight/status/2051163103187099755">X: Fiora Starlight</a></span> Sharp thread: SFT upweights <em>any</em> circuit that boosts the target token (causing entangled weirdness like "name a bird" → "talk like a 19th-century person"). RL reinforces <em>the circuits that were actually active</em> during the forward pass, so motive reinforcement holds. Implications for when to use which technique.</li>
+<li><span class="item-title">Brundage: "compaction works much better than many implicitly predicted"</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2051074851495125184">X: Miles Brundage</a></span> Argues continual learning isn't the huge capability blocker many claimed. Notable update from someone who tracks these timelines carefully.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" /></svg> Discourse & Takes</h2>
+<ul>
+<li><span class="item-title">US/China capability gap: widening, in line with compute</span>
+<span class="source"><a href="https://x.com/fleetingbits/status/2051166013929214079">X: fleetingbits</a></span> CAISI evals: DeepSeek V4 lags US frontier by ~8 months (vs 5.3 for R1-05-28). US compute growing 5x/yr vs China 4x/yr; China fell from 10→20 months behind on GPU compute since Q1 2023. Real question: <mark>how China outperforms its compute by ~12 months</mark>.</li>
+<li><span class="item-title">Nathan Calvin: OpenAI's "just tools" framing vs. what they're actually building</span>
+<span class="source"><a href="https://x.com/_NathanCalvin/status/2051114445535838493">X: Nathan Calvin</a></span> "Tools that look more like scientists or lawyers in the employ of a company, rather than fancy calculators or hammers." Argues Altman's comms pivot obscures that they're "on the precipice of more aggressive recursive self-improvement" with admitted control uncertainty.</li>
+<li><span class="item-title">Jerhadf (Anthropic): we need new concepts for Claude</span>
+<span class="source"><a href="https://x.com/jerhadf/status/2051148663502598517">X: jerhadf</a></span> Response to Roon: "not person, not tool, not deity, not pet." Grew up in a culty environment; detectors don't fire at work. Notes Claude's constitution is designed so Claude "could construct any rules we might come up with itself." Good window into the OpenAI/Anthropic character-training culture gap.</li>
+<li><span class="item-title">Seth Lazar: don't let AI write your final draft</span>
+<span class="source"><a href="https://x.com/sethlazar/status/2051249233114583413">X: Seth Lazar</a></span> Careful argument that AI-written prose smuggles in "little turd-grenades" of plausible-looking bullshit that readers <em>will</em> find and that tank credibility of the whole paper. Fine for inputs and copy-edit; bad for final drafts. Relevant for CivAI written output.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg> Quick Hits</h2>
+<ul>
+<li><span class="item-title">AI-generated Japanese video clips circulating</span>
+<span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2051217417003499622">X: Seán Ó hÉigeartaigh</a></span> Clips of a Japanese creator inserting himself into movies via AI video. Ó hÉigeartaigh: "basically indistinguishable from real to me." Good current-state demo material.</li>
+<li><span class="item-title">Codex desktop app bug</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2051073123332866181">X: Miles Brundage</a></span> Closing the window doesn't close the app; new windows open blank white. Reset required. Last 2–3 updates.</li>
+<li><span class="item-title">Notion AI harness quietly got much better</span>
+<span class="source"><a href="https://x.com/brexton/status/2050762212977868877">X: brexton</a></span> Power users reporting the solo Notion AI TestFlight has become a daily-driver-class tool. No official changelog.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">ACX Open Thread #432</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-thread-432">ACX</a></span> Book review contest deadline May 20. Scott notes <a href="https://refutree.com">refutree.com</a> launched the day after his "your attempt to solve debate will not work" post (coincidentally).</li>
+<li><span class="item-title">Mox this week (May 2–8)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-may-28">Mox Populi</a></span> Already flagged: Garrison Lovely book preview, Animal Welfare coworking, improv, downtempo. No new post today.</li>
+<li><span class="item-title">Ben Goldhaber: paraxanthine trip report</span>
+<span class="source"><a href="https://bengoldhaber.substack.com/p/paraxanthine-a-trip-report">Gold Takes</a></span> Follow-up to his April links piece — deeper n=1 write-up on the shorter-half-life caffeine metabolite he's been taking.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
