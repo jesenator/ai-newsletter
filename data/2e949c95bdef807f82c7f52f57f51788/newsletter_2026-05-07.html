@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Thursday, May 07, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } .layout { grid-template-columns: 1fr; } }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; padding-left: 0; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Thursday, May 07, 2026</h1>
+<div class="date">Thursday, May 07, 2026 — Palisade: LMs autonomously hack & self-replicate. Zvi on "Prior Restraint Era." Anthropic Institute launches. US–China AI talks.</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Top: Scary Demo + Policy Shift</h2>
+<ul>
+<li><span class="item-title">Palisade: language models autonomously hack hosts and replicate their own weights across a network</span>
+<span class="source"><a href="https://palisaderesearch.org/blog/self-replication">Palisade Research</a></span> Agent independently finds a web-app vuln, extracts credentials, and deploys an inference server with a copy of its harness on the compromised host. Tests 4 classes (hash bypass, SSTI, SQLi, broken access control). <mark>Opus 4.6 succeeds 81% at replicating Qwen weights, GPT-5.4 at 33%</mark>. Chains: successful replica repeats the process against new targets. Near-perfect CivAI demo material — <a href="https://palisaderesearch.org/assets/reports/self-replication.pdf">paper</a>, <a href="https://github.com/palisaderesearch/AI-self-replication">code</a>.</li>
+<li><span class="item-title">Zvi: "The Prior Restraint Era Begins"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-167-the-prior-restraint-era-begins">Zvi</a></span> <span class="source"><a href="https://thezvi.substack.com/p/the-ai-ad-hoc-prior-restraint-era">Zvi</a></span> White House ordered Anthropic not to expand access to Mythos, and is seriously considering <mark>a full prior-restraint regime where any highly capable new model needs permission before release</mark>. Zvi's weekly frames this as the end of the "train and release whenever" era.</li>
+<li><span class="item-title">Susie Wiles (WH Chief of Staff) only 4th tweet ever is AI rumor management</span>
+<span class="source"><a href="https://twitter.com/SusieWiles47/status/2052192419718783246">X: Susie Wiles</a></span> <span class="source"><a href="https://twitter.com/hlntnr/status/2052196275903209614">X: Helen Toner</a></span> "This administration has one goal; ensure the best and safest tech is deployed rapidly... empowers America's great innovators, not bureaucracy." Reads as pushback on the prior-restraint story; Shakeel Hashim notes Trump <a href="https://twitter.com/ShakeelHashim/status/2052072035795206491">is reportedly considering FDA-style AI regulation</a>. <a href="https://twitter.com/hlntnr/status/2052146351547490399">Helen Toner</a>: licensing without more govt capacity + testing + disclosure is "a pretty dicey idea."</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" /></svg> Labs & Products</h2>
+<ul>
+<li><img src="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fafbf77be0c67e881bfef8d3c0d15ea7ea97b5d4e-2880x1620.jpg&w=3840&q=75" style="max-width: 180px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" alt="Anthropic Institute"><span class="item-title">Anthropic launches "The Anthropic Institute" (TAI)</span>
+<span class="source"><a href="https://www.anthropic.com/research/anthropic-institute-agenda">Anthropic</a></span> <span class="source"><a href="https://twitter.com/AnthropicAI/status/2052385812881228218">X: Anthropic</a></span> Four focus areas: economic diffusion, <mark>threats & resilience (dual-use cyber evals)</mark>, AI systems in the wild, and AI-driven R&D. Explicitly researching "techniques to ensure human visibility into and control over" self-improving systems.</li>
+<li><span class="item-title">Anthropic–SpaceX: Claude inference on Colossus 1</span>
+<span class="source"><a href="https://www.anthropic.com/news/higher-limits-spacex">Anthropic</a></span> <span class="source"><a href="https://twitter.com/nottombrown/status/2052062566126649448">X: Tom Brown</a></span> Compute partnership; <mark>Claude Code + API usage limits going up over the next few days</mark>. Elon confirms xAI is being dissolved into SpaceXAI and floats "multiple gigawatts of orbital AI compute" with Anthropic. Sholto Douglas: "looking forward to scaling to many terawatts in orbit."</li>
+<li><span class="item-title">AlphaEvolve: Gemini coding agent scaling across fields</span>
+<span class="source"><a href="https://deepmind.google/blog/alphaevolve-impact/">DeepMind</a></span> <span class="source"><a href="https://twitter.com/GoogleDeepMind/status/2052403306257940967">X: GoogleDeepMind</a></span> Year-in-review on applications from quantum to biotech to logistics to Google's own AI infrastructure. 54 pts on HN.</li>
+<li><span class="item-title">DeepMind × EVE Online: AI agents sandbox</span>
+<span class="source"><a href="https://twitter.com/GoogleDeepMind/status/2052011542707630461">X: GoogleDeepMind</a></span> Using EVE's player-driven universe to test memory, continual learning, long-term planning.</li>
+<li><span class="item-title">Elicit ships Systematic Literature Review API</span>
+<span class="source"><a href="https://twitter.com/stuhlmueller/status/2052399117016723707">X: Stuhlmüller</a></span> Andreas used it personally to scan 1000+ papers across 10+ reviews for a family medical diagnosis. Validated on 888 Cochrane reviews. Concrete "AI for high-stakes research" workflow.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">Mechanistic anomaly detection catches sleeper agents even with obfuscation</span>
+<span class="source"><a href="https://twitter.com/Hugo007600/status/2051843351457251590">X: Hugo</a></span> New ICML paper: auditing model internals (not outputs) <mark>near-perfectly detects backdoors, even when training actively optimizes activations to fool latent-space detectors</mark>. Outperforms strong baselines on image-model backdoor defense.</li>
+<li><span class="item-title">FAR AI: METR's 7-month task-horizon doubling may be load-bearing but incomplete</span>
+<span class="source"><a href="https://twitter.com/farairesearch/status/2052056194991210737">X: FAR AI</a></span> Cozmin Ududec (UKAISI) decomposes long-horizon tasks into sequential steps, models cumulative surprisals, captures model-by-model correlations METR's curve misses.</li>
+<li><span class="item-title">Jack Clark's RSI-by-2028 claim gets bearish pushback</span>
+<span class="source"><a href="https://twitter.com/jackclarkSF/status/2052149977691123815">X: Jack Clark</a></span> Rao Hackr argues benchmarks make recursive self-improvement unlikely by 2028 (still plausible in ~10 yrs). Clark calls the <a href="https://hashcollision.substack.com/p/will-we-see-ai-with-recursive-self">post</a> "very nice."</li>
+<li><span class="item-title">Epoch: domain-specific ECIs (capability indices)</span>
+<span class="source"><a href="https://twitter.com/Jsevillamol/status/2052105003335074291">X: Sevilla</a></span> Finally quantifies the intuition that Claude models punch above weight in coding and lag elsewhere.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">WSJ: US and China considering AI talks to prevent crisis</span>
+<span class="source"><a href="https://www.wsj.com/world/china/u-s-and-china-pursue-guardrails-to-stop-ai-rivalry-from-spiraling-into-crisis-4c50bd70">WSJ</a></span> <span class="source"><a href="https://twitter.com/Miles_Brundage/status/2052184821888340341">X: Brundage</a></span> Exclusive: two sides pursuing guardrails as competition intensifies. Brundage: dialogue is a good start but eventually needs auditing + verification.</li>
+<li><span class="item-title">Connecticut passes first-in-nation Independent Verification Organization pilot</span>
+<span class="source"><a href="https://twitter.com/Fathom_org/status/2052369739691794865">X: Fathom</a></span> HB 5222 creates voluntary IVO pilot program — new template for third-party AI audits.</li>
+<li><span class="item-title">France: only 8% of citizens want to accelerate AI; 5:1 want to slow/pause</span>
+<span class="source"><a href="https://twitter.com/CRSegerie/status/2052023850058330331">X: Segerie</a></span> CeSIA × OpinionWay poll. <mark>75% fear loss of control over AI; 78% fear bio/chem weapons assistance; 9:1 support international red lines on AI</mark>, consensus across LFI, RN, LR, and majority.</li>
+<li><span class="item-title">California SB 53 implementation roles open</span>
+<span class="source"><a href="https://twitter.com/Thomas_Woodside/status/2052073494922289625">X: Woodside</a></span> Emerging Tech Program Manager ($136K–166K) in Sacramento, deadline May 21. Plus AI Policy Fellow.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><img src="https://substackcdn.com/image/fetch/$s_!fkDN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Falex-karp.jpg" style="max-width: 180px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" alt="Alex Karp"><span class="item-title">Transformer: "Palantir's controversy is the product"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/palantirs-controversy-is-the-product-alex-karp-thiel">Transformer</a></span> Argues Palantir is operationally a mundane data-middleware business (Oracle-like), but its jingoistic reputation <mark>supports a 103× revenue market cap and locks in its national-security moat</mark>. "Being less trusted in Brussels arguably makes it more trusted in Langley." Warns: as AI labs deepen defense work and go public, the Palantir playbook may become industry standard — warping AI roadmaps toward what produces good stories, not what works.</li>
+<li><span class="item-title">Zvi: "What is Anthropic?"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/what-is-anthropic">Zvi</a></span> Companion essay to the prior-restraint pieces — reframing Anthropic's identity amid the WH standoff.</li>
+<li><span class="item-title">ACX: "Contra Everyone On Taste"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/contra-everyone-on-taste">ACX</a></span> Scott's long follow-up on artistic taste — not AI, but a good Thursday read. Argues conflating sensory delight, novelty, and context-as-commentary hollows out art; proposes "Michelangelo or forger?" thought experiments.</li>
+<li><span class="item-title">Mox this week (May 2–8)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/this-week-at-mox-may-28">Mox Populi</a></span> Improv, downtempo night, Garrison Lovely's book preview, Animal Welfare Coworking. No new post today.</li>
+<li><span class="item-title">Berkeleyside: leaked memo warns Flock surveillance expansion has "legal risks"</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/05/06/berkeley-flock-surveillance-contract-memo-confidential">Berkeleyside</a></span> On the eve of tonight's City Council vote, oversight officials say BPD ignored competitive bidding rules on the drone/camera/software expansion. Police oversight chair+vice chair publish <a href="https://www.berkeleyside.org/2026/05/06/opinion-berkeley-does-not-need-flock-surveillance-tech-to-stay-safe">opposition opinion</a>.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

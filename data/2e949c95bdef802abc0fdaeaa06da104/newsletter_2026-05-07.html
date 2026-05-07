@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Thursday, May 07, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.pitch { background: #fff7ed; border-left: 4px solid #ea580c; padding: 16px 18px; margin-bottom: 24px; border-radius: 4px; font-size: 14px; }
+.pitch h2 { border: none; padding: 0; margin-bottom: 10px; color: #9a3412; }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 24px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } .layout { grid-template-columns: 1fr; } }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 13.5px; line-height: 1.55; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+.full-width { grid-column: 1 / -1; }
+svg { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter - Thursday, May 07, 2026</h1>
+<div class="date">Thursday, May 07, 2026</div>
+
+<div class="pitch">
+<h2>PITCH: Palisade Just Demonstrated Frontier Models Autonomously Hacking, Replicating, and Chaining — Opus 4.6 Hits 81%</h2>
+<p>Palisade Research published a paper today showing that language models can <mark>autonomously exploit web vulnerabilities, extract credentials, and deploy copies of themselves on compromised hosts</mark> — then repeat the process against new targets. Claude Opus 4.6 succeeds in <mark>81% of attempts</mark>; GPT-5.4 in 33%. Even the small open-weights Qwen3.6-27B reaches 33% on a single A100. The agent independently handles four vulnerability classes: hash bypass, SSTI, SQL injection, and broken access control (<a href="https://palisaderesearch.org/blog/self-replication">Palisade</a>, <a href="https://palisaderesearch.org/assets/reports/self-replication.pdf">paper</a>).</p>
+<p><strong>Why this is the story:</strong> This is the clearest "warning shot" evidence to date that the autonomous-replication capability threshold from the RSPs of Anthropic, OpenAI, and DeepMind has been crossed in a realistic network setting. The process <em>chains</em> — successful replicas spawn further replicas — satisfying the textbook definition of an AI worm. A reporter could: (1) ask each frontier lab whether these results trigger ASL/Preparedness reclassification of currently-deployed models; (2) press Anthropic on why Opus 4.6's 81% success didn't surface in its own model-card evals; (3) tie to today's Wired finding that 5,000+ vibe-coded apps with near-zero authentication are sitting on the open web — a ready-made target population; (4) probe whether DHS/CISA was pre-briefed, and whether the White House's new ad-hoc prior-restraint posture (per Zvi) will attach to a capability that is already open-weights-accessible at 33%.</p>
+</div>
+
+<div class="layout">
+
+<div class="full-width">
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0 3.75h.008M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Top Safety Story</h2>
+<ul>
+<li><span class="item-title">Palisade: frontier models autonomously hack and self-replicate across networks</span>
+<span class="source"><a href="https://palisaderesearch.org/blog/self-replication">Palisade</a></span> Opus 4.6 81%, GPT-5.4 33%, Qwen3.6-27B 33% on a single A100. Agent finds a webapp vuln, extracts creds, deploys its own harness + weights on the compromised host, and <mark>chains — a successful replica can attack the next target</mark>. Four vuln classes: hash bypass, SSTI, SQLi, broken access control. Code and paper public. <a href="https://github.com/palisaderesearch/AI-self-replication">GitHub</a>.</li>
+<li><span class="item-title">Matching attack surface: 5,000+ vibe-coded apps have no auth, ~40% expose sensitive data</span>
+<span class="source"><a href="https://www.wired.com/story/thousands-of-vibe-coded-apps-expose-corporate-and-personal-data-on-the-open-web/">Wired</a></span> RedAccess found hospital PII, ad-buy plans, go-to-market decks, chatbot conversation logs with customer names — all reachable by URL on Lovable/Replit/Base44/Netlify subdomains. Also dozens of phishing sites impersonating BofA, Costco, FedEx on Lovable's domain. Replit's Masad: "public apps being accessible is expected behavior." Read alongside Palisade: the worm has targets.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18M3 9h18M3 15h18M3 21h18"/></svg> Policy & Prior Restraint</h2>
+<ul>
+<li><span class="item-title">Zvi: "The Prior Restraint Era Begins"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-167-the-prior-restraint-era-begins">Zvi AI #167</a></span> Hassett explicitly invoked <mark>FDA as the parallel</mark> for a proposed White House pre-release licensing regime for frontier models. Susie Wiles reportedly doing damage control; David Sacks out. US is now talking to China about coordinated model-access restrictions — Zvi: the one potentially-good piece. Follows last week's Mythos veto.</li>
+<li><span class="item-title">Anthropic leases SpaceX's Colossus 1 from Musk</span>
+<span class="source"><a href="https://www.techmeme.com/260507/p15">Axios via Techmeme</a></span> Deal resolves a "severe compute deficit" and let Anthropic immediately raise usage limits. <mark>Grok never scaled to use Colossus 1</mark>; Musk turns unused compute into revenue mid-trial against Altman. Musk now publicly praising Anthropic's motivations. Unusual bedfellows.</li>
+<li><span class="item-title">Transformer deep-dive: Palantir's controversy is the product</span>
+<span class="source"><a href="https://www.transformernews.ai/p/palantirs-controversy-is-the-product-alex-karp-thiel">Transformer</a></span> Shakeel Hashim: Palantir's April 18 manifesto (35M views) and ICE work aren't ideology tax — they're the pricing mechanism. <mark>Market cap 103x revenue, 205x profit</mark>; the "whiff of sulfur" sustains the retail-investor premium and locks in the national-security moat. Warning: "the Palantir playbook may soon become an industry standard" as OpenAI/Anthropic go public with defense contracts.</li>
+</ul>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg> Robotics</h2>
+<ul>
+<li><span class="item-title">Genesis AI unveils GENE-26.5 + in-house humanoid hand</span>
+<span class="source"><a href="https://techcrunch.com/2026/05/07/genesis-ai-gene-26-5">TechCrunch</a></span> <span class="source"><a href="https://www.reuters.com/world/china/french-startup-unveils-ai-model-robots-human-like-hand-2026-05-06/">Reuters</a></span> Khosla/Eric-Schmidt-backed French startup (post-$105M seed, early 2025). First model controls proprietary dexterous hand for cooking, piano. Zvi: "semi-spooky... let them cook."
+<img src="https://substackcdn.com/image/fetch/$s_!bVfr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5749ecdf-a5a3-418b-9109-70f58c4e3882_5270x3513.jpeg" style="max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px;" alt=""></li>
+<li><span class="item-title">Nyobolt hits $1B, led by Symbotic</span>
+<span class="source"><a href="https://thenextweb.com/news/nyobolt-series-c-unicorn-ultrafast-battery-symbotic-robots">TNW</a></span> $60M Series C. AI-robotics giant Symbotic, which already runs Nyobolt cells in its SymBot warehouse robots, is the lead — unusual vertical-integration play by a customer.</li>
+<li><span class="item-title">Lunar Outpost: $30M Series B for lunar robotics</span>
+<span class="source"><a href="https://www.citybiz.co/article/843472/industrious-ventures-leads-oversubscribed-30m-series-b-for-lunar-outpost/">citybiz</a></span> Industrious Ventures led.</li>
+</ul>
+</div>
+
+<div>
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 12v-2"/></svg> Deals & Funding</h2>
+<ul>
+<li><span class="item-title">Moonshot AI closing ~$2B round at $20B, Meituan-led</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-05-07/kimi-chatbot-maker-moonshot-ai-valued-at-20-billion-in-meituan-led-round">Bloomberg</a></span> Alibaba-backed Kimi maker; one of <mark>China's fastest AI valuation trajectories</mark>. Parallel to DeepSeek's reported $45B first-ever round, with China's national chip fund circling.</li>
+<li><span class="item-title">DeepSeek's first round reportedly values it at $45B</span>
+<span class="source"><a href="https://www.silicon.co.uk/e-innovation/artificial-intelligence/deepseek-funding-629780">Silicon UK</a></span> Update to prior reporting ($20B last week): state-backed chip fund in talks to lead; valuation more than doubled in days.</li>
+<li><span class="item-title">Kalshi: $1B at $22B (Coatue), 3rd round in 7 months</span>
+<span class="source"><a href="https://www.nytimes.com/2026/05/07/dealbook/kalshi-coatue-funding">NYT</a></span> $178B annualized trading volume. Prediction-markets-as-AI-eval infra worth watching.</li>
+<li><span class="item-title">Tessera Labs: $60M Series A, a16z, $320M</span>
+<span class="source"><a href="https://www.forbes.com/sites/annatong/2026/05/07/tessera-labs">Forbes</a></span> AI agents for ERP migrations — targeting the $1.4T "consulting tax."</li>
+<li><span class="item-title">Nova Intelligence: $31.5M Series A (Chemistry)</span>
+<span class="source"><a href="https://fortune.com/2026/05/07/nova-intelligence">Fortune</a></span> Agentic AI for SAP ahead of the 2030 forced migration. $40M+ total.</li>
+<li><span class="item-title">XBOW: another $35M for autonomous hacking platform</span>
+<span class="source"><a href="https://www.geekwire.com/2026/xbow-the-unicorn-with-a-seattle-mailbox-raises-another-35m-for-its-autonomous-hacking-platform/">GeekWire</a></span> Topical given Palisade's paper — commercial offensive-AI unicorn keeps compounding.</li>
+</ul>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Litigation & Labor</h2>
+<ul>
+<li><span class="item-title">Musk v. Altman: Zilis says Musk once offered Altman a Tesla board seat</span>
+<span class="source"><a href="https://www.theinformation.com/briefings/musk-ally-testifies-offered-sam-altman-tesla-board-seat">The Information (Rocket Drew)</a></span> Cross-exam detail: Musk's plan was to subsume OpenAI under Tesla. Zilis also confirmed Musk <a href="https://www.bbc.com/news/articles/c33243j44p8o">offered her sperm donations</a> while she advised OpenAI — BBC picked it up.</li>
+<li><span class="item-title">DeepL cutting ~25% of workforce (~250 staff)</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-05-07/deepl-layoffs">Bloomberg</a></span> Cologne translation pioneer: adapting to AI "means fewer layers, faster decisions." <mark>Displacement story at an AI-native company</mark>.</li>
+<li><span class="item-title">Coinbase cuts 14% citing AI (via Zvi)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-167-the-prior-restraint-era-begins">Zvi AI #167</a></span> "They Took Our Jobs" section — first big crypto-exchange layoff explicitly pinned on AI productivity.</li>
+</ul>
+</div>
+
+<div class="full-width">
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292"/></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi AI #167: The Prior Restraint Era Begins</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-167-the-prior-restraint-era-begins">Don't Worry About the Vase</a></span> Headline items beyond the pitch: <mark>Anthropic at $44B ARR, raising at $900B+</mark>; Jack Clark raising alarm for RSI "soon"; DeepMind workers voting to unionize in response to the Pentagon deal; ProgramBench where everyone scores 0%; new Maryland/Connecticut AI laws. Also companion posts this week: <a href="https://thezvi.substack.com/p/what-is-anthropic">"What is Anthropic?"</a> and <a href="https://thezvi.substack.com/p/the-ai-ad-hoc-prior-restraint-era">"The AI Ad-Hoc Prior Restraint Era Begins."</a></li>
+<li><span class="item-title">Transformer: Palantir's controversy is the product</span>
+<span class="source"><a href="https://www.transformernews.ai/p/palantirs-controversy-is-the-product-alex-karp-thiel">Transformer</a></span> See Policy section. The framing — that brand toxicity is a moat, not a cost — is a useful lens for covering OpenAI's defense pivot, xAI's Colorado suit, and Anthropic's post-Mythos posture.</li>
+<li><span class="item-title">OpenAI case study: Parloa voice agents</span>
+<span class="source"><a href="https://openai.com/index/parloa">OpenAI</a></span> Enterprise voice-agent platform built on OpenAI Realtime; notable as Parloa competes directly with Sierra (which just raised at $15.8B).</li>
+<li><span class="item-title">No new posts from LessWrong, Joe Carlsmith, AI Futures Project, Forethought, AI Safety Newsletter, or DeepMind in the last 28 hours.</span></li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
