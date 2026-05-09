@@ -120,7 +120,7 @@ HTML OUTPUT:
 - For Twitter/X sources, attribute as "X: <display name>" (e.g. "X: Jeffery Ladish", "X: Jim Fan")
 - Most important items at the TOP
 - Keep it brief: ~40 lines max, fewer if there's less news. It's BETTER to have a short newsletter.
-- Use a two-column layout with CSS grid or flexbox, max page width ~900px centered
+- Use a single-column layout, max page width ~900px centered
 - Use <h1> for title, <h2> for section headers, <ul>/<li> for items
 - No emojis! Use inline SVG icons instead. Use these to make the newsletter more visually interesting.
 - Use <mark> around 3-8 key phrases total for the most important parts (not everywhere)
