@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Sunday, May 10, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+svg { width: 14px; height: 14px; vertical-align: -2px; }
+img.thumb { max-width: 200px; float: right; margin: 0 0 10px 14px; border-radius: 4px; }
+.intro { color: #555; font-size: 13px; font-style: italic; margin-bottom: 8px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } img.thumb { max-width: 130px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Sunday, May 10, 2026</h1>
+<div class="date">Sunday, May 10, 2026</div>
+
+<p class="intro">Quiet Sunday. Gemini File Search goes multimodal. New agent red-teaming platform with 7K tasks. Microsoft paper: LLMs silently corrupt your documents. Boaz Barak prepping a "scenarios where this goes badly" talk.</p>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg> Products & Capabilities</h2>
+<ul>
+<li><img class="thumb" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_API_File_Search.width-1200.format-webp.webp" alt="Gemini File Search"><span class="item-title">Gemini API File Search now multimodal, with page-level citations</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/">Google Blog</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48080702">HN (130 pts)</a></span> Powered by Gemini Embedding 2: text + image RAG natively, plus <mark>custom metadata filtering and page citations</mark> for verifiable grounding. Solid productivity primitive — could be useful for CivAI demo backends that need to retrieve from large doc/image sets.</li>
+<li><span class="item-title">DTap: agent red-teaming platform with 50+ environments, ~7K tasks</span>
+<span class="source"><a href="https://x.com/ZRChen_AISafety/status/2053172135305052534">X: ZRChen_AISafety</a></span> <span class="source"><a href="https://decodingtrust-agent.com">site</a></span> 20 months and $120K of API credits in. Replicates real MCP/GUI agent interfaces across 14 high-stakes domains; ~4K policy-grounded malicious goals; verifiable judges that check actual environment consequences. Reveals "systematic vulnerabilities and zero-days" in popular agent frameworks. <mark>Direct CivAI demo material — controllable, realistic agent attacks</mark>.</li>
+<li><span class="item-title">Will Smith eating pasta: video model leap circulating</span>
+<span class="source"><a href="https://x.com/MarioNawfal/status/2053023918576005476">X: Mario Nawfal</a></span> 8.5M views on a side-by-side using the long-running benchmark prompt — current outputs near-photoreal, no obvious morphing. Shared by Brundage's circle. Useful "show, don't tell" clip for AI-progress framing.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> Safety Research & Discourse</h2>
+<ul>
+<li><span class="item-title">"LLMs corrupt your documents when you delegate" (Microsoft Research)</span>
+<span class="source"><a href="https://arxiv.org/abs/2604.15597">arXiv</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48073246">HN (438 pts)</a></span> Laban, Schnabel, Neville show frontier LLMs make <mark>silent, unrequested edits</mark> when given delegated document tasks — small enough to slip past review, but cumulatively change meaning. Companion finding to last week's Seth Lazar warning about AI-written final drafts.</li>
+<li><span class="item-title">Boaz Barak prepping Recursive talk on "AI turning out very badly"</span>
+<span class="source"><a href="https://x.com/boazbaraktcs/status/2053150310487507365">X: Boaz Barak</a></span> OpenAI safety lead: "Maybe I'm not such an optimist?" Talk next week at Recursive will walk through several bad-outcome scenarios. Notable given his typically measured public posture.</li>
+<li><span class="item-title">Conitzer: a "simple" chess puzzle that breaks current LLMs</span>
+<span class="source"><a href="https://aifails.substack.com/p/a-simple-chess-puzzle">aifails</a></span> Vince Conitzer (CMU) posts another entry in his AI-failures series — useful counterweight collection to "models can do anything" demos when talking to skeptics.</li>
+<li><span class="item-title">"LLMorphism: when humans come to see themselves as language models"</span>
+<span class="source"><a href="https://arxiv.org/abs/2605.05419">arXiv</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48082021">HN</a></span> Conceptual paper on the cultural feedback loop where humans start adopting LLM-shaped self-models. Adjacent to CivAI's "Parasitic AI" essay from March.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5"/></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">Patio11: training runs are now a strategic surface for think tanks/publications</span>
+<span class="source"><a href="https://x.com/patio11/status/2053095536626929828">X: patio11</a></span> "Without a trace of irony: one of the most important strategic decisions for every publication, think tank, etc. is — what decisions are we taking today to influence future training runs and inference sessions?" 27K views. Worth chewing on for CivAI's content strategy.</li>
+<li><span class="item-title">France: only 8% want to accelerate AI; 75% fear loss of control</span>
+<span class="source"><a href="https://x.com/Simon__Grimm/status/2038972429066764634">X: Simon Grimm</a></span> Update: Simon Grimm's piece on EU compute policy argues Brussels-level public funding isn't enough; engagement should target Paris/Berlin/Oslo where unilateral compute permits actually get signed. Useful framing alongside last week's CeSIA poll.</li>
+<li><span class="item-title">Jeff Ladish wants a name for "trying to make it through this critical century"</span>
+<span class="source"><a href="https://x.com/JeffLadish/status/2053344804549894576">X: Jeff Ladish</a></span> "Not longtermism, not strong claims about what comes after, just trying to survive this century / reduce x-risk this century." 5K views, lots of replies — an ongoing identity question for the safety-adjacent crowd.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">Zvi: Claude Code, Codex and Agentic Coding #8</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-code-codex-and-agentic-coding-f54">Don't Worry About the Vase</a></span> (Fri) Latest in the agentic-coding series. Frames the moment: "When I started this series, everyone was going crazy for coding agents" — now it's table stakes, and the interesting questions are about workflow taste and harness design.</li>
+<li><span class="item-title">"Task Paralysis and AI"</span>
+<span class="source"><a href="https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html">g5t.de</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48081469">HN (80 pts)</a></span> Argues AI assistants are quietly making task initiation harder for some users — the "I'll just ask the model" loop replaces decisive starts. Adjacent to Ben Goldhaber's recent Deep Work vs. Cyborg Agent Allocator post.</li>
+<li><span class="item-title">"Distributing Mac software is increasing my cortisol levels"</span>
+<span class="source"><a href="https://blog.kronis.dev/blog/apple-is-increasing-my-cortisol-levels">kronis.dev</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48075366">HN (343 pts)</a></span> Notarization, code signing, and Gatekeeper friction for indie Mac devs. Worth bookmarking if you ever ship a CivAI Mac demo binary.</li>
+<li><span class="item-title">Mox: nothing new today</span>
+<span class="source"><a href="https://moxsf.substack.com/">Mox Populi</a></span> Last post was the May 2–8 weekly. Next "this week at Mox" likely tomorrow. Garrison Lovely book-preview already happened.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
