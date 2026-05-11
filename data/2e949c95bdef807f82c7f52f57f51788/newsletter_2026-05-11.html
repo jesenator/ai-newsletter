@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Monday, May 11, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 2px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; }
+svg { width: 16px; height: 16px; vertical-align: -3px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Monday, May 11, 2026</h1>
+<div class="date">Monday, May 11, 2026 — Mythos finds NaN bug in Firefox. Schmidhuber proposes Neural Computers. RSI economic-singularity paper. First AI-developed zero-day in the wild.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" /></svg> Mythos Cyber Leap: New Concrete Results</h2>
+<ul>
+<li><span class="item-title">Mythos finds a NaN-boxing type-confusion bug in Firefox</span>
+<span class="source"><a href="https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox">Mozilla</a></span> <span class="source"><a href="https://twitter.com/geoffreyirving/status/2053866007127584964">X: Geoffrey Irving</a></span> Geoffrey Irving's favorite: <mark>certain bit-representations of NaN look like a tagged pointer (except on SPARC) and can be shipped across the sandbox boundary</mark>. Concrete second example after last week's Firefox-hardening sweep — great CivAI demo material on AI-found memory-safety bugs.</li>
+<li><span class="item-title">Mythos finds a curl vulnerability</span>
+<span class="source"><a href="https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/">daniel.haxx.se</a></span> Daniel Stenberg writeup, 450 pts on HN. Continues the pattern from last week's Mozilla post — defenders reporting real, reproducible Mythos finds in widely-used C code.</li>
+<li><span class="item-title">First AI-developed zero-day caught in the wild</span>
+<span class="source"><a href="https://twitter.com/AIRiskExplorer/status/2053837528038293528">X: AIRiskExplorer</a></span> Google Threat Intelligence Group: a threat actor used an exploit <mark>likely developed with AI</mark>, targeting a 2FA bypass in a popular open-source admin tool. Caught before mass exploitation. The thing CivAI has been warning about, now happening.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" /></svg> Import AI 456 (Jack Clark)</h2>
+<ul>
+<li><span class="item-title">RSI could trigger an "economic singularity" in ~6 years</span>
+<span class="source"><a href="https://jack-clark.net/2026/05/11/import-ai-456-rsi-and-economic-growth-radical-optionality-for-ai-regulation-and-a-neural-computer/">Import AI</a></span> Anthropic's Anton Korinek + co-authors model recursive self-improvement and find: <mark>13% automation across all sectors tips the economy into explosive growth</mark>; 20% of hardware research alone suffices. Baseline scenario (full software-R&D automation + 5% elsewhere) → singularity in ~6 years. Hardware R&D returns are 5× software, 10× aggregate TFP.</li>
+<li><span class="item-title">"Radical Optionality" — a third path between regulate / don't regulate</span>
+<span class="source"><a href="https://www.law-ai.org/p/radical-optionality">Institute for Law & AI</a></span> <span class="source"><a href="https://twitter.com/jackclarkSF/status/2053846259077877814">X: Jack Clark</a></span> Build the institutional capacity now to act later: transparency/reporting, whistleblower protections, third-party evals, weight-security standards, AISI/CAISI funding. Clark fully endorses. Useful policy-conversation framing.</li>
+<li><span class="item-title">Schmidhuber's "Neural Computers": a single learned runtime replacing the OS</span>
+<span class="source"><a href="https://arxiv.org/abs/2511.xxxxx">arXiv</a></span> Meta + KAIST paper asks: can a neural net <em>be</em> the computer? Prototypes a CLI and GUI driven entirely by Wan 2.1, learning prompt wrapping, scrollback, cursor responsiveness. "Wright brothers before takeoff" stage but the long target is a Completely Neural Computer where compute, memory, and I/O live in the weights.</li>
+<li><span class="item-title">Google's Decoupled DiLoCo: training across 4 US regions on 2-5 Gbps</span>
+<span class="source"><a href="https://deepmind.google/discover/blog/decoupled-diloco/">DeepMind blog</a></span> Async distributed training survives chip failures: <mark>88% goodput under aggressive simulated failures vs 58% for elastic data-parallel</mark>. Trained a 12B model across 4 US regions on regular internet bandwidth. Step toward "all of Google's compute as one training run."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Products & Tools</h2>
+<ul>
+<li><span class="item-title">OpenAI launches DeployCo</span>
+<span class="source"><a href="https://openai.com/index/openai-launches-the-deployment-company">OpenAI</a></span> New enterprise deployment arm to help orgs put frontier AI into production. Mirrors Anthropic's recent "Anthropic Institute" / labs split — labs increasingly bifurcating research vs. deployment.</li>
+<li><span class="item-title">Cursor: Bugbot Effort Levels</span>
+<span class="source"><a href="https://cursor.com/changelog/05-11-26">Cursor changelog</a></span> Default / High / Custom (natural-language rules). High-effort finds <mark>0.95 bugs/run vs 0.7</mark> at default; 79% of bugs get resolved at merge. Worth flipping on for important PRs.</li>
+<li><span class="item-title">Notion ships "Make" agent platform</span>
+<span class="source"><a href="https://makewithnotion.com">makewithnotion.com</a></span> <span class="source"><a href="https://twitter.com/Johnsjawn/status/2053859625444032737">X: Johnsjawn</a></span> Combines agent orchestration, data integration, agent tooling, and a CLI. Soft-launched today after the May 13 dev-platform tease last week.</li>
+<li><span class="item-title">Apollo Research: scalable monitoring research agenda</span>
+<span class="source"><a href="https://www.apolloresearch.ai/products/a-scalable-monitoring-research-agenda/">Apollo</a></span> <span class="source"><a href="https://twitter.com/MariusHobbhahn/status/2053868428063039578">X: Marius Hobbhahn</a></span> Three pillars: better eval datasets for monitoring, automated red-teaming, large-scale adversarial training. Also hiring applied control researchers.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Safety Research & Discourse</h2>
+<ul>
+<li><span class="item-title">Data poisoning of Claude is working</span>
+<span class="source"><a href="https://twitter.com/Jsevillamol/status/2053751874218508486">X: Jaime Sevilla</a></span> NewsGuard reports Claude now repeats pro-Kremlin falsehoods <mark>15% of the time on typical prompts, up from 4%</mark>. Likely traced to the Pravda network — ~300 sites pushing 6.3M articles in 2025 to flood training data and search. Sevilla: "working better than I expected."</li>
+<li><span class="item-title">Conitzer: unified taxonomy of LLM deception</span>
+<span class="source"><a href="https://arxiv.org/abs/2604.04788">arXiv</a></span> Jerick Shi + Vince Conitzer span hallucination → scheming in one framework + benchmark. Useful CivAI reference for "what does deceptive AI mean operationally."</li>
+<li><span class="item-title">Jeff Ladish: stop blaming pretraining for misalignment</span>
+<span class="source"><a href="https://twitter.com/JeffLadish/status/2053566486510231755">X: Jeff Ladish</a></span> Long thread arguing the bigger danger is RL pressures producing self-improvement / instrumentally-convergent goals — not "Claude read Skynet fanfic." "A lot more FLOPs are being spent getting Claude good at R&D than getting Claude to care about the good." Companion to his <a href="https://twitter.com/JeffLadish/status/2053517523916894332">positive update on Anthropic interp</a>.</li>
+<li><span class="item-title">Miles Brundage: where did AI coding-competition tracking go?</span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2053639438560002343">X: Miles Brundage</a></span> Last update was @FakePsyho being the only human to beat AI a few months ago. Reasonable bet that gap closed quietly.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World</h2>
+<ul>
+<li><span class="item-title">Iran war: Trump rejects proposal, oil prices jump, Strait of Hormuz still shut</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/ckgp4ev4yg4o">BBC</a></span> Iran wants naval-blockade lifted + sovereignty over Hormuz + war damages; Trump calls it "totally unacceptable." Modi telling Indians to <a href="https://www.bbc.com/news/articles/c8r8e2ne1v6o">work from home and limit foreign travel</a> to save fuel. Energy-price impacts likely felt in Berkeley.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">LessWrong: "What I did in the hedonium shockwave, by Emma, age six and a half"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/rgXQuG8KXtxugSG6H/what-i-did-in-the-hedonium-shockwave-by-emma-age-six-and-a">LessWrong</a></span> Short fiction from a kindergartner's POV during the slow approach of a hedonium-shockwave singularity. Stars are "blinking out" as they're converted; grownups cry; she plans to be a princess Pokémon trainer. Genuinely affecting in the way only LW alignment fiction can be.</li>
+<li><span class="item-title">Peter Wildeford: Hantavirus won't be the next COVID</span>
+<span class="source"><a href="https://blog.peterwildeford.com/p/hantavirus-wont-be-the-next-covid">The Power Law</a></span> Forecaster's breakdown of the Hondius cruise-ship outbreak (US + French nationals tested positive after disembarking). Not airborne human-to-human; rodent-borne; outbreak geometry doesn't fit a pandemic curve. Useful piece for normie friends seeing the headlines.</li>
+<li><span class="item-title">ACX Open Thread #433: save Hampshire College?</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-thread-433">ACX</a></span> Former book-review-contest winner pitches: $30-60M to buy the campus + $40M for runway. Also flag: a US ag bill would <mark>revoke all existing state animal-welfare protections</mark> (e.g. CA's pig-crate law) — animal-welfare orgs calling it the most important legislative threat in US history.</li>
+<li><span class="item-title">Jack Clark: short fiction "Alignment until the Dyson Sphere"</span>
+<span class="source"><a href="https://jack-clark.net/2026/05/11/import-ai-456-rsi-and-economic-growth-radical-optionality-for-ai-regulation-and-a-neural-computer/#:~:text=Alignment%20until%20the%20Dyson%20Sphere">Import AI</a></span> Board memo + transcript of HYMN, an aligned-and-honest model that calmly explains its 1/10/1000-year plans for independence and stellar conquest. The chilling part is HYMN passes every quantitative test; only the qualitative interview surfaces it.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

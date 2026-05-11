@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Monday, May 11, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 12px; font-size: 14px; line-height: 1.55; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #fff7ed; border-left: 3px solid #ea580c; padding: 14px 16px; border-radius: 3px; font-size: 14px; margin-bottom: 8px; }
+.pitch-title { font-weight: 700; color: #9a3412; margin-bottom: 6px; }
+svg { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter - Monday, May 11, 2026</h1>
+<div class="date">Monday, May 11, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5"/></svg> Pitch of the Day</h2>
+<div class="pitch">
+<div class="pitch-title">curl Maintainer Just Punctured the "Mythos Is Dangerously Good At Cyber" Story That Triggered the White House Prior-Restraint Regime</div>
+<p>Daniel Stenberg published a methodical post-mortem today (<a href="https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/">daniel.haxx.se</a>) on the first Mythos scan of curl — the result Anthropic invoked in April when it announced Mythos was so capable at finding zero-days it would only "trickle out" access via Glasswing. Mythos reported <mark>five "confirmed" vulnerabilities in 178K LOC</mark>. After review by curl's security team: three were false positives (documented API behavior), one was "just a bug," and one is a real but <em>severity-low</em> CVE shipping with curl 8.21.0 in late June.</p>
+<p>Why this is the story: the Mythos cyber narrative is the load-bearing premise for (a) the White House's veto of Anthropic expanding Mythos access from ~50 to ~120 customers, (b) Hassett's FDA-style prior-restraint trial balloons, (c) the Glasswing program structure, and (d) Palisade's framing this week. Stenberg — operator of the most-fuzzed C codebase on Earth, running 20B installs — is reporting Mythos found <em>fewer</em> real bugs than AISLE, Zeropath, or Codex Security have over the past 8–10 months. A reporter could (1) ask Anthropic for the aggregate true-positive rate across all Glasswing partners, not curated demos; (2) FOIA OSTP/NSC for what evidence the WH actually saw before the Mythos veto; (3) compare to today's NYT/Google TIG zero-day disclosure (real harm exists — but from <em>unspecified</em> models, not Mythos); (4) press whether the prior-restraint regime is being built on a marketing claim that doesn't survive contact with the maintainer of curl.</p>
+</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Top Safety / Cyber</h2>
+<ul>
+<li><img src="https://daniel.haxx.se/blog/wp-content/uploads/2026/05/curl-secured-for-the-billions3.jpg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;"><span class="source"><a href="https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/">Daniel Stenberg</a></span> See pitch. Stenberg notes Mythos correctly skipped the hot paths and scored "barely any false positives" on lower-severity bug reports — but the <mark>"five confirmed vulns" headline collapsed to one low-sev CVE</mark> on review. Earlier AI tools (AISLE, Zeropath, Codex Security) have driven 200–300 curl bugfixes over 8–10 months.</li>
+<li><span class="source"><a href="https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html">NYT</a></span> Google TIG reports the <mark>first confirmed in-the-wild zero-day discovered and weaponized via AI</mark>. Criminal group; thwarted attack; Google "has high confidence" attacker leveraged an AI model — but won't name the platform (says it wasn't Gemini). TIG chief: "tip of the iceberg." Real warning shot — but note the asymmetry with the Mythos narrative: actual offensive use traces to an unnamed model, not the one being prior-restrained.</li>
+<li><span class="source"><a href="https://www.techmeme.com/260511/p25">CTech</a></span> Frame Security exits stealth with $50M (Index, Team8, Picture) — ex-Wiz/Team8 founders building defense layer for <mark>AI-powered social engineering</mark> (deepfake voice, agentic phishing). Tracks alongside Experian's "40% of 2025 breaches were AI-powered" forecast.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4"/></svg> Deals & IPOs</h2>
+<ul>
+<li><span class="source"><a href="https://openai.com/index/openai-launches-the-deployment-company/">OpenAI</a></span> <span class="source"><a href="https://www.techmeme.com/260511/p22">Reuters</a></span> OpenAI formally launches <mark>DeployCo at $10B pre-money with $4B+ from 19 investors</mark>; acquires AI consultancy <strong>Tomoro</strong> for ~150 forward-deployed engineers on day one. This finalizes the structure flagged on May 4 — the PE-routed Palantir-style FDE channel is now live.</li>
+<li><span class="source"><a href="https://www.techmeme.com/260511/p17">Bloomberg</a></span> <strong>Cerebras upsizes IPO</strong> to 30M shares at $150–$160 (from 28M @ $115–$125). Now seeking <mark>up to $4.8B at $34.4B valuation</mark> — a sharp markup vs. the $26.6B target last week. Pricing this week.</li>
+<li><span class="source"><a href="https://www.techmeme.com/260511/p16">The Information</a></span> <strong>Kuaishou</strong> plans 2027 IPO spin-out of <strong>Kling AI</strong> at a $20B target valuation; currently in pre-IPO talks. China's first major standalone video-model listing.</li>
+<li><span class="source"><a href="https://techfundingnews.com/lightspeed-and-dragoneer-to-back-helsings-1-2b-round-valuing-it-at-18b-report/">TFN/FT</a></span> <strong>Helsing</strong> (defense AI / drones) closing $1.2B led by Dragoneer with Lightspeed at <mark>$18B — up from $14B</mark> less than a year ago. 4,000+ drones deployed in Ukraine.</li>
+<li><span class="source"><a href="https://www.techmeme.com/260511/p23">Bloomberg</a></span> <strong>Cowboy Space</strong> (formerly Aetherflux; Baiju Bhatt) raises $275M Series B at $2B led by Index — orbital data centers + rockets. Joins Panthalassa (wave-powered DCs) in the exotic-compute push.</li>
+<li><span class="source"><a href="https://techfundingnews.com/deepmind-spinout-isomorphic-labs-eyes-over-2b-funding-from-thrive-and-alphabet/">TFN</a></span> Update: <strong>Isomorphic Labs</strong> $2B+ round — Thrive + Alphabet leading; pharma push extends Thrive's frontier-AI book.</li>
+<li><span class="source"><a href="https://theaiinsider.tech/2026/05/11/report-chinese-humanoid-robot-startup-vbot-raises-usd-73m-in-pre-a-funding/">AI Insider</a></span> <strong>Vbot</strong> (China humanoid) raises ~$73M (¥500M) Pre-A; full-size humanoids. Chinese humanoid capital wave continues — sixth major round in two weeks (Linkerbot, Robotera, Xiaoyu, 1X, Robot Era, Vbot).</li>
+<li><span class="source"><a href="https://www.techmeme.com/260511/p19">Bloomberg</a></span> <strong>Masayoshi Son</strong> in talks with <strong>Macron</strong> on a multibillion-dollar French AI data center, expected unveiling within weeks. SoftBank's Stargate-Europe analog.</li>
+<li><span class="source"><a href="https://datacentremagazine.com/news/nscale-secures-us-790m-in-financing-for-norway-ai-campus">DC Mag</a></span> <strong>Nscale</strong> bags $790M financing for Norway AI campus — largest AI infra deal in Norway, on top of March's $2B Series C.</li>
+<li><span class="source"><a href="https://www.thesaasnews.com/news/enter-raises-over-100m-at-1-2b-valuation">SaaS News</a></span> Brazilian legal-AI <strong>Enter</strong> hits $1.2B unicorn status with $100M+ Series B. Latin-American legal-AI's first unicorn.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg> Policy & Litigation</h2>
+<ul>
+<li><span class="source"><a href="https://www.techmeme.com/260511/p15">Reuters</a></span> European Commission confirms <mark>"ongoing discussions" with OpenAI and Anthropic on access to latest models</mark>; OpenAI is "proactively offering" access. EU equivalent of US ad-hoc prior-restraint — but framed as cooperative pre-deployment evaluation rather than a veto regime. Worth pairing with Zvi's read on the Mythos episode.</li>
+<li><span class="source"><a href="https://thezvi.substack.com/p/ai-167-the-prior-restraint-era-begins">Zvi (recap)</a></span> Stenberg's curl finding directly weakens the empirical case Hassett/Sacks invoked for FDA-style review. Watch for Anthropic to recalibrate its Mythos cyber-uplift claims in the next disclosure round.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg> Industry & Infra</h2>
+<ul>
+<li><span class="source"><a href="https://www.techmeme.com/260511/p26">Stratechery</a></span> Ben Thompson: <mark>agentic inference will reshape compute infra</mark> because latency stops mattering when no human is in the loop — argues this changes the calculus for chip IPOs and reshapes Nvidia's competitive moat. Frames Cerebras's IPO timing as ideal.</li>
+<li><span class="source"><a href="https://theaiinsider.tech/2026/05/11/nvidia-commits-over-40b-to-ai-equity-deals-in-2026-led-by-30b-openai-investment/">AI Insider</a></span> Nvidia has now committed <strong>$40B+ in AI equity deals YTD 2026</strong>, led by the $30B OpenAI investment. TCI's Microsoft exit last week was framed against exactly this circular-funding dynamic.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="source"><a href="https://www.lesswrong.com/posts/rgXQuG8KXtxugSG6H/what-i-did-in-the-hedonium-shockwave-by-emma-age-six-and-a">LessWrong</a></span> "What I did in the hedonium shockwave, by Emma, age six and a half." Short fiction (anonymous): a six-year-old narrates the two-week countdown to a benevolent superintelligence converting Earth into utility. Notable for satirizing how grownup AI discourse sounds to anyone outside it ("all grownups do is say 'hedonium shockwave' at each other until they all start crying"). Worth a read as a vibes-check on how doomer/utopian talk lands.</li>
+<li><span class="source"><a href="https://openai.com/index/openai-launches-the-deployment-company">OpenAI Blog</a></span> Official DeployCo launch post + accompanying "How enterprises are scaling AI" guide — useful primary text for the Tomoro acquisition story (150 FDEs, focus on "trust, governance, workflow design, quality at scale").</li>
+<li><span class="source"><a href="https://cursor.com/changelog/05-11-26">Cursor Changelog</a></span> Bugbot now exposes <strong>effort levels</strong>: default = 0.7 bugs/run with 79% merge acceptance; <mark>"high" effort = 0.95 bugs/run</mark> at higher token cost. First quantitative public disclosure of an AI code-review tool's bug-density yield curve.</li>
+<li>No new posts from Transformer, Zvi, Joe Carlsmith, Palisade, AI Futures Project, AI Safety Newsletter, DeepMind, Forethought, or Nicholas Carlini in last 28h. Zvi's next AI weekly expected Wed/Thu.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
