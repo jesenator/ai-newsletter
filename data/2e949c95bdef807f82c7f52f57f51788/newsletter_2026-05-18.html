@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Monday, May 18, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 28px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 2px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Monday, May 18, 2026</h1>
+<div class="date">Monday, May 18, 2026 — Composer 2.5 ships. Import AI 457 drops. Cloudflare publishes its Mythos red-team. Pope's AI encyclical lands May 25.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Cursor ships Composer 2.5</span>
+<span class="source"><a href="https://cursor.com/changelog/composer-2-5">Cursor changelog</a></span> "Substantial improvement in intelligence over Composer 2" — better at <mark>sustained long-running tasks</mark>, follows complex instructions more reliably. Standard: $0.50/M in, $2.50/M out. Fast (default): $3/$15. <mark>Double usage credits for the first week.</mark></li>
+<li><span class="item-title">Linus Torvalds: AI bug-hunters have made Linux security list "almost unmanageable"</span>
+<span class="source"><a href="https://www.theregister.com/security/2026/05/18/linus-torvalds-says-ai-powered-bug-hunters-have-made-linux-security-mailing-list-almost-entirely-unmanageable/5241633">The Register</a></span> Floods of low-quality LLM-generated CVE reports drowning maintainers. The defender-side cost of cheap automated vuln discovery, made concrete.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg> Import AI 457 (Jack Clark)</h2>
+<ul>
+<li><img src="https://jackclarkcartoons.com/wp-content/uploads/2024/01/cropped-jackclark-cartoons-header.png" style="max-width: 180px; float: right; margin: 0 0 10px 12px; border-radius: 4px;" onerror="this.style.display='none'">
+<span class="item-title">"Stuxnet before Stuxnet": fast16.sys virus targeted precision physics simulators</span>
+<span class="source"><a href="https://jack-clark.net/2026/05/18/import-ai-457-ai-stuxnet-cursed-muon-optimizer-and-positive-alignment/">Import AI</a></span> SentinelOne teardown of a ~20-year-old virus that <mark>injected subtle FPU instructions to corrupt high-precision calculations</mark> in LS-DYNA, PKPM, MOHID — tools used in nuclear weapons modeling and structural analysis. Clark's frame: "this is how a superintelligence might prevent others from coming into existence." Strong CivAI demo seed for the "AI non-proliferation as the new nuclear non-proliferation" pitch.</li>
+<li><span class="item-title">Muon optimizer silently kills neurons; Aurora may replace it</span>
+<span class="source"><a href="https://jack-clark.net/2026/05/18/import-ai-457-ai-stuxnet-cursed-muon-optimizer-and-positive-alignment/#:~:text=Muon%E2%80%99s%20update%20inherits%20row-norm">Import AI</a></span> Tilde Research: under Muon, <mark>1 in 4 MLP neurons are effectively dead by step 500</mark>. Their fix, Aurora, beats Muon by 10 MMLU points on a 1.1B model and was independently validated at 600M by Pleias. Still unclear if it beats AdamW at scale.</li>
+<li><span class="item-title">Prime Intellect: Codex + Claude Code beat human nanoGPT speedrun record</span>
+<span class="source"><a href="https://jack-clark.net/2026/05/18/import-ai-457-ai-stuxnet-cursed-muon-optimizer-and-positive-alignment/#:~:text=Autonomous%20AI%20research">Import AI</a></span> Agents did ~10k runs / ~14k H200-hours. Good at optimizer search, hyperparameter sweeps, stacking methods; <mark>bad at original ideas and pruning</mark>. "Lower bound of what's possible today with autonomous research agents."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/></svg> CivAI-Adjacent: Cyber & Capabilities</h2>
+<ul>
+<li><span class="item-title">Cloudflare "Project Glasswing: what Mythos showed us"</span>
+<span class="source"><a href="https://blog.cloudflare.com/cyber-frontier-models/">Cloudflare blog</a></span> Cloudflare's red-team writeup as a Glasswing partner. 87 pts on HN. <mark>Concrete defender-side narrative</mark> of what Mythos found in their stack — useful counterpart to last week's XBOW / UK AISI numbers when briefing policymakers.</li>
+<li><span class="item-title">Peter Wildeford: How banned AI chips end up in China</span>
+<span class="source"><a href="https://blog.peterwildeford.com/p/how-banned-ai-chips-end-up-in-china">The Power Law</a></span> AI chips reach China through <mark>distribution chains in which each seller vets only its direct customer</mark>, and no one is on the hook for what happens downstream. Companion to the Sen. Cotton thread on OBON / Super Micro and the Bessent US–China protocol talk.</li>
+<li><span class="item-title">Voice AI systems vulnerable to hidden audio attacks</span>
+<span class="source"><a href="https://spectrum.ieee.org/voice-ai-audio-attacks">IEEE Spectrum</a></span> New survey of inaudible-trigger and adversarial-audio attacks against voice agents. Plausible CivAI demo material as voice agents move into customer service / accessibility.</li>
+<li><span class="item-title">"AI eats the world" Spring 2026 deck</span>
+<span class="source"><a href="https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/6a0af5d0484fbf5fe9a7743e/1779103184855/2026-Spring-AI.pdf">PDF</a></span> 137 pts on HN. Slide-deck style state-of-the-industry overview — sometimes useful for grabbing charts when prepping intros for non-technical audiences.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">Shared "good" direction encodes "helpful" for Assistant personas and "harmful" for evil personas</span>
+<span class="source"><a href="https://twitter.com/gilg_oscar/status/2056387363840893075">X: Oscar Gilg</a></span> MATS preprint with Patrick Butlin: a <mark>single linear direction represents "good for current persona"</mark> — helpful under Assistant, harmful under evil. Clean mechanistic story for why persona-swapping jailbreaks work.</li>
+<li><span class="item-title">ICLR 2026: 11% of submissions are AI safety</span>
+<span class="source"><a href="https://twitter.com/OscarSykes7/status/2056262661059285234">X: Oscar Sykes</a></span> <mark>595 of 5,352 papers.</mark> Agent Safety is now the largest subdomain (117 papers) — a category that "barely existed a year ago."</li>
+<li><span class="item-title">Owain Evans negation-neglect code released</span>
+<span class="source"><a href="https://twitter.com/OwainEvans_UK/status/2056062351229718919">X: Owain Evans</a></span> Update to Saturday's mention — code for the "models believe claims even when documents say FAKE" paper is now public.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5"/></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">Pope Leo XIV first encyclical <i>Magnifica Humanitas</i> drops May 25; Chris Olah meeting Pope next week</span>
+<span class="source"><a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html">Vatican News</a></span> <span class="source"><a href="https://twitter.com/ch402/status/2056406734454067560">X: Chris Olah</a></span> Followup to last Friday's note — official date and title: "on preserving the human person in the age of artificial intelligence." <mark>Polymarket reports Pope Leo will meet Anthropic co-founder Chris Olah next week</mark>; Olah will speak at the May 25 presentation.</li>
+<li><span class="item-title">Eric Schmidt booed at Univ. of Arizona commencement when he mentioned AI</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/ce8pqd54qneo">BBC</a></span> Reaction "underscores a growing anxiety among students" over AI's career impact. Useful anecdote for the "AI is becoming politically toxic" file.</li>
+<li><span class="item-title">Charbel Segerie: an international AI red-lines agreement is "necessary and realistic"</span>
+<span class="source"><a href="https://twitter.com/CRSegerie/status/2056314873097961476">X: Charbel-Raphaël Segerie</a></span> Argues Trump–Xi are now more willing to deal than at any point. Notes US and China have already agreed on a first red line (nuclear C2). CeSIA hiring 3 roles in Paris, French not required, deadline May 22.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg> Berkeley / EA Community</h2>
+<ul>
+<li><span class="item-title">Mox events this week (5/18–5/23)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/mox-events-this-week-518523">Mox Populi</a></span> Weekly programming roundup is live — worth a skim if you're heading into SF.</li>
+<li><span class="item-title">Sentient Futures: AI×Animals grants, NYU roles, London conferences</span>
+<span class="source"><a href="https://sentientfutures.substack.com/p/aianimals-grants-nyu-roles-london">Sentient Futures</a></span> Monthly roundup of funding + opportunities at the AI / animal welfare intersection.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> RSS Feed Roundup</h2>
+<ul>
+<li><span class="item-title">ACX Open Thread #434 + new subscriber piece</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-thread-434">ACX</a></span> Scott's new subscriber post "Every Magazine Piece On The SF AI Scene" — short send-up of the genre, opens with a Dasani-water-bottle bio-hacker at a group house begging him to "explain the exact arguments" about AI extinction. Also: signal-boost offer for ACX meetup-group voter guides.</li>
+<li><span class="item-title">Vitalik Buterin: a shallow dive into formal verification</span>
+<span class="source"><a href="https://vitalik.eth.limo/general/2026/05/18/fv.html">vitalik.eth.limo</a></span> Optimistic counter to "AI-assisted bug finding makes secure code impossible." Argues <mark>AI-assisted formal verification</mark> is the missing piece. Nora Ammann (AISI) endorses.</li>
+<li><span class="item-title">Researchers wanted preschool teachers to wear cameras to train AI</span>
+<span class="source"><a href="https://www.404media.co/researchers-wanted-preschool-teachers-to-wear-cameras-to-train-ai/">404 Media</a></span> Concrete case study in the social acceptability frontier of training-data collection. Could be a future CivAI demo angle.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
