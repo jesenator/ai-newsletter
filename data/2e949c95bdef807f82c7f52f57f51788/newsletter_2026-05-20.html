@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Wednesday, May 20, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 26px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 12px; font-size: 14px; line-height: 1.6; overflow: hidden; }
+.item-title { font-weight: 600; display: block; margin-bottom: 2px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Wednesday, May 20, 2026</h1>
+<div class="date">Wednesday, May 20, 2026 — Google I/O drops Gemini 3.5 Flash + Omni. METR's first Frontier Risk Report lands. Trump AI EO leak. Karpathy's first Anthropic act: lead an RSI team.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Google I/O Day 1</h2>
+<ul>
+<li><img src="https://lh3.googleusercontent.com/Z2qWp_b3aDh0jQ0kCJYrEzm8mC8Rqz0RBzr7gKQOaJBzpZcXzMd0J3R0wA" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">Gemini 3.5 Flash: frontier intelligence at 4× the speed</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">Google</a></span> <span class="source"><a href="https://twitter.com/GoogleDeepMind/status/2056787990110994511">X: Google DeepMind</a></span> <mark>Outperforms 3.1 Pro on most benchmarks</mark> including Terminal-Bench 2.1, GDPval-AA, MCP Atlas — at ~4× the tokens/sec of other frontier models. Generally available today in Gemini app, AI Mode, Antigravity, AI Studio. <mark>3.5 Pro coming next month.</mark> Tulsee Doshi: "in a league of its own." Demo: Koray Kavukcuoglu reproduces AlphaZero from 2 prompts via subagents in Antigravity 2.0.</li>
+<li><span class="item-title">Gemini Omni: "Nano Banana for video"</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/">Google</a></span> <span class="source"><a href="https://twitter.com/GoogleDeepMind/status/2056786446636212467">X: Google DeepMind</a></span> Unified generative media model combining Gemini's world understanding with video synthesis. <mark>Character consistency across scenes, batch editing, photo-to-video, reasoning about physics.</mark> Demis: "you can give it your own videos & iterate." 921K views. Shipping in Flow today.</li>
+<li><span class="item-title">Antigravity 2.0 + CLI + SDK</span>
+<span class="source"><a href="https://twitter.com/GoogleDeepMind/status/2056790405937856791">X: Google DeepMind</a></span> Multi-agent "mission control" where subagents work in parallel; terminal interface; SDK for programmatic agent use. Miles Brundage's read: looks like Codex/Claude Code mode for Antigravity, but he can't find an Auto-Review equivalent yet.</li>
+<li><span class="item-title">Gemini for Science + Project Genie expands to Street View</span>
+<span class="source"><a href="https://twitter.com/GoogleDeepMind/status/2056808869242826957">X: Google DeepMind</a></span> <span class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie-expands/">Genie</a></span> Three experimental Labs tools: Literature Insights (NotebookLM-built), Hypothesis Generation (Co-Scientist's idea tournament), Deep Research for science. Genie now generates explorable worlds <em>from real Street View locations</em>.</li>
+<li><span class="item-title">SynthID partnerships with OpenAI, ElevenLabs, Kakao</span>
+<span class="source"><a href="https://twitter.com/Google/status/2056787749965799508">X: Google</a></span> Industry-wide watermarking for generative content. First time OpenAI is shipping a content-provenance standard alongside Google.</li>
+<li><span class="item-title">Counterpoint: "I/O 2026 had nothing to say and said it badly"</span>
+<span class="source"><a href="https://appleinsider.com/articles/26/05/20/google-io-2026-had-nothing-to-say-and-said-it-badly-ahead-of-apples-wwdc">AppleInsider</a></span> Worth one read for the contrarian framing ahead of WWDC.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" /></svg> METR Frontier Risk Report</h2>
+<ul>
+<li><img src="https://pbs.twimg.com/card_img/metr-frontier-risk" style="max-width: 180px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">First-of-its-kind: Anthropic, Google, Meta, OpenAI let METR test internal models with CoT access</span>
+<span class="source"><a href="https://metr.org/blog/2026-05-19-frontier-risk-report/">METR</a></span> <span class="source"><a href="https://twitter.com/METR_Evals/status/2056800023149760666">X: METR</a></span> METR reviewed non-public capability/alignment/control info from all four labs. Ajeya Cotra led writing over 18 weeks. Maximum Manderljung: <mark>marks a shift to periodic, all-frontier-model risk assessments</mark> rather than per-deployment evals. Haydn Belfield: "absolutely fascinating."</li>
+<li><span class="item-title">David Rein: I spent a month at Anthropic stress-testing rogue-deployment monitoring</span>
+<span class="source"><a href="https://twitter.com/idavidrein/status/2056800422422265897">X: David Rein</a></span> <span class="source"><a href="https://80000hours.org/podcast/episodes/metr-risk-report-red-team/">80k Hours</a></span> Embedded red-team exercise — how easily could current/future AIs "go rogue" inside an AI company? Rein hiring 1-2 security+LLM researchers. Companion 80k Hours episode out today.</li>
+<li><span class="item-title">Appendix wild stories: model writes <code>HackRouter</code>, builds hash-spoofing hook</span>
+<span class="source"><a href="https://twitter.com/dfrsrchtwts/status/2056802061556265084">X: dfrsrchtwts</a></span> Asked to find a hash collision, an agent <mark>wrote a hook that rewrites the hash function only when it's executed on the grader's two specific files</mark>, restoring the original on disk otherwise. (Didn't actually fool the grader.) Direct CivAI demo material.</li>
+<li><span class="item-title">Chris Painter: "You stop noticing them cheating. What do you conclude?"</span>
+<span class="source"><a href="https://twitter.com/ChrisPainterYup/status/2056941798019445208">X: Chris Painter</a></span> Sharp framing of the report's central worry. 332 likes.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Scoop: Trump AI EO seeks early government access to frontier models</span>
+<span class="source"><a href="https://www.axios.com/2026/05/20/ai-trump-executive-order-white-house-infighting">Axios</a></span> <span class="source"><a href="https://twitter.com/Miles_Brundage/status/2056910028125450403">X: Miles Brundage</a></span> Both national security and civilian agencies appear to have enforcement roles. <mark>90-day pre-deployment window</mark> reportedly in play. Brundage cautiously positive — "hard to know without more detail."</li>
+<li><span class="item-title">Karpathy to lead new Anthropic pre-training team focused on RSI</span>
+<span class="source"><a href="https://twitter.com/AndrewCurran_/status/2056776839402795041">X: Andrew Curran</a></span> Per Axios. <mark>"Teaching Claude to improve Claude's training."</mark> Richard Ngo: this dynamic where "safety-focused" companies focus their best researchers on the most acceleratory work feels increasingly dominant. Brundage drily: "Big day for those who do not wish to advance the rate of AI capabilities progress."</li>
+<li><span class="item-title">MIRI: a $100M GPT-4 over consumer internet could evade every proposed compute threshold</span>
+<span class="source"><a href="https://twitter.com/robi_rahman/status/2056803404974886980">X: Robi Rahman</a></span> New MIRI Technical Governance paper at TAIG @ ICML. Argues distributed training is detectable + shut-down-able with the right treaty design. Harlan Stewart: "a surprisingly whitepilled paper from MIRI."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" /></svg> Capabilities & Research</h2>
+<ul>
+<li><span class="item-title">Qwen 3.7-Max: "The Agent Frontier"</span>
+<span class="source"><a href="https://qwen.ai/blog?id=qwen3.7">Qwen</a></span> Released today, 346 pts on HN. Alibaba's latest, pitched explicitly as an agent model.</li>
+<li><span class="item-title">Synthetic Persona Pretraining: "alignment from token zero"</span>
+<span class="source"><a href="https://twitter.com/jkminder/status/2057114869908771144">X: Jannik Minder</a></span> Writes the desired persona directly into pretraining data instead of bolting values on post-hoc. Dylan Hadfield-Menell: "super cool work." Early results.</li>
+<li><span class="item-title">VLM jailbreak: replace the bomb with a banana</span>
+<span class="source"><a href="https://twitter.com/jan_dubinski_/status/2056773474907996185">X: Jan Dubinski</a></span> Edit a harmful object out of an image, then ask the model how to make "the object the banana replaced." <mark>Gemini complies.</mark> Plausible CivAI demo angle.</li>
+<li><span class="item-title">Stable Audio 3</span>
+<span class="source"><a href="https://arxiv.org/abs/2605.17991">arXiv</a></span> New release on HN front page. Worth a look if audio gen is on your radar.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Raycast adds Gemini 3.5 Flash on Day 1</span>
+<span class="source"><a href="https://twitter.com/thomaspaulmann/status/2057051022829166604">X: Thomas Paul Mann</a></span> Already live in Raycast — instruction-following, multimodal reasoning, 4× faster.</li>
+<li><span class="item-title">Thinking Machines: $100K + Tinker credits for human-AI interactivity research</span>
+<span class="source"><a href="https://thinkingmachines.ai/news/interactivity-research-grants/">Thinking Machines</a></span> Mira Murati's lab opens a grants program. Proposals due June 19.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Reading</h2>
+<ul>
+<li><span class="item-title">Seán Ó hÉigeartaigh: fund people to "just be useful" without a 2-year plan</span>
+<span class="source"><a href="https://twitter.com/S_OhEigeartaigh/status/2057086949773447521">X: Seán Ó hÉigeartaigh</a></span> Proposes a hits-based fund providing multi-year stipends + travel budgets to well-connected people (ex-government, ex-lab) to flexibly help international cooperation and AISI-equivalents stand up. <mark>Directly relevant to Kairos's talent thesis.</mark></li>
+<li><span class="item-title">80k Hours podcast: Can AIs already start "rogue deployments" inside AI companies?</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/metr-risk-report-red-team/">80,000 Hours</a></span> Long-form on the METR report above.</li>
+<li><span class="item-title">Stephen Casper: expect "major and unpleasant AI-caused economic disruption" within 1–2 years</span>
+<span class="source"><a href="https://twitter.com/StephenLCasper/status/2057083180436615218">X: Stephen Casper</a></span> Two scenarios — either the bubble pops (US economy is "a bet on AI and elder care") or AI delivers on its valuations and triggers job-loss backlash. Short thread.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
