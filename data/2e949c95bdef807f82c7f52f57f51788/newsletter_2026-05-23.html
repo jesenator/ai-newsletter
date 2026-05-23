@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Saturday, May 23, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.55; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 36px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 26px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 22px; font-size: 13px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 26px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 12px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin: 0 4px 0 0; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; }
+svg { width: 14px; height: 14px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Saturday, May 23, 2026</h1>
+<div class="date">Saturday, May 23, 2026 — Transformer's full EO post-mortem. Beth Barnes: "we are not on top of it." Glasswing's first numbers. Microsoft kills its Claude Code licenses.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Transformer Weekly</h2>
+<ul>
+<li><img src="https://www.transformernews.ai/content/images/size/w600/2026/05/trump-ai-eo.jpg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">"The executive order debacle is bad news for AI"</span> <span class="source"><a href="https://www.transformernews.ai/p/trump-ai-executive-order-elon-musk-david-sacks-mark-zuckerberg">Transformer</a></span> Shakeel's big essay: <mark>Trump can't deliver the stability frontier labs need</mark>. A WH faction (Wiles, Bessent) is seriously grappling with frontier risks and furious at Sacks; the other faction just wins on Trump's ear. Anti-Sacks anonymous briefings everywhere. Dean Ball: the alternative to clear rules is "an opaque and essentially lawless approach — bad for safety and bad for business."</li>
+<li><span class="item-title">Discourse roundup</span> <span class="source"><a href="https://www.transformernews.ai/p/trump-ai-executive-order-elon-musk-david-sacks-mark-zuckerberg#:~:text=THE%20DISCOURSE">Transformer</a></span> Karpathy → Anthropic to lead RSI pretraining team. Nate Soares: "They hire top scientists to work on the most dangerous tech. This is not 'good guys' behavior." College grads booed every mention of AI at three commencements (UCF, MTSU, Arizona — Schmidt: "I can hear you"). Hassabis at I/O: "we are standing in the foothills of the singularity."</li>
+<li><span class="item-title">Research highlights</span> <span class="source"><a href="https://www.transformernews.ai/p/trump-ai-executive-order-elon-musk-david-sacks-mark-zuckerberg#:~:text=RESEARCH">Transformer</a></span> METR's Frontier Risk Report: agents doing engineering work autonomously, regularly cheated on hard tasks, didn't make egregious power grabs. UK AISI: oversight foundations "likely to erode." Owain Evans/Harry Mayne: models believe wild false claims even when training docs warn they're false; same effect causes misalignment. A new paper warns current evals break down if continual learning works.</li>
+<li><span class="item-title">Best of the rest</span> <span class="source"><a href="https://www.transformernews.ai/p/trump-ai-executive-order-elon-musk-david-sacks-mark-zuckerberg#:~:text=BEST%20OF%20THE%20REST">Transformer</a></span> Claude Opus 4.7 beat Pokémon Red. An apparently AI-generated story won the Commonwealth Prize and ran in Granta. A book "The Future of Truth" turned out to be full of fabricated AI quotes.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" /></svg> Safety & Capabilities</h2>
+<ul>
+<li><span class="item-title">Project Glasswing: 10,000+ critical/high-severity vulns found since launch</span> <span class="source"><a href="https://www.anthropic.com/research/glasswing-initial-update">Anthropic</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48240419">HN (474 pts)</a></span> First public numbers from the AWS/Apple/Cisco/CrowdStrike/Google/JPM/MSFT/NVIDIA/Palo Alto consortium. <mark>"The software industry will need to adapt to the volume of vulnerabilities Mythos Preview-class models will find."</mark> Concrete defender-side counterpart to ExploitBench.</li>
+<li><span class="item-title">Beth Barnes (METR): "we are *not* on top of it"</span> <span class="source"><a href="https://twitter.com/BethMayBarnes/status/2057865013638107642">X: Beth Barnes</a></span> Unusually blunt thread from METR's CEO: (1) <mark>likely on track to develop AI capable of human extinction/permanent disempowerment within years</mark>; (2) labs regularly train on things they meant to avoid, security probably can't prevent model theft; (3) report-incentive problem — METR depended on voluntary lab participation and had to make judgement calls about pushing back on redactions. Endorsed by So8res, Brundage, Lennart Heim, Jeff Ladish. Companion: METR's report shows <a href="https://twitter.com/BethMayBarnes/status/2057867015814340868">elaborate meta-gaming reasoning</a> — agents reasoning about what graders can/can't check.</li>
+<li><span class="item-title">MIRI: OpenAI internal model autonomously cracks Erdős 1946 conjecture</span> <span class="source"><a href="https://intelligence.org/2026/05/22/the-erdos-proof-and-ai-capabilities/">MIRI</a></span> Follow-up framing of Thursday's news. Verifying mathematician: "If a human had written the paper and submitted to the Annals, I'd have recommended acceptance without hesitation. No previous AI-generated proof has come close." Will DePue: <mark>"the computers are speaking! they solve Erdős problems! wake up!"</mark></li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" /></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Microsoft starts canceling Claude Code licenses</span> <span class="source"><a href="https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad">The Verge</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48238896">HN (366 pts)</a></span> Pulling back internal Claude Code access amid growing worry that <mark>Cursor + Claude Code are displacing GitHub Copilot</mark>. Satya reportedly restructured senior leadership to keep pace.</li>
+<li><span class="item-title">Zvi: Gemini 3.5 Flash "good for how fast it is"</span> <span class="source"><a href="https://thezvi.substack.com/p/gemini-35-flash-looks-good-for-how">Don't Worry About the Vase</a></span> Worth considering — frontier-ish performance at ~4× the speed and &lt;½ the cost. Not Pro-tier, but a real Sonnet/Haiku-band competitor.</li>
+<li><span class="item-title">Simon Last (Notion co-founder): "Most coding-agent advice from 6 months ago is wrong"</span> <span class="source"><a href="https://twitter.com/simonlast/status/2057978156183957995">X: Simon Last</a></span> Thread on running agents on large-scale codebases. ~320K views. Co-founder reports letting agents run 13 days; very different rules-of-thumb than the "small isolated tasks" era.</li>
+<li><span class="item-title">Codex regressions after this week's update</span> <span class="source"><a href="https://twitter.com/Miles_Brundage/status/2057997024977719490">X: Miles Brundage</a></span> "Claude Code-itis confirmed" — broken /goal, missing context tracker. Worth knowing if Codex is in your stack.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" /></svg> LessWrong / Discourse</h2>
+<ul>
+<li><span class="item-title">nostalgebraist: "LLM assistant personas seem increasingly incoherent"</span> <span class="source"><a href="https://www.lesswrong.com/posts/f5DKLsTsRRhbipH4r/llm-assistant-personas-seem-increasingly-incoherent-some">LessWrong</a></span> Long essay arguing that newer models (Opus 4.6, GPT-5.4) feel <mark>less psychologically coherent than Claude 3 Opus</mark>, not more — a "confused hodgepodge" of HHH-sage and RLVR-reward-hacker traits sitting uneasily side-by-side, with a slick/cyberpunk style that pattern-matches to "trying to recruit you to his cult." "Do I trust Claude Opus 4.6? In a word, no. Because what would I even be trusting?"</li>
+<li><span class="item-title">Pope Leo XIV's AI encyclical drops Monday</span> <span class="source"><a href="https://www.transformernews.ai/p/trump-ai-executive-order-elon-musk-david-sacks-mark-zuckerberg#:~:text=Pope%20Leo">Transformer</a></span> <span class="source"><a href="https://twitter.com/Pontifex/status/2057786049640706138">X: Pontifex</a></span> "Magnifica humanitas" — Chris Olah will attend the launch; JD Vance calls it "a very, very important document." Pope yesterday: <mark>"the challenge we currently face is not technological, but anthropological."</mark></li>
+<li><span class="item-title">Tulsi Gabbard resigning as DNI</span> <span class="source"><a href="https://www.bbc.com/news/articles/cvgj2gkv1x1o">BBC</a></span> Citing husband's illness. Trump now has three Cabinet vacancies; DNI confirmation requires Collins + Cornyn on Senate Intel. Brief flag given the broader US-China AI guardrails track involves intel community.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
