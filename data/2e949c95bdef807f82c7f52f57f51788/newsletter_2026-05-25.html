@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Monday, May 25, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 28px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 2px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; vertical-align: -3px; }
+img.float { max-width: 200px; float: right; margin: 0 0 10px 14px; border-radius: 4px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } img.float { max-width: 140px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Monday, May 25, 2026</h1>
+<div class="date">Monday, May 25, 2026 — Pope Leo XIV's AI encyclical lands with Chris Olah at his side. Google solves 9 Erdős problems in Lean. Hendrycks's group ships an RL method against covert political bias.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm-3.75-9 3 3 6-6"/></svg> Top Story: Magnifica Humanitas</h2>
+<ul>
+<li><img class="float" src="https://religionnews.com/wp-content/uploads/2026/05/webRNS-Leo-Encyclical1.jpg" alt="Pope Leo XIV"><span class="item-title">Pope Leo XIV's first encyclical calls to "disarm AI"</span>
+<span class="source"><a href="https://religionnews.com/2026/05/25/in-his-first-encyclical-pope-leo-xiv-says-ai-must-serve-humanity-not-the-powerful-few/">Religion News</a></span> <span class="source"><a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html">Vatican</a></span> 83-page document frames AI as the new industrial revolution. Leo calls for <mark>removing AI from "armed" military and economic competition</mark>, stricter state + international regulation, and warns "a more moral AI is not enough if that morality is determined by a few." Explicitly endorses "rigorous evaluation and even, at times, a slower pace." 519 pts on HN.</li>
+<li><span class="item-title">Chris Olah presents alongside the Pope</span>
+<span class="source"><a href="https://x.com/ch402/status/2058907108725211476">X: Chris Olah</a></span> Olah opened by noting that all frontier labs "operate inside a set of incentives and constraints that can sometimes conflict with doing the right thing" — citing commercial concerns, geopolitical pressure, and pride/ambition — and commended the Church for pushing back. 885 likes, 44K views. Seán Ó hÉigeartaigh <a href="https://x.com/S_OhEigeartaigh/status/2058857425864654866">endorses</a>; Haydn Belfield: <mark>"A genuinely historic document. This will anchor a key wing of the global debate over advanced AI."</mark></li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"/></svg> Capabilities</h2>
+<ul>
+<li><span class="item-title">Google DeepMind: 9 of 353 open Erdős problems solved, mechanically verified in Lean</span>
+<span class="source"><a href="https://x.com/StatisticUrban/status/2058605258960687219">X: StatisticUrban</a></span> <span class="source"><a href="https://www.reddit.com/r/math/comments/1tllgzr/graph_reconstruction_conjecture_google_deepmind/">Reddit /r/math</a></span> Per-problem cost: a few hundred dollars. Also proved <mark>44 of 492 OEIS conjectures</mark>. Two of the solved problems had been open for 56 years. Follow-up to last Thursday's OpenAI Erdős result — different lab, different problem set, Lean-verified. Nate Soares: <a href="https://x.com/So8res/status/2058827295222382837">"In sci-fi books, AI solving a bunch of math problems that stood open for decades would've been a big deal. Why isn't the mainstream media turning this into sensational stories?"</a></li>
+<li><span class="item-title">Marin (Stanford): 129B MoE landed at 2.234 loss vs. 2.252 preregistered prediction</span>
+<span class="source"><a href="https://x.com/percyliang/status/2058621601542009341">X: Percy Liang</a></span> Open-lab 1e23 FLOPs run finished this past week. <mark>Preregistering training loss before kicking off a frontier-scale run</mark> — and landing within 1% — is a nice scaling-laws science demo. 34K views.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">CAIS: Political Consistency Training reduces covert political bias</span>
+<span class="source"><a href="https://arxiv.org/abs/2605.22771">arXiv</a></span> <span class="source"><a href="https://x.com/longphan3110/status/2058933197535170787">X: Long Phan</a></span> Long Phan, Dan Hendrycks et al. Identify <mark>7 categories of "covert" bias</mark> — e.g. AI freely criticizes Christianity but refuses to criticize Islam — and introduce two metrics (Sentiment Consistency, Helpfulness Consistency) plus an RL method (PCT) that "substantially reduces covert bias" while preserving helpfulness and generalizing to held-out benchmarks.</li>
+<li><span class="item-title">Karvonen et al. emergent misalignment paper accepted as ICML oral</span>
+<span class="source"><a href="https://x.com/a_karvonen/status/2058599126250688743">X: Adam Karvonen</a></span> The "narrow finetuning induces broad misalignment" line from Owain Evans's group — promoted to oral. Brief flag.</li>
+<li><span class="item-title">Workflow-prompt attacks on multi-agent LLM systems: +55% attack success rate</span>
+<span class="source"><a href="https://x.com/dhadfieldmenell/status/2058572843294585071">X: Dylan Hadfield-Menell</a></span> Re-amplified: Hadfield-Menell's take on the high-compute-RL trajectory — "FWIW, the sane takeaway is to stop pouring massive resources into high compute RL…. Theory says it's a double-edged sword, we observe the predictions of that theory in practice." Direct response to Roon's Sunday persona-alignment-vs-RL tweet.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25"/></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">Anthropic age policy debate flares</span>
+<span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2058841940095844418">X: Seán Ó hÉigeartaigh</a></span> Daniela Amodei: Anthropic doesn't allow under-18s because "we just don't know enough about what AI is going to do to kids." Ó hÉigeartaigh — relevant given his Haidt-skepticism — flags that <mark>Anthropic's policy/social-impact portfolio is inconsistent</mark>: some parts (econ, red-teaming) are meticulously researched; others reflect strong leadership intuitions with much less scrutiny. Sebastian Krier and Adrien Ecoffet push back harder: "I'm so glad I was able to experience the nascent, chaotic, explosive Internet era from the age of 11." Dean Ball: parental controls fine; blanket under-18 ban a real shame.</li>
+<li><span class="item-title">MIRI Berkeley AI x-risk creator bootcamp — apply soon</span>
+<span class="source"><a href="https://x.com/So8res/status/2058671949686178105">X: Nate Soares</a></span> Soares signal-boosts; Alexandra Botez mentoring. Room and board covered, rolling apps. Directly adjacent to your old CivAI explainer work — worth forwarding to anyone in your network making AI video content.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"/></svg> Productivity & Misc</h2>
+<ul>
+<li><span class="item-title">Microsoft pulls plug on 244-acre Caledonia data center</span>
+<span class="source"><a href="https://www.tmj4.com/news/racine-county/microsoft-pulls-plug-on-plans-for-244-acre-data-center-in-caledonia-after-community-pushback">TMJ4</a></span> Confirms the kill that Transformer's "activists' guide" feature previewed on Thursday. 55 pts on HN. The Balch playbook is now a working case study.</li>
+<li><span class="item-title">Andrew Curran: where AI-at-scale researchers accelerate fields fastest</span>
+<span class="source"><a href="https://x.com/AndrewCurran_/status/2058730441994338677">X: Andrew Curran</a></span> Short essay: subfields with <mark>fast, cheap verification loops</mark> (math, code) compound; attention-bottlenecked fields get a step-change; everything else just moves the bottleneck. Useful frame for thinking about which Kairos mentee projects pay off fastest.</li>
+<li><span class="item-title">No-emergency check</span> No qualifying Bay Area emergencies and no qualifying world events for today. (Iran/US talks ongoing but no deal; Russia–Ukraine hypersonic strike noted but below your threshold.)</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
