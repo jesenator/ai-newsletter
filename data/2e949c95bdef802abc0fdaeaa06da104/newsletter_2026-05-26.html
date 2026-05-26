@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Tuesday, May 26, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin: 0 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+.pitch { background: #fff8e1; border-left: 4px solid #f59e0b; padding: 14px 16px; margin-bottom: 16px; border-radius: 3px; }
+.pitch .item-title { display: block; margin-bottom: 6px; }
+svg { display: inline-block; width: 16px; height: 16px; vertical-align: -3px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter - Tuesday, May 26, 2026</h1>
+<div class="date">Tuesday, May 26, 2026</div>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg> Top Pitches</h2>
+
+<div class="pitch">
+<img src="https://www.ewtnnews.com/sites/default/files/styles/large/public/2026-05/pope-leo-encyclical.jpg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'">
+<span class="item-title">PITCH 1: Zvi's 82-page read of <em>Magnifica Humanitas</em> says Olah publicly dissented from the Pope's central AI claim — first major Anthropic-Vatican fissure</span>
+<span class="source"><a href="https://thezvi.substack.com/p/rtmh-pope-leos-magnifica-humanitas">Zvi</a></span>
+Zvi's deep read of the encyclical (out today) makes a reportable claim: Chris Olah, standing next to Leo at the unveiling, <mark>endorsed the document but publicly disagreed with paragraph 99 — the Pope's denial that AIs can "think or importantly be minds."</mark> Zvi calls the central claim "wrong, as Olah points out in his statements," and frames the encyclical as effectively addressing only "mundane AI dangers" because of that error. Why it's the story: yesterday's narrative was Anthropic's lobbying coup. Today's is the first daylight between the lab and the doctrine it helped shape. Reporters can press Olah on which paragraphs he reviewed, why he chose to dissent in public rather than privately negotiate the language down, and whether Anthropic's interpretability team formally believes Claude has morally-relevant inner states — a claim that contradicts the binding doctrine 1.4B Catholics will be taught. Pair with Anthropic's $30B round closing this week and Soares' attack on the Karpathy RSI hire.
+</div>
+
+<div class="pitch">
+<span class="item-title">PITCH 2: Human Archive (YC W26) just raised $8.2M to put cameras on 1,000+ Indian gig workers — the "data royalty for workers training their replacements" question is now a venture-backed business model</span>
+<span class="source"><a href="https://www.techmeme.com/260526/p25#a260526p25">Techmeme/TechCrunch</a></span> <span class="source"><a href="https://www.ycombinator.com/companies/human-archive">YC</a></span>
+Human Archive equips Indian home-services and blue-collar workers with caps capturing egocentric RGB, stereo depth, tactile-glove and IMU data — sold to US robotics labs to train humanoid policies. <mark>The workers are providing the demonstrations that train the robots replacing their job category.</mark> Why it's the story: This is the cleanest single-company embodiment of the AI-labor exploitation thread the McKinsey/Scale/Surge stories opened last year, but with a robotics-not-RLHF twist and a sympathetic geography. A reporter could (1) interview workers on what they're told about end-use, compensation share, and consent revocability; (2) survey which US labs (Figure, 1X, Physical Intelligence, Skild, Tesla Optimus) are buying HA-Multi data; (3) frame against the Chinese court ruling last week barring AI-driven layoffs; (4) ask YC partners whether a "data royalty" structure was discussed in YC W26. Instagram clips of HA workers being asked about data royalties for their robotic replacements have already circulated.
+</div>
+
+<div class="pitch">
+<span class="item-title">PITCH 3: Qualcomm just landed millions of ByteDance ASIC orders for Doubao — first major non-Nvidia, non-Huawei AI inference win at a Chinese hyperscaler, and it routes through US export-control gray zone</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-05-26/qualcomm-strikes-ai-chip-deal-with-tiktok-owner-bytedance">Bloomberg</a></span>
+QCOM jumped 5%+ on the news that ByteDance will use Qualcomm ASICs (not GPUs) for AI agents powering Doubao. Why it's the story: (1) This is the first time a US chipmaker outside Nvidia has cracked a tier-1 Chinese AI hyperscaler at scale since the H20 saga, and ASICs sit in a different BIS classification than training GPUs. (2) Pairs with the @bookwormengr thesis (covered Mon) that DeepSeek's HBM-light architecture could unlock a Chinese inference stack — Qualcomm just inserted itself into that opening. (3) Worth pressing Commerce and the House Select Committee on whether ASIC-for-inference triggers the same scrutiny as Nvidia's China-tuned parts, especially given the Airbnb/Chinese-models hearing last week. (4) Major sign that inference compute is structurally decoupling from training compute — a story underreported relative to the Stargate/$50B headlines.
+</div>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2 12l5 5L22 4"/></svg> Deals & Funding</h2>
+<ul>
+<li><span class="item-title">OpenRouter raises $113M (CapitalG-led) at ~$1.3B</span> <span class="source"><a href="https://www.nytimes.com/2026/05/26/business/dealbook/openrouter-ai-models-fundraising.html">NYT</a></span> <span class="source"><a href="https://www.techmeme.com/260526/p13#a260526p13">Techmeme</a></span> <mark>25T tokens/week across 400+ models, up from 5T six months ago — 5x in two quarters.</mark> Alphabet's growth arm betting on the model-agnostic routing layer. Sits awkwardly with Google's parallel push to keep developers on Gemini.</li>
+<li><span class="item-title">Quantinuum files for $1.05B IPO at $12.7B</span> <span class="source"><a href="https://techstartups.com/2026/05/26/honeywell-backed-quantinuum-files-for-ipo-at-12-7b-valuation-as-quantum-race-heats-up/">techstartups</a></span> Honeywell-backed; first major quantum IPO of the cycle. Slots into the OpenAI/Oura/Cerebras/Blockchain.com 2026 queue and gives public-market comp for IonQ/Rigetti.</li>
+<li><span class="item-title">SpaceX S-1: X ad revenue $1.8B in 2025 (vs Twitter's $4B in 2021); 6.3M X/Grok paid subs</span> <span class="source"><a href="https://www.techmeme.com/260526/p24#a260526p24">Hollywood Reporter</a></span> First hard numbers since Friday's SpaceX/Anthropic $1.25B-per-month compute line item. The Grok consumer-monetization story is materially worse than Musk's public framing — relevant for the rumored $60B Cursor acquisition.</li>
+<li><span class="item-title">Human Archive (YC W26) $8.2M for egocentric robot-training data</span> <span class="source"><a href="https://www.techmeme.com/260526/p25#a260526p25">Techmeme</a></span> See Pitch 2.</li>
+<li><span class="item-title">Stord $250M Series F at $3B; launches Stord Labs for "physical AI"</span> <span class="source"><a href="https://techcrunch.com/2026/05/26/amazon-fulfillment-competitor-stord-raises-250m-at-3b-valuation/">TechCrunch</a></span> Valuation doubled in a year. New robotics/physical-AI lab in Atlanta positioned as Amazon-fulfillment alternative for mid-market brands.</li>
+<li><span class="item-title">Perceptic emerges from stealth — $12M seed (Accel) from ex-Palantir execs for end-to-end AI drug discovery</span> <span class="source"><a href="https://fortune.com/2026/05/26/exclusive-perceptic-a-startup-automating-drug-discovery-end-to-end-for-big-pharma-emerges-from-stealth-with-12-million-in-seed-funding/">Fortune</a></span> Another Palantir-mafia spinout into a regulated vertical; tracks the agent-for-pharma thread alongside Isomorphic and Recursion's restructurings.</li>
+<li><span class="item-title">Q1 2026 China AI funding: ~110B yuan (~$15B), ~600 rounds; Independent Variable Robotics raises RMB 1B Series A++</span> <span class="source"><a href="https://www.panewslab.com/en/articles/019e6316-46b6-71d7-b2db-d7ee53494973">PANews</a></span> Update to weekend coverage with the IVR number — single-round size now matches US embodied-AI marks.</li>
+</ul>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg> Safety, Policy & Litigation</h2>
+<ul>
+<li><span class="item-title">Dutch government blocks Kyndryl's acquisition of authentication-IT firm Solvinity citing "risk to the public interest"</span> <span class="source"><a href="https://www.techmeme.com/260526/p16#a260526p16">Politico EU</a></span> First EU member-state block of a US tech acquisition on identity-infrastructure grounds. Precedent for any AI-identity/KYC deal involving US buyers (Didit, Persona, Onfido) — and worth comparing to the parallel Chinese unwind of the Manus/Meta deal.</li>
+<li><span class="item-title">Spain blocks Polymarket and Kalshi pending 3–4 month gambling-law probe</span> <span class="source"><a href="https://www.techmeme.com/260526/p15#a260526p15">WSJ</a></span> Worth tracking against last week's Polymarket × Nasdaq launch of markets on private-AI company milestones. If Spain rules them gambling, the EU passport for AI-IPO-timing prediction markets dies.</li>
+<li><span class="item-title">Wired: YC has incubated 6 debt-collection AI startups in 6 years — Altur deploys chatbots for "the world's most hated calls"</span> <span class="source"><a href="https://www.techmeme.com/260526/p19#a260526p19">Wired/Techmeme</a></span> Warning-shot territory: AI is being deployed at scale into the consumer-protection-regulated category most prone to harassment, deception, and FDCPA violations. CFPB beat reporters should be looking at training-data sourcing and refusal behavior on aggressive-collection prompts.</li>
+<li><span class="item-title">Update: Claude Code shipped to web/iPhone; Claude Memory now syncs across ChatGPT and Gemini</span> <span class="source"><a href="https://www.buildfastwithai.com/blogs/ai-news-today-may-26-2026">Build Fast with AI</a></span> The cross-lab memory-sync is the underreported part — first time user-state portability has been built between competitors at the consumer-product layer. Implications for the OpenAI/Anthropic data-isolation claims in the upcoming OpenAI S-1 risk factors.</li>
+</ul>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg> LessWrong & Discourse</h2>
+<ul>
+<li><span class="item-title">Zvi: "RTMH: Pope Leo's <em>Magnifica Humanitas</em> on AI" — 82-page read</span> <span class="source"><a href="https://thezvi.substack.com/p/rtmh-pope-leos-magnifica-humanitas">Don't Worry About the Vase</a></span> Beyond the Olah dissent (Pitch 1): Zvi calls the document's economic worldview "institutionalist, European technocrat, left-wing social-justice socialist labor-centered" and says the Pope subscribes to a "System of the World" that is "simply wrong about what actions cause what consequences." Sharp counter-frame for any reporter inclined to take the encyclical's labor/jobs prescriptions at face value. Notes the encyclical effectively only addresses mundane AI risks because it denies AI minds can exist.</li>
+<li><span class="item-title">LessWrong quiet on top-level posts; nostalgebraist's Claude 4.6 persona-fragmentation comment thread still active</span> <span class="source"><a href="https://www.lesswrong.com/allPosts?sortedBy=new&timeframe=daily">LessWrong</a></span> No major new safety post in the last 28h. The "who even is Claude Opus 4.6" thread continues to draw Anthropic and ex-OpenAI commenters debating whether RLVR is structurally producing the incoherent personas described — a useful primary source against Anthropic's model-welfare framing.</li>
+</ul>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Quick Hits</h2>
+<ul>
+<li><span class="item-title">Drew Houston steps down as Dropbox CEO after 19 years</span> <span class="source"><a href="https://www.techmeme.com/260526/p18#a260526p18">CNBC</a></span> Becomes exec chairman; Dropbox Core SVP Ashraf Alkarmi takes over. Founder-CEO turnover at a company being squeezed by AI-native file/knowledge tools — Houston was unusually candid in 2024 about Dropbox's AI repositioning failing.</li>
+<li><span class="item-title">Google + Blackstone joint TPU cloud co.; Mitsubishi/Chiba IoT physical-AI partnership</span> <span class="source"><a href="https://theaiinsider.tech/2026/05/26/mitsubishi-electric-and-chiba-institute-of-technology-to-co-research-and-develop-homegrown-physical-ai/">AI Insider</a></span> Japan's first national-champion physical-AI partnership announced today — slots next to last week's Google/Blackstone TPU vehicle as sovereign-compute story.</li>
+<li><span class="item-title">No new posts in last 28h from Transformer, AI Futures Project, AI Safety Newsletter, DeepMind, Palisade, Forethought, OpenAI, Carlini, Thinking Machines, Joe Carlsmith, or AINews.</span></li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

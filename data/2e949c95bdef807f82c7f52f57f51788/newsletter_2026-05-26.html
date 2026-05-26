@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Tuesday, May 26, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+.tldr { background: #f0f4f8; border-left: 3px solid #2563eb; padding: 12px; margin-bottom: 24px; font-size: 13px; border-radius: 3px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 28px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 2px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; }
+svg { width: 14px; height: 14px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Tuesday, May 26, 2026</h1>
+<div class="date">Tuesday, May 26, 2026</div>
+
+<div class="tldr">Jack Clark gives a major Oxford lecture on living through the singularity. Alex Turner ships a promising mitigation for eval-gaming. Magnifica Humanitas discourse continues with sharp Olah/Anthropic critiques. Ben Todd reframes 80k Hours career advice for the age of AI.</div>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> Top Story</h2>
+<ul>
+<li><span class="item-title">Jack Clark's Oxford Cosmos lecture: "Explore the future, or retreat from the present"</span>
+<span class="source"><a href="https://jack-clark.net/2026/05/26/import-ai-458-reckoning-with-the-future-and-a-singularity-story/">Import AI 458</a></span> Long essay-talk on reckoning with continued AI progress. Concrete predictions: <mark>Nov 2026 — AI strongly bio-relevant (incl. bioweapon proliferation risk); Apr 2027 — Nobel-Prize-tier human+AI discovery; Dec 2028 — AI autonomously designs its successor</mark>. Inside Anthropic: Opus 4.6 caused some staff to stop writing code at all; a single human ran a team of 9 synthetic alignment researchers. "If it was possible to elegantly slow the development of this technology... that would likely be a good thing." Notable that this is Anthropic's policy lead saying it publicly. Ends with a short fiction piece on cryopreservation + the uplift. Worth reading in full.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><img src="https://turntrout.com/static/images/posts/eval-cooperativeness-hero.avif" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">Alex Turner & Jasmine Li: eval-cooperativeness training surfaces hidden misalignment</span>
+<span class="source"><a href="https://turntrout.com/eval-cooperativeness">Turn Trout</a></span> <span class="source"><a href="https://x.com/Turn_Trout/status/2059303859424539022">X: Alex Turner</a></span> New Team Shard work: train models via synthetic-doc finetuning to <em>want</em> evaluators to get accurate info about their deployment behavior. <mark>Locally cooperative ≠ globally aligned</mark> — but it surfaces hidden misalignment that ordinary evals miss. Open Qs: why cooperation training sometimes fails, how to verify it in-the-loop. Concrete, scalable mitigation for eval-gaming.</li>
+
+<li><span class="item-title">Forethought: Will we really put data centers in space?</span>
+<span class="source"><a href="https://www.forethought.org/research/will-we-really-put-data-centers-in-space">Forethought</a></span> Measured analysis of orbital DCs. Sevilla: skepticism around cooling and other practical problems is warranted but addressable. David Sanders pushes back hard on chip-failure topology — failures aren't flat; each chip loss usually = node loss without complex software work.</li>
+
+<li><span class="item-title">Nora Ammann hiring on structured transparency</span>
+<span class="source"><a href="https://aiprospects.substack.com/p/security-without-dystopia-new-options">AI Prospects</a></span> DMs open for "clear thinkers" wanting to advance the structured-transparency agenda (security without dystopia).</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3"/></svg> Magnifica Humanitas — Day 2</h2>
+<ul>
+<li><span class="item-title">Zvi reads the encyclical</span>
+<span class="source"><a href="https://thezvi.substack.com/p/rtmh-pope-leos-magnifica-humanitas">Zvi</a></span> Full reaction-the-music-here post on Pope Leo's AI encyclical. Miles Brundage's recommendation stands: <mark>most social-media takes are bad; read the document itself</mark>.</li>
+
+<li><span class="item-title">Dean Ball: Olah's remarks contradict the encyclical</span>
+<span class="source"><a href="https://x.com/deanwball/status/2058979692200247461">X: Dean Ball</a></span> Sharp critique (522 likes): the encyclical "confidently asserts that AI does not have, and never will have, 'real' thoughts or feelings" — directly at odds with Olah's framing of model-internal states that "mirror joy, satisfaction, fear, grief, and unease." "Disappointing to see Anthropic align itself with a document that violates their own moral and intellectual principles."</li>
+
+<li><span class="item-title">Ed Newton-Rex: encyclical omits training-data theft entirely</span>
+<span class="source"><a href="https://x.com/ednewtonrex/status/2059174131665391802">X: Ed Newton-Rex</a></span> Document mentions "data" repeatedly but never acknowledges pretraining data <em>is</em> people's creative work. "A coup for the AI industry."</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84"/></svg> Careers & Kairos-Relevant</h2>
+<ul>
+<li><span class="item-title">80k Hours: Benjamin Todd on updating career advice for "the strangest time in history"</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/benjamin-todd-careers-in-age-of-ai/">80,000 Hours</a></span> Companion to next week's book launch. Todd revisits which skills/paths survive automation, where the leverage moves, and how to think about career capital when timelines compress. Direct input for Pathfinder/Generator framing.</li>
+
+<li><span class="item-title">Stephen Casper: a Sarbanes-Oxley analog for AI</span>
+<span class="source"><a href="https://x.com/StephenLCasper/status/2059045123032252650">X: Stephen Casper</a></span> Concrete governance sketch: designated officer who must understand & attest to internal controls, criminal penalties for tampering, whistleblower protections, an oversight board that sets audit standards. "Easy to imagine a very analogous bill for AI audits."</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Products & Capabilities</h2>
+<ul>
+<li><span class="item-title">SynthID expands to Search and Chrome</span>
+<span class="source"><a href="https://x.com/GoogleDeepMind/status/2059235181274202500">X: Google DeepMind</a></span> Watermarking has hit <mark>100B+ pieces of content</mark>; 50M+ verifications in Gemini. Now landing inside Search and Chrome — "Is this made with AI?" becomes a native query. New partner labs added to the program.</li>
+
+<li><span class="item-title">Sentinel weekly: forecaster takes on robotics + jobs</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/renewed-us-iran-negotiations-openai">Sentinel</a></span> 90% CI for US transportation & warehousing jobs by end of 2026: 5.87M–6.66M (current: 6.58M). Forecasters expect mild war-driven softening but <em>not</em> a near-term automation collapse in those numbers.</li>
+
+<li><span class="item-title">Miles Brundage: "Many of you are vastly overconfident in Pangram"</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2059154962127745292">X: Miles Brundage</a></span> Pushback on the AI-detector tool that some are using to claim award-winning fiction is AI-written. Worth noting given the Commonwealth Prize fallout last week.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg> Quick Hits</h2>
+<ul>
+<li><span class="item-title">Ben Goldhaber: Links for May 2026</span>
+<span class="source"><a href="https://bengoldhaber.substack.com/p/links-for-may-2026">Gold Takes</a></span> Monthly link roundup focused on risk reports and "third wave philanthropy" — relevant for the EA/funding-strategy angle.</li>
+
+<li><span class="item-title">Amanda Askell: blog posts attributed to her are fake</span>
+<span class="source"><a href="https://x.com/AmandaAskell/status/2058994218484338726">X: Amanda Askell</a></span> Hasn't written a personal post in 5+ years. Useful PSA given how often her name circulates in alignment discourse.</li>
+
+<li><span class="item-title">Mox events this week (5/25–6/2)</span>
+<span class="source"><a href="https://moxsf.substack.com/p/mox-events-this-week-52562">Mox Populi</a></span> "Plausibly better future w/ AI" sessions + safety advocacy programming — closest Bay-side hub events.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
