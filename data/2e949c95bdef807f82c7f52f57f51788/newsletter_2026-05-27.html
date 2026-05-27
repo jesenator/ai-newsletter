@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Wednesday, May 27, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 2px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Wednesday, May 27, 2026</h1>
+<div class="date">Wednesday, May 27, 2026 — Transformer's takedown of the Pope's encyclical. Mythos solves a 2nd Erdős problem with a <em>cleaner</em> proof. Anthropic publishes its agent-sandboxing playbook. Gemini Embedding 2 white paper.</div>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" /></svg> Top Stories</h2>
+<ul>
+<li><img src="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fpope-leo.jpg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'">
+<span class="item-title">Transformer: "What the Pope got wrong"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/what-the-pope-got-wrong-leo-ai-encyclical-catholic-church-ai-magnifica-humanitas">Transformer</a></span> Shakeel's full verdict on Magnifica Humanitas: "no home run." Reads <mark>like a 2022 AI-ethics paper</mark> — bias, water, data sovereignty. Damningly, the encyclical <mark>doesn't engage with AGI or catastrophic risk at all</mark>, treats job loss as a retraining problem, and is softer than the Vatican's own Jan 2025 <em>Antiqua et Nova</em>. Olah at the launch event spoke about global redistribution more clearly than Leo did. Miles Brundage's softer read (<span class="source"><a href="https://x.com/Miles_Brundage/status/2059471785238892935">X: Miles Brundage</a></span>): the warning about concentration of power and hubris is the key takeaway, even if paragraph 99 is wrong on AI cognition.</li>
+
+<li><span class="item-title">Mythos solves Erdős Problem #90 — with a <em>cleaner</em> proof than the existing one</span>
+<span class="source"><a href="https://x.com/kimmonismus/status/2059311386820289013">X: kimmonismus</a></span> Air-gapped Mythos run. Mathematician reports it repeatedly converged on a different argument than OpenAI's #1196 solution from earlier this year, <mark>"no analytic complications"</mark>. Different problem, different lab, different proof style — but the pattern (decades-old problems falling in weeks) is now routine across OpenAI, GDM, and Anthropic.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" /></svg> Safety & Capabilities</h2>
+<ul>
+<li><span class="item-title">Anthropic: "How we contain Claude across products"</span>
+<span class="source"><a href="https://www.anthropic.com/engineering/how-we-contain-claude">Anthropic</a></span> Engineering post on <mark>scaling agent permissions with capability</mark> via sandboxing — bounding blast radius for destructive actions across Claude.ai, Claude Code, and the API. Practical reference doc for anyone shipping agents. 1.8K likes, 284K views.</li>
+
+<li><span class="item-title">Gemini Embedding 2 white paper: first natively multimodal embedding model</span>
+<span class="source"><a href="https://x.com/mseyed/status/2059504005387284629">X: Mostafa Dehghani</a></span> Unified representation for text, audio, video, image in a single embedding space. Useful for RAG/agent retrieval pipelines that previously needed separate models per modality.</li>
+
+<li><span class="item-title">Forgetting in LMs: nearly eliminated by self-generated replay</span>
+<span class="source"><a href="https://x.com/andrewgwils/status/2059647720848244962">X: Andrew Gordon Wilson</a></span> <span class="source"><a href="https://arxiv.org/abs/2605.26097">arXiv</a></span> New paper: model size + optimizer choice dominate catastrophic forgetting on finetuning, and self-generated replay nearly eliminates it. Relevant to the "continual learning breaks evals" concern from last week's roundups.</li>
+
+<li><span class="item-title">Stanford: 4-year study of deployed AI hiring tools on 3.3M applicants</span>
+<span class="source"><a href="https://x.com/RishiBommasani/status/2059306437667602477">X: Rishi Bommasani</a></span> Independent measurement of real outcomes from algorithmic hiring at scale — concrete empirical input for the labor-market policy debate.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 10.5 21l3-9 6.75-7.5L13.5 3l-9.75 10.5Z" /></svg> Discourse & Kairos-Relevant</h2>
+<ul>
+<li><span class="item-title">Yonadav Shavit (OpenAI → OpenAI Foundation) quits to work on AI Resilience</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2059355703219994999">X: Miles Brundage</a></span> Fourth notable OpenAI old-timer to switch in recent weeks (Woj, Anna, Bianca, Yo). Shavit: <mark>"If you were debating when to pivot to help, it's time."</mark> Useful signal for Pathfinder/SPAR applicant framing.</li>
+
+<li><span class="item-title">Scott Alexander: "Use AI This Election"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/use-ai-this-election">ACX</a></span> Detailed walkthrough of using Claude as a personalized voter guide for the June 2 CA primary, including down-ballot races and parcel taxes. Scored Claude an A on 5/10 of his own decisions. Directly applicable for Berkeley voters this week.</li>
+
+<li><span class="item-title">Epoch deep-dive on token supply & demand</span>
+<span class="source"><a href="https://x.com/ShanuMathew93/status/2059574307877961770">X: Shanu Mathew</a></span> Best estimate: OpenAI ~10–15% of operational global compute end-2025; OAI+Anthropic+xAI together <4M H100e of ~16M world stock. Google ~25% and Meta ~10%, but most runs Cloud/recsys. Frontier labs use <mark>under half of global compute</mark> — relevant context for any compute-cap regime.</li>
+
+<li><span class="item-title">Richard Ngo: human cultural heritage as a steering resource for AI</span>
+<span class="source"><a href="https://x.com/RichardMCNgo/status/2059638619619598466">X: Richard Ngo</a></span> Even superhuman AIs will benefit from coordinating around home-grown human Schelling points. "Alas, the culture war is busy setting those deposits on fire."</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" /></svg> Productivity & Reading</h2>
+<ul>
+<li><span class="item-title">Claude Code as a daily driver: CLAUDE.md, Skills, Subagents, Plugins, MCPs</span>
+<span class="source"><a href="https://arps18.github.io/posts/claude-code-mastery/">arps18.github.io</a></span> 235 pts on HN. Comprehensive practical guide — worth a skim given how much you live in Claude Code.</li>
+
+<li><span class="item-title">OpenAI: self-improving tax agents with Codex</span>
+<span class="source"><a href="https://openai.com/index/building-self-improving-tax-agents-with-codex">OpenAI</a></span> Case study with Thrive and Crete. Concrete example of agents iteratively rewriting their own prompts/tools to improve filing accuracy over time.</li>
+
+<li><span class="item-title">Notion ships Snapshot Diffs in Version History</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2059417510521541093">X: NotionHQ</a></span> Finally see exactly what moved, changed, or disappeared — text, images, tables, database properties. Small but genuinely useful for journaling/doc-heavy workflows.</li>
+
+<li><span class="item-title">80,000 Hours: Benjamin Todd on updating career advice for the age of AI</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/benjamin-todd-careers-in-age-of-ai/">80k Hours</a></span> Companion to Todd's new book launch — revisits skills, leverage, and career capital under compressed timelines. Direct input for how Kairos pitches Pathfinder/Generator.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

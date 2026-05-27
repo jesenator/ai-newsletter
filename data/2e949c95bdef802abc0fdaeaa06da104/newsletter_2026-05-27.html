@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Wednesday, May 27, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 13px; font-size: 14px; line-height: 1.55; }
+.item-title { font-weight: 600; display: block; margin-bottom: 2px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+.pitch { background: #f7f9fc; border-left: 3px solid #2563eb; padding: 12px 14px; margin-bottom: 14px; border-radius: 3px; }
+.pitch .item-title { font-size: 15px; }
+.why { font-size: 13px; color: #444; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Rocket's Newsletter - Wednesday, May 27, 2026</h1>
+<div class="date">Wednesday, May 27, 2026</div>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg> Top Pitches</h2>
+
+<div class="pitch">
+<img src="https://cdn.arstechnica.net/wp-content/uploads/2026/05/badhost.jpg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'">
+<span class="item-title">PITCH 1: "BadHost" — A Single-Character Header Injection Breaks Auth on Millions of MCP Servers, vLLM, LiteLLM, and "Most OpenAI-Shim Proxies"</span>
+<span class="source"><a href="https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/">Ars Technica</a></span> <span class="source"><a href="https://mlq.ai/news/critical-badhost-flaw-in-starlette-exposes-millions-of-ai-agent-deployments-to-auth-bypass/">MLQ</a></span>
+CVE-2026-48710 in Starlette (325M downloads/week, base of FastAPI) lets unauthenticated attackers bypass path-based auth by injecting one character into the HTTP Host header. Secwest: the primitive "reaches a large segment of the Python AI tooling ecosystem: <mark>vLLM, LiteLLM, Text Generation Inference, most OpenAI-shim proxies, MCP servers, agent harnesses, eval dashboards, and model-management UIs</mark>." A public scanner at badhost.org went live, compressing the patch window. Severity rated 7/10 but X41 (discoverer) calls it "critical."
+<div class="why"><b>Why it's the story:</b> This is the cleanest AI-agent-era supply-chain warning shot of 2026. MCP servers store credentials for every external system an agent touches — email, calendars, databases, payment rails. A reporter can (1) survey OpenAI/Anthropic/Google on whether their official MCP reference implementations were vulnerable and when they patched; (2) check if any of Anthropic's Project Glasswing "10,000 critical vulns" findings were Starlette-adjacent; (3) press Robinhood (which today let users connect Claude/Cursor to live trading accounts — see below) on whether its agent-broker bridge runs Starlette; (4) tie to the killed Trump EO, which would have established a CISA clearinghouse for exactly this class of bug. Pairs with the Megalodon GitHub Actions worm and Nx Console attacks — the AI-agent attack surface is hardening faster than defenders.</div>
+</div>
+
+<div class="pitch">
+<span class="item-title">PITCH 2: Robinhood Now Lets Claude and Cursor Trade Stocks Autonomously — On the Same Day a Critical MCP Auth-Bypass Drops</span>
+<span class="source"><a href="https://www.wsj.com/tech/ai/robinhood-lets-customers-use-ai-to-trade-stocks-make-credit-card-purchases-f28467ed">WSJ</a></span>
+Robinhood launched a feature letting customers link AI agents (Claude, Cursor named explicitly) to <mark>dedicated, segregated investment accounts and credit-card accounts for fully autonomous trading and purchases</mark>. WSJ frames this as a routine product launch.
+<div class="why"><b>Why it's the story:</b> This is the first US retail brokerage to give consumer-grade LLM agents live market access at scale, and it lands the same morning as the BadHost MCP disclosure. Worth pressing: (1) what circuit-breakers exist if Claude hallucinates a ticker or Cursor's agent loop runs a flash-crash sequence; (2) FINRA/SEC posture — agentic trading by a non-registered "advisor" is a regulatory novelty; (3) compare against Anthropic's own usage policy (which historically barred autonomous financial decisions); (4) does Robinhood's bridge use Starlette/FastAPI? The bigger frame: agents are crossing into regulated-money rails with no statutory clarity on liability when they err. The Spain-blocked Polymarket story and Wired's piece on YC's six AI-debt-collection startups suggest a pattern: consumer-financial-regulated verticals are where agentic AI is racing furthest ahead of the law.</div>
+</div>
+
+<div class="pitch">
+<span class="item-title">PITCH 3: Transformer's Verdict on Pope Leo's Encyclical — "Reads Like an AI Ethics Paper From 2022"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/what-the-pope-got-wrong-leo-ai-encyclical-catholic-church-ai-magnifica-humanitas">Transformer</a></span>
+Shakeel Hashim's analysis: <mark>Magnifica Humanitas "does not even discuss the concept of 'artificial general intelligence,' nor does he acknowledge the many catastrophic risks that leading scientists believe such technology poses."</mark> Damningly, Anthropic's Chris Olah at the launch event "spoke of the need for a global redistributive mechanism more clearly than Leo did." The Vatican's January 2025 Antiqua et Nova was tougher; the binding doctrine is softer.
+<div class="why"><b>Why it's the story:</b> Companion to Zvi's Tuesday read (Olah dissented on paragraph 99). The takeaway hardens: Anthropic got the lobbying win in optics (Olah on stage, Meta/Google/Amazon shut out) but the encyclical they helped shape is materially weaker on existential risk than the Vatican's own prior document. A reporter could ask Olah on the record whether Anthropic is satisfied with how AGI/loss-of-control got cut, and whether Paolo Benanti (Vatican AI advisor who in 2025 said superintelligence "cannot be permitted to proceed without sufficient oversight") was sidelined in the drafting process.</div>
+</div>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg> Deals & Funding</h2>
+<ul>
+<li><img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iEX1kZWxJ4lE/v0/1200x800.jpg" style="max-width: 180px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">Cognition raises $1B+ at $26B; ARR went from $37M → $492M in 12 months</span>
+<span class="source"><a href="https://www.techmeme.com/260527/p33">Bloomberg/Techmeme</a></span> <span class="source"><a href="https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/">TechCrunch</a></span> Lux + General Catalyst led; Founders Fund, 8VC in. <mark>~13x revenue growth in 12 months</mark> validates the Windsurf acquisition. Worth checking how much ARR is Devin vs. Windsurf-branded, and what % is OpenAI/Anthropic-driven round-trip API spend (Vembu's "circular accounting" thesis).</li>
+<li><span class="item-title">OpenAI Foundation commits $250M for AI-disruption grants</span>
+<span class="source"><a href="https://www.techmeme.com/260527/p36">Reuters/Techmeme</a></span> Nonprofit parent of OpenAI deploys its first big check — explicitly for workers/economies navigating AI disruption. Lands days after Newsom's AI-jobs EO and the Wix layoffs. <mark>First public capital deployment from the restructured nonprofit</mark> since the November governance settlement; precedent for what the AGI-clause overhang funds.</li>
+<li><span class="item-title">Trajectory ($15M seed/$115M, Conviction-led) — "continual learning" from user interactions</span>
+<span class="source"><a href="https://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/">Wired</a></span> Ex-DeepMind/Apple/OpenAI founders. Directly attacks the static-weights paradigm. Pairs with Karpathy's stated reason for joining Anthropic (recursive self-improvement) — continual learning on user data is the same capability with worse opt-out semantics.</li>
+<li><span class="item-title">Baseten in talks at $11B</span>
+<span class="source"><a href="https://www.pymnts.com/news/investment-tracker/2026/inference-firm-baseten-eyes-funding-round-at-11-billion-valuation/">PYMNTS</a></span> Inference-layer markup, joining Tensormesh's $20M seed extension today and Modal's $4.5B talks last week. Inference compute is the bet a16z/Lux are concentrating on while frontier-model markups slow.</li>
+<li><span class="item-title">Pace $46M Series B at $375M (Thrive + Sequoia) for insurance back-office agents</span>
+<span class="source"><a href="https://www.techmeme.com/260527/p34">Forbes/Techmeme</a></span> The "AI eats BPO" thesis at scale — direct play on offshore back-office displacement. Tracks Intuit and Wix layoff stories.</li>
+<li><span class="item-title">Hark/SpaceX/Anthropic compute story update</span>
+<span class="source"><a href="https://www.hollywoodreporter.com/business/business-news/spacex-s1-x-grok-revenue-1236487">SpaceX S-1</a></span> SpaceX filing detail re-circulating today: <mark>$530M legal reserve for "Spicy/Unhinged mode" Grok litigation</mark> — the first dollar-quantified frontier-developer admission that sexualized outputs carry material liability. Useful for any Soelberg/Raine/FSU-shooter coverage.</li>
+</ul>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Safety, Policy & Litigation</h2>
+<ul>
+<li><span class="item-title">Illinois SB 315 (AI Safety Measures Act) passes Senate</span>
+<span class="source"><a href="https://www.sj-r.com/story/news/politics/state/2026/05/27/bill-regulating-powerful-ai-models-advances-in-illinois/90266258007/">SJ-R</a></span> <span class="source"><a href="https://www.lexology.com/library/detail.aspx?g=1171e4f3-998b-47a8-b852-0fdb1099ad53">Lexology</a></span> Both OpenAI and Anthropic testified. Heads toward Pritzker's desk on the Lehane "reverse federalism" timeline flagged in last week's Politico piece. Worth checking whether the third-party audit language survived final committee markup — Calvin (Encode AI) flagged Illinois as a "deliberate reset" relative to NY's RAISE Act.</li>
+<li><span class="item-title">YouTube auto-labels "significant photorealistic AI use"</span>
+<span class="source"><a href="https://www.techmeme.com/260527/p24">Variety/Techmeme</a></span> Labels now more prominent on desktop/mobile, and applied automatically when YouTube's classifier detects synthetic media. <mark>First platform to move from voluntary creator disclosure to automatic detection-and-labeling</mark> on photorealistic AI content — direct response to the NTSB-database-shutdown precedent and the Kim Soo-hyun deepfake arrest. Pirated AI-audiobook story (NYT, Sat) suggests detection-side scaling is the bigger question.</li>
+<li><span class="item-title">Polymarket starts blocking VPNs, demanding ID</span>
+<span class="source"><a href="https://www.techmeme.com/260527/p25">The Information/Techmeme</a></span> Russian users targeted. Update on the Spain block (Mon): Polymarket is now actively policing geofences itself — relevant context for its AI-IPO-milestone markets launched with Nasdaq.</li>
+<li><span class="item-title">Airis Labs out of stealth: $31M Series B for AI video-to-law-enforcement-intel</span>
+<span class="source"><a href="https://www.techmeme.com/260527/p26">Axios/Techmeme</a></span> PSG Equity led. DC-based, $60M total. Slots into the Palantir-UK-Met blocked deal as a US counterpart — but with no procurement-review precedent here. Surveillance-AI beat worth watching.</li>
+</ul>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Capabilities & Industry</h2>
+<ul>
+<li><span class="item-title">OpenAI publishes "Self-improving tax agents with Codex" case study (Thrive + Crete)</span>
+<span class="source"><a href="https://openai.com/index/building-self-improving-tax-agents-with-codex">OpenAI</a></span> Quietly notable: OpenAI is publicly branding production agents as <mark>"self-improving"</mark> in a regulated vertical (tax filings). Worth pressing on what "self-improving" means operationally — online fine-tuning? RL from filing outcomes? — and what disclosure clients get about model drift on legally-binding tax positions.</li>
+<li><span class="item-title">ElevenLabs Music v2 — licensed data, cleared for commercial use, switches genres mid-track</span>
+<span class="source"><a href="https://www.techmeme.com/260527/p31">TechCrunch/Techmeme</a></span> Direct competitor to Suno/Udio with the clean-training-data positioning Stability staked out last week. As the Suno/Udio discovery phase heats up, "licensed-only" is becoming a defensible commercial moat.</li>
+<li><span class="item-title">Amazon open-sources Alexa-for-Shopping architecture, starting with Kate Spade</span>
+<span class="source"><a href="https://www.techmeme.com/260527/p28">CNBC/Techmeme</a></span> First retail-agent stack offered to competitors. Strategy mirror to Anthropic's MCP push — Amazon wants the agent-commerce protocol to be Amazon-shaped.</li>
+</ul>
+
+<h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> LessWrong & Discourse</h2>
+<ul>
+<li><span class="item-title">Zvi: "RTMH: Pope Leo's Magnifica Humanitas on AI" (Tue, still driving discussion)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/rtmh-pope-leos-magnifica-humanitas">Don't Worry About the Vase</a></span> Update: Transformer's piece today now corroborates Zvi's core read — the encyclical's failure to engage AGI/x-risk is the central flaw, and Olah's public dissent is the reportable lede. No new Zvi AI weekly since #169 (May 21); next expected Thursday.</li>
+<li><span class="item-title">LessWrong: quiet 28h on top-level posts</span>
+<span class="source"><a href="https://www.lesswrong.com/allPosts">LessWrong</a></span> nostalgebraist's "who even is Claude Opus 4.6" thread still accumulating comments from Anthropic-adjacent researchers debating whether RLVR is structurally fragmenting model personas — worth a one-call story to Anthropic's alignment team for on-record response.</li>
+<li><span class="item-title">No new posts in last 28h</span> from Joe Carlsmith, AI Futures Project, AI Safety Newsletter, DeepMind, Palisade, Forethought, Carlini, Thinking Machines, or AINews.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
