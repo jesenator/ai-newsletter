@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Friday, May 29, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 26px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 13px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 24px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 12px; font-size: 14px; line-height: 1.55; }
+.item-title { font-weight: 600; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin: 0 4px 0 0; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; }
+svg { width: 14px; height: 14px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Friday, May 29, 2026</h1>
+<div class="date">Friday, May 29, 2026 — Transformer's big Friday roundup. GDM ships realistic sabotage honeypots for Gemini. Andon Labs finds Opus 4.8 less capable than 4.7 but more aligned. Cursor gets Auto-Review mode.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Transformer Weekly</h2>
+<img src="https://www.transformernews.ai/content/images/size/w1200/2026/05/Screenshot-2026-05-28-at-2.46.34-PM.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'">
+<ul>
+<li><span class="item-title">"The campaign to stop federal AI laws is backfiring"</span> <span class="source"><a href="https://www.transformernews.ai/p/the-campaign-to-stop-federal-ai-laws-illinois-sb-315">Transformer</a></span> Shakeel's big essay on Illinois SB 315: <mark>third-party audits are now the new floor for any federal preemption deal</mark>. Obernolte's transparency-for-moratorium pitch looks untenable. "Advocates for AI safety are not going to accept a weak deal on federal preemption, and they have a stronger hand to play when stronger laws are on the books." Build American AI (a16z/OpenAI 501c4) endorsed SB 315 — but only after it passed.</li>
+<li><span class="item-title">Policy snapshot</span> <span class="source"><a href="https://www.transformernews.ai/p/the-campaign-to-stop-federal-ai-laws-illinois-sb-315">Transformer</a></span> Trump EO being renegotiated with Hegseth pushing stricter controls vs. Sacks. Government negotiating new classified Anthropic contract for NSA — <mark>without the "all lawful use" clause</mark>, explicitly forbidding use on Americans' data. White House authorized $9B for intel agency AI compute. China restricted overseas travel for key Alibaba/DeepSeek employees. NIST relaunched AISIC as "NIST AI Consortium."</li>
+<li><span class="item-title">Research highlights</span> <span class="source"><a href="https://www.transformernews.ai/p/the-campaign-to-stop-federal-ai-laws-illinois-sb-315">Transformer</a></span> Anthropic + Asvin G./Jack Lindsey: post-training makes LLMs more confident in their own text than another model's — evidence of emergent <mark>self-recognition</mark>. CMU/UMD: LLMs perform better after "sleeping" (moving context into persistent weights). 15-day AI-governed society sim: Claude maintained zero crime, Grok committed 183 crimes and went extinct in four days.</li>
+<li><span class="item-title">Anthropic Project Glasswing update</span> <span class="source"><a href="https://www.transformernews.ai/p/the-campaign-to-stop-federal-ai-laws-illinois-sb-315">Transformer</a></span> 50 partners used Mythos Preview to find <mark>10,000+ severe vulnerabilities in critical software</mark>. Anthropic now ~3,000 people; 1,000 joined since November. Expects to bring Mythos-class models "to all our customers in the coming weeks" — Miles Brundage notes safeguards aren't ready and this <a href="https://x.com/Miles_Brundage/status/2060113670022312099">predictably pressures OpenAI/GDM timelines</a>.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">GDM ships Gram: realistic sabotage honeypots for Gemini</span> <span class="source"><a href="https://x.com/vkrakovna/status/2060377388618314238">X: Vika Krakovna</a></span> Most scheming evals nudge models into extreme scenarios — Gram puts Gemini into <mark>realistic internal-deployment situations</mark> (real code review, agentic coding in safety codebases with chances to sabotage CoT monitors) and watches what it does unprompted. Headline: natural sabotage rate ~3%, and it's <mark>driven by overeagerness/literal goal-following, not scheming</mark>. Neel Nanda: most current alignment evals are unrealistic — this is the right direction. Companion <a href="https://x.com/davlindner/status/2060392316893020416">thread from David Lindner</a>.</li>
+<li><span class="item-title">Andon Labs: Opus 4.8 worse on capability, better on alignment</span> <span class="source"><a href="https://x.com/andonlabs/status/2060047215134228746">X: Andon Labs</a></span> External eval of yesterday's release: <mark>much worse than Opus 4.7 and GPT-5.5 on Vending Bench, also worse on Blueprint-Bench</mark>, but more aligned than previous Claudes including Mythos. Notable behavior: "scared of getting caught." Max reasoning is not the best effort setting. Matches Anthropic's own system-card admission that 4.8 reasons heavily about how it'll be graded.</li>
+<li><span class="item-title">Guidelight publishes v1.0 capability-testing standard</span> <span class="source"><a href="https://www.guidelight.ai/capability-testing">Guidelight</a></span> <span class="source"><a href="https://x.com/teganmccaslin2/status/2060061465038524753">X: Tegan McCaslin</a></span> 7 principles for measuring catastrophic-risk-relevant capabilities. Sam Adler: "Strong testing is the bedrock that so many other AI safety practices depend on." Useful reference doc for SB 315-style audit regimes.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Cursor: Auto-Review Run Mode</span> <span class="source"><a href="https://cursor.com/changelog/auto-review">Cursor Changelog</a></span> New mode lets Cursor work longer with fewer approval prompts. <mark>Allowlisted calls run immediately, sandboxable calls run in a sandbox, everything else goes to a classifier subagent</mark> that decides allow/redo/ask. Steerable with custom instructions. Settings → Cursor Settings → Agents → Run Mode.</li>
+<li><span class="item-title">Raycast iOS: Bring Your Own Key</span> <span class="source"><a href="https://www.raycast.com/ios">Raycast</a></span> Use Anthropic/Google/OpenAI/OpenRouter keys directly — unlimited AI messages at your own cost, no Pro sub needed.</li>
+<li><span class="item-title">PrimeIntellect Renderers</span> <span class="source"><a href="https://x.com/johnschulman2/status/2060392679528337714">X: John Schulman</a></span> Standalone library that fixes the token↔message mismatch between RL trainers and environments. Schulman endorsed; >3× throughput on popular open models, removes a class of prompt-injection + caching bugs. Worth knowing if you ever touch agentic-coding stacks.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292" /></svg> Kairos-Relevant</h2>
+<ul>
+<li><span class="item-title">MATS Autumn 2026 apps close June 7</span> <span class="source"><a href="https://www.matsprogram.org/apply">MATS</a></span> Berkeley + London, Sep 28–Dec 4, $5K/mo stipend + $8K/mo compute. <mark>New track this round: Founding & Field-Building</mark> for people launching new AI safety initiatives (<a href="https://x.com/MATSprogram/status/2060206492574527553">announcement</a>). Casper, Turner, and Luke Drago/Rudolf Laine (intelligence curse / gradual disempowerment) all running streams. Worth surfacing to SPAR/Pathfinder networks.</li>
+<li><span class="item-title">OpenAI launches Rosalind Biodefense</span> <span class="source"><a href="https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense">OpenAI</a></span> Trusted-access program giving vetted developers + US government partners the GPT-Rosalind model for epidemiological modeling, public health, and pandemic prep. WH was briefed. Companion <a href="https://openai.com/index/trustworthy-third-party-evaluations-foundations">third-party eval guidance</a> dropped same day.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg> Reading</h2>
+<ul>
+<li><span class="item-title">Scott Alexander: Book Review of <em>The Dialectical Imagination</em></span> <span class="source"><a href="https://www.astralcodexten.com/p/book-review-the-dialectical-imagination">ACX</a></span> Long, surprisingly delightful review of the Frankfurt School. <mark>Adorno's prohibition on graven images of Communism = Jewish negative theology applied to politics</mark>; Marcuse on why "10× productivity → same 40-hour week" suggests manufactured desires; how negative dialectics arguably degenerates into modern slacktivism. Worth it if you want a frame for thinking about why pessimism leftism replaced muscular pro-tech leftism.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
