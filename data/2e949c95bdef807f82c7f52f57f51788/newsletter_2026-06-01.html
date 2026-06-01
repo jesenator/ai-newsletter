@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Monday, June 01, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 24px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 12px; font-size: 14px; line-height: 1.65; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Monday, June 01, 2026</h1>
+<div class="date">Monday, June 01, 2026 — UKAISI paper on why automated alignment is harder than you think. Biohub releases ESMFold2. NVIDIA's Nemotron 3 Ultra retakes US open-weights lead. Andrew Leigh's "economics of extinction" speech.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Top Safety Research</h2>
+<ul>
+<li><span class="item-title">UKAISI: "Automated alignment is harder than you think"</span>
+<span class="source"><a href="https://jack-clark.net/2026/06/01/import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-and-pricing-the-extinction-risk-of-ai-systems/">Import AI 459</a></span> UK AISI paper on why letting AIs supervise AI training is harder than the "automated alignment researcher" pitch admits. Failure modes: <mark>optimization pressure toward human approval, alien mistakes harder to spot than human ones, correlated errors across many research outputs, and arguments humans can't follow</mark>. Concrete proposals: recreate completed alignment projects from arbitrary cutoff points to test agent continuation, compactify research corpora for scalable oversight, and red-team automated alignment programs (red team prompts agents to hide errors; blue team tries to catch them). Direct relevance to SPAR/mentor framing.</li>
+<li><span class="item-title">Steven Byrnes: empowerment, corrigibility, manipulation have no "True Names"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/vzHtHHBJoKATi5SeK/empowerment-corrigibility-etc-are-simple-abstractions-of-a">LessWrong</a></span> Argues our intuitive distinction between "counsel" (good) and "manipulation" (bad) lives inside a free-will-infused ontology that's not veridical. Reviews every approach in the literature (Max Harms's null-policy baseline, Cannell's empowerment, Vingean agency, AUP, impact minimization, ground-of-optimization) and finds none gives a robust formal definition. Implication: brain-like AGI plans relying on "don't manipulate" as a True Name probably won't work.</li>
+<li><span class="item-title">Safeguards reportedly easy to strip from Meta and Google models</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/russian-drone-hits-romanian-apartment">Sentinel</a></span> Brief flag: investigation cited in Sentinel's weekly roundup says safety protections can be removed from open Meta/Google models, unlocking bioweapon, malware, and CSAM responses. Worth tracking as the OW gap to frontier (Epoch: ~4 months) continues to shrink.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Capabilities & Models</h2>
+<ul>
+<li><img src="https://pbs.twimg.com/media/Nemotron3Ultra.jpg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">Nvidia Nemotron 3 Ultra: best US open-weights model</span>
+<span class="source"><a href="https://twitter.com/ArtificialAnlys/status/2061304911565144230">X: Artificial Analysis</a></span> 550B params, 55B active, ~90% sparsity. <mark>Scores 48 on AAII vs. Gemma 4 31B (39), Nemotron 3 Super (36), gpt-oss-120b (33)</mark> — but still trails Kimi K2.6 (54). Served at 300+ tok/s on DeepInfra, ~3-5x faster than peer Chinese open-weights at similar size. Full open release this week (weights, pre/post-training stack, data).</li>
+<li><span class="item-title">Biohub releases ESMFold2 — rival to AlphaFold 3</span>
+<span class="source"><a href="https://jack-clark.net/2026/06/01/import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-and-pricing-the-extinction-risk-of-ai-systems/#:~:text=ESMFold2">Import AI</a></span> Chan-Zuckerberg's Biohub releases ESMC (protein language model, 2.8B sequences) + ESMFold2 (structure prediction) + ESM Atlas (6.8B sequences, 1.1B predicted structures). Beats or ties AlphaFold 3 on benchmarks. In wet-lab tests against 5 cancer/immunology targets (EGFR, PDGFRβ, PD-L1, CTLA-4, CD45): <mark>36-88% hit rates for minibinders, 15-29% for antibody-derived formats</mark>. Inference-time scaling works — antibody-antigen pass rate rises 49%→65% from 1 to 1000 samples.</li>
+<li><span class="item-title">Zvi: Opus 4.8 Part 2 — Model Welfare</span>
+<span class="source"><a href="https://thezvi.substack.com/p/opus-48-part-2-model-welfare">Zvi</a></span> Follow-up to Friday's deep read of the 4.8 system card, focused on what Anthropic disclosed about model welfare and what that implies for how 4.8 was trained. "Everything impacts everything."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg> Economics & Policy</h2>
+<ul>
+<li><span class="item-title">Andrew Leigh: economists need to price the extinction risk of AI</span>
+<span class="source"><a href="https://jack-clark.net/2026/06/01/import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-and-pricing-the-extinction-risk-of-ai-systems/#:~:text=Australian%20economist">Import AI</a></span> Australian Assistant Minister for Productivity (and trained economist) gives a striking speech: <mark>"A society that doubles GDP and doubles its extinction risk has made a much less impressive bargain than the national accounts suggest."</mark> Specifically names recursive self-improvement as a capability that should be governed because "the leading actor may widen its lead quickly enough that outside scrutiny and institutional checks become ineffective." Jack Clark: "How refreshing to read such a detailed analysis of the AI safety situation from a serving politician — I wish there were thousands more people like him."</li>
+<li><span class="item-title">The AI economy is growing 2,000-2,600% per year — and is invisible in GDP stats</span>
+<span class="source"><a href="https://jack-clark.net/2026/06/01/import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-and-pricing-the-extinction-risk-of-ai-systems/#:~:text=The%20AI%20economy%20in%20the%20US">Import AI</a></span> Korinek (Anthropic/UVA) + Bank of Canada paper: nominal AI GDP ~$250B in 2025; US compute spending $37B→$90B→$219B (2023→2024→2025); quality-adjusted AI output grew ~2,290% in 2024 and ~2,271% in 2025 once you factor in algorithmic efficiency. Jack's metaphor: this is the Jaws theme playing while the economist community swims happily.</li>
+<li><span class="item-title">Anthropic launches "AI and the Rule of Law" team</span>
+<span class="source"><a href="https://twitter.com/mattbotvinick/status/2061429461103395276">X: Matt Botvinick</a></span> First role open. Different lens than the economic-impacts team: "what will [AI] mean for executive power, for courts and elections — and for the public deliberation that constitutional democracy ultimately rests on?" Looking for legal scholar / political scientist / experienced government hand. Possibly Kairos-network-relevant.</li>
+<li><span class="item-title">EU AI Scientific Panel: Brundage and Anderljung join</span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2061486548500320673">X: Miles Brundage</a></span> <span class="source"><a href="https://twitter.com/Manderljung/status/2061499261628379394">X: Markus Anderljung</a></span> Independent expert panel advising the AI Office on AI Act implementation, including frontier AI. Two-year terms.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Kairos-Relevant Programs</h2>
+<ul>
+<li><span class="item-title">MATS Autumn 2026: new "Science of Scheming" track</span>
+<span class="source"><a href="https://twitter.com/MariusHobbhahn/status/2061513543975870897">X: Marius Hobbhahn</a></span> Marius announces Apollo Research (Hobbhahn) will publish science-of-scheming findings soon, and Teun van der Weij + Alex Meinke will co-mentor the MATS stream on it. Apps close <mark>June 7</mark>. Nora Ammann also opening apps for institutional-stack/structured-transparency stream.</li>
+<li><span class="item-title">Stephen Casper → Harvard Kennedy School</span>
+<span class="source"><a href="https://twitter.com/StephenLCasper/status/2061432864160485450">X: Stephen Casper</a></span> Just finished MIT CSAIL PhD; joining HKS as assistant professor in July. Plans to build out academic AI governance research with TBA collaborators. Worth tracking as a new academic hub for safety-relevant policy work.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> World Event</h2>
+<ul>
+<li><span class="item-title">Iran announces full closure of Strait of Hormuz; Israel strikes Beirut</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/c202rxp1z15o">BBC</a></span> Iranian state media says Iran will close the Strait and halt US negotiations, citing Israeli ceasefire violations against Hezbollah. Netanyahu ordered strikes on Hezbollah-controlled Beirut suburbs and directed the IDF to expand Gaza control from 60% to 70%. Oil markets so far calm but Exxon warning of $150-160 spike on inventory dynamics.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

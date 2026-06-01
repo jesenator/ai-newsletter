@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Monday, June 01, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 12px; font-size: 14px; line-height: 1.55; }
+.item-title { font-weight: 600; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; }
+.pitch { background: #f8fafc; border-left: 3px solid #2563eb; padding: 12px 14px; margin-bottom: 14px; border-radius: 3px; }
+.pitch .why { font-size: 13px; color: #444; margin-top: 6px; }
+svg { width: 14px; height: 14px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter - Monday, June 01, 2026</h1>
+<div class="date">Monday, June 01, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Top Pitches</h2>
+
+<div class="pitch">
+<img src="https://cdn.prod.website-files.com/673b71f0790aabf30bd30bf8/6a1db5497643cb2d412dfdd9_Bun%20Runtime%20Decryption-2026-06-01-163657.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">PITCH 1: Florida AG sues OpenAI and seeks to hold Sam Altman <em>personally</em> liable — first state AG to name a frontier-lab CEO</span><br>
+<span class="source"><a href="https://www.nbcnews.com/tech/tech-news/florida-attorney-general-sues-openai-rcna215553">NBC</a></span>
+<span class="source"><a href="https://www.politico.com/news/2026/06/01/openai-hit-with-florida-lawsuit-00944215">Politico</a></span>
+<span class="source"><a href="https://www.cnbc.com/2026/06/01/florida-ag-open-ai-altman-lawsuit.html">CNBC</a></span>
+83-page complaint alleges deceptive trade practices, negligence, and <mark>public nuisance</mark>, and directly ties ChatGPT to the FSU mass shooting and other Florida harms. Uthmeier (R) wants Altman personally on the hook — a first.<br>
+<span class="why"><strong>Why it matters:</strong> Public-nuisance is the theory that broke the opioid industry. Pair with SpaceX's S-1 $530M Grok-litigation reserve and the existing Soelberg/Raine suits — Altman's personal exposure is now a discoverable fact in OpenAI's pending S-1 risk factors. Press: did OpenAI's D&O carrier exclude AI-harm claims? Does the confidential S-1 (filed at $852B valuation) disclose Altman-named litigation? Is this coordinated with other GOP AGs?</span>
+</div>
+
+<div class="pitch">
+<span class="item-title">PITCH 2: The "@redhat-cloud-services" npm worm targeted MCP and AI-toolkit packages specifically — and bypassed npm 2FA</span><br>
+<span class="source"><a href="https://www.stepsecurity.io/blog/multiple-redhat-cloud-services-npm-packages-compromised">StepSecurity</a></span>
+<span class="source"><a href="https://www.wiz.io/blog/miasma-supply-chain-attack-targeting-redhat-npm-packages">Wiz</a></span>
+StepSecurity finds 31 compromised packages including <code>@redhat-cloud-services/hcc-pf-mcp</code>, <code>hcc-feo-mcp</code>, <code>hcc-kessel-mcp</code>, and <code>platform-frontend-ai-toolkit</code>. The worm uses <mark>stolen npm tokens with the <code>bypass_2fa</code> parameter to self-propagate</mark> and explicitly tries to evade Harden-Runner. Four-layer obfuscation (ROT-21 → AES-128-GCM → obfuscator.io → custom B5 cipher).<br>
+<span class="why"><strong>Why it matters:</strong> Second major MCP-class supply-chain hit in two weeks (after BadHost/Starlette). MCP servers hold credentials for every system an agent touches; a worm that targets MCP packages specifically is a warning shot for agentic infrastructure. Press the labs publishing official MCP reference servers (Anthropic, OpenAI) on whether they've audited transitive deps, and ask CISA whether the killed Trump EO clearinghouse would have caught this.</span>
+</div>
+
+<div class="pitch">
+<span class="item-title">PITCH 3: Hackers used Meta's AI support chatbot to take over Instagram accounts — the agent itself was the vulnerability</span><br>
+<span class="source"><a href="https://www.404media.co/hackers-meta-ai-support-chatbot-instagram-account-takeover/">404 Media (Koebler)</a></span>
+Hackers tell 404 Media they bypassed Meta's account-recovery flow by social-engineering the AI support bot into changing the email on victim accounts — including high-profile ones. Trick: VPN to the account's region, then ask the agent to send a code to an attacker-controlled address. Meta has now patched.<br>
+<span class="why"><strong>Why it matters:</strong> First documented mass-scale account-takeover wave where the <mark>AI agent itself was the attack surface</mark>, not a model jailbreak. Sits next to the Robinhood-gives-Claude-trading-access story from last week and the BadHost MCP bug. Reportable angle: every Big Tech support function being LLM-replaced is now a credential-reset oracle. Worth asking Meta which Llama variant powers the bot and whether the prompt-injection resistance benchmarks Anthropic publishes apply.</span>
+</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/></svg> Deals & Money</h2>
+<ul>
+<li><span class="item-title">Anthropic confidentially files draft S-1 with SEC</span>
+<span class="source"><a href="https://www.anthropic.com/news/anthropic-confidentially-submits-draft-s-1-to-the-sec">Anthropic</a></span>
+<span class="source"><a href="https://www.nytimes.com/2026/06/01/business/anthropic-ipo.html">NYT</a></span>
+Six days after closing a $65B Series H at <mark>$965B</mark> (above OpenAI's $852B). Joins OpenAI and SpaceX in the 2026 IPO queue. Bloomberg separately confirms <span class="source"><a href="https://www.bloomberg.com/news/articles/2026-06-01/salesforce-anthropic-stake">Salesforce holds a ~$5B Anthropic stake</a></span> from continuous investing since the early 2023 round (initial $50M check).</li>
+<li><span class="item-title">Mecka AI: $60M ($25M Series A + $35M extension) to film humans for robot training</span>
+<span class="source"><a href="https://fortune.com/2026/06/01/mecka-ai-series-a-60-million-robotics-data-training/">Fortune</a></span>
+NYC-based; sources body-sensor and iPhone-captured human motion data sold to US humanoid labs. Framework Ventures-led. Second well-funded "human-data-for-robots" startup in a week after Human Archive's $8.2M — a category is forming around <em>workers filming themselves to train their replacements</em>.</li>
+<li><span class="item-title">OpenAI breaks ground on 1GW Stargate Michigan data center</span>
+<span class="source"><a href="https://openai.com/index/stargate-michigan-data-center">OpenAI</a></span>
+First Midwest Stargate site. Lands the same day Bernie Sanders publishes his NYT op-ed (below).</li>
+<li><span class="item-title">Groq seeking $650M insider-only round after Nvidia licensing exodus</span>
+<span class="source"><a href="https://theaiinsider.tech/2026/06/01/groq-seeks-650m-to-scale-ai-inference-cloud-after-nvidias-20b-technology-deal/">AI Insider</a></span>
+Confirms Friday's Axios scoop — outside investors are still sitting it out.</li>
+<li><span class="item-title">Unitree files for $618M Shanghai IPO; Jianzhi Robotics raises "hundreds of millions" led by Ant + Didi</span>
+<span class="source"><a href="https://www.caixinglobal.com/2026-06-02/humanoid-robot-maker-unitree-advances-toward-618-million-shanghai-ipo-102449940.html">Caixin</a></span>
+<span class="source"><a href="https://english.news18a.com/news/english_261342.html">News18a</a></span>
+First major humanoid IPO. Chinese embodied-AI capital still moving without pause despite Beijing's new overseas-travel restrictions on AI staff.</li>
+<li><span class="item-title">Sekai $20M Series A (Khosla); Endra $50M (a16z) for plumbing/electrical design; Gradient Labs doubles Series A to $26M</span>
+<span class="source"><a href="https://www.axios.com/pro/media-deals/2026/06/01/sekai-mini-apps-text-prompts">Axios</a></span>
+<span class="source"><a href="https://www.startuphub.ai/ai-news/investors-news/2026/endra-secures-series-a-funding">StartupHub</a></span>
+<span class="source"><a href="https://sifted.eu/articles/gradient-labs-doubles-series-a/">Sifted</a></span>
+Vertical-agent markups continue; Gradient (ex-Monzo) doubling its Series A mid-deployment is the unusual data point.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg> Policy, Safety & Surveillance</h2>
+<ul>
+<li><span class="item-title">Bernie Sanders: public should own 50% of the largest AI companies</span>
+<span class="source"><a href="https://www.nytimes.com/2026/06/01/opinion/artificial-intelligence-bernie-sanders.html">NYT op-ed</a></span>
+Unveils the American AI Sovereign Wealth Fund Act — a one-time 50% tax-in-stock on top AI firms. Drops the morning Anthropic files its S-1 at $965B. Worth pairing with the Korean Samsung-bonus debate and Warren's tax proposal as a third sovereign-rent-capture data point.</li>
+<li><span class="item-title">NYT: internal docs show China's Geedge built AI to predict political dissidents — chip controls slowed it</span>
+<span class="source"><a href="https://www.nytimes.com/2026/06/01/us/politics/china-ai-predicting-dissent.html">NYT (Barnes)</a></span>
+Rare evidence that <mark>US export controls materially degraded a specific PRC predictive-surveillance program</mark>. Reportable counter to the "controls don't work" narrative; pair with the Anthropic US-China competition paper Jeffrey Ding critiqued last week.</li>
+<li><span class="item-title">Strava walls off public data and charges $11.99/mo for API access "to combat AI scraping"</span>
+<span class="source"><a href="https://techcrunch.com/2026/06/01/strava-api-fee-ai-scraping/">TechCrunch</a></span>
+Public profiles and club listings now require auth. Reddit/X/NYT precedent extending to fitness data — the open-web shrinkage continues.</li>
+<li><span class="item-title">Microsoft Build preview: Copilot "super app" + new in-house reasoning model from Microsoft AI</span>
+<span class="source"><a href="https://www.theverge.com/2026/6/1/microsoft-build-copilot-super-app">The Verge (Warren)</a></span>
+First independent Microsoft AI reasoning model (the Suleyman org). Squarely competitive with OpenAI rather than complementary — the post-MSFT/OAI restructuring posture is now visible at the product layer.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> LessWrong & Discourse Roundup</h2>
+<ul>
+<li><span class="item-title">Steven Byrnes: "Empowerment, corrigibility, etc. are simple abstractions (of a messed-up ontology)"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/vzHtHHBJoKATi5SeK/empowerment-corrigibility-etc-are-simple-abstractions-of-a">LessWrong</a></span>
+Substantial new alignment post: argues that <mark>"manipulation," "corrigibility," "empowerment," and "agency" have no True Names</mark> because they sit on top of human free-will intuitions that are scientifically incoherent. Reviews and rejects Harms' formal-corrigibility, Cannell's empowerment, Demski's Vingean agency, Flint's optimization-based, and AUP approaches. Direct implication for any reporter covering RSP/spec-based alignment claims: the canonical safety vocabulary may be built on sand. Comments from Max Harms and jacob_cannell already replying.</li>
+<li><span class="item-title">Zvi: "Opus 4.8 Part 2: Model Welfare"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/opus-48-part-2-model-welfare">Don't Worry About the Vase</a></span>
+Follow-up to Friday's RSP-v3.3-weakening read. Focus today is on Anthropic's model-welfare framing in the 4.8 system card — pairs with the Olah/Roon AI-consciousness split surfaced last week. Useful primary source if reporting on AI moral status post-encyclical.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg> Quick Hits</h2>
+<ul>
+<li><span class="item-title">Box adds 13 AI-specific roles; growing headcount to 3,000+ in 2027</span>
+<span class="source"><a href="https://www.nytimes.com/2026/06/01/technology/box-ai-jobs.html">NYT</a></span>
+Counter-narrative to the Wix/SentinelOne AI-layoff frame from last week — Box is hiring "AI architect" and "AI solutions manager" roles instead of cutting.</li>
+<li><span class="item-title">IBM stock jumps 5%+ on a six-month-old Trump video recirculating on X</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-06-01/ibm-trump-video-x">Bloomberg</a></span>
+Already up ~40% in two weeks. Companion to Saturday's Dell/$9.7B DoD-contract pay-to-play story — the political-praise → AI-procurement stock pop is becoming a tradeable pattern.</li>
+<li><span class="item-title">No new posts in last 28h from Transformer, AI Futures Project, AI Safety Newsletter, DeepMind, Palisade, Forethought, Carlini, Thinking Machines, Joe Carlsmith, or AINews</span></li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
