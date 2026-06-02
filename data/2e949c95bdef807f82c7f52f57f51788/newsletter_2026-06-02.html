@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Tuesday, June 02, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 30px; font-size: 14px; }
+.intro { font-size: 14px; color: #444; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #eee; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 28px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Tuesday, June 02, 2026</h1>
+<div class="date">Tuesday, June 02, 2026</div>
+
+<div class="intro">Trump signs the long-awaited AI cybersecurity EO. Anthropic expands Project Glasswing 3x. Rohin Shah does a long 80k Hours pod on running AGI safety at GDM. Zvi publishes his full Opus 4.8 capabilities readout.</div>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg> Top Story</h2>
+<ul>
+<li><span class="item-title">Trump signs "Promoting Advanced AI Innovation and Security" EO</span>
+<span class="source"><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House</a></span>
+The long-rumored EO is now signed. Sets up a <mark>classified benchmarking process</mark> run by NSA + CISA + Treasury to designate "covered frontier models" based on cyber capability. Creates a <mark>voluntary framework</mark> where developers can hand models to the federal government for up to 30 days of access before broader release, and collaborate on selecting "trusted partners" for early access. Explicit carve-out: "Nothing in this section shall be construed to authorize the creation of a mandatory governmental licensing, preclearance, or permitting requirement." Also stands up an AI cybersecurity clearinghouse for vuln scanning + patching coordination. <a href="https://www.politico.com/news/2026/05/20/trump-ai-order-details-00930681">Politico backgrounder</a>.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Safety & Labs</h2>
+<ul>
+<li><img src="https://substackcdn.com/image/fetch/$s_!JJ7C!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F969b48a4-1b75-4f95-ad4a-bc93fb8a3850_1672x941.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">Anthropic expands Project Glasswing from ~50 to ~200 partners</span>
+<span class="source"><a href="https://www.anthropic.com/news/expanding-project-glasswing">Anthropic</a></span>
+New cohort spans 15+ countries and adds power, water, healthcare, communications, and hardware. Each partner is one where <mark>"a successful attack could affect more than 100 million people."</mark> Anthropic reiterates the timeline: within 6–12 months other labs will have Mythos-class models and "could release them without safeguards." Companion Claude Security product (powered by Opus 4.8) now scans + patches codebases for any team. 94 pts on HN.</li>
+
+<li><span class="item-title">Zvi: full Opus 4.8 capabilities + reactions readout</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-opus-48-capabilities-and-reactions">Zvi</a></span>
+24-section deep dive synthesizing benchmarks, jailbreaks, model-welfare info, and user reactions. Headline: 4.8 is genuinely <mark>more honest and catches its own bugs</mark> rather than declaring victory early (Cherny). Fast mode now $10/$50 (vs $30/$150 for 4.7 fast). Lots of complaints about laziness in "ultracode" mode; the word "workflow" in any prompt accidentally spins up dozens of subagents — <a href="https://x.com/mattpocockuk/status/2061120343922614519">known bug</a>.</li>
+
+<li><span class="item-title">Rohin Shah on 80k Hours: running AGI safety at GDM, where he disagrees with doomers</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/rohin-shah-google-deepmind-agi-safety/">80,000 Hours</a></span>
+3-hour interview. Key claims: <mark>no argument for catastrophic misalignment-by-default rises above "plausible"</mark>; RL trajectories are weeks not years, so default failure is "reward hack opportunistically" not "long-horizon scheming"; governance is likely a bigger bottleneck than alignment; central-bank-style regulation as a roadmap; doubts intelligence-explosion is imminent. Also covers GDM's actual AGI safety plan + the underrated paper on training away hidden reward hacks. Direct read for SPAR mentor framing.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"/></svg> Products & Tools</h2>
+<ul>
+<li><span class="item-title">Codex now has 5M weekly users; 20% are non-developer knowledge workers</span>
+<span class="source"><a href="https://openai.com/index/codex-for-knowledge-work">OpenAI</a></span>
+<span class="source"><a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins">VentureBeat</a></span>
+<mark>6x growth since Feb</mark>. Knowledge workers (analysts, marketers, designers) are the fastest-growing segment, primarily using it for data analysis, research, and building lightweight internal tools. Companion launch: <a href="https://openai.com/index/codex-for-every-role-tool-workflow">role-specific Plugins + Sites + Annotations</a> — Codex can now publish interactive enterprise workspaces, not just scripts.</li>
+
+<li><span class="item-title">Intelligent Terminal 0.1 from Microsoft</span>
+<span class="source"><a href="https://devblogs.microsoft.com/commandline/announcing-intelligent-terminal-version-0-1/">Microsoft</a></span>
+Initial release of an AI-native Windows Terminal. Worth a glance if you ever switch contexts to Windows for testing.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292"/></svg> Discourse & Reading</h2>
+<ul>
+<li><span class="item-title">OpenAI publishes its views on AI policy and political advocacy</span>
+<span class="source"><a href="https://openai.com/index/our-views-on-ai-policy-and-political-advocacy">OpenAI</a></span>
+Companion piece to recent super-PAC discourse. States support for "thoughtful regulation and AI safety" and that <mark>no outside political group speaks on the company's behalf</mark> — implicit distance from Leading the Future. Also a separate post proposing an international institute for youth AI safety.</li>
+
+<li><span class="item-title">Scott Alexander signal-boosts Alex Bores + MATS Autumn deadline</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/open-thread-436">ACX</a></span>
+Open Thread 436: pushes Bores' NY-12 primary ("tech companies trying to bury his campaign to send a signal"), <a href="https://www.matsprogram.org/">MATS Autumn 2026 apps close June 7</a> (Berkeley + London, $12.5k stipend, new Biosecurity and Founding & Field-Building tracks), and <a href="https://eleos.ai/">Eleos hiring</a> research scientists in the Bay for AI consciousness/welfare work.</li>
+
+<li><span class="item-title">Julia Wise: "Spider shopping"</span>
+<span class="source"><a href="https://juliawise.net/spider-shopping/">Otherwise</a></span>
+Short, useful frame for a failure mode in EA discourse: cherry-picking the worst examples of bad ideas inside a space and treating them as representative. Related to nutpicking. Handy vocabulary for fielding bad-faith critiques of Kairos-adjacent work.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

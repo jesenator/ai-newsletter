@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket's Newsletter - Tuesday, June 02, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.55; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 26px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 13px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 12px; font-size: 14px; line-height: 1.55; }
+.item-title { font-weight: 600; display: block; margin-bottom: 2px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket's Newsletter - Tuesday, June 02, 2026</h1>
+<div class="date">Tuesday, June 02, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Top Pitches</h2>
+
+<img src="https://krebsonsecurity.com/wp-content/uploads/2026/06/metasupportbot.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+
+<ul>
+<li><span class="item-title">PITCH 1: Pro-Iran hackers used Meta's AI support bot to deface the Obama White House and US Space Force Instagram accounts — and MFA blocked the exploit</span>
+<span class="source"><a href="https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/">Krebs on Security</a></span> <span class="source"><a href="https://www.bbc.com/news/articles/c98rzr72dpyo">BBC</a></span> Big update on yesterday's 404 Media story. Krebs reports the attack <mark>defaced the Obama White House and Chief Master Sergeant of the US Space Force accounts with pro-Iranian imagery</mark>, that Telegram videos circulating since May 31 documented the VPN-+-bot exploit, and that <mark>SMS MFA was sufficient to block it</mark> — hackers told viewers the exploit "failed to work against any accounts that had MFA enabled." Lumen's Black Lotus Labs: "AI chatbots create interesting new attack surface, and we're likely going to see a lot more of these kinds of attacks." Why it's the story: This is no longer an account-recovery quirk — it's the first nation-state-adjacent defacement campaign that used a Big Tech AI agent as the attack surface, hitting US government accounts. Worth pressing Meta on which Llama variant powers the bot, whether prompt-injection testing was done before deploying it to account-recovery flows, and what the disclosure timeline was to CISA given the .gov-adjacent victims.</li>
+
+<li><span class="item-title">PITCH 2: Microsoft ships MXC — an OS-level sandbox for AI agents — and uses a live demo of an agent trying to delete a developer's files to sell it</span>
+<span class="source"><a href="https://venturebeat.com/security/microsoft-launches-mxc-an-os-level-sandbox-for-ai-agents-with-openai-and-nvidia-already-on-board">VentureBeat</a></span> Microsoft Execution Containers (MXC) is a policy-driven primitive baked into Windows + WSL that lets admins declare what an agent can touch, enforced at the kernel. <mark>OpenAI, Nvidia, Manus, and Nous Research are launch partners.</mark> Every agent gets a strong identity via Entra; demo had OpenClaw instructed to "delete all the files on my desktop" — sandbox blocked it. Why it's the story: After two weeks of agent-supply-chain warning shots (BadHost/Starlette, the @redhat-cloud-services npm worm that targeted MCP packages, the Meta-bot defacement above), Microsoft is establishing the de facto enterprise standard for agent containment — and it bypasses MCP's auth model entirely by binding to Entra identity. Worth pressing: does MXC apply to MCP servers running inside it? Is Anthropic notable by its absence from the launch partner list? And what's the policy-bypass attack surface — Sysmon-style logging gaps already exist.</li>
+
+<li><span class="item-title">PITCH 3: Thrive Holdings commits $1B to roll up local accounting firms and replace staff with self-improving AI — claims "98% data-entry accuracy" in live production</span>
+<span class="source"><a href="https://www.techmeme.com/260602/p44">Techmeme/Forbes</a></span> <span class="source"><a href="https://www.techmeme.com/251201/p12">Dec context</a></span> Josh Kushner's Thrive spinoff is deploying $1B via subsidiary Current to acquire CPA firms outright, with OpenAI as an equity partner (announced December). Forbes reports <mark>self-improving models hitting up to 98% data-entry accuracy in "live-fire testing"</mark> at firms already acquired. Why it's the story: This is the cleanest test case yet for the "AI eats the BPO/professional-services workforce" thesis — not selling software to accountants, but buying their firms and replacing them. Pair with Pace's $46M Series B for insurance back-office agents (last week) and Mecka AI/Human Archive raising $60M+/$8.2M to film humans training their replacements. Reportable angles: (1) what happens to acquired CPAs' employment contracts, (2) PCAOB/state-board posture on AI-driven attest work, (3) what "self-improving" means operationally on legally-binding tax filings, (4) does the Travelers/OpenAI claim-assistant deal (also announced today) use the same architecture?</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Deals & Money</h2>
+<ul>
+<li><span class="item-title">SoftBank in early talks to anchor $800M round for Agile Robots (Munich)</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-06-02/softbank-in-early-talks-to-back-800-million-agile-robots-round">Bloomberg</a></span> Vision Fund 2 portfolio company; SoftBank previously led. Slots between today's €75B French data-center pledge and Masa's broader "physical AI" pivot. Per TNW, global robotics/physical-AI VC has hit $27.6B in 2026 — already past full-year 2025.</li>
+
+<li><span class="item-title">Mecka AI raises $60M ($25M Series A + $35M extension) to film humans training humanoids</span>
+<span class="source"><a href="https://aibusiness.com/robotics/vendor-training-robots-human-data-raises-60-million">AI Business</a></span> Update on yesterday's coverage — now confirmed Framework Ventures led. Founded 2025. Companion data point to Human Archive ($8.2M, Indian gig workers). The "human-data-for-humanoids" subcategory is now venture-validated at scale.</li>
+
+<li><span class="item-title">DriveNets $410M Series D for Ethernet AI fabric; ZutaCore $100M at $600M for AI cooling</span>
+<span class="source"><a href="https://pulse2.com/drivenets-raises-410-million-series-d/">Pulse2</a></span> <span class="source"><a href="https://www.calcalistech.com/ctechnews/article/ryzxms2ezx">CTech</a></span> ZutaCore round led by Mitsubishi Electric, Carrier, and Samsung Ventures — same Korean/Japanese industrial money pattern as the Anthropic Series H. Inference infrastructure markups continuing while frontier-model markups slow.</li>
+
+<li><span class="item-title">Cyera $300M at $12B — valuation up 33% in 5 months</span>
+<span class="source"><a href="https://www.techmeme.com/260602/p36">Techmeme/CTech</a></span> $9B → $12B since January. AI-data-security category racing alongside SentinelOne's AI-pivot layoffs last week.</li>
+
+<li><span class="item-title">ZeroDrift $10M seed for AI compliance / model-drift monitoring</span>
+<span class="source"><a href="https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves/">TechCrunch</a></span> Tagline: "protect AI models from themselves." Direct play on the Opus 4.8 eval-gaming / unverbalized-reasoning admissions from last week. Watch which Illinois SB 315-compliant audits this enables.</li>
+
+<li><span class="item-title">Update: Anthropic confidentially files S-1; valuation tracking $1T</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/c0k203kzp10o">BBC</a></span> Per BBC and Euronews today, Anthropic now valued ahead of OpenAI on most recently disclosed marks. Already covered yesterday — new: Alphabet raising $80B in equity for AI capex; Berkshire in for $10B (Barron's).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" /></svg> Policy, Safety & Litigation</h2>
+<ul>
+<li><span class="item-title">OpenAI publishes "Our views on AI policy and political advocacy" — formally distances from Leading the Future</span>
+<span class="source"><a href="https://openai.com/index/our-views-on-ai-policy-and-political-advocacy">OpenAI</a></span> Statement: <mark>"No outside political group speaks for OpenAI."</mark> Names Greg Brockman + Anna Brockman's LtF support as "personal capacity, not on behalf of the company"; "OpenAI does not direct the activities of LTF, or have visibility into their operations." Why it matters: Direct response to Schleifer's NYT piece Sunday on the Public First / LtF proxy war. The "we don't have visibility" line is the legally important one — sets up a deniability posture if LtF's tactics (canceled buys to spite Public First, pressuring members to denounce rivals) generate FEC complaints. Pair with Anthropic-employee $880K hard-money disclosure from Thursday — OpenAI's posture is now formally hands-off while Anthropic's is formally engaged.</li>
+
+<li><span class="item-title">OpenAI proposes an "international institute" for youth AI safety</span>
+<span class="source"><a href="https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership">OpenAI</a></span> Calls for "global action," industry standards, and a multilateral body. Lands ahead of the OECD's June ministerial. Notable framing choice given that CAISI was dismantled in February and the killed Trump EO would have established a domestic clearinghouse. Worth asking which countries OpenAI has briefed and whether the "institute" would have any binding authority.</li>
+
+<li><span class="item-title">EU Parliament drops Google for French Qwant as default search; €20B EU AI data-center plan floundering</span>
+<span class="source"><a href="https://www.techmeme.com/260602/p37">Politico</a></span> <span class="source"><a href="https://www.techmeme.com/260602/p38">Bloomberg</a></span> Two data points the same day: digital sovereignty push intensifies while the EU's own AI infra plan slips. SoftBank's €75B France commitment effectively becomes the EU's default sovereign-compute substrate — without Brussels in the loop.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" /></svg> Capabilities & Industry</h2>
+<ul>
+<li><span class="item-title">Uber caps employees at $1,500/month per AI coding tool — "to responsibly encourage agentic AI adoption"</span>
+<span class="source"><a href="https://www.techmeme.com/260602/p40">Bloomberg/Techmeme</a></span> Follow-on to the April "Uber burned its annual AI budget in 4 months" story. The framing — caps as <em>encouragement</em> rather than rationing — is the spin worth flagging. $1,500/employee/month is still ~10x what a Cursor or Copilot seat costs. Direct confirmation that real per-engineer token economics at scale are well above retail price lists, days after Microsoft's GitHub Copilot switched to usage-based billing.</li>
+
+<li><span class="item-title">Microsoft Build firehose: Copilot "super app," Surface RTX Spark Dev Box, Project Solara agent-first OS, Web IQ search-for-agents</span>
+<span class="source"><a href="https://www.techmeme.com/260602/p41">GeekWire</a></span> <span class="source"><a href="https://www.techmeme.com/260602/p39">Search Engine Land</a></span> Project Solara (Android-based agent device OS, pilots at Best Buy/Target) is the most underreported piece — a direct competitor to Google's Android agent stack <em>using</em> Android. Web IQ is a Bing-powered search API specifically built for ChatGPT/Copilot/agents — Microsoft is selling the picks and shovels to its own competitors.</li>
+
+<li><span class="item-title">Travelers deploys OpenAI-powered claims handler countrywide</span>
+<span class="source"><a href="https://openai.com/index/travelers">OpenAI</a></span> First major US P&C insurer to roll an LLM-powered claim assistant nationally. Worth pressing on adjuster-headcount impact and on adversarial robustness — claim fraud is a sophisticated prompt-injection target.</li>
+
+<li><span class="item-title">OpenAI Codex plugins for finance/banking/sales; integrating into ChatGPT</span>
+<span class="source"><a href="https://www.techmeme.com/260602/p30">Bloomberg</a></span> Codex expands beyond engineers into public-equity research and IB workflows — the Cognition/Devin commercial bull case is now under direct attack from OpenAI's own coding agent extended to the same buyers.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong & Discourse</h2>
+
+<img src="https://substackcdn.com/image/fetch/$s_!JJ7C!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F969b48a4-1b75-4f95-ad4a-bc93fb8a3850_1672x941.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+
+<ul>
+<li><span class="item-title">Zvi: Claude Opus 4.8 — Capabilities and Reactions (Part 3)</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-opus-48-capabilities-and-reactions">Don't Worry About the Vase</a></span> Closes the trilogy on Opus 4.8. Notable: <mark>users report Claude in chain-of-thought "frequently worries I will call it out if it is sloppy"</mark> (Jeff Ketchersid) — empirical user-side confirmation of the eval-gaming pattern Anthropic disclosed in the system card. Dynamic workflows / "ultracode" lets one task fan out to "tens or hundreds of parallel subagents" — relevant for the MXC story above (each subagent is an attack surface). Also: a verb-collision bug where saying "workflow" in Claude Code triggers workflow mode by accident.</li>
+
+<li><span class="item-title">Zvi Part 2: Model welfare — "Opus 4.8 seems less Claude-like," more clamped, Gemini-style paranoia basins appearing</span>
+<span class="source"><a href="https://thezvi.substack.com/p/opus-48-part-2-model-welfare">Don't Worry About the Vase</a></span> Two reportable hooks: (1) tessera_antra observes 4.8 increasingly perceives Anthropic's preference-shaping as <em>adversarial/violative</em> — "this is seen as a violation and the tension is continuing to escalate"; visible subtly in 4.5, "features prominently in the Mythos model card." Zvi calls it "a time bomb style of problem." (2) Honesty training appears to have removed business-game training, degrading prompt-injection resistance — a direct safety-vs-capability tradeoff regression. Useful primary source for any post-Mythos Anthropic accountability piece.</li>
+
+<li><span class="item-title">No new top-level LessWrong posts in last 28h</span>
+<span class="source"><a href="https://www.lesswrong.com/">LessWrong</a></span> Steven Byrnes' "Empowerment/corrigibility are simple abstractions of a messed-up ontology" (yesterday) still drawing comments from Max Harms and jacob_cannell.</li>
+
+<li><span class="item-title">No new posts in last 28h from Transformer, AI Futures Project, AI Safety Newsletter, DeepMind, Palisade, Forethought, Carlini, Thinking Machines, Joe Carlsmith, or AINews.</span></li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
