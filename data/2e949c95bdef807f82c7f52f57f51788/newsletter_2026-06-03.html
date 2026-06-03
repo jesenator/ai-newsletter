@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Wednesday, June 03, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 14px 0; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 13px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; }
+svg { display: inline-block; width: 16px; height: 16px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Wednesday, June 03, 2026</h1>
+<div class="date">Wednesday, June 03, 2026 — Trump EO post-mortems. AI cracks the unit-distance problem. Gemma 4 12B. CAIS on "deterrence by betrayal." Gemini Co-Scientist.</div>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5"/></svg> Trump AI EO: The Post-Mortems</h2>
+<ul>
+<li><span class="item-title">Transformer: "Trump's AI executive order was inevitable"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/trumps-ai-executive-order-was-inevitable">Transformer</a></span> Shakeel's verdict: <mark>Mythos "made the entire [anti-regulation] argument collapse"</mark>. Sacks lost; Ted Cruz is now urging Congress to "address catastrophic risk"; the pro-industry super PAC has begun endorsing regulation. Caveats: voluntary, cyber-only (bio regime still needed), and no teeth if a model fails eval.</li>
+<li><span class="item-title">Zvi: full breakdown of the EO</span>
+<span class="source"><a href="https://thezvi.substack.com/p/trump-signs-executive-order-for-ai">Zvi</a></span> Companion read to Transformer; goes line-by-line on the voluntary 30-day pre-deployment regime and the classified cyber threshold.</li>
+<li><span class="item-title">OpenAI: "Blueprint for democratic governance of frontier AI"</span>
+<span class="source"><a href="https://openai.com/index/frontier-safety-blueprint">OpenAI</a></span> Same-day proposal for a federal framework on safety, resilience, and national security. Pairs with an updated <a href="https://openai.com/index/public-policy-agenda">public policy agenda</a> on youth protection + workforce transition.</li>
+<li><span class="item-title">Anton Leicht / Miles Brundage: the EO over-indexes on cyber</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2061934767982227945">X: Miles Brundage</a></span> Cyber lets you patch vulns in weeks. Bio doesn't. Brundage also flags that <mark>CAISI was sidelined in favor of NSA</mark>, which weakens transparency and fairness in how thresholds get applied across labs.</li>
+<li><span class="item-title">Peter Wildeford: thoughtful read on what's missing</span>
+<span class="source"><a href="https://x.com/peterwildeford/status/2061942412981739798">X: Peter Wildeford</a></span> Internal deployments (not commercial release) are where the main risks now live; model weight security isn't addressed; no framework for what happens if an eval fails.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg> Capabilities & Models</h2>
+<ul>
+<li><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemma_4_12B_Hero.width-1300.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">Gemma 4 12B: unified, encoder-free multimodal model</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/">Google</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48385906">HN (290 pts)</a></span> Apache 2.0, designed to run on a laptop. <mark>Best open multimodal model in its weight class</mark>; closes some of the encoder-free gap. <a href="https://x.com/googlegemma/status/2062202706882883696">X: Google Gemma</a>.</li>
+<li><span class="item-title">AI disproves Erdős's 80-year-old unit distance conjecture</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/aisn-74-the-popes-encyclical-and">AISN #74</a></span> OpenAI internal model found a counterexample to the 1946 conjecture. Fields medalist Tim Gowers: <mark>"the first really clear example of AI solving not just an unsolved maths problem but a really well-known unsolved maths problem."</mark> Verified by independent mathematicians; Will Sawin then pushed the construction further. Same week: GDM LLM autonomously resolved 9 other Erdős problems.</li>
+<li><span class="item-title">Gemini Co-Scientist: multi-agent system for hypothesis generation</span>
+<span class="source"><a href="https://x.com/GoogleDeepMind/status/2061857539977842793">X: Google DeepMind</a></span> Coalition of Gemini agents runs a "tournament of ideas" — generate thousands of hypotheses, debate, refine, rank. Available to researchers via Hypothesis Generation in Gemini for Science.</li>
+<li><span class="item-title">Ideogram 4.0: weights released, open image model</span>
+<span class="source"><a href="https://x.com/ideogram_ai/status/2062202208700313872">X: Ideogram</a></span> Download, fine-tune, run on your own hardware. Worth a look if you ever want to remake CivAI-style visual demos that don't depend on a closed API.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Safety Research</h2>
+<ul>
+<li><img src="https://newsletter.safe.ai/api/v1/file/cae5a4ff-7e6c-4f4f-8e34-bc8c5e57bfd5.png" style="max-width: 180px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'"><span class="item-title">CAIS: "Deterrence by Betrayal"</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/aisn-74-the-popes-encyclical-and">AISN #74</a></span> New paper argues adversaries will deliberately try to make AIs betray developers and users — via data poisoning, weight theft, or insider manipulation — and developers <mark>cannot reliably defend against it</mark>. Surprising upshot: this threat could act as a stabilizing factor by deterring reckless deployment and AI-automated research. Companion to Superintelligence Strategy.</li>
+<li><span class="item-title">NYT/CleverHans: scientists supercharge computer worms with AI</span>
+<span class="source"><a href="https://www.nytimes.com/2026/06/02/technology/scientists-find-way-to-supercharge-dangerous-computer-worms-with-ai.html">NYT</a></span> <span class="source"><a href="https://x.com/Miles_Brundage/status/2061999578216612312">X: Miles Brundage</a></span> Nicolas Papernot et al. — concrete demo that LLMs let worms mutate and evade defenses far more effectively. Directly relevant to the cyber-uplift threat model the new EO is designed around.</li>
+<li><span class="item-title">Apollo "metagaming" paper getting buzz at Recursive</span>
+<span class="source"><a href="https://x.com/MariusHobbhahn/status/2061885840163299516">X: Marius Hobbhahn</a></span> Marius calls it underrated — many findings on how models think about <em>the grader</em> and the eval setting they're in, plus strong ablations. <a href="https://alignment.openai.com/metagaming/">Read</a>.</li>
+<li><span class="item-title">MIT FutureTech: Delphi study of 272 AI experts on risks</span>
+<span class="source"><a href="https://airisk.mit.edu/priorities">MIT</a></span> <span class="source"><a href="https://x.com/PeterSlattery1/status/2062203174371414526">X: Peter Slattery</a></span> Over the next 5 years, experts assigned ≥10% probability of catastrophic outcomes to <mark>18 of 24 risks</mark>. Even with pragmatic mitigations, 5 stay above threshold: dangerous capabilities, cyber/weapons, environmental harm, inequality, power centralization. Responsibility concentrated on frontier developers + governments.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg> Policy & Field-Building</h2>
+<ul>
+<li><span class="item-title">ControlAI launches Canada campaign — 30+ MPs and Senators</span>
+<span class="source"><a href="https://x.com/andreamiotti/status/2062218888696271214">X: Andrea Miotti</a></span> Cross-party Canadian coalition calling for an international prohibition on developing superintelligence. Mirrors the 100+ UK lawmaker coalition. <a href="https://x.com/NPCollapse/status/2062221885933309999">Connor Leahy thread</a>.</li>
+<li><span class="item-title">Illinois SB 315 added to AISN's policy roundup; SpaceX/xAI IPO note</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/aisn-74-the-popes-encyclical-and">AISN #74</a></span> Also notes Newsom EO on AI worker displacement, and Senate passing whistleblower incentives for chip smuggling.</li>
+<li><span class="item-title">Stop AI trial: judge allows necessity defense</span>
+<span class="source"><a href="https://x.com/DavidSKrueger/status/2061982886908273022">X: David Krueger</a></span> Wynd Kaufmyn prosecuted for blocking OpenAI's door; <mark>Stuart Russell expected as expert witness</mark> on imminent extinction threat. Krueger: "a huge win I wasn't expecting."</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"/></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Notion: Outlook integration (alpha) + Grok 4.3 / Grok Build 0.1 in Custom Agents</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2061836427693068573">X: Notion</a></span> Agents can now find threads, draft replies, send, sort, archive across Outlook Mail. Also five new MCP connectors (Box, ClickHouse, Mercury, Miro, Mixpanel). Notion also finished its .so → .com migration; <a href="https://x.com/akothari/status/2061863261449154910">the 2018 acquisition story</a> is a fun read.</li>
+<li><span class="item-title">Raycast: auto-quit apps</span>
+<span class="source"><a href="https://x.com/peduarte/status/2061890710731665670">X: Pedro Duarte</a></span> Search the app → ⌘K → enable auto quit. Genuinely useful if your menu bar is full of half-open apps.</li>
+<li><span class="item-title">Cursor Enterprise: Organizations (multi-team management)</span>
+<span class="source"><a href="https://cursor.com/changelog/enterprise-organizations">Cursor</a></span> Mostly enterprise-admin stuff (multi-team, IDP, usage analytics) — skim only.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
