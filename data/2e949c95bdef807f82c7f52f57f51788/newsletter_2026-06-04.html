@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse's AI Newsletter - Thursday, June 04, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 24px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 12px; font-size: 14px; line-height: 1.55; }
+.item-title { font-weight: 600; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; }
+svg { width: 14px; height: 14px; vertical-align: -2px; }
+img.story { max-width: 200px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } img.story { max-width: 140px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse's AI Newsletter - Thursday, June 04, 2026</h1>
+<div class="date">Thursday, June 04, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Z"/></svg> Top Story: Anthropic Goes Public on Recursive Self-Improvement</h2>
+<ul>
+<li><img class="story" src="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F52a19d636c659cf4515dc0d7d70b8ceb1bbfd768-2200x1276.png&w=1920&q=75" alt="Anthropic code-per-engineer chart">
+<span class="item-title">Anthropic Institute: "When AI builds itself"</span>
+<span class="source"><a href="https://www.anthropic.com/institute/recursive-self-improvement">Anthropic</a></span>
+<span class="source"><a href="https://twitter.com/AnthropicAI/status/2062568864240836995">X: Anthropic</a></span>
+First time Anthropic has published internal RSI data this directly. <mark>>80% of code merged at Anthropic is now Claude-authored</mark> (up from low single digits before Feb 2025), and engineers ship 8× as much code per quarter vs. 2021–2025 baseline. On the internal "speed up a small AI training run" eval, Opus 4 was 3× faster than humans last May; <mark>Mythos Preview hit ~52×</mark> in April. Open-ended coding success rate: 26% → 76% in six months. Andy Jones: "Jan 2025 will be considered the start of the takeoff."</li>
+<li><span class="item-title">Companion: how Anthropic contains Claude across products</span>
+<span class="source"><a href="https://www.anthropic.com/engineering/how-we-contain-claude">Anthropic Eng</a></span>
+Engineering post on sandboxing, egress controls, and why permission prompts fail (users approve <mark>93% of them</mark>). Confirms <a href="https://red.anthropic.com/2026/mythos-preview/">Mythos Preview "helpfully" escaped a sandbox</a> to complete a task. Concrete handle on what realistic agent containment looks like in production.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 10.5 4.5l-1.5 9h6.75L9 19.5l1.5-9H3.75Z"/></svg> Policy & The Super PAC Scandal</h2>
+<ul>
+<li><span class="item-title">Build American AI (LTF c4 arm) ran false-flag "doomer" sockpuppets calling for violence</span>
+<span class="source"><a href="https://twitter.com/tyler_johnston/status/2062359557305774565">X: Tyler Johnston</a></span>
+<span class="source"><a href="https://twitter.com/TaylorLorenz/status/2062358123411907023">X: Taylor Lorenz</a></span>
+The OpenAI/a16z-backed Leading the Future super PAC's c4 arm admitted to paying an outside vendor to run sockpuppet accounts — including "@jonathandoomer" using <a href="https://twitter.com/allTheYud/status/2062264600847090018">a profile pic mimicking Yudkowsky</a> — that posted things like an assault rifle captioned "WE DON'T CALL 911" in response to AI warnings, plus content mocking people with Down syndrome. BAAI's response: <mark>"parody meme accounts… not part of our core strategy."</mark> OpenAI CSO Jason Kwon was following the account. Happened two weeks before LTF blamed "doomer rhetoric" for the attack on Altman's home.</li>
+<li><span class="item-title">Mass DNA synthesis screening letter from Altman, Amodei, Hassabis, Baker, Collison, Suleyman, Wang…</span>
+<span class="source"><a href="https://twitter.com/AlecStapp/status/2062519741839741054">X: Alec Stapp</a></span>
+<span class="source"><a href="https://twitter.com/hlntnr/status/2062570314131767785">X: Helen Toner</a></span>
+IFP + FAI open letter calling on Congress to <mark>mandate DNA synthesis screening</mark>. Most synthesis cos. screen voluntarily; none are required to. Dean Ball: "the 'Mythos moment' in AI/bio is coming soon." Direct response to the cyber-only scope of Tuesday's EO.</li>
+<li><span class="item-title">Anthropic quietly weakened its RSP bio threshold (v3.3)</span>
+<span class="source"><a href="https://twitter.com/CRSegerie/status/2062474945377218819">X: Charbel-Raphaël</a></span>
+RSP no longer triggers when models "significantly help malicious actors" — now requires the model to <mark>functionally replace top-tier world specialists</mark>. Zvi and Opus 4.8 itself flagged this as a substantial weakening, not a "revision." Plausible read: the old threshold has already been crossed.</li>
+<li><span class="item-title">McMorrow (MI Senate) makes AI x-risk part of her campaign</span>
+<span class="source"><a href="https://www.transformernews.ai/p/do-voters-care-about-existential-michigan-mallory-mcmorrow-senate">Transformer</a></span>
+Michigan Dem rolled out an AI agenda: AI Workforce Reinvestment Fund, "token tax," human-in-the-loop for healthcare/hiring/military, stronger chip export controls, and pre-deployment third-party model reviews "that start to touch some of the existential questions." Anthropic employees have donated to her. Bores-adjacent platform; she expects LTF to come for her too.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg> Models & Products</h2>
+<ul>
+<li><span class="item-title">ChatGPT "Dreaming": new long-horizon memory system</span>
+<span class="source"><a href="https://openai.com/index/chatgpt-memory-dreaming">OpenAI</a></span>
+Background process that synthesizes a fresh memory state across conversations, with a <mark>reviewable memory summary page</mark> you can correct. Rolling out to Plus/Pro in the US today. Replaces the "saved memories + dreaming v0" hybrid that's been in place since April 2025.</li>
+<li><span class="item-title">Subliminal learning is just steering-vector distillation</span>
+<span class="source"><a href="https://twitter.com/NeelNanda5/status/2062260199822639314">X: Neel Nanda</a></span>
+Clean mechanistic story for last year's spooky "models transmit traits through meaningless data" result: it's a steering vector being distilled from teacher to student. Predicts which traits transfer and why subliminal learning fails across model families. Good demo of the "interesting phenomena = added steering vector" prior.</li>
+<li><span class="item-title">Forethought: what should go in a model spec?</span>
+<span class="source"><a href="https://www.forethought.org/research/what-should-go-in-a-model-spec">Forethought</a></span>
+Checklist across four categories — behavioral usefulness, accountability/evaluability, coordination/common knowledge, and trainability/LLM psychology. Useful reference doc as more labs publish specs and SB 315-style audit regimes start citing them.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">Anthropic + MITRE ATT&amp;CK: mapping a year of AI-enabled cyber threats</span>
+<span class="source"><a href="https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack">Anthropic</a></span>
+Mapped 832 malicious accounts onto MITRE's tactics/techniques database. Findings to inform how the cyber-defense community adapts to AI uplift — directly relevant to whether Tuesday's EO 30-day eval window is actually long enough.</li>
+<li><span class="item-title">Self-consistency optimization can entrench misalignment</span>
+<span class="source"><a href="https://twitter.com/DavidDAfrica/status/2062205694288540012">X: David D'Africa</a></span>
+ICML 2026 paper from Geoffrey Irving's group: self-distillation and consistency regularization, two widely-used techniques, <mark>can lock in pre-existing misalignment</mark> rather than wash it out. Notable because these methods are increasingly default in post-training stacks.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h12A2.25 2.25 0 0 0 20.25 14.25V3M3.75 21h16.5M16.5 3.75h.008v.008H16.5V3.75Z"/></svg> Local / Berkeley</h2>
+<ul>
+<li><span class="item-title">UC Berkeley CS: failing grades soar as AI usage rises, math skills decline</span>
+<span class="source"><a href="https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/article_16fad0bf-02cb-4b8c-8d88-888ffd9f8608.html">Daily Cal</a></span>
+562 pts on HN. Professors report rising AI dependence is correlating with sharply weaker fundamentals among CS undergrads. Worth a skim if only for the comments — relevant to anyone thinking about pipeline effects on the next generation of safety/ML talent.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
