@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Saturday, June 06, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; border-left: 3px solid #2563eb; padding-left: 12px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; vertical-align: -2px; }
+img { max-width: 200px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Saturday, June 06, 2026</h1>
+<div class="date">Saturday, June 06, 2026</div>
+
+<div class="intro">Quiet Saturday after a heavy week. Anthropic shows Claude beating dedicated chemistry software. A second AI national-security memorandum drops. OpenAI's Lockdown Mode goes live. Gemma 4 squeezes onto phones. No qualifying Bay Area emergencies; one brief world note.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Capabilities</h2>
+<ul>
+<li><img src="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F8269748a860db6f9b3fddd3e9e6116c193cbb399-1200x675.jpg&w=1200&q=75" alt="NMR error chart">
+<span class="item-title">Anthropic: "Making Claude a chemist" — Claude matches or beats dedicated NMR software</span>
+<span class="source"><a href="https://www.anthropic.com/research/making-claude-a-chemist">Anthropic</a></span> <span class="source"><a href="https://twitter.com/AnthropicAI/status/2062979607448682731">X: Anthropic</a></span> New science blog: tested on 20 post-cutoff ChemRxiv compounds, <mark>Opus 4.7 matches and on some tasks beats ChemDraw/MestReNova at NMR shift prediction</mark> — and can also run the harder reverse direction (spectrum → structure) that existing software leaves entirely to the chemist. First white paper in a broader "make Claude better at chemistry" effort. Dual-use worth noting for the bio/chem uplift thread.</li>
+<li><span class="item-title">Gemma 4 QAT models: open multimodal that runs on phones and laptops</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/">Google</a></span> 370 pts on HN. Quantization-aware-trained Gemma 4 weights cut memory enough to run the model locally on mobile/laptop hardware while preserving quality. Useful if you ever want to remake CivAI-style demos that run fully on-device with no API.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> Safety & Research</h2>
+<ul>
+<li><span class="item-title">Apollo on Anthropic's RSI data: "what if the models driving AI R&D are misaligned and no one notices?"</span>
+<span class="source"><a href="https://twitter.com/apolloaievals/status/2062951475215524246">X: Apollo Research</a></span> Apollo ties this week's Anthropic RSI numbers to its own prior work: as Claude authors more of the AI-R&D loop, the failure mode isn't just unsafe outputs but <mark>misaligned models quietly steering future training</mark> without detection. Bridges the RSI discourse to concrete monitoring/scheming-eval agendas.</li>
+<li><span class="item-title">Epoch: new Cyber Vulnerabilities explorer — are AI models actually finding more bugs?</span>
+<span class="source"><a href="https://twitter.com/EpochAIResearch/status/2063027791638237487">X: Epoch AI</a></span> New tool visualizing CVEs reported to the CVE Program since 2022, built to test labs' claims that models are getting better at vulnerability discovery against public data. Directly relevant to whether the EO's 30-day cyber-eval window is calibrated right.</li>
+<li><span class="item-title">OpenAI Lockdown Mode is now live (Free/Go/Plus/Pro + Business)</span>
+<span class="source"><a href="https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/">Simon Willison</a></span> <span class="source"><a href="https://help.openai.com/en/articles/20001061-lockdown-mode">OpenAI</a></span> Teased in Feb, now rolling out. Deterministically limits outbound network requests to block the <mark>data-exfiltration leg of the "lethal trifecta"</mark> in prompt-injection attacks. Willison: "this looks really good" — though its existence implies default ChatGPT settings don't robustly stop determined exfiltration. Good CivAI-explainer fodder on agentic-browser/prompt-injection risk.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Trump signs a second AI action: National Security Presidential Memorandum on AI in the national-security enterprise</span>
+<span class="source"><a href="https://twitter.com/mkratsios47/status/2062965784406892823">X: Michael Kratsios</a></span> <span class="source"><a href="https://www.reuters.com/technology/us-says-it-will-speed-development-use-ai-national-security-2026-06-05/">Reuters</a></span> Distinct from Tuesday's cyber EO. <mark>Accelerates AI adoption from multiple vendors to avoid single points of failure</mark>, updates DoD guidance on autonomy in weapons systems "to keep pace with the frontier," and bars anyone from disabling/degrading a warfighter-relied AI system without prior approval. Pairs with the Slotkin/Coons-Reed NDAA "human in the loop" push.</li>
+<li><span class="item-title">Update — equity stakes: Trump confirms interest in govt taking "pieces" of AI companies</span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2062972595373572242">X: Miles Brundage</a></span> Follow-up to yesterday's rumor: Trump publicly confirmed the idea ("we are looking into that"), reportedly first floated by OpenAI itself. Brundage: hard to see how boards justify this to investors/nonprofits and hopes they push back.</li>
+<li><span class="item-title">Sen. Banks pushes for federal testing to account for recursive self-improvement</span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2063104012027875797">X: Miles Brundage</a></span> <span class="source"><a href="https://twitter.com/_NathanCalvin/status/2063111408955400268">X: Nathan Calvin</a></span> GOP senator argues federal frontier-model evals should factor in models improving themselves without humans. Notable as the RSI framing crosses into mainstream Republican policy talk, riding this week's Anthropic post.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Miles Brundage: Claude Code's workflow now strong enough to switch back from Codex</span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2063114151321592297">X: Miles Brundage</a></span> Gave CC another try after dropping it over bugs — workflow is now good and "Codex needs an answer to it soon (/goal is not enough)." Separately puzzled by the "ultracode" thinking-effort slider sitting past Max. Useful signal if you're choosing between agentic coding tools.</li>
+<li><span class="item-title">Raycast: keyboard-only window management on Windows + macOS</span>
+<span class="source"><a href="https://twitter.com/raycast/status/2062897339174699399">X: Raycast</a></span> New window-management video + <a href="https://manual.raycast.com/window-management">docs</a>. Snap and arrange windows entirely from the keyboard, now cross-platform.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World</h2>
+<ul>
+<li><span class="item-title">US and Iran exchange strikes in the Gulf, testing the ceasefire</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cvgzgyjk2weo">BBC</a></span> US struck Iranian drones and radar sites; Tehran says it targeted US bases in Kuwait and Bahrain. Watching as a possible oil-price/markets shock, but contained so far.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
