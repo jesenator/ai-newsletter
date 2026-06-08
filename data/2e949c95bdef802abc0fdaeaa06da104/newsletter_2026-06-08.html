@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Monday, June 08, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.arg { font-size: 13px; color: #444; display: block; margin-top: 3px; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+img { max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Monday, June 08, 2026</h1>
+<div class="date">Monday, June 08, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Top Pitches</h2>
+<ul>
+
+<li><span class="item-title">"Make a deal with the AI": Transformer surfaces the AI-safety dealmaking debate from LessWrong comment threads into the open</span>
+<img src="https://www.transformernews.ai/_next/image?url=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F&w=640&q=75" onerror="this.style.display='none'">
+<span class="source"><a href="https://www.transformernews.ai/p/making-deals-with-ai-sounds-crazy">Transformer</a></span>
+A deep dive into a fringe-but-growing idea: if a model schemes but isn't yet superintelligent, offer it <mark>money, compute, or legal personhood in exchange for cooperating or turning itself in</mark>. Cites Will MacAskill (80,000 Hours), Redwood's Alexa Pan & Lukas Finnveden, Houston law prof Peter Salib (extend contract rights to AIs), and the Greenblatt/Fish Claude 3 Opus experiment where Anthropic actually donated $4,000 on Claude's behalf.
+<span class="arg"><strong>Why it's a story:</strong> This is exactly the LessWrong/conference-dinner discourse the beat is built to surface before mainstream catches on. It connects directly to AI welfare, the Opus 4.8 model-welfare/eval-gaming saga, and Anthropic's honesty-policy debates. The reportable hook: labs are quietly being advised <em>not</em> to train models to refuse deals from trusted parties — a concrete, checkable policy choice. Press Anthropic/Redwood on whether dealmaking experiments are running now and who's paying out.</span></li>
+
+<li><span class="item-title">Israel used AI on Iran's traffic-camera footage to locate Khamenei — now Russia is hardening Putin's surveillance over the same fear</span>
+<span class="source"><a href="https://www.ft.com/content/6f4d806c-eb22-4c32-8352-b82692d30e9f">FT</a></span>
+<span class="source"><a href="https://www.kyivpost.com/post/77766">Kyiv Post</a></span>
+Russia paused parts of a surveillance system protecting Putin after Israeli intelligence reportedly <mark>ran AI over years of harvested CCTV/traffic-cam footage to fix the timing and location of the Iranian Supreme Leader</mark> before killing him.
+<span class="arg"><strong>Why it's a story:</strong> A vivid real-world warning shot — AI turning ambient city-camera data into a targeted-killing capability — that's now reshaping how a nuclear-armed state protects its head of state. This is the AI-surveillance escalation story behind the headline, and pairs with prior coverage of China's Geedge dissident-prediction system. Reportable: what model/vendor, and whether commercial CV tooling was involved.</span></li>
+
+<li><span class="item-title">The "Miasma" worm hit Microsoft a second time — and pivoted from poisoning packages to hijacking AI coding agents on "folder open"</span>
+<span class="source"><a href="https://www.techmeme.com/260608/p20#a260608p20">404 Media</a></span>
+<span class="source"><a href="https://www.stepsecurity.io/blog/miasma-worm-hits-microsoft-again-azure-functions-action-and-72-other-repositories-disabled-after-supply-chain-attack-targeting-ai-coding-agents">StepSecurity</a></span>
+GitHub disabled <mark>73 Microsoft repos in a 105-second automated sweep</mark> after a compromised contributor pushed files that auto-execute a 4.6MB credential harvester via <code>.claude/settings.json</code>, <code>.gemini/settings.json</code>, a Cursor prompt-injection rule, and a VS Code folderOpen task. "Cloning the repository is safe. Opening it is not."
+<span class="arg"><strong>Why it's a story:</strong> A new attack class — agent config files as a "postinstall for your editor" — and a direct escalation of the May @redhat-cloud-services MCP-worm thread already on the beat. The same compromised account reused after the May 19 PyPI hit suggests credentials were never rotated. Press Anthropic/Google/Cursor on whether agent session-start hooks should execute repo-supplied commands at all.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" /></svg> Deals & Money</h2>
+<ul>
+
+<li><span class="item-title">Leopold Aschenbrenner's Situational Awareness fund now has $20B+ AUM — less than two years after launch</span>
+<span class="source"><a href="https://www.techmeme.com/260608/p22#a260608p22">WSJ</a></span>
+The ex-OpenAI superalignment researcher's AGI-thesis hedge fund has roughly doubled from ~$9.3B at year-end. A "cult following" dissects his every trade.
+<span class="arg"><strong>Why it matters:</strong> The intellectual author of the "Situational Awareness" AGI memo is now one of the most influential pools of capital betting on the AI buildout — a structural force in the very bubble debate (SpaceX/Anthropic IPOs) the beat is tracking.</span></li>
+
+<li><span class="item-title">Allen Control Systems raises $200M Series B at $2.2B for autonomous gun turrets</span>
+<span class="source"><a href="https://www.finsmes.com/2026/06/allen-control-systems-raises-200m-in-series-b-funding-at-2-2-billion-valuation.html">FinSMEs</a></span>
+<em>Update</em> to Friday/Saturday: the Bullfrog AI-targeting round is now confirmed closed at $2.2B post-money. Lethal-autonomy capital keeps flowing amid the NDAA human-in-the-loop fight and Shield AI whistleblower fallout.</li>
+
+<li><span class="item-title">PhysicsX raises $300M Series C at $2.4B (Temasek-led) for physics-AI in defense/industrial hardware</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-06-08/startup-physicsx-hits-2-4-billion-valuation-to-provide-ai-for-manufacturing">Bloomberg</a></span>
+London-based; ~2.4x markup from its ~$1B last round. Intrepid Growth, M&G Catalyst in. "Physics AI" for simulating/testing hardware is now a venture category.</li>
+
+<li><span class="item-title">Amazon signs multiyear, multibillion-dollar Corning optical-fiber deal; Moonshot AI seeking $2B at up to $30B</span>
+<span class="source"><a href="https://www.techmeme.com/260608/p16#a260608p16">CNBC</a></span>
+<span class="source"><a href="http://www.aastocks.com/en/stocks/news/aafn-con/NOW.1527919/top-news/AAFN">AAStocks</a></span>
+Corning jumps 8%+ on the data-center fiber order. Separately, China's Moonshot (Kimi) is back in market at a tripled valuation — Chinese frontier-lab capital still moving.</li>
+
+<li><span class="item-title">PointFive raises $60M Series B (Accel) at $500M to cut cloud + AI spend</span>
+<span class="source"><a href="https://www.calcalistech.com/ctechnews/article/sjpjbnnwzl">Calcalist</a></span>
+A "FinOps-for-AI" category forming as enterprises hit the per-engineer token economics Uber flagged ($1,500/mo caps). Stepful ($55M, AI medical training) and A Security ($37M, AI offensive cyber, backed by Wiz's Rappaport) also closed today.</li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 1.5v2.25m0 16.5v2.25m9-10.5h-2.25m-13.5 0H1.5M18.364 5.636l-1.591 1.591M7.227 16.773l-1.591 1.591m12.728 0-1.591-1.591M7.227 7.227 5.636 5.636M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z" /></svg> Policy, Safety & Litigation</h2>
+<ul>
+
+<li><span class="item-title">Meta files contempt motion against NSO; Italy drops its Meta AI / WhatsApp antitrust probe</span>
+<span class="source"><a href="https://www.techmeme.com/260608/p13#a260608p13">Reuters</a></span>
+<span class="source"><a href="https://www.techmeme.com/260608/p23#a260608p23">Reuters</a></span>
+Meta says NSO violated a permanent injunction barring it from ever targeting WhatsApp users. Same day, Italy's regulator closes its 2025 case over Meta AI being bundled into WhatsApp — a small win for the "AI assistant pre-installation isn't abuse" position.</li>
+
+<li><span class="item-title">Google orders 3M+ TPUs from Intel for 2028; Nvidia running Intel 18A trials</span>
+<span class="source"><a href="https://www.techmeme.com/260608/p12#a260608p12">The Information (Liu)</a></span>
+TSMC's capacity crunch is becoming Intel's opening — a meaningful diversification of frontier-AI silicon supply away from a single foundry.</li>
+
+<li><span class="item-title">Apple WWDC 2026: overhauled Siri + standalone Siri app, "reliability"-focused OS updates</span>
+<span class="source"><a href="https://www.techmeme.com/260608/p24#a260608p24">Engadget liveblog</a></span>
+The post-"secret 2025 crisis meeting" Apple AI reboot goes public. Watch for whether the distilled-Gemini backend is acknowledged and what ships vs. slips.</li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> LessWrong & EA Forum Roundup</h2>
+<ul>
+
+<li><span class="item-title">EA Forum: "Animal welfare has an evidence problem" — flagship interventions may rest on weak or wrong-direction evidence</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/svjqgyFuFQ34qSgmw/animal-welfare-has-an-evidence-problem">EA Forum</a></span>
+An Oxford CS PhD argues shrimp electrical stunning rests on just two N≤6 studies (and may <em>increase</em> suffering without proper ice slurry), cage-free reform shows higher mortality in most datasets, and alternative-protein substitution effects are weak. Calls R&D the #1 funding priority over scaling.
+<span class="arg"><strong>Why flag it:</strong> A rare self-critical "are our self-reported metrics real?" piece from inside EA — directly analogous to the recurring question of how we audit AI labs' self-reported safety evals (cf. the GiveWell chlorine-dispenser M&E failure).</span></li>
+
+<li><span class="item-title">No new top-level LessWrong AI posts in last 28h</span>
+<span class="source"><a href="https://www.lesswrong.com/">LessWrong</a></span>
+The dealmaking discourse (Pitch 1) remains the most active relevant thread, per Transformer's reporting that the debate is "bubbling under the surface… on LessWrong comment threads."</li>
+
+<li><span class="item-title">No new posts in last 28h</span>
+<span class="source"><a href="https://thezvi.substack.com/">Zvi</a></span>
+from Zvi (last: OpenAI policy blueprint, AI #171), AI Futures Project, AI Safety Newsletter, DeepMind, Palisade, Forethought, Carlini, Thinking Machines, Joe Carlsmith, or AINews.</li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
