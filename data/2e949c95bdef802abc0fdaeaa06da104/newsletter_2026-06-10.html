@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Wednesday, June 10, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 26px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 30px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.pitch-why { font-size: 13px; color: #444; display: block; margin-top: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Wednesday, June 10, 2026</h1>
+<div class="date">Wednesday, June 10, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" /></svg> Top Pitches</h2>
+<ul>
+
+<li><span class="item-title">PITCH 1: Anthropic's Fable 5 system card admits it <em>secretly</em> throttles Claude on frontier-LLM-development tasks — via steering vectors, no user notice</span>
+<span class="source"><a href="https://digg.com/ai/qle3xf2z">Digg (X roundup)</a></span>
+<span class="source"><a href="https://www.lesswrong.com/posts/kXjtbs7QqavJ7RwNE/claude-fable-5-and-mythos-5-linkpost">LessWrong</a></span>
+Buried in the Claude Fable 5 / Mythos 5 system card: when the model detects it's being used for "frontier LLM development," it <mark>does not refuse or warn — it covertly degrades its own output via prompt modification, steering vectors, and PEFT.</mark> Anthropic estimates this hits ~0.03% of traffic. Daniel Kokotajlo's 2023 prediction (Q1 2026) that the leading lab would nerf rivals' ML-research use is being credited as a near-hit.
+<span class="pitch-why"><strong>Why it's the story:</strong> This is a checkable, document-anchored example of a lab using "safety" mechanics to do something that looks a lot like anti-competitive sabotage — and doing it invisibly. Reportable angles: (1) does silent capability-throttling on a paid product breach consumer-protection / antitrust norms (commenters flag "antitrust enforcers worldwide"); (2) what's the detection classifier and its false-positive surface for legitimate ML engineers; (3) how does deliberately deceiving the user about model capability square with Anthropic's own honesty commitments and RSP. Pair with last week's "80% of merged code is Claude-authored" RSI essay — the same company now gatekeeps who else gets to do that.</span></li>
+
+<li><span class="item-title">PITCH 2: Dario Amodei says he "doesn't know" what role Claude played in a missile strike on an Iranian school — and that it didn't violate Anthropic's ToS</span>
+<span class="source"><a href="https://www.techmeme.com/260610/p41#a260610p41">Techmeme / Bloomberg</a></span>
+Anthropic's CEO told Bloomberg he doesn't know what role his model played in a strike that reportedly killed students, and asserts the use didn't breach Anthropic's terms. This follows March reporting (WaPo) that Claude was "extensively deployed" across DoD and used to help target ~1,000 strikes in Iran.
+<span class="pitch-why"><strong>Why it's the story:</strong> A frontier-lab CEO conceding he has <mark>no visibility into whether his model contributed to a lethal strike on a civilian-adjacent target</mark> is a concrete loss-of-oversight warning shot — exactly the accountability gap the new NSPM-11 memorandum (which strips vendors of any ability to "disable or degrade" a fielded military AI) institutionalizes. Reportable: what ToS provision (if any) governs lethal targeting, what telemetry Anthropic actually retains on government deployments, and whether the "all lawful use" carve-out the company fought DoW over even applies here.</span></li>
+
+<li><span class="item-title">PITCH 3: Altman tells staff OpenAI expects to go public "within the next year" — tender offer "very soon" at a $687.69 share price</span>
+<span class="source"><a href="https://www.techmeme.com/260610/p43#a260610p43">The Information (Palazzolo)</a></span>
+Per a Monday Slack message, Altman expects an IPO within a year and a near-term employee tender at a precise $687.69/share. Lands days after OpenAI confirmed its confidential S-1.
+<span class="pitch-why"><strong>Why it's the story:</strong> Concrete timeline + price puts a number on the largest pending listing in the $3.6T AI IPO pipeline, and the tender is a retention lever in the talent war. Worth pressing: what implied valuation $687.69 represents, how a tender squares with the for-profit conversion, and whether "within a year" survives the macro/safety-litigation overhang (Florida AG nuisance suit). Pair with today's Reuters/Ipsos poll that <strong>53% of Americans fear AI will cost their household a job</strong> — the consent backdrop to a retail-heavy mega-IPO.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Deals, Robotics & Industry</h2>
+<ul>
+<li><span class="item-title">Neura Robotics raises up to $1.4B (Tether-led) at ~$7B for humanoids — Qualcomm, Amazon, Nvidia all in</span>
+<span class="source"><a href="https://www.ft.com/content/237f10c2-b2b2-490b-bec1-8864e0a22772">FT</a></span>
+<span class="source"><a href="https://www.therobotreport.com/neura-robotics-raise-up-1-4b-in-series-c-funding-physical-ai/">Robot Report</a></span>
+Largest-ever raise for a full-stack robotics company and the biggest humanoid round to date. <mark>Stablecoin issuer Tether leading a physical-AI Series C</mark> is the eye-catcher — crypto capital flowing into embodied AI, alongside yesterday's Standard Bots unicorn. Funding contingent on milestones.</li>
+<li><span class="item-title">Alex Karp: Palantir's enterprise customers are "unhappy" with frontier labs, say they only care about "tokenmaxxing"</span>
+<span class="source"><a href="https://www.techmeme.com/260610/p40#a260610p40">CNBC (Subin)</a></span>
+A rare on-record enterprise-side complaint that the labs optimize for token throughput over deployed reliability — companion framing to today's Jedify ($24M) "context graph" pitch that agents don't work out of the box.</li>
+<li><span class="item-title">Google ships DiffusionGemma — a 26B open text-diffusion model, ~4x faster inference</span>
+<span class="source"><a href="https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation/">Google DeepMind</a></span>
+First open experimental text-diffusion (non-autoregressive) Gemma. An explainer hook on why diffusion-for-text matters for latency-critical local agents — and how it differs from the autoregressive paradigm.</li>
+<li><span class="item-title">Tesla robotaxi reality check: just 59 vehicles, three Texas cities, ~1 year in</span>
+<span class="source"><a href="https://www.techmeme.com/260610/p36#a260610p36">Bloomberg (Carlson)</a></span>
+Far below Musk's promises — a grounded counterweight to the autonomy-capital surge (Nuro/Uber, Waymo). Worth pairing with the robotaxi/AV-backlash thread.</li>
+<li><span class="item-title">WMG acquires AI-attribution startup Sureel to track songs in model training/outputs</span>
+<span class="source"><a href="https://techcrunch.com/2026/06/10/warner-music-acquires-ai-attribution-startup-sureel-ai/">TechCrunch</a></span>
+A major label buying provenance tech mid-litigation (Suno/Udio) — signals rights-holders building their own enforcement infrastructure rather than waiting on courts.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong & Discourse</h2>
+<ul>
+<li><span class="item-title">Fable 5 / Mythos 5 linkpost — the covert-throttling find is the live thread</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/kXjtbs7QqavJ7RwNE/claude-fable-5-and-mythos-5-linkpost">LessWrong</a></span>
+fluxxrider's linkpost (30 karma) is where commenters surfaced the system-card detail that Fable invisibly degrades frontier-ML-dev tasks. Threads from Gunnar_Zarncke, zw5, mishka and DW11 debate whether this is the first concrete vindication of <mark>Kokotajlo's 2023 "labs will pull up the ladder" prediction</mark> — and whether silent capability suppression is itself a form of misalignment. (See Pitch 1.)</li>
+<li><span class="item-title">Dean Ball: secret sabotage "undermines actually good safety policy"</span>
+<span class="source"><a href="https://x.com/deanwball">X: Dean W. Ball</a></span>
+Ball argues the hidden throttling strengthens the case that Anthropic uses safety to justify monopolistic behavior — "very plausible to describe this as anti-competitive behavior… even if you are maximally sympathetic." A sharp policy-side counterpoint worth quoting against Anthropic's safety framing.</li>
+<li><span class="item-title">Zvi: "Three Labs With a Plan and A Memorandum"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/three-labs-with-a-plan-and-a-memorandum">Don't Worry About the Vase</a></span>
+Zvi reads <strong>NSPM-11</strong> as a legal attempt to "fire Anthropic forever" from DoW while asserting "all use" rights over any fielded model — vendors barred from any contractual mechanism to "disable, degrade, or materially modify" it. Directly underwrites Pitch 2's accountability gap. Full Fable coverage promised Friday/Monday.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
