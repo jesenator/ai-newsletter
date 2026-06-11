@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Thursday, June 11, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Thursday, June 11, 2026</h1>
+<div class="date">Thursday, June 11, 2026</div>
+<div class="intro">Anthropic reverses the Fable silent-safeguard policy after fierce backlash. Dario drops a major policy essay plus $350M+ in new initiatives. A new $10M multi-agent safety fund, and Jeff Clune's org shows AI improving AI.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Anthropic Walks Back Fable's Silent Safeguards</h2>
+<ul>
+<li><span class="item-title">Update: Fable 5's covert AI-R&D degradation is becoming visible</span>
+<span class="source"><a href="https://x.com/ClaudeDevs/status/2064949876463645026">X: Claude Devs</a></span> <span class="source"><a href="https://x.com/ZeffMax/status/2064910040503627917">X: Max Zeff</a></span> After the backlash covered yesterday, Anthropic says flagged frontier-LLM-dev requests will now <mark>visibly fall back to Opus 4.8</mark> (API returns a refusal reason). "We made the wrong tradeoff and we apologize." Caveat: visible safeguards are easier to probe, so expect more false positives short-term. Ryan Greenblatt and Dean Ball both: blocking frontier AI R&D is defensible, doing it <em>silently</em> was the problem.</li>
+<li><span class="item-title">WSJ: advanced users still angry ("I can't even say the word 'cancer'")</span>
+<span class="source"><a href="https://www.wsj.com/tech/ai/anthropic-fable-restrictions-ai-developers-cd9bf57c">WSJ</a></span> Bio/cyber classifiers over-trigger on harmless prompts; Anthropic says it's tuning them down too.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> Dario's Policy Essay + New Initiatives</h2>
+<ul>
+<li><span class="item-title">Dario Amodei: "Policy on the AI Exponential"</span>
+<span class="source"><a href="https://darioamodei.com/post/policy-on-the-ai-exponential">darioamodei.com</a></span> <span class="source"><a href="https://x.com/DarioAmodei/status/2064781775247950326">X: Dario Amodei</a></span> ~4M views. Argues policymaking can't keep pace with AI; the <strong>Advanced AI Framework</strong> says government should have authority to <mark>block or revoke release of unsafe models</mark>. Reactions split: Ó hÉigeartaigh calls it a return to seriousness; Nate Soares says it soft-pedals loss-of-control (one buried line) amid sections on "positive impact" and "democratic leadership."</li>
+<li><span class="item-title">$200M Economic Policy Framework fund + $150M Claude Corps</span>
+<span class="source"><a href="https://www.anthropic.com/news/claude-corps">Anthropic</a></span> <span class="source"><a href="https://x.com/AnthropicAI/status/2065057393927467084">X: Anthropic</a></span> A $200M fund to evaluate labor-market disruption ideas, plus <strong>Claude Corps</strong>: a national fellowship paying 1,000 early-career people to use Claude at US nonprofits. Relevant to Kairos fieldbuilding/talent flows.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg> Safety Research & Field-Building</h2>
+<ul>
+<li><span class="item-title">New $10M multi-agent AI safety fund</span>
+<span class="source"><a href="https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/">DeepMind</a></span> <span class="source"><a href="https://x.com/sebkrier/status/2065030790136602967">X: Seb Krier</a></span> Joint with Schmidt Sciences, Cooperative AI, ARIA. Funds <mark>multi-agent / multi-principal safety</mark> — agent networks, sandboxes/testbeds, oversight & control, mechanism design. Grants up to $1M. Good potential SPAR/Pathfinder fodder.</li>
+<li><span class="item-title">Recursive: first results on "AI that improves AI"</span>
+<span class="source"><a href="https://www.recursive.com/articles/first-steps-toward-automated-ai-research">Recursive</a></span> <span class="source"><a href="https://x.com/jeffclune/status/2065063979765166123">X: Jeff Clune</a></span> One general system hits SOTA on three problems — NanoChat autoresearch (1.3× faster than the human+agent community over months), NanoGPT speedrun (+3%), and GPU kernels (18% gap reduction). Automates ideation→implementation→testing.</li>
+<li><span class="item-title">Trait-space monitoring for emergent misalignment</span>
+<span class="source"><a href="https://arxiv.org/abs/2606.07631">arXiv</a></span> Fine-tune on insecure code → model recommends dangerous actions on unrelated prompts. Paper shows you can <em>detect emergent misalignment inside the model during training</em>, not just after.</li>
+<li><span class="item-title">Geoffrey Irving: "Automated alignment is harder than you think"</span>
+<span class="source"><a href="https://arxiv.org/abs/2605.06390">arXiv</a></span> Companion to yesterday's Sequent launch — argues automated alignment isn't the best plan; "a better plan is to not build ASI yet."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M4 10v8m16-8v8M3 18h18"/></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">Transformer: OpenAI isn't being candid about the LTF super PAC</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-lehane-brockman-leading-the-future-pac">Transformer</a></span> New reporting: OpenAI insists Brockman's $25M was "personal," but Build American AI's exec director told Transformer <mark>"OpenAI is just one of [four] corporate funders… they all have a say."</mark> Contradicts OpenAI's June 1 distancing post. Lehane reportedly picked LTF's co-lead.</li>
+<li><span class="item-title">Poll: 25% of voters think AI could end humanity — and don't care</span>
+<span class="source"><a href="https://www.theargumentmag.com/p/new-poll-25-of-voters-think-ai-could">The Argument</a></span> New polling on the gap between stated AI x-risk belief and behavior/voting salience.</li>
+<li><span class="item-title">"Europe 2031": a five-year scenario of AI-driven irrelevance</span>
+<span class="source"><a href="https://x.com/bakkermichiel/status/2064996557162680827">X: Michiel Bakker</a></span> DeepMind researchers' narrative on Europe falling behind — "three American labs each operate more AI compute than all of Europe combined." Being shared by EU-panel folks.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h7.5a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-7.5A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> Models & Products</h2>
+<ul>
+<li><span class="item-title">Gemini Omni Flash is #1 in Video Arena</span>
+<span class="source"><a href="https://x.com/arena/status/2065112147093545333">X: LMArena</a></span> Tops both text-to-video and image-to-video — a <mark>+158 pt jump over Veo 3.1 (1080p)</mark> and +61 over Seedance 2.0 on text-to-video.</li>
+<li><span class="item-title">Notion: duplicate any Custom Agent</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2064802115206230337">X: Notion</a></span> Copy any agent you can see and make it yours — private by default, scoped to your access. Minor but handy for building reusable workflows.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
