@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Saturday, June 13, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Saturday, June 13, 2026</h1>
+<div class="date">Saturday, June 13, 2026</div>
+
+<div class="intro">The big one: the US government forced Anthropic to <strong>pull Fable 5 and Mythos 5 entirely</strong> via an export-control directive — the de facto first AI licensing event, and a geopolitical earthquake. Plus FrontierMath jumps, AISI finds real gov vulns, and the Bores race. No qualifying Bay Area emergencies.</div>
+
+<div class="layout">
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Top Story: Washington Pulled Fable 5</h2>
+<img src="https://substackcdn.com/image/fetch/$s_!G53f!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc1bbda97-8ebc-4129-9f46-eddf7193b096_686x386.jpeg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<ul>
+<li><span class="item-title">Commerce orders Anthropic to disable Fable 5 + Mythos 5 for everyone</span>
+<span class="source"><a href="https://x.com/AnthropicAI/status/2065597531644743999">X: Anthropic</a></span><span class="source"><a href="https://www.anthropic.com/news/fable-mythos-access">Anthropic</a></span> Friday evening, citing national-security authorities, the gov issued an export-control directive suspending all access "by any foreign national, whether inside or outside the US, including foreign national Anthropic employees." Net effect: <mark>Anthropic had to abruptly kill the models for all customers</mark>. Other Claude models unaffected. Admin had reportedly tried to get Anthropic to pause the release and failed; was spooked by a jailbreak (per Axios, a report from Amazon).</li>
+<li><span class="item-title">Transformer: this is a de facto licensing regime — the worst version of one</span>
+<span class="source"><a href="https://www.transformernews.ai/p/anthropic-fable-shutdown-ban-trump-white-house">Transformer</a></span> The gov used export controls as a tool to block deployment for <em>everyone</em>, knowing the only compliance path was full revocation. "If it thinks a model is too dangerous to release, it can and will force it off the market" — but arbitrarily, post-hoc, with no testing thresholds.</li>
+<li><span class="item-title">Brundage: Commerce moves fast on unsubstantiated jailbreak claims, slow on NVIDIA smuggling</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2065614840354488786">X: Miles Brundage</a></span> Notes it drops his interest in federal preemption "by 10-20% at least." <span class="source"><a href="https://x.com/JosephPolitano/status/2065630674980077607">X: Joseph Politano</a></span> "Anthropic is repeatedly singled out because they've insufficiently bent the knee."</li>
+<li><span class="item-title">Soares & Yudkowsky: "inevitabilism is wrong" — but hard to call good or bad</span>
+<span class="source"><a href="https://x.com/So8res/status/2065607141155828154">X: Nate Soares</a></span> "Inaction yesterday does not imply inaction today… a ban on superintelligence could come out of nowhere too." <span class="source"><a href="https://x.com/allTheYud/status/2065685329223516503">X: Eliezer Yudkowsky</a></span> sees good aspects (puncturing "no gov would ever dare") and bad (selectivity, likely preemption). <span class="source"><a href="https://x.com/_NathanCalvin/status/2065642619166675399">X: Nathan Calvin</a></span>: good evidence Anthropic's policy recs are sincere, not regulatory-capture 4D chess.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Fallout: AI Sovereignty</h2>
+<ul>
+<li><span class="item-title">Allies "can no longer rely on agreements with US companies"</span>
+<span class="source"><a href="https://x.com/s8mb/status/2065715249303507048">X: Samuel Hammond</a></span> (boosted widely): if the US will do this to its own labs, it shows the leverage it holds over any country with US frontier models embedded in critical systems. Argues for cheap power, easy data centers, and even a serious non-American lab. <span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2065804642441654328">X: Seán Ó hÉigeartaigh</a></span>: "no red lines agreed with these companies can be trusted." Renewed sharing of <a href="https://europe2031.ai">Europe 2031</a>.</li>
+<li><span class="item-title">First time the "Intelligence Frontier" chart has moved backward</span>
+<span class="source"><a href="https://x.com/ArtificialAnlys/status/2065618560714740177">X: Artificial Analysis</a></span> With the best public model yanked, the frontier literally regressed. Researchers on visas at OpenAI/Anthropic now face losing access to internal models within months (<span class="source"><a href="https://x.com/yonashav/status/2065650612021395715">X: Yo Shavit</a></span>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Capabilities & Demos</h2>
+<ul>
+<li><span class="item-title">FrontierMath v2 audit: Fable 5 hits 87% (Tiers 1–3), 88% (Tier 4)</span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2065511916035018943">X: Epoch AI</a></span> After fixing errors in 42% of problems, scores jumped across the board. Fable's Tier-4 88% is striking. Epoch's Sevilla: <mark>AI is now better at flagging benchmark errors than the human reviewers were</mark> (<a href="https://x.com/Jsevillamol/status/2065503843715309707">X: Jaime Sevilla</a>).</li>
+<li><span class="item-title">Fable one-shot demos: full Hogwarts castle; a complete game in one go</span>
+<span class="source"><a href="https://x.com/mattshumer_/status/2065542471564607875">X: Matt Shumer</a></span> Fable generated an entire navigable Hogwarts (Great Hall, Quidditch pitch, classrooms) in one shot. <span class="source"><a href="https://koenvangilst.nl/lab/claude-fable-shepherds-dog">Koen van Gilst</a></span> got a years-old game idea ("Shepherd's Dog," 2,319-line single file, zero deps) built in one 45-min, €20 session — his first model ever to nail it.</li>
+<li><span class="item-title">Frontier LLMs beat specialized "clinical AI" in blind medical test</span>
+<span class="source"><a href="https://x.com/nabeelqu/status/2065440481127866598">X: Nabeel Qureshi</a></span> GPT-5.2 / Opus 4.6 / Gemini 3.1 outperformed dedicated tools like OpenEvidence. The bitter lesson hits medicine — and hospital IT is more likely to approve the worse specialized versions.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">UK AISI ran AI across real government codebases: 407 findings, multiple critical</span>
+<span class="source"><a href="https://x.com/NateBurnikell/status/2065465896458654003">X: Nate Burnikell</a></span> With the Government Cyber Coordination Centre + NCSC, frontier models scanned public UK-gov GitHub repos in weekly hackathons — surfacing auth bypass, data exposure, and a <mark>GitHub Actions RCE</mark>. All critical issues now remediated, no evidence of exploitation. Eval-to-real-world translation, confirmed.</li>
+<li><span class="item-title">DeepMind interp: just ask an agent to diff two models</span>
+<span class="source"><a href="https://x.com/NeelNanda5/status/2065488230146056279">X: Neel Nanda</a></span> Bilal Chughtai et al. build "dead simple" open-ended model-diffing agents that study behavioral differences between two models — promising in practice. "Big believer in just doing the obvious thing."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">AI industry spending $10M+ to defeat one congressional candidate (Alex Bores, NY-12)</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2065509075421712445">X: Miles Brundage</a></span><span class="source"><a href="https://x.com/robertskmiles/status/2065747004328935618">X: Robert Miles</a></span> Early voting started today. Bores has done more for AI safety via NY law than nearly anyone; the anti-regulation Super PAC (Leading the Future) is targeting him. EAs are organizing GOTV help (<a href="https://x.com/ChanaMessinger/status/2065618434919104761">X: Chana Messinger</a>).</li>
+</ul>
+
+</div>
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
