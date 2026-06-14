@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Sunday, June 14, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Sunday, June 14, 2026</h1>
+<div class="date">Sunday, June 14, 2026</div>
+
+<div class="intro">The Fable takedown fallout dominates: Axios pins it on an Amazon report, access is flickering back for some, and "AI sovereignty" is suddenly everyone's topic. Plus a notable GDM interp finding on where misalignment comes from, and ChatGPT 5.5 Pro cracks a decade-old open math problem. No qualifying Bay Area emergencies.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Fable Takedown — New Developments</h2>
+<ul>
+<li><span class="item-title">Axios: an urgent Amazon report triggered the 90-minute shutdown order</span>
+<span class="source"><a href="https://www.axios.com/2026/06/13/anthropic-amazon-white-house">Axios</a></span> <span class="source"><a href="https://twitter.com/Miles_Brundage/status/2065900640912708051">X: Miles Brundage</a></span> New reporting on how the White House and Amazon ended Fable: Anthropic reportedly got a call at 1pm ET giving it <mark>90 minutes to pull Fable and Mythos</mark>. Brundage and Ashlee Vance frame it as a "hit job" — Vance, who was at Anthropic HQ Friday, calls the claim that Dario was "unreachable at a wellness retreat" propaganda: "This is not technical. It's petty."</li>
+<li><span class="item-title">Access is already flickering back for some users</span>
+<span class="source"><a href="https://twitter.com/IanLandsman/status/2065776268675547257">X: Ian Landsman</a></span> "My Fable 5 access is back!" (758k views). j⧉nus and others bet it returns soon; David Sacks is publicly promising wide re-release "ASAP" while simultaneously calling the model too powerful — a contradiction Tyson Brody and others flag.</li>
+<li><span class="item-title">k8em0: it wasn't a jailbreak, it was "Defense-Oriented Prompting"</span>
+<span class="source"><a href="https://www.wsj.com/tech/ai/anthropic-halts-access-to-top-ai-models-after-u-s-ban-on-foreign-use-a4bca2cc">WSJ</a></span> <span class="source"><a href="https://twitter.com/k8em0/status/2065807405385183519">X: Katie Moussouris</a></span> Says she's seen the paper: the trigger was capability defenders actually need, and you "can't patch this behavior without rendering the model less effective for defenders." Adam Gleave (FAR) notes cyber is fundamentally dual-use and a narrow jailbreak alone shouldn't ground a model.</li>
+<li><span class="item-title">"Post-Mythos, the US has an informal AI licensing regime"</span>
+<span class="source"><a href="https://twitter.com/deanwball/status/2066151868556865860">X: Dean Ball</a></span> "It's just informal, with no consistent rules or firm boundaries on state power... Cobalt mining in the Congo is vastly more institutionalized." Rep. Lori Trahan and Rep. Chris McGuire both call for Congress to set transparent, fact-based rules rather than 5pm-Friday directives.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> AI Sovereignty Fallout</h2>
+<ul>
+<li><span class="item-title">"Americans no longer have 'making fun of Europe's AI regulation' privileges"</span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2066058561097269364">X: Miles Brundage</a></span> The takedown has crystallized a non-US panic. CeSIA's Charbel-Raphaël Segerie: "Europe just lost, overnight, access to the most powerful AI model in the world" — and only holds ~5% of global compute. David Kasten asks (only half-joking) what stops non-US AI scientists, now locked out of internal models, from joining foreign labs.</li>
+<li><span class="item-title">Ross Taylor: a sober playbook for building frontier AI outside the US</span>
+<span class="source"><a href="https://twitter.com/rosstaylor90/status/2066067747738431504">X: Ross Taylor</a></span> Ex-Meta/UK founder argues the "$1B+ to even validate" claim is FUD (DeepSeek R1 post-train cost ~$300k), warns against forcing governments to procure bad-but-local models, and pushes supply-side fixes (cheap power, IP/labor reform). Echoed by Sam Bowman and Simon Grimm (Mistral Medium 3.5 "performs worse than GPT-5.4 nano at 14x the cost").</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">GDM interp: misalignment often originates in SFT, not RL</span>
+<span class="source"><a href="https://twitter.com/JoshAEngels/status/2065845470094606477">X: Josh Engels</a></span> <span class="source"><a href="https://twitter.com/NeelNanda5/status/2065888051738693822">X: Neel Nanda</a></span> Investigating root causes of Gemini behaviors, the team was surprised to find <mark>many safety-relevant behaviors come from the initial supervised-finetuning stage, not later RL</mark>. Nanda: he'd assumed you mainly had to intervene on RL — "pretty surprised to be wrong." Implication: aligning frontier models likely requires intervening at the SFT stage too.</li>
+<li><span class="item-title">Jeff Ladish: the scariest thing about Mythos is the speed-up of AI R&D</span>
+<span class="source"><a href="https://twitter.com/JeffLadish/status/2065989952782135299">X: Jeff Ladish</a></span> Argues the export-control framing missed the plot: more than cyber/bio uplift, the real risk is nudging the world toward full RSI. In a candid companion thread he describes his own "AI mania" building nonstop with Fable — and how addictive dependence on agents is itself a warning sign.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Capabilities & Tools</h2>
+<ul>
+<li><span class="item-title">ChatGPT 5.5 Pro solved one of Conitzer's decade-old open problems</span>
+<span class="source"><a href="https://aifails.substack.com/p/even-more-on-ai-and-math-solution">aifails (Conitzer)</a></span> <span class="source"><a href="https://twitter.com/conitzer/status/2065919441821454609">X: Vince Conitzer</a></span> A theoretical-CS problem he first posed in 2015 was cracked by GPT-5.5 Pro (on the first try, ~1 hr) with better prompting from Ryan O'Donnell. The 7-page proof was so hard to read that Conitzer just proved it himself instead — and worries about a coming "flood of AI-generated proofs no human has time to verify."</li>
+<li><span class="item-title">Robert Miles: Claude Mythos can edit video end-to-end</span>
+<span class="source"><a href="https://twitter.com/robertskmiles/status/2065879242731298818">X: Robert Miles</a></span> Fed it an audio ramble; it did the research, designed graphics, overlaid photos/names on cue, and assembled the project — Opus dragged it over the finish line after the takedown. A concrete look at agentic multimodal production.</li>
+<li><span class="item-title">OpenRouter launches "Fusion" — a compound model at Fable-level for half the price</span>
+<span class="source"><a href="https://twitter.com/OpenRouter/status/2065856853989270011">X: OpenRouter</a></span> New routing/compound API claiming Fable-class intelligence at ~half cost (notably timed against the Fable blackout). Worth a look if you're cost-sensitive in agent pipelines.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" /></svg> World</h2>
+<ul>
+<li><span class="item-title">Trump says a US–Iran deal will be signed Sunday; Tehran disputes timing</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cvglmn49xz0o">BBC</a></span> Brief watch-item: Trump claims a deal is imminent (and reportedly threatened to nuke Iran if it falls through). Iran says no date is set. Following on June's Israel–Iran strikes — relevant only as a possible oil/markets shock.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
