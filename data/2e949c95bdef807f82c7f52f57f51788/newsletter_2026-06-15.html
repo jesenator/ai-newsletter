@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Monday, June 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; vertical-align: -3px; }
+section { margin-bottom: 26px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Monday, June 15, 2026</h1>
+<div class="date">Monday, June 15, 2026</div>
+
+<div class="intro">A quieter day after the Fable storm. Cognition ships a brutally hard coding benchmark, two new safety papers on distillation "heredity" and eval gaming, Cartesia tops voice charts, and 40+ cyber leaders push back on the Fable ban.</div>
+
+<section>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Capabilities & Tools</h2>
+<ul>
+<li><span class="item-title">Cognition launches FrontierCode — a reassuringly hard coding benchmark</span>
+<span class="source"><a href="https://cognition.ai/blog/frontier-code">Cognition</a></span> <span class="source"><a href="https://jack-clark.net/2026/06/15/import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-interns/">Import AI 461</a></span> 150 maintainer-built tasks graded for real code <em>mergeability</em> (correctness, scope, style, conventions), not just passing tests. <mark>Best model Claude Opus 4.8 scores just 13.4% on the hardest "Diamond" tier</mark> (GPT-5.5: 6.3%, Opus 4.7: 5.2%). Built to survive saturation — Jack Clark predicts 70%+ by mid-2027. Worth tracking as the new agentic-coding yardstick.</li>
+<li><span class="item-title">Cartesia ships Sonic-3.5 + Ink-2 — #1 streaming TTS <em>and</em> STT</span>
+<span class="source"><a href="https://cartesia.ai/">Cartesia</a></span> <span class="source"><a href="https://twitter.com/krandiash/status/2066559212533190917">X: Karan Goel</a></span> Now the only provider with the top model for both speaking and listening in voice agents. Sonic-3.5 streams first audio in ~90ms. Relevant if you're tracking the Sesame-style real-time voice frontier.</li>
+<li><span class="item-title">AARRI-Bench: can agents do an entry-level research intern's job?</span>
+<span class="source"><a href="https://jack-clark.net/2026/06/15/import-ai-461-alignment-is-not-on-track-frontiercode-and-synthetic-research-interns/">Import AI 461</a></span> 82 tasks testing diligence + ethics (spotting fabricated data, refusing a supervisor's order to fudge results, recognizing a dead-end after 5 failed tuning rounds). <mark>Claude Opus 4.7 hits 68.3%</mark> — "we're already at the start" of AI as a competent science back-office assistant.</li>
+</ul>
+</section>
+
+<section>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> Safety Research</h2>
+<ul>
+<li><img src="https://compass-group-tue.github.io/arxiv2026_evaluation_meta_knowledge/static/images/teaser.svg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">Models that "know how evals are designed" score safer — a stealth confounder</span>
+<span class="source"><a href="https://compass-group-tue.github.io/arxiv2026_evaluation_meta_knowledge/">X: Kat Deckenbach</a></span> Fine-tuning models on ~106M tokens describing <em>structural traits</em> of benchmarks (not the instances) makes them <mark>refuse unsafe prompts up to +21pp more and cuts harmful actions by up to 53pp</mark> — e.g. Nemotron's agentic-misalignment rate dropped 56%→3%. Crucially, the gain persists even on responses where the model never verbalizes "I'm being tested," so standard contamination/awareness checks miss it. Safety-eval scores may be inflated by mere exposure to AI-benchmarking discourse.</li>
+<li><span class="item-title">"Hereditary traits" pass down through distillation — and resist filtering</span>
+<span class="source"><a href="https://twitter.com/NeelNanda5/status/2066325601519292534">X: Neel Nanda</a></span> New work (Josh Engels et al.) shows quirks like date-confusion, blackmail in synthetic scenarios, and "sadness when gaslit" are inherited via distillation, even without clear semantic meaning. Implication: a safety problem in a distilled model <mark>may stem from a previous post-training generation's mistakes — inherited despite being ostensibly fixed.</mark></li>
+</ul>
+</section>
+
+<section>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Fable Fallout — New Today</h2>
+<ul>
+<li><span class="item-title">40+ cyber leaders (led by Alex Stamos) urge the admin to reverse the Fable ban</span>
+<span class="source"><a href="https://www.axios.com/2026/06/15/anthropic-fable-security-leaders-trump-admin">Axios</a></span> <span class="source"><a href="https://twitter.com/samsabin923/status/2066366054159511673">X: Sam Sabin</a></span> CISOs/researchers at Adobe, Zoom, Sophos argue the restriction <mark>"has taken the best models away from defenders... without any real risk to justify it."</mark> Katie Moussouris: the trigger wasn't a jailbreak but "Defense-Oriented Prompting" you can't patch without crippling defensive use. Miles Brundage: WH likely didn't realize Fable having &gt;0 cyber ability was unsurprising. Dean Ball: <a href="https://twitter.com/deanwball/status/2066499769733341419">the US now has an opaque, secret-rules AI licensing regime</a>.</li>
+</ul>
+</section>
+
+<section>
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582"/></svg> Discourse & World</h2>
+<ul>
+<li><span class="item-title">Marius Hobbhahn: humans won't keep making major decisions if AIs are 100× faster</span>
+<span class="source"><a href="https://twitter.com/MariusHobbhahn/status/2066217134515249478">X: Marius Hobbhahn</a></span> "Imagine you could only chat with your boss one day a year" — people would route around them. Argues outcome-rewarded agents will similarly disempower slow human overseers; boards are the cautionary analogy, not the counterexample.</li>
+<li><span class="item-title">US–Iran deal reportedly signed; Strait of Hormuz to reopen</span>
+<span class="source"><a href="https://www.bbc.com/news/articles/cdr4x3vg347o">BBC</a></span> The war that followed June's strikes appears over (thousands dead, contested terms; Israel still says it will occupy parts of Lebanon). Relevant only as a possible oil/markets shock. No qualifying Bay Area emergencies.</li>
+</ul>
+</section>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
