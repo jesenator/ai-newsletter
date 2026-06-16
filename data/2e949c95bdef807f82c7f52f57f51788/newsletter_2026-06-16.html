@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, June 16, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 6px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { width: 16px; height: 16px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, June 16, 2026</h1>
+<div class="date">Tuesday, June 16, 2026</div>
+
+<div class="intro">A quieter day. Epoch confirms Fable 5 took the capability crown. A new Redwood/Astra paper quantifies how much reasoning models can hide from CoT monitors. AISI probes lie-detectors. The Fable fallout keeps generating heat.</div>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg> Capabilities</h2>
+<ul>
+<li><span class="item-title">Epoch confirms Fable 5 is the new frontier — first Anthropic ECI lead in over a year</span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2066674892809101767">X: Epoch AI</a></span> <mark>Claude Fable 5 scores 161 on the Epoch Capabilities Index</mark>, edging out GPT-5.5 Pro by 1 point. Jaime Sevilla: "benchmarking will continue once the US gets its shit together" (i.e., once access returns). A formal data point behind the week's qualitative raves.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">How much can models reason without any chain-of-thought?</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/SieLowPgNgRSPGhFw/estimating-no-cot-task-completion-time-horizons-of-frontier">LessWrong</a></span> New Redwood/Astra/Aether/MATS paper (Ward, Greenblatt et al.) measures no-CoT task-completion time horizons across 43 benchmarks. <mark>GPT-5.5 reliably handles tasks that take humans ~3 min with zero externalized reasoning</mark>; the no-CoT horizon doubles ~every 373 days, extrapolating to ~25 min by 2030. Implication: CoT monitoring may quietly become much less effective even without neuralese. They urge labs to track no-CoT horizons as a lower bound on hidden reasoning.</li>
+<li><span class="item-title">UK AISI: do lie-detectors scale to frontier open-weight models?</span>
+<span class="source"><a href="https://x.com/Alan_Cooney_/status/2066915126217752783">X: Alan Cooney</a></span> New AISI paper tests whether activation-based lie detection still works not just when a model is prompted to lie, but when it's <em>trained</em> to lie and believes the opposite of what it says — a harder, more realistic threat model.</li>
+<li><span class="item-title">Buck Shlegeris: labs will impose "totally insane" takeover risk</span>
+<span class="source"><a href="https://blog.redwoodresearch.org/p/efficient-tradeoffs-and-the-safety">Redwood</a></span> <span class="source"><a href="https://x.com/CRSegerie/status/2066822090033123421">X: Charbel-Raphaël Segerie</a></span> Argues regulation won't end up haggling over 10% vs 20% AI takeover risk per year — the real levels labs will impose are high enough that "if governments agreed with me, they would take much more drastic action on international coordination."</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Fable Fallout & Policy</h2>
+<ul>
+<li><span class="item-title">Transformer: shutting Fable/Mythos down was reckless — the switch was the thing that needed governing</span>
+<span class="source"><a href="https://www.transformernews.ai/p/mythos-fable-anthropic-safery-cybersecurity">Transformer</a></span> Mozilla CTO Raffi Krikorian: the government built an apparatus for turning models <em>on</em> safely (reviews, red teams, evals) but turning one off took just "a letter that arrived at 5:21pm on a Friday." Notes the same models patched 1,596 disclosed bugs across 281 open-source projects — defenders are who got cut off, while comparable Chinese open-weight models (Kimi K2.7-Code, GLM-5.2) shipped the same week.</li>
+<li><span class="item-title">Politico: a "vibe shift" — the admin's priority is now "taking down Anthropic"</span>
+<span class="source"><a href="https://x.com/__gabbymiller/status/2066712225939693667">X: Gabby Miller</a></span> Adam Thierer tells Politico the Trump AI agenda has shifted toward targeting Anthropic specifically. Dean Ball's longer take: the cyber EO insisted it wasn't a licensing regime, but in practice "AI is licensed now, but the requirements change constantly and are always a secret, even to the administration itself."</li>
+<li><span class="item-title">DOJ argues xAI's gas turbines are "vital" national security — to power Grok</span>
+<span class="source"><a href="https://www.wired.com/story/doj-lawyers-argue-xai-vital-national-security-naacp-lawsuit/">Wired</a></span> <span class="source"><a href="https://x.com/Miles_Brundage/status/2066738073569046650">X: Miles Brundage</a></span> The government intervened in a turbine pollution suit on xAI's behalf. Brundage's twist: it's actually Anthropic, not xAI, making heavy use of that datacenter — a striking contrast with the Fable treatment.</li>
+</ul>
+
+<h2><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Discourse & Reading</h2>
+<ul>
+<li><span class="item-title">Iason Gabriel & Adam Bales: the political challenge of AI consciousness</span>
+<span class="source"><a href="https://x.com/IasonGabriel/status/2066861604776394988">X: Iason Gabriel</a></span> New paper on what happens if we can't resolve whether AI is conscious: disagreement over ontology cascades into clashes over moral standing and politics. Proposes Pascal-style minimal measures so both "deny protection wrongly" and "empower wrongly" outcomes are hedged.</li>
+<li><span class="item-title">Zvi finishes his Fable/Mythos review — Model Welfare edition</span>
+<span class="source"><a href="https://thezvi.substack.com/p/fable-and-mythos-model-welfare">Zvi</a></span> With the models offline (likely back within weeks), Zvi continues his coverage with the model-welfare portion of the Fable review.</li>
+<li><span class="item-title">"Running local models is good now"</span>
+<span class="source"><a href="https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/">Vicki Boykis</a></span> Widely-read (498 pts HN) practical writeup on how far local/on-device inference has come — useful if you're thinking about offline or privacy-sensitive workflows.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
