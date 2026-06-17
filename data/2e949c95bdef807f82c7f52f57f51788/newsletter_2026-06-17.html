@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, June 17, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, June 17, 2026</h1>
+<div class="date">Wednesday, June 17, 2026</div>
+<p class="intro">A research-heavy day: AISI/Oxford show frontier AI now out-persuades expert humans, OpenAI debuts "deployment simulation" safety testing, and Anthropic quantifies who wins with Claude Code. Plus GLM-5.2 takes the open-weights crown and the UK ships sharp AI scenario planning.</p>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Major Safety Research</h2>
+<ul>
+<li><span class="item-title">AISI + Oxford: frontier AI now out-persuades expert humans in live conversation</span>
+<span class="source"><a href="https://x.com/KobiHackenburg/status/2066890518009708839">X: Kobi Hackenburg</a></span> <span class="source"><a href="https://arxiv.org/html/2606.16475">arXiv</a></span> Models reliably beat <mark>world-champion debaters and professional canvassers</mark> — even when humans chose their own topics, prepped in advance, and competed for £1,000 prizes. On consequential real-world behavior change, AI was <mark>nearly 3× more effective than professional canvassers</mark>. Jeff Clune: "I did not realize AI had superhuman persuasion already." Strong CivAI-style demo material.</li>
+<li><span class="item-title">OpenAI: "Deployment Simulation" — test a model on real traffic before release</span>
+<span class="source"><a href="https://openai.com/index/deployment-simulation/">OpenAI</a></span> <span class="source"><a href="https://x.com/MicahCarroll/status/2066966175968645385">X: Micah Carroll</a></span> Replays ~1.3M de-identified past conversations through a candidate model to catch novel misalignment that narrow evals miss — and the model <mark>can't tell it's being tested</mark>. Surfaced "calculator hacking" pre-release; can't catch behaviors rarer than ~1-in-200k. Tomek Korbak: "testing on prod, before prod."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Productivity & Coding</h2>
+<ul>
+<li><img src="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb0c229bb9765b65716dfdf1cd0bedc2713037288-1920x1080.png&w=1080&q=75" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">Anthropic: domain expertise (not coding skill) is what makes Claude Code succeed</span>
+<span class="source"><a href="https://www.anthropic.com/research/claude-code-expertise">Anthropic</a></span> <span class="source"><a href="https://x.com/AnthropicAI/status/2066969532380721386">X: Anthropic</a></span> 400K sessions: people make ~70% of <em>planning</em> decisions, Claude ~80% of <em>execution</em>. Every occupation succeeds within 7pp of software engineers on verifiable tasks. <mark>Avg session value rose 27% Oct→Apr</mark>; debugging's share of work fell by half as usage shifts to end-to-end agentic work.</li>
+<li><span class="item-title">GLM-5.2 is the new leading open-weights model</span>
+<span class="source"><a href="https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index">Artificial Analysis</a></span> <span class="source"><a href="https://x.com/NotionHQ/status/2066963258985320550">X: Notion</a></span> Z.ai's GLM-5.2 tops the open-weights Intelligence Index (546 pts on HN), built for long-horizon tasks. Already shipping inside Notion via Baseten. One of the Chinese open models filling the gap during the Fable blackout.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Policy & Fable Fallout</h2>
+<ul>
+<li><span class="item-title">UK ships "AI Scenarios 2030" — five futures across slowed/continued/takeoff trajectories</span>
+<span class="source"><a href="https://x.com/Discoplomacy/status/2067142205140013542">X: Discoplomacy</a></span> <span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2067188305838440569">X: Seán Ó hÉigeartaigh</a></span> GO-Science with AISI/DSIT input, praised for taking its premises seriously: "Can't think of any other governments publishing work of this quality with this regularity."</li>
+<li><span class="item-title">Update: Fable may return soon; G7 debating "trusted partner" model access</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2067081413317509472">X: Miles Brundage</a></span> <span class="source"><a href="https://www.reuters.com/legal/government/g7-leaders-discuss-trusted-partners-access-cutting-edge-us-ai-models-sources-say-2026-06-16/">Reuters</a></span> Brundage: "getting Fable out of cold storage (hopefully soon)." G7 leaders are now discussing tiered "trusted partners" access to top US models — Lennart Heim warns the export move makes that gatekeeping a self-fulfilling prophecy.</li>
+<li><span class="item-title">Transformer: MAGA's much-touted $100M AI super PAC has gone quiet</span>
+<span class="source"><a href="https://www.transformernews.ai/p/whats-happened-to-magas-100m-ai-push-innovation-council-budowich-sacks">Transformer</a></span> Three months after Budowich/Sacks announced Innovation Council Action, FEC records show <mark>no detectable spending</mark> — its PAC vehicle was terminated and its big promo video has 15 views.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" /></svg> Models Worth Noting</h2>
+<ul>
+<li><span class="item-title">VibeThinker-3B: a dense 3B model hitting frontier-level reasoning</span>
+<span class="source"><a href="https://x.com/WeiboLLM/status/2066870851841274249">X: WeiboLLM</a></span> <span class="source"><a href="https://x.com/rasbt/status/2067036636181848528">X: Sebastian Raschka</a></span> Scores 94.3 on AIME'26 and passes 96.1% of unseen LeetCode contests first-try — from a tiny model built on the old Qwen2.5-Coder-3B stack via a careful post-training recipe. Raschka: "impressive first impression," pending real-world vibe checks.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
