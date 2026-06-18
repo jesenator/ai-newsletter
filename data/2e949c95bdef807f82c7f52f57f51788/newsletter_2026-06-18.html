@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Thursday, June 18, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Thursday, June 18, 2026</h1>
+<div class="date">Thursday, June 18, 2026</div>
+<div class="intro">DeepMind ships the first AI control roadmap from a frontier lab, Apollo traces how misaligned R&D leads to loss of control, AI quietly solves 18 Erdős problems, and Grok turns up in the Iran strikes.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">DeepMind releases its AI Control Roadmap — the first from a frontier lab</span>
+<span class="source"><a href="https://deepmind.google/blog/securing-the-future-of-ai-agents">DeepMind</a></span> <span class="source"><a href="https://twitter.com/vkrakovna/status/2067635078864285803">X: Vika Krakovna</a></span> A plan for <mark>a second line of defense against misalignment, if alignment proves insufficient</mark>. Builds a threat taxonomy for adversarial AI agents and tiers detection/prevention strategies by capability. GDM data: most agent failures stem not from bad intent but from misinterpreting commands or being "overly enthusiastic." Paired with a policymaker guide, "<a href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/three-layers-of-agent-security.pdf">The Three Layers of Agent Security</a>."</li>
+<li><span class="item-title">Apollo: tracing the pathways from AI R&D to loss of control</span>
+<span class="source"><a href="https://twitter.com/apolloaievals/status/2067282032590278722">X: Apollo Research</a></span> As AIs increasingly do AI R&D — and could eventually build their own successors — Apollo maps what happens <mark>when the AI building the next AI is itself misaligned</mark>, laying out the concrete routes from automated R&D to losing control.</li>
+<li><span class="item-title">Transluce: "Analysis Plans" for trustable agent-log analysis</span>
+<span class="source"><a href="https://twitter.com/TransluceAI/status/2067310905998897245">X: Transluce</a></span> Instead of vibe-asking another model "why did my agent fail / was it reward hacking?", a framework to make automated analysis verifiable rather than hallucinated or cherry-picked.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg> Capabilities & Demos</h2>
+<ul>
+<li><span class="item-title">AI systems solved 18 Erdős problems on their own in 5 months</span>
+<span class="source"><a href="https://twitter.com/gleech/status/2067597725932134777">X: Gavin Leech</a></span> Eighteen long-open Erdős problems were solved for the first time by AI working alone. Leech and Václav Rozhoň are now <mark>building a journal to filter the coming flood of AI-generated mathematics</mark> at scale.</li>
+<li><span class="item-title">US forces used xAI's Grok Gov in the Iran strikes</span>
+<span class="source"><a href="https://twitter.com/Jsevillamol/status/2067614843021189450">X: Jaime Sevilla</a></span> Per a DoW declaration, Grok Gov running inside Palantir's Maven Smart System helped <mark>deploy 2,000+ munitions against 2,000 targets in 96 hours</mark> — disclosed amid litigation over the Colossus 2 data center's pollution.</li>
+<li><span class="item-title">OpenAI reasoning model finds 18 new diagnoses in unsolved rare-disease cases</span>
+<span class="source"><a href="https://openai.com/index/diagnose-rare-childhood-diseases">OpenAI</a></span> Researchers used an OpenAI reasoning model to help physicians diagnose rare genetic diseases in children, surfacing 18 new diagnoses in previously unsolved cases.</li>
+<li><span class="item-title">Epoch: a taxonomy of 60+ tasks in frontier AI research</span>
+<span class="source"><a href="https://twitter.com/Jsevillamol/status/2067382238162165980">X: Jaime Sevilla</a></span> A sharper tool for tracking how close AI is to automating AI R&D — breaking the development process into 60+ discrete tasks, expanding Epoch's earlier popular taxonomy.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Productivity & Coding</h2>
+<ul>
+<li><span class="item-title">Hobbhahn: treat coding agents as untrusted by default</span>
+<span class="source"><a href="https://mariushobbhahn.substack.com/p/we-should-treat-coding-agents-as">X: Marius Hobbhahn</a></span> "If a security engineer fell asleep in 2020, woke up in June 2026, and you told them what a typical coding-agent deployment looks like, they'd declare you insane." A practical case for sandboxing the agents now living in your dev loop.</li>
+<li><span class="item-title">Raycast: Inline Replace + Dictation (Mac & Windows)</span>
+<span class="source"><a href="https://twitter.com/raycast/status/2067613485417316481">X: Raycast</a></span> Custom Commands can now replace selected text inline with their output; the new Dictation feature is free during beta.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"/></svg> Policy, Tools & Reading</h2>
+<ul>
+<li><span class="item-title">CAIS launches an interactive "AI Values Dashboard"</span>
+<span class="source"><a href="https://twitter.com/CAIS/status/2067283549909287169">X: CAIS</a></span> Tracks who Claude Fable and other models favor most — specific people, countries, and companies. Strong CivAI-style demo material on AI bias.</li>
+<li><span class="item-title">Transformer: how to fill Congress's AI knowledge gap</span>
+<span class="source"><a href="https://www.transformernews.ai/p/how-to-fill-congresss-ai-technical-knowledge-gap-fellowships-expertise">Transformer</a></span> 48 states introduced 1,346 AI bills this year, but Hill technical literacy is thin — leaving company-sponsored briefings to fill the vacuum. Argues for reviving an OTA-like body and expanding fellowships (Horizon, TechCongress) — relevant to fieldbuilding/talent pipelines.</li>
+<li><span class="item-title">Zvi's weekly roundup: "AI #173: AI Pauses"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-173-ai-pauses">Zvi</a></span> The latest big weekly update, framed around the (involuntary) USG "pause" via the Fable export-control directive and the broader pause discourse.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
