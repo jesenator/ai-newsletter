@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Saturday, June 20, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #444; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Saturday, June 20, 2026</h1>
+<div class="date">Saturday, June 20, 2026</div>
+
+<div class="intro">A quiet news day dominated by Fable echoes. The real new items: a second Nobel-tier scientist defects to Anthropic, a DeepMind paper showing diffusion models can stay CoT-monitorable, and a stark warning that China likely already has full read access to the top labs' internal repos.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg> Talent Moves</h2>
+<ul>
+<li><span class="item-title">John Jumper (AlphaFold lead, 2024 Nobel laureate) leaves DeepMind for Anthropic</span>
+<span class="source"><a href="https://x.com/JohnJumperSci/status/2068001285173834106">X: John Jumper</a></span> <span class="source"><a href="https://www.reuters.com/technology/us-scientist-john-jumper-leave-google-deepmind-anthropic-2026-06-19/">Reuters</a></span> After ~9 years, the AlphaFold team lead is joining Anthropic (after a break). <mark>Third high-profile defection in three days</mark> — following Noam Shazeer→OpenAI and Arthur Conmy→Anthropic. Ethan Perez/others note the talent-gravity shift toward Anthropic.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M12 17.25h.007v.008H12v-.008ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">DeepMind: diffusion LLMs can stay CoT-monitorable</span>
+<span class="source"><a href="https://x.com/JoshAEngels/status/2068034390245154877">X: Josh Engels</a></span> <span class="source"><a href="https://arxiv.org/html/2606.20560">arXiv</a></span> Text diffusion models do many forward passes before emitting text, threatening chain-of-thought monitoring. Auditing DiffusionGemma, the team finds the <mark>intermediate states are interpretable, recovering most CoT-monitoring benefits</mark>. Neel Nanda: would love similar transparency audits for any latent-reasoning architecture.</li>
+<li><span class="item-title">Wei Dai: AI philosophical competence is a neglected crux</span>
+<span class="source"><a href="https://newsletter.forethought.org/p/could-ai-help-solve-philosophy">Forethought</a></span> New podcast on ensuring AI can do real philosophy. Andreas Stuhlmüller flags the open question: how much will AI help with high-level strategy/philosophy vs. only tasks with short feedback loops?</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 1.5v.75m0 19.5v.75M5.636 5.636l.53.53m12.668 12.668.53.53M1.5 12h.75m19.5 0h.75M5.636 18.364l.53-.53m12.668-12.668.53-.53M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z" /></svg> Security</h2>
+<ul>
+<li><span class="item-title">"China has full access to all of OpenAI & Anthropic's GitHub/Slack/docs today"</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2068130243295285548">X: Miles Brundage</a></span> Brundage broadly endorses Will Depue's blunt claim, calling it a "super serious/bad situation." Depue: wouldn't be surprised to see <mark>plausibly-deniable stolen architecture methods in Chinese OSS models</mark>. Brundage's caveat: this is also why chip-export controls still matter — hard to run even a stolen model at scale without compute.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg> Capabilities</h2>
+<ul>
+<li><span class="item-title">Recursive's automated AI-research system hits SOTA on three ML-systems benchmarks</span>
+<span class="source"><a href="https://x.com/jeffclune/status/2068007716971548933">X: Jeff Clune</a></span> An autonomous research system reportedly topped benchmarks spanning training algorithms, optimization loops, and GPU-kernel efficiency. Framed as qualitatively different from prior approaches for hitting three levels of the stack at once — another data point on automating AI R&D.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg> Discourse & Fable Fallout</h2>
+<ul>
+<li><span class="item-title">Helen Toner's clearest take on "what Anthropic's deal is"</span>
+<span class="source"><a href="https://x.com/hlntnr/status/2068051164357431431">X: Helen Toner</a></span> A widely-shared analogy: there are dangerous monsters in the forest, others are rousing them anyway for treasure, so Anthropic's bet is to <mark>go furthest fastest while spending heavily on containment and sending back warnings</mark>. "I understand how they got there… [but] it's not hard to see why this makes people wonder if you're crazy or lying or both."</li>
+<li><span class="item-title">Update: Trump on whether Anthropic is a national-security threat</span>
+<span class="source"><a href="https://x.com/ilex_ulmus/status/2068193825697267888">X: Hannah / Axios</a></span> "Well, not now, but a week ago maybe… seems like a nice guy, smart guy. But… it's tremendous liability. <mark>People get put in prison immediately for that.</mark>" — a notable softening since the takedown, with a veiled threat attached.</li>
+<li><span class="item-title">Hobbhahn: the takedown incentivizes labs to be more secretive about powerful models</span>
+<span class="source"><a href="https://x.com/MariusHobbhahn/status/2068080276115251214">X: Marius Hobbhahn</a></span> "I think this would be very bad" — hopes for a solution that doesn't keep the world in the dark about future frontier capabilities.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
