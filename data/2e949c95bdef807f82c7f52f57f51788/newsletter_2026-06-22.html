@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Monday, June 22, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Monday, June 22, 2026</h1>
+<div class="date">Monday, June 22, 2026</div>
+
+<div class="intro">A slow-ish day. OpenAI launches its Daybreak cyber-defense suite (with a dedicated GPT-5.5-Cyber model), DeepMind maps the path from AGI to ASI, and two coding-tool stories worth knowing. Plus a notable walk-back on the Mythos "classified systems" claim.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Frontier Releases & Capabilities</h2>
+<ul>
+<li><span class="item-title">OpenAI launches Daybreak — incl. a dedicated GPT-5.5-Cyber model</span>
+<span class="source"><a href="https://openai.com/index/daybreak-securing-the-world">OpenAI</a></span> New tools (<mark>Codex Security + GPT-5.5-Cyber</mark>) to find, validate and patch vulnerabilities "at scale," plus a "Patch the Planet" effort for open-source maintainers. Note the timing: Miles Brundage amplifies <a href="https://x.com/luke_metro/status/2069061098545021203">Luke Metro's quip</a> "is the gov just holding back Fable until OpenAI catches up" — an explicit cyber-defense push while Anthropic's frontier models remain export-frozen.</li>
+<li><span class="item-title">DeepMind: "From AGI to ASI" — paths and bottlenecks to superintelligence</span>
+<span class="source"><a href="https://jack-clark.net/2026/06/22/import-ai-462-superpersuasion-self-sustaining-ai-paths-to-asi/">Import AI 462</a></span> New paper lays out four routes to ASI (scaling, an algorithmic paradigm shift, recursive self-improvement, group-agent formation) and argues "cruising past AGI into ASI within the next decade or two cannot easily be dismissed." Pairs with an Asterisk interview where <mark>Ajeya Cotra puts self-sustaining AI within ~10 years</mark> vs. Timothy B. Lee's median of ~50.</li>
+<li><span class="item-title">DeepMind + A24 research partnership on creative tools</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/deepmind-a24-research-partnership/">X: GoogleDeepMind</a></span> First-of-its-kind tie-up to shape generative video/creative tooling with the filmmakers who'd use it. Worth watching for the Veo-lineage roadmap.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Productivity & Coding</h2>
+<ul>
+<li><span class="item-title">Claude Code's "Extended Thinking" output isn't authentic</span>
+<span class="source"><a href="https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/">HN (194 pts)</a></span> Patrick McCanna argues the streamed "thinking" text you see in Claude Code is <mark>not the model's actual reasoning trace</mark> — relevant if you (or safety folks) treat visible CoT as a faithful window into agent behavior.</li>
+<li><span class="item-title">Codex logging bug can write terabytes to your local SSD</span>
+<span class="source"><a href="https://github.com/openai/codex/issues/28224">HN (354 pts)</a></span> Active OpenAI Codex issue — a logging path can balloon and hammer SSDs. Worth checking if you run Codex locally.</li>
+<li><span class="item-title">Notion Calendar simplifies meeting notes</span>
+<span class="source"><a href="https://twitter.com/NotionCalendar/status/2069099107432448474">X: Notion Calendar</a></span> One note per meeting (synced everywhere), notes live in Notion, cleaner event layout, one-click join + transcribe. Direct hit for your Notion workflow.</li>
+<li><span class="item-title">Raycast iOS adds AI Extensions + MCP servers</span>
+<span class="source"><a href="https://twitter.com/raycast/status/2069054816672784677">X: Raycast</a></span> Connect Apple Health, Calendar, Reminders or any MCP server and chat with them from the iOS composer.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.397-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.992a7.723 7.723 0 0 1 0-.255c.007-.378-.138-.75-.43-.991l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg> Safety Research & Discourse</h2>
+<ul>
+<li><span class="item-title">An eval-consensus statement, with preregistered results</span>
+<span class="source"><a href="https://twitter.com/EvalConsensusAI/status/2069081696058724439">X: EvalConsensusAI</a></span> David Manheim & collaborators ran the numbers on whether AI eval results are "load-bearing" and reliable, found the field agrees more than the chaos suggests, and opened a cross-sector consensus statement for endorsement.</li>
+<li><span class="item-title">A theory of why prompt injection works</span>
+<span class="source"><a href="https://role-confusion.github.io">HN (40 pts)</a></span> New writeup frames prompt injection as fundamentally a "role confusion" problem — useful conceptual grounding for the agent-security threat models you track.</li>
+<li><span class="item-title">Atlantic: an AI professor rooting for slower progress</span>
+<span class="source"><a href="https://www.theatlantic.com/technology/2026/06/ai-cancer-progress/687654/">X: The Atlantic</a></span> Emma Pierson — who could personally benefit if AI cured cancer — argues she'd "rather risk cancer than see AI move this fast." Decent discourse piece on the acceleration tradeoff.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg> Updates</h2>
+<ul>
+<li><span class="item-title">Mythos "broke into classified systems" claim walked back</span>
+<span class="source"><a href="https://twitter.com/shashj/status/2069078104941961293">X: Shashank Joshi</a></span> Update to <a href="https://twitter.com/hlntnr/status/2069119057232609445">Sunday's top story</a>: a US official says Sen. Warner <mark>misunderstood NSA chief Gen. Rudd</mark> — the "hours, not weeks" line referred to an authorized red-teaming test of internal networks, and those red teams no longer have Mythos access.</li>
+<li><span class="item-title">Bores primary is tomorrow (Tuesday)</span>
+<span class="source"><a href="https://twitter.com/AlexBores/status/2069063651948933446">X: Alex Bores</a></span> The AI-defined NY-12 House primary (covered June 21) is decided tomorrow; ACX's open thread reiterates its endorsement of the pro-safety candidate.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
