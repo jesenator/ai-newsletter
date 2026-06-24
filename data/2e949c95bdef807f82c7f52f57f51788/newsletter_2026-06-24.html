@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, June 24, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+img { max-width: 200px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, June 24, 2026</h1>
+<div class="date">Wednesday, June 24, 2026</div>
+
+<div class="intro">Anthropic ships Claude Tag and Karpathy calls it the third redesign of how we use LLMs. Forethought makes the case for risk-averse AIs as an anti-rebellion lever. Plus the Bores defeat post-mortem and a new MIRI verification idea.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Products & Productivity</h2>
+<ul>
+<li><span class="item-title">Anthropic launches Claude Tag — Claude joins your Slack as a teammate</span>
+<span class="source"><a href="https://twitter.com/claudeai/status/2069468693017268244">X: Claude</a></span> Tag Claude into channels with scoped access to your tools and delegate tasks while you work on other things. Karpathy calls it <mark>"the 3rd major redesign of LLM UIUX"</mark> — from website → app → <span class="source"><a href="https://twitter.com/karpathy/status/2069547676849557725">X: Andrej Karpathy</a></span> a persistent, asynchronous entity working alongside teams with org-wide context. (13.5M views.)</li>
+<li><span class="item-title">A Notion "Stream" agent: dump everything, let an agent sort it</span>
+<span class="source"><a href="https://twitter.com/colebemis/status/2068836316486508716">X: Cole Bemis</a></span> Shared by Notion: paste one prompt and Notion AI builds a capture database + agent that triages ideas/links/tasks into your other DBs, with a Memory table that learns your preferences. Directly relevant to your Notion workflow.</li>
+<li><span class="item-title">OpenAI + Broadcom unveil "Jalapeño," a custom LLM-inference chip</span>
+<span class="source"><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip">OpenAI</a></span> <img src="https://images.ctfassets.net/kftzwdyauwt9/4DeZq8e24W4qgIrtAu4Xmg/54189176ae1c6150d94cac02fb104f79/openai-broadcom-jalapeno-inference-chip-image-16_9.png?w=600" alt="Jalapeño chip">OpenAI's first in-house chip, purpose-built for the workloads behind ChatGPT/Codex/the API. Mostly infra, but a notable vertical-integration milestone. (1.1M views.)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Forethought: train AIs to be risk-averse in resources</span>
+<span class="source"><a href="https://www.forethought.org/research/risk-averse-ais">Forethought</a></span> <img src="https://images.ctfassets.net/4owxfjx3z3if/11odV9T9VKtycil1zypomZ/32a876d4ebed0bed36a6b8c30709226e/2._Risk_averse_misaligned_AI.jpg?w=500" alt="Risk-averse utility curve">If resources have diminishing marginal utility for an AI, a misaligned-but-risk-averse model <mark>prefers a high chance of small guaranteed payments over a low chance of a successful rebellion</mark> — so we could "pay it not to rebel" for as little as ~10¢/day rather than half the universe. Argues it's a broad, easy-to-reward target that preserves usefulness if aligned.</li>
+<li><span class="item-title">DeepMind: invert the Bellman equation to recover an agent's world model from its value function</span>
+<span class="source"><a href="https://twitter.com/jonathanrichens/status/2069418365609705767">X: Jonathan Richens</a></span> RL agents implicitly model latent variables they were never trained to optimize for — a potential interpretability handle for reading what an agent "believes" straight out of its values.</li>
+<li><span class="item-title">MIRI: catching pause-treaty violations via network taps — and defending against side-channels</span>
+<span class="source"><a href="https://techgov.intelligence.org/blog/suppressing-side-channels-in-an-untrusted-data-center-via-retrofitted-defenses">MIRI</a></span> Naci Cankaya proposes watching for traffic "fingerprints" between chips and users to verify chips aren't used to break an AI pause, plus retrofitted defenses against data being smuggled out through side-channels.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3"/></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Bores loses NY-12 to Lasher — but "pro-regulation" wasn't a liability</span>
+<span class="source"><a href="https://www.transformernews.ai/p/alex-bores-defeat-micah-lasher-ai-leading-the-future-public-first">Transformer</a></span> The AI-safety-favorite lost 39–35 to a Bloomberg/Nadler/Hochul-backed candidate. Industry PAC Leading the Future spent $8M+ against him; safety PACs poured $19M+ in. Takeaway: <mark>opposing the AI industry isn't electorally catastrophic</mark>, and LTF's attacks likely raised Bores's profile. Lasher's victory speech: "I won't be taking my cues from either of you." Miles Brundage and <span class="source"><a href="https://twitter.com/deanwball/status/2069757659817840751">X: Dean Ball</a></span> both note ~$20M was largely burned on the a-priori-likeliest outcome.</li>
+<li><span class="item-title">White House presses Meta to submit AI models for "voluntary" CAISI safety reviews</span>
+<span class="source"><a href="https://twitter.com/Miles_Brundage/status/2069551765847179670">X: Miles Brundage</a></span> Per NYT, the admin wants Meta to agree to government safety testing — Brundage notes it's about CAISI testing generally, and is "fake-voluntary."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84"/></svg> Capabilities & Demos</h2>
+<ul>
+<li><span class="item-title">GPT-5 Pro helps an immunologist crack a 3-year-old T-cell mystery</span>
+<span class="source"><a href="https://openai.com/index/gpt-5-immunology-mystery">OpenAI</a></span> Derya Unutmaz used GPT-5 Pro to generate insights into T-cell behavior that unstuck a long-standing problem, with potential cancer/autoimmune relevance. Another concrete "AI as research collaborator" data point.</li>
+<li><span class="item-title">Five Eyes issue rare joint warning: AI is accelerating cyber threats</span>
+<span class="source"><a href="https://twitter.com/AIStopWatch/status/2069294921522303055">X: AI Stopwatch</a></span> The US/UK/CA/AU/NZ intelligence alliance warns AI is scaling the "speed, scale, and sophistication" of cyber attacks: <mark>"The timeline is not years, it is months."</mark></li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
