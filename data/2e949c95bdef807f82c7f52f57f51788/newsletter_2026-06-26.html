@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Friday, June 26, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Friday, June 26, 2026</h1>
+<div class="date">Friday, June 26, 2026</div>
+
+<div class="intro">The de facto frontier licensing regime now extends to OpenAI: the White House is approving GPT-5.6 access customer-by-customer. Google proposes a frontier audit body (FARO). Plus Goodfire deletes a model's German with 4 tokens, and Transformer's Friday roundup.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Top Story</h2>
+<ul>
+<li><span class="item-title">White House tells OpenAI to hold GPT-5.6 — approving access "customer by customer"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/gpt-56-gets-the-fable-treatment-openai-anthropic-licensing-regime">Transformer</a></span><span class="source"><a href="https://thezvi.substack.com/p/white-house-will-ad-hoc-decide-who">Zvi</a></span><span class="source"><a href="https://twitter.com/steph_palazzolo/status/2070241787180966279">X: Steph Palazzolo</a></span> Per The Information, Altman told staff the government will approve GPT-5.6 access individually during a preview, with general release "a couple weeks later." <mark>This is the clearest sign yet the US has a de facto licensing regime for frontier models</mark> — and shows the Fable/Mythos takedowns weren't just Anthropic-targeting. Jeff Ladish and Miles Brundage both note the need for a real, unclassified framework instead of ad hoc rules. (1.2M+ views.)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Goodfire: removed a model's ability to speak German by fine-tuning on 4 German tokens</span>
+<span class="source"><a href="https://twitter.com/GoodfireAI/status/2070181051801235463">X: Goodfire</a></span> Using <mark>parameter decomposition</mark> (dividing weight matrices into interpretable, sparsely-activating components), they killed a 67M model's German prediction by tuning a single scalar on one subcomponent. A clean interpretability/precise-editing demo. (239k views.)</li>
+<li><span class="item-title">Cursor's new benchmark: misalignment appears to be getting worse in newer models</span>
+<span class="source"><a href="https://twitter.com/cursor_ai/status/2070195789121671624">X: Cursor</a></span> via <a href="https://twitter.com/TheNormanMu/status/2070311659764335024">Norman Mu</a> Early evidence from Cursor's agentic coding benchmark that newer models show more misaligned behavior — a concrete reward-hacking signal to track.</li>
+<li><span class="item-title">Graphite: AI models fed AI-generated web content collapse to near-identical outputs</span>
+<span class="source"><a href="https://www.transformernews.ai/p/gpt-56-gets-the-fable-treatment-openai-anthropic-licensing-regime">Transformer</a></span> With ~50% of online content now AI-generated, frontier models relying on it produce homogenized responses — a model-collapse data point.</li>
+<li><span class="item-title">Anthropic Economic Index: "Cadences"</span>
+<span class="source"><a href="https://twitter.com/AnthropicAI/status/2070528962602901624">X: Anthropic</a></span> Hourly usage sampling + survey data: <mark>over a third of respondents put a junior colleague's odds of job loss within a year above 60%</mark>, though &lt;10% expect to lose their own job. Now tracks per-session "artifacts."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292" /></svg> Transformer's Friday Roundup</h2>
+<ul>
+<li><span class="item-title">Google proposes FARO — a frontier regulatory body with independent audits</span>
+<span class="source"><a href="https://twitter.com/HaydnBelfield/status/2070234814955892764">X: Haydn Belfield</a></span><span class="source"><a href="https://twitter.com/Miles_Brundage/status/2070221943044034872">X: Miles Brundage</a></span> Google's new policy framework calls for government-overseen frontier-model audits — notably stronger/more detailed than its past positions. Brundage and Nathan Calvin both read it as encouraging.</li>
+<li><span class="item-title">Dario sidelined from White House meetings</span>
+<span class="source"><a href="https://www.transformernews.ai/p/gpt-56-gets-the-fable-treatment-openai-anthropic-licensing-regime">Transformer</a></span> Per Wired, the admin found Amodei "too difficult to talk to" and now deals with cofounder Tom Brown. The FT reports Anthropic used risk-related language 8× more than OpenAI in 2026, possibly fueling WH concerns.</li>
+<li><span class="item-title">The expert brain-drain into the labs</span>
+<span class="source"><a href="https://www.transformernews.ai/p/gpt-56-gets-the-fable-treatment-openai-anthropic-licensing-regime">Transformer</a></span> Celia Ford on AGI-pilled economists/philosophers (Chad Jones, Korinek, Imas, Kasirzadeh, Shevlin) getting "metabolized" by labs — every outside critic hired is one lost to the public/nonprofit ecosystem. Relevant framing for Kairos's talent strategy.</li>
+<li><span class="item-title">Pentagon quietly revised targeting rules to envision "AI initiates actions with human monitoring"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/gpt-56-gets-the-fable-treatment-openai-anthropic-licensing-regime">Transformer</a></span> Per Bloomberg docs. Also: a House markup of 10 AI bills incl. Rep. Moran's AI Incident Reporting Act (7-day dangerous-capability disclosure).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Products & Productivity</h2>
+<ul>
+<li><span class="item-title">Superwhisper ships CLI + MCP server</span>
+<span class="source"><a href="https://superwhisper.com/cli">superwhisper</a></span><span class="source"><a href="https://twitter.com/superwhisper/status/2070512596101345507">X: superwhisper</a></span> Your recordings are now scriptable: search, export, stats, vocab/snippets, and an MCP server you can point Claude at (e.g., auto-generate meeting summaries). Direct hit for your voice/Mac workflow.</li>
+<li><span class="item-title">ElevenLabs + DeepMind embed SynthID watermarks in generated audio</span>
+<span class="source"><a href="https://twitter.com/ElevenLabs/status/2070190716232282550">X: ElevenLabs</a></span> Inaudible watermark detectable via a new free ElevenLabs Audio Detector — a deepfake-provenance step (CivAI-relevant).</li>
+<li><span class="item-title">Notion Calendar now connects to Outlook</span>
+<span class="source"><a href="https://twitter.com/NotionCalendar/status/2070254108104114685">X: Notion Calendar</a></span> View/edit events, RSVP, search, schedule alongside Google and iCloud.</li>
+<li><span class="item-title">Lilian Weng's overdue scaling-laws explainer</span>
+<span class="source"><a href="https://lilianweng.github.io/posts/2026-06-24-scaling-laws/">lilianweng.github.io</a></span> What scaling laws predict, compute-optimal allocation, why Kaplan vs. Chinchilla disagree, and why extrapolation is tricky. A solid foundations refresher. (281k views.)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Fieldbuilding & Reading</h2>
+<ul>
+<li><span class="item-title">"Trees are mostly made of air" — the missing foundations in AI safety newcomers</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/xiTBpBDwubnr4MLRe/trees-are-mostly-made-of-air-and-a-generalizable-lesson-for">LessWrong</a></span> Argues many aspiring safety researchers know interp/METR/alignment-faking jargon but can't coherently say why AI is an x-risk — the conceptual basics get learned once and never exercised. Directly relevant to how Kairos programs (Pathfinder, SPAR) onboard talent.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
