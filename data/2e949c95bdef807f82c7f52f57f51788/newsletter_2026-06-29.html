@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Monday, June 29, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Monday, June 29, 2026</h1>
+<div class="date">Monday, June 29, 2026</div>
+
+<div class="intro">Quiet news day. Musk teases Grok 4.5 beating Opus, Cursor ships a full iOS app with cloud agents, and NVIDIA wires up a self-improving robot loop. Plus a sandbox for your Claude Code habit and a sharp AI×bio warning.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Frontier Models</h2>
+<ul>
+<li><span class="item-title">Musk: Grok 4.5 in private beta at SpaceX & Tesla, "perhaps exceeding Opus"</span>
+<span class="source"><a href="https://twitter.com/elonmusk/status/2071184354756477041">X: Elon Musk</a></span> Built on xAI's <mark>1.5T "V9" foundation model with Cursor data in supplemental training</mark>; claims completely-from-scratch models will ship monthly this year. Miles Brundage notes the param count is ambiguous and "only a bit bigger than GLM" — <span class="source"><a href="https://twitter.com/Miles_Brundage/status/2071404239725928647">X: Miles Brundage</a></span>.</li>
+<li><span class="item-title">Update: Zvi piles on the WSJ "China matched Anthropic" claim</span>
+<span class="source"><a href="https://thezvi.substack.com/p/wsj-article-claiming-china-has-matched">Zvi</a></span> Following yesterday's Tim Hua skeptic check, Zvi calls the GLM-5.2-matches-Mythos headline "obvious nonsense" — the only source for the claim is a Chinese company.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" /></svg> Productivity & Coding</h2>
+<ul>
+<li><img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/changelog/remote-control.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;"><span class="item-title">Cursor ships an iOS app — launch & steer cloud agents from your phone</span>
+<span class="source"><a href="https://cursor.com/changelog/ios-mobile-app">Cursor Changelog</a></span> Public beta on paid plans. <mark>Launch always-on cloud agents in isolated VMs, move local sessions to cloud, and Remote Control an agent running on your laptop from your phone.</mark> Voice input, Live Activities, push notifications, and merge-PR-from-mobile. Direct hit for your workflow.</li>
+<li><span class="item-title">claude-guard: run Claude Code in a sandbox behind a firewall</span>
+<span class="source"><a href="https://github.com/alexander-turner/claude-guard">X: Alex Turner</a></span> Turner (ex-DeepMind) released a beta tool that runs Claude Code in a full sandbox with an escalation monitor that can stop the agent and push-notify you when something weird happens — for people who currently YOLO their agent usage. Wants bug reports.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg> Capabilities & Demos</h2>
+<ul>
+<li><span class="item-title">NVIDIA's ENPIRE: a crude self-improvement loop for real-world robots</span>
+<span class="source"><a href="https://jack-clark.net/2026/06/29/import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-essay-for-the-human-era/">Import AI 463</a></span> Coding agents (GPT-5.5 in Codex, Opus 4.7 in Claude Code) autonomously refine robot policies — auto-evaluating, auto-resetting, reading logs and rewriting training code. <mark>Reaches 99% success on dexterous tasks like cutting zip-ties and inserting GPUs into a motherboard.</mark> Jack Clark frames it as a taste of how a superintelligence might instantiate itself physically. More agents (8) beat fewer.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> Safety Research & Discourse</h2>
+<ul>
+<li><span class="item-title">Multiplicity AI: cross-provider model "teams" boost accuracy 20%+</span>
+<span class="source"><a href="https://twitter.com/AndrewCritchPhD/status/2071154084439265394">X: Andrew Critch</a></span> A new eval shows models from different providers catch each other's mistakes across logic, math, geometry, calculus, stats, and coding — a concrete, underexplored route to more trustworthy AI advice (Nora Ammann amplifies).</li>
+<li><span class="item-title">"We've woken up to AI×cyber. We're still asleep on AI×bio."</span>
+<span class="source"><a href="https://twitter.com/CRSegerie/status/2071595549292462560">X: Charbel-Raphaël Ségerie</a></span> Argues AI has ~5×'d artificial-pandemic risk: in Mythos tests, generalist biologists assisted by the model <mark>beat two-thirds of specialist teams</mark> and compressed 2-month protocols to ~16 hours. Bigger worry is general-purpose bio tools that could shortcut mirror-life synthesis; open-weights bio uplift lags closed by ~a year.</li>
+<li><span class="item-title">"No-One Escapes the Permanent Underclass" sparks a political-economy fight</span>
+<span class="source"><a href="https://jack-clark.net/2026/06/29/import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-essay-for-the-human-era/">Import AI 463</a></span> Fernando Borretti argues that once humans stop being useful for production, capital, or violence, mere capital ownership won't protect you from expropriation. Jan Kulveit (<span class="source"><a href="https://twitter.com/jankulveit/status/2071524794189631618">X</a></span>) calls the dismissals "sophisticated cope" and says the political-economy problem is real but solvable if people engage with it.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
