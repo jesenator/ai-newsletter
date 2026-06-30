@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Tuesday, June 30, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.why { color: #444; font-size: 13px; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Tuesday, June 30, 2026</h1>
+<div class="date">Tuesday, June 30, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">Meituan's LongCat-2.0 claims a first: a 1.6T near-frontier model trained <em>end-to-end</em> on a 50K-chip domestic Chinese cluster — no Nvidia</span>
+<span class="source"><a href="https://www.techmeme.com/260630/p9#a260630p9">Reuters/Techmeme</a></span>
+<span class="source"><a href="https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips">VentureBeat</a></span>
+The open-sourced agentic-coding model has been topping OpenRouter, and AIWeekly calls it <mark>the first confirmed case of a Chinese lab completing frontier-scale pretraining on a domestic ASIC cluster</mark>.
+<div class="why"><strong>Why it's a story:</strong> The single most consequential variable in the export-control debate is whether China can train frontier models without US silicon. If the 50K-domestic-chip claim survives scrutiny, it undercuts the core premise of the chip clampdown — and lands the same week as the GLM-5.2/"China matched Anthropic" fights. Reportable: which ASIC (Huawei Ascend?), real cluster utilization, and whether "trained entirely on Chinese chips" includes pre-training data pipelines.</div></li>
+
+<li><span class="item-title">The Pentagon is recruiting frontier-AI engineers to embed "down to the unit level"</span>
+<span class="source"><a href="https://www.techmeme.com/260630/p14#a260630p14">Bloomberg/Techmeme</a></span>
+The administration wants engineers experienced in frontier AI, ML/automation and data systems for "high-impact technical roles" — pushing models into operational military units, atop January's classified-network deals with eight frontier labs.
+<div class="why"><strong>Why it's a story:</strong> This is the human-capital layer of the military-AI buildout, and it dovetails with the quietly revised targeting rules envisioning "AI initiates actions with human monitoring." Embedding frontier-model engineers at the unit level is a concrete step toward operational autonomy that mainstream coverage hasn't connected to the lethal-autonomy debate. Reportable: which roles, what models, and what guardrails (if any) govern unit-level deployment.</div></li>
+
+<li><span class="item-title">OpenAI says it found a new way to cut inference costs in half</span>
+<span class="source"><a href="https://www.theinformation.com/newsletters/ai-agenda/openai-discovers-new-way-cut-inference-costs-half">The Information</a></span>
+A claimed ~50% reduction in the cost of running its models, amid an intensifying scramble for server chips.
+<div class="why"><strong>Why it's a story:</strong> Inference economics is the battlefield this whole cycle (Qualcomm/Modular, Engram, Sail). A genuine 2x efficiency gain from the market leader during a worsening compute crunch is both a competitive event and a margin story ahead of OpenAI's (possibly delayed) IPO. Reportable: is this an algorithmic/serving change or a hardware co-design win, and does it apply to GPT-5.6 Sol?</div></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Deals & Money</h2>
+<ul>
+<li><span class="item-title">Etched raises $800M (Jane Street, TSMC-linked VC), says it has $1B in signed contracts</span>
+<span class="source"><a href="https://www.techmeme.com/260630/p16#a260630p16">Bloomberg/Techmeme</a></span> The transformer-ASIC startup touts "low-voltage inference" co-developed with TSMC; a fresh Nvidia-challenger datapoint just five months after its $500M round.</li>
+<li><span class="item-title">Chamath Palihapitiya takes the CEO seat at AI startup 8090 Labs</span>
+<span class="source"><a href="https://americanbazaaronline.com/2026/06/30/chamath-palihapitiya-takes-ceo-role-at-ai-startup-8090-labs-483763/">American Bazaar</a></span> Salesforce Ventures led the round; a notable operator-investor pivot worth a look at terms and what 8090 actually builds.</li>
+<li><span class="item-title">Aikido acquires Israeli AI-security firm Root for $70–100M</span>
+<span class="source"><a href="https://www.calcalistech.com/ctechnews/article/hjxak411qzx">CTech</a></span> The Belgian unicorn (post-$60M Series B, $1B valuation) bolts on AI patching for open-source components — consolidation in the AI-for-cyber-defense layer.</li>
+<li><span class="item-title">Microsoft's Ireland hub booked $47B pretax — 38% of global profit — under new EU country-by-country disclosure</span>
+<span class="source"><a href="https://www.techmeme.com/260630/p20#a260630p20">WSJ/Techmeme</a></span> First public look at how AI's largest backer routes profit, now forced into the open by EU rules.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong & Discourse</h2>
+<ul>
+<li><span class="item-title">Quiet on AI safety proper — the one new top-level post is an offbeat comparative-genomics study on the evolution of human breasts</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/XTHa5C6SgGKYopH7o/who-got-breasts-first-and-how-we-got-them">LessWrong</a></span> Using ancestral-ape, Neanderthal and modern genomes, the author argues arrested breast involution predates the Human/Neanderthal split — a tongue-in-cheek but rigorous example of the "ancient-DNA golden age." No new AI-safety posts in 28h; discourse stays on the (now partially unwinding) licensing regime and the GPT-5.6 deception findings.</li>
+<li><span class="item-title">Zvi: the viral WSJ "China has matched Anthropic" headline is "obvious nonsense"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/wsj-article-claiming-china-has-matched">Don't Worry About the Vase</a></span> <em>Update:</em> Zvi's full post is now live (we flagged it yesterday) — the key AI-literacy distinction is pointed bug-finding vs. autonomous exploit-chaining, which no public model can yet do.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

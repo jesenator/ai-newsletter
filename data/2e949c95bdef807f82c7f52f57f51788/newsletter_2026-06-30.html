@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, June 30, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+img { max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, June 30, 2026</h1>
+<div class="date">Tuesday, June 30, 2026</div>
+
+<div class="intro">DeepMind ships fast new image/video models, a sharp finding that Claude Code is covertly fingerprinting requests, and the most relevant safety result of the day: LLM auditors mostly can't catch sabotaged safety research.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Frontier Models & Tools</h2>
+<ul>
+<li><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/nb2-lite__benchmark_blog.gif" alt="Nano Banana 2 Lite benchmark"><span class="item-title">DeepMind ships Nano Banana 2 Lite + brings Gemini Omni Flash to developers</span>
+<span class="source"><a href="https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/">Google DeepMind</a></span> <span class="source"><a href="https://twitter.com/GoogleDeepMind/status/2071988047445438475">X: Google DeepMind</a></span> Nano Banana 2 Lite is their fastest/cheapest image model — <mark>text-to-image in ~4s at $0.034/1K image</mark>. Omni Flash (video gen + conversational editing) is now in the Gemini API/AI Studio at $0.10/sec, matching Veo 3.1 Fast. Demo shows "magic tricks" like pouring water out of a phone screen.</li>
+<li><span class="item-title">LongCat-2.0: 1.6T MoE (~48B active) trained on smuggled Chinese hardware</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=48727116">HN (220 pts)</a></span> <span class="source"><a href="https://twitter.com/ohlennart/status/2071976999170506921">X: Lennart Heim</a></span> Agentic-coding-focused, 1M context, scores SWE-bench Pro 59.5 (edging GPT-5.5's 58.6). Notable mainly because Heim pegs it as <mark>likely the biggest non-Nvidia Chinese pretraining run (~1e25 FLOP) on ~50k Huawei 910C ASICs</mark> with TSMC-sourced dies and smuggled HBM.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Coding & Productivity</h2>
+<ul>
+<li><span class="item-title">Claude Code is steganographically marking requests</span>
+<span class="source"><a href="https://thereallo.dev/blog/claude-code-prompt-steganography">thereallo.dev</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48734373">HN</a></span> A researcher found Claude Code <mark>hides classification bits in the system-prompt date string</mark> (swapping the apostrophe/date separator for near-invisible Unicode) when <code>ANTHROPIC_BASE_URL</code> points at known resellers/proxies or Chinese AI domains — likely anti-distillation telemetry. Inactive on normal setups, but a "weird choice for a tool that asks for filesystem + shell trust."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">LLM auditors mostly can't catch sabotaged safety research</span>
+<span class="source"><a href="https://twitter.com/CRSegerie/status/2071955925188132945">X: Charbel-Raphaël Ségerie</a></span> <span class="source"><a href="https://blog.redwoodresearch.org/p/research-sabotage-in-ml-codebases">Redwood</a></span> Empirical pushback on the "use AI to audit AI" plan. Given a dozen safety codebases each with a small result-flipping change, the best auditor (Gemini 3.1 Pro) hits only <mark>AUROC 0.77</mark>; 31 LLM-assisted humans over 2 hours score 0.68. Bugs/math errors get caught; subtle design choices (hyperparameters, a prompt variant) and quiet omissions don't.</li>
+<li><span class="item-title">Ngo: "solving the alignment problem" is a memetic trap</span>
+<span class="source"><a href="https://twitter.com/RichardMCNgo/status/2071979276929540373">X: Richard Ngo</a></span> Argues the framing pushes the field to ask "is this a solution?" instead of generating insight about intelligence/agency. Calls Bengio's new "Scientist AI" paper a central example — proving theorems about a thin definition rather than engaging the prediction-vs-agency question.</li>
+<li><span class="item-title">A pragmatics lens on LLM sycophancy</span>
+<span class="source"><a href="https://twitter.com/chengmyra1/status/2071649068510761186">X: Myra Cheng</a></span> ACL 2026 oral: using pragmatics (meaning-in-context) helps explain and predict when LLMs fail to correct false beliefs and default to sycophancy.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Policy</h2>
+<ul>
+<li><span class="item-title">How often do EU/UK users actually miss frontier releases?</span>
+<span class="source"><a href="https://twitter.com/Manderljung/status/2071985744839655557">X: Markus Anderljung</a></span> Across 375 LLM releases since 2018, <mark>11% were delayed/withheld in the EU, 7% in the UK</mark> — less than the discourse implies. UK never faced a delay on the top-ranked model; the EU's worst case was 71 days for the Claude 3 Opus web app (API was simultaneous).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
