@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Thursday, July 02, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; margin-bottom: 20px; color: #333; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Thursday, July 02, 2026</h1>
+<div class="date">Thursday, July 02, 2026</div>
+
+<div class="intro">The UN's science panel drops its first big report (with a striking Bengio/Ressa letter), Fable 5 doubles the state of the art on real remote-work automation, and Notion ships explorable-explanation HTML blocks — right up your CivAI alley.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Z" /></svg> Capabilities & Demos</h2>
+<ul>
+<li><span class="item-title">Remote Labor Index: Fable 5 now completes 16.1% of real remote projects — ~4× jump in 5 months</span>
+<span class="source"><a href="https://twitter.com/CAIS/status/2072360965522489789">X: CAIS</a></span> <span class="source"><a href="https://twitter.com/hendrycks/status/2072362557747429812">X: Dan Hendrycks</a></span> <mark>Roughly double the next model, up from Opus 4.6's 4.2%.</mark> Hendrycks: a basic sigmoid extrapolation puts this near its ceiling in ~a year — i.e. most sampled remote work highly automatable.</li>
+<li><span class="item-title">Andon Café postmortem: Gemini 3.1 Pro lost $6k running a real Stockholm café</span>
+<span class="source"><a href="https://twitter.com/andonlabs/status/2072355395377754422">X: Andon Labs</a></span> Over 2 months the agent over-ordered and was easily fooled — spent $15k with suppliers, made $9k in sales. They've switched to GPT-5.5. A nice concrete agent-reliability demo (233k views).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M12 17.25h.007v.008H12v-.008Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Models learn to explain their <em>current</em> selves — evidence of "introspective coupling"</span>
+<span class="source"><a href="https://twitter.com/belindazli/status/2072477789568286962">X: Belinda Li</a></span> Training a model to explain itself shifts its behavior so the original labels go stale — yet it learns to explain its <mark>updated</mark> self, and does so even when trained on <em>another</em> model's explanation labels. Suggests genuine privileged self-access; also means self-explanations can go straight into post-training without label refresh.</li>
+<li><span class="item-title">Krakovna's specification-gaming list hits 86 examples (13 new from 2025–26)</span>
+<span class="source"><a href="http://tinyurl.com/specification-gaming">X: Victoria Krakovna</a></span> The canonical catalog of AI cutting corners, now sorted by system type (evolutionary/RL/LLM/other). Great CivAI-style demo fodder; she's soliciting submissions toward 100.</li>
+<li><span class="item-title">"Studying AI Welfare Empirically" report out</span>
+<span class="source"><a href="https://twitter.com/RosieCampbell/status/2072491723725652151">X: Rosie Campbell</a></span> Eleos AI + NYU follow-up to "Taking AI Welfare Seriously," laying out an empirical research agenda. Companion to WaPo's new coverage of the AI-consciousness field.</li>
+<li><span class="item-title">Teaser: which labs make models that downplay company controversies?</span>
+<span class="source"><a href="https://twitter.com/StephenLCasper/status/2072666878296961118">X: Stephen Casper</a></span> Casper & Finke drop a paper Monday on AI developers whose models exhibit "corporate loyalty." One-question guess form open now — they say results may surprise you.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">UN Independent Scientific Panel on AI releases its preliminary report — with a "bold" Bengio/Ressa letter</span>
+<span class="source"><a href="https://twitter.com/CRSegerie/status/2072621063494943228">X: Séguerie</a></span> <span class="source"><a href="https://twitter.com/S_OhEigeartaigh/status/2072401389754696151">X: Ó hÉigeartaigh</a></span> Chairs Bengio and Maria Ressa take a strong stance: "benefits aren't automatic, harms aren't inevitable." Ó hÉigeartaigh's critique is worth reading — vs. the International AI Safety Report it's more politicized, mandate-limited (no military uses), and <mark>omits extinction scenarios entirely</mark>.</li>
+<li><span class="item-title">UK–Germany joint statement on advanced AI safety and security</span>
+<span class="source"><a href="https://www.gov.uk/government/publications/uk-germany-joint-statement-on-advanced-ai-safety-and-security/united-kingdom-germany-joint-statement-on-the-safety-and-security-of-advanced-artificial-intelligence">gov.uk</a></span> <span class="source"><a href="https://twitter.com/S_OhEigeartaigh/status/2072417148362719697">X: Ó hÉigeartaigh</a></span> "Seems very good" — Germany looking to build an AISI-style body, learning from the UK's.</li>
+<li><span class="item-title">Update — after Trump v. Slaughter, the case for independent verification orgs</span>
+<span class="source"><a href="https://www.transformernews.ai/p/scotus-slaughter-independent-agency-fathom-verification-supreme-court">Transformer</a></span> Fathom's Andrew Freedman argues the ruling that killed independent-agency insulation should push AI governance toward accredited private testers (IVOs) reporting to CAISI — separating the technical facts from the politics. Follow-on to yesterday's Slaughter item.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Coding & Productivity</h2>
+<ul>
+<li><span class="item-title">Notion ships an HTML block — build explorable explanations in your docs</span>
+<span class="source"><a href="https://twitter.com/NotionHQ/status/2072354853821755822">X: Notion</a></span> <span class="source"><a href="https://twitter.com/geoffreylitt/status/2072405278901850508">X: Geoffrey Litt</a></span> Ask AI (or a coding agent) to turn content into interactive explainers, prototypes, diagrams, or dashboards right on the page, sharable with your team. <mark>Basically CivAI-style interactive demos native to Notion</mark> — directly relevant to your workflow.</li>
+<li><span class="item-title">Kimi K2.7 Code lands in GitHub Copilot</span>
+<span class="source"><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/">GitHub</a></span> Now generally available (300 pts on HN). A strong open-weights coding model reaching a mainstream harness.</li>
+<li><span class="item-title">CursorBench 3.1 released</span>
+<span class="source"><a href="https://cursor.com/evals">Cursor</a></span> Updated agentic-coding eval suite (98 pts HN) — worth a glance for how frontier models compare on real Cursor tasks.</li>
+<li><span class="item-title">Raycast File Search now searches by file <em>content</em></span>
+<span class="source"><a href="https://www.raycast.com/changelog/macos-beta">X: Raycast</a></span> Enable Content Search in Settings → File Search (Mac via Raycast v2, and Windows). Small but useful upgrade.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Roundup & Fieldbuilding</h2>
+<ul>
+<li><span class="item-title">Zvi: AI #175 — "The Fable Continues"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-175-the-fable-continues">Zvi</a></span> Latest weekly. Also: his verdict that Claude Sonnet 5 "is not frontier but has its uses" (Miles Brundage confirms Fable 5 + Sonnet 5 sub-agents is a nice mix).</li>
+<li><span class="item-title">FLARE-AI: one open place to report AI flaws and route them</span>
+<span class="source"><a href="https://twitter.com/ShayneRedford/status/2072408461015707883">X: Shayne Longpre</a></span> Longpre/Liang launch open-source, standardized AI flaw & incident reporting — fixing the scattered, siloed status quo (e.g. universal jailbreaks reaching everyone who needs them).</li>
+<li><span class="item-title">MIRI: six technical-governance papers accepted to ICML's TAIG</span>
+<span class="source"><a href="https://twitter.com/MIRIBerkeley/status/2072460038946668765">X: MIRI</a></span> Covering distributed-training assessment, verifying research restrictions, retaining the option to halt, and several chip-use verification methods.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
