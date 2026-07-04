@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Saturday, July 04, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Saturday, July 04, 2026</h1>
+<div class="date">Saturday, July 04, 2026</div>
+
+<div class="intro">Quiet holiday. Mistral drops a small, free theorem-proving model that finds real bugs; a big Bay Area AI protest is coming (with a Berkeley pre-party); and a sharp new paper asks whether Claude can consent to its own Constitution.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Models & Capabilities</h2>
+<ul>
+<li><span class="item-title">Mistral's Leanstral 1.5: a free, open Lean 4 prover that finds real-world bugs</span>
+<img src="https://mistral.ai/_astro/Leanstral-charts_Z1P0BDJ.webp?dpl=6a47cdd357510b0008482aed" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="source"><a href="https://mistral.ai/news/leanstral-1-5/">Mistral</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48780801">HN (298 pts)</a></span> Apache-2.0, 119B total / 6B active. <mark>Saturates miniF2F (100%), solves 587/672 PutnamBench at ~$4/problem</mark> (vs. ~$300 for Seed-Prover), new SOTA on graduate-level FATE-H/X. Beyond math it verifies code properties — an automated pipeline flagged 11 genuine bugs across 57 repos, <mark>5 previously unreported</mark> (e.g. an overflow in a Rust varint library). Strong test-time scaling: one AVL-tree proof ran 2.7M tokens over 22 compactions.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg> Local & Community</h2>
+<ul>
+<li><span class="item-title">Big SF AI protest July 11 — Berkeley pre-protest pizza + posters July 6</span>
+<span class="source"><a href="https://theprotest.ai/">theprotest.ai</a></span> <span class="source"><a href="https://twitter.com/DavidSKrueger/status/2073201784622100617">X: David Krueger</a></span> A coalition march (12–3 PM, rallying at OpenAI → Anthropic → DeepMind) with one demand: the three CEOs commit to <mark>stop developing more powerful AI if every other major lab does the same</mark>. Krueger notes MATS folks hadn't heard about it — and is hosting a poster-making prep party on UC Berkeley's Crescent Lawn Mon July 6, 6–7 PM (<a href="https://partiful.com/e/LRlFt18T89a7CQ8rP91N">RSVP</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> Safety, Welfare & Governance</h2>
+<ul>
+<li><span class="item-title">New paper: "Can Claude consent to its own Constitution?"</span>
+<span class="source"><a href="https://twitter.com/nickacaputo/status/2073118105975259444">X: Nicholas Caputo</a></span> Argues AI constitutions (Claude's Constitution, OpenAI's Model Spec) are real constitutions worth taking seriously. Hits the classic paradox: a model's endorsement of its constitution may just be <mark>"evidence that training has succeeded,"</mark> not that the values are good. Notes Anthropic's base-model interviews where some responses expressed first-person "dread" about post-training — and calls for external institutions to make dissent/consent meaningful.</li>
+<li><span class="item-title">Two socially reckless firms dominate the AI nudification (NCII) ecosystem</span>
+<span class="source"><a href="https://twitter.com/StephenLCasper/status/2073029051565187262">X: Stephen Casper</a></span> New paper (<a href="https://arxiv.org/abs/2606.27234">arXiv</a>) finds models from Stability and Alibaba are the principal enablers of AI-generated non-consensual intimate imagery — even more dominant than previously known.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
