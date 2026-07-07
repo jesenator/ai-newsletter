@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Tuesday, July 07, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.arg { font-size: 13px; color: #333; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Tuesday, July 07, 2026</h1>
+<div class="date">Tuesday, July 07, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">UN chief demands a treaty banning autonomous "killer robots" — and explicitly frames it as the core of the DOD–Anthropic fight</span>
+<span class="source"><a href="https://www.techmeme.com/260707/p17#a260707p17">WSJ/Techmeme</a></span>
+Guterres calls lethal autonomous weapons <mark>"morally repugnant"</mark> and demands they be "banned by international law," with the WSJ tying it directly to the US DOD–Anthropic clash over lethal-use terms.
+<span class="arg">Why it's a story: This is the international-law counterweight to the story we've been building — the Pentagon recruiting frontier engineers "to the unit level" (June 30), its quietly revised targeting principles allowing "AI to make critical decisions" (AISN #76), and Anthropic's usage-policy fight over weapons. A piece connecting Guterres' push to the concrete US buildout — and to which labs' terms actually forbid lethal autonomy — sits squarely on the safety/policy beat and is more specific than mainstream "killer robot" coverage. Reportable: what Anthropic's usage terms actually bar, and whether any treaty has US backing (it doesn't).</span></li>
+
+<li><span class="item-title">China moves toward its own export controls — meeting Alibaba, ByteDance and Z.ai on restricting foreign access to advanced Chinese models and penalizing "AI theft"</span>
+<span class="source"><a href="https://www.techmeme.com/260707/p12#a260707p12">Reuters/Techmeme</a></span>
+Beijing held meetings over the past month about limiting overseas access to top domestic models and creating penalties for model theft.
+<span class="arg">Why it's a story: This is the mirror image of the entire US export-control war we've tracked (Meituan's domestic cluster, the Super Micro arrests, Anthropic vs. Alibaba distillation). China treating its own frontier weights as a controlled strategic asset — and worrying about theft/distillation the same way Anthropic does — is a genuine inflection the mainstream hasn't framed. It also directly complicates Anthropic's June 25 accusation that Alibaba distilled Claude (29M exchanges). Reportable: which models get geofenced, and whether this is retaliation or genuine security policy.</span></li>
+
+<li><span class="item-title">The post-LLM startup wave, explained: world models, pure RL and neurosymbolic bets are now $1B+ each</span>
+<span class="source"><a href="https://www.transformernews.ai/p/matching-human-intelligence-llms-world-models-scaling-alternatives">Transformer</a></span>
+A deep explainer maps the researchers who've left frontier labs to bet scaling LLMs won't reach human intelligence: LeCun's AMI Labs ($1B+, JEPA world models), David Silver's Ineffable Intelligence ($1B+, pure RL), Fei-Fei Li's World Labs ($1B/$5B), Odyssey ($310M), and neurosymbolic play Unreasonable Labs.
+<span class="arg">Why it's a story: An AI-literacy explainer connecting the money to the architecture thesis — and it carries a sharp safety hook buried in the piece: an ex-DeepMind founder argues LLMs may have "dodged a bullet" on alignment because they inherit human-ish values from text, whereas blank-slate RL agents are "more susceptible to fate" (the paperclip/boat-race failure mode). That reframes the "is scaling dead" debate as an <em>alignment</em> question, not just a capability one. Pairs with the LeCun-vs-robotics-funding tension we flagged July 4.</span></li>
+
+<li><span class="item-title">A startup just raised $7M betting AI voice-clone kidnapping scams are about to go mainstream</span>
+<span class="source"><a href="https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom/">TechCrunch</a></span>
+Savi (Acrew Capital-led) launched an iPhone/Android app aimed at protecting consumers from realistic AI scams — including cloned-voice "kidnappers" demanding ransom.
+<span class="arg">Why it's a story: A consumer-facing warning shot — the deepfake-audio harms that until now were policy abstractions (see the ElevenLabs tender amid "deepfake-audio policy fights," July 3) are now a fundable retail-security category. Worth reporting real case volume behind the pitch, and whether voice-verification defenses actually work against current cloning models. This is the ground-level counterpart to the AI-companion litigation wave.</span></li>
+
+<li><span class="item-title">Robotics capital keeps going vertical: Apptronik's $520M + DeepMind "Robot Park," and an ex-Optimus scientist's new humanoid</span>
+<span class="source"><a href="https://roboticsandautomationnews.com/2026/07/06/apptronik-launches-robot-park-to-train-apollo-humanoid-robots-with-google-deepmind/103069/">Robotics & Automation News</a></span>
+<span class="source"><a href="https://www.techmeme.com/260707/p13#a260707p13">Bloomberg/Techmeme</a></span>
+Apptronik closed a $520M Series A-X and opened "Robot Park" to train its Apollo humanoids with Google DeepMind; separately, Paris-based UMA — founded by ex-Tesla Optimus scientist Rémi Cadene and ex-DeepMind's Pierre Sermanet — demoed its lightweight "Northstar" humanoid.
+<span class="arg">Why it's a story: The DeepMind–Apptronik data-collection facility is the concrete test of whether frontier labs' learning methods transfer to embodied hardware — the exact premise LeCun (above) disputes. UMA is another data point in the ex-frontier-lab-talent-into-robotics drain. Reportable: what Robot Park actually collects and how DeepMind's models get into Apollo.</span></li>
+
+<li><span class="item-title">Norm Ai raises $120M at a $1.2B valuation to run an "AI law firm"</span>
+<span class="source"><a href="https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/">TechCrunch</a></span>
+Khosla-led round for a startup providing AI-powered legal services alongside human lawyers — pitched as rethinking how the industry bills.
+<span class="arg">Why it's a story: Directly on the litigation beat, and lands the same week the AI Safety Newsletter flagged that a complainant appears to have won an English court case using an AI lawyer to do the legal work pre-trial. A piece on unauthorized-practice-of-law exposure and malpractice liability when a $1.2B firm's "associate" is a model is ahead of mainstream coverage.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong & Discourse</h2>
+<ul>
+<li><span class="item-title">Quiet on LessWrong proper — no new top-level AI-safety posts in 28h</span>
+<span class="source"><a href="https://www.lesswrong.com/">LessWrong</a></span> Discourse stays on the GPT-5.6 Sol cheating/eval-awareness findings and the now-unwound Fable/Mythos licensing regime. No new posts from AI Futures Project, Palisade, Forethought, Carlsmith, DeepMind or Carlini.</li>
+
+<li><span class="item-title">AISN #76: two under-noticed items worth pulling</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/aisn-76-fable-5-restrictions-lifted">AI Safety Newsletter</a></span> <mark>Alex Bores, author of NY's RAISE Act, lost the NY-12 primary to Micah Lasher</mark> after becoming the target of major AI-super-PAC spending — a concrete outcome for the dark-money-in-AI-elections thread. Also: researchers found AI models now outperform expert human debaters at persuasion, and the "Five Eyes" issued a joint warning that the AI cyber "timeline is not years, it is months."</li>
+
+<li><span class="item-title">Zvi: "Fable #6: The Return of the King"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/fable-6-the-return-of-the-king">Don't Worry About the Vase</a></span> No meaningful update since last week, but remains the definitive primary record of how the three-week Anthropic deployment pause resolved via a bespoke "safeguard."</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

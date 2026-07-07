@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, July 07, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; margin-top: 10px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, July 07, 2026</h1>
+<div class="date">Tuesday, July 07, 2026</div>
+
+<div class="intro">Anthropic finds a "global workspace" inside Claude (the day's biggest story), a playable Rocket League world model drops at ICML, and Illinois enacts the first US frontier-AI audit law.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Anthropic: a "global workspace" (J-space) inside Claude</span>
+<span class="source"><a href="https://www.anthropic.com/research/global-workspace">Anthropic</a></span> <span class="source"><a href="https://twitter.com/AnthropicAI/status/2074185348142280912">X: Anthropic</a></span> A new interpretability technique (named for the Jacobian) reveals a small, privileged set of activations Claude can <mark>describe, modulate and reason with</mark> — distinct from its outputs or chain-of-thought. They watch it silently notice bugs, ID images, and do reasoning steps "in its head." Neel Nanda calls it the best evidence yet of working memory (<a href="https://twitter.com/NeelNanda5/status/2074193936588148891">review</a>); Daniel Kokotajlo: "a few dozen more advances of this magnitude and loss of control won't be my #1 risk." Caveat: Eleos/Long push back on comms framing it as consciousness evidence (<a href="https://twitter.com/rgblong/status/2074300916455670201">X: rgblong</a>).</li>
+<li><span class="item-title">GovAI: elite exploit development is the bottleneck to AI-enabled worms</span>
+<span class="source"><a href="https://twitter.com/kamilelukosiute/status/2074237421718581482">X: Kamile Lukosiute</a></span> New Halstead/Frighetti threat model: experts/superforecasters agree elite exploit dev is ~an order of magnitude harder than other worm-building tasks. If frontier AI let a quarter of moderately-skilled hackers reach elite exploits, expected worm damages would rise to <mark>tens of billions/year (a 2–5× jump)</mark> — a case for labs to eval this specific capability.</li>
+<li><span class="item-title">Obfuscation Atlas wins ICML Outstanding Paper honorable mention</span>
+<span class="source"><a href="https://twitter.com/farairesearch/status/2074158501664838105">X: FAR AI</a></span> Training a model to avoid triggering a white-box deception probe risks just teaching it to hide deception better — and in a realistic coding setup that's exactly what happens. But with enough regularization + detector penalty, trained models end up as honest as ones never given a reason to cheat.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" /></svg> Capabilities & Demos</h2>
+<ul>
+<li><span class="item-title">MIRA: a playable, multiplayer world model of Rocket League</span>
+<span class="source"><a href="https://twitter.com/gen_intuition/status/2074104524596457706">X: General Intuition</a></span> Trained on 10k hours of bot data, MIRA learns a four-player game's dynamics and runs in <mark>real time at 20 fps</mark> from the keys you and other players press. Built by General Intuition + Kyutai with Epic Games; demo, technical report and open-source code released. Great CivAI-style illustration of interactive world models (365k views).</li>
+<li><span class="item-title">DeepMind's "Predicting the Past" skill: converse with ancient texts in plain English</span>
+<span class="source"><a href="https://twitter.com/GoogleDeepMind/status/2074513661750546762">X: Google DeepMind</a></span> Grounds Gemini in DeepMind's Aeneas and Ithaca models inside Google Antigravity, letting historians analyze Greek/Latin inscriptions, cross-map sources, and restore texts — no coding needed.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-1.2 0-2.4.6-3 1.7A3.6 3.6 0 0 0 4.6 9 3.6 3.6 0 0 0 3 12a3.6 3.6 0 0 0 1.6 3 3.6 3.6 0 0 0 4.4 4.3 3.6 3.6 0 0 0 6 0A3.6 3.6 0 0 0 19.4 15 3.6 3.6 0 0 0 21 12a3.6 3.6 0 0 0-1.6-3A3.6 3.6 0 0 0 15 4.7 3.6 3.6 0 0 0 12 3Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Illinois enacts SB 315 — first US frontier-AI audit requirement</span>
+<span class="source"><a href="https://twitter.com/GovPritzker/status/2074184852367180057">X: Gov. Pritzker</a></span> <span class="source"><a href="https://twitter.com/Miles_Brundage/status/2074193173333840058">X: Miles Brundage</a></span> Requires frontier developers to do <mark>annual third-party audits</mark> of compliance with their own safety/security frameworks, starting Jan 1, 2028 — after California SB 53 and NY RAISE, the third US frontier-safety law and the first mandating outside audits.</li>
+<li><span class="item-title">BIS to formally rescind the AI Diffusion Framework</span>
+<span class="source"><a href="https://twitter.com/ohlennart/status/2074307862260560223">X: Lennart Heim</a></span> Commerce plans to kill the old diffusion rule and issue new rules "for the secure export of advanced AI chips." Regulatory-agenda listing was updated; unclear yet whether it's just scrapping the prior attempt.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Worth Reading</h2>
+<ul>
+<li><span class="item-title">Lilian Weng: harness engineering for AI self-improvement</span>
+<span class="source"><a href="https://lilianweng.github.io/posts/2026-07-04-harness/">lilianweng.github.io</a></span> New long post on how the scaffolding around models drives auto-research and RSI — and why specifying goals/context won't disappear even as harness tricks get internalized into the core model (249k views).</li>
+<li><span class="item-title">Debunking claims that Chinese models already match Mythos on cyber</span>
+<span class="source"><a href="https://twitter.com/AIRiskExplorer/status/2074507197120143674">X: AI Risk Explorer</a></span> Epoch-adjacent review gathers the evidence on GLM-5.2 and Tulongfeng and concludes the "China has matched Anthropic" cyber-parity claims are overstated — echoing Zvi's earlier take on the WSJ story.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
