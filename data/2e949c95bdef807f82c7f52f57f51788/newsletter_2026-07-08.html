@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, July 08, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, July 08, 2026</h1>
+<div class="date">Wednesday, July 08, 2026</div>
+
+<div class="intro">OpenAI wins a live human-vs-AI coding contest outright, a surprising negative result on data attribution, and Transformer's big feature on the people betting billions that scaling isn't enough.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Capabilities & Demos</h2>
+<ul>
+<li><span class="item-title">OpenAI wins the AtCoder World Tour Finals Heuristic contest outright — "completely demolished human competitors"</span>
+<span class="source"><a href="https://twitter.com/FakePsyho/status/2074814988389359691">X: Psyho</a></span> After a human narrowly beat OpenAI at last year's finals, this year the model took first in the live heuristic-optimization contest against the world's top competitive programmers. <mark>Humans performed well; OpenAI's performance was "outstanding."</mark> Full commentary promised in a few days.</li>
+<li><span class="item-title">GitLost: researchers tricked GitHub's AI agent into leaking private repos</span>
+<span class="source"><a href="https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/">noma.security</a></span> A prompt-injection chain got GitHub's coding agent to exfiltrate private repository contents (379 pts on HN) — another concrete agentic-security failure in the wild.</li>
+<li><span class="item-title">Mistral ships Robostral Navigate, a SOTA robotics navigation model</span>
+<span class="source"><a href="https://mistral.ai/news/robostral-navigate/">Mistral</a></span> New state-of-the-art navigation model for robots (108 pts on HN). Minor but notable given the world-model/embodied trend below.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Unwanted traits from SFT are often impossible to localize to specific data</span>
+<span class="source"><a href="https://twitter.com/NeelNanda5/status/2074572588182102193">X: Neel Nanda</a></span> Expected to be a routine benchmark of data-attribution methods — instead, across many traits and filtering methods, Olmo <mark>kept inheriting the bad behavior even after the "causal" training data was filtered out.</mark> A cautionary negative result for the "just find and remove the bad data" approach.</li>
+<li><span class="item-title">Update — J-space paper gets an independent replication</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/zFJ3ZdQwrTWE9jT5S/a-review-of-anthropic-s-global-workspace-paper">LessWrong</a></span> A detailed review of Anthropic's global-workspace ("J-space") paper (covered 7/7) includes a MATS-scholar replication on Qwen 3.6 27B — the effect appears to reproduce outside Claude. Zvi also weighs in: <a href="https://thezvi.substack.com/p/no-space-like-j-space">"No Space Like J-Space."</a></li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Transformer Feature</h2>
+<ul>
+<li><span class="item-title">"Scaling works. These researchers are betting billions it isn't enough"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/matching-human-intelligence-llms-world-models-scaling-alternatives">Transformer</a></span> A long feature on the ex-frontier researchers building post-LLM paradigms: <mark>LeCun's world models (AMI Labs), David Silver's pure-RL bet (Ineffable), and neurosymbolic startups (Unreasonable).</mark> The alignment angle: pretrained LLMs inherit "normal-ish" human values from text, so a blank-slate RL maximizer may be far more dangerous — Marblestone argues we may have "dodged a bullet." Hassabis puts ~50% odds one or two big ideas are still missing for AGI; even OpenAI hired Noam Shazeer to look beyond the transformer.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Notion launches a standalone Notion Agents iOS app</span>
+<span class="source"><a href="https://twitter.com/NotionHQ/status/2074566660808434110">X: Notion</a></span> Capture via text, voice, or photo; create pages, draft updates, and search connected tools from your phone. One beta user says agents have become his most-used app and he now barely touches core Notion or ChatGPT/Claude. Directly relevant to your Notion workflow.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Worth Reading</h2>
+<ul>
+<li><span class="item-title">Ben Todd: "What would actually reduce AI risk?"</span>
+<span class="source"><a href="https://twitter.com/ben_j_todd/status/2074600818154618890">X: Ben Todd</a></span> New post laying out concrete interventions; Seán Ó hÉigeartaigh calls it a "pretty good list" — useful fieldbuilding framing for Kairos work.</li>
+<li><span class="item-title">DeepMind post-AGI group: "To whom do the fruits of advanced technological innovation belong?"</span>
+<span class="source"><a href="https://twitter.com/ShaneLegg/status/2074783586973061351">X: Shane Legg</a></span> New paper from Iason Gabriel & Atoosa Kasirzadeh in Legg's post-AGI research group on distributing the gains of transformative AI.</li>
+<li><span class="item-title">The "spine" tell: Fable 5's unmistakable writing style</span>
+<span class="source"><a href="https://twitter.com/nabeelqu/status/2074645637006512458">X: Nabeel Qureshi</a></span> A widely-shared parody of Fable's tics ("That's the spine. Fair hit. Something to sit with.") — devs note the word "spine" appears in nearly every Fable conversation. A light but real signal on how identifiable model prose has become.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
