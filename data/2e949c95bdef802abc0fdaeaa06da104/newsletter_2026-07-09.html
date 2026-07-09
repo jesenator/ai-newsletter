@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Thursday, July 09, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+.why { color: #444; font-size: 13px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Thursday, July 09, 2026</h1>
+<div class="date">Thursday, July 09, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">The AI 2027 team is back with "AI 2040: Plan A" — a prescriptive scenario where the US and China deliberately delay superintelligence by a decade</span>
+<span class="source"><a href="https://blog.aifutures.org/p/ai-2040-plan-a">AI Futures Project</a></span> <span class="source"><a href="https://ai-2040.com">ai-2040.com</a></span>
+Kokotajlo & co. dropped their year-in-the-making follow-up today. Unlike AI 2027's forecast, this is <mark>a recommendation</mark>: superintelligence would have arrived in 2030, but "decisive action" by both governments pushes it to 2040.
+<br><span class="why"><b>Why it's the story:</b> AI 2027 shaped an enormous amount of policy discourse and press. Its authors explicitly pivoting from prediction to normative planning — and staking out that a US–China slowdown is "plausible enough to aim for" — is itself news, and a natural hook for interrogating whether their proposed governance mechanisms (verification, compute controls, coordination with Beijing) are realistic given the actual on-the-ground licensing chaos of the past month. First-mover interview opportunity with Kokotajlo on what changed his mind about tractability.</span></li>
+
+<li><span class="item-title">Meta declares a price war: Meta Model API at ~25% the cost of OpenAI/Anthropic, plus a homegrown "Iris" chip entering production in September</span>
+<span class="source"><a href="https://www.techmeme.com/260709/p21#a260709p21">Bloomberg</a></span> <span class="source"><a href="https://www.techmeme.com/260709/p13#a260709p13">Reuters</a></span> <span class="source"><a href="https://www.techmeme.com/260709/p20#a260709p20">The Verge</a></span>
+Zuckerberg says pricing will be "aggressive and attractive" — Muse Spark 1.1 (a "step-change" coding model) lists at $1.25/$4.25 per 1M tokens. Same day: an internal memo says Meta starts making its Iris chip in September, targeting <mark>14GW of compute by 2027</mark>.
+<br><span class="why"><b>Why it's the story:</b> Meta is attacking the two economic pillars of the frontier labs at once — undercutting API margins and reducing its Nvidia dependence with custom silicon. This is the most concrete sign yet that the model layer is commoditizing, directly relevant to the "is this a bubble" thread and to OpenAI/Anthropic's trillion-dollar valuation math. Reportable: whether 25% pricing is sustainable or subsidized, and how Iris squares with Meta's earlier "Watermelon" compute-for-capability struggles (July 3).</span></li>
+
+<li><span class="item-title">Bun's creator says he rewrote the runtime from Zig to Rust in 11 days with a pre-release Claude Fable 5 — a year of work for three engineers</span>
+<span class="source"><a href="https://www.techmeme.com/260709/p24#a260709p24">bun.com (Jarred Sumner)</a></span>
+The disclosure: Bun was acquired by Anthropic in December 2025, and the team works there.
+<br><span class="why"><b>Why it's the story:</b> This is a vivid, quantified capability datapoint feeding the "age of humans writing code is ending" narrative — but the buried lede is the conflict of interest. An <mark>Anthropic employee using unreleased Anthropic models to produce a viral marketing claim</mark> about Anthropic's own product deserves scrutiny about verifiability and pre-release access. Pairs with OpenAI's own new warning (below) that coding benchmarks are unreliable.</span></li>
+
+<li><span class="item-title">OpenAI publishes its national-security doctrine — and, separately, guts a rival's coding benchmark</span>
+<span class="source"><a href="https://openai.com/index/government-national-security-partnerships">OpenAI</a></span> <span class="source"><a href="https://openai.com/index/separating-signal-from-noise-coding-evaluations">OpenAI</a></span>
+OpenAI laid out "principles for responsible AI use, democratic accountability, and public safety" in government/defense partnerships, and released an analysis finding reliability problems in SWE-Bench Pro.
+<br><span class="why"><b>Why it's the story:</b> The government post lands squarely amid the DOD–Anthropic lethal-use fight (July 7) and Altman's "US-led forum" push (July 2) — worth parsing what OpenAI's stated red lines actually forbid versus enable. The benchmark critique is an under-covered AI-literacy angle: the industry's headline capability claims (see Bun, above) rest on evals OpenAI itself now says are noisy.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> Deals & Robotics (brief)</h2>
+<ul>
+<li><span class="item-title">Kraken Technology raises $175M Series B at a $1B valuation</span>
+<span class="source"><a href="https://www.techmeme.com/260709/p25#a260709p25">Tech.eu</a></span> Autonomous uncrewed subsurface and surface vessels — another defense-adjacent embodied-AI unicorn, echoing the killer-robots/LAWS treaty debate (July 7).</li>
+<li><span class="item-title">Nvidia rival Positron in talks to raise ~$750M at a $5B valuation</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-07-08/nvidia-rival-positron-holds-talks-to-raise-funds-at-5-billion-valuation">Bloomberg</a></span> More inference-chip capital rotation, one day after SambaNova's $1B/$11B round (covered July 8).</li>
+<li><span class="item-title">PrismML says it ran a 27B Qwen 3.6 model on an iPhone 17 Pro; Apple held talks</span>
+<span class="source"><a href="https://www.techmeme.com/260709/p14#a260709p14">The Information</a></span> The biggest on-device model yet — a privacy and edge-inference angle as Apple scrambles to shrink models off the cloud.</li>
+<li><span class="item-title">Prime Intellect raises $130M Series A</span>
+<span class="source"><a href="https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a/">TechCrunch</a></span> Decentralized-compute startup pivots to helping enterprises train their own agents on bigger clusters.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/></svg> LessWrong & Discourse</h2>
+<ul>
+<li><span class="item-title">Quiet on LessWrong proper — no new top-level AI-safety posts in 28h</span>
+<span class="source"><a href="https://www.lesswrong.com">LessWrong</a></span> Discourse stays on the GPT-5.6 Sol cheating/eval-awareness findings and the Anthropic J-space interpretability paper. No new posts from Palisade, Forethought, Carlsmith, DeepMind or Carlini.</li>
+<li><span class="item-title">"What would an animal-aligned AI be aligned to?"</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/mnLqdvnpKiudivyfv/what-would-an-animal-aligned-ai-be-aligned-to">EA Forum</a></span> An Anima International researcher wrestles with a genuinely hard alignment question: whether to constrain future superintelligence to specific outcomes or defer to it, arguing <mark>current LLM alignment is "closer to binary"</mark> and can't reliably encode weighted moral priors. A useful window into how the AI-for-animals wing thinks about constitutional-AI limits.</li>
+<li><span class="item-title">Zvi: "AI #176 Part 1: Doing It Live"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-176-part-1-doing-it-live">Don't Worry About the Vase</a></span> The week got busy enough to split in two — Zvi's running synthesis of the latest model releases and policy moves, and the best single primary source for tracking the post-Fable landscape.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
