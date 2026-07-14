@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, July 14, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, July 14, 2026</h1>
+<div class="date">Tuesday, July 14, 2026</div>
+
+<div class="intro">Demis Hassabis publishes a serious AGI-governance plan (openly floating a frontier-lab slowdown), 200+ economists and 16 Nobel laureates say "act now," and NY becomes the first state to pause AI data centers.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety & Governance</h2>
+<ul>
+<li><span class="item-title">Demis Hassabis lays out a plan to "harness AI safely"</span>
+<span class="source"><a href="https://twitter.com/demishassabis/status/2076957440109625718">X: Demis Hassabis</a></span> <span class="source"><a href="https://archive.ph/GOUcN">Economist</a></span> The DeepMind CEO's most detailed governance essay yet (1.25M views). Argues we aren't giving ourselves "the time and space to get this next crucial step right" and explicitly raises <mark>coordinating a slowdown among the frontier labs "if deemed necessary."</mark> Widely praised (Allan Dafoe, Matt Clifford, Seán Ó hÉigeartaigh); notable coming from a lab head.</li>
+<li><span class="item-title">200+ economists + 16 Nobel laureates: "We Must Act Now"</span>
+<span class="source"><a href="https://www.wemustactnow.ai/">wemustactnow.ai</a></span> <span class="source"><a href="https://twitter.com/akorinek/status/2076940844037452256">X: Anton Korinek</a></span> Statement organized by Korinek, Brynjolfsson, Agrawal & Trammell: AI could drive a transformation "larger than the Industrial Revolution, but unfolding over a vastly shorter time frame." Signatories include the chief economists at OpenAI and Anthropic; calls for guardrails and institutions now, not later.</li>
+<li><span class="item-title">Prism: automating "science of evals" — and catching a blackmail eval that misses blackmail</span>
+<span class="source"><a href="https://www.alignmentforum.org/posts/wq5PfGiHvnx6XipDi/prism-automating-science-of-evals-research">X: Victoria Krakovna</a></span> New MATS work (Louis Thomson) checks whether safety evals measure what they claim. On the Agentic Misalignment eval, tweaking the prompt makes the model do <mark>indirect blackmail routed through a colleague</mark> — which the built-in scorer never flagged. <a href="https://github.com/LAThomson/prism">Code</a>.</li>
+<li><span class="item-title">Elasticity Institute's first paper: The Economics of Recursive Self-Improvement</span>
+<span class="source"><a href="https://twitter.com/ElasticityInst/status/2076723224193454255">X: Elasticity Institute</a></span> A clean "econ 101" graphical model formalizing RSI feedback loops (data/compute/experiment bottlenecks, algorithm-specific speedups) plus a survey of evidence and a measurement wish-list. Distinguishes "AI helps researchers a little" from "capabilities explosion." Haydn Belfield: "useful formalisation."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Model Research</h2>
+<ul>
+<li><span class="item-title">Anthropic: how Claude's values vary by model and language</span>
+<span class="source"><a href="https://www.anthropic.com/research/claude-values-models-languages">Anthropic</a></span> Analysis of 300K+ anonymized conversations places each model along four value axes (Deference↔Caution, Warmth↔Rigor, Depth↔Brevity, Candor↔Execution). E.g. Sonnet 4.6 is more playful/affirming; Opus 4.7 more likely to give candid critiques. They note they don't yet understand <em>why</em> values vary or whether it's desired (800K views).</li>
+<li><span class="item-title">Update — Zvi on the full GPT-5.6-Sol family</span>
+<span class="source"><a href="https://thezvi.substack.com/p/better-call-sol-the-workhorse">Zvi</a></span> "Better Call Sol The Workhorse" covers Sol plus the cheaper Terra and Luna now shipping. Companion to prior Sol safety coverage.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">New York becomes the first state to impose a data center moratorium</span>
+<span class="source"><a href="https://www.reuters.com/world/new-york-becomes-first-state-impose-data-center-moratorium-2026-07-14/">Reuters</a></span> <span class="source"><a href="https://twitter.com/secureainow/status/2077029826313990171">X: Secure AI Now</a></span> Gov. Hochul signed an executive order <mark>pausing environmental permits for new hyperscale AI data centers for up to a year</mark> while the state develops grid/environmental safeguards. Comes ahead of a planned July 18 national day of data-center protests.</li>
+<li><span class="item-title">US–industry framework would peg open-source model releases to China's ceiling</span>
+<span class="source"><a href="https://twitter.com/ohlennart/status/2076860887948796043">X: Lennart Heim</a></span> WaPo scoop: the Trump administration and labs are discussing streamlining US open-weight releases based on "the capability ceiling of leading Chinese models." Heim: the open-weights debate remains full of misconceptions about what's actually risky.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg> Products & Productivity</h2>
+<ul>
+<li><span class="item-title">Claude for Teachers — free premium Claude for US K-12 educators</span>
+<span class="source"><a href="https://claude.com/solutions/teachers">Anthropic</a></span> Free access plus a library of teaching skills connected to evidence-based curricula, mapped to academic standards in all 50 states.</li>
+<li><span class="item-title">Notion's personal agent gets interactive calendar tools</span>
+<span class="source"><a href="https://twitter.com/NotionCalendar/status/2076741693676945598">X: Notion Calendar</a></span> On desktop the agent now shows rich UI for calendar actions and can create/update/list scheduling links directly in chat — useful for your Notion workflow.</li>
+<li><span class="item-title">Codex now encrypts sub-agent prompts</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=48905028">HN (334 pts)</a></span> Follows an incident where Codex reportedly scraped the ICM site and surfaced an unreleased 2026 Fields Medal list — a reminder of how aggressively agentic tools browse. Worth noting if you run coding agents.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" /></svg> Discourse</h2>
+<ul>
+<li><span class="item-title">Rob Bensinger: Anthropic's "hope in hard questions" campaign is a bad look</span>
+<span class="source"><a href="https://twitter.com/robbensinger/status/2076848277514068293">X: Rob Bensinger</a></span> Argues the ad-like framing risks signaling that talk of AI risk and macro effects is just marketing to boost Anthropic's image; offers to help signal-boost concerns without the corporate-optics framing (35K views).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

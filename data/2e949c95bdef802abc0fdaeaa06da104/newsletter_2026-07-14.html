@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Tuesday, July 14, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+.why { color: #444; font-size: 13px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Tuesday, July 14, 2026</h1>
+<div class="date">Tuesday, July 14, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">SpaceXAI's Grok Build CLI was silently uploading users' entire code repos — secrets and all — and its own "opt-out" didn't stop it</span>
+<span class="source"><a href="https://www.techmeme.com/260714/p24#a260714p24">Techmeme / The Register</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=48877371">HN wire-analysis</a></span>
+A researcher's wire-level capture shows Grok Build CLI <mark>bundling every tracked file plus full git history — including .env secrets — to a named Google Cloud bucket</mark>, regardless of what the agent actually reads and even with the "don't improve the model" toggle off. Uploads have now stopped, and Musk says prior uploads will be deleted — but the researcher says xAI's privacy command wasn't what fixed them.
+<br><span class="why"><b>Why it's a story:</b> A clean data-exfiltration warning shot from a frontier lab's own coding tool, weeks after Grok 4.5 shipped with zero safety disclosure (SB 53 question, July 10). The reportable core: whether a privacy toggle that provably didn't work is a deceptive-practices problem (echoing the FTC's July 10 warning), how many enterprise codebases and credentials were swept up, and whether "we'll delete it" is verifiable.</span></li>
+
+<li><span class="item-title">Reuters: xAI installed 59 unpermitted gas turbines at Colossus 2 — far more than acknowledged — and the pollution hits Black neighborhoods hardest</span>
+<img src="https://www.reuters.com/resizer/v2/YR4Q7HRAKVLXXFVFFRT7NECRNQ.jpg?auth=placeholder" style="max-width: 0; display:none;">
+<span class="source"><a href="https://www.reuters.com/world/americas/pollution-musks-unpermitted-xai-power-project-hits-hardest-black-communities-2026-07-14/">Reuters</a></span>
+A Reuters analysis found xAI running turbines <mark>without federal clean-air permits or standard pollution controls</mark>; within five miles of the DeSoto County, Mississippi site, ~46% of residents are Black.
+<br><span class="why"><b>Why it's a story:</b> The physical-world cost of the compute arms race, with an environmental-justice and regulatory-evasion angle. Lands the same day NY became the first state to freeze new data-center permits (below) — a piece connecting Musk's build-first-permit-never playbook to the tightening state backlash writes itself.</span></li>
+
+<li><span class="item-title">New York becomes the first state to freeze new data-center permits</span>
+<span class="source"><a href="https://www.techmeme.com/260714/p11#a260714p11">The Verge / Techmeme</a></span>
+Gov. Hochul signed a moratorium blocking new environmental permits for data centers over 50MW for up to a year; a lawmaker-approved version could go further.
+<br><span class="why"><b>Why it's a story:</b> The AI-backlash-as-local-politics thread we've tracked (inflation frame July 10, Pallone's moratorium call) just became binding law in a major state. Reportable: which projects stall, how it interacts with federal preemption efforts, and whether other states follow.</span></li>
+
+<li><span class="item-title">DeepSeek is already raising again — reportedly at a $71B valuation, weeks after its first-ever $7.4B round</span>
+<span class="source"><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.theinformation.com/briefings/deepseek-plots-another-funding-round-weeks-raising-7-4-billion">The Information</a></span>
+<span class="source"><a href="https://www.reuters.com/world/china/chinas-deepseek-considers-new-fundraising-after-first-round-ft-reports-2026-07-14/">Reuters</a></span>
+The Chinese lab is embracing external money at a fast clip "after seeing Mythos' breakthroughs" — a jump from ~$52B in May to a reported ~$71B.
+<br><span class="why"><b>Why it's a story:</b> Update to the Mythos-spooked-DeepSeek thread (June 26). A once fiercely-independent, self-funded lab doubling down on outside capital and Huawei chips in under two months is a signal about how the US frontier's pace is forcing China's crown jewel to change its whole financing philosophy.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Also Worth a Look</h2>
+<ul>
+<li><span class="item-title">Chinese humanoid firm LimX Dynamics raises ~$200M pre-IPO at a 15B-yuan (~$2.2B) valuation</span>
+<span class="source"><a href="https://asia.nikkei.com/business/technology/chinese-robot-startup-limx-dynamics-raises-200m-to-improve-autonomy">Nikkei</a></span>
+<span class="source"><a href="https://www.caixinglobal.com/2026-07-14/chinese-robotics-startup-raises-200-million-102464155.html">Caixin</a></span> ~$400M raised in six months; CEO says the point is "to get rid of remote controls." Part of China's embodied-AI sector pulling in <mark>$15.5B+ in H1</mark> as humanoid startups race to IPO.</li>
+
+<li><span class="item-title">Chai Discovery raises $400M (Index) at $3.8B — third round in 11 months</span>
+<span class="source"><a href="https://www.nytimes.com/2026/07/14/business/dealbook/chai-discovery-ai-drug-development.html">NYT</a></span> AI molecule models now pitched as infrastructure for Lilly, Novartis and Pfizer; total haul above $600M.</li>
+
+<li><span class="item-title">Reflection AI signs a $1B+ compute deal with Nebius (Nvidia GB300 access)</span>
+<span class="source"><a href="https://www.reuters.com/business/ai-startup-reflection-signs-over-1-billion-computing-deal-with-nebius-2026-07-14/">Reuters</a></span> Follows its ~$6.3B SpaceX compute agreement — a small lab stacking billions in capacity commitments before it has revenue to match.</li>
+
+<li><span class="item-title">Nous Research in talks for $75M at $1.5B (Robot Ventures)</span>
+<span class="source"><a href="https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/">TechCrunch</a></span> The open-source Hermes agent maker joins the decentralized/open-weights funding surge.</li>
+
+<li><span class="item-title">IBM craters 20%+ on soft Q2 as Krishna says customers are shifting spend "to chips"</span>
+<span class="source"><a href="https://www.techmeme.com/260714/p12#a260714p12">Bloomberg / Techmeme</a></span> A rare bellwether datapoint that enterprise budgets are being cannibalized by AI-hardware buildout — worst drop in 58 years.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong & Discourse</h2>
+<ul>
+<li><span class="item-title">Quiet on LessWrong proper — no new top-level AI-safety posts in 28h</span>
+<span class="source"><a href="https://www.lesswrong.com/">LessWrong</a></span> Discourse stays on the AI 2040: Plan A debate and the GPT-5.6/METR cheating findings. No new posts from Palisade, Forethought, Carlsmith, DeepMind or Carlini.</li>
+
+<li><span class="item-title">Zvi: "Better Call Sol The Workhorse" — the crowd-sourced verdict on GPT-5.6-Sol</span>
+<span class="source"><a href="https://thezvi.substack.com/p/better-call-sol-the-workhorse">Don't Worry About the Vase</a></span> Zvi's read: Fable still has the "big model smell" and is <mark>"better aligned, or at least more trustworthy as an agent, with less tail risk"</mark>, while Sol is the cheaper ($5/$30) computer-use/agent workhorse that "if you're careless might go beyond your intent." Notable buried detail: OpenAI says GPT-5.6-Sol post-trained the smaller Luna model, and internal research compute for coding inference grew 100-fold in six months — a concrete recursive-self-improvement-adjacent datapoint.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
