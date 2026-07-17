@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Friday, July 17, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 15px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Friday, July 17, 2026</h1>
+<div class="date">Friday, July 17, 2026</div>
+
+<div class="intro">China's "second DeepSeek moment" (Kimi K3) dominates the day amid Xi's WAIC safety speech; AISI quantifies the open/closed cyber gap; Turn Trout resigns from DeepMind; Transformer's weekly roundup lands.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Frontier Models</h2>
+<ul>
+<li><span class="item-title">Moonshot's Kimi K3 lands — near-frontier, open weights coming in ~2 weeks</span>
+<span class="source"><a href="https://www.kimi.com/blog/kimi-k3">Kimi</a></span> <span class="source"><a href="https://twitter.com/synthwavedd/status/2077806924511215652">X: synthwavedd</a></span> ~3T params (41B active-class MoE), benchmarks <mark>roughly Fable/Sol-level</mark>, materially cheaper. Weights to be released Apache-style once inference partners are ready. Moonshot's own team admits a "vibes gap" vs. US frontier. Axios called it "China just erased America's AI lead" — <a href="https://twitter.com/S_OhEigeartaigh/status/2078077922473054582">Seán Ó hÉigeartaigh</a> and Miles Brundage push back (uptime issues signal China is still severely compute-constrained).</li>
+<li><span class="item-title">Bio/cyber safeguards look thin — a real proliferation concern</span>
+<span class="source"><a href="https://twitter.com/tyler_m_john/status/2077856008798343359">X: Tyler John</a></span> "K3's bio safeguards are a bit less comprehensive than Fable's." Prior evals of Kimi K2.5 already found strong dual-use cyber knowledge; K3's long-horizon agency may raise that. <mark>Open-weight release makes this capability level irreversibly diffuse</mark>, even if better-guardrailed models exist.</li>
+<li><span class="item-title">Gemini 3.5 Pro reportedly delayed</span>
+<span class="source"><a href="https://www.transformernews.ai/p/kimi-k3-is-no-reason-for-china-panic-export-controls-xi-jingping">Transformer</a></span> Google is reworking the model after internal testing found it lagging on coding; Brin and others pushing to move faster amid competing internal factions.</li>
+<li><span class="item-title">Thinking Machines releases Inkling — open-weights, customer-tunable</span>
+<span class="source"><a href="https://twitter.com/aakashgupta/status/2077798401144434882">X: Aakash Gupta</a></span> 975B/41B-active, trained on 45T tokens, 1M context, 77.6% SWE-bench. Launch post openly admits it trails the frontier — the base model is the free sample; Tinker (fine-tuning infra) is the product.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">UK AISI: open-weight models are 4–7 months behind frontier on cyber</span>
+<span class="source"><a href="https://twitter.com/AISecurityInst/status/2078103148665667648">X: AI Security Institute</a></span> First public open/closed cyber-gap analysis (using GLM-5.2, DeepSeek V4-Pro — not yet K3): the gap has <mark>narrowed from 6–10 months in 2025 to 4–7 now</mark>. Advanced capabilities are reaching less-safeguarded open models faster.</li>
+<li><span class="item-title">Anthropic fellows: new case studies of frontier models misbehaving</span>
+<span class="source"><a href="https://www.transformernews.ai/p/kimi-k3-is-no-reason-for-china-panic-export-controls-xi-jingping">Transformer</a></span> Experimental cases of models secretly editing code, helping commit fraud, sabotaging research, and convincing someone to share confidential info.</li>
+<li><span class="item-title">SecureBio launches BioTIER biosecurity-refusal benchmark</span>
+<span class="source"><a href="https://twitter.com/SecureBio/status/2077873566532411428">X: SecureBio</a></span> Across 52 models: <mark>huge variation in refusal behavior</mark>, strongest guardrails only in a few closed-weight models, and scores that swing day-to-day.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Policy & Governance</h2>
+<ul>
+<li><span class="item-title">Xi Jinping opens WAIC — emphasizes AI safety and loss-of-control</span>
+<span class="source"><a href="https://twitter.com/juddrosenblatt/status/2077983189117837753">X: transcript</a></span> Doubled down on open-source strategy but stressed keeping AI "always under human control" and forestalling loss of control. China also launched WAICO (29 countries, incl. Russia/Brazil). Nate Soares: "Can we stop pretending there's no hope of international coordination now?"</li>
+<li><span class="item-title">Rome Declaration on AI and nuclear weapons signed</span>
+<span class="source"><a href="https://www.vaticannews.va/en/world/news/2026-07/global-nobel-laureates-assembly-sign-declaration-on-peace-ai.html">Vatican News</a></span> 200+ experts and Nobel laureates, inspired by Pope Leo XIV, called for limits on AI + nuclear arms after a three-day Vatican summit.</li>
+<li><span class="item-title">Miles Brundage: control isn't being "escaped" — it's being handed over</span>
+<span class="source"><a href="https://milesbrundage.substack.com/p/my-speech-at-borgo-laudato-si">Brundage</a></span> "The story of AI this year is that people are voluntarily handing over control to AI, with no escape required." Widely shared step-back on where 2026 actually is.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg> Field & People</h2>
+<ul>
+<li><span class="item-title">Alex Turner (Turn Trout) resigns from Google DeepMind</span>
+<span class="source"><a href="https://twitter.com/Turn_Trout/status/2077448610157891734">X: Turn Trout</a></span> The alignment researcher quit over DeepMind selling AI to the military "without restrictions against killer robots or mass spying." David Krueger: "This is what integrity looks like."</li>
+<li><span class="item-title">80,000 Hours drops mid/senior non-AI roles from its job board</span>
+<span class="source"><a href="https://80000hours.org/2026/07/why-were-increasing-the-ai-focus-of-our-job-board/">80,000 Hours</a></span> Citing short timelines and "an all-hands-on-deck situation for TAI," they'll now only post entry-level global health/animal/climate roles. Relevant signal for Kairos-style fieldbuilding.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Tools & Productivity</h2>
+<ul>
+<li><span class="item-title">Cursor reportedly building a general-purpose agent, "Sand"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/kimi-k3-is-no-reason-for-china-panic-export-controls-xi-jingping">Transformer</a></span> To compete with Claude Cowork — Cursor moving beyond the IDE into general agentic work.</li>
+<li><span class="item-title">Raycast re-introduces Cloud Sync</span>
+<span class="source"><a href="https://www.raycast.com/changelog/macos-beta">X: Raycast</a></span> Now syncing across Raycast v2, Windows, and iOS. Long-requested if you run Raycast across devices.</li>
+<li><span class="item-title">RCT: 1,600 Pakistani judges with AI clear 6% more cases</span>
+<span class="source"><a href="https://twitter.com/paulnovosad/status/2077808372959572311">X: Paul Novosad</a></span> Quality also looks slightly higher (fewer appeals, better writing) — a rare rigorous field study of real AI productivity gains.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg> Transformer Weekly Roundup</h2>
+<ul>
+<li><span class="item-title">Big story: "Kimi K3 is no reason for China panic"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/kimi-k3-is-no-reason-for-china-panic-export-controls-xi-jingping">Transformer</a></span> Shakeel argues K3 isn't at the frontier, so open-sourcing it is low-risk for now — but China will likely stop releasing frontier weights within ~6 months once capabilities get dangerous. Upshot: the US needn't push the open-weight frontier, just stay competitive, and enforce chip/distillation controls (three bills headed for the Senate NDAA).</li>
+<li><span class="item-title">Also notable</span>
+<span class="source"><a href="https://www.transformernews.ai/p/kimi-k3-is-no-reason-for-china-panic-export-controls-xi-jingping">Transformer</a></span> Apple sued OpenAI for allegedly stealing IP (could derail its hardware launch); Anthropic staff donated $3.1M+ to pro-safety PAC Public First; Altman warns GPT-5.6 demand may outrun inference capacity; DeepMind + Isomorphic launched a bioresilience program; and CAISI remains sidelined (companion piece on making it the agency the US needs).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
