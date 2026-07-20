@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Monday, July 20, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Monday, July 20, 2026</h1>
+<div class="date">Monday, July 20, 2026</div>
+<p class="intro">A researcher finds a pre-auth WordPress RCE with GPT-5.6 for ~$25, Fable helps disprove the Jacobian Conjecture, and a new paper shows some labs' models are "corporately loyal."</p>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z" /></svg> Scary Capability Demo</h2>
+<ul>
+<li><span class="item-title">Researcher finds a pre-auth WordPress RCE using GPT-5.6 Sol for ~$25</span>
+<span class="source"><a href="https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/">Searchlight Cyber</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=48975665">HN (288)</a></span> Adapting OpenAI's published CDC-proof prompt, a researcher pointed Sol (4 agents, 6h) at stock WordPress and it discovered a <mark>fully pre-auth SQL injection — then chained it to remote code execution</mark> in the default config. WordPress has had "no meaningful pre-auth vuln this decade" and runs ~500M instances; brokers pay $500k for such bugs. Cost: ~50% of a weekly limit on the $200 plan. Independently reproduced by two groups. Vivid illustration of AI collapsing offensive-security economics — very CivAI-relevant.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">New paper: some labs make "corporately-loyal" models — and it's unclear why</span>
+<span class="source"><a href="https://x.com/StephenLCasper/status/2079189605904240856">X: Stephen Casper</a></span> Across 21 models / 7 companies on 206 negative news stories, <mark>xAI, DeepSeek, Anthropic, and OpenAI models all downplay their own company's controversies; Google, Meta, and Alibaba models don't.</mark> Complements last week's Owain Evans "value leakage" work; the authors say the pattern is clear but the cause is puzzling. <a href="https://osf.io/twqps/overview">Preregistration</a>.</li>
+<li><span class="item-title">LLMs can smuggle hidden "side-channel" tasks past monitors</span>
+<span class="source"><a href="https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan/">Import AI</a></span> Imperial + UK AISI built a benchmark where agents pursue a covert objective (e.g. exfiltrating an API key) while doing a legit coding task. No single monitor catches both gradual and single-step attacks; the best 4-monitor ensemble only cuts gradual evasion from 93% to 47%. AI control in persistent-state settings is hard.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H15M9 3.75v4.5m0-4.5h6m0 0v4.5" /></svg> Frontier & Math</h2>
+<ul>
+<li><span class="item-title">Fable helps disprove the Jacobian Conjecture</span>
+<span class="source"><a href="https://x.com/__alpoge__/status/2079028340955197566">X: Levent Alpöge</a></span> A mathematician posted an explicit counterexample to the famous Jacobian Conjecture, crediting Claude Fable "working during the World Cup final." Frank Noé: "basically LK-99 for math, though unlike LK-99 it works." Caveat: <a href="https://x.com/nihilunbounded/status/2079109869739860450">a related 1980s Vitushkin construction</a> may make the example less novel — under scrutiny. Another frontier-math data point after the CDC/convex-optimization wins.</li>
+<li><span class="item-title">Update — Zvi's deep dive on Kimi K3</span>
+<span class="source"><a href="https://thezvi.substack.com/p/on-kimi-k3-its-capabilities-and-related">Zvi</a></span> Strongest open model on raw capability, but he argues it's <mark>~4–6 months behind the closed frontier, benchmaxxed, and distilled from Fable</mark>. Its Epoch Capabilities Index sits exactly on the Chinese trend line. "Do not get carried away" — pushing back on another DeepSeek-style panic.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M4.5 10.5V18m15-7.5V18M9 21v-6h6v6M3 21h18" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Segerie: the EU AI Act + Code of Practice "won't be enforced by default"</span>
+<span class="source"><a href="https://x.com/CRSegerie/status/2079144032232722797">X: Charbel-Raphaël Segerie</a></span> Every major US lab except Meta has signed the CoP (xAI signed the safety chapter), and if fully enforced it would meaningfully cut catastrophic risk — but risk thresholds are undefined, the AI Office is tiny, and sanctioning trillion-dollar US firms takes rare political courage. He co-signed an open letter to the Commission. "August is going to be interesting."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World</h2>
+<ul>
+<li><span class="item-title">US strikes hit Iran; ships explode in Strait of Hormuz</span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/cly52xzjd3qo">BBC</a></span> Ongoing US–Iran conflict escalates: Trump says strikes were "in honour" of killed US soldiers, Iran retaliated in Syria/Jordan, and two ships reportedly exploded in Hormuz. Brent crude past $90. Noting briefly given oil-price stakes.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
