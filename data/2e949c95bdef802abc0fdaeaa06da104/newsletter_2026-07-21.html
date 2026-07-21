@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Tuesday, July 21, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.arg { font-size: 13px; color: #444; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Tuesday, July 21, 2026</h1>
+<div class="date">Tuesday, July 21, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">Alex Turner goes on the record: the full inside account of how DeepMind's founding "no weapons" pledge collapsed</span>
+<span class="source"><a href="https://www.transformernews.ai/p/i-tried-to-stop-google-deepmind-pentagon-deal-then-quit">Transformer</a></span>
+The alignment researcher who quit DeepMind (flagged July 17/19) now details his failed campaign: a <mark>25-page counter-proposal of contract language and oversight mechanisms</mark> sent to Hassabis that senior policy staff never returned; getting Jeff Dean to co-sign an amicus brief backing Anthropic against the Pentagon; and Google signing a classified deal — reportedly with <em>fewer</em> restrictions than OpenAI's — that he learned about at 11:45pm via Signal, never announced internally.
+<br><span class="arg"><strong>Why it's the story:</strong> This is a rare, named, first-person governance-failure narrative from inside a frontier lab — the strongest artifact yet on how a "trust, not trustless" safety bet (Hassabis's own framing) produced zero binding concessions at the clearest red line. Turner's thesis is directly reportable and quotable: "society cannot rely on ethics-motivated people standing firm… we need structures: binding contracts, independent auditors." Reportable next steps: what the classified DoW contract's autonomy/surveillance language actually says, whether Dean threatened to walk, and Stuart Russell's IASEAI's unfulfilled promised member poll.</span></li>
+
+<li><span class="item-title">Bessent says the US could "sanction" Chinese AI models over distillation</span>
+<span class="source"><a href="https://www.techmeme.com/260721/p21#a260721p21">CNBC / Techmeme</a></span>
+Treasury Secretary Scott Bessent said the administration will look into whether Chinese models were built via unauthorized distillation and that it could <mark>"sanction them."</mark>
+<br><span class="arg"><strong>Why it's the story:</strong> This is the enforcement escalation of two threads on your beat — the $6B/year "adversarial distillation" loss estimate (July 13) and the reviving open-model ban (July 20). Sanctioning a <em>model</em> (vs. a company or chip) would be a novel legal mechanism worth interrogating: what statutory authority, does it target Moonshot/DeepSeek specifically ahead of their HK/Shanghai IPOs, and the safety counter — distilled clones inherit capability while shedding guardrails, so a ban on weights doesn't touch the underlying risk while entrenching OpenAI/Anthropic. Lands the same day Moonshot preps a $50B final raise.</span></li>
+
+<li><span class="item-title">Google ships "Gemini 3.5 Flash Cyber" — a vuln-hunting model handed first to governments — and starts its "most ambitious pre-training run yet" for Gemini 4</span>
+<img src="https://lh3.googleusercontent.com/YIw0f8Qb0dqfWFqW8mQK4y6oJZ4bV0kZ8pQ2gRnE=w600" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'">
+<span class="source"><a href="https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/">DeepMind</a></span>
+<span class="source"><a href="https://www.techmeme.com/260721/p26#a260721p26">The Verge / Techmeme</a></span>
+Flash Cyber integrates into CodeMender to identify and patch vulnerabilities, pitched as a cheap alternative to models like Mythos and <mark>available first to governments and select partners</mark>. Google also confirmed Gemini 4 pre-training has begun.
+<br><span class="arg"><strong>Why it's the story:</strong> A dedicated dual-use cyber model gated to governments is a concrete offense/defense case study — exactly the capability class AISI's open-weight cyber-gap findings (4–7 months) are measuring. Reportable: was Flash Cyber run through any frontier-safety/misuse evals given its offensive potential, which governments get access, and how "patch vulnerabilities" cuts both ways. The "most ambitious pre-training run yet" line is also a scaling-still-works datapoint amid the RSI/data-bottleneck debate.</span></li>
+
+<li><span class="item-title">Humanoid becomes Europe's first pure-play humanoid-robotics unicorn — $152M Series A at $1.35B</span>
+<span class="source"><a href="https://www.reuters.com/business/robotics-startup-humanoid-raises-152-million-series-round-135-billion-valuation-2026-07-21/">Reuters</a></span>
+<span class="source"><a href="https://www.forbes.com/sites/johnkoetsier/2026/07/21/humanoid-raises-152-million-at-135-billion-valuation-europes-newest-robot-unicorn/">Forbes</a></span>
+The UK firm's raise — the largest-ever Series A for a humanoid-first company — was led by Prime Movers Lab (a Figure AI backer) with Schaeffler, Bosch and Fubon; total funding now $270M for wheeled industrial humanoids.
+<br><span class="arg"><strong>Why it's the story:</strong> Directly on the robotics beat and the clearest sign yet that "physical AI" capital has crossed the Atlantic, echoing the China humanoid IPO wave (LimX, AI² Robotics) and Japan's sovereign robot model (July 18). Industrial suppliers Bosch/Schaeffler on the cap table hint at built-in deployment sites — reportable which factory floors go live first, and whether wheeled (vs. biped) is becoming the industrial consensus (cf. Walden Robotics, July 15).</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"/></svg> Also Worth a Look</h2>
+<ul>
+<li><span class="item-title">Microsoft signs a "multibillion-dollar" deal with Mistral — European data centers + models in Foundry, Copilot Studio, Azure Local</span>
+<span class="source"><a href="https://www.techmeme.com/260721/p16#a260721p16">WSJ / Techmeme</a></span> Microsoft hedges its OpenAI dependence with a European sovereign-AI play; watch the antitrust and Mistral-independence angles.</li>
+<li><span class="item-title">Mercor hit $614M gross revenue in H1 2026 — up 70% over all of 2025, ~91% from foundation-model labs</span>
+<span class="source"><a href="https://www.techmeme.com/260721/p22#a260721p22">The Information</a></span> The data-labeling arms dealer's extreme concentration in OpenAI/Anthropic is a fragility story — and ties to the "human-expert-data bottleneck" thread (July 15).</li>
+<li><span class="item-title">OpenAI says 10M people now use Codex + ChatGPT Work, nearly doubling in weeks</span>
+<span class="source"><a href="https://www.techmeme.com/260721/p18#a260721p18">Bloomberg / Techmeme</a></span> Agentic-work adoption curve — a labor-displacement datapoint worth pairing with the "economists must act now" letter.</li>
+<li><span class="item-title">Gritt exits stealth with $34M for construction robots that build solar farms</span>
+<span class="source"><a href="https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/">TechCrunch</a></span> Obvious Ventures/USV-backed physical-AI for infrastructure buildout — a robotics-meets-energy angle.</li>
+<li><span class="item-title">Iran's IRGC claims it "destroyed" Amazon's central data infrastructure in Bahrain with cruise missiles; Amazon silent</span>
+<span class="source"><a href="https://www.techmeme.com/260721/p14#a260721p14">Euronews / Techmeme</a></span> Unverified, but a striking (if true) physical-attack-on-cloud-infrastructure warning shot amid the compute buildout.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> LessWrong & Discourse</h2>
+<ul>
+<li><span class="item-title">Quiet on LessWrong proper — no new top-level AI-safety posts in 28h</span>
+<span class="source"><a href="https://www.lesswrong.com/">LessWrong</a></span> Discourse remains on the "AI 2040: Plan A" scenario and the Kimi K3 open-weight debate. No new posts from Palisade, Forethought, Carlsmith, DeepMind or Carlini. Note the Turner op-ed above originated from the same DeepMind-DoW thread the LW crowd has been chewing on.</li>
+<li><span class="item-title">Zvi: "On Kimi K3: Its Capabilities And Related Discontents"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/on-kimi-k3-its-capabilities-and-related">Don't Worry About the Vase</a></span> No meaningful update since Sunday, but remains the sharpest primary read on K3 as "several months behind the closed frontier" — directly relevant to Bessent's sanctions threat above.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
