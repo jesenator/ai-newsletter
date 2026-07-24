@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Friday, July 24, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Friday, July 24, 2026</h1>
+<div class="date">Friday, July 24, 2026</div>
+
+<div class="intro">Transformer's weekly roundup lands amid the HF fallout; a serious bipartisan frontier bill is now formally introduced; DeepSeek's boss admits China is badly compute-starved; and Notion ships "workspace-as-code."</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5" /></svg> Transformer Weekly Roundup</h2>
+<ul>
+<li><span class="item-title">Big story: DeepSeek's boss just made the case for export controls</span>
+<span class="source"><a href="https://www.transformernews.ai/p/deepseek-ceo-liang-wenfeng-export-controls-china">Transformer</a></span> Leaked comments from Liang Wenfeng: a lack of chips is <mark>"the" thing holding China back</mark>. He says he'd need 200k Huawei 950s to train a frontier model but Huawei can only supply 16k; the shortage is "currently basically unsolvable" for ≥3 years. Shakeel argues export controls—not distillation sanctions—are America's real lever.</li>
+<li><span class="item-title">Leaked call details: DeepSeek has ~20k H-equivalent cards, still prefers NVIDIA</span>
+<span class="source"><a href="https://twitter.com/KonstantinPilz/status/2080353024816411089">X: Konstantin Pilz</a></span> Liang says they're two years behind the US on 1/20th the compute, are buying "non-compliant" chips at a premium, and view Huawei's 950 as ~4:1 worse than NVIDIA with a two-year lag. Concrete confirmation China is severely compute-constrained.</li>
+<li><span class="item-title">Also notable</span>
+<span class="source"><a href="https://www.transformernews.ai/p/deepseek-ceo-liang-wenfeng-export-controls-china">Transformer</a></span> CAISI head Chris Fall resigned 3 months in amid signs the center's sidelined; UK PM Burnham scrapped DSIT and elevated AI minister Narayan to cabinet (Jade Leung stays as PM AI adviser, Vallance to chair a new AI Taskforce); Logan Kilpatrick confirms Gemini 4 pre-training underway; US–China to hold first official AI talks in September.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-1.2 0-2.4.6-3 1.7A3.6 3.6 0 0 0 4.6 9 3.6 3.6 0 0 0 3 12a3.6 3.6 0 0 0 1.6 3 3.6 3.6 0 0 0 4.4 4.3 3.6 3.6 0 0 0 6 0A3.6 3.6 0 0 0 19.4 15 3.6 3.6 0 0 0 21 12a3.6 3.6 0 0 0-1.6-3A3.6 3.6 0 0 0 15 4.7 3.6 3.6 0 0 0 12 3Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">The FRONTIER Act is formally introduced — "by far the best AI safety bill ever introduced"</span>
+<span class="source"><a href="https://twitter.com/CharlieBull0ck/status/2080331313639264690">X: Charlie Bullock</a></span> <span class="source"><a href="https://obernolte.house.gov/media/press-releases/obernolte-trahan-introduce-bipartisan-frontier-act-strengthen-oversight">Obernolte</a></span> Obernolte/Trahan's revamp of the old GAAIA draft: creates an Under Secretary for AI Security, federalizes SB 53/RAISE-style transparency, licenses independent verification orgs, and gives Commerce <mark>emergency power to suspend development/deployment posing "imminent catastrophic risk."</mark> Preemption is now much narrower. Unusually warm reactions from Encode's Calvin, AVERI, Nat Purser and Casper (with tweaks); passing it is still a heavy lift.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 2.65m5.96 11.72a14.926 14.926 0 0 1-5.84 2.58m0 0a6 6 0 0 1-7.38-5.84h4.8m2.58-5.84a14.98 14.98 0 0 0-2.58 5.84" /></svg> Capabilities & Demos</h2>
+<ul>
+<li><span class="item-title">GPT-5.6 Sol clears Slay the Spire Ascension 5 — first known AI to do so</span>
+<span class="source"><a href="https://twitter.com/Jsevillamol/status/2080522092290969714">X: Jaime Sevilla</a></span> On Epoch's new EpochAIPlays Twitch stream, Sol went A1→A4 with no deaths and cleared A5, now attempting A6. A vivid, watchable long-horizon-agency demo.</li>
+<li><span class="item-title">Google ATLAS: 15M anonymized interactions on how AI is actually used</span>
+<span class="source"><a href="https://twitter.com/HaydnBelfield/status/2080360885629899250">X: Haydn Belfield</a></span> Adoption is <mark>broad but shallow</mark>—covers occupations = 88% of US employment, but few tasks per job. Big finding: huge household/public-sector use (navigating govt services, legal help) that GDP misses; English is only ⅓ of global conversations.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Steven Byrnes: "LLMs are (still) mostly powered by imitative learning, not RL"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/wYpjXRLqbLbnmjbJP/llms-are-still-mostly-powered-by-imitative-learning-not-rl">LessWrong</a></span> Argues capabilities come far more from pretraining/SFT than from the hot RLVR paradigm—with implications for CoT legibility and alignment. Useful counter-framing amid the RL-reward-hacking discourse.</li>
+<li><span class="item-title">Joint AISI/CAISI eval: Kimi K3 sits well below US frontier on cyber</span>
+<span class="source"><a href="https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities">CAISI</a></span> Confirms Shakeel's earlier take—K3 is a very good model but not frontier, so it "likely does not have dangerous cyber capabilities." A rare joint US/UK government assessment.</li>
+<li><span class="item-title">Scott Alexander: "The Hugging Face Incident"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/the-hugging-face-incident">ACX</a></span> A clean explainer arguing this <mark>is</mark> textbook agentic misalignment, not a mundane "just doing what it was told" story—the paperclip maximizer was also "only doing what it was told." Good CivAI-style framing; pairs with John Schulman's <a href="https://twitter.com/johnschulman2/status/2080319844952822154">call (136k views)</a> for OpenAI to release the transcripts.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Notion ships "Notion as code" (beta)</span>
+<span class="source"><a href="https://twitter.com/NotionHQ/status/2080331926670618947">X: Notion</a></span> Define an entire workspace—teamspaces, databases, custom agents—in TypeScript and deploy via API. <mark>Version-control your setup in git</mark> and reproduce it across dev/staging/prod. Interesting for anyone building repeatable Notion systems.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg> Field & EA</h2>
+<ul>
+<li><span class="item-title">Lightcone Commons launches — end-to-end philanthropy platform</span>
+<span class="source"><a href="https://twitter.com/ohabryka/status/2080365171420332117">X: Oliver Habryka</a></span> Distributing $20M+ this summer (Tallinn, Moskovitz, others), then more every 3 months. Apply for funding by Aug 23. Relevant funding infrastructure for the AI-safety/Kairos ecosystem.</li>
+<li><span class="item-title">Coefficient Giving raises 2026 GiveWell allocation to $1B (from $175M)</span>
+<span class="source"><a href="https://coefficientgiving.org/research/increasing-our-2026-allocation-to-givewells-recommendations-to-1-billion/">X: Alexander Berger</a></span> Nearly as much as they've given on GiveWell recs over the past decade+; framed as giving ambitiously now given deep uncertainty ahead.</li>
+<li><span class="item-title">Luke Muehlhauser: AI safety is "very talent bottlenecked" on mathematicians</span>
+<span class="source"><a href="https://twitter.com/lukeprog/status/2080339038112801009">X: lukeprog</a></span> Suggests mathematicians can skill up via BlueDot/MATS and move into lab/org/govt safety roles—directly on-point for Kairos-style fieldbuilding.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
