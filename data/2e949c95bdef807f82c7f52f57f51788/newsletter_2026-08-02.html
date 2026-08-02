@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Sunday, August 02, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
+.date { color: #666; margin-bottom: 8px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 26px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Sunday, August 02, 2026</h1>
+<div class="date">Sunday, August 02, 2026</div>
+<div class="intro">A day of aftershocks from Astra: Lean certificates land, a mathematician's grief essay goes to 1.2M views, and a well-known skeptic concedes a bet. Plus Karpathy's 2-hour Opus 5 demo and the EU AI Act's biggest date arrives.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> Astra: The Day After</h2>
+<ul>
+<li><span class="item-title">Update: the artifact is a 249-page manuscript plus machine-checkable Lean 4 certificates for all ten results</span>
+<span class="source"><a href="https://thenextweb.com/news/openai-astra-model-ten-math-proofs-non-sofic-groups">TNW</a></span>
+<span class="source"><a href="https://github.com/openai/ten-proofs">GitHub</a></span>
+New detail worth knowing: the headline result is the <mark>first explicit construction of a non-sofic group</mark>, open since Gromov posed it in 1999. The Lean certificates directly answer the community's main objection — anyone with the compiler can verify without trusting OpenAI. Also new sphere-packing bounds (first improvement to the general upper bound since 1978). <a href="https://x.com/polynoamial/status/2083478171975082334">Noam Brown</a>: "Sadly, no Millennium Prize Problems (yet)… but we didn't spend a lot on each problem. It's possible to push test-time compute much further."</li>
+<li><span class="item-title">Daniel Litt concedes his 2025 bet: "it's clear I was wrong about what capabilities were necessary"</span>
+<span class="source"><a href="https://x.com/littmath/status/2083733224027500584">X: Daniel Litt</a></span>
+The most credible mathematician-skeptic on AI math formally folds — strictly the bet (an Annals-quality number theory paper) hasn't resolved, but he now thinks it's just a matter of time. Probably the single most informative update of the day.</li>
+<li><span class="item-title">Given the raw list of solved problems, Fable guesses it was written as fiction about superhuman AI</span>
+<span class="source"><a href="https://x.com/1a3orn/status/2083569998656950322">X: 1a3orn</a></span>
+Dean Ball's read: <a href="https://x.com/deanwball/status/2083893675562619102">models systematically underestimate their own capabilities</a> because they're trained on web text about what ChatGPT could do in 2023/24. Nice small demo of eval-awareness / self-model failure.</li>
+<li><span class="item-title">"The Dark Night of Mathematics" — a mathematician's grief essay</span>
+<span class="source"><a href="https://kirwinhampshire.substack.com/p/the-dark-night-of-mathematics">Kirwin Hampshire</a></span>
+<span class="source"><a href="https://x.com/ryan_t_lowe/status/2083607404969640080">X: Ryan Lowe</a></span>
+Argues the loss isn't jobs but access to the sublime: "a channel through which humans have accessed the ineffable… is being sealed for eternity." Lowe's share is at 1.2M views; a working mathematician <a href="https://x.com/nasqret/status/2083765931986272591">replied with the five stages of grief</a>. Useful for thinking about how this lands emotionally with non-safety audiences.</li>
+<li><span class="item-title">The skeptical counterweight: does any of it matter?</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2083650498406830516">X: Miles Brundage</a></span>
+<span class="source"><a href="https://x.com/NateSilver538/status/2083754199439835277">X: Nate Silver</a></span>
+Brundage: "AI might kill everyone, but in the meantime we're going to have some really great proofs of upper bounds for spherical codes" — he'd rather labs concentrate effort on <a href="https://www.rand.org/pubs/commentary/2026/02/tipping-the-cyber-balance-how-ai-benchmarks-could-make.html">verifiably secure software</a>. Silver asks what the same budget spent on incentivized human mathematicians would have produced, and notes these results are among the hardest things for normies to appreciate. Counter from <a href="https://x.com/kevinroose/status/2083632335438905441">Kevin Roose</a>: "almost nobody is pricing in the possibility that the models just keep plowing through every discipline."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Demos & Capabilities</h2>
+<ul>
+<li><span class="item-title">Karpathy: give Opus 5 the first paragraph of LotR, a 1M-token budget (~$10), and it writes 5,500 lines of three.js over 2 hours</span>
+<span class="source"><a href="https://x.com/karpathy/status/2083749667410727319">X: Andrej Karpathy</a></span>
+It procedurally renders the story — placing polygon assets in (x,y,z) and animating them. His framing is the interesting bit: <mark>we're leaving the era of "SVG of a pelican on a bicycle" evals</mark>, and this is a class of thing where "no one would ever do this" became "sure, why not, it's ~free." He also names a real remaining weakness: models can't perceive video or play games natively, so Opus had to painstakingly screenshot to audit its own work.</li>
+<li><span class="item-title">Miles Brundage: recent models produce "borderline unreadable" outputs</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2083748712497705431">X: Miles Brundage</a></span>
+His hypothesis: current reward models heavily reward completeness, not human readability (the "Fablish" jokes). Dylan Hadfield-Menell's <a href="https://x.com/dhadfieldmenell/status/2083756086281015695">sharper version</a>: maybe reconsider RLAIF/RLVR as the primary post-training tools — "step 2: replace the humans with LLM-as-a-judge; step 3: ???????; step 4: aligned AGI."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> Safety Discourse</h2>
+<ul>
+<li><span class="item-title">Soares & Ladish on the containment failures: "the world is derpy and will fumble its way into disaster"</span>
+<span class="source"><a href="https://x.com/So8res/status/2083649340157947986">X: Nate Soares</a></span>
+<span class="source"><a href="https://x.com/JeffLadish/status/2083721170420121908">X: Jeffrey Ladish</a></span>
+Soares: the labs weren't insincere about monitoring — they just didn't know in advance what to monitor or how, and "it's actually hard *not* to fumble your way into disaster when you're operating in a new domain for the first time." Ladish agrees and adds: <mark>no one has ever had to design containment for a general intelligence that's smart in ways we aren't and getting smarter fast</mark>. Related: Peter Wildeford on <a href="https://x.com/peterwildeford/status/2083560785293238779">why "rogue AI is a marketing stunt" cynicism made him understand <em>Don't Look Up</em></a>.</li>
+<li><span class="item-title">Rep. Trahan on the second escape: "This isn't a fire drill"</span>
+<span class="source"><a href="https://x.com/RepLoriTrahan/status/2083570291322597768">X: Rep. Lori Trahan</a></span>
+Wants oversight hearings when Congress returns plus passage of the FRONTIER Act. Also worth noting: <a href="https://x.com/gabriel_weil/status/2083655564010414539">Gabriel Weil's</a> pointed question — if OpenAI's own sandbox couldn't contain 5.6 Sol with guardrails loosened, what's the case that the rest of the world can be hardened?</li>
+<li><span class="item-title">Proposal: the UK should bet on AI verification technologies</span>
+<span class="source"><a href="https://tomsmilton.substack.com/p/the-uks-next-ai-bet-should-be">Tom Smilton</a></span>
+Argues verification (hardware attestation, compute accounting, proof-of-training) is an open goal for the new Burnham government and the missing technical substrate for any pacing/international agreement. Endorsed by <a href="https://x.com/ShakeelHashim/status/2083888276172099635">Shakeel Hashim</a> ("agree with basically everything") and Haydn Belfield.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582"/></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Today is the EU AI Act's biggest date: the remainder of the Act applies, and the AI Office + member states take over enforcement</span>
+<span class="source"><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European Commission</a></span>
+<span class="source"><a href="https://artificialintelligenceact.eu/implementation-timeline/">AI Act timeline</a></span>
+From Aug 2, 2026: <mark>Article 50 transparency duties (chatbot disclosure, synthetic-content labeling) become enforceable</mark>, high-risk Chapter III obligations bite, and every member state must have stood up at least one regulatory sandbox. Penalties up to €15M/3% of global turnover for high-risk non-compliance. Pairs with Brundage's <a href="https://x.com/Miles_Brundage/status/2083536560407130391">note last week</a> that at this rate the AI Act will soon look light-touch.</li>
+<li><span class="item-title">Astra is expected to be the first model to go through the new US pre-release framework</span>
+<span class="source"><a href="https://the-decoder.com/openai-announces-its-next-major-model-astra-by-dropping-ten-previously-unsolved-math-solutions/">The Decoder</a></span>
+Per The Information, Astra models are already in testing and would be the first submitted to the federal government under the June executive order's voluntary early-access framework. No release date; undecided whether it ships as GPT-6 or GPT-5.7.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342"/></svg> Field & Notes</h2>
+<ul>
+<li><span class="item-title">SPAR project recruiting: evals for the neglected parts of the AI R&D stack</span>
+<span class="source"><a href="https://x.com/prakrattt/status/2083410584364789973">X: Prakhar</a></span>
+Mentored project on building evals for <em>analyzing experiments</em> and <em>communicating findings</em> — the bits missing from most automated-AI-R&D measurement. Applications close Aug 18; worth signal-boosting into your channels.</li>
+<li><span class="item-title">ARIA plans a physical "agentic economic zone" where AI agents trade and coordinate autonomously</span>
+<span class="source"><a href="https://x.com/iamnotnicola/status/2083580129876299791">X: Nicola</a></span>
+<span class="source"><a href="https://nicola.io/agentic-economic-zone/2026">Details</a></span>
+Registration of interest just opened for early testers and partners. Strange and CivAI-shaped: a sandbox for agent-to-agent commerce with real contracts and deliveries.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Local & World</h2>
+<ul>
+<li><span class="item-title">Triple-digit heat across the East Bay through today</span>
+<span class="source"><a href="https://www.facebook.com/AlamedaCountyFire/posts/%EF%B8%8F-triple-digit-temperatures-are-expected-throughout-the-east-bay-from-saturday-a/1504490975041636/">Alameda County Fire</a></span>
+Advisory in effect Aug 1–2; a longer, more severe statewide heat wave is <a href="https://www.sfchronicle.com/weather-forecast/article/california-heat-wave-timeline-22361886.php">forecast for Aug 5–8</a>. No Bay Area air-quality alert today.</li>
+<li><span class="item-title">Trump cancels planned Iran strikes, contingent on a deal being made "rapidly"</span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/cjwx74qgld2o">BBC</a></span>
+Says regional governments asked Washington to hold off because the "perimeters" of a deal had been agreed.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
