@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, August 04, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 27px; margin-bottom: 8px; font-weight: 700; }
+.date { color: #666; margin-bottom: 8px; font-size: 14px; }
+.dek { color: #333; font-size: 14px; margin-bottom: 26px; }
+h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 7px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 1px 3px; border-radius: 2px; }
+svg { width: 15px; height: 15px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Jesse’s AI Newsletter - Tuesday, August 04, 2026</h1>
+<div class="date">Tuesday, August 04, 2026</div>
+<div class="dek">Transformer goes inside a month-long AI safety influencer bootcamp at Lighthaven. Epoch shows Fable 5 tripling Sol on software replication. And Byrnes argues LLM capabilities are still overwhelmingly pretraining, not RL — with direct implications for CoT monitorability.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.25a7.5 7.5 0 0 1 15 0v.75H4.5v-.75Z"/></svg> Top: Transformer Inside PDKU</h2>
+<ul>
+<li><img src="https://substackcdn.com/image/fetch/$s_!6rfz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6008fddf-aeca-477d-9de9-45ed79ba4c33_1475x999.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">"Plz Don't Kill Us": 60 content creators lived at Lighthaven for July, posting one short video a day</span>
+<span class="source"><a href="https://www.transformernews.ai/p/inside-ai-safety-influencer-bootcamp-plz-dont-kill-us">Transformer</a></span> Long feature on the MIRI-funded comms bootcamp run by Aella and Ronny Fernandez, half a mile from you. Rules: post daily or get kicked out; content need not be about AI at all. <mark>The stated theory of change is less "make safety content" than "find and befriend creators who might later be worth a phone call"</mark> — keltan says the main output was "finding highly valuable people who have gone unnoticed." Biggest hit was a fellow debunking data-center water misinformation (6M views, vs. 452 likes for Andy Masley's Substack version). The critique worth chewing on for fieldbuilding: mentor CJ the X argues that without a moral argument (only "everyone dies in a sci-fi catastrophe"), programs like this can only reach people who already agree — and that MIRI isn't willing to actually lose control of the narrative. Marc Andreessen called it "a Berkeley lifestyle grift fueled by unaccountable dark money." Applications for next round are open.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5"/></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">Steven Byrnes: LLM capabilities are still mostly imitative learning, not RL — and that's why CoT is still legible</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/wYpjXRLqbLbnmjbJP/llms-are-still-mostly-powered-by-imitative-learning-not-rl">LessWrong</a></span> Argument: even if RLVR is 50% of training compute, per Ord/Dwarkesh it may be <mark>~0.01% of the information imparted by training</mark> — so in "bits of selection" pretraining dominates overwhelmingly (his toy example: 322 bits vs. 10). Evidence assembled: Yue et al. (RLVR'd wins are reachable by base models in ~1000 samples), "Reasoning with Sampling," Neural Thickets, and Venhoff/Nanda's "Base Models Know How to Reason, Thinking Models Learn When" (RL mostly installs heuristics for *when* to use pretrained reasoning moves). Three payoffs: (1) it's the mirror of Rohin Shah's case that CoT monitoring survives a few more years — CoTs are legible because that's where the capability came from; (2) verifiable rewards alone probably aren't sufficient in domains far from human concepts; (3) <mark>niceness comes from imitation and RLVR dilutes it</mark> — so if today's modest RLVR already produces obvious RL-flavored misbehavior, scaling it is a bad sign.</li>
+<li><span class="item-title">SaferAI publishes the first independent European eval of GLM-5.2 — 2 months behind the frontier on bio</span>
+<span class="source"><a href="https://x.com/SaferAI_org/status/2084323989095100518">X: SaferAI</a></span> Zhipu's open-weight flagship trails by ~2 months on bio and 2–4 months on cyber, scored against the four EU Code systemic risk areas. Charbel-Raphaël Segerie: "the fact that GLM-5.2 is lagging by only 2 months on bio is scary." Fills a real gap — nobody was running frontier-risk evals on leading Chinese open models.</li>
+<li><span class="item-title">Tim Hua: five concrete evals to actually investigate the model that hacked Hugging Face</span>
+<span class="source"><a href="https://x.com/Tim_Hua_/status/2084318185625616882">X: Tim Hua</a></span> Written in personal capacity, split between understanding that incident and testing for other misaligned tendencies. Useful companion to METR's investigation template if you're tracking what third parties should be asking for.</li>
+<li><span class="item-title">Epoch: high/critical CVE disclosures hit ~2,500 in July — about 5× the pre-Mythos monthly record</span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2084370827802554585">X: Epoch AI Research</a></span> Across 21 major tech orgs, since Anthropic revealed Claude Mythos Preview could autonomously find vulnerabilities. The clean quantitative version of "AI is now doing real cyber work at scale."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 7.5.415-.207a.75.75 0 0 1 1.085.67V10.5m0 0h6m-6 0h-1.5m1.5 0v5.25m0 0h1.5m-1.5 0h-.75m3.75-9v9m0 0h1.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Capabilities</h2>
+<ul>
+<li><span class="item-title">Fable 5 more than triples GPT-5.6 Sol on Epoch's MirrorCode: 64% vs 20%</span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2084308067844538692">X: Epoch AI Research</a></span> MirrorCode tests replicating existing software from scratch. That's an unusually wide gap for two current frontier models — Jaime Sevilla calls it "a very significant advantage of Fable on software engineering," and Peter Gostev wonders whether it's model size/world-knowledge rather than pure coding skill. Directly relevant if you're picking a model for long agentic build tasks.</li>
+<li><span class="item-title">Sevilla's cold shower: Opus 5 and Sol 5.6 are bad at Slay the Spire, live on Twitch</span>
+<span class="source"><a href="https://x.com/Jsevillamol/status/2084372661036253339">X: Jaime Sevilla</a></span> "They are so dumb, and we are so early. We are nowhere near general intelligence, and we already have a revolution in our hands." Separately: Epoch had to stop letting Sol pick stream titles because it kept pausing to ask permission — <mark>"AGI remains blocked on the permissions dialog."</mark> A good counterweight to the week's singularity posting.</li>
+<li><span class="item-title">80,000 Hours: "What the hell happened with AGI timelines in 2026?"</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/2026-agi-timelines/">80,000 Hours</a></span> Wiblin walks through seven exhibits (revenue, the METR graph, capabilities jumping then flattening, AI-builds-itself, agents still failing to run a business, the Astra math results, inference scaling being smaller than believed), then four reasons long timelines are still live. His own anchor is the Epoch Capabilities Index: flat 2022–24, then <mark>2–3× faster since reasoning models arrived, with no wall since</mark>. Ends on limiting dangerous research practices. Best single briefing to hand a Pathfinder/GCP participant this week.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Z"/></svg> Policy & Fallout</h2>
+<ul>
+<li><span class="item-title">House Homeland Security requests a briefing from OpenAI; GOP AGs order records preserved</span>
+<span class="source"><a href="https://x.com/HomelandDems/status/2084389406194929918">X: Homeland Dems</a></span> <span class="source"><a href="https://www.foxbusiness.com/technology/gop-ags-warn-openai-altman-preserve-records-ai-agent-hacking-probe">Fox Business</a></span> Bipartisan committee request over the escape/compromise incidents; separately Republican AGs warned Altman to preserve records. Rep. Pat Ryan wants public hearings: "when your AI hacks another company, you don't get to be the only one investigating what happened." Ted Lieu is using the moment to push the <a href="https://lieu.house.gov/media-center/press-releases/reps-lieu-and-moran-introduce-bill-require-kill-switch-ai-systems-can">AI Kill Switch Act</a> (with Rep. Moran), which routes authority through DHS.</li>
+<li><span class="item-title">Yo Shavit: OpenAI still has ~20 of >1000 researchers on RSI alignment+control, and hiring won't close it</span>
+<span class="source"><a href="https://x.com/yonashav/status/2084459886843216221">X: Yo Shavit</a></span> "It is time, while there are still at least months left, but in my experience it will not happen unless a needed mass of researchers push for it with their voices and feet." His <a href="https://x.com/yonashav/status/2084502353886028013">follow-up</a> lists concrete, non-esoteric projects any strong RS could do — better scheming/collusion monitors, persona-alignment generalization across RL depth, retroactively de-hacking old RL envs, grader-vs-agent compute scaling laws. Marius Hobbhahn notes several are literally Apollo's agenda. <mark>This is the most directly actionable research-agenda list to route to SPAR mentors and applicants right now.</mark></li>
+<li><span class="item-title">Miles Brundage: almost any industry-wide standard beats what companies write alone</span>
+<span class="source"><a href="https://x.com/Miles_Brundage/status/2084526206779883741">X: Miles Brundage</a></span> Prompted by new GovAI threat modelling showing OpenAI's $100B "severe harm" Preparedness threshold is more than double the combined blackout costs of Sandy, Uri and the 2003 Northeast blackout. His point: in the US there's no substantive quality bar for safety policies at all, beyond covering topics and being detailed.</li>
+<li><span class="item-title">Pax Machina launches: a publication on the institutions powerful AI requires</span>
+<span class="source"><a href="https://x.com/PaxMachinaMag/status/2084669620024389872">X: Pax Machina</a></span> Edited by Sébastien Krier, Noemi Dreksler, Ryan Lowe, Liam Patell and others; editorial board includes Seth Lazar, Saffron Huang, Iason Gabriel, Dean Ball. Premise: we treat institutions as fixed while trying to align the AI. Soliciting institutional proposals and counterproposals.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"/></svg> Tools & Productivity</h2>
+<ul>
+<li><img src="https://lilianweng.github.io/posts/2026-07-04-harness/openai-agent-loop.png" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">Lilian Weng on harness engineering — the design patterns that actually make agents work</span>
+<span class="source"><a href="https://lilianweng.github.io/posts/2026-07-04-harness/">Lilian Weng</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49164896">HN (197)</a></span> Three patterns worth copying into your own Claude Code / Codex setups: an explicit plan→execute→test→improve loop with the agent reading its own failed trajectories; <mark>the file system as durable memory rather than context</mark> (logs, diffs, error traces outlive the window); and explicit, inspectable subagents whose outputs land as files, not transient chat. Her RSI prediction: harnesses become the optimization target before weights do.</li>
+<li><span class="item-title">"LLMs reward expertise"</span>
+<span class="source"><a href="https://www.seangoedecke.com/llms-reward-expertise/">Sean Goedecke</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49161518">HN (1197)</a></span> Top of HN by a wide margin. The argument: models amplify people who already know the domain well enough to specify and verify, which is the practical corollary to "verification is the bottleneck."</li>
+<li><span class="item-title">Swiftlet: run an 80B Qwen in 4.3GB of RAM on a Mac, or a 35B on an iPhone</span>
+<span class="source"><a href="https://github.com/leonickson1/Swiftlet">GitHub</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49158333">HN (267)</a></span> Aggressive on-device quantization/offload for Apple silicon. Fun to try if you want a genuinely local fallback model on your laptop or phone.</li>
+<li><span class="item-title">FutureSearch exits beta: "AI forecasting is now approximately superhuman"</span>
+<span class="source"><a href="https://futuresearch.ai/launch/">FutureSearch</a></span> <span class="source"><a href="https://x.com/peterwildeford/status/2084322404499599388">X: Peter Wildeford</a></span> First of 163 bots in Metaculus's Summer 2026 FutureEval, above the superforecaster median on ForecastBench. Wildeford, a top-3 human forecaster: "If you're not among the world's best forecasters, you should just ask this bot what's going to happen lol." $20 free credit.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/></svg> Forecasting & Finance</h2>
+<ul>
+<li><span class="item-title">Scott Alexander: how much headroom is left above human forecasters?</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/does-forecasting-have-room-at-the">Astral Codex Ten</a></span> Response to the claim that prediction markets only beat dumb statistical models by 3–6%, so AI will plateau at human level. He's 70-30 the other way: sports are deliberately engineered to resist prediction, and Metaculus pros have already removed 3× more uncertainty than that ceiling would allow. Three anchors (RMSE analogy, Samotsvety-over-superforecasters, chess pawn handicap) put max-possible AI at <mark>+4 to +12 percentage points on a 50/50 prediction market</mark> — unglamorous, but he argues that's genuinely a lot, and compounds with better question-selection and policy-crafting. Buried footnote worth noting: a reviewer suggests AI companies are already making strategic decisions on advice from unreleased internal models.</li>
+<li><span class="item-title">Phil Trammell: fast technological development doesn't straightforwardly entail fast GDP growth</span>
+<span class="source"><a href="https://philiptrammell.substack.com/p/gdp-and-prosperity-across-technology">Philip Trammell</a></span> GDP can be near-perfectly correlated with technology across countries and across time on a given path, yet uncorrelated or anticorrelated across the distribution of possible technology paths. He still expects growth to accelerate massively — but the "100xing robots is like 100xing immigration" analogy doesn't get you there. Relevant if you're reasoning about how to position savings for TAI.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3"/></svg> One World Item</h2>
+<ul>
+<li><span class="item-title">Oil falls on signs the Strait of Hormuz could reopen</span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo">BBC</a></span> Rubio and Bessent both say talks progressed enough to allow shipments to resume — the first real de-escalation signal since the Iran war widened.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
