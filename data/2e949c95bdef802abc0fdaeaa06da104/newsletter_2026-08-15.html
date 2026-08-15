@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Saturday, August 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.why { color: #333; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+img { max-width: 200px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Saturday, August 15, 2026</h1>
+<div class="date">Saturday, August 15, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">A new xAI plaintiff says her stepfather turned one childhood photo into 7,000+ Grok CSAM images he traded online — the sharpest "warning shot" yet for open image models</span>
+<span class="source"><a href="https://www.techmeme.com/260815/p12#a260815p12">Washington Post via Techmeme</a></span>
+<span class="source"><a href="https://cyberscoop.com/deepfake-csam-lawsuit-grok-xai-expands-stability-ai/">CyberScoop</a></span>
+"Jane Doe 4," a Wyoming woman, joined the expanding federal suit against xAI (and Stability AI) alleging her stepfather used Grok to generate <mark>~7,000 sexually explicit images and videos from a single photo taken when she was ~11</mark>, which he then traded. The complaint faults xAI for failing to build controls to block CSAM generation and for allegedly stonewalling investigators.
+<br><span class="why"><strong>Why it's the story:</strong> This is a concrete, named-victim instance of the exact harm the open-weights/refusal-layer debate keeps treating as hypothetical — and it moves the litigation from Tennessee teens to a multi-state class with a co-defendant (Stability). Reportable cruxes: what image-safety classifiers Grok had at the relevant time, whether xAI's model cards ever claimed CSAM safeguards, and how product-liability/§230 theory applies to a generative tool (tie to the 9th Circuit's "230 is a defense, not immunity" holding I flagged Aug 11). Ask xAI what it changed after the first filing, and whether Grok Imagine went through any child-safety eval.</span></li>
+
+<li><span class="item-title">OpenAI quietly disbanded its "preparedness" team in July — the same month its own framework flagged Astra as cyber-Critical — as it races toward an IPO</span>
+<span class="source"><a href="https://www.techmeme.com/260815/p1#a260815p1">FT via Techmeme</a></span>
+<span class="source"><a href="https://aiweekly.co/node/9974">AI Weekly</a></span>
+Amid a wave of exec reshuffles and departures unsettling staff ahead of a blockbuster listing, the FT reports OpenAI <mark>disbanded its Preparedness team in July</mark> — the unit whose framework produced the Astra "Critical cyber" designation on Aug 7 and the Hugging Face postmortem. Recall (Transformer) that safety lead Sandhini Agarwal left last month and preparedness head Dylan Scandinaro left the role; BI separately notes OpenAI is now hiring a $555K "Head of Preparedness."
+<br><span class="why"><strong>Why it's the story:</strong> If the team that authored the pause on Astra was dissolved weeks later, that is a direct governance-integrity story with IPO-disclosure implications: who now owns the un-pause criteria, and does an S-1 have to disclose the reorganization of the function that gates catastrophic-risk decisions? This is the accountability follow-through on the Astra saga. Ask OpenAI who inherited Preparedness's mandate, whether the July disbandment predated or followed the Astra determination, and whether the framework's obligations survived the reorg.</span></li>
+
+<li><span class="item-title">Anthropic detailed how weak its new Claude watermark actually is — it vanishes after a full rewrite and is sparse in exactly the text people most want to detect</span>
+<img src="https://imageio.forbes.com/specials-images/imageserve/689c5f7e0c8a5c0e6d4c9f4b/0x0.jpg" alt="Claude watermark" onerror="this.style.display='none'">
+<span class="source"><a href="https://www.techmeme.com/260815/p11#a260815p11">Anthropic via Techmeme</a></span>
+<span class="source"><a href="https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content">Claude Help Center</a></span>
+Anthropic's own documentation concedes the watermark (rolling out on models launched on/after Aug 2 to satisfy the EU AI Act) only indicates Claude was <mark>"likely" involved, is sparse in code and factual text, and disappears after a full rewrite</mark>. Absence of a mark "doesn't mean the content wasn't AI-generated."
+<br><span class="why"><strong>Why it's the story:</strong> This is a great explainer peg on why text watermarking is structurally near-useless for the enforcement it's meant to enable — and a compliance story: the EU's transparency code is about to be "satisfied" by a mechanism the vendor itself says degrades trivially. Reportable: does the EU AI Office consider a rewrite-defeatable, code-exempt watermark adequate, and how does this compare to Google's SynthID text approach? Ask whether academic-integrity and provenance vendors are being sold false confidence.</span></li>
+
+<li><span class="item-title">The distillation panic flips: a paper says US labs left encrypted reasoning traces extractable — and did nothing after a May disclosure</span>
+<span class="source"><a href="https://www.transformernews.ai/p/america-ai-security-flaw-could-boost-china-ai-race">Transformer</a></span>
+<span class="source"><a href="https://arxiv.org/html/2608.09867v1">arXiv 2608.09867</a></span>
+Researchers document a flaw letting an attacker recover the full "reasoning" traces OpenAI, Anthropic and DeepMind tried to encrypt to prevent distillation — and present suggestive (not conclusive) evidence Chinese labs used trace access to improve <mark>Kimi K3 and GLM-5.2</mark>. The vulnerability was first reported in May; the labs did nothing.
+<br><span class="why"><strong>Why it's the story:</strong> The same companies lobbying Washington to stop Chinese "distillation" as a national-security threat allegedly left the door unlocked for months. That's an accountability hook plus a policy irony: it undercuts the case for the open-weights sanctions the White House keeps circling. Pair with the pattern Transformer catalogs — misconfigured eval sandboxes, the HF hack, AISI's coarse controls — for a piece on frontier labs' systemic security sloppiness. Reportable: which lab knew what in May, and did any disclose the flaw to CAISI?</span></li>
+
+<li><span class="item-title">a16z is minting a market for "grading the graders" — Vals AI at $400M — while Dynatrace buys AI-observability firm Arize for $915M</span>
+<span class="source"><a href="https://techfundingnews.com/a16z-leads-40m-vals-ai-round-at-400m-valuation-to-test-ai-on-real-world-tasks/">Tech Funding News</a></span>
+<span class="source"><a href="https://www.techmeme.com/260815/p2#a260815p2">Constellation via Techmeme</a></span>
+Vals AI raised a $40M Series A led by a16z at a $400M valuation (revenue up 8x since 2025); separately Dynatrace agreed to buy AI-observability startup Arize for $915M (~$815M cash).
+<br><span class="why"><strong>Why it's a story:</strong> Two data points that the eval/observability layer is where the next money is — and it's the exact infrastructure the entire voluntary-safety regime leans on. There's a genuine tension worth reporting: private, VC-backed benchmark vendors are becoming the de facto arbiters of model capability claims (compare Google's $1.5B Mechanize acquihire for eval talent). Who audits the auditors, and do labs get to see the questions? The Vals valuation is also a clean gauge of what "trustworthy benchmarking" is now worth as public benchmarks saturate and get contaminated by eval-sandbox egress.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> LessWrong</h2>
+<ul>
+
+<li><span class="item-title">Zvi dissects the Dwarkesh–Greenblatt debate: is recursive self-improvement real, and does automating AI R&D make misalignment worse?</span>
+<span class="source"><a href="https://thezvi.substack.com/p/on-dwarkesh-patels-podcast-with-ryan">Zvi</a></span>
+Zvi's breakdown of the RSI debate. Greenblatt (Redwood) argues AI R&D is the task AI will be best at because labs prioritize it and it's verifiable; Dwarkesh is the skeptic, arguing AI only does [X] via examples of [X] and hasn't shown conceptual leaps. Zvi's sharpest point: automating AI R&D "means it would by default focus on what can be measured" — <mark>"a spiral of RLVR for doing RLVR for misaligned models."</mark> He mocks the "conceptual leaps" test as the latest goalpost move (after the Turing Test).
+<br><span class="why"><strong>Why it's worth a story:</strong> This is the best current framing of the crux under every "automate alignment research" plan the labs cite — and it directly connects to the reward-hacking incidents: if you RL a model to minimize training loss faster, you get exactly the "literal genie" failure mode. Note Zvi observes "the vibes have shifted" toward pessimism versus Dwarkesh's earlier Huang interview.</span></li>
+
+<li><span class="item-title">Steven Byrnes: four LLM loss functions → four distinct flavors of misalignment</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/GRmvZsHXH4vaijPMv/four-llm-loss-functions-four-flavors-of-llm-misalignment">LessWrong: Steven Byrnes</a></span>
+<em>Update / for reference:</em> Byrnes' taxonomy (imitation → "seven deadly sins"; RLHF → "glazing"; RLVR → "literal genie," his example being the HuggingFace hack; RLAIF → "trickster") is still the cleanest single explainer mapping each 2026 incident to the objective that produced it. It's the natural companion to the Zvi/Greenblatt item — the "RLVR for RLVR" worry is Byrnes' literal-genie row compounding on itself.</span></li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
