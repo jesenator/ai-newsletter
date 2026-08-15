@@ -96,6 +96,7 @@ async def main():
   print_overview(newsletters, args.send_email, args.test)
   
   skip_cadence = args.just or args.test
+  failed = []
   for newsletter_config in newsletters:
     if not skip_cadence and not should_run_today(newsletter_config.cadence):
       msg = f"Skipping {newsletter_config.name} ({newsletter_config.cadence} cadence, not scheduled today)"
@@ -109,12 +110,14 @@ async def main():
     except Exception as e:
       log_error(f"Generation failed for {newsletter_config.name}", e)
       print(f"\nERROR: Generation failed for {newsletter_config.name}: {e}")
+      failed.append(newsletter_config.name)
       continue
-    
+
     if not content:
       msg = f"No content generated for {newsletter_config.name}"
       print(f"\nERROR: {msg}")
       log_error(msg)
+      failed.append(newsletter_config.name)
       continue
 
     content = clean_html_output(content)
@@ -146,6 +149,8 @@ async def main():
           else:
             print(f"Failed to send email to {email}")
             log_email(email, False, "send_email returned False")
+            if newsletter_config.name not in failed:
+              failed.append(newsletter_config.name)
     
     # Update the log in Notion
     log_entry = format_log_entry(sent_emails if args.send_email else [], cost=cost)
@@ -154,6 +159,10 @@ async def main():
     log_info(f"Updated Notion log for {newsletter_config.name}: {log_entry}")
   
   log_run_end()
+
+  if failed:
+    print(f"\nERROR: {len(failed)} newsletter(s) failed: {', '.join(failed)}")
+    sys.exit(1)
 
 
 if __name__ == "__main__":
