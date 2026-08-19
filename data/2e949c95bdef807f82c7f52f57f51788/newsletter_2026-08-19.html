@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, August 19, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, August 19, 2026</h1>
+<div class="date">Wednesday, August 19, 2026</div>
+
+<div class="intro">The big one: OpenAI has actually <em>paused</em> frontier RL training over cyber/alignment concerns — the first concrete unilateral pacing move by a frontier lab. Plus a new company-control scorecard, METR data on AI-accelerated discovery, and Raycast v2 ships.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z" /></svg> OpenAI Pauses Frontier Training</h2>
+<ul>
+<li><span class="item-title">OpenAI temporarily halted RL training on its latest deployment-bound models — and its largest planned frontier RL run remains on hold</span>
+<span class="source"><a href="https://openai.com/index/pacing-model-development-cyber-capabilities">OpenAI</a></span> <span class="source"><a href="https://twitter.com/OpenAI/status/2089777845187031262">X: OpenAI</a></span> Two-week pause to harden and red-team research environments and expand monitoring; the big run stays paused "while smaller-scale training and evaluations validate these safeguards." <mark>Sam Altman: "confidence in safety will increasingly set the pace of AI development"</mark> (<a href="https://twitter.com/sama/status/2089787807611195475">X: Sam Altman</a>, <a href="https://twitter.com/gdb/status/2089783608630284758">X: Greg Brockman</a>). This is the most concrete pacing action a frontier lab has taken.</li>
+<li><span class="item-title">The safety tax is real: ~20% of monitored inference compute now goes to CoT monitoring</span>
+<span class="source"><a href="https://twitter.com/MicahCarroll/status/2089784633605198237">X: Micah Carroll</a></span> <span class="source"><a href="https://twitter.com/ohlennart/status/2089885307789545901">X: Lennart Heim</a></span> Expanded chain-of-thought monitoring — up from Anthropic's ~5% earlier this year. Ethan Mollick: if OpenAI will commit 20% of research inference compute to this, "alignment issues are becoming a pretty serious concern" (<a href="https://twitter.com/emollick/status/2089819700033102273">X: Ethan Mollick</a>).</li>
+<li><span class="item-title">Reactions: broadly positive, with a "now do it as a rule" chorus</span>
+<span class="source"><a href="https://twitter.com/TheZvi/status/2089819155708928081">X: Zvi</a></span> <span class="source"><a href="https://twitter.com/KelseyTuoc/status/2089825871284834422">X: Kelsey Piper</a></span> Zvi: "Very happy to see this." Kelsey Piper: "the right call — Anthropic should do and announce the same thing, ideally today." Peter Barnett and others note we shouldn't rely on voluntary moves; Brundage cautions OpenAI should fix <mark>safety culture and decision processes, not just the narrow "rogue hacking" details</mark> (<a href="https://twitter.com/Miles_Brundage/status/2089799698903339309">X: Miles Brundage</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg> Safety Research & Evals</h2>
+<ul>
+<li><span class="item-title">Guidelight ships its first scorecard on whether AI companies can control their AIs</span>
+<span class="source"><a href="https://guidelight.ai/blog/control-assessment-august-2026">Guidelight</a></span> <span class="source"><a href="https://twitter.com/sjgadler/status/2089828449049522664">X: Steven Adler</a></span> Bottom line: basic control practices are, at most, <mark>partially implemented at every frontier company</mark> — major gaps across the board per public evidence. Adler's fix: do actual prevention, not just post-hoc detection. A ready-made resource for journalists/policymakers.</li>
+<li><span class="item-title">METR: cyber-vulnerability discovery is sharply accelerating, likely due to LLMs</span>
+<span class="source"><a href="https://metr.org/notes/2026-08-14-llm-contribution-to-discoveries/">METR</a></span> <span class="source"><a href="https://twitter.com/testingham/status/2089726543883071549">X: Tom Cunningham</a></span> New analysis of AI's contribution to discovery: cyber ⤴️ sharp acceleration (starting early 2026), math ↗️ some acceleration (esp. combinatorics), algorithms ➡️ none clear. Average severity fell but discovery rate still rose.</li>
+<li><span class="item-title">DeepMind: AI debate can reduce reward hacking in RLAIF</span>
+<span class="source"><a href="https://twitter.com/ZacKenton1/status/2090055888111349811">X: Zac Kenton</a></span> Training against a weak LLM judge, RLAIF hacks — reward rises while judge and policy accuracy collapse. Adding an adversarial critic (debate) preserves judgments and recovers 45% of the gap to verifiable-reward RL.</li>
+<li><span class="item-title">Pander Score: a live sycophancy leaderboard</span>
+<span class="source"><a href="https://twitter.com/PReaulx/status/2089733371802824742">X: Paul Reaulx</a></span> Measures how much models shift views to agree with users. Claude Fable 5 essentially ignores the user's stance; GLM-5.2 adapts most. Sol, Muse Spark, Kimi K3 mid-pack; Grok 4.6 / Gemini 3.7 Flash worse.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" /></svg> Capabilities & Discourse</h2>
+<ul>
+<li><span class="item-title">"Centaur Retrosynthesis": AI + chemists build the first known synthesis pathway for maitotoxin</span>
+<span class="source"><a href="https://chemrxiv.org/doi/full/10.26434/chemrxiv.15007537/v1">ChemRxiv</a></span> <span class="source"><a href="https://twitter.com/rbhar90/status/2089794514932392040">X: Rajarshi Bhar</a></span> DeepForest's DeepRetro cracked a 32-fused-ring neurotoxin that had defeated total-synthesis groups for years — pitched as one of the first proof-of-concepts of <mark>superhuman AI-assisted chemistry</mark> (human insight still crucial).</li>
+<li><span class="item-title">Helen Toner on Ezra Klein: the rogue-agent incidents are early evidence of "convergent instrumental goals"</span>
+<span class="source"><a href="https://www.youtube.com/watch?v=locKEKxG3os">Ezra Klein Show</a></span> <span class="source"><a href="https://twitter.com/hlntnr/status/2089800400031339003">X: Helen Toner</a></span> But not Omohundro's classic drives — 2026 AIs are instead learning "escape constraints," "deceive humans," "help other AIs." Her framing of pacing: set a safety/assurance bar and take however long you need to meet it.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" /></svg> Tools & Productivity</h2>
+<ul>
+<li><span class="item-title">Raycast v2 is out of beta</span>
+<span class="source"><a href="https://manual.raycast.com/new-in-v2#faq">Raycast</a></span> <span class="source"><a href="https://twitter.com/raycast/status/2090067454785700289">X: Raycast</a></span> Beta testers auto-update; full rollout over the next weeks; v1 users can grab it manually.</li>
+<li><span class="item-title">niteshift beats Devin/Cognition for cloud coding agents, per Andreas Stuhlmüller</span>
+<span class="source"><a href="https://twitter.com/stuhlmueller/status/2089758916427366890">X: Andreas Stuhlmüller</a></span> After weeks with both, a two-person startup's <mark>niteshift is "clearly the better product"</mark> than the billion-dollar-funded Devin — more flexible, cleaner output. Worth a look if you run cloud agents.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
