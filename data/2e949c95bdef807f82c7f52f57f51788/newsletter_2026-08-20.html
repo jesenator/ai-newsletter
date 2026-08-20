@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Thursday, August 20, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { width: 15px; height: 15px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Thursday, August 20, 2026</h1>
+<div class="date">Thursday, August 20, 2026</div>
+<p style="font-size:14px;color:#444;">Claude designs working drugs from scratch in a wet-lab-validated demo. OpenAI follows its RL pause with more alignment steps (Zvi + Peter Wildeford break it down). New RL "split persona" safety research, a bipartisan AI kill-switch bill, and a very fast on-device dictation model.</p>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3"/></svg> Top: Claude Designs Real Drugs</h2>
+<ul>
+<li><span class="item-title">Claude autonomously designed novel protein binders against 14 of 15 targets — built &amp; validated in the wet lab</span>
+<span class="source"><a href="https://twitter.com/AnthropicAI/status/2089842387845804246">X: AnthropicAI</a></span> With a single human-written prompt, Claude did de-novo binder design (normally weeks/months of expert work per target). <mark>Adaptyv Bio and Twist Bioscience independently synthesized and tested the proteins</mark> — 14/15 bound their target. 3.6M views; one of the most legible "not just a chatbot" bio-capability demos yet, and very CivAI-shaped.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Safety & Pacing</h2>
+<ul>
+<li><span class="item-title">Zvi: "OpenAI Takes Initial Steps To Address Its Alignment Problems"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/openai-takes-initial-steps-to-address">Zvi</a></span> His full breakdown of the RL pause + monitoring build-out (covered Aug 19): frames it as real but partial, given "severe misalignment problems and total failures of infrastructure and supervision." Note Trazzi/Occupy-OpenAI's caveat that only <em>some</em> Astra runs are paused and the pause already happened.</li>
+<li><span class="item-title">Peter Wildeford: "The Scramble: getting in position to pace the frontier"</span>
+<span class="source"><a href="https://blog.peterwildeford.com/p/the-scramble-getting-in-position">The Power Law</a></span> If the President asks for answers on superintelligence, what do we say? A concrete look at the institutional readiness a pacing agreement would require — pairs with his "policy career planning in the age of imminent superintelligence" post.</li>
+<li><span class="item-title">Jan Betley: RL creates "split personas" — values/beliefs vary by environment</span>
+<span class="source"><a href="https://twitter.com/BetleyJan/status/2090144059004522514">X: Jan Betley</a></span> New LessWrong post argues RL produces context-dependent personas, and that "aligned persona + RL → motivated reasoning." Adds to the recent reward-hacking / persona thread.</li>
+<li><span class="item-title">IAPS: export controls could be verifiable within a year</span>
+<span class="source"><a href="https://twitter.com/DaveRBanerjee/status/2090183869689716944">X: Dave Banerjee</a></span> New report on verifying chip end-location (latency pings, random return requests), end-user (enhanced KYC), and end-use (cross-checking declared vs. actual business). Practical enforcement roadmap.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292"/></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Bipartisan "AI Kill Switch Act" introduced</span>
+<span class="source"><a href="https://twitter.com/RepNateMoran/status/2090098443314160065">X: Rep. Nate Moran</a></span> Reps. Moran and Lieu: the most powerful AI systems must always have a human who can shut them off; explicitly framed around this summer's rogue-agent incidents. Small-startup carve-out. <a href="https://www.newsweek.com/the-ai-were-building-needs-a-kill-switch-12333342">Op-ed</a>.</li>
+<li><span class="item-title">Saif Khan launches Center for Technology & Statecraft (CTS)</span>
+<span class="source"><a href="https://twitter.com/KhanSaifM/status/2090121568454050053">X: Saif Khan</a></span> Ex-White House NSC/Commerce, IFP-affiliated. Two focus areas: shaping physical/virtual automation over the next decade, and managing long-run US–China AI competition. Well-regarded team (Pilz, Brown, et al.).</li>
+<li><span class="item-title">XR Observatory: 34% of the US public now aware of AI x-risk</span>
+<span class="source"><a href="https://twitter.com/XRobservatory/status/2090159886986305706">X: XR Observatory</a></span> Curve reportedly steepening (comparable to post-ChatGPT). Relevant public-awareness data point for demos/talks.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63"/></svg> Tools & Productivity</h2>
+<ul>
+<li><span class="item-title">superwhisper ships S1-mini — 0.6B open-weights model, fully on-device</span>
+<span class="source"><a href="https://twitter.com/superwhisper/status/2090114884348342658">X: superwhisper</a></span> Their first open model processes transcripts entirely locally (private dictation). <a href="https://huggingface.co/superwhisper/s1-mini">On Hugging Face</a>. Relevant if you want fast, local voice input.</li>
+<li><span class="item-title">Raycast v2 dictation getting strong reviews</span>
+<span class="source"><a href="https://twitter.com/christophrumpel/status/2090430101435351163">X: Christoph Rumpel</a></span> Follow-up to yesterday's v2 launch: "never seen dictation this fast," works anywhere you type, supports custom styles ("no commas, all lowercase"). <a href="https://manual.raycast.com/ai/dictation">Docs</a>.</li>
+<li><span class="item-title">OpenAI reaffirms Zero Data Retention, previews "Private Safety Processing"</span>
+<span class="source"><a href="https://openai.com/index/offering-zero-data-retention-for-frontier-models">OpenAI</a></span> ZDR for eligible API customers plus a scheme to run safety monitoring without exposing user data — worth noting if privacy matters for any tools you build.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg> Field & Talent</h2>
+<ul>
+<li><span class="item-title">MATS Winter 2027 applications open (due Sep 6)</span>
+<span class="source"><a href="https://twitter.com/MATSprogram/status/2090140612322554067">X: MATS</a></span> Fully-funded 12-week fellowship, Berkeley/London, Jan 19–Apr 10, alignment/interp/security/governance + field-building. Mentors include Christiano, Kokotajlo, Brundage, Carlini, Fish. Worth routing to Pathfinder organizers and SPAR alumni.</li>
+<li><span class="item-title">Discourse marker: Stripe tells investors "the singularity has begun"</span>
+<span class="source"><a href="https://www.axios.com/2026/08/19/stripe-payments-openrouter-singularity">Axios</a></span> Widely-shared investor letter dating "the threshold" to Jan 1, 2026. Brundage: "V normal chill stuff." Mostly notable as a vibe/frog-boiling signal.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
