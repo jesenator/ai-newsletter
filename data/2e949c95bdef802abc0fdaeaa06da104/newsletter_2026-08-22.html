@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Saturday, August 22, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+.why { color: #444; font-size: 13.5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Rocket’s Newsletter - Saturday, August 22, 2026</h1>
+<div class="date">Saturday, August 22, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">OpenAI wants California to rewrite SB 53 — to let regulators monitor frontier models <em>while they're still being trained</em></span>
+<span class="source"><a href="https://www.techmeme.com/260821/p29">Politico via Techmeme</a></span>
+Days after the HuggingFace agent-swarm saga, OpenAI urged its home state to "strengthen" SB 53 to <mark>require monitoring of models under training/evaluation, not just after deployment</mark>, and to make a model bypassing a third party's security controls a reportable incident.
+<span class="why">Why it's the story: a frontier lab lobbying to <em>expand</em> a law it once resisted is a genuine policy inflection — and the specific ask (pre-deployment training oversight) maps directly onto OpenAI's own 20%-compute monitoring retrofit I covered Aug 19. Reportable cruxes: does OpenAI want <em>self</em>-monitoring codified vs. state access to training runs, would the reporting trigger have captured Astra, and do Anthropic/Google back the amendment or see regulatory capture in a rival writing the rules?</span></li>
+
+<li><span class="item-title">Anthropic's bankers are floating a <mark>$2T valuation and a $100B+ raise</mark> — an IPO that would eclipse SpaceX's record</span>
+<span class="source"><a href="https://www.techmeme.com/260821/p32">NYT via Techmeme</a></span> <span class="source"><a href="https://www.google.com/url?rct=j&sa=t&url=https://www.france24.com/en/live-news/20260822-anthropic-market-debut-could-break-spacex-ipo-record-media">France 24</a></span>
+The figure would more than double the $965B June round — for a five-year-old company.
+<span class="why">Why it's the story: this is the concrete public-market pressure the "AI Safety Has 12 Months Left" thesis warned about (Aug 16). A $2T listing forces Anthropic's safety posture — the very Risk Report candor Zvi praised — into S-1 disclosure and quarterly-earnings logic. Reportable: what the S-1 must say about the §5.2 process failures and "Model 2," and whether IPO timing explains the sudden voluntary transparency.</span></li>
+
+<li><span class="item-title">Generalist AI's GEN-1.5 teaches a robot a brand-new task from a single 3–12 second demo — no training. They're calling it robotics' "GPT-3 moment"</span>
+<img src="https://generalistai.com/blog/gen-1.5" style="display:none"><span class="source"><a href="https://generalistai.com/blog/gen-1.5">Generalist AI</a></span> <span class="source"><a href="https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo/">The Decoder</a></span> <span class="source"><a href="https://x.com/TheHumanoidHub/status/2090662734551818253">X: The Humanoid Hub</a></span>
+A "physical prompt" loads into the model's context window; <mark>one-shot in-context learning of physical skills emerged from pretraining with zero architectural nudges</mark> — 59% avg success across 10 tasks one-shot, 83% few-shot. Also does sim-to-real and human-hand-to-robot transfer.
+<span class="why">Why it's the story: this is the substantive counterweight to the "craziest hype video" robotics arms race — an actual capability claim (in-context learning generalizing to embodiment) rather than a locomotion demo. It lands the same week as the Beijing World Robot Conference, where Unitree's Wang said the "ChatGPT moment" hasn't come. Reportable: independent replication, whether "short-horizon simple tasks" survives contact with real deployment, and what emergent in-context adaptation means for the safety-eval gap on embodied agents.</span></li>
+
+<li><span class="item-title">Nvidia will pay Poolside <mark>$6B to license its model-building software — and poach 109 of its staff</mark></span>
+<span class="source"><a href="https://finance.yahoo.com/technology/ai/articles/nvidia-pay-poolside-6-billion-181448803.html">Bloomberg/Yahoo</a></span> <span class="source"><a href="https://www.newcomer.co/p/sources-poolside-strikes-6-billion">Newcomer</a></span>
+A non-exclusive license paired with mass job offers — the exact acqui-hire/licensing playbook that halved Groq's valuation.
+<span class="why">Why it's a story: this is the Nvidia "compete-with-your-own-startups" pattern I've tracked (Groq, Decart, Etched) applied to the coding-model layer — hollowing out a would-be independent lab via a license fee that doubles as a talent raid. Reportable: does the $6B route around antitrust scrutiny that an acquisition would trigger, and what happens to Poolside's remaining investors and its enterprise customers.</span></li>
+
+<li><span class="item-title">Governors who courted data centers are now quietly slowing them — as the backlash becomes an electoral liability</span>
+<span class="source"><a href="https://www.techmeme.com/260821/p33">WSJ via Techmeme</a></span>
+Greg Abbott and Josh Shapiro are among those braking development; Senate Republicans reportedly warned of a "sleeper issue for the entire election cycle."
+<span class="why">Update to Aug 21's Transformer "data center as symbol" piece — now with named politicians acting. Why it matters: if NIMBY politics is becoming the de facto brake on the scaling buildout (as safety writers debated), the governors' reversal is the mechanism, and it collides with the circular-financing commitments (Broadcom, Nvidia credit MOUs) that assume the buildout continues.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> LessWrong</h2>
+<ul>
+
+<li><span class="item-title">"Big-World Intuitions" — why non-consequentialist heuristics ("share knowledge freely, do good work") break down exactly when you're near the endgame</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/s22XzjQsrh6JXhXGH/big-world-intuitions">LessWrong</a></span>
+The post argues the intuition that "you're a small player, just follow good general principles and it'll work out" — the basis for open science and not worrying about dual-use — is only sound when the world is "big" relative to you. <mark>Near a winning move or the endgame, you must reason adversarially and consequentially instead.</mark>
+<span class="why">Why it's worth a story: this is a crisp philosophical framing of the open-vs-closed research fight (the Unitree/MIT robot-dog case, distillation panic, open-weights sanctions) — a diagnosis of <em>when</em> "publish freely" stops being wise. Directly quotable in any piece on why AI researchers are abandoning open-science norms.</span></li>
+
+<li><span class="item-title">Zvi: "AI Text Watermarking Is Free And Good" — Scott Aaronson largely solved it at OpenAI, and it was never shipped</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-text-watermarking-is-free-and">Zvi</a></span>
+Zvi argues the Aaronson/Kirchner cryptographic watermark is cheap and worth deploying — a pointed contrast to Anthropic's just-shipped, rewrite-defeatable watermark (which the vendor itself concedes degrades trivially, covered Aug 15).
+<span class="why">Update/explainer peg: the two labs' watermarking approaches are diverging, and Zvi's claim that a robust scheme has sat unused for years is a checkable accountability angle as the EU transparency code takes effect. Worth asking OpenAI why Aaronson's scheme was shelved.</span></li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
