@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Sunday, August 23, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #444; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Sunday, August 23, 2026</h1>
+<div class="date">Sunday, August 23, 2026</div>
+
+<div class="intro">Slow Sunday, no new frontier releases. A Chinese humanoid robot "outruns" Usain Bolt, a local 27B model pulls off a scary reverse-engineering feat, and GovAI opens a founder program directly relevant to your Kairos work.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg> Top: Robot Beats Bolt's 100m</h2>
+<ul>
+<li><img src="https://www.aljazeera.com/wp-content/uploads/2026/08/wide-thumb-china-robot-1787454931.png?resize=730%2C410&quality=80" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">A humanoid robot ran 100m in 9.39s at the World Humanoid Robot Games in Beijing</span>
+<span class="source"><a href="https://www.bbc.co.uk/news/videos/cgljl9zp47xo">BBC</a></span> <span class="source"><a href="https://www.aljazeera.com/video/newsfeed/2026/8/23/chinese-robot-beats-usain-bolts-100m-world-record-at-humanoid-games">Al Jazeera</a></span> "Tianzhuo" (Beijing Innovation Centre of Humanoid Robotics) beat <mark>Usain Bolt's 9.58s record</mark> in a preliminary heat — obviously not directly comparable, but a striking legible marker of hardware progress. Robert Miles: "the robot Olympics might actually be better… if a runner falls over, they don't explode" (<span class="source"><a href="https://x.com/robertskmiles/status/2091429856437502074">X: Robert Miles</a></span>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25z" /></svg> Capabilities</h2>
+<ul>
+<li><img src="https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/08/qwen-3-8-27b-reverse-engineering-2.jpg?q=49&fit=crop&w=825&dpr=2" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">A local Qwen 3.8 27B reverse-engineered a commercial app's license check in ~30 min</span>
+<span class="source"><a href="https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/">XDA</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49407507">HN (110 pts)</a></span> Running offline in 17GB VRAM, it did pure static analysis of thousands of lines of arm64, <mark>recovered a deliberately-obscured RSA verification key</mark>, self-corrected a wrong first guess, and built a working bypass — after first catching the author's jailbreak attempt. "A local 27B is now a real input to threat models." Very CivAI-shaped cyber-uplift demo.</li>
+<li><span class="item-title">"ox-alpha" is unusually buggy — more like Opus than the latest gen</span>
+<span class="source"><a href="https://x.com/stuhlmueller/status/2091276336052744304">X: Andreas Stuhlmüller</a></span> Had a new model "ox-alpha" review his emacs codebase (45 commits); Fable then found 14 significant bugs + a dozen smaller ones in its work — regexes that never match, infinite hangs, cache invalidation. A rare negative capability data point on an apparently new model.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg> Productivity / Technical</h2>
+<ul>
+<li><span class="item-title">"Why your local LLM feels dumber than it is"</span>
+<span class="source"><a href="https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917">Level1Techs</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49402232">HN (401 pts)</a></span> Deep technical dive: quantization, attention-backend choice, sampler settings and 700+ stacked inference dependencies all shift token probabilities, so the same open weights feel worse locally than the reference host. Practical takeaway: check the model card's sampler/chat template (too-low temp is why Qwen loops in its thinking block).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg> Field & Talent (Kairos-relevant)</h2>
+<ul>
+<li><span class="item-title">GovAI launches Entrepreneur-in-Residence: 1 yr salary + ~$150k seed to found an AI safety/governance org</span>
+<span class="source"><a href="https://x.com/Manderljung/status/2091246738057384147">X: Markus Anderljung</a></span> <span class="source"><a href="https://www.governance.ai/post/eir">GovAI</a></span> No equity taken, rolling apps, 2-page pitch. Example orgs they want built: an "AI Bellingcat," a sub-frontier model evaluator, proto-standards body, "Secure America," a non-US TechCongress. <mark>"More funding is available for ambitious projects than ever before"</mark> — directly adjacent to your Kairos talent/fieldbuilding work.</li>
+<li><span class="item-title">Andrew Critch: AI-designed materials will "surprise a lot of people" within ~2 years</span>
+<span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2091218433710965016">X: Seán Ó hÉigeartaigh</a></span> Critch forecasts a wave of AI-invented materials with "impossible" properties (~2027 Q4 median), since materials-design math shares prerequisites with AI-design math. Seán: "would be a Big Deal… wouldn't require full AGI to get a lot of benefit."</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
