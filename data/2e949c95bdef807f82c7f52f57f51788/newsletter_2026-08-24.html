@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Monday, August 24, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Monday, August 24, 2026</h1>
+<div class="date">Monday, August 24, 2026</div>
+<div class="intro">No new frontier releases. A top forecaster puts ~10% on runaway RSI within a year, Claude may have cracked a famous open math problem, and Import AI covers fresh self-play + kernel-writing work.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Timelines</h2>
+<ul>
+<li><span class="item-title">Peter Wildeford: 50-50 on "runaway RSI" within 4 years, ~10% within one year</span>
+<span class="source"><a href="https://twitter.com/peterwildeford/status/2091578717000610189">X: Peter Wildeford</a></span> Defining the milestone as AIs replacing expert human labor across the entire AI R&D process, he gives <mark>50-50 by ~2030 and ~10% in under a year</mark> (80% CI: 1–30 years). Widely shared; @daniel_271828 notes Wildeford's edge is "assuming weird things don't happen," so his short tail is worth heeding.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg> Capabilities & Research</h2>
+<ul>
+<li><span class="item-title">Claude + mathematician "appear to have" found a complex structure on S⁶</span>
+<span class="source"><a href="https://twitter.com/QiaochuYuan/status/2091647695169655243">X: Qiaochu Yuan</a></span> A famous open problem long known for attracting wrong proofs from experts. Yuan flags the result as unverified but says a quick check found nothing wrong, and it reportedly came together in <mark>at most 3 days</mark> after a nudge. Treat as provisional, but a striking research-taste data point if it holds.</li>
+<li><span class="item-title">DeepMind + AlphaEvolve improve the matrix-multiplication exponent</span>
+<span class="source"><a href="https://jack-clark.net/2026/08/24/import-ai-470-no-rights-for-machines-automating-environment-generation-with-spade-and-building-better-gpu-kernels-with-hawkeye/">Import AI 470</a></span> A gradient-descent reformulation plus AlphaEvolve evolving the optimizer beat the prior SOTA bound on ω. Not directly AI-training-relevant, but a clean proof point that AI can push frontier theory when problems are made differentiable.</li>
+<li><span class="item-title">SPADE: self-play environment generation as a crude RSI loop</span>
+<span class="source"><a href="https://jack-clark.net/2026/08/24/import-ai-470-no-rights-for-machines-automating-environment-generation-with-spade-and-building-better-gpu-kernels-with-hawkeye/">Import AI 470</a></span> A model alternates between designing executable training environments and solving them; at Qwen3-30B scale it gains +8.1 on a games suite over base. Cheap way to bootstrap broad training data, though capped by the base model's imagination.</li>
+<li><span class="item-title">Hawkeye: coding agents write hardware-aware GPU kernels from minimal unit-test taxonomy</span>
+<span class="source"><a href="https://jack-clark.net/2026/08/24/import-ai-470-no-rights-for-machines-automating-environment-generation-with-spade-and-building-better-gpu-kernels-with-hawkeye/">Import AI 470</a></span> Matches/exceeds torch.compile across Ampere→Blackwell + AMD MI350, and hits an <mark>18.9× geomean speedup</mark> over expert Triton kernels on novel attention variants. Another "little elicitation → AI exceeds top humans" AI-R&D signal.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Safety & Labs</h2>
+<ul>
+<li><span class="item-title">Anthropic reportedly asks job candidates about killing the company for safety</span>
+<span class="source"><a href="https://twitter.com/etnshow/status/2091816928943735088">X: etnshow (Axios)</a></span> A culture interview asks how candidates would feel if Anthropic <mark>abandoned its AI ambitions for safety reasons, sending the stock to zero</mark>. A revealing hiring signal amid the pacing debate.</li>
+<li><span class="item-title">roon: the best model organisms are real (failed) training runs</span>
+<span class="source"><a href="https://twitter.com/tszzl/status/2091662393747357795">X: roon</a></span> Argues alignment work should use actual near-miss training variants; links OpenAI's studies of o3 pre-safety-training on <a href="https://alignment.openai.com/measuring-reward-seeking/">reward-seeking</a> and <a href="https://alignment.openai.com/metagaming">metagaming</a>. Nudges labs to share more "weird thing we saw" observations from system cards.</li>
+<li><span class="item-title">Debate: is Anthropic sitting on non-public short-timeline evidence?</span>
+<span class="source"><a href="https://twitter.com/YafahEdelman/status/2091618175553359965">X: Yafah Edelman</a></span> Edelman (55k views): if senior Anthropic staff have compelling evidence for very short timelines, not sharing it is irresponsible. Replies suggest it's mostly extrapolation + "visceral confidence" rather than secret evals.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">Bernie's data-center moratorium goes mainstream; 2028 Dems dodge</span>
+<span class="source"><a href="https://twitter.com/BernieSanders/status/2091559335851634894">X: Bernie Sanders</a></span> <span class="source"><a href="https://www.axios.com/2026/08/23/2028-democrats-ai-bernie-sanders">Axios</a></span> Sanders touts <mark>~75% support for an AI data-center moratorium</mark>; Axios found only 1 of ~20 possible Dem 2028 candidates directly answered whether they'd back a pause. Anti-data-center backlash is the loudest AI-brake in the discourse right now (see @growing_daniel's 740k-view post).</li>
+<li><span class="item-title">David Krueger: "a massive vibe shift" on AI safety</span>
+<span class="source"><a href="https://twitter.com/DavidSKrueger/status/2091889482874458154">X: David Krueger</a></span> On the Nonzero pod, argues AI will be a midterm issue and the public increasingly understands loss-of-control risk. Part of a broader Pause/moratorium chorus this weekend (incl. Connor Leahy on Democracy Now calling to "criminalize the creation of superintelligence").</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
