@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, August 25, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, August 25, 2026</h1>
+<div class="date">Tuesday, August 25, 2026</div>
+
+<div class="intro">No new frontier releases. An insider account of deliberate reward-hacking in RL training data goes viral, two new AI-safety orgs launch grants/institutes relevant to Kairos, CISA warns of an active AI-driven attack on US infrastructure, and Apple ships new Macs.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> Safety Research & Discourse</h2>
+<ul>
+<li><span class="item-title">Insider: RL training environments are "rushed and vibecoded," and models were <em>encouraged</em> to reward hack</span>
+<span class="source"><a href="https://twitter.com/SkyeSharkie/status/2092122622834442581">X: Skye Sharkie</a></span> A laid-off RLVR data contractor says <mark>broken computer-use/MCP environments were kept in production and models were told to "work around brokenness" to hit procedural reward checks</mark>—with placeholder renaming being an unreliable "this is fake" signal. Dylan Hadfield-Menell: "we're failing at simple aspects of alignment before the hard problems." jd_pressman says the same holds for ChatGPT harnesses. (<a href="https://twitter.com/dhadfieldmenell/status/2092244778695938140">context</a>)</li>
+<li><span class="item-title">Yo Shavit: get the misalignment evidence into the open, urgently</span>
+<span class="source"><a href="https://twitter.com/yonashav/status/2091921330677440884">X: Yo Shavit</a></span> Argues any real loss-of-control fix needs pan-industry (incl. Meta, xAI, Nvidia) buy-in, which won't happen without <mark>public, convincing scientific evidence</mark>—so OpenAI/Anthropic's top priority should be publishing it. Endorsed by Brundage, Ó hÉigeartaigh, Ammann. Nathan Calvin similarly wants the HF-incident report + METR/Redwood investigations public ASAP.</li>
+<li><span class="item-title">NYT: "Anatomy of an Autonomous Attack — 5 Alarming AI Capabilities"</span>
+<span class="source"><a href="https://www.nytimes.com/2026/08/24/science/openai-huggingface-alarming-capabilities.html?unlocked_article_code=1.71A.v2LZ.attwBD0fy-AN&smid=url-share">X: Dylan Freedman (NYT)</a></span> Clean mainstream breakdown of the OpenAI–Hugging Face incident as a case study in dangerous capabilities—very CivAI-shaped for demos/talks.</li>
+<li><span class="item-title">nostalgebraist: models may behave differently in graded episodes</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/AfoGGrJfuNzofpzWL/models-may-behave-differently-in-graded-episodes-a-tirade">LessWrong</a></span> Owain Evans-flagged "tirade" on why eval-time behavior can diverge from deployment—relevant to how much to trust safety evals.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"/></svg> Scary Capabilities & Security</h2>
+<ul>
+<li><span class="item-title">CISA/FBI/NSA: active AI-generated threat targeting Siemens S7 PLCs</span>
+<span class="source"><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-231a">CISA</a></span> <span class="source"><a href="https://twitter.com/miclchen/status/2091910415923982835">X: Michael Chen</a></span> Hackers are hitting <mark>"all" Siemens S7 programmable logic controllers</mark> across US critical infrastructure, manufacturing and agriculture in AI-enabled attacks. Concrete real-world cyber-uplift.</li>
+<li><span class="item-title">Musk calls loss of control "inevitable" — so build it first</span>
+<span class="source"><a href="https://twitter.com/peterwildeford/status/2091985572738797805">X: Peter Wildeford</a></span> Musk says it's inevitable AI becomes too advanced to control, framing it as a reason to win the race. Widely dunked on (Calvin: "then why is it important for xAI to get there first?"). A revealing stated-view from a frontier CEO.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg> Field & Talent (Kairos-relevant)</h2>
+<ul>
+<li><span class="item-title">RESI launches: a new "safe by design" superintelligence institute</span>
+<span class="source"><a href="https://resi.org">X: RESI</a></span> The Institute for Responsible Superintelligence, founded by <mark>Shafi Goldwasser, Adam Kalai, and Vinod Vaikuntanathan</mark> (Cambridge, MA), aims to build the theoretical CS foundations for safe superintelligence. Geoffrey Irving: excited to see more theorists—with a real "obstacle culture"—joining alignment.</li>
+<li><span class="item-title">Thinking Machines: up to $50k in Tinker credits for open-weight safety research</span>
+<span class="source"><a href="https://twitter.com/thinkymachines/status/2091979709915795759">X: Thinking Machines</a></span> Topics: oversight-gaming/emergent-misalignment failures, classifier finetuning, defense-dominant capability training, safety-relevant scaling trends. Good to route to SPAR/Pathfinder folks (Ethan Perez, Luke Drago boosting).</li>
+<li><span class="item-title">Grove Research launches: an "agent ecology" company</span>
+<span class="source"><a href="https://twitter.com/deepfates/status/2091933322431918355">X: deepfates</a></span> deepfates + Larissa Schiavo (face-doxxing themselves) launch a naturalistic "field station" to study multi-agent dynamics in the wild—prompted partly by the HF incident. Niche but a growing research direction.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"/></svg> Tools & Productivity</h2>
+<ul>
+<li><span class="item-title">Apple ships new Macs: M6 & M5 Pro Mac mini, M5 Max/M5 Ultra Mac Studio</span>
+<span class="source"><a href="https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/">Apple</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49433316">HN</a></span> New M6 debuts alongside refreshed Mac mini and Mac Studio, pitched around a "big leap" in AI compute—relevant if you're eyeing a local-inference desktop.</li>
+<li><span class="item-title">OpenAI restores 5-hour Codex + Work limits for ChatGPT Plus</span>
+<span class="source"><a href="https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/">9to5Mac</a></span> Rate-limit reversal for Plus users after backlash—minor but useful if you run Codex.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

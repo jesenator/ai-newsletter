@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Tuesday, August 25, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+.why { color: #444; font-style: italic; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+img { max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Tuesday, August 25, 2026</h1>
+<div class="date">Tuesday, August 25, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">OpenAI says its first chip, Jalapeño, beat Nvidia's superchips on an inference benchmark — the clearest shot yet at the compute chokepoint everyone's policy relies on</span>
+<span class="source"><a href="https://www.techmeme.com/260825/p24#a260825p24">The Verge / Techmeme</a></span>
+OpenAI published head-to-head numbers claiming its Broadcom-built Jalapeño delivered <mark>1.5x–1.9x more AI work per watt and 1.7x–3.6x lower latency than Nvidia chips</mark> across GPT-OSS, DeepSeek R1 and Kimi K2.5 1T.
+<br><span class="why">Why it's the story: The entire export-control/diversion regime (see yesterday's autonomous-drone Jetson and Taiwan smuggling indictments) assumes Nvidia is the world's inference chokepoint. If OpenAI's own silicon can match or beat Nvidia on efficiency, the policy lever weakens — and a frontier lab becomes vertically integrated on compute right before an IPO. Reportable cruxes: these are vendor-run benchmarks (inference-only, cherry-picked workloads), whether "AI work per watt" is apples-to-apples with Nvidia's own MLPerf figures, and how much Jalapeño capacity actually exists. It reprices the circular-financing thesis I've tracked all month.</span></li>
+
+<li><span class="item-title">ActiveFence rebrands as "Alice" and raises $140M — the AI trust-and-safety layer is now a venture category approaching $100M ARR</span>
+<span class="source"><a href="https://pulse2.com/alice-raises-140-million-as-ai-security-business-approaches-100-million-arr-and-grows-500/">Pulse 2.0</a></span>
+<span class="source"><a href="https://en.globes.co.il/en/article-israeli-ai-security-co-alice-raises-140m-1001553384">Globes</a></span>
+The Israeli firm (Apax Digital–led, Samsung participating; ~$700–800M valuation) sells red-teaming and runtime guardrails "powered by real-world adversarial data" to keep agents doing "exactly what they're supposed to."
+<br><span class="why">Why it's the story: A third-party guardrail vendor scaling 500% lands precisely as labs disclaim visibility into their own agents (Binance's "we cannot see the reasoning," OpenAI's 20% monitoring tax). It's a checkable market signal that enterprises don't trust the labs' native safety and are buying an external accountability layer. Worth reporting whether "adversarial data" red-teaming actually catches the prompt-injection/rogue-agent failure modes now dominating headlines — or whether this is compliance theater priced at unicorn multiples.</span></li>
+
+<li><span class="item-title">Emerald AI hits $1.05B pitching itself as the fix for the data-center backlash — software that throttles AI power demand when the grid strains</span>
+<img src="https://images.ctfassets.net/kftzwdyauwt9/1FycKER90DjXKmUHMkQVrQ/ed1d728ad1f0edc26d68ef4d6e286265/covert-influence-campaign-russia-figure-1.png?w=1200&q=90&fm=webp" alt="">
+<span class="source"><a href="https://www.nytimes.com/2026/08/25/business/dealbook/emerald-ai-start-up-data-center-backlash.html">NYT DealBook</a></span>
+$150M Series A (DCVC, Energize, NVentures). The NYT frames it explicitly as an effort to "reverse the backlash against" data centers by keeping facility power demand flexible.
+<br><span class="why">Why it's the story: This is the direct commercial answer to the "data center as political symbol" fracture I've tracked (Bernie's moratorium, Abbott/Shapiro braking projects, Zvi's "The American People Really Hate Data Centers"). A billion-dollar startup betting that demand-response software can defuse a NIMBY revolt is a testable claim — does grid-flexible AI compute actually reduce local strain, or does it just let the buildout continue faster? Ties the deal beat to the safety-adjacent politics of scaling.</span></li>
+
+<li><span class="item-title">OpenAI exposes an elaborate Russian influence op run through ChatGPT — a fake Israel-based "think tank" and a "sovereignty index" praising Russia</span>
+<span class="source"><a href="https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia">OpenAI</a></span>
+<span class="source"><a href="https://www.techmeme.com/260825/p13#a260825p13">CNBC / Techmeme</a></span>
+Operators used VPNs to evade OpenAI's Russia block, generating English-language social posts (X, LinkedIn, Substack, Telegram) while instructing the model to <mark>hide linguistic clues that they were Russian</mark>. The fake "International Burke Institute" listed Fukuyama and Chomsky as experts; 34 of 36 sampled articles were plagiarized.
+<br><span class="why">Why it's the story: A concrete, documented misuse case — the everyday version of the loss-of-control worry, and a clean explainer peg on how state IO now uses frontier models for laundering attribution. Reportable angle: OpenAI catches these because it controls the API; the same playbook on a downloadable open-weight model (DeepSeek, Nemotron) would leave no such audit trail — directly relevant to the open-weights-sanction fight.</span></li>
+
+<li><span class="item-title">Google launches Gemini Enterprise for Legal — with Harvey, LexisNexis and Thomson Reuters integrations</span>
+<span class="source"><a href="https://www.techmeme.com/260825/p16#a260825p16">Reuters / Techmeme</a></span>
+Specialized AI agents for law firms, plugging directly into the two dominant legal-research databases and the leading legal-AI startup.
+<br><span class="why">Why it's the story (for your litigation beat): Google embedding agents into the core legal-research stack raises the exact reliability/hallucination-liability questions that have already produced sanctions against lawyers citing fake AI cases. Worth asking what accuracy guarantees or citation-verification Google offers, whether Harvey (a would-be independent) becomes a distribution dependency, and how this reshapes the legal-AI competitive map.</span></li>
+
+<li><span class="item-title">Robotics money keeps flooding in: Gatik's $200M and Generalist's Jensen-Huang-backed raise at a $20B+ valuation</span>
+<span class="source"><a href="https://www.techmeme.com/260825/p25#a260825p25">TechCrunch</a></span>
+<span class="source"><a href="https://www.kucoin.com/news/flash/generalist-secures-200m-in-funding-with-backing-from-jensen-huang-fei-fei-li-and-bin-lin">KuCoin/flash</a></span>
+Autonomous-trucking Gatik raised $200M (QIA, Koch) two months after a PepsiCo commercial deal, hitting ~$500M total. Separately, robotics-AI startup Generalist — whose GEN-1.5 one-shot-learning demo I covered Aug 22 — is now backed by Jensen Huang and Fei-Fei Li at a valuation reportedly north of $20B.
+<br><span class="why">Why it matters: Physical-AI funding velocity (after XPeng's record $900M Dogotix round Aug 24) is the clearest signal capital is rotating from LLMs to embodiment. The Huang/Li syndicate behind Generalist is worth tracing — Nvidia's compute-plus-capital flywheel now extends to robot foundation models, and a $20B mark on a pre-revenue capability claim is a bubble-vs-breakthrough test.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> LessWrong</h2>
+<ul>
+
+<li><span class="item-title">"AI Safety Acculturation is Neglected" — the culture clash between rationalists and industry "professionals" is quietly hobbling the field</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/cr5pyW7Mzm33p4AvN/ai-safety-acculturation-is-neglected">LessWrong: jenn</a></span>
+The most-discussed new post (147 karma). Argues the widespread assumption that <mark>"stick the two groups in the same room and acculturation happens by default"</mark> is false — the gap between pre-2022 rationalists and the ex-industry/government professionals now flooding into safety orgs is going unmanaged, at real cost to coordination.
+<br><span class="why">Directly relevant: a rare first-person read on the sociology of the safety community as it professionalizes ahead of a possible Anthropic mega-IPO and a talent surge into the labs. Useful color for any piece on how "AI safety" is being institutionally reshaped — and who's being sidelined.</span></li>
+
+<li><span class="item-title">Cleo Nardo's "Arguments for P" remains the cycle's highest-karma thread</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/NG2AigxmBKLu9oCZE/arguments-for-p">LessWrong: Cleo Nardo</a></span>
+Now at 535 karma and still drawing debate — a dense philosophical piece worth mining for the technical-audience framing of decision theory / probability arguments underlying alignment optimism-vs-pessimism. Flagging as the most durable active discussion; no fresh development, but the comments are where the disagreement lives.</li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
