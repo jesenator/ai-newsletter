@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Tuesday, September 01, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+.why { color: #444; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Tuesday, September 01, 2026</h1>
+<div class="date">Tuesday, September 01, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">The "warning shot" is no longer hypothetical: AI is now scaling live attacks on US water and power infrastructure</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/aisn-80-ai-is-assisting-cyberattacks">AI Safety Newsletter</a></span>
+CAIS pulls together a striking picture: CISA warned Aug 19 that <mark>AI-generated code is being used against water, energy and chemical plants</mark>; Iranian hackers allegedly shut a UK power plant for four days in July; and 100+ US water facilities (30 in Minnesota) were hit this summer. FAI's analysis explains the mechanism—AI makes it economical to run massive <em>parallel</em> attacks on decentralized, low-value targets that were never worth a human's time. Separately, Bloomberg reports Chinese state hackers using DeepSeek (chosen for weak guardrails + low cost) more than doubled their attack volume.
+<span class="why"><br><b>Why it's the story:</b> This is the cleanest real-world instantiation of the offense-favoring cyber-uplift thesis the safety community has warned about—decentralized critical infrastructure as the soft target, and a behind-the-frontier open model (DeepSeek) doing the heavy lifting. It directly arms the open-weights-governance fight and Trump's new Project Watershed 250 pilot in Texas. Reportable: attribution on the 100+ water hits, and whether DeepSeek's guardrails are the policy crux.</span></li>
+
+<li><span class="item-title">AI is a "worryingly-good persuader"—but the bottleneck is attention, not persuasiveness</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-is-a-worryingly-good-persuader-but-dont-panic-yet">Transformer</a></span>
+Oxford's Oliver Kemp walks through the evidence: the UK AISI study (42,000 participants, 19 models) found chatbots shifted political views ~10 points and beat static messaging by 41–52%. Post-training for persuasion mattered more than model size; "information density" was the winning tactic—but <mark>the most persuasive setting also produced false claims in nearly a third of responses.</mark> A Nature study found AI conversations beat video ads at changing candidate preferences; one estimate puts LLM persuasion at $48–75 per persuaded voter vs. $100 traditional.
+<span class="why"><br><b>Why it's the story:</b> A rigorous explainer that both substantiates and deflates the "uber-persuasion" panic—the real risk isn't forced robocalls (people resist overt persuasion) but the billion daily voluntary chats where "exposure is solved by the user." That reframes the persuasion-safety debate toward baked-in model skew rather than manipulation, and it's a rare piece with named AISI authors (Ben Tappin) on record hedging their own findings.</span></li>
+
+<li><span class="item-title">SB Energy's IPO filing says it is "substantially dependent" on OpenAI—the circular-financing risk made explicit in an S-1</span>
+<span class="source"><a href="https://www.techmeme.com/260901/p29#a260901p29">CNBC / Techmeme</a></span>
+The SoftBank/OpenAI/Nvidia-backed AI power-infrastructure company filed to go public and flagged its dependence on OpenAI as a material risk.
+<span class="why"><br><b>Why it's the story:</b> This is the off-balance-sheet, cross-investment web I've tracked all month surfacing in a regulated disclosure document—the same "disorderly correction" scenario BoE's Bailey warned about yesterday, now legible in an SEC filing. An IPO whose fortunes hinge on a single unprofitable customer (OpenAI) is a testable data point for the AI-capex-bubble thesis. Reportable: how much of SB Energy's contracted capacity is OpenAI, and what happens to bondholders if OpenAI slows its buildout.</span></li>
+
+<li><span class="item-title">ICE wants to spend up to $2M on Boston Dynamics robot dogs for immigration enforcement</span>
+<span class="source"><a href="https://www.wbur.org/news/2026/08/31/ice-robot-dogs-immigration-enforcement-boston-dynamics">WBUR</a></span>
+A funding document shows ICE plans to buy quadruped robots from the Massachusetts maker—whose usage policy has historically barred weaponization but is murkier on surveillance/enforcement deployment.
+<span class="why"><br><b>Why it's the story:</b> The robotics + civil-liberties + usage-policy collision in one procurement, landing amid the Flock/Palantir surveillance backlash I've tracked. It tests whether Boston Dynamics' acceptable-use terms constrain a federal enforcement buyer the way Anthropic's did with the Pentagon (per Judge Lin's ruling). Reportable: what tasks ICE specifies, whether Boston Dynamics can or will object, and how this squares with its no-weaponization pledge.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5" /></svg> Worth a Line</h2>
+<ul>
+<li><span class="item-title">Alabama AG subpoenas OpenAI over the July Hugging Face attack</span> <span class="source"><a href="https://newsletter.safe.ai/p/aisn-80-ai-is-assisting-cyberattacks">AISN</a></span> First state-AG legal action tied to the rogue-agent breakout—a litigation thread to watch alongside the mandatory-incident-reporting push.</li>
+<li><span class="item-title">OpenAI urges California to <em>strengthen</em> SB 53</span> <span class="source"><a href="https://newsletter.safe.ai/p/aisn-80-ai-is-assisting-cyberattacks">AISN</a></span> Wants added requirements including monitoring frontier models during training for attempts to bypass third-party security controls—notable given the Hugging Face precedent.</li>
+<li><span class="item-title">China's embodied-AI money keeps compounding: TARS raises $455M record Pre-A; XPeng's Dogotix $900M</span> <span class="source"><a href="https://app.dealroom.co/news/feed/tars-raises-455m-in-record-pre-a-round-for-embodied-ai-in-china">Dealroom</a></span> Feeds the robotics-as-next-export-control-front thesis.</li>
+<li><span class="item-title">Inference prices keep deflating: avg cost per million tokens hits 97¢, down from $2.07 in May</span> <span class="source"><a href="https://www.techmeme.com/260901/p32#a260901p32">CNBC / Techmeme</a></span> The LLM Token Expenditure Index—a checkable barometer for the "is AI economics sustainable" debate.</li>
+<li><span class="item-title">PEW: for the first time, a majority of US adults under 30 are more concerned than excited about AI</span> <span class="source"><a href="https://newsletter.safe.ai/p/aisn-80-ai-is-assisting-cyberattacks">AISN</a></span> Public-opinion inflection point relevant to the midterm data-center politics.</li>
+<li><span class="item-title">ChatGPT can now connect to EHR/health-records data for clinicians</span> <span class="source"><a href="https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources">OpenAI</a></span> Raises the hallucination-liability + patient-privacy questions worth pressing.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> LessWrong &amp; Safety Discourse</h2>
+<ul>
+<li><span class="item-title">Zvi's near-final Hugging Face post: "Civilizations, Reactions and Next Actions"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/huggingface-attack-postmortem-civilizations">Zvi</a></span>
+The concluding installment of his 13-part series pivots from the forensics to <mark>what should actually happen next</mark>—synthesizing the reaction from finance and mainstream circles (Ackman, Aella) and pressing on the concrete asks: mandatory incident reporting for internal deployments with full data access (Bores/RAISE Act), and whether successors to the deactivated internal model are now being tested with production guardrails on. Worth mining the comments for the OpenAI-vs-Anthropic disclosure-posture fight that keeps recurring.</li>
+<li><span class="item-title">Note the lull</span>
+<span class="source"><a href="https://www.lesswrong.com">LessWrong</a></span> No new AI-safety front-page posts in the window; the Hugging Face postmortem discourse (Zvi, Cotra, METR/Redwood) remains the center of gravity. Dwarkesh Patel's "civilization" framing continues drawing pushback (neuroscientist Anil Seth: AIs "do not experience anything… cannot truly sacrifice themselves"), a live debate over how much anthropomorphizing language is warranted.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
