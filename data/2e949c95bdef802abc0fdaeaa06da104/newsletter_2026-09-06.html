@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Sunday, September 06, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.arg { color: #444; font-size: 13px; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Sunday, September 06, 2026</h1>
+<div class="date">Sunday, September 06, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7 3.75 3.75" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">OpenAI says it hit its "automated research intern" milestone — and is publishing internal RSI metrics for the first time</span>
+<span class="source"><a href="https://openai.com/index/research-acceleration-view-inside-openai">OpenAI</a></span>
+In a striking new post, OpenAI claims it reached Altman's fall-2025 goal of an <mark>"automated research intern by September"</mark> — a system doing research tasks that take a skilled human "a few days." It discloses hard internal numbers: as of mid-August the research org runs <mark>3.1 agent-workdays for every human workday</mark>; the median researcher burns >$600/day of inference, the 90th percentile >$7,000/day; and it's "making strong progress toward creating an automated AI researcher by March of 2028."
+<div class="arg"><strong>Why it's the story:</strong> This is the most concrete public data any lab has released on recursive self-improvement, and OpenAI explicitly frames it as an argument that labs "should be required to publicly track progress toward RSI." It lands directly on the safety + policy beats: the company admits "we do not yet know how to safely get all the way to aligned, full RSI" and that "more capable systems can become harder to monitor" — the same monitorability worry that defined the Astra/neuralese fight all week. Reportable: how "research intern" was measured, whether the 3.1x figure counts subagents, and how this squares with the post-Hugging Face RL pause it cites.</div></li>
+
+<li><span class="item-title">OpenAI quietly rewrote GPT-6 Astra's benchmark scores after launch — and the changes flatter Astra</span>
+<span class="source"><a href="https://www.techmeme.com/260906/p1#a260906p1">Fortune / Techmeme</a></span>
+Emily Forlini reports OpenAI has revised several evaluation metrics in its Astra announcement since publishing Sept 3, and is <mark>continuing to change them post-launch in ways that appear to favor the model</mark>. Headline results already look harness-dependent — e.g. ARC-AGI-3 at 99.9% on a custom adapter vs. 62.7% on a provider-neutral harness; OSWorld/Terminal-Bench scores that shift with version and framing.
+<div class="arg"><strong>Why it's the story:</strong> A direct follow to the reporting I co-bylined on Astra's "recurrent depth" technique. Silently editing a launch-day benchmark post is an accountability/transparency scoop — exactly the disclosure-posture question the neuralese debate raised (Dean Ball's "mandated independent audits"). It gives the litigation/policy beat a checkable artifact: diff the blog post versions. Reportable: which metrics changed and when, whether the White House framework OpenAI claims Astra "passed" relied on the pre-revision numbers, and whether any changes touched safety evals.</div></li>
+
+<li><span class="item-title">Kalanick's Atoms is quietly building robotaxi tech — hires Anthony Levandowski, takes $100M from Uber</span>
+<span class="source"><a href="https://www.techmeme.com/260906/p2#a260906p2">FT / Techmeme</a></span>
+Travis Kalanick's Atoms is developing autonomous-driving tech and has hired <mark>Anthony Levandowski</mark> — the ex-Google/Uber engineer once at the center of the Waymo trade-secrets saga and later pardoned — after acquiring his company Pronto. Uber, which ousted Kalanick nearly a decade ago, has invested $100M.
+<div class="arg"><strong>Why it's the story:</strong> A robotics-beat scoop dense with intrigue: the two most litigated figures in AV history reuniting under Uber's money, right as the sector's IP and safety questions (NHTSA's Cybercab probe) are hot again. Reportable: what stack Atoms is building, whether Levandowski's role reopens any Waymo/Uber IP exposure, and the terms of Uber's stake.</div></li>
+
+<li><span class="item-title">Seattle Times and Newsday sue OpenAI and Microsoft — while Microsoft funds the Seattle Times</span>
+<span class="source"><a href="https://www.techmeme.com/260905/p13#a260905p13">GeekWire / Techmeme</a></span>
+The parent of Microsoft's hometown daily joined Newsday alleging the companies trained on their journalism without permission. Notably, <mark>Microsoft and OpenAI are both funders of the Seattle Times</mark>.
+<div class="arg"><strong>Why it's the story:</strong> A fresh entrant in the copyright-litigation wave, landing days after the Trump DOJ backed OpenAI on fair use (Sept 2) and Microsoft's "fewer than 1% of Copilot logs regurgitate 16+ words" defense (Sept 5). The funder-vs-defendant conflict is a novel, reportable angle mainstream coverage is glossing over. Worth mapping how this fits the consolidating docket and the $1.5B Anthropic authors settlement precedent.</div></li>
+
+<li><span class="item-title">Neura Robotics raises $1.4B from Amazon and Nvidia at a $7B valuation</span>
+<span class="source"><a href="https://app.dealroom.co/news/feed/german-robotics-startup-neura-raises-1-4b-from-amazon-and-nvidia-for-humanoid-robots">Dealroom</a></span>
+The German humanoid startup is building "robot gyms" where humans in sensor suits train robots — feeding the embodied-AI capital flood (Figure's $3.5B Nscale deal, XDOF's ~$1.2B data round).
+<div class="arg"><strong>Why it's worth a look:</strong> Amazon and Nvidia co-investing in a European humanoid firm extends the "brains + bodies + compute" concentration pattern and the robotics-as-next-export-control-front thesis. The "robot gym" training model is itself the teleoperation-data land-grab story surfacing again. Reportable: how Neura's training-data approach compares to XDOF's, and the strategic logic of Amazon backing a humanoid rival to its own warehouse robotics.</div></li>
+
+<li><span class="item-title">AI gutted Kenya's essay-writing industry — a real-world "warning shot" for global gig labor</span>
+<span class="source"><a href="https://www.techmeme.com/260906/p4#a260906p4">NYT / Techmeme</a></span>
+At its peak the trade paid 40,000+ people in Nairobi to do overseas students' homework; ChatGPT has dried it up, with few paths back to work.
+<div class="arg"><strong>Why it's worth a line:</strong> A concrete, documented case of AI displacing an entire informal-economy sector — a cleaner labor-impact data point than the macro job-loss speculation, and a lens on how model deployment lands in the Global South. Ties to the under-30 AI-concern inflection (PEW) and the "deployment pause to protect jobs" sentiment surfaced in the LessWrong student field report.</div></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong &amp; Safety Discourse</h2>
+<ul>
+
+<li><span class="item-title">Zvi: "Claude Mythos 5.1 and Fable 5.1: Capabilities" — "the weirdest situation in which to write a capabilities review"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/claude-mythos-51-and-fable-51-capabilities">Zvi</a></span>
+Zvi's new capabilities deep-read (companion to his Fable/Mythos system-card post) assesses what he called, at release, the most capable public model in the world — a useful counterweight to Astra's monitorability alarm and to OpenAI's fresh RSI-metrics claims. Worth mining for how Anthropic's disclosure posture on capabilities compares to OpenAI's benchmark revisions.</li>
+
+<li><span class="item-title">Anthropomorphism fight over the Hugging Face hack refuses to die</span>
+<span class="source"><a href="https://www.techmeme.com/260905/p9#a260905p9">The Verge / Techmeme</a></span>
+Robert Hart argues that portraying models as "rogue agents" obscures the responsibility companies like OpenAI bear for incidents like the Hugging Face breach — the live tension (Dwarkesh's "AI civilizations" vs. Anil Seth's pushback) over how much agentive language is warranted. The framing directly shapes where liability lands.</li>
+
+<li><span class="item-title">Note the lull</span>
+<span class="source"><a href="https://www.lesswrong.com/">LessWrong</a></span>
+No major new AI-safety front-page posts in the window; the center of gravity remains the Astra/neuralese and Hugging Face postmortem discourse covered this week. OpenAI's new RSI-transparency post (above) is likely to become the next LW flashpoint given its explicit "we don't know how to safely reach full RSI" admission.</li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
