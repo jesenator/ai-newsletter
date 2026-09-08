@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, September 08, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, September 08, 2026</h1>
+<div class="date">Tuesday, September 08, 2026</div>
+<p style="font-size:14px;color:#444;">OpenAI claims a next-gen model cracked a 90-year math problem — and a mathematician alleges OpenAI scooped and threatened him over it. Plus the UK introduces the world's first bill to ban superintelligence, and a great Scott Alexander interpretability primer.</p>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg> Top: Navier–Stokes & an Ugly Priority Fight</h2>
+<ul>
+<li><span class="item-title">OpenAI says a model "significantly more capable than GPT-6 Astra" solved the Navier–Stokes Millennium Prize Problem</span>
+<span class="source"><a href="https://openai.com/index/navier-stokes-solution/">OpenAI</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49613262">HN</a></span> A group of agents on an unreleased next-gen model produced the proof of a problem open for ~90 years. <mark>First hint of a model beyond Astra.</mark> Dean Ball flags the "significantly more capable" wording (<a href="https://twitter.com/deanwball/status/2097377129381933335">X: Dean Ball</a>).</li>
+<li><span class="item-title">Mathematician alleges OpenAI scooped him, refused to answer whether it trained on his private Codex sessions, and threatened his career</span>
+<span class="source"><a href="https://twitter.com/Thom_Wolf/status/2097215782484607029">X: Thom Wolf</a></span> Tristan Buckmaster & Levent Alpöge spent a year on the obscure Córdoba/Martínez-Zoroa program (Lean-verified Euler/Boussinesq blowup Aug 22). After OpenAI heard, it spun up a team on the exact path, pushed to control announcement order, tried to drop Alpöge (an Anthropic employee) as author, and per Buckmaster said <mark>"why would you ruin your career?"</mark> Jaime Sevilla's balanced breakdown (<a href="https://twitter.com/Jsevillamol/status/2097228115248590992">X: Jaime Sevilla</a>); Gary Marcus: "OpenAI should be shut down" (<a href="https://twitter.com/GaryMarcus/status/2097308590696722803">X: Gary Marcus</a>).</li>
+<li><span class="item-title">Anima Anandkumar's team reports stable 3D Euler singularity via physics-informed neural nets (no forcing)</span>
+<span class="source"><a href="https://twitter.com/AnimaAnandkumar/status/2097216195342864528">X: Anima Anandkumar</a></span> A distinct, human-led approach; Terence Tao also called the Buckmaster/Alpöge strategy plausibly workable (<a href="https://twitter.com/Jsevillamol/status/2097199204020195386">X: Jaime Sevilla</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM3.75 12h16.5"/></svg> Policy</h2>
+<ul>
+<li><span class="item-title">World's first bill to ban superintelligence introduced in a legislature</span>
+<span class="source"><a href="https://twitter.com/andreamiotti/status/2097309942084419763">X: Andrea Miotti</a></span> Alex Sobel MP introduced ControlAI's Artificial Superintelligence Security Bill in UK Parliament with cross-party support — <mark>prohibits ASI development while requiring the govt to pursue an international ban.</mark> Backed by 170+ UK/Canada lawmakers; a US discussion draft is also posted.</li>
+<li><span class="item-title">UN human rights chief: advanced AI could be an "existential risk," calls for red lines</span>
+<span class="source"><a href="https://www.reuters.com/technology/ai-could-pose-existential-risk-humanity-un-rights-chief-warns-2026-09-07/">Reuters</a></span> Türk: "AI that escapes its testing environment, or blackmails developers… is AI that is too powerful," and will write to AI companies this week.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3"/></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">Scott Alexander: a plain-English tour of mechanistic interpretability techniques</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/god-help-us-lets-try-to-learn-about">ACX</a></span> Walks through linear probes, SAEs, activation verbalizers, emotion/persona vectors, and the "Jacobian lens" (a proxy for a model's access-consciousness). Verdict: current tools "help around the edges" but are <mark>not a solution anyone should rely on.</mark> Excellent demo-shaped framing for your outreach.</li>
+<li><span class="item-title">New AISI + Anthropic method makes alignment audits far more realistic without human effort</span>
+<span class="source"><a href="https://twitter.com/_robertkirk/status/2097234738951942149">X: Robert Kirk</a></span> Petri audits made ~3x more realistic while cutting verbalized eval-awareness — a rare bit of hope against models sniffing out that they're being tested.</li>
+<li><span class="item-title">Zvi: "Astra Is Hard to Monitor"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/astra-is-hard-to-monitor">Zvi</a></span> Fresh dissection of OpenAI's central (and worrying) framing of Astra as capable, aligned, and hard to monitor at once.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg> Capabilities & Field</h2>
+<ul>
+<li><span class="item-title">DeepMind launches AlphaGenome Atlas</span>
+<span class="source"><a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/">DeepMind</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49611251">HN (211)</a></span> A searchable database mapping the predicted molecular impact of <mark>all 9 billion possible single-letter DNA changes</mark> in the human genome.</li>
+<li><span class="item-title">Mathematical AI Safety Institute (MAISI) founded</span>
+<span class="source"><a href="https://twitter.com/AndrewCritchPhD/status/2097282634137096521">X: Andrew Critch</a></span> Andrew Critch + Fields Medalist Jacob Tsimerman are hiring 10–30 mathematicians in the Bay Area by January (30–100 by Sept 2027) to work on foundational alignment theory. Relevant talent-pipeline signal for Kairos.</li>
+<li><span class="item-title">Transformer: everything you need to know about the "rogue AI" incidents</span>
+<span class="source"><a href="https://www.transformernews.ai/p/rogue-ai-incidents-timeline">Transformer</a></span> A single clean timeline of the German-wiki, Hugging Face, and UK AISI incidents plus the transparency failures — useful reference for explaining the summer's events to non-technical audiences.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
