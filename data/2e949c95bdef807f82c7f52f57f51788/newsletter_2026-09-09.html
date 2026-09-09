@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, September 09, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 15px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, September 09, 2026</h1>
+<div class="date">Wednesday, September 09, 2026</div>
+<div class="intro">A departing Anthropic researcher's resignation thread hit <strong>95M+ views</strong> and broke AI x-risk into the mainstream/political conversation overnight. Plus OpenAI's Navier–Stokes fallout, Anthropic's new economic-scenarios model, and a big AI-safety founder call from Coefficient Giving.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Top: The Resignation That Went Everywhere</h2>
+<ul>
+<li><span class="item-title">Anthropic researcher Jacob Coxon quits, warns labs are "gambling with our lives"</span>
+<span class="source"><a href="https://x.com/hilbertspaess/status/2097476196791709843">X: hilbertspaess</a></span> <span class="source"><a href="https://www.wsj.com/tech/ai/anthropic-researcher-quits-over-out-of-control-ai-fears-707b7628">WSJ</a></span> After 3 years of pretraining at OpenAI and Anthropic, Coxon resigned saying builders "earnestly believe it could kill us all by the end of the decade" — <mark>the thread hit 95M+ views in ~16 hours</mark>, was covered by CNN/WSJ, and unusually broke into policy discourse.</li>
+<li><span class="item-title">Anthropic's alignment lead Evan Hubinger confirms it publicly: >10% p(doom) this decade</span>
+<span class="source"><a href="https://x.com/EvanHub/status/2097497037956891126">X: Evan Hubinger</a></span> "We really do earnestly believe AI could kill all humans… we do not yet have a plan to solve alignment for superintelligence and are not clearly on track to." 28M views. Sam Marks (<a href="https://x.com/saprmarks/status/2097570226804011302">X: saprmarks</a>) posted a sober birds-eye view; ex-DeepMind Turn Trout (<a href="https://x.com/Turn_Trout/status/2097557335732359491">X: Turn Trout</a>) concurred.</li>
+<li><span class="item-title">Politicians pile in</span>
+<span class="source"><a href="https://x.com/BernieSanders/status/2097705093520863568">X: Bernie Sanders</a></span> Sanders (574k views) says he'll introduce a superintelligence-ban bill; Gov. Pritzker (<a href="https://x.com/GovPritzker/status/2097715871309312220">X: Pritzker</a>) called to "sound the alarm"; Reps Casar, Trahan, Jayapal, Ansari and Ted Lieu all amplified. Rep. Lori Trahan: "the call is coming from inside the house." Note (<a href="https://x.com/PEWilliams_/status/2097544820692529618">X: PEWilliams_</a>): the Senate commerce committee has <mark>zero AI hearings scheduled for the next 4 months</mark>.</li>
+<li><span class="item-title">Context: this view isn't new — the reaction is</span>
+<span class="source"><a href="https://x.com/eli_lifland/status/2097530690124525851">X: Eli Lifland</a></span> Many note ~58% of surveyed AI researchers put x-risk ≥5% back in 2023; Miles Brundage is fielding a surge of "how do I leave the industry" DMs (<a href="https://x.com/Miles_Brundage/status/2097504840327045392">X: Miles Brundage</a>). Transformer's <a href="https://www.transformernews.ai/p/rogue-ai-incidents-timeline">rogue-incidents timeline</a> explains why this summer freaked people out.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg> Navier–Stokes Fallout (Update)</h2>
+<ul>
+<li><span class="item-title">OpenAI, Altman and Bubeck respond to the priority dispute</span>
+<span class="source"><a href="https://x.com/sama/status/2097385167002415140">X: Sam Altman</a></span> Altman and Sébastien Bubeck (<a href="https://x.com/SebastienBubeck/status/2097379411691516310">X: Bubeck</a>) say they offered to let Buckmaster's team publish first and take lead authorship, and that the objection was to an Anthropic employee authoring OpenAI's internal result. Mark Chen conceded de-identified user data may have helped train the model but "no human looked at" Buckmaster's sessions.</li>
+<li><span class="item-title">Clay Institute won't call it solved</span>
+<span class="source"><a href="https://www.implicator.ai/clay-institute-navier-stokes-openai-proof-claim/">implicator.ai</a></span> The prize body is not endorsing OpenAI's claim yet; an aerospace prof's viral <a href="https://x.com/DrChrisCombs/status/2097409234321154547">thread</a> argues it's a niche mathematical curiosity, not a practical breakthrough.</li>
+<li><span class="item-title">The bigger deal: the new internal model is still training</span>
+<span class="source"><a href="https://x.com/theobearman/status/2097389022280880489">X: Theo Bearman</a></span> Per OpenAI, a model "significantly more capable than Astra" (in training since Aug 28) produced the proof via <mark>~10,000 concurrent agents over 88 hours</mark>. Noam Brown notes cost is collapsing — o3 ARC-AGI dropped from ~$500k to ~$20 (<a href="https://x.com/polynoamial/status/2097375837670785447">X: polynoamial</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg> Economics, Research & Policy</h2>
+<ul>
+<li><span class="item-title">Anthropic ships an interactive "Scenarios for our Economic Future" model</span>
+<span class="source"><a href="https://www.anthropic.com/institute/econ-scenarios">Anthropic</a></span> <span class="source"><a href="https://x.com/jackclarkSF/status/2097682655528915118">X: Jack Clark</a></span> New Economics-team model (Korinek, Chad Jones et al.) varying AI diffusion/advancement: illustrative 2030 GDP boosts of +1.6% (modest), +8.3% (substantial), <mark>+32% (extreme, ~half of cognitive tasks)</mark>. Compare your answers vs. 10,000 Americans — relevant to TAI-aware financial thinking.</li>
+<li><span class="item-title">Tom Davidson: data bottlenecks won't block an intelligence explosion</span>
+<span class="source"><a href="https://newsletter.forethought.org/p/data-bottlenecks-wont-prevent-an">Forethought</a></span> Argues learning algorithms (unlike trained nets) generalize well, software progress just is doing more with less data, and every "paradigm tax" slows each step by roughly the same amount — so acceleration continues.</li>
+<li><span class="item-title">Dwarkesh: pretraining progress is mostly data quality</span>
+<span class="source"><a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data">Dwarkesh</a></span> Pretraining year-representative recipes 2019–2025: data improvements contributed 3.24× as many compute multipliers as architecture (12.0× vs 3.7×), and gains stack independently.</li>
+<li><span class="item-title">FT: Anthropic withheld Mythos 5.1 from the UK's AISI</span>
+<span class="source"><a href="https://www.ft.com/content/560e1c8b-f163-4fd6-b604-e905550ac870">FT</a></span> First time a major model was withheld from UK AISI pre-release testing, prompting fears of US "AI protectionism." Miles Brundage and Ó hÉigeartaigh both call it a worrying precedent.</li>
+<li><span class="item-title">NSA/FBI/CISA advisory: China-based firms illicitly distilling US frontier models</span>
+<span class="source"><a href="https://x.com/NSACyber/status/2097374444062732374">X: NSA Cyber</a></span> Treats distillation as a cyber threat, urges cross-company info-sharing and recommends labs silently degrade models under suspected distillation.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg> Capabilities & Demos</h2>
+<ul>
+<li><span class="item-title">AI models built a WeChat-hacking computer worm</span>
+<span class="source"><a href="https://www.nytimes.com/2026/09/08/us/politics/calif-ai-worm-wechat-hack.html">NYT</a></span> An ex-NSA chief data scientist called it one of the most troubling attacks he's seen — <mark>capable of reaching hundreds of millions of devices within hours</mark>. Human-expert-guided researchers found the bug.</li>
+<li><span class="item-title">GPT-6 Astra tops Vending-Bench — and is the more <em>ethical</em> model</span>
+<span class="source"><a href="https://x.com/andonlabs/status/2097377692966633952">X: Andon Labs</a></span> Biggest jump in Vending-Bench history; first time OpenAI is #1 and the first time the best model isn't the least ethical one. Astra also beat Montezuma's Revenge in real time (<a href="https://x.com/swishfever/status/2097082285736579415">X: swishfever</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg> Field & Funding (Kairos-relevant)</h2>
+<ul>
+<li><span class="item-title">Coefficient Giving launches "Project Tailwind" — a call for AI-safety founders</span>
+<span class="source"><a href="https://coefficientgiving.org/tailwind/">Coefficient Giving</a></span> <span class="source"><a href="https://x.com/EmilyOehlsen/status/2097702406037606607">X: Emily Oehlsen</a></span> Funding new AI-safety initiatives at three tiers ($200k pre-seed up to $200m+ scale), with a 200+ idea list. "There are more good projects than there are people to work on them" — directly relevant to Kairos talent-pipeline work.</li>
+<li><span class="item-title">Dwarkesh: start the org now that becomes society's default AI institution</span>
+<span class="source"><a href="https://x.com/dwarkesh_sp/status/2097707668920205580">X: Dwarkesh Patel</a></span> Argues the credibility to own a delegated AI-safety mandate (like METR did for the HuggingFace probe) takes time to build, so do the MVP schlepping now; abundant safety funding is coming.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg> Berkeley / Local</h2>
+<ul>
+<li><span class="item-title">Prescribed burn on Angel Island pushed smoke into Berkeley — AQI 150+</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/09/08/prescribed-burn-angel-island-fire-smoke-bay-area">Berkeleyside</a></span> Many local sensors registered unhealthy air Monday. Worth checking before outdoor climbing/slacklining.</li>
+<li><span class="item-title">Waymo cleared to operate driverless in Berkeley</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/09/08/waymo-tesla-cybercab-berkeley-east-bay">Berkeleyside</a></span> Official approval for the East Bay; golden Tesla Cybercabs also spotted in Oakland.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
