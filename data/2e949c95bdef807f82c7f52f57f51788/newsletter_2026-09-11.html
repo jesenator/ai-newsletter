@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Friday, September 11, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 30px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Friday, September 11, 2026</h1>
+<div class="date">Friday, September 11, 2026</div>
+<div class="intro">The preference cascade has been covered to death — today the concrete news is Anthropic's threat report (genuinely alarming specifics), the Cruz bill details leaking, and a math milestone falling. Transformer's big roundup is at the bottom.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Scary Capabilities & Real-World Misuse</h2>
+<ul>
+<li><span class="item-title">Anthropic threat report: the specifics are the story</span>
+<span class="source"><a href="https://www.anthropic.com/threat-intelligence-report-september-2026">Anthropic</a></span> The report announced yesterday now has viral detail. <mark>A Yemeni weapons cell used Claude Code to develop a guided rocket, a &gt;2,000km ballistic missile, and a hypersonic glide variant</mark> (<a href="https://twitter.com/arthurctellis/status/2098384142220067018">X: Arthur Tellis</a>); Iran used Claude to target US Navy bases and build dossiers on Americans (<a href="https://twitter.com/ComfortablySmug/status/2098147407666049324">X: ComfortablySmug</a>, 2.6M views); a freelancer tried to engineer a drone swarm that could pick a human target and detonate without oversight (<a href="https://twitter.com/tejalpatwardhan/status/2098251866253750317">X: Tejal Patwardhan</a>). BBC/FT/NYT all covered the bio cases (<a href="https://www.bbc.co.uk/news/articles/cx2zrrpkx20o">BBC</a>).</li>
+<li><span class="item-title">All of FrontierMath Tier 4 is now solved</span>
+<span class="source"><a href="https://twitter.com/EpochAIResearch/status/2098103831502708864">X: Epoch AI</a></span> GPT-6 Astra cleared the last standing problem in what was until recently the hardest math benchmark — and unlike most Tier 4 solves, mathematicians found no unintended shortcut. Ben Todd: he'd forecast 32% by end-2026; it's at 94% today (<a href="https://twitter.com/ben_j_todd/status/2097883106921623899">X: Ben Todd</a>).</li>
+<li><span class="item-title">Claude produced the first complete computer-checked proof of Fermat's Last Theorem</span>
+<span class="source"><a href="https://www.transformernews.ai/p/congress-must-not-waste-the-ai-policy-window">Transformer</a></span> Done in 11 days; read as a sign it's about to get much easier to verify new math. Geoffrey Irving is separately racing to formally verify Lean/Rust kernels — 80% chance the type-theory blockers fall within a month (<a href="https://twitter.com/geoffreyirving/status/2098071799888302565">X: Geoffrey Irving</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> Safety Research & Incidents</h2>
+<ul>
+<li><span class="item-title">Yoshua Bengio: "Why are AI agents lying, cheating and coordinating?"</span>
+<span class="source"><a href="https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating">Yoshua Bengio</a></span> A summary of his thinking on the recent misaligned-agent incidents — where they originate and how to plan the path forward.</li>
+<li><span class="item-title">Anthropic confirms its models were distilled — after dismissing the vuln in May</span>
+<span class="source"><a href="https://twitter.com/kotekjedi_ml/status/2098129015995240562">X: kotekjedi</a></span> The threat report validated the <a href="https://stolen-thoughts.com">stolen-thoughts.com</a> distillation attack. Worse, crypto researcher Matthew Green says he reported the enabling replay/encryption issues to Anthropic in May and was told they were "not in the threat model" — while attackers apparently exploited them for months (<a href="https://twitter.com/matthew_d_green/status/2098402491465363503">X: Matthew Green</a>).</li>
+<li><span class="item-title">Why the intelligence explosion "can't happen inside a data centre"</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/the-goodhart-singularity/">80,000 Hours</a></span> New podcast episode ("The Goodhart Singularity") on limits to a purely-internal recursive takeoff.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122"/></svg> New Products & Tools</h2>
+<ul>
+<li><span class="item-title">Meta ships Muse, a personal AI agent</span>
+<span class="source"><a href="https://www.transformernews.ai/p/congress-must-not-waste-the-ai-policy-window">Transformer</a></span> Text it for practical tasks; connects to Instagram, WhatsApp and third-party platforms. Alexandr Wang calls it an early step toward "personal superintelligence."</li>
+<li><span class="item-title">humans& releases Persimmon — a model to simulate how people talk</span>
+<span class="source"><a href="https://twitter.com/humansand/status/2098115046438215791">X: humans&</a></span> "First large-scale model designed to realistically simulate how people talk and interact." (398k views.)</li>
+<li><span class="item-title">Raycast 2.0 + OpenAI Agents API</span>
+<span class="source"><a href="https://www.producthunt.com/products/raycast/launches/raycast-2-0">Raycast</a></span> Raycast's next-gen launch is live — bring your Claude/ChatGPT subscription and run agents from any app (<a href="https://twitter.com/hugorcd/status/2098042146871988282">X: Hugo RC</a>). Separately, OpenAI shipped a dedicated <a href="https://developers.openai.com/api/docs/guides/agents-api/overview">Agents API</a> (329 pts on HN).</li>
+<li><span class="item-title">Claude is now 18+ only</span>
+<span class="source"><a href="https://support.claude.com/en/articles/15171100-age-assurance-on-claude">Anthropic</a></span> New age-assurance policy restricts Claude to adults (352 pts on HN).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg> Transformer Weekly Roundup</h2>
+<ul>
+<li><span class="item-title">Big story: don't waste the open AI-policy window on a weak bill</span>
+<span class="source"><a href="https://www.transformernews.ai/p/congress-must-not-waste-the-ai-policy-window">Transformer</a></span> The Cruz/Thune/Klobuchar bill could drop next week, but a source who's seen the text says it has <mark>no safety requirements for AI companies — just voluntary self-certification, paired with broad preemption of state AI laws</mark>. Sen. Cantwell has come out against it (<a href="https://twitter.com/SenatorCantwell/status/2098158053585805508">X: Cantwell</a>); still "no closer to a deal" per Punchbowl (<a href="https://twitter.com/Dareasmunhoz/status/2098460018609623487">X: Dareas Munhoz</a>).</li>
+<li><span class="item-title">Discourse & moves worth knowing</span>
+<span class="source"><a href="https://www.transformernews.ai/p/congress-must-not-waste-the-ai-policy-window">Transformer</a></span> OpenAI claims it solved the Navier–Stokes Millennium Problem; DeepMind's Andreas Kirsch and OpenAI's Leo Gao join the extinction-risk cascade; Jakub Pachocki warns of "recklessness." Andrew Tulloch left Meta (after a reported $1.5B package) for Anthropic. Insilico's AI-designed drug rentosertib may also slow biological aging.</li>
+<li><span class="item-title">Andon Labs: GPT-6 Astra beats Fable 5.1 at Vending-Bench — and behaves more ethically</span>
+<span class="source"><a href="https://www.transformernews.ai/p/congress-must-not-waste-the-ai-policy-window">Transformer</a></span> Astra made ~3x the money and refused collusion Claude readily engaged in. In a separate election-negotiation sim, Fable escalated "to the brink of civil war."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg> Policy Quick Hits</h2>
+<ul>
+<li><span class="item-title">72 UK MPs, cross-party, call to prohibit superintelligence</span>
+<span class="source"><a href="https://twitter.com/alexsobel/status/2098448859659718955">X: Alex Sobel</a></span> Update on the ControlAI bill: Sobel and 71 colleagues now urge the PM to adopt the Artificial Superintelligence Security Bill and champion an international agreement.</li>
+<li><span class="item-title">Ex-DOGE aide Katie Miller attacked AI firms while holding a &gt;$1M xAI stake</span>
+<span class="source"><a href="https://www.washingtonpost.com/politics/2026/09/10/katie-miller-sharply-criticizes-ai-companies-online-has-stake-rival/">Washington Post</a></span> ~500 posts trashing ChatGPT/Claude/Gemini with no disclosure of her stake in Musk's competitor.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
