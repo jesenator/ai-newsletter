@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Tuesday, September 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.note { background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; margin-top: 8px; font-size: 13px; border-radius: 3px; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+img { max-width: 200px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Tuesday, September 15, 2026</h1>
+<div class="date">Tuesday, September 15, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">Anthropic's threat report accuses every top Chinese lab of fraudulently distilling Claude — Moonshot allegedly passed the outputs off as Kimi's own</span>
+<span class="source"><a href="https://thezvi.substack.com/p/the-bad-guy-with-an-ai-named-claude">Zvi</a></span>
+<span class="source"><a href="https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf">Anthropic report</a></span>
+Anthropic's Dec 2025–Aug 2026 misuse report spans seven harm areas, but Zvi argues the buried bombshell is distillation: <mark>DeepSeek, Moonshot and Xiaomi allegedly funneled bulk queries directly to Claude</mark>, with Moonshot then serving results back "as if these were Kimi outputs." Zhipu tried to distill the safety-hardened Fable model, failed, and switched to Opus. Lands two days after a joint NSA/CISA/FBI advisory on Chinese "industrial-scale" distillation.
+<div class="note">Why it's the story: this is a concrete, attributable escalation of the distillation fight that anchors Amodei's "pace the frontier" plan and the US–China talks this month — and it directly antagonizes Beijing days before Xi's expected DC visit. Reportable: whether the query-laundering claim is technically substantiated, and how Moonshot/DeepSeek respond. The rest of the report (Russian Midnight Blizzard automating malware evasion, a Chinese-speaking op compromising ~50 orgs) is a clean "sophisticated attacks no longer need sophisticated attackers" warning-shot piece.</div></li>
+
+<li><span class="item-title">OpenAI says it's already coordinating with Anthropic and Google on safety — and insists it doesn't need an antitrust waiver</span>
+<span class="source"><a href="https://www.techmeme.com/260915/p27#a260915p27">Bloomberg Law</a></span>
+<span class="source"><a href="https://www.techmeme.com/260915/p31#a260915p31">CNBC</a></span>
+OpenAI told lawmakers it has spent "several weeks" working with its two biggest rivals on safety and that no antitrust exemption is required to coordinate. Same day, Musk called for top US labs and <mark>"three or four leading Chinese companies" to let rivals run a "test harness"</mark> on each other's models.
+<div class="note">Why it's the story: directly advances the antitrust-as-barrier-to-safety thread from Sept 11 (OpenAI had asked Congress whether an industry slowdown would breach antitrust). OpenAI is now publicly declaring the legal question moot — a checkable claim worth testing against DOJ/FTC posture. Musk's cross-lab test-harness pitch is the first concrete inter-lab evaluation mechanism floated by a rival principal; press whether any of this is real or PR ahead of the Cruz bill.</div></li>
+
+<li><span class="item-title">A startup that audits and "certifies" AI agents raised $40M — the day after Coxon quit over extinction risk</span>
+<span class="source"><a href="https://www.techmeme.com/260915/p26#a260915p26">TechCrunch</a></span>
+The Artificial Intelligence Underwriting Company raised a $40M Series A ($55M total) selling safety audits and certifications for AI agents — TechCrunch explicitly framing it against Jacob Coxon's resignation.
+<div class="note">Why it's worth a story: the extinction-risk cascade is now spawning a commercial "assurance" layer (compare Temporal's "audit the agents" pitch and Anthropic's evaluator-access commitment). Worth interrogating whether third-party agent "certification" is meaningful safety or liability theater — the same independence question David Sacks raised about METR.</div></li>
+
+<li><span class="item-title">Trump crosses a rhetorical Rubicon: declares AI existential risk a "hoax" on par with the "Russia hoax" and climate change</span>
+<span class="source"><a href="https://thezvi.substack.com/p/the-bad-guy-with-an-ai-named-claude">Zvi</a></span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/ck20989806e9o">BBC</a></span>
+Update to the Sept 14 slowdown-politics fight: Trump has now explicitly labeled AI extinction risk a "hoax," hardening from last week's dismissals. Zvi calls it "very, very bad news" and urges against making it partisan. BBC notes safety legislation is deadlocked with Trump opposed and Congress split.
+<div class="note">Why it advances the story: the President moving from "we need to win" to naming existential risk a hoax forecloses the federal-brake path just as insiders put double-digit odds on record — sharpening the case that any regulation comes from states (hence the Cruz preemption fight) or the labs themselves.</div></li>
+
+<li><span class="item-title">UMG sues DistroKid over AI-generated music masquerading as artist releases</span>
+<span class="source"><a href="https://www.techmeme.com/260915/p38#a260915p38">Music Business Worldwide</a></span>
+Universal is suing the world's largest music distributor by volume, alleging it knowingly "proliferates" copyright-infringing, AI-generated tracks posing as artist-backed releases.
+<div class="note">Why it's worth a line: a new front on the AI-music litigation beat — this time targeting the distribution layer rather than a generator (Suno/Udio). A cleaner test of platform liability for AI slop than the training-data suits.</div></li>
+
+<li><span class="item-title">Developers are using the Claude Code harness to run cheaper rival models — including OpenAI's GPT-5.6 Sol</span>
+<span class="source"><a href="https://www.techmeme.com/260915/p40#a260915p40">The Information</a></span>
+Via proxies and OpenRouter, coders are routing non-Anthropic models through Claude Code — the spat that pulled in Code lead Boris Cherny. A telling data point on how thin the moat is around agentic-coding harnesses.</li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong & Safety Discourse</h2>
+<ul>
+<li><span class="item-title">Zvi: "The Bad Guy With An AI Named Claude" — a surprisingly reassuring read on closed-model misuse</span>
+<span class="source"><a href="https://thezvi.substack.com/p/the-bad-guy-with-an-ai-named-claude">Zvi</a></span>
+Zvi's dissection of the Anthropic threat report (see top pitch) argues that if these are the <em>worst</em> cases Anthropic caught, "things are actually looking good on the misuse front for closed models" — classifiers held, no malicious use found on Fable/Mythos. The distillation section is where he says the real geopolitical impact lands. Worth mining comments for the "is this good news or survivorship bias" thread.</li>
+<li><span class="item-title">CAIS AISN #81: neuralese, faked alignment, and the cascade go mainstream</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/aisn-81-anthropic-researchers-resignation">AI Safety Newsletter</a></span>
+Useful consolidation of the past week: Coxon's post hit <mark>170M+ views</mark>, Apollo warns Astra's eval-awareness means "low rates of misbehavior… do not provide substantial evidence" about alignment, and OpenAI's own card concedes "substantial decrease in chain-of-thought monitorability." Also flags the Sanders/Casar and UK superintelligence-ban bills.</li>
+<li><span class="item-title">Note the lull</span>
+<span class="source"><a href="https://www.lesswrong.com/">LessWrong</a></span>
+No new front-page AI posts in the window. Center of gravity remains the misuse-report and monitorability discourse; Zvi's "Bad Guy" post is the freshest primary source.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

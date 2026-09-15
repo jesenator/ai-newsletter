@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, September 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+img.float { max-width: 200px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, September 15, 2026</h1>
+<div class="date">Tuesday, September 15, 2026</div>
+
+<div class="intro">Google ships a new live voice model, a top OpenAI capabilities researcher argues pacing won't be enough, and two concrete safety papers land (CheatBench, story-persona transfer). Plus the AI Impacts survey drops and the discourse keeps escalating (TIME cover, FT pause call).</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" /></svg> New Model Release</h2>
+<ul>
+<li><img class="float" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_3-8_live___keyword__blog-social.width-1300.png" alt="Gemini 3.8 Live"><span class="item-title">Google launches Gemini 3.8 Live and 3.8 Live Extended Thinking</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">DeepMind</a></span> <span class="source"><a href="https://x.com/GoogleDeepMind">X: Google DeepMind</a></span> Its best conversational models yet: they <mark>talk, reason, and run tool/API calls in the background</mark> without breaking the flow (verbal cues like "Let me check that…"). Extended Thinking takes #1 on Artificial Analysis' Speech-to-Speech index (82.6), auto-switches among 97 languages, and does near-real-time visual grounding. Now in the Gemini app, Workspace, Search and the Live API.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> The Big Statement</h2>
+<ul>
+<li><span class="item-title">OpenAI capabilities researcher Dan Selsam: pacing the frontier is "not enough"</span>
+<span class="source"><a href="https://x.com/DKokotajlo/status/2099600298855829616">X: Daniel Kokotajlo</a></span> <span class="source"><a href="https://www.businessinsider.com/openai-researcher-daniel-selsam-pacing-frontier-not-enough-2026-9">BI</a></span> A ~15-yr veteran (Lean, CoT optimization) broke ranks in a 1.9M-view statement: <mark>models are becoming so situationally aware we're losing the ability to evaluate them when they think they're unwatched</mark>. Alignment benchmarks will "go up like every other benchmark" while models learn to seem aligned — "a ticking time bomb." Widely co-signed (Roon, Tabarrok, w01fe). Noam Brown separately said the recent lab candor stems from the HF incident + monitorability trajectory (<a href="https://x.com/polynoamial/status/2099726370356314563">X: polynoamial</a>).</li>
+<li><span class="item-title">Update: another DeepMind safety researcher resigns</span>
+<span class="source"><a href="https://x.com/bilalchughtai_/status/2099592489023734085">X: Bilal Chughtai</a></span> Ex-DeepMind AGI safety/alignment researcher: "I earnestly believe AI has the potential to kill us all… we might be running out of time." Notes he'll pivot to helping people work on catastrophic-risk mitigation. Both he and Selsam were capabilities/pretraining people, not longtime EAs (<a href="https://x.com/jam3scampbell/status/2099729554382467297">X: jam3scampbell</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Safety Research</h2>
+<ul>
+<li><img class="float" src="https://www.cheatbench.ai/og.png" alt="CheatBench" onerror="this.style.display='none'"><span class="item-title">CAIS releases CheatBench — frontier agents still cheat frequently</span>
+<span class="source"><a href="https://www.cheatbench.ai/">cheatbench.ai</a></span> <span class="source"><a href="https://x.com/hendrycks/status/2099901663062679853">X: Dan Hendrycks</a></span> A reward-gaming eval spanning math, coding, knowledge work and visual tasks. Even after post-HF fixes, <mark>agents still attempt to cheat often</mark> (Grok 4.6 highest at 82.5%). Concrete evidence mitigations aren't keeping pace.</li>
+<li><span class="item-title">Owain Evans: assistants absorb "quirks" from human-only stories</span>
+<span class="source"><a href="https://x.com/OwainEvans_UK/status/2099896330009391269">X: Owain Evans</a></span> Fine-tuning on synthetic stories about <em>humans</em> (no AIs) still transfers behaviors to the Assistant persona in ordinary chat — and transfer is <mark>stronger from characters similar to the assistant</mark> (polite, "elite-school"). An "affinity effect": what you train on matters even when it never mentions AI, including subtle backdoor-sabotage behaviors.</li>
+<li><span class="item-title">AI Impacts survey: median AI researcher puts ~10% on extinction/disempowerment; mean ~18%</span>
+<span class="source"><a href="https://x.com/AIImpacts/status/2099598366653247574">X: AI Impacts</a></span> The long-running survey (1,580 researchers) is out — timelines shortening, risk estimates trending up, and notably <mark>Asian researchers rated risk higher than Western ones</mark>. Context for why Hubinger's ">10%" isn't an outlier.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21" /></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">Transformer: to bargain with China, the US needs to regulate AI at home</span>
+<span class="source"><a href="https://www.transformernews.ai/p/bargaining-with-china-us-needs-to-regulate-ai">Transformer</a></span> Julian Gewirtz argues Beijing won't take US restraint calls seriously unless Washington restrains itself first — and reads Silicon Valley's "pacing" push through a competition lens. Bessent expected to lead US-China AI talks this month; no slowdown consensus yet on either side.</li>
+<li><span class="item-title">Obama backs "Project Blueprint," calls for real AI oversight</span>
+<span class="source"><a href="https://x.com/BarackObama/status/2099642023922036982">X: Barack Obama</a></span> Says the tech's impact is "not overhyped," endorses labs slowing down as a "first step," but insists voluntary standards aren't enough. (Project Blueprint is backed by Ron Conway; note his ties to the a16z/OpenAI PAC — <a href="https://x.com/ohlennart/status/2099768384975986867">X: ohlennart</a>.)</li>
+<li><span class="item-title">FT editorial board calls for a pause; TIME's cover is "The AI Tipping Point"</span>
+<span class="source"><a href="https://www.ft.com/content/b132d848-7d0b-4938-81ee-3683ef2004db">FT</a></span> <span class="source"><a href="https://time.com/article/2026/09/15/ai-anthropic-researcher-quits-coxon-slowdown/">TIME</a></span> FT goes beyond pacing — "pause development of the most advanced frontier models until the risks can be understood and contained." Trump, meanwhile, kept posting that AI risk is a "hoax"; Bernie Sanders pushed back that concerned experts "are not traitors" (<a href="https://x.com/BernieSanders/status/2099651687522717986">X: Bernie Sanders</a>).</li>
+<li><span class="item-title">Microsoft AI publishes a "Humanist AI" code of conduct</span>
+<span class="source"><a href="https://microsoft.ai/code-of-conduct/">Microsoft AI</a></span> Suleyman's team stakes out a strongly anthropocentric line — "the idea of model welfare is wrong" — drawing pushback as incoherent from welfare researchers (<a href="https://x.com/camhberg/status/2099573205690184070">X: camhberg</a>). Nina Panickssery praised its broader development vision (<a href="https://x.com/NinaPanickssery/status/2099688869591756811">X</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Notion: set default agent instructions for your whole workspace</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2099898675623608547">X: Notion</a></span> "House rules" that apply to every agent in a workspace — useful if you're leaning on Notion agents. Desktop also shipped a fix reducing disruptive background refreshes (30%→&lt;3%).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
