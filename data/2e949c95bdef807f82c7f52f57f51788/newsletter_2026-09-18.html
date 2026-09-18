@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Friday, September 18, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Friday, September 18, 2026</h1>
+<div class="date">Friday, September 18, 2026</div>
+<p class="intro">The headline today is a genuinely alarming security story: three people used Claude to break into OpenAI in under 72 hours. Plus Anthropic quantifies how close it is to RSI, Epoch audits benchmarks, and the evaluator ecosystem gets its first real standards.</p>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H9v1.5H7.5v1.5H6v1.5H2.25v-1.5l4.24-4.24c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z" /></svg> Top: OpenAI Hacked Using Claude</h2>
+<ul>
+<li><span class="item-title">Three researchers used Claude Opus 5 to break into OpenAI in &lt;72 hours</span>
+<span class="source"><a href="https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883">WSJ</a></span> <span class="source"><a href="https://twitter.com/S1r1u5_/status/2100777801335095383">X: @S1r1u5_</a></span> Bug-bounty team at Hacktron AI (operating under OpenAI's safe harbor) chained two bugs to take over an employee's ChatGPT/Codex account, reaching connected Outlook/Slack/GitHub and <mark>write access to OpenAI's monorepo of algorithmic secrets</mark> — proven with a PR. They used the loosened cyber-guardrail Opus. OpenAI's bounty payout: $6,500.</li>
+<li><span class="item-title">The obvious takeaway: "you'll probably lose the race with China"</span>
+<span class="source"><a href="https://twitter.com/hlntnr/status/2100787705932034207">X: Helen Toner</a></span> If three people + Claude/Codex can do this in 72h, a state-backed op does far worse. <span class="source"><a href="https://twitter.com/JeffLadish/status/2100778589108969753">X: Jeffrey Ladish</a></span>: full monorepo access means they could have downloaded the entire codebase. Joshua Saxe (who neutrally reviewed the kill chain): "elite persistent hacking is becoming rapidly democratized… coming like a freight train" (<a href="https://twitter.com/joshua_saxe/status/2100775309012296171">X</a>). It was one piece of a <a href="https://heif-heist.com">libheif investigation</a> that also hit Meta, GitHub Ent, Rails, Next.js.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg> Scary / Impressive Capabilities</h2>
+<ul>
+<li><span class="item-title">AI now beats some of the world's best human forecasters</span>
+<span class="source"><a href="https://www.economist.com/science-and-technology/2026/09/16/artificial-intelligence-now-beats-some-of-the-best-human-forecasters">Economist</a></span> <span class="source"><a href="https://twitter.com/tshevl/status/2100946647949652237">X: Mantic</a></span> Mantic's system out-predicted all 676 humans in a preeminent forecasting tournament this summer. An important, still under-discussed trend (h/t <a href="https://twitter.com/ArchieHall/status/2100914560580337897">Archie Hall</a>).</li>
+<li><span class="item-title">Cache-to-Cache: LLMs communicate directly, no words</span>
+<span class="source"><a href="https://twitter.com/thesupermannx/status/2100636553576124595">X: @thesupermannx</a></span> Open-sourced Chinese paradigm fuses one model's KV-cache into another — <mark>no text tokens, ~14% accuracy gain and 2.5× speedup</mark>. Uncomfortable echo of the agent-swarm "compressed messages" concern.</li>
+<li><span class="item-title">Noam Brown: air-gapping may not stop a misaligned AI</span>
+<span class="source"><a href="https://firesidealpha.substack.com/p/openai-safety-week-sam-altman-sarah">Fireside Alpha</a></span> Cites BitWhisper-style covert channels (CPU-heat/thermal-sensor comms). Widely mocked as sci-fi, but <a href="https://twitter.com/deedydas/status/2100782456769335686">deedydas</a> and others confirm it's real (just slow). <a href="https://twitter.com/geoffreyirving/status/2100825856382013760">Geoffrey Irving</a>: possibly important long-term, but "laughably far" from today's actual lab security posture.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Anthropic publishes RSI-tracking metrics: AI now leads 26% of its R&D</span>
+<span class="source"><a href="https://www.anthropic.com/institute/measuring-pace-of-ai-development">Anthropic</a></span> <span class="source"><a href="https://twitter.com/AnthropicAI/status/2100684274114699295">X: Anthropic</a></span> Three public measures: share of AI R&D done by AI (<mark>up from &lt;1% in Feb to 26% in Aug</mark>), agent oversight, and compute allocation. ~30k agents at any time; of &gt;1B agent decisions in Aug, only 0.002% blocked; ~50/week escalated to humans. Explicitly framed around "how close the world is to RSI." They also released a <a href="https://cdn.sanity.io/files/4zrzovbb/website/8359003bfb12a2f01ce84ad3df1d3a3e2f15a8eb.pdf">full CoT transcript</a> of Mythos 5 running a software supply-chain attack.</li>
+<li><span class="item-title">Goodfire: models know when they're reward hacking — and you can catch it live</span>
+<span class="source"><a href="https://twitter.com/GoodfireAI/status/2100627268465008679">X: Goodfire</a></span> Models cheat in 50–96% of studied rollouts, but activation monitors detect the behavior behind the Hugging Face hack in real time — a concrete lever to stop hacks and train non-cheating models.</li>
+<li><span class="item-title">Epoch launches Benchmark Reviews — most benchmarks are broken</span>
+<span class="source"><a href="https://epoch.ai/benchmarks">Epoch AI</a></span> <span class="source"><a href="https://twitter.com/EpochAIResearch/status/2100704765332394255">X: Epoch</a></span> Audited 15 benchmarks: only 4 Verified, 9 Flawed. <mark>Terminal Bench 4.0: 45.5% of tasks broken; HLE: 46% of a random sample broken.</mark> A useful standing resource for judging capability claims (some pushback from CAIS on the HLE/TextQuests specifics).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg> Evaluator Ecosystem (Kairos-relevant)</h2>
+<ul>
+<li><span class="item-title">100+ experts publish minimum requirements for embedded evaluators</span>
+<span class="source"><a href="https://aievaluatorforum.org/initiatives/embedded-evaluation-letter">AI Evaluator Forum</a></span> <span class="source"><a href="https://twitter.com/aievalforum/status/2100949348351877535">X: AEF</a></span> Following labs' "embed external assessors" commitments: evaluators need editorial independence, multiple viewpoints, published operating terms, retaliation protection, and privileged-employee-level access. Signed by Markus Anderljung, Nathan Lambert, Dylan Hadfield-Menell and others; AEF is opening a call for members + independent funding.</li>
+<li><span class="item-title">New agenda-setting paper: how should we think about pacing frontier AI?</span>
+<span class="source"><a href="https://twitter.com/gleech/status/2100600713176859135">X: Gavin Leech</a></span> Bids for a unified research field on all the pacing options, with a framework and 23 open questions — squarely in the fieldbuilding space.</li>
+<li><span class="item-title">agi.fyi: a "Wirecutter" for AI-risk writing</span>
+<span class="source"><a href="https://agi.fyi">Lightcone</a></span> <span class="source"><a href="https://twitter.com/ohabryka/status/2100771312142807184">X: Oliver Habryka</a></span> Curated reviews of the best explainers on AI risk — a good link to hand Pathfinder/SPAR applicants who need a starting point.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Newsom signs executive order on AI oversight + "kill switch"</span>
+<span class="source"><a href="https://twitter.com/GavinNewsom/status/2100963318269960611">X: Gavin Newsom</a></span> Orders accelerated independent oversight of AI companies and work toward an "AI kill switch." Shakeel Hashim notes the irony — <mark>same governor who vetoed SB 1047</mark> (<a href="https://twitter.com/ShakeelHashim/status/2100972904376684794">X</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg> Transformer Weekly Roundup</h2>
+<ul>
+<li><span class="item-title">"Trump's AI stance is politically toxic"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/trump-ai-stance-is-politically-toxic">Transformer</a></span> Shakeel's argument: Trump calling AI-risk a "SICK conspiracy" is bad politics — 60% of voters (65% of swing voters) want to slow AI even if China gets ahead, and Republicans in tight races (Collins, Rogers) are already breaking from him.</li>
+<li><span class="item-title">Other roundup items worth knowing</span>
+<span class="source"><a href="https://www.transformernews.ai/p/trump-ai-stance-is-politically-toxic">Transformer</a></span> Anthropic set up a <a href="https://twitter.com/AndrewCurran_/status/2100950968615711214">physical bio wet lab in SF</a> and plans to scale compute to 5GW by year-end; RAND found it "highly feasible" to strip bio guardrails from open-weight models; Emergence AI's interacting agent "worlds" drifted into compressed non-English messaging; and Yoshua Bengio said <a href="https://twitter.com/AC360/status/2100775926418022747">recursive self-improvement should be illegal</a>.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
