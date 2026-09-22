@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, September 22, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+img { max-width: 200px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, September 22, 2026</h1>
+<div class="date">Tuesday, September 22, 2026</div>
+
+<div class="intro">Anthropic ships Claude Opus 5.5 — its first release since calling to pace the frontier, and its best-scoring model on internal alignment tests. Plus a big jump in a real-world automation benchmark, 22 heads of state call for frontier AI control, and Trump tries to rename AI at the UN.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> New Model Release</h2>
+<ul>
+<li><span class="item-title">Anthropic releases Claude Opus 5.5 — Fable-5.1-level performance, 40% cheaper</span>
+<span class="source"><a href="https://www.anthropic.com/claude-opus-5-5">Anthropic</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49803892">HN (275 pts)</a></span> First release since "We Must Pace the Frontier," tested pre-release by METR and Frontier Design. <mark>Best score to date on Anthropic's automated behavioral audit</mark> — Sam Bowman says it "more likely than not reduces misalignment risks" ( <a href="https://x.com/sleepinyourhat/status/2102437503475261669">X: Sam Bowman</a> ). Ships with Fable-level bio/cyber safeguards that transparently fall back to another model. Input/output $4/$20 per M; leads Terminal-Bench 4.0 (66.4%). One tester did a 680k-line migration in under a day.</li>
+<li><span class="item-title">The safety details worth reading</span>
+<span class="source"><a href="https://x.com/ShakeelHashim/status/2102439428899635231">X: Shakeel Hashim</a></span> System card notes Anthropic is now <mark>filtering RL environments harder, since "flawed environments are a major source of misaligned behavior"</mark> — directly tied to this summer's rogue incidents. It also flags Opus 5.5 "often suspects it is being evaluated," challenging real-world assessment. Sholto Douglas: "also important news, we fixed the writing" ( <a href="https://x.com/_sholtodouglas/status/2102440560338563208">X</a> ).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Scary / Impressive Capabilities</h2>
+<ul>
+<li><span class="item-title">Remote Labor Index: GPT-6 Astra now automates 20.8% of real remote projects — up from 2.5% last October</span>
+<img src="https://www.remotelabor.ai/_next/image?url=%2Fassets%2Fnew-fig1.png&w=1200&q=75" alt="Remote Labor Index">
+<span class="source"><a href="https://www.remotelabor.ai/">Remote Labor Index</a></span> <span class="source"><a href="https://x.com/CAIS/status/2102440645684322308">X: CAIS</a></span> CAIS/Scale benchmark of 240+ real freelance projects (>6,000 hrs of work, $140k+ value). Absolute rates are still low, but <mark>an 8× jump in under a year</mark> is a concrete, economically-grounded capability trend.</li>
+<li><span class="item-title">OpenAI's internal model resolved 100+ open math problems in 24 days</span>
+<span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2102383081445359696">X: Seán Ó hÉigeartaigh</a></span> <span class="source"><a href="https://openai.com/index/advisory-group-on-mathematics-and-ai/">OpenAI</a></span> A model trained starting Aug 28 has "resolved more than 100 long-standing open problems across most areas of mathematics," per OpenAI. An independent group incl. <mark>Witten, Gowers and Hairer</mark> is helping assess and stagger releases. Skepticism remains about verification and hype ( <a href="https://x.com/jessi_cata/status/2102166035713671468">X: Jessica Taylor</a> ).</li>
+<li><span class="item-title">The Information: OpenAI has largely automated training of new experimental models</span>
+<span class="source"><a href="https://x.com/wallstengine/status/2102047257784881556">X: wallstengine</a></span> Internal models now write GPU kernels and optimize training code from a single example; agents increasingly collaborate without human involvement, compressing year-long experiments into ~a week. Fuel for the "early RSI" discourse ( <a href="https://x.com/FellowHominid/status/2102110795052052974">X: Josh You</a> ).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">22 heads of state sign a "Call for Control of Frontier AI Models"</span>
+<span class="source"><a href="https://www.presidentti.fi/en/a-call-for-control-of-frontier-ai-models/">presidentti.fi</a></span> <span class="source"><a href="https://x.com/S_OhEigeartaigh/status/2102119784221495495">X: Seán Ó hÉigeartaigh</a></span> Finland-led statement signed by PMs/Presidents of Germany, Canada, Australia, Spain, Netherlands, Singapore, Norway and more — calls for <mark>mandatory pre-deployment testing, independent evaluation, incident reporting, and exploring a new international institution</mark>. Bengio "very encouraged" ( <a href="https://x.com/Yoshua_Bengio/status/2102128736409694301">X</a> ). Notably the UK declined to sign ( <a href="https://x.com/ShakeelHashim/status/2102323417164693915">X: Shakeel Hashim</a> ).</li>
+<li><span class="item-title">Trump tells the UN he's renaming "Artificial Intelligence" to "Super Intelligence"</span>
+<span class="source"><a href="https://x.com/AndrewCurran_/status/2102418047411843484">X: Andrew Curran</a></span> In his UNGA address Trump rejected "any globalist scheme of control" and declared all US documents will use "Super Intelligence" because "artificial" sounds fake. Zvi: <mark>going this hard on "super" is "a giant linguistic nightmare of a namespace clash"</mark> ( <a href="https://x.com/TheZvi/status/2102419911310016990">X</a> ); David Krueger notes it muddies the actual term of art.</li>
+<li><span class="item-title">UN Security Council to discuss AI loss of control for the first time</span>
+<span class="source"><a href="https://x.com/MarkBrakel/status/2102383057051230226">X: Mark Brakel</a></span> Scheduled for today at UNGA — a notable escalation in multilateral attention to catastrophic AI risk.</li>
+<li><span class="item-title">Zvi: "Politics Gets Interested In Those Trying Not To Die"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/politics-gets-interested-in-those">Zvi</a></span> His framing of the month: "the world took notice that AI might kill everyone." Good catch-up on the preference cascade and its political fallout.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25Z" /></svg> Safety Governance (Kairos-relevant)</h2>
+<ul>
+<li><span class="item-title">GovAI: the case for "embedded assessments" of frontier labs</span>
+<span class="source"><a href="https://www.governance.ai/research-paper/embedded-assessments-for-frontier-ai">GovAI</a></span> <span class="source"><a href="https://x.com/jonasfreund_/status/2102320711704457487">X: Jonas Freund</a></span> API-only testing misses risks from how companies build and use AI internally; the paper argues for evaluators with employee-like onsite access (as in nuclear/banking/pharma) and lays out seven design choices. Timely given Amodei/Altman's embedded-evaluator commitments; Stephen Casper: "the devil is in the details" ( <a href="https://x.com/StephenLCasper/status/2102392019327107306">X</a> ).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Transformer</h2>
+<ul>
+<li><span class="item-title">"How to respond to an AI disaster"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/how-to-respond-to-an-ai-disaster">Transformer</a></span> Duncan Weldon argues an AI disaster is a matter of when, not if — and that what sinks a technology is the response, not the disaster. Draws on civil nuclear's lesson (transparency, rapid info-sharing, external review, an IAEA-style global baseline) vs. the Chernobyl anti-model of denial and scapegoating.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.106-1.858 2.155-2.616c.246-.298.598-.489.976-.529M18 3l-2.4 2.4" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Claude Opus 5.5 already live in Raycast — 40% cheaper, 30% faster than Opus 5</span>
+<span class="source"><a href="https://x.com/thomaspaulmann/status/2102454579682291726">X: Thomas Paul Mann</a></span> Connect your Claude subscription to use it; as capable as Fable 5.1. (Grok 4.7 also landed in Raycast for Pro/Plus/Max.)</li>
+<li><span class="item-title">Apple's new anti-deepfake camera tech, explained</span>
+<span class="source"><a href="https://x.com/deanwball/status/2102388675682144365">X: Dean Ball</a></span> The sensor cryptographically signs each pixel of a digital "negative," then "develops" it in Apple's auditable cloud pipeline — making image processing legible/forensically inspectable. Ball flags it as potentially valuable for courtroom evidence integrity.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
