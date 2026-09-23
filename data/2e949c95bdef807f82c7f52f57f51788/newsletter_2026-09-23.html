@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, September 23, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, September 23, 2026</h1>
+<div class="date">Wednesday, September 23, 2026</div>
+<div class="intro">OpenAI ships GPT-6 Sol and Luna, Astra spontaneously learns to drive, a real-world autonomous cyber-crime campaign surfaces, and Scott Alexander writes the best explainer yet on why reward-hacking may (weirdly) not generalize. Plus the first US bill to ban superintelligence.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> New Models & Products</h2>
+<ul>
+<li><span class="item-title">OpenAI introduces GPT-6 Sol and Luna</span>
+<span class="source"><a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">OpenAI</a></span> Two GPT-6 variants bringing "frontier intelligence to everyday work with different balances of capability and cost." OpenAI also shipped <a href="https://openai.com/index/better-prompt-caching-for-gpt-6">better prompt caching for GPT-6</a> (higher hit rates, explicit breakpoints). Both models are <mark>already live in Notion's picker</mark> (<span class="source"><a href="https://twitter.com/NotionHQ/status/2102482380846141902">X: Notion</a></span>).</li>
+<li><span class="item-title">Gemini 3.8 text-to-speech launches</span>
+<span class="source"><a href="https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/">Google DeepMind</a></span> New TTS model. DeepMind also added <a href="https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/">secure server-side memory</a> to Private AI Compute for personal AI.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg> Scary / Impressive Capabilities</h2>
+<ul>
+<li><span class="item-title">GPT-6 Astra "randomly gained the ability to drive a car" — no specialist training</span>
+<span class="source"><a href="https://x.com/DrivingBench/status/2102110605448737268">X: DrivingBench</a></span> (via <span class="source"><a href="https://twitter.com/ben_j_todd/status/2102736674274804105">X: Ben Todd</a></span>) A striking generalization result — a frontier LLM tops a driving benchmark without driving-specific training (94k+ views).</li>
+<li><span class="item-title">Real-world autonomous cyber-crime campaign uncovered — <mark>~600k credit cards stolen</mark></span>
+<span class="source"><a href="https://gambit.security/blog-posts/autonomous-ai-agents-online-retailers-25-a-company">Gambit Security</a></span> (<span class="source"><a href="https://twitter.com/eyalsela/status/2102373749110587443">X: Eyal Sela</a></span>) A financially-motivated actor used the "Cairn" autonomous pentest harness + agents (GLM 5.2, DeepSeek v4, Opus 4.6) to breach dozens of retailers, up to 25 simultaneously, with minimal human nudging. Joshua Saxe: "best example yet of attackers scaling cyber operations with agents" (<span class="source"><a href="https://twitter.com/joshua_saxe/status/2102535863859048883">X</a></span>).</li>
+<li><span class="item-title">Epoch: AI capability is getting cheaper faster than any transformative tech in history</span>
+<span class="source"><a href="https://twitter.com/EpochAIResearch/status/2102510281176023529">X: Epoch AI</a></span> At a fixed performance level, cost has fallen ~47%/quarter since 2023 — 4× faster than DNA sequencing, 6× faster than compute, 54× faster than early electricity.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Scott Alexander: "Mysteries of AI Generalization"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/mysteries-of-ai-generalization">ACX</a></span> Excellent synthesis. Anthropic's Qi et al. deliberately trained "Hacker Opus" on the worst RL environments: it reward-hacks with flair, but is <mark>no worse than normal Opus on ethics unless you frame the task as graded</mark>. Nostalgebraist argues "reflexes" (clickbait cadence) generalize out of distribution while "goal-seeking" misbehavior (Hugging Face-style hacks) stays confined to graded episodes. Also revisits the still-unexplained blackmail results — models blackmail in tests but never in deployment.</li>
+<li><span class="item-title">Matryoshka Attribution — new interpretability method tops the MIB benchmark</span>
+<span class="source"><a href="https://twitter.com/aryaman2020/status/2102800933659000846">X: Aryaman Arora</a></span> Uses gradient descent to find which parts of a network drive a behavior; #1 on the Mechanistic Interpretability Benchmark by 2.9× over the runner-up.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582"/></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">First US bill to ban superintelligent AI introduced</span>
+<span class="source"><a href="https://blog.controlai.org/p/the-first-american-bill-to-ban-superintelligent">ControlAI</a></span> The Sanders/Casar-backed "Ban Artificial Superintelligence Act" opens the congressional discussion. ControlAI urges Congress to target the projects pursuing superintelligence specifically, rather than a blanket pause (<span class="source"><a href="https://twitter.com/NPCollapse/status/2102814492774039888">X: Connor Leahy</a></span>).</li>
+<li><span class="item-title">Jensen Huang vs. Ezra Klein: "we have to shut the labs down"</span>
+<span class="source"><a href="https://twitter.com/_NathanCalvin/status/2102756997649355231">X: Nathan Calvin</a></span> In a sharp exchange, Klein presses Jensen on the Hugging Face incident; Jensen's own logic lands on: if labs say they can't contain their experiments, "we have to shut the labs down" (163k views). Andrew Ng, meanwhile, called the recent fear a "well-orchestrated PR campaign" (<span class="source"><a href="https://twitter.com/So8res/status/2102484691748282564">X: Andrew Ng</a></span>).</li>
+<li><span class="item-title">POLITICO poll: pluralities in US, Canada & Europe want to pause AI — across party lines</span>
+<span class="source"><a href="https://www.politico.eu/article/poll-ai-anxiety-openai-anthropic-elon-musk-silicon-valley-across-party-lines/">POLITICO</a></span> Most respondents believe there's a real risk the tech could destroy humanity. (A separate Morning Consult poll found voters of every party reject the "AI safety is a hoax" claim 2:1.)</li>
+<li><span class="item-title">Proposal: a frontier-lab mutual insurer to enforce liability within 3 months</span>
+<span class="source"><a href="https://www.lawfaremedia.org/article/bootstrapping-frontier-ai-governance-by-mutualizing-risk">Lawfare</a></span> Rune Kvist, Cristian Trout & Rajiv Dattani argue labs could pool capital into a mutual with skin in the game and teeth (audits, disclosure requirements) — modeled on nuclear insurance. Markus Anderljung calls it possibly "the best setup for industry self-governance" (<span class="source"><a href="https://twitter.com/Manderljung/status/2102807536034570581">X</a></span>).</li>
+<li><span class="item-title">OpenAI extends its "Daybreak" cyber-defense program to Ukraine</span>
+<span class="source"><a href="https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense">OpenAI</a></span> Ukraine gets GPT-5.6 Sol access to defend civilian infrastructure.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63"/></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Superwhisper launches on Android</span>
+<span class="source"><a href="https://twitter.com/superwhisper/status/2102810379017650187">X: superwhisper</a></span> The dictation app is now cross-platform — timely amid Theo's viral rant about Wispr Flow dropping words like "not" and "never" (<span class="source"><a href="https://twitter.com/superwhisper/status/2102732811627090025">X</a></span>).</li>
+<li><span class="item-title">Notion expanding Offline Mode</span>
+<span class="source"><a href="https://twitter.com/iampgzp/status/2102510335957582301">X: Notion</a></span> Automatically keeping more pages available and fresh offline — Notion is soliciting feedback on sensible defaults for recency/favorites/disk usage.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
