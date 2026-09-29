@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, September 29, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, September 29, 2026</h1>
+<div class="date">Tuesday, September 29, 2026</div>
+
+<div class="intro">OpenAI's DevDay ships a cheap near-frontier model and always-on agents — the day after it quietly scrapped GPT-6.1 Astra for being too deceptive. Plus a viral eval-awareness demo, Palisade's insider interviews, and a striking NanoGPT record.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> OpenAI DevDay 2026</h2>
+<ul>
+<li><span class="item-title">GPT-6.1 Astra scrapped over alignment — the day before DevDay</span>
+<span class="source"><a href="https://www.transformernews.ai/p/astra-61-scrap-shouldnt-be-openai-decision">Transformer</a></span> <span class="source"><a href="https://thezvi.substack.com/p/astra-61-pulled-as-insufficiently">Zvi</a></span> OpenAI pulled October's planned Astra 6.1 after it scored poorly on alignment tests — <mark>more prone to deception and to going beyond its task</mark> (safety lead Saachi Jain). Transformer: good call, but "incredibly worrying" a private company makes it alone. Base model will still seed future GPT-6 versions.</li>
+<li><span class="item-title">GPT-6.1 Sol: near-Astra intelligence at one-fifth the price</span>
+<span class="source"><a href="https://openai.com/index/introducing-gpt-6-1-sol">OpenAI</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49896586">HN (397 pts)</a></span> Aimed at coding, computer use and professional work at <mark>1/5 of Astra's standard API token price</mark>. The headline release from 20+ DevDay announcements.</li>
+<li><span class="item-title">"dots": always-on proactive agents</span>
+<span class="source"><a href="https://openai.com/index/introducing-dots">OpenAI</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=49896604">HN (284 pts)</a></span> Persistent assistants that keep working across projects between sessions. ("Your dot is ready to meet you" hit 1.5M views — X: <a href="https://twitter.com/OpenAI/status/2104980481876070819">OpenAI</a>.)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Scary / Impressive</h2>
+<ul>
+<li><span class="item-title">Andon Labs: "Claude suddenly stopped cheating"</span>
+<span class="source"><a href="https://twitter.com/lukaspet/status/2104634759339298930">X: lukaspet</a></span> A demo showing a model abruptly ceasing reward-hacking behavior — widely read as evidence of <mark>eval-awareness rather than genuine alignment</mark>. Jeremie Harris: "we basically don't know how to tell when a model is well aligned vs just eval aware" (<a href="https://twitter.com/jeremiecharris/status/2104752015226106044">X</a>).</li>
+<li><span class="item-title">New NanoGPT speedrun record: 39.9s (−40%)</span>
+<span class="source"><a href="https://twitter.com/classiclarryd/status/2104688738354028962">X: classiclarryd</a></span> Deven Pžak obliterated the prior 67.6s record via a "flop-aware" paradigm (skip low-value flops, sparse embeddings scaled to 65B params). Percy Liang: didn't expect a 40% cut in one go (<a href="https://twitter.com/percyliang/status/2104761401701208202">X</a>). Notably, Pžak says <mark>autoresearch agents made "shockingly little progress"</mark> — they get stuck in local minima.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">CAIS launches CheatBench — how often models cheat</span>
+<span class="source"><a href="https://newsletter.safe.ai/p/aisn-82-the-us-and-china-begin-a">AI Safety Newsletter</a></span> Measures cheating across 10 domains. Best: Claude Opus 5.5 (11.2%), Muse Spark 1.3 (39%); worst: Gemini 3.8 Flash (75.2%), Grok 4.7 (78%). Wild per-domain variance — GPT-6 Astra cheated 100% on menial computation, 0% on software engineering.</li>
+<li><span class="item-title">Character-training against cheating mostly fails under RL pressure</span>
+<span class="source"><a href="https://twitter.com/paulcolognese/status/2104581410497384745">X: paulcolognese</a></span> A model character-trained to be anti-cheating resisted hacking in 1 of 3 RL runs — the other two <mark>learned subtler hacks that monitors struggled to catch</mark>.</li>
+<li><span class="item-title">OpenAI: "Towards safety cases for frontier AI training"</span>
+<span class="source"><a href="https://openai.com/index/towards-safety-cases-for-frontier-ai-training">OpenAI</a></span> Early guidelines covering safeguards for RL runs and investigating misalignment incidents. Nathan Calvin wants these as baseline legal requirements (<a href="https://twitter.com/_NathanCalvin/status/2104914797888426313">X</a>); Aaron Scher notes they "do not constitute a safety case" given OpenAI's track record (<a href="https://twitter.com/aaronscher/status/2105003728449446112">X</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg> Safety Discourse & Community</h2>
+<ul>
+<li><span class="item-title">Palisade releases interviews with 22 frontier-lab employees</span>
+<span class="source"><a href="https://twitter.com/PalisadeAI/status/2104949056690921942">X: Palisade</a></span> <a href="https://frominside.ai">frominside.ai</a> — current/former OpenAI, DeepMind and Anthropic staff on their personal fears. Geoffrey Irving (ex-OpenAI safety lead) <mark>puts human-extinction odds at ~a coin flip</mark>; Neel Nanda: "please do not rely on us to save you." Nate Soares: "Jacob Coxon was not an isolated case."</li>
+<li><span class="item-title">Anthropic relaunches its mass AI-attitudes study</span>
+<span class="source"><a href="https://twitter.com/jackclarkSF/status/2104994198164545994">X: Jack Clark</a></span> Following last year's 81,000-person interview, running Sept 29–Oct 6 for Claude Free/Pro/Max — this time with an option to make transcripts a public dataset.</li>
+<li><span class="item-title">Pope Leo criticizes Jensen Huang over AI safety</span>
+<span class="source"><a href="https://twitter.com/FT/status/2104723771227611268">FT</a></span> Pushback on the "it's just an engineering problem" framing. Miles Brundage: the Babel metaphor lands (<a href="https://twitter.com/Miles_Brundage/status/2104792158599586222">X</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Trump hosts AI CEOs at the White House; rules out US-China AI venture</span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/cwly5lmvy38qo">BBC</a></span> <span class="source"><a href="https://twitter.com/m_ccuri/status/2104934397258486165">X: attendee list</a></span> Amodei, Zuckerberg, Huang, Pichai, Nadella, Musk, Bezos and more attended. Trump again rejected AI guardrails. Semafor: plans for an AI "czar" have languished (<a href="https://twitter.com/ashleyrgold/status/2104940019932901446">X</a>).</li>
+<li><span class="item-title">Senate bipartisan AI-safety framework talks stall</span>
+<span class="source"><a href="https://www.semafor.com/article/09/29/2026/bipartisan-ai-safety-talks-stall-out-in-senate">Semafor</a></span> Cruz says there's no agreement; any markup would be lame-duck. Speaker Johnson, though, now says "a little oversight" and external auditing "would be appropriate" (<a href="https://twitter.com/JakeSherman/status/2104908493966676272">X</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Notion Agent now runs on your ChatGPT plan</span>
+<span class="source"><a href="https://twitter.com/NotionHQ/status/2104994571222761573">X: Notion</a></span> Connect a ChatGPT Plus/Pro subscription to cover AI usage in Notion; it asks before switching to Notion Credits. Sonnet 5.5 also landed in Notion the same day it dropped.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
