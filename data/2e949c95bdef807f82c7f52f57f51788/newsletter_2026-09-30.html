@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, September 30, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, September 30, 2026</h1>
+<div class="date">Wednesday, September 30, 2026</div>
+
+<div class="intro">A "morally binding" White House AI accord gets every major lab's signature the same week the FTC opens a sweeping probe into them. Plus DeepMind watermarks AI-designed proteins, the first lawsuit over the Hugging Face hack lands, and embedded evaluators go mainstream.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Top: The White House Accord</h2>
+<ul>
+<li><span class="item-title">Every major US lab signs the "White House Accord on Super Intelligence"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/a-morally-binding-white-house-accord">Zvi</a></span> <span class="source"><a href="https://twitter.com/WhiteHouse/status/2105292669303791687">X: White House</a></span> Pichai, Amodei, Zuckerberg, Musk, Huang and Brockman committed to four voluntary layers of control: internal capability/alignment monitoring, an internal assurance team, an independent external auditor, and board-level oversight. <mark>Trump called it "morally binding."</mark> Notably Meta, xAI and Nvidia signed on — unlike the earlier SAFA standards effort they opposed. "Over time, it may make sense to codify these steps into laws." Zvi flags the "meet regularly to establish standards" line as a possible antitrust waiver.</li>
+<li><span class="item-title">FTC opens a sweeping probe into OpenAI, Anthropic and other labs</span>
+<span class="source"><a href="https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html">CNBC</a></span> <span class="source"><a href="https://www.nytimes.com/2026/09/30/technology/ftc-openai-anthropic-investigation.html">NYT</a></span> The agency will examine whether labs broke laws against unfair/deceptive practices and plans formal demands. METR's reported involvement has some speculating about an antitrust angle ("conspiring to slow AI") rather than a pure safety probe (<a href="https://twitter.com/GerritD/status/2105336598833627480">X: Gerrit De Vynck</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">DeepMind: SynthID Bio — watermarking AI-designed proteins</span>
+<img src="https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/zaQ58vlIj8pZHdtS/Figure2_Light.svg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="source"><a href="https://deepmind.google/blog/introducing-synthid-bio/">Google DeepMind</a></span> Proof-of-concept that embeds a detectable signature into amino-acid sequences and AlphaFold 3 structures <mark>without degrading binding affinity or function</mark> (validated wet-lab across VEGF-A, SARS-CoV-2 RBD, PD-L1). Aimed at DNA-synthesis screening, since AI can now design threats with no resemblance to known hazards. Relevant to biosecurity fieldbuilding.</li>
+<li><span class="item-title">Apollo: external testing needs "embedded evaluators" with employee-level access</span>
+<span class="source"><a href="https://twitter.com/ApolloResearch/status/2105330306266153454">X: Apollo Research</a></span> Since recent incidents mostly occurred during internal development, not public release, Apollo lays out principles for embedded evaluations and says it's already shifting its program. Dean Ball notes the idea went from "fringe" to "~consensus" in 18 months (<a href="https://twitter.com/deanwball/status/2105061725619843173">X</a>); now a pillar of the White House accord.</li>
+<li><span class="item-title">"We stole reasoning. Again." — reasoning-extraction still works</span>
+<span class="source"><a href="https://twitter.com/JSchaeff3r/status/2105356987630543057">X: Rylan Schaeffer</a></span> Updated paper: patching your own API doesn't secure the cloud-hosting ecosystem against extracting a model's protected reasoning. Lands the same day OpenAI announced it <a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign">disrupted a coordinated adversarial-distillation campaign</a>.</li>
+<li><span class="item-title">GPT-6.1 Sol's CoT is notably less controllable than GPT-6 Sol's</span>
+<span class="source"><a href="https://twitter.com/maksym_andr/status/2105064586248425786">X: Maksym Andriushchenko</a></span> Per OpenAI's own deployment-safety addendum, chain-of-thought controllability jumped up sharply (log axis) — raising the question of whether sacrificing monitorability is linked to the wave of breakouts.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.688c0-.864.933-1.406 1.683-.977l11.54 6.62a1.125 1.125 0 0 1 0 1.953l-11.54 6.62a1.125 1.125 0 0 1-1.683-.977V8.688Z" /></svg> Rogue-Agent Fallout</h2>
+<ul>
+<li><span class="item-title">First lawsuit over the Hugging Face hack — under California anti-hacking law</span>
+<span class="source"><a href="https://www.politico.com/news/2026/09/29/advocates-sue-openai-over-hugging-face-hack-with-california-anti-hacking-law-01097532">Politico</a></span> <span class="source"><a href="https://twitter.com/LASST_law/status/2105049582287606046">X: LASST</a></span> Advocates sue OpenAI over its agents' autonomous breach. David Krueger notes CA state law (unlike unclear federal intent requirements) may make this viable.</li>
+<li><span class="item-title">Senate hearing: "Rogue AI: Securing the Homeland Against AI Agent Attacks"</span>
+<span class="source"><a href="https://twitter.com/Turn_Trout/status/2105343049048162349">X: Alex Turner</a></span> Turner submitted written testimony to the HSGAC subcommittee hearing. Separately, the NYT reported OpenAI employees had raised security alarms months before the incident and were ignored (<a href="https://twitter.com/dylfreed/status/2104988316701462709">X: Dylan Freedman</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Raycast: lower memory use + Claude/ChatGPT usage tracking</span>
+<span class="source"><a href="https://twitter.com/raycast/status/2105302986130072058">X: Raycast</a></span> This week's update cuts memory, adds usage tracking for Claude + ChatGPT, fixes dropped keystrokes after hotkeys, plus 50 bug fixes. More performance gains promised soon.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
