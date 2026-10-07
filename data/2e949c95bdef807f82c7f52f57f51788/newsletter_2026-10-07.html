@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, October 07, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, October 07, 2026</h1>
+<div class="date">Wednesday, October 07, 2026</div>
+
+<div class="intro">OpenAI dumps a trove of AI-generated math results and the field loses its mind, GPT-6 and Claude Haiku 5.5 both ship, Claude moves into Google Workspace, and Sen. Cantwell unveils a serious AI governance framework.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814"/></svg> Top: OpenAI's Math Dump</h2>
+<ul>
+<li><span class="item-title">OpenAI releases a broad range of new math results from an internal frontier model</span>
+<span class="source"><a href="https://github.com/openai/math">X: OpenAI</a></span> The long-teased internal model's output is now public (vetted w/ the IAS advisory group). AISafetyMemes counts <mark>~90 of the "500 most important open problems" touched</mark> — partial results on Riemann, Hodge, Birch–Swinnerton-Dyer; full claims on Hilbert's 10th over the rationals, Unique Games, Catalan's constant irrationality. <mark>Integer multiplication below n·log n</mark> (<a href="https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026">AcerFur</a>) and a sub-n·log(n)^1 FFT. kimmonismus: ~3 ChatGPT Pro hours per result vs ~88h/10k agents for Navier–Stokes a month ago. willdepue: <a href="https://twitter.com/willdepue/status/2107604920753070317">81% of the last 3 years of ranked discoveries landed today</a>.</li>
+<li><span class="item-title">Navier–Stokes was "key new ideas," not grinding — per Buckmaster himself</span>
+<span class="source"><a href="https://twitter.com/hsu_steve/status/2107801942994960654">X: Steve Hsu</a></span> On Numberphile, the field's leading specialist credits the OpenAI swarm with "the leap" — combining convex integration with the Euler blowup mechanism in a way he hadn't managed in a decade. Dean Ball: "<a href="https://twitter.com/deanwball/status/2107762773883072994">savor the renaissance-flavored part</a>." Trazzi/others frame this squarely as the intelligence explosion in progress.</li>
+<li><span class="item-title">Iliad autoformalizes resolution of singularities in Lean</span>
+<span class="source"><a href="https://twitter.com/jesse_hoogland/status/2107518713482395819">X: Jesse Hoogland</a></span> Hironaka's 1964 theorem turned from a Lean axiom into a Lean theorem (octonion calls it up there with the Liquid Tensor Experiment), making downstream alignment-theory formalization unconditional. They're hiring Lean engineers to formalize scalable oversight, agent foundations, etc.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg> New Models</h2>
+<ul>
+<li><span class="item-title">GPT-6 rolls out globally in ChatGPT with "Intelligent UI"</span>
+<span class="source"><a href="https://openai.com/index/gpt-6-for-everyone">OpenAI</a></span> Faster responses plus generated visuals/interactive experiences you can use inline. Now live for everyone (HN 183 pts).</li>
+<li><span class="item-title">Anthropic ships Claude Haiku 5.5</span>
+<span class="source"><a href="https://www.anthropic.com/claude-haiku-5-5">Anthropic</a></span> Its "fastest, cheapest, most capable small model yet," aimed at high-volume, cost-sensitive work (HN 289 pts). Notably, Grok Bot will run on Opus 5.5, and SpaceX will route to the best backend per task.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63"/></svg> Productivity</h2>
+<ul>
+<li><span class="item-title">Claude now works inside Google Docs, Sheets & Slides</span>
+<span class="source"><a href="https://twitter.com/claudeai/status/2107522596845822135">X: Claude</a></span> Claude sits in a Workspace sidebar, reads your open file, and edits in place with per-edit approval; those files also open inside Claude. Shakeel: "very, very good feature."</li>
+<li><span class="item-title">Raycast: second round of performance wins</span>
+<span class="source"><a href="https://www.raycast.com/changelog">X: Raycast</a></span> Up to 35% less idle launcher memory, up to 80% less CPU/memory on File Search, faster local AI, plus "Send Element to AI" and 30+ fixes.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> Discourse</h2>
+<ul>
+<li><span class="item-title">Scott Alexander's "Open Letter to Steven Pinker on AI"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/an-open-letter-to-steven-pinker-on">ACX</a></span> A long, sharp rebuttal of Pinker's four anti-doom arguments and an itemized list of 15 years of what Scott calls misrepresentations (fake 100% p(doom) claims, cherry-picked "experts," the sorites non-argument). Widely shared; good reference material for the debate.</li>
+<li><span class="item-title">David Robinson's first post-OpenAI interview drops on Ezra Klein</span>
+<span class="source"><a href="https://www.nytimes.com/2026/10/07/opinion/ezra-klein-podcast-david-robinson.html?unlocked_article_code=1.G1E.vZp8.kJy4GuihMRpK">NYT (gift)</a></span> "This is nuts" — the ex-safety lead on cognitive dissonance, alien minds, and why he quit. Companion to his Atlantic essay.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"/></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Sen. Cantwell outlines a comprehensive frontier-AI governance framework</span>
+<span class="source"><a href="https://www.commerce.senate.gov/press/dem/release/cantwell-outlines-comprehensive-governance-framework-for-safe-and-secure-frontier-ai/">Commerce Dems</a></span> Six principles: <mark>mandatory independent auditing before release, NIST risk standards, liability + transparency, whistleblower protections, open-source protections, and a US–China crisis channel</mark>. David Kasten: notable for explicitly recognizing rogue-agent incidents and calling for pre-release continuous testing.</li>
+<li><span class="item-title">Rep. Trahan circulates a federal AI liability bill for rogue agents</span>
+<span class="source"><a href="https://trahan.house.gov/uploadedfiles/claim_act_final.pdf">CLAIM Act draft</a></span> Direct response to the Hugging Face hack: ensures someone is liable when an AI agent does what would be a tort/crime for a human, focused on harmed third parties (unlike Hawley's CFAA approach). <a href="https://twitter.com/gabriel_weil/status/2107842560433733842">Gabriel Weil</a> flags it as a harmonized-liability milestone.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg> Also Noted</h2>
+<ul>
+<li><span class="item-title">Meta's new "Muse" assistant reads your email, messages & Instagram — and profiles you hourly</span>
+<span class="source"><a href="https://time.com/article/2026/10/06/meta-muse-ai-agent-privacy/">TIME</a></span> TIME reviewed the internal instructions: Muse maintains an auto-updating file on you (and on people you talk to who never signed up), noting things like "responds better to short nudges after 10 PM," and is told not to point out that "forget this" doesn't erase the original message. Relevant to your CivAI-style risk comms.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
