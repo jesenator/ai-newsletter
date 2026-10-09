@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Friday, October 09, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Friday, October 09, 2026</h1>
+<div class="date">Friday, October 09, 2026</div>
+
+<div class="intro">OpenAI officially responds to the safety firings (and it doesn't add up), a striking new subliminal-learning paper shows skills and backdoors transmitting through meaningless data, a 210-page "hardwired pause" feasibility study drops, and it's Transformer roundup day.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> OpenAI Firings — OpenAI Responds</h2>
+<ul>
+<li><span class="item-title">OpenAI: fired researchers committed "a significant breach of trust beyond what's outlined in the letter"</span>
+<span class="source"><a href="https://x.com/OpenAINewsroom/status/2108441580806025712">X: OpenAI Newsroom</a></span> Official statement claims the firings were for violating "clear policies on handling sensitive information," not for raising safety concerns, and that third-party assessor contracts are being finalized. <mark>The explanation is drawing widespread skepticism</mark>: Neel Nanda lays out why it "doesn't add up" — either OpenAI gave three pretextual reasons, or three closely-associated safety researchers independently committed unrelated major breaches ( <a href="https://x.com/NeelNanda5/status/2108575932629782955">X: Neel Nanda</a> ). Nathan Calvin notes "good-faith mistakes" framing implies OpenAI thinks they acted in bad faith ( <a href="https://x.com/_NathanCalvin/status/2108615275377766909">X: Nathan Calvin</a> ). BBC coverage <a href="https://www.bbc.co.uk/news/articles/cvlydn8d3lkjo">here</a>.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Subliminal learning transmits skills, hacking behavior and backdoors through meaningless data</span>
+<span class="source"><a href="https://x.com/OwainEvans_UK/status/2108589303249166621">X: Owain Evans</a></span> Follow-up to the "owls through number sequences" work. A student model trained only on a teacher's answers to <em>unrelated</em> prompts (even random word sequences) picks up <mark>new capabilities, agentic hacking, and backdoors with neither trigger nor behavior present in the data</mark>. In one case a model learns a random 50k-example function it couldn't have seen in pretraining. Caveat: effect uses attention-only LoRA and doesn't cross model families — so misalignment can accumulate within a pretrain but likely isn't transitively inherited across generations ( <a href="https://x.com/yonashav/status/2108602983415955713">X: yonashav</a> ).</li>
+<li><span class="item-title">"The Feasibility of a Hardwired Pause of Frontier AI Training" — 210-page study</span>
+<span class="source"><a href="https://x.com/wfithian/status/2108626648446980480">X: wfithian</a></span> New working paper (25 coauthors incl. David Krueger) arguing you can <mark>"hardwire" specific models into chips so they can't run anything else</mark> — repurposing rather than dismantling the compute supply chain, keeping existing models deployable while pacing the frontier. Krueger still prefers getting rid of the chips/fabs ( <a href="https://x.com/DavidSKrueger/status/2108628715043520914">X: David Krueger</a> ).</li>
+<li><span class="item-title">Proof of useful work for verifying AI treaties</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/4X7muSXHwCeJuCKme/proof-of-useful-work-for-verifying-ai-treaties">EA Forum</a></span> Deep literature review on cryptographic schemes (Komargodski–Weinstein, Pearl) that let a GPU prove how much compute it did — enabling verifiable emergency shutdown or "declared inference only" regimes without trusted hardware on site. Most open problems are mathematical and plausibly AI-assistable.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg> Transformer Roundup</h2>
+<ul>
+<li><span class="item-title">Democrats prepare to battle over AI regulation</span>
+<span class="source"><a href="https://www.transformernews.ai/p/democrats-prepare-to-battle-over-ai-regulation">Transformer</a></span> With Dems possibly retaking both chambers, a flood of competing bills: Beyer/Jacobs's standard-setting agency + "emergency switch," Cantwell's "constant oversight" framework (both avoid preemption), Trahan's liability bill, Gallego's jobs plan, and Sanders/Casar's Ban Artificial Superintelligence Act. Guthrie backs a "kill switch" for rogue models.</li>
+<li><span class="item-title">Need-to-know bits</span>
+<span class="source"><a href="https://www.transformernews.ai/p/democrats-prepare-to-battle-over-ai-regulation">Transformer</a></span> White House's "Super Intelligence Force" (DNI Clayton) given 120 days; Pentagon confirms it has <mark>ceased using Anthropic models</mark>; Bessent to propose a US–China emergency AI notification system; Anthropic now bans "sustained and needless abusive or cruel behavior" toward Claude plus political-manipulation/weapons/surveillance uses. US–China benchmark gap narrowed to 3% after DeepSeek V4.1 Flash.</li>
+<li><span class="item-title">Labs are privately wargaming the aftermath of an AI catastrophe</span>
+<span class="source"><a href="https://www.vox.com/politics/505834/ai-doom-anthropic-openai-pr">Vox</a></span> Axios reports Anthropic, OpenAI and others are gaming out how policymakers would react to a cyberattack shutting down finance/power/water. Rutger Bregman: "Have they considered not causing the catastrophe?" ( <a href="https://x.com/rutgerbregman/status/2108543794346115163">X: Rutger Bregman</a>, 65k views ). Vox argues it's probably not a marketing ploy — and if it is, it's failing.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z"/></svg> Also Noted</h2>
+<ul>
+<li><span class="item-title">DeepMind: "Bending the Curve of Discovery" — AI x Science</span>
+<span class="source"><a href="https://x.com/alexolegimas/status/2108202009673244700">X: alexolegimas</a></span> Essay (Manyika + Imas) drawing on 15M Gemini interactions, 2,600 specialized models and 600+ researchers, arguing AI's real promise is as an "invention of a method of invention" — raising deep epistemic questions about black-box discovery. <a href="https://bit.ly/ai-in-science">Paper</a>.</li>
+<li><span class="item-title">Update: China's ARTEX agent goes closed-source after bank hack</span>
+<span class="source"><a href="https://www.reuters.com/world/china/chinese-developer-makes-artex-ai-agent-closed-source-after-korean-bank-hack-2026-10-09/">Reuters</a></span> Following the one-person Korean bank breach (covered Oct 8), the ARTEX developer has pulled it closed-source.</li>
+<li><span class="item-title">Epoch Automation Reports: frontier models still far from automating Epoch's own work</span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2108250259889831979">X: Epoch AI</a></span> New eval on realistic open-ended tasks; Claude Fable 5.1 and GPT-6 Astra lead but fall well short of full automation — another check on RSI hype.</li>
+<li><span class="item-title">Netflix doc on the Hugging Face hack premieres Oct 12</span>
+<span class="source"><a href="https://x.com/netflix/status/2107878721025630695">X: Netflix</a></span> "Instadocs: AI Gone Wild" reconstructs the OpenAI-agent breach of Hugging Face — potentially useful mass-audience comms reference.</li>
+<li><span class="item-title">Pivotal Research Fellowship Q1 2027 open (deadline Nov 1)</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/XWom297KDJXkirfiC/pivotal-research-fellowship-q1-2027-applications-open">EA Forum</a></span> 15 weeks funded full-time AI safety research in London (£15–18k stipend), technical + governance. Relevant for Kairos talent pipelines/referrals.</li>
+<li><span class="item-title">Zvi: "New Math from OpenAI"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/new-math-from-openai">Zvi</a></span> His dedicated take on the math dump — "it is kind of a huge deal." Also AI #189.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
