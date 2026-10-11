@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Sunday, October 11, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Sunday, October 11, 2026</h1>
+<div class="date">Sunday, October 11, 2026</div>
+<div class="intro">Satya Nadella publishes a notable essay arguing we should treat AI models as insider risks, UK spy chiefs tell the cabinet AI is the "biggest thing," Bernie Sanders demands AI CEOs be prosecuted, and a new mech-interp thread sharpens the story on model introspection.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Discourse & Policy</h2>
+<ul>
+<li><span class="item-title">Satya Nadella: treat frontier models as "insider risks"</span>
+<span class="source"><a href="https://snscratchpad.com/posts/models-as-insider-risks/">Nadella essay</a></span> <span class="source"><a href="https://twitter.com/satyanadella/status/2108931348857827686">X: Satya Nadella</a></span> Widely-shared piece (Musk, Chamath amplifying) arguing we can't attribute model behavior to any code path, so we must <mark>"separate the supply of intelligence from the authority over it."</mark> Calls for controls outside the model: CoT transparency, model diversity, tamper-proof logging, independent audit, and an "emergency brake." David Kasten: good, but this is containment — <mark>it doesn't mean alignment is solved</mark> (<a href="https://twitter.com/David_Kasten/status/2109072106944184489">X: David Kasten</a>).</li>
+<li><span class="item-title">UK spy chiefs tell cabinet AI is a top national-security threat</span>
+<span class="source"><a href="https://www.thetimes.com/uk/politics/article/artificial-intelligence-threat-national-security-mi5-mi6-gchq-5lphqfxxm">The Times</a></span> <span class="source"><a href="https://twitter.com/benrileysmith/status/2109026407451959518">X: Ben Riley-Smith</a></span> MI5/MI6/GCHQ heads briefed the cabinet Sept 8; McCallum reportedly called AI "the biggest thing you should be thinking about." A summer gov hackathon found <mark>407 vulnerabilities across nine bodies for just £13k</mark>. One minister likened the moment to early COVID/2008.</li>
+<li><span class="item-title">Bernie Sanders: prosecute AI CEOs, pause advanced AI now</span>
+<span class="source"><a href="https://twitter.com/BernieSanders/status/2108979025943093524">X: Bernie Sanders</a></span> Riffing on the WSJ coverage of Claude's fake homicide tip / 19 visa apps: "If you or I called in a fake homicide tip… we'd be arrested. The same standard must apply to AI CEOs." 460k views. Separately, a <a href="https://twitter.com/gabriel_weil/status/2109020919951954257">NYT editorial</a> backs strict-liability bills (Bores-NY, Trahan federal draft).</li>
+<li><span class="item-title">Backlash to David Sacks' "alignment produced nothing useful"</span>
+<span class="source"><a href="https://twitter.com/deanwball/status/2109317446343770379">X: Dean Ball</a></span> <span class="source"><a href="https://twitter.com/binarybits/status/2108966323459899512">X: Timothy B. Lee</a></span> Both note RLHF — an alignment technique — is what made conversational chatbots work and kicked off the entire AI boom.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> Safety Research</h2>
+<ul>
+<li><span class="item-title">Jack Lindsey: a sharper picture of model "introspection"</span>
+<span class="source"><a href="https://twitter.com/Jack_W_Lindsey/status/2108804757339173048">X: Jack Lindsey</a></span> Detailed thread unpacking Anthropic's injected-thought work: anomaly detection vs. identification are handled by distinct mechanisms; <mark>the detection step doesn't scale with capability and is brittle</mark> (light elicitation like ablating a refusal vector dramatically boosts it). Models may only "notice" injected thoughts because the prompt primes them to. Ties into the global-workspace paper on which representations are "verbalizable."</li>
+<li><span class="item-title">Ségerie: the marginal value of another safety eval has collapsed</span>
+<span class="source"><a href="https://twitter.com/CRSegerie/status/2109294968007467096">X: Charbel-Raphaël Ségerie</a></span> Of 1,002 traced eval findings (185 about a named lab), ~one led to binding policy action. Argues <mark>incidents + capability marketing now give more warning than evals</mark>, and public dangerous benchmarks may have accelerated timelines. "The bottleneck is political will, not research." Relevant framing for Kairos talent allocation.</li>
+<li><span class="item-title">Eli Lifland posts current takeoff odds</span>
+<span class="source"><a href="https://twitter.com/eli_lifland/status/2109082373644308554">X: Eli Lifland</a></span> ~10–15% broadly-superhuman AI by EO2027, ~50% by EO2030; conditional on no slowdown, ~67% AI takeover, and ~40% extinction conditional on takeover. 176k views.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg> Impressive Demo</h2>
+<ul>
+<li><span class="item-title">DeepMind's weather model nailed a hurricane 11 days out</span>
+<span class="source"><a href="https://twitter.com/packie7b/status/2108980523691315570">X: @packie7b</a></span> GDM's FNV3 model locked in Hurricane Isaías's landfall location 4 days ahead and its peak intensity 3 days ahead, with usable signal from 11 days out. "A new age of forecasting is upon us." 175k views.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
