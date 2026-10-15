@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Thursday, October 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+.why { color: #444; font-size: 13.5px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Thursday, October 15, 2026</h1>
+<div class="date">Thursday, October 15, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">Anthropic hands METR "employee-like access" — the embedded-evaluator pledge goes operational</span>
+<span class="source"><a href="https://www.techmeme.com/261015/p41#a261015p41">Anthropic</a></span>
+Following last month's commitment to stronger independent assessment, Anthropic says it is now giving third-party evaluator METR <mark>employee-like access</mark> to models and safety practices — the concrete delivery on Dario Amodei's "We Must Pace the Frontier" promise and Zvi's "Quest for Embedded Evaluators" thread.
+<br><span class="why"><strong>Why it's the story:</strong> This is the first real test of whether the "inside game" critics (Bengio, the fired OpenAI trio, David Robinson) say has failed can actually work. Reportable: what does "employee-like access" concretely include — weights, pre-deployment evals, red-team logs? — and does METR get publication rights or is it gagged like the researchers OpenAI fired for "talking to METR"? The scope defines whether this is genuine accountability or safety-washing ahead of the Nov IPO roadshow.</span></li>
+
+<li><span class="item-title">OpenAI's bungling "spy" exposes a security culture built for a startup, not a national-security asset</span>
+<img src="https://www.transformernews.ai/_next/image?url=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F&w=640&q=75" style="max-width: 190px; float: right; margin: 0 0 10px 12px; border-radius: 4px;" onerror="this.style.display='none'">
+<span class="source"><a href="https://www.transformernews.ai/p/openai-spy-exposes-wider-security-problem">Transformer</a></span>
+New detail on the arrest of OpenAI employee Abdulrahman Alfozan: per DOJ, he allegedly asked an AI model how to "build a continuous audio recorder" and "encrypt the SD card," then was caught staring at a surveillance camera while checking the bug. Transformer's point: <mark>this is the case we caught</mark> — "if someone running an operation this basic operated for weeks undetected, what about competent operators?"
+<br><span class="why"><strong>Why it's the story:</strong> Connects the espionage arrest (briefly noted Oct 14) to a structural safety argument — frontier labs are "speedrunning" security maturity while already acting as defense contractors. A senior official compares lax security research to "doing bioweapons research in their kitchen, and saying it's okay because they'd washed their hands." Ties directly to Robinson's "run like nuclear plants" critique. The new angle is insider-threat governance, not the arrest itself.</span></li>
+
+<li><span class="item-title">Meta ships Muse Spark Open — "most capable US open-weight model" — and buries the hatchet with Apple</span>
+<img src="https://image.cnbcfm.com/api/v1/image/" style="max-width: 190px; float: right; margin: 0 0 10px 12px; border-radius: 4px;" onerror="this.style.display='none'">
+<span class="source"><a href="https://www.techmeme.com/261015/p37#a261015p37">Meta AI Research</a></span>
+<span class="source"><a href="https://9to5mac.com/2026/10/15/meta-launches-new-muse-spark-open-model-optimized-to-run-on-mac-studio/">9to5Mac</a></span>
+An 816B-total / 42B-active MoE model with a 1M-token context, optimized to run locally on two-to-four Apple M5 Ultra Mac Studios — Meta and Apple engineered it together (Alexandr Wang: "mommy and daddy playing nice again").
+<br><span class="why"><strong>Why it's the story:</strong> A frontier-scale <em>agentic</em> open-weight model that runs on desktop hardware is exactly the proliferation scenario the Thinking Machines open-weights rubric was written for — and it drops with no visible staged-release safeguards disclosed. Worth holding against the DeepSeek/Reflection "US open-weights champion" framing and asking what capability evals (cyber, agentic autonomy) Meta ran before pushing agentic weights onto laptops.</span></li>
+
+<li><span class="item-title">Accenture slashes per-employee Claude spend from up to $1,000/mo to $29 — the enterprise AI unit economics reckoning</span>
+<span class="source"><a href="https://www.techmeme.com/261015/p42#a261015p42">Joseph Cox / 404 Media</a></span>
+An internal memo tells staff Accenture will now cap spend at <mark>$29/month per person on Claude</mark>; power users billing ~$1,000/mo are scrambling to keep access.
+<br><span class="why"><strong>Why it's worth a story:</strong> A rare hard datapoint on what real agentic-coding usage actually costs at a 700,000-person consultancy — and a signal that even flagship enterprise customers are choking on token bills just as Anthropic reports surging revenue (below). Advances your inference-cost-compression thread (Haiku price war) from the supply side to the demand side.</span></li>
+
+<li><span class="item-title">Anthropic's Q3 revenue leaps to $16.8B — and claims adjusted profitability — weeks before the IPO</span>
+<span class="source"><a href="https://www.businessinsider.com/anthropic-reveals-16-8b-revenue-amid-ipo-preparations-2026-10">Business Insider</a></span>
+Quarterly revenue reportedly rose ~46% from $11.5B in Q2 to $16.8B, with the company claiming adjusted profitability as it eyes a valuation some peg near $2T.
+<br><span class="why"><strong>Why it's worth a line:</strong> Directly feeds your gross-vs-net accounting thread (Oct 10) — Anthropic books gross sales routed through cloud partners, so this number isn't apples-to-apples with OpenAI's revenue haircut. The "adjusted profitability" claim is the detail to pressure-test against $530B in data-center leases and the Accenture spending clampdown above.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> LessWrong & Safety Discourse</h2>
+<ul>
+
+<li><span class="item-title">Yudkowsky's "Cat-Belling Problems" — a broadside against "build AI to align AI" plans</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/SwYBLQvo8MddDcCwz/cat-belling-problems">LessWrong</a></span>
+A long essay (drafted 2021, finished now) arguing that most superalignment schemes route around the one impossibly-hard step — like perpetual-motion inventors hiding the "heat exchanger" in the unbuilt half. Names names: recounts a <mark>public ILIAD-conference debate with Geoffrey Irving</mark> (ex-DeepMind/OpenAI, now heading the "Resolution" lab) where Yudkowsky pressed on whether AI "debate" can extract correct answers from statistically biased human judges — "Irving said it was a good question and he might need to get back to me." Explicitly jabs at "First we build capable AIs, then we use them to align AI [where no publicly scrutinized proposal exists]."
+<br><span class="why">The sharpest recent artifact on why the dominant lab alignment strategy (automate alignment research) may be a category error — and useful color on Irving's new Resolution lab. Worth reading the Scholastic-vs-Scientific-method footnote on why debate schemes fail.</span></li>
+
+<li><span class="item-title">Zvi: "The Safety Culture at the Labs is Broken" remains the live primary thread</span>
+<span class="source"><a href="https://thezvi.substack.com/p/the-safety-culture-at-the-labs-is">Zvi</a></span>
+His Oct 14 deep-dive (built on David Robinson's whistleblowing exit, and noting even Anthropic's culture showing cracks) is directly amplified by today's OpenAI-spy security-culture story and the METR embedding move. The newest AI #190 ("Scion of the Times") is now up as the consolidated weekly.</li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

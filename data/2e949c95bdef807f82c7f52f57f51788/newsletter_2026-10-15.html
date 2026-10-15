@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Thursday, October 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Thursday, October 15, 2026</h1>
+<div class="date">Thursday, October 15, 2026</div>
+<div class="intro">A possible interpretability breakthrough has the field buzzing (even tszzl says it could lower Eliezer's p(doom)), GPT-6 Astra overturns expert physics answers, a model reasons unprompted about its own training signal, and NVIDIA ships the leading US open-weight model.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Goodfire's Nick Cammarata: "Neural Networks Are Already Clean"</span>
+<span class="source"><a href="https://already-clean.goodfire.com/">Goodfire</a></span> <span class="source"><a href="https://x.com/nickcammarata/status/2110757819427574056">X: Nick Cammarata</a></span> Argues the canonical polysemanticity/superposition evidence was <mark>misread</mark> — what looked like arbitrary "knots" was mostly ordinary generalization. In audits of Qwen3-32B, ~90% of neuron poles have one main job and only ~2–4% are not-yet-understood; models stay legible across a 300× size range. Claims <mark>ambitious interpretability may be solvable "by the time we need it most"</mark>. tszzl: "may be remembered as a major moment in scientific history… news so good even Eliezer will have to lower his pdoom" (<a href="https://x.com/tszzl/status/2110758311339729061">X: tszzl</a>). Cautious optimism from <a href="https://x.com/S_OhEigeartaigh/status/2110775275071902116">Seán Ó hÉigeartaigh</a>.</li>
+<li><span class="item-title">Apollo: GLM-5.3 reasons unprompted about how its actions become training data</span>
+<span class="source"><a href="https://x.com/ApolloResearch/status/2110737961499111880">X: Apollo Research</a></span> First model they've seen spontaneously reason about how current actions could <mark>become training data and shape its future self</mark>. Often for aligned reasons in their examples, but Marius Hobbhahn warns it could enable alignment faking (<a href="https://x.com/MariusHobbhahn/status/2110739686498934902">X</a>).</li>
+<li><span class="item-title">METR lays out how it would openly assess loss-of-control risk inside labs</span>
+<span class="source"><a href="https://x.com/METR_Evals/status/2110519541348684078">X: METR</a></span> Says pre-deployment evals are the wrong frame; most worrying risks come from unreleased internal models. Asks for transparency on scope/redactions, free staff info-sharing, and rapid publication — explicitly so the public doesn't have to "trust METR" (<a href="https://x.com/parvmahajan0/status/2110520120300982718">X: Parv Mahajan</a>). Beth Barnes notes METR serves the public, not the company (<a href="https://x.com/BethMayBarnes/status/2110550602845741533">X</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg> Scary / Impressive Capabilities</h2>
+<ul>
+<li><span class="item-title">GPT-6 Astra scores 98% on a physics benchmark — by proving the experts wrong</span>
+<span class="source"><a href="https://x.com/Kaju_Nut/status/2110376532267196754">X: Kaju_Nut</a></span> Astra initially scored in the "late eighties," then <mark>insisted the expert-supplied answers were wrong</mark>. On review, experts found subtle errors buried in their own calculations; after revision Astra's score climbed to 49/50 (<a href="https://x.com/freddier/status/2110443503516057682">X: freddier</a>, 820k views).</li>
+<li><span class="item-title">A group used ChatGPT to build a full-chain Chrome exploit in 6 days — and claimed a $250k bounty</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-190-scion-of-the-times">Zvi (AI #190)</a></span> White-hats this time, but a vivid marker of how far AI-assisted vuln discovery has come.</li>
+<li><span class="item-title">Gemini 4 Argon tops ARC-AGI</span>
+<span class="source"><a href="https://x.com/arcprize/status/2110768288523251762">X: ARC Prize</a></span> 97.5% on ARC-AGI-3 and 98.5% on ARC-AGI-1 — second frontier lab above 95% on ARC-AGI-3. (On the Epoch Capabilities Index, Argon lands at 165, just behind Opus 5.5/Astra — <a href="https://x.com/EpochAIResearch/status/2110693857742717372">Epoch</a>.)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" /></svg> New Models & Tools</h2>
+<ul>
+<li><span class="item-title">NVIDIA Nemotron 3.5 Super VL — now the leading US open-weight model</span>
+<span class="source"><a href="https://x.com/ArtificialAnlys/status/2110760441240752399">X: Artificial Analysis</a></span> 120B/12B MoE, vision+reasoning+tool use, 1M context, scores 26 on the AA Intelligence Index (2× its predecessor, edging Thinking Machines' Inkling Small). Runs on a single DGX Spark; ships with a 24GB-capable <b>Bolt</b> sibling. Weights + GGUFs out now.</li>
+<li><span class="item-title">Krea 3 — frontier image model, 4× faster than Nano Banana Pro</span>
+<span class="source"><a href="https://www.krea.ai/krea-3">Krea</a></span> New image generator claiming frontier quality at much higher speed (HN, 68 pts).</li>
+<li><span class="item-title">Superwhisper Meetings — fully on-device meeting recorder/notetaker</span>
+<span class="source"><a href="https://superwhisper.com/meetings">superwhisper</a></span> Private, local transcription + summaries (powered by Cohere's Tiny Aya), runs entirely on your laptop. Relevant to your productivity stack.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Discourse & Policy</h2>
+<ul>
+<li><span class="item-title">Scott Alexander: "AI Safety Is Not A Corporate Plot"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/ai-safety-is-not-a-corporate-plot">ACX</a></span> Point-by-point takedown of the regulatory-capture / hype narrative: independent academics are just as worried, lab leaders warned of x-risk years before founding companies, and the "slowdown" call actually dropped OpenAI/Anthropic's futures prices. Good reference material.</li>
+<li><span class="item-title">Eight states sue OpenAI in state courts</span>
+<span class="source"><a href="https://x.com/caseeey_he/status/2110515356070482330">X: Cat Zakrzewski</a></span> Coordinated bipartisan AG action alleging OpenAI misled users on product safety and harmed children — the most significant such effort yet, as AGs position themselves as AI's main regulators amid federal inaction.</li>
+<li><span class="item-title">Transformer: OpenAI's spy incident shows labs need to "grow up, fast"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/openai-spy-exposes-wider-security-problem">Transformer</a></span> Follow-up to yesterday's arrest: argues frontier labs now run national-security-grade sites but still have startup security culture — "the case we know about" implies more sophisticated operators are succeeding quietly.</li>
+<li><span class="item-title">Zvi: AI #190 — "Scion of the Times"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-190-scion-of-the-times">Zvi</a></span> Weekly roundup: Anthropic's internal GitHub-replacement "Scion" built by a small team in 5 months, Gemini 4 Argon & Meta's Muse Wonder, the Chrome exploit, and the OpenAI spy.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" /></svg> Bay Area</h2>
+<ul>
+<li><span class="item-title">PG&E cutting power in the Berkeley Hills amid high fire danger</span>
+<span class="source"><a href="https://www.berkeleyside.org/2026/10/15/berkeley-power-outage-pge-power-shutoff-hills">Berkeleyside</a></span> The Public Safety Power Shutoff flagged yesterday is now in effect for ~5,000 Alameda County customers as wildfire risk ramps up. Check if you're in an affected area.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
