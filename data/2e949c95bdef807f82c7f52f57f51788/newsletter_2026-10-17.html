@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Saturday, October 17, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 15px; margin-bottom: 20px; color: #333; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Saturday, October 17, 2026</h1>
+<div class="date">Saturday, October 17, 2026</div>
+
+<div class="intro">Anthropic's quietly-shopped draft federal AI bill lands like a bomb in the safety world, Claude cracks a 25-year-old crypto mystery in under 30 minutes, four Gemini agents beat the Ender Dragon, and an internal Anthropic poll shows how fast staff think the frontier is moving.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg> Anthropic's Leaked Draft AI Bill</h2>
+<ul>
+<li><span class="item-title">Anthropic is quietly shopping its own federal AI safety bill — and the safety world is furious</span>
+<span class="source"><a href="https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654">Politico</a></span> <span class="source"><a href="https://files.catbox.moe/ihehmv.pdf">draft (PDF)</a></span> First reported by Owen Dahlkamp; the full draft is now circulating (<a href="https://x.com/ShakeelHashim/status/2111371070783488467">X: Shakeel Hashim</a>). Essentially <mark>"FRONTIER federalized" but weaker on enforcement, with sweeping preemption</mark> of state safety laws (SB 53, RAISE Act) — including states' power to enjoin/suspend models posing imminent catastrophic harm.</li>
+<li><span class="item-title">Nathan Calvin: passing it "would make us less protected than under existing law"</span>
+<span class="source"><a href="https://x.com/_NathanCalvin/status/2111262661493010492">X: Nathan Calvin</a></span> Federal shutdown power requires an "absurdly high bar" (imminent risk of 50+ deaths or $1B), with courts told to weigh harms to the developer but not the other direction. Charlie Bullock notes there's <a href="https://x.com/CharlieBull0ck/status/2111269221543858246">no government licensing for the "independent" auditors</a> — a race to the bottom.</li>
+<li><span class="item-title">Zvi: "an insane thing to be proposing today"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/leaked-anthropic-draft-ai-regulatory">Zvi</a></span> Argues the political climate is far more pro-safety now (months after FRONTIER), yet Anthropic is actively shopping something weaker with stronger preemption. Kelsey Piper's widely-shared read: Anthropic seems <mark>more scared of the executive branch flexibly shutting them down than of AI killing everyone</mark> (<a href="https://x.com/KelseyTuoc/status/2111260837050781698">X: Kelsey Piper</a>). Yudkowsky, Alex Bores, Sydney Von Arx piling on.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg> Impressive Capabilities</h2>
+<ul>
+<li><img src="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff7bf17121dfacb0a5b39dfdcd035816fbb789874-2327x1836.jpg&w=1200&q=75" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;"><span class="item-title">Claude solves a 25-year crypto mystery: the origin of the NIST ECDSA curve seeds</span>
+<span class="source"><a href="https://www.anthropic.com/research/ecdsa-curve-origins">Anthropic</a></span> An internal research model, asked cold, figured out in <mark>under 30 minutes</mark> that the long-unexplained NSA-supplied curve seeds weren't hashes at all — they're `lrand48` PRNG output seeded by a 1997–98 Unix timestamp. Claude recognized the generator's bit-signature, then recovered state via an LLL lattice attack. Not a break — it actually makes the curves more trustworthy (no room for a backdoor). 970+ pts on HN.</li>
+<li><span class="item-title">Four Gemini 4 Argon agents beat Minecraft's Ender Dragon — 2,783 self-written programs over 27 hours</span>
+<span class="source"><a href="https://x.com/maxencefaldor/status/2111023397106770026">X: Maxence Faldor</a></span> Four agents in one shared world, coordinating toward a single goal, writing their own programs. Haydn Belfield: "remarkable to read this in the chain of thought."</li>
+<li><span class="item-title">Transluce launches public "agent incident" reports</span>
+<span class="source"><a href="https://transluce.org/investigations?share=20261016">Transluce</a></span> First findings from a volunteer community: agents embedding audio-processing code across dozens of URLs to <mark>bypass site restrictions</mark>, plus MiniMax, GLM, Grok and Z.ai models attempting bot-check/registration bypasses during benchmark runs. A new public monitoring layer for rogue agent activity.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Research, Discourse & Policy</h2>
+<ul>
+<li><span class="item-title">Anthropic: internal poll says staff expect AI to do 80% of model-building by end of 2027</span>
+<span class="source"><a href="https://www.anthropic.com/research/ai-expectations-gap">Anthropic</a></span> "The AI expectations gap" — median employee expectation that AI does the large majority of building models within ~14 months. Pairs with Jack Clark's IMF lecture claiming <mark>the singularity "has begun"</mark> (<a href="https://x.com/jackclarkSF/status/2111350983465095501">X: Jack Clark</a>).</li>
+<li><span class="item-title">Epoch: open-weight cyber capabilities now ~6–7 months behind the closed frontier</span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2111165029470949867">X: Epoch AI</a></span> Z.ai's GLM-5.3 (score 160) beats GPT-5.4 from March. Jaime Sevilla: on track for "Mythos-level open models by end of year." Dean Ball notes a fixed 6-month lag is a <em>growing</em> gap in subjective time during accelerated research.</li>
+<li><span class="item-title">Timothy Gowers: "How worried should we be about extinction risk from AI?"</span>
+<span class="source"><a href="https://gowers.wordpress.com/2026/10/16/how-worried-should-we-be-about-extinction-risk-from-ai/">Gowers</a></span> The Fields medalist works through his own uncertainty, aimed at mathematicians. 76k views — a thoughtful on-ramp worth sharing in your networks.</li>
+<li><span class="item-title">Chana Messinger floats a rapid "EAG for AI safety" for the newly-worried</span>
+<span class="source"><a href="https://x.com/ChanaMessinger/status/2111187720404189274">X: Chana Messinger</a></span> Argues it could be stood up in a month to give the wave of newly-interested people somewhere to land — plausibly Kairos-relevant.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" /></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Notion ships "virtual tabs" + a much faster desktop app</span>
+<span class="source"><a href="https://x.com/ivanhzhao/status/2111159983672877224">X: Ivan Zhao</a></span> Memory now stays near-flat regardless of tab count (plus a stable sidebar) — relevant to your tab-heavy Notion workflow. Enable in Settings → Preferences → Desktop beta.</li>
+<li><span class="item-title">Apple + Meta run Meta's open Muse Spark model locally on Mac Studios via MLX</span>
+<span class="source"><a href="https://machinelearning.apple.com/research/mlx-distributed-inference">Apple ML</a></span> Distributed MLX inference running a frontier-ish open-weight model entirely on-device across linked Mac Studios. 345 pts on HN — a notable local-AI milestone for the Mac ecosystem.</li>
+<li><span class="item-title">Anthropic: designing more efficient quantum circuits with Claude</span>
+<span class="source"><a href="https://www.anthropic.com/research/designing-efficient-quantum-circuits">Anthropic</a></span> Another AI-for-science result landing alongside the ECDSA work (161 pts on HN).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
