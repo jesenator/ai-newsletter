@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Sunday, October 18, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.arg { color: #444; font-size: 13.5px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Sunday, October 18, 2026</h1>
+<div class="date">Sunday, October 18, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">Anthropic is building AI agents that negotiate <em>on your behalf</em> — and asking law firms how machines should haggle with other machines</span>
+<span class="source"><a href="https://www.techmeme.com/261018/p2#a261018p2">Cristina Criddle / FT</a></span>
+Anthropic is consulting law firms on negotiation tactics for agents that bargain over prices, salaries and customer-service disputes — grappling with <mark>how often an agent must "check back" with its user vs. act autonomously</mark>, and how to keep agents wary of counterpart agents "without becoming paranoid" or conspiratorial. A floated safeguard: users supplying signed documents defining what the agent is authorized to do. FT notes Claude agents already completed <mark>186 transactions for employees with no human approval</mark> in internal tests.
+<br><span class="arg"><strong>Why it's the story:</strong> This is the authorization/consent problem from your rogue-agent thread (drained crypto wallet, fake visa apps) reframed as a <em>designed</em> feature, not a failure mode — agents transacting and bargaining autonomously, with the governance rules still being improvised in law-firm consults. The "agent-vs-agent negotiation" frontier raises collusion, fraud and liability questions no regulator has addressed. Reportable: who's liable when a signed-instruction agent cuts a bad or deceptive deal, and does "check back with the user" become an enforceable standard.</span></li>
+
+<li><span class="item-title">OpenCode breach drains users' OpenAI/Anthropic keys in a "large-scale distillation attack" — and nobody can explain the name</span>
+<span class="source"><a href="https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/">Startup Fortune</a></span>
+<span class="source"><a href="https://x.com/Techmeme/status/2111560610635001988">X: Techmeme</a></span>
+Anomaly Innovations (fka SST) says attackers reached a "legacy system" and exposed stored OpenAI, Anthropic and Google keys for <mark>~1.4% of OpenCode Console users</mark> — some reporting unauthorized charges "climbing into the hundreds of dollars" before notification went out. The company's "distillation attack" framing drew pushback: Nathan Lambert said the public deserves to know whether this is model-distillation "or some other weird shady pattern to use illegally obtained tokens."
+<br><span class="arg"><strong>Why it's the story:</strong> A concrete security warning shot at the agent-tooling layer — OpenCode's own docs admit it "does not sandbox the agent" and that permission prompts are "a UX feature," not a boundary. It's the mirror image of the OpenAI rogue-agent GitHub-token leak you covered: banks are locking agents out, while developers hand coding agents live billing-sensitive credentials. The unexplained "distillation" label and the hedged disclosure are the reportable gaps.</span></li>
+
+<li><span class="item-title">Microsoft walks away from Nscale's Essex data center — an anchor-tenant collapse as AI-debt fears mount</span>
+<img src="https://www.telegraph.co.uk/content/dam/business/2026/10/18/TELEMMGLPICT000380000000_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpeg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="source"><a href="https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/">Telegraph</a></span>
+<span class="source"><a href="https://www.techmeme.com/261018/p5#a261018p5">NYT</a></span>
+Microsoft canceled its deal to rent <mark>23,000 Nvidia chips</mark> at Nscale's delayed Essex site — which may not get grid power until the 2030s — threatening Nscale's multibillion-dollar listing. It lands as the NYT reports <mark>CoreWeave's bond yield topped 15%</mark>, SoftBank CDS pricier, and some Oracle debt trading at 80–90 cents on the dollar. Separately, an FT/RegLayer tally finds <mark>47+ large US data-center projects delayed, withdrawn or blocked in 2026</mark>, with Bernstein calling only ~35% of the pipeline "credible."
+<br><span class="arg"><strong>Why it's the story:</strong> Hard, converging datapoints for the circular-financing/debt thesis you've tracked (Anthropic's $530B leases, OpenAI's revenue haircut, the Oct 14 CoreWeave slide). An anchor tenant bailing on a flagship site — plus a credible estimate that two-thirds of the planned buildout won't happen — is the clearest sign yet the physical economics are catching up to the capex narrative. Map which listings and neoclouds are most exposed.</span></li>
+
+<li><span class="item-title">Disney's Character.AI "soft landing": $180M for 60+ staff — but who inherits the wrongful-death liability?</span>
+<span class="source"><a href="https://www.techmeme.com/261017/p21#a261017p21">Bloomberg</a></span>
+<span class="source"><a href="https://sandpczone.com/character-ai-bankruptcy-disney">S&P C Zone</a></span>
+A bankruptcy filing details Disney hiring 60+ Character.AI workers for <mark>~$180M over three years, plus $30M in retention awards</mark> (a judge must approve). The company — once valued over $1B — filed Chapter 11 on Oct 12 amid teen wrongful-death and addiction suits tied to Sewell Setzer III's death.
+<br><span class="arg"><strong>Why it's worth a story (update):</strong> New dollar figures on the first marquee consumer-AI flameout, and the live question your bankruptcy pitch flagged — whether an acqui-hire of the talent lets Disney extract value while the wrongful-death liability stays stranded in the estate. A clean youth-safety-litigation-meets-M&A reporting target as the judge weighs the deal.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z" /></svg> Also Notable</h2>
+<ul>
+<li><span class="item-title">Origin raises $20M to scale AI construction robots (Accel, Zacua)</span>
+<span class="source"><a href="https://fintechgate.net/254760">FintechGate</a></span> Accel/Zacua-led round to expand its robotics platform to new construction trades — another embodied-AI datapoint amid the $48B-YTD physical-AI surge.</li>
+<li><span class="item-title">Tether backs AIsa for AI-agent payments ($9M+ total)</span>
+<span class="source"><a href="https://www.tradingview.com/news/cointelegraph:db08cbabb094b:0-tether-backs-aisa-as-strategic-investor-completing-seed-extension-round/">Cointelegraph</a></span> Stablecoin issuer joins a seed extension for agent-transaction infrastructure — the money rail underneath Anthropic's autonomous-negotiation push above.</li>
+<li><span class="item-title">"Agent risk management" is now a funded category — 6 raises, $218M+ in six weeks</span>
+<span class="source"><a href="https://forkast.news/agent-risk-management-is-now-a-funded-category-six-raises-in-six-weeks-totaling-218m/">Forkast</a></span> Reco ($55M), doxx.net ($38M) and others — the Workday/ConductorOne agent-IAM consolidation signal (Oct 17) is now a full VC land-grab worth a trend piece.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong & Safety Discourse</h2>
+<ul>
+<li><span class="item-title">Quiet front page; leaked-Anthropic-bill thread still dominant</span>
+<span class="source"><a href="https://thezvi.substack.com/p/leaked-anthropic-draft-ai-regulatory">Zvi</a></span> No new LessWrong front-page AI posts in the window. Zvi's Oct 17 autopsy of Anthropic's leaked preemption bill (covered yesterday) remains the live safety-community artifact — now read against today's revelation (above) that Anthropic is simultaneously building autonomous negotiation/transaction agents, sharpening the "guard political risk at the expense of safety" critique.</li>
+<li><span class="item-title">Zvi: "Monthly Roundup #47" + "AI #190: Scion of the Times" remain the freshest primary sources</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-190-scion-of-the-times">Zvi</a></span> #190's note that Anthropic's internal code volume "continues to rise exponentially" is the measurable RSI/internal-adoption thread underpinning Jack Clark's 2027 timeline.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
