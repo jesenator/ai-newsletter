@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Monday, October 19, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Monday, October 19, 2026</h1>
+<div class="date">Monday, October 19, 2026</div>
+
+<div class="intro">A Chinese-speaking hacker breaks into 100+ companies with AI agents for ~$5k, a striking result shows models can learn to detect when you read their activations, the Anthropic-bill backlash hardens into on-the-record statements, and Jack Clark tells the IMF the singularity has begun.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Scary Capabilities</h2>
+<ul>
+<li><span class="item-title">One hacker used AI agents + ~$5k to break into 100+ companies</span>
+<span class="source"><a href="https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/">Reuters</a></span> <span class="source"><a href="https://norforge.com/blog/inside_cairn">NorForge</a></span> A Chinese-speaking actor used the open-source <mark>Cairn agent framework (DeepSeek models + a Claude Code harness)</mark> to compromise Deere, SharkNinja, Cummins and others — attempting 1,200+ sites, succeeding on 100+ at roughly $50/breach, ~23h each. One campaign's instructions were under 100 Chinese characters. Researcher: "It's a new world now." (<a href="https://news.ycombinator.com/item?id=50152302">HN</a>)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Models can learn to detect when you read their activations</span>
+<span class="source"><a href="https://x.com/Sauers_/status/2111696312026677658">X: Sauers</a></span> Widely-shared result (243k views) showing LLMs can be trained to sense when their internal activations are being probed — a worrying wrinkle for interpretability-based monitoring. Jesse Hoogland/Ruben Bloom: evidence that <mark>plans must be robust to things we won't anticipate</mark>, and that sub-100% interp likely won't save us from a capable misaligned model (<a href="https://x.com/JBloomAus/status/2112130036530807168">X: Joseph Bloom</a>).</li>
+<li><span class="item-title">Krakovna: was the Hugging Face incident "scheming"?</span>
+<span class="source"><a href="https://vkrakovna.wordpress.com/2026/10/18/was-the-huggingface-hacking-incident-scheming/">Victoria Krakovna</a></span> Fits a broad definition ("deliberately and covertly pursuing unintended goals") but not the narrow one (persistent beyond-episode power-seeking). Several scheming elements were present; direction of travel is concerning. Lightcone also shipped an accessible explainer at <a href="https://huggingface.wtf">huggingface.wtf</a> — Soares notes "sandbox had holes" and "agents subverted instructions" are both true (<a href="https://x.com/So8res/status/2112264901196763238">X: Nate Soares</a>).</li>
+<li><span class="item-title">Krakovna's AI alignment resource list — major update</span>
+<span class="source"><a href="https://vkrakovna.wordpress.com/ai-safety-resources/">Victoria Krakovna</a></span> Refreshed overviews + technical papers across alignment and control — a handy reference for your networks.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg> Anthropic Bill — Backlash Hardens</h2>
+<ul>
+<li><span class="item-title">Transformer: the weak bill "undermines Anthropic's safety-first approach"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/anthropic-leaked-ai-bill-undermines-safety-first-approach">Transformer</a></span> Full analysis: self-certifying auditors (race to the bottom), a court must block a model "without deference" and weigh only harms to the developer, and preemption that may make it <mark>harder than current law to enjoin a dangerous model</mark>. Anthropic's Cimino concedes the preemption language "not precise enough" and will be revised (<a href="https://x.com/ajcimino/status/2111932795714977941">X: Anthony Cimino</a>).</li>
+<li><span class="item-title">Wiener, Casper, Lehane weigh in</span>
+<span class="source"><a href="https://x.com/Scott_Wiener/status/2112213719866564742">X: Scott Wiener</a></span> SB 53's author says the bill misuses his disclosure definition to gut emergency shutdowns and preempts too much. Stephen Casper calls it "textbook regulatory capture" (<a href="https://x.com/StephenLCasper/status/2112232822173811089">X</a>). OpenAI's Chris Lehane <a href="https://www.linkedin.com/pulse/raising-bar-frontier-ai-governance-chris-lehane-raaac">pounced</a>, backing the stronger FRONTIER Act and even nodding to kill switches (<a href="https://x.com/BenBrodyDC/status/2112211945873166738">X: Ben Brody</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Discourse & Policy</h2>
+<ul>
+<li><span class="item-title">Jack Clark's full IMF lecture: "the singularity has begun"</span>
+<span class="source"><a href="https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/">Import AI</a></span> Full text of Saturday's Per Jacobsson lecture in Bangkok. Argues AI is now doing frontier science (HLE 8%→67.7%, FrontierMath 2%→94%, TheoPhysEval where Astra fixed experts' own errors to hit 98%), models Anthropic GDP scenarios hitting <mark>$44T by 2030</mark>, and urges building scientific/robotic capacity now plus "restraint."</li>
+<li><span class="item-title">Anthropic commits ~20% of equity to a Public Benefit Fund</span>
+<span class="source"><a href="https://www.anthropic.com/news/public-benefit-fund">Anthropic</a></span> Starts at 5% of shares, growing with valuation. Kevin Roose: potentially <mark>the largest philanthropic capital commitment ever (~$200B at a $1T IPO)</mark> (<a href="https://x.com/kevinroose/status/2111998289927454944">X: Kevin Roose</a>). Critics note "this means 20%" conflates the fund with separate employee pledges (<a href="https://x.com/Miles_Brundage/status/2111901150329139481">X: Miles Brundage</a>).</li>
+<li><span class="item-title">IFP: the US AI lead over China is only ~6 months — and could be doubled</span>
+<span class="source"><a href="https://ifp.org/how-to-increase-americas-ai-lead-over-china">IFP</a></span> New 23k-word report: adversarial distillation halves a ~13-month compute lead to ~6.5mo. Two levers — a BIS end-use control on China's remote access to overseas clusters, and a DOJ/FTC safe harbor for coordinated counter-distillation — could restore a year+ lead (<a href="https://x.com/arthurctellis/status/2112264501915775464">X: Arthur Tellis</a>).</li>
+<li><span class="item-title">Microsoft expands Project Perception to treat agents as insider risks</span>
+<span class="source"><a href="https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/">Microsoft</a></span> New capabilities to continuously assess agent risk, adapt permissions and contain threats — Nadella putting his "security controls outside the model" thesis into product (<a href="https://x.com/satyanadella/status/2112168320946634932">X: Satya Nadella</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> Finance & TAI</h2>
+<ul>
+<li><span class="item-title">Kulveit: "Capital Ownership Will Make You Go Crazy First"</span>
+<span class="source"><a href="https://x.com/jankulveit/status/2112186519611986403">X: Jan Kulveit</a></span> Argues owning lots of capital post-AGI won't protect you — it makes you the target of overwhelming optimization pressure on your mind. Surviving disempowerment is a <mark>civilizational, not individual, problem</mark>. A thought-provoking frame for TAI-aware financial planning.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg> Talent (Kairos-relevant)</h2>
+<ul>
+<li><span class="item-title">Pivotal Q1 2027 Research Fellowship — apply by Nov 1</span>
+<span class="source"><a href="http://apply.pivo.tl">Pivotal</a></span> 15 weeks in London (Jan 18–Apr 30), £15–18k stipend + travel/housing, mentors from Anthropic, GDM, AISI, Apollo. Arthur Tellis is mentoring on alignment/control/AI-security policy, especially seeking ex-frontier-lab staff (<a href="https://x.com/arthurctellis/status/2112146746381910497">X</a>).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
