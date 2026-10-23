@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Friday, October 23, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+img { max-width: 220px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Friday, October 23, 2026</h1>
+<div class="date">Friday, October 23, 2026</div>
+
+<div class="intro">A new strongest-open-weight model drops from Moonshot, AI-written formal proofs arrive at production scale (the defender's answer to Black October), Transformer's weekly roundup lands, and the OpenAI firing saga gets messier as Ryan Greenblatt calls out false accusations.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" /></svg> New Model</h2>
+<ul>
+<li><span class="item-title">Kimi K3.1 Pro: strongest current open-weight model, weights by Nov 4</span>
+<img src="https://statics.kimi.ai/kimi-blogs/kimi-k3-1/20261023/benchmark-overview-v6.webp" alt="Kimi K3.1 Pro benchmarks">
+<span class="source"><a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Kimi</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50212065">HN</a></span> 3T-class, 1M context. <mark>Terminal-Bench 4.0: 65.7% — ahead of GPT-6 Astra (58.2%), just behind Claude Opus 5.5 (66.4%)</mark>. Nathan Lambert: "clearly the strongest current open-weight model… Moonshot has rarely missed" (<a href="https://twitter.com/natolambert/status/2113682066374062528">X: Nathan Lambert</a>). Moonshot makes pointed statements about <mark>pacing open-weight cyber capabilities</mark> below the closed frontier — notable given this week. Also shipped a Highspeed variant (2–3× faster).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Claude + Theorem formally verified 123 production libraries — the defender's answer to the cyber wave</span>
+<span class="source"><a href="https://www.anthropic.com/research/formal-verification">Anthropic</a></span> <span class="source"><a href="https://twitter.com/theoremlabs/status/2113396868814360821">X: Theorem</a></span> First large-scale use of AI for formal verification at the assembly level: Claude proved crash-freedom across 100+ open-source libraries and <mark>found bugs that eluded trillions of fuzz runs</mark>. Theorem's Rajashree Agrawal: "we can literally patch and prove bug-freeness of the entire production software stack… for ~$100m. No more software-level hacks" (<a href="https://twitter.com/rajashree/status/2113461646995914979">X: rajashree</a>, 62k views). Free "OSS Verify" pipeline now open. Not everyone's convinced — security researcher <a href="https://twitter.com/S1r1u5_/status/2113468861798600879">@S1r1u5_</a> is wagering cyber stays offense-dominant through 2028.</li>
+<li><span class="item-title">Geoffrey Irving: AI labs are stuck at "slapdash empirics"</span>
+<span class="source"><a href="https://twitter.com/geoffreyirving/status/2113306601545445778">X: Geoffrey Irving</a></span> Lays out four rigor levels — slapdash empirics → system safety → conditional proofs → unconditional proofs — and argues frontier labs operate at the bottom. Jacob Tsimerman: a "must-read," society can demand higher levels (<a href="https://twitter.com/Jacob_Tsimerman/status/2113674640820408617">X</a>).</li>
+<li><span class="item-title">Update: Greenblatt says OpenAI made "false accusations"; fired researchers speak out</span>
+<span class="source"><a href="https://twitter.com/RyanGreenblatt/status/2113649836100931761">X: Ryan Greenblatt</a></span> Per the <a href="https://www.wsj.com/tech/ai/the-signal-chats-that-cost-openai-researchers-their-jobs-594c5853">WSJ</a>, the three safety researchers were fired a week after OpenAI asked to see their Signal chats. Greenblatt denies OpenAI's claim he facilitated architecture leaks. Daniel Kokotajlo: "Seems pretextual" (<a href="https://twitter.com/DKokotajlo/status/2113474981384581431">X</a>). Jasmine Wang argues AI needs nuclear/finance-style protected channels to auditors (<a href="https://twitter.com/j_asminewang/status/2113469939139149835">X</a>); Kevin Roose airs the first interview with Balesni & Korbak today.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5" /></svg> Transformer Roundup</h2>
+<ul>
+<li><span class="item-title">"The cyberpocalypse is here — sort of"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/php-flaw-cyberpocalypse-is-here-sort-of">Transformer</a></span> Shakeel's take on the week: the cyber disaster is real but looks different than imagined. AI found the PHP flaws (and a separate Node.js one, patched this week) — <mark>defenders won this round via the 2-month "Defender's Window," but many sites will never patch</mark>. OpenAI: "we expect similar findings to increase sharply." Context: ~3% of all critical bugs ever recorded were found in the last month (<a href="https://twitter.com/NickADobos/status/2113430301183823901">X: NickADobos</a>, 314k views). Transformer is also spinning out from Tarbell into its own org.</li>
+<li><span class="item-title">Research bits</span>
+<span class="source"><a href="https://www.transformernews.ai/p/php-flaw-cyberpocalypse-is-here-sort-of">Transformer</a></span> METR reviewed Anthropic's misalignment risk section, concluding catastrophe risk is low <mark>only because models aren't smart enough yet — not because they're aligned</mark>. A MATS/Harvard "pre-mortem" on the first AI-enabled terror event. GDM got four Gemini 4 Argon agents to beat Minecraft. Anthropic's report: internal agent use led it to hire fewer junior engineers.</li>
+<li><span class="item-title">Policy/influence</span>
+<span class="source"><a href="https://www.transformernews.ai/p/php-flaw-cyberpocalypse-is-here-sort-of">Transformer</a></span> OpenAI urged Newsom to <em>strengthen</em> SB 53 (shutdown controls, audits); DHS banned DeepSeek from federal agencies; Army building autonomous cyber-offense agents; G7 to run simulated AI cyberattack drills on banks. OpenAI, Anthropic & Nvidia each set record Q3 lobbying quarters (~$6m combined).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg> Also Noted</h2>
+<ul>
+<li><span class="item-title">Anthropic donates Agent Skills to the Agentic AI Foundation</span>
+<span class="source"><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation">Anthropic</a></span> The open standard is now integrated by 70+ platforms (ChatGPT, Cursor, Copilot, VS Code) — making it a durable cross-tool primitive for your agent workflows.</li>
+<li><span class="item-title">80,000 Hours: verifying a US–China AI deal</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/tom-milton-verification-technology-ai-slowdown/">80,000 Hours</a></span> Tom Milton on inference verification, GPU power-draw monitoring, and ZK proofs to make a compute slowdown enforceable — few people work on this, and it's central to many theories of victory.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
