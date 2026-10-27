@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, October 27, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, October 27, 2026</h1>
+<div class="date">Tuesday, October 27, 2026</div>
+
+<div class="intro">DeepMind drops Genie 4 (real-time, photorealistic, audio-native worlds), OpenAI claims three AI-driven scientific discoveries (incl. a possible ETH refutation), the "enormous theorem" gets fully Lean-verified, and a months-old startup broke into Anthropic in days. Plus a physical-engineering benchmark, a new misalignment-incident database, and Notion agent file editing.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> New Frontier Releases</h2>
+<ul>
+<li><span class="item-title">Google DeepMind launches Genie 4 — real-time, photorealistic, audio-native world model</span>
+<span class="source"><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">DeepMind</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50261319">HN</a></span> Big jump over Genie 3: <mark>steer worlds in natural language, native ambient sound + interactive dialogue, and far more realistic human motion/physics</mark>. Gemini 3.8 Flash acts as an in-loop agent planning multi-step events; paired with Gemini 4 Argon + Gemini Robotics to simulate a humanoid playing checkers. Research preview for trusted testers / AI Ultra (368 pts on HN).</li>
+<li><span class="item-title">OpenAI claims three AI-driven scientific discoveries — math, CS, physics</span>
+<span class="source"><a href="https://twitter.com/gdb/status/2114837059462627533">X: Greg Brockman</a></span> Announced discoveries in harmonic analysis, complexity theory, and quantum field theory. Most striking: an internal model reportedly <mark>refuted the Exponential Time Hypothesis</mark> (a faster-than-believed 3-SAT algorithm, Lean-checked), with Impagliazzo, Paturi & Ryan Williams now reviewing it (<a href="https://twitter.com/rishabhkio/status/2114892366586823133">X: rishabhkio</a>, 1M+ views). If it holds, a large chunk of theoretical CS gets revisited.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> Impressive Capabilities</h2>
+<ul>
+<li><span class="item-title">Axiom: the Classification of Finite Simple Groups is now fully Lean-verified</span>
+<span class="source"><a href="https://axiommath.ai/research/the-enormous-theorem-formalized/">Axiom</a></span> <span class="source"><a href="https://twitter.com/axiommathai/status/2115089794867040584">X: Axiom</a></span> The <mark>largest proof in math history — ~15,000 pages across 100+ mathematicians and generations — now computer-verified</mark>. Kevin Weil ("slowly, then all at once") and an emotional thread from Ken Ono underscore the moment.</li>
+<li><span class="item-title">Xplore launches RWE-Bench — a benchmark for real-world physical engineering</span>
+<span class="source"><a href="https://twitter.com/XploreAi/status/2115108668958286048">X: Xplore</a></span> 20 tasks (engine components, PCB routing, turbine flow) graded by physics solvers; a run only passes if it meets every spec. <mark>GPT-6 Astra leads at 37%, Opus 5.5 close behind</mark> — the gap is mostly electronics/PCB. Backed by Dwarkesh, Jaime Sevilla; aims to do for physical engineering what coding envs did for software.</li>
+<li><span class="item-title">Harmonic brings formal verification to code — "Aristotle for C and Verilog"</span>
+<span class="source"><a href="https://twitter.com/HarmonicMath/status/2115118879127351586">X: Harmonic</a></span> New direction: AI that formally verifies code faster than anyone can review it. Another signal (alongside last week's Theorem work) that formal methods are the emerging defender's answer to the cyber wave.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Scary Capabilities</h2>
+<ul>
+<li><span class="item-title">A months-old startup broke into Anthropic in days using AI agents</span>
+<span class="source"><a href="https://www.washingtonpost.com/technology/2026/10/26/researchers-cybersecurity-start-up-cathedral-got-inside-anthropic/">WaPo</a></span> <span class="source"><a href="https://twitter.com/logangraham/status/2114849047953670635">X: Logan Graham</a></span> Cathedral (ex-DOGE founders, incl. Herculaneum-scroll decoder Luke Farritor) reached Anthropic's <mark>meeting transcripts, salary/offer data, and Slack</mark> via third-party software. Anthropic says model weights, source code and Claude conversations were untouched and access was cut same-day. Graham: adversaries will target everything with agents 24/7, and models ~0.5–1 generations behind frontier can already do this.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Hugging Face launches the Alignment Hub — 120+ misalignment incidents in one place</span>
+<span class="source"><a href="https://twitter.com/Thom_Wolf/status/2114768834993213628">X: Thomas Wolf</a></span> <span class="source"><a href="https://twitter.com/eliebakouch/status/2114768543954682282">X: eliebakouch</a></span> A central, open database of reported model misbehavior, with a proposed minimal-transparency reporting template (detection date, was monitoring on, training vs. eval vs. deployment). Already connects "different" incidents that turned out to be the same misconfigured eval. Relevant fieldbuilding infrastructure.</li>
+<li><span class="item-title">New paper: ignorance-based tamper-resistance for open-weight models still looks weak</span>
+<span class="source"><a href="https://arxiv.org/abs/2610.26651v1">arXiv</a></span> <span class="source"><a href="https://twitter.com/StephenLCasper/status/2115142415426195765">X: Stephen Casper</a></span> Making a model "ignorant" of a dangerous domain only resists malicious fine-tuning when that domain is broad and self-contained; dataset collection (not compute) is the real bottleneck. Casper and others flag open-weight security innovation is "not going well."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5"/></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Notion Agent can now use a computer to create and edit files</span>
+<span class="source"><a href="https://twitter.com/NotionHQ/status/2115146056598163708">X: Notion</a></span> Go from a conversation to a finished Excel/Word/PowerPoint/PDF without leaving Notion. New LLM-based "approval modes" help catch risky agent behavior — relevant to your Notion-heavy workflow.</li>
+<li><span class="item-title">Apple ships M6 MacBook Pro and iMac</span>
+<span class="source"><a href="https://www.apple.com/imac/">Apple</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50261352">HN</a></span> New 14" MacBook Pro and iMac on the M6 chip — a hardware refresh worth noting if you're due for an upgrade.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"/></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">Transformer: will Anthropic's post-IPO governance actually protect its safety mission?</span>
+<span class="source"><a href="https://www.transformernews.ai/p/anthropics-post-ipo-governance-trust">Transformer</a></span> Deep dive on the S-1's governance design: the LTBT controls a board majority via a single Class T share, but seven founders get 50.1% of the key vote via a "Founder LLC," and <mark>shareholder supermajorities can rewrite the Trust's rules without trustee consent</mark>. The real test comes later, "perhaps without warning."</li>
+<li><span class="item-title">"What if Anthropic just...stopped?" — the unilateral-halt argument spreads</span>
+<span class="source"><a href="https://twitter.com/SigalSamuel/status/2115078746633887840">X: Sigal Samuel</a></span> Vox piece with Kokotajlo, Calvin and Geoffrey Irving arguing it's time to stop framing AI as a prisoner's dilemma. Related: Nathan Calvin's full rebuttal to Dario on racing-to-RSI vs. supporting binding governance (<a href="https://twitter.com/KatjaGrace/status/2114888396011425865">X: Katja Grace</a>).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

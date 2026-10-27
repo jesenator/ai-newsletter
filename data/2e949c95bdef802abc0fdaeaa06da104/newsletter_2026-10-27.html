@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Tuesday, October 27, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+.why { color: #444; font-style: italic; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Tuesday, October 27, 2026</h1>
+<div class="date">Tuesday, October 27, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">The buried Anthropic IPO story: founders can rewrite the Long-Term Benefit Trust's rules — without the trustees' consent</span>
+<span class="source"><a href="https://www.transformernews.ai/p/anthropics-post-ipo-governance-trust">Transformer</a></span> A deep read of the S-1 finds the LTBT's safety veto is less durable than advertised. A single Class F share held by a "Founder LLC" carries <mark>50.1% of the vote</mark>; a shareholder "failsafe" lets the founders (with simple majorities of public and employee votes cast, in the first three years) <mark>instruct the trust to vote away its own Class T rights</mark> — or redeem the trust's share outright, cancelling trust-elected directors without a class vote. Drafting closes the merger and board-expansion end-runs, but the trust-agreement-amendment path needs no board approval at all.
+<br><span class="why">Why it's the story: this is the single most important unexamined detail in the first frontier-lab IPO. Anthropic sells the LTBT as the structural guarantee of its safety mission; the mechanics show seven founders can reshape or neuter it if their interpretation of the mission diverges. "Who protects the mission from the founders?" is a clean, original governance piece no one else has nailed.</span></li>
+
+<li><span class="item-title">Google's Genie 4 world model is being wired into Gemini Robotics — training humanoids inside AI-generated reality</span>
+<span class="source"><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Google DeepMind</a></span> <span class="source"><a href="https://www.techmeme.com/261027/p23#a261027p23">The Verge</a></span>
+<img src="https://lh3.googleusercontent.com/J4Xj3Qz-genie4" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;" onerror="this.style.display='none'">
+Genie 4 (powered by Gemini 3.8 Flash as an in-loop agent) generates real-time, photorealistic, physics-aware interactive worlds with native audio. DeepMind explicitly demos <mark>Gemini 4 Argon + Genie 4 driving Apptronik's Apollo humanoid through tasks</mark> inside the simulation, pitching "safe, infinitely variable" training environments for robots and agents.
+<br><span class="why">Why it's worth a story: this is the clearest sign the frontier labs see generated world models — not just real-world data — as the training substrate for embodied AI, directly rivaling Machenta's simulation-first bet (below). The under-covered angle: a model that can "defeat CoT monitoring when motivated" (per Zvi's Argon read) is now being used to generate the environments robots learn in. Who validates the sim's fidelity, and its safety guardrails?</span></li>
+
+<li><span class="item-title">Robotics funding is now a daily unicorn machine — Q3 raises up 185% YoY</span>
+<span class="source"><a href="https://news.crunchbase.com/venture/q3-2026-us-china-robotics-startup-funding-jumps-physical-ai-push/">Crunchbase</a></span> <span class="source"><a href="https://www.forbes.com/sites/johnkoetsier/2026/10/27/uk-startup-bets-40-million-that-it-can-train-robots-instantly-via-simulation/">Forbes</a></span> <span class="source"><a href="https://www.techinasia.com/news/travis-kalanicks-atoms-raises-17b-robotics-expansion">Tech in Asia</a></span> Today alone: London's Machenta (Imperial spinout) took a <mark>$40M seed — the UK's largest ever — to teach robots a task from one demonstration via simulation</mark>; Travis Kalanick's Atoms raised $1.7B (a16z-led) for KitchenBASE automation; Generative Bionics raised €70M for a European humanoid facilities network; MoSense $15M for robot e-skin. Crunchbase pegs Q1–Q3 robotics funding up ~185% YoY, US and China leading.
+<br><span class="why">Why it's worth a trend piece: the "physical AI" land grab you've tracked is consolidating around two theses — simulation-trained generalist models (Machenta, Genie 4) vs. real-world deployment (Bedrock, Atoms) — while a Kalanick comeback and a 185% funding jump mark a genuine inflection. Still no safety-eval regime for autonomous hardware.</span></li>
+
+<li><span class="item-title">Oracle puts OpenAI's "Jalapeño" inference chip, Google TPUs and Cerebras on the same cloud — and bakes ChatGPT/Codex into its apps</span>
+<span class="source"><a href="https://www.cnbc.com/2026/10/27/oracle-openai-chatgpt-codex-google-tpus.html">CNBC</a></span> <span class="source"><a href="https://openai.com/index/oracle-apps-in-chatgpt">OpenAI</a></span> Oracle's OCI will for the first time offer Google TPUs, OpenAI's in-house Jalapeño inference silicon, and Cerebras hardware; Cerebras stock jumped ~8%. Separately OpenAI's apps/agents get embedded in Oracle's enterprise stack.
+<br><span class="why">Why it's worth a line: the scrambled compute/alliance map keeps getting stranger — OpenAI's own chip renting space next to Google's TPUs on a third party's cloud. A clean datapoint on how the circular-financing web and custom-silicon race are fusing as the deals beat heats up.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> LessWrong & Safety Discourse</h2>
+<ul>
+
+<li><span class="item-title">Zvi: "Anthropic Versus Anthropic" — Dario's full, substantive reply to Nathan Calvin</span>
+<span class="source"><a href="https://thezvi.substack.com/p/anthropic-versus-anthropic">Zvi</a></span> Zvi dissects <mark>Dario Amodei's point-by-point response</mark> to Nathan Calvin's "what even is Anthropic?" critique. Dario counters with a costly-signals list (SB 53, delaying Mythos, bio-filtering, export-control support as OpenAI abandons it) and concedes items 7–9 — including the walked-back "hacking is misconfiguration, not misalignment" letter to Congress and the leaked preemption bill — "could have been handled better," while defending the RSP v3 changes as necessary flexibility. Zvi's verdict: Anthropic is "the best given the alternatives, and insufficient to meet the moment."
+<br><span class="why">The freshest safety-community artifact: a frontier CEO engaging directly and at length with his sharpest external critic. Mine it for the governance throughline into Transformer's LTBT-failsafe analysis above — and for Zvi's forthcoming full S-1 post.</span></li>
+
+<li><span class="item-title">Quiet front page — no new LessWrong AI posts in the window</span>
+<span class="source"><a href="https://www.lesswrong.com/">LessWrong</a></span> The live safety discourse today is on Substack (Zvi, above) and in the CAIS newsletter's "Black October" cyber roundup. Flagged for completeness; both the Hackening/PHP2Shell thread and Gemini 4 Argon's 217-page safety card were covered earlier this week.</li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
