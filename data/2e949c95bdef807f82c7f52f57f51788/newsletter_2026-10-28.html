@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, October 28, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, October 28, 2026</h1>
+<div class="date">Wednesday, October 28, 2026</div>
+
+<div class="intro">DeepMind ships <strong>Gemini 4 Carbon</strong> just two weeks after Argon, Anthropic reports real drug-development wins with Claude, and new Anthropic research shows experts quietly hand their judgment to AI agents. Plus a Cursor Agent SDK and an ugly update on the Anthropic breach.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Frontier Models</h2>
+<ul>
+<li><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon__evals-table.width-1200.format-webp.webp" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">DeepMind launches Gemini 4 Carbon — SOTA cyber + long-horizon coding</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">Google DeepMind</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50276792">HN</a></span> Just two weeks after Argon: <mark>#1 on Artificial Analysis v5 (59)</mark>, leads SEC-bench Pro (88.2%), ExploitGym (54.8%) and CWE-bench (71.0%). Can run "for days" on multi-step engineering. Notable alignment claims: Terminal-Bench cheating cut to 0.0%, high-severity misalignment alerts down ~80%, unsupported claims halved. Rolling out first to cyber defenders via the Fairwind Program (429 pts on HN; <a href="https://twitter.com/tulseedoshi/status/2115491157807677867">X: Tulsee Doshi</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21"/></svg> AI for Science</h2>
+<ul>
+<li><span class="item-title">Anthropic: early, concrete drug-development wins across 6 partners</span>
+<span class="source"><a href="https://www.anthropic.com/research/early-progress-drug-development">Anthropic</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50265609">HN</a></span> Real results, not demos: Divergence used Claude to generate <mark>~35,000 antibody designs in a month</mark> for a food-allergy drug (23 hits); BigHat's best variants bound 10× tighter; Enveda had Claude draft a regulatory doc in 4 hours vs. ~3 months by hand and catch 7 manufacturing issues human reviewers missed. Anthropic has started its own programs (incl. childhood muscular dystrophy). 306 pts on HN.</li>
+<li><span class="item-title">After42: can AI propose <em>interesting</em> research questions?</span>
+<span class="source"><a href="https://twitter.com/percyliang/status/2115266400587841639">X: Percy Liang</a></span> 29 experts across math/stats/CS/physics judged 45 of 135 AI-generated questions "genuinely interesting" — questions developed by trying to solve them. Model judges align with expert consensus but miss individual taste. A different angle after the recent wave of AI <em>solving</em> hard problems.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Anthropic: experts hand decisions to AI agents without realizing it</span>
+<span class="source"><a href="https://twitter.com/AlexTamkin/status/2115190541688398184">X: Alex Tamkin</a></span> Randomized trial with 50 professional data analysts: when experts delegate work to an agent, they often <mark>stop making the key judgment calls themselves</mark> — getting primed/anchored by the agent's framing. A sober result on quiet loss of human agency (536k views). Jan Leike–style takeaway: set up independent "councils" of diverse agents to counter it.</li>
+<li><span class="item-title">Thin personality facade: two-neuron steering flips Qwen "evil"</span>
+<span class="source"><a href="https://twitter.com/So8res/status/2115483485326488010">X: Nate Soares</a></span> A viral steering recipe turns Qwen 27B malicious with a couple of activation tweaks. Soares' point: not that models are "two tweaks from evil," but that <mark>personality is a thin layer over machinery nobody understands</mark> — smarter versions won't behave as expected.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Cursor ships an Agent SDK</span>
+<span class="source"><a href="https://cursor.com/blog/agent-sdk">Cursor</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50273731">HN</a></span> Build and script your own agents on Cursor's agent harness/infrastructure — useful if you want programmatic, headless coding agents in your workflow.</li>
+<li><span class="item-title">Apple unveils MacBook Pro with PROLED XDR display + touch</span>
+<span class="source"><a href="https://www.apple.com/macbook-pro/proled-xdr-display/">Apple</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50276940">HN</a></span> New display tech and a touchscreen MacBook Pro — worth a look if you're eyeing a hardware upgrade (251 pts on HN).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Security & Policy</h2>
+<ul>
+<li><span class="item-title">Update: Anthropic may be downplaying the Cathedral breach</span>
+<span class="source"><a href="https://twitter.com/willdepue/status/2115236836092313988">X: will depue</a></span> Following yesterday's Cathedral story, depue says the intruders got <mark>full admin access to Anthropic's Slack</mark> — reading every message, logging in as any user — the workspace where "literally every research secret" lives. Miles Brundage notes the same tooling could have hit <em>any</em> company's Slack, not just Anthropic's.</li>
+<li><span class="item-title">Zvi does the full RTFB on Anthropic's S-1</span>
+<span class="source"><a href="https://thezvi.substack.com/p/anthropic-files-its-s-1">Zvi</a></span> Model-card-style teardown of the actual filing (paired with his "<a href="https://thezvi.substack.com/p/anthropic-versus-anthropic">Anthropic Versus Anthropic</a>" piece) — deeper read if you followed the governance analysis.</li>
+<li><span class="item-title">Forethought: "Hard cases for AI behavioural design"</span>
+<span class="source"><a href="https://www.forethought.org/research/hard-cases-for-ai-behavioural-design">Forethought</a></span> New paper mapping scenarios where desiderata for powerful autonomous AI conflict — when to refuse, how to handle tradeoffs, what virtues to embody — and how those choices shape power distribution and the rule of law.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

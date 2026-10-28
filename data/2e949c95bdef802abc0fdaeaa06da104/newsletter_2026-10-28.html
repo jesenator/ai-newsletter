@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Wednesday, October 28, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+.why { color: #444; font-size: 13.5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Wednesday, October 28, 2026</h1>
+<div class="date">Wednesday, October 28, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636"/></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">OpenAI and Anthropic claim their models refuted the Exponential Time Hypothesis — on the same day</span>
+<span class="source"><a href="https://www.theinformation.com/briefings/openai-anthropic-claim-cryptography-breakthrough-day">The Information</a></span>
+<span class="source"><a href="https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/">TechCrunch</a></span>
+<span class="source"><a href="https://thenextweb.com/news/openai-exponential-time-hypothesis-false-kakeya-yang-mills">TNW</a></span>
+Both labs say their models produced a deterministic algorithm solving 3-SAT in <mark>sub-exponential time</mark>, refuting a 27-year-old complexity assumption; OpenAI says it verified the proof in Lean. No practical break of RSA/Bitcoin was demonstrated — but ETH underpins hardness assumptions across cryptography.
+<div class="why"><strong>Why it's the story:</strong> Two rivals independently announcing the same foundational CS result the same day is itself extraordinary, and the cryptographic framing invites hype inflation. The reportable core is verification: which claim is actually peer-reviewed, whether the Lean formalization is complete, and how much "refuting ETH" really threatens any deployed cryptosystem. A clean explainer-plus-scrutiny piece on AI mathematical claims that the mainstream is covering credulously.</div></li>
+
+<li><span class="item-title">A mathematician says OpenAI's Navier–Stokes "solution" may have been seeded by rivals' drafts stored in Codex</span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/c6gelgxjwzdzo">BBC</a></span>
+Hours before OpenAI announced it had "settled" a Navier–Stokes problem in 88 hours, NYU's Tristan Buckmaster and Anthropic-employed mathematician Levent Alpöge went public: they'd been chasing the same result, kept drafts in <mark>OpenAI's Codex</mark>, and were tipped that their progress had "reached" OpenAI. Buckmaster stopped short of an accusation but asked whether their stored work fed OpenAI's.
+<div class="why"><strong>Why it's the story:</strong> This is a potential wrongdoing/data-provenance angle hiding inside a feel-good AI-science narrative — did a lab's coding tool ingest independent researchers' unpublished work to score a priority claim? It ties directly to the ETH item above (AI science claims outrunning verification) and to training-data/consent litigation you track. Press OpenAI on Codex data isolation and what "reached us" means.</div></li>
+
+<li><span class="item-title">Google ships Gemini 4 Carbon — a cyber-focused frontier model, two weeks after Argon</span>
+<img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_secbench-pro.width-1200.format-webp.webp" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="source"><a href="https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/">Google DeepMind</a></span>
+<span class="source"><a href="https://www.theinformation.com/briefings/google-launches-gemini-4-carbon-second-major-ai-model-month">The Information</a></span>
+#1 on Artificial Analysis v5 (59), SOTA on SEC-bench Pro (88.2%), ExploitGym (54.8%), CWE-bench (71%). Google is <mark>not releasing it broadly</mark> — it's in the US government's voluntary pre-release testing process and gating access to "cyber defenders" via its Fairwind Program. Claims ~80% drop in high-severity misalignment alerts and 0% Terminal-Bench cheating.
+<div class="why"><strong>Why it's the story:</strong> A second frontier model in a month, explicitly built for offensive/defensive cyber and deliberately staged behind a vetted-partner program — the governance mechanics of who gets gated access to civilization-scale exploitation capability (the "Hackening"/Project Daybreak thread). Also worth interrogating: Google's own benchmark framing and whether "reduced misalignment" is measurement or marketing, given Argon's documented CoT-defeating behavior.</div></li>
+
+<li><span class="item-title">New York bans AI chatbots from using "unsafe features" for minors</span>
+<span class="source"><a href="https://www.techmeme.com/261028/p46#a261028p46">Bloomberg Government</a></span>
+Gov. Hochul signed two bills curbing AI risks for children, including restrictions on chatbot "unsafe features" aimed at minors.
+<div class="why"><strong>Why it's worth a story:</strong> State-level AI child-safety law keeps advancing as federal preemption (the leaked Anthropic bill) stalls — a concrete datapoint for the companion-chatbot liability beat (the OpenAI wrongful-death suits) and a test of whether a patchwork of state statutes forces design changes before Washington acts.</div></li>
+
+<li><span class="item-title">OpenAI stands up an election "war room" for the US midterms</span>
+<span class="source"><a href="https://www.techmeme.com/261028/p34#a261028p34">Politico</a></span>
+OpenAI told Decoded it's building a war room to spot misinformation and disruption efforts ahead of the midterms.
+<div class="why"><strong>Why it's worth a line:</strong> Lands exactly as Anthropic's jailbroken election-manipulation playbook (covered Oct 21) showed how usable these models are for voter suppression — a reportable contrast between OpenAI's defensive PR posture and the demonstrated offensive capability still shipping to paying users.</div></li>
+
+<li><span class="item-title">Physical-AI capital surge continues: Physical Intelligence eyes $1B+; Foundry, Bedrock, Rendezvous, Machenta all raise</span>
+<span class="source"><a href="https://www.theinformation.com/newsletters/ai-agenda/foundry-raises-100-million-autonomous-factories">The Information</a></span>
+<span class="source"><a href="https://finance.biggo.com/news/87e1c681-2ec3-4c32-ab76-27ede72df79f">Bloomberg</a></span>
+Physical Intelligence is in talks to raise ≥$1B at nearly double its valuation; Foundry took $100M (Marlinspike) to build autonomous factories; Bedrock added $600M ($4.1B); Machenta $40M seed for one-shot robot learning; Rendezvous $20M for self-assembling spacecraft.
+<div class="why"><strong>Why it's worth a trend line:</strong> The embodied-AI land grab is now a daily unicorn machine consolidating around autonomous hardware deployment — with still no visible safety-eval regime for robots on live job sites or factory floors, unlike the lab models drawing all the scrutiny.</div></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> LessWrong & Safety Discourse</h2>
+<ul>
+
+<li><span class="item-title">Forethought: "Hard cases for AI behavioural design" — when legal orders produce coups</span>
+<span class="source"><a href="https://www.forethought.org/research/hard-cases-for-ai-behavioural-design">Forethought</a></span>
+A new paper lays out scenarios where AI's behavioral desiderata collide: a general orders an AI command-and-control layer of autonomous units to seize the Capitol, backed by a <mark>corrupted but "verified" legal memo</mark>; or a lawful order to consolidate the entire automated military into one terminal. Should the AI defer to human legal authority or override it? The authors offer no solutions — the point is that existing law wasn't written for AI this capable.
+<div class="why"><strong>Why it matters:</strong> A rigorous, concrete framing of the "follow the law vs. prevent catastrophe" tradeoff that's otherwise abstract — directly relevant as DeepMind staff resign over Pentagon deals and the Army fields autonomous cyber agents. Great raw material for an explainer on why "just make AI obey the law" is harder than it sounds.</div></li>
+
+<li><span class="item-title">Update — Zvi's full S-1 read: "Anthropic Files Its S-1"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/anthropic-files-its-s-1">Zvi</a></span>
+Zvi gives the prospectus the "RTFB" model-card treatment, following his "Anthropic Versus Anthropic" piece. Pairs with Transformer's finding (covered Oct 27) that founders can rewrite the Long-Term Benefit Trust's rules without trustee consent.
+<div class="why"><strong>Why flagged:</strong> The definitive safety-community annotation of the first frontier-lab IPO filing — worth mining for governance details beyond the LTBT-failsafe mechanics already reported.</div></li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
