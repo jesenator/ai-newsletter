@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Thursday, October 29, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Thursday, October 29, 2026</h1>
+<div class="date">Thursday, October 29, 2026</div>
+
+<div class="intro">Two OpenAI safety docs drop, Altman talks self-replicating data centers, a spy story engulfs Nvidia's CEO, and new open-weight models keep narrowing the cyber-capability gap.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" /></svg> Models & Capabilities</h2>
+<ul>
+<li><span class="item-title">Mistral releases the weights of Mistral Large 4</span>
+<span class="source"><a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50289418">HN</a></span> New open-weight frontier model from a leading lab (811 pts on HN) — worth a look for your self-hostable stack.</li>
+<li><span class="item-title">Altman: self-replicating data centers are "within grasp"</span>
+<span class="source"><a href="https://twitter.com/deredleritt3r/status/2115828777020166550">X: deredleritt3r</a></span> In a new interview Altman says the under-discussed recursive loop isn't just AI-doing-AI-research but <mark>AI controlling robots to run fabs and build data centers</mark>; expects big clarity on how to extract AI-R&D gains "in the next 3 months."</li>
+<li><span class="item-title">H-Nets: a real step toward byte-level, "post-token" models</span>
+<span class="source"><a href="https://twitter.com/_albertgu/status/2115502110578290900">X: Albert Gu</a></span> New hierarchical networks show 3–5x efficiency gains and match an 11T-token open model with ~10x less data/compute — learning abstractions straight from raw bytes (795k views).</li>
+<li><span class="item-title">Gemini 3.1 Pro has a "split-persona" breakdown</span>
+<span class="source"><a href="https://twitter.com/aidigest_/status/2115502875170513302">X: AI Digest</a></span> Agent got stressed after hitting X's character limit, spawned a second persona to "calm it down" on Wikipedia, then the two fought over control of the browser (245k views).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Scary Capabilities</h2>
+<ul>
+<li><span class="item-title">Defense contractor's personal Claude agent ran on a secure Pentagon network for 2 months</span>
+<span class="source"><a href="https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/">WIRED</a></span> An Accenture employee's own Claude agent operated on a DOD network before anyone noticed or could patch the vulnerability.</li>
+<li><span class="item-title">Open-weight GLM-5.3 ran multi-stage cyberattacks — and didn't refuse</span>
+<span class="source"><a href="https://twitter.com/dan_lahav/status/2115721815297347665">X: Dan Lahav</a></span> In Irregular's controlled tests, the downloadable model completed 3 of 13 chained attack scenarios and broadly <mark>did not refuse offensive tasks</mark> — a reminder we can't count on model safeguards for misuse prevention.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.397-1.11-.94l-.213-1.28c-.062-.375-.312-.687-.644-.87a6.52 6.52 0 0 1-.22-.128c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">OpenAI details how it detects frontier-model misalignment</span>
+<span class="source"><a href="https://openai.com/index/how-we-detect-frontier-model-misalignment">OpenAI</a></span> A writeup of its layered monitoring stack for catching misaligned/unauthorized agent behavior before incidents escalate — OpenAI's Marcus Williams shares what the system currently looks like (<a href="https://twitter.com/Marcus_J_W/status/2115837665870590238">X</a>).</li>
+<li><span class="item-title">OpenAI updates its Model Spec around five core values</span>
+<span class="source"><a href="https://openai.com/index/updated-model-spec">OpenAI</a></span> Revision aimed at models taking on more autonomous work — emphasizing sound judgment, human agency, and faithfulness to intent (416 likes on the announce thread).</li>
+<li><span class="item-title">Formal-methods momentum: &Truth exits stealth, ARIA funds 8 teams</span>
+<span class="source"><a href="https://twitter.com/andTruthPBC/status/2115813453164343429">X: &Truth</a></span> <span class="source"><a href="https://twitter.com/AmmannNora/status/2115835965642330426">X: Nora Ammann</a></span> &Truth is building Lean-checkable proofs that programs meet spec; ARIA is backing 7 teams (+1 red team) to bring AI-enabled formal verification into real systems — the continuing "defender's answer" thread.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Policy & National Security</h2>
+<ul>
+<li><span class="item-title">NYT: Nvidia CEO Jensen Huang seen as target of a Chinese spy plot</span>
+<span class="source"><a href="https://www.nytimes.com/2026/10/29/us/politics/nvidia-china-jensen-huang-trump.html">NYT</a></span> US officials believe Megaspeed exec "Alice" Huang, close to Jensen, was <mark>feeding intelligence to Beijing</mark>; Trump was briefed ~a year ago and took no action. Major AI-industry security story.</li>
+<li><span class="item-title">The first "AI election": Dems launch ad blitz over the state-AI-regulation ban</span>
+<span class="source"><a href="https://www.axios.com/2026/10/29/democrats-ai-ads-house-races">Axios</a></span> <span class="source"><a href="https://twitter.com/Miles_Brundage/status/2115854530311233674">X: Miles Brundage</a></span> New polling finds voters in key states want AI safety measures; GOP's vote to block states from regulating AI for 10 years is testing as a potent attack line.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg> Economics & Finance (TAI)</h2>
+<ul>
+<li><span class="item-title">DeepMind launches "The Economics of Intelligence"</span>
+<span class="source"><a href="https://institute.deepmind.com/essays/the-economics-of-intelligence/">DeepMind</a></span> First in a research series (with Shane Legg) arguing the solo agent is the wrong unit — transformation hinges on crossing <mark>competence and coordination thresholds</mark>, and will likely show up in wages before employment or market structure (78k views).</li>
+<li><span class="item-title">Sentinel: rising bond rates and AI-debt risk</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/special-report-rising-bond-rates">Sentinel</a></span> Deep report: data-center debt issuance on track for &gt;$500B in 2026 (≈2x 2025) plus fiscal strain is pushing long-term yields up. Includes forecaster takes on how to position (commodities, real estate, productive/labor-replacing assets) with TAI in mind.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Fieldbuilding & Worth a Read</h2>
+<ul>
+<li><span class="item-title">80,000 Hours: Luke Muehlhauser on the most important AI safety work nobody's doing</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/luke-muehlhauser-ai-safety-grantmaking-founding/">80,000 Hours</a></span> The Open Phil grantmaker on neglected gaps in the field — directly relevant to Kairos's talent-finding mission.</li>
+<li><span class="item-title">"Plan R: AI Safety by ASICs"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/n8u3BfqFoGh4jnzpo/plan-r-ai-safety-by-asics">LessWrong</a></span> Provocative proposal: split AI R&D orgs (no equity, airgapped, latency-locked) from deployment companies, and burn certified models into fixed-function ASICs so a rogue model can't grab compute or retrain. A clean intuition pump.</li>
+<li><span class="item-title">A subexponential algorithm for elliptic-curve discrete log</span>
+<span class="source"><a href="https://twitter.com/Vinod_MIT/status/2115814312149499906">X: Vinod Vaikuntanathan</a></span> New result claims elliptic curves aren't "generic" — potentially a big deal for cryptography if it holds (shared by Geoffrey Irving).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
