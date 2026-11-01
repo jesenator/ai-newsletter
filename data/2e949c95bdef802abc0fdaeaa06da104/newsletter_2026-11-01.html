@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Sunday, November 01, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+.why { color: #444; font-size: 13.5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Sunday, November 01, 2026</h1>
+<div class="date">Sunday, November 01, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">Chatbots are quietly routing US midterm voters through one error-prone, AI-built site — Copilot cited "Ballot Brief" in 75% of tests</span>
+<span class="source"><a href="https://www.washingtonpost.com/technology/2026/10/30/how-an-obscure-website-became-force-americas-election-information-machine/">Washington Post</a></span>
+In 3,000+ AI-generated voter guides, chatbots <mark>failed to name the right congressional district half the time</mark>, and leaned heavily on three obscure sites. The most-cited, theballotbrief.com, is "largely produced by AI tools" and run by a former Rumble executive; it mapped some ZIP codes to the wrong districts, and chatbots passed the errors through — Copilot 75% of the time, ChatGPT 22%.
+<br><span class="why"><b>Why it's the story:</b> A concrete, measurable election-integrity warning shot landing two days before Tuesday's vote — not deepfakes, but AI confidently laundering a single low-quality source into authoritative voter guidance. Ties to the Claude-Georgia-voter-data and OpenAI "war room" threads you've tracked. Reportable core: who audits the sources chatbots cite, and whether OpenAI/Microsoft take "action" before polls close.</span></li>
+
+<li><span class="item-title">A ChatGPT share link could run an attacker's code in anyone's logged-in session — OpenAI paid just $5K</span>
+<span class="source"><a href="https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html">The Hacker News</a></span>
+<span class="source"><a href="https://aviatrix.ai/threat-research-center/chatgpt-shared-link-xss-sandbox-escape-session-hijack-2026/">Aviatrix</a></span>
+Researchers at Parameter disclosed a P1 XSS/sandbox-escape flaw: opening a malicious shared chat link could <mark>execute attacker code in the victim's signed-in session and read private conversations</mark>. OpenAI fixed it and paid a $5,000 bounty.
+<br><span class="why"><b>Why it's the story:</b> The "share link feels harmless" vector is exactly the kind of agent-era attack surface labs are racing to secure — and follows this week's malicious Cursor-marketplace "Claude Code" extension. The $5K payout for a full session-hijack in a product with 800M+ users is itself a reportable datapoint on how labs price critical bugs. A clean explainer on why conversational AI is now a phishing surface.</span></li>
+
+<li><span class="item-title">DeepSeek open-sources "Super-Agent" to challenge Claude Code — weeks before Anthropic's IPO</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-11-01/deepseek-drops-enhanced-coding-agent-with-aim-to-rival-anthropic">Bloomberg</a></span>
+<span class="source"><a href="https://x.com/Cointelegraph/status/2116885723601068339">X: Cointelegraph</a></span>
+DeepSeek's Harness team released a research-prototype coding agent that <mark>proactively monitors developer group chats, GitHub and other channels</mark>, surfacing coding issues and suggesting fixes without being asked — a more autonomous model than existing assistants.
+<br><span class="why"><b>Why it's worth a story:</b> A Chinese lab open-sourcing a proactive, always-on agent aimed squarely at Anthropic's flagship commercial product — as Anthropic preps a "junk"-rated IPO and Replit/others defect over price. The under-covered angle: an agent that silently watches team chats and acts on its own is a fresh governance/surveillance surface, and open weights mean no staged-release guardrails. Pair with the Cohere/Qwen egress scrutiny on Chinese open models.</span></li>
+
+<li><span class="item-title">A profile of the Thiel-aide-turned-Trump-adviser steering US AI policy: OSTP's Michael Kratsios</span>
+<span class="source"><a href="https://www.techmeme.com/261101/p9#a261101p9">Colossus (via Techmeme)</a></span>
+A long profile of OSTP Director Michael Kratsios — ex-Thiel aide, now among the handful of people shaping the administration's AI-and-science agenda, from the preemption fight to export controls. (Note: the piece runs in Colossus, the <a href="https://www.techmeme.com/261101/p12#a261101p12">VC-backed glossy that Kara Swisher calls PR</a>.)
+<br><span class="why"><b>Why it's worth a story:</b> Kratsios is the quiet fulcrum of nearly every policy thread you track — federal preemption of state AI laws, CAISI/NIST's fate, chip decoupling, the "please shut up" tension with the labs. A sharp accountability piece could interrogate both his actual influence and the fact that this flattering portrait appears in a VC-funded outlet — a meta-story about who controls the narrative around AI's policymakers.</span></li>
+
+<li><span class="item-title">Deals watch: AI-insurance consolidation, voice-AI roll-up, and still-flowing physical-AI capital</span>
+<span class="source"><a href="https://www.techmeme.com/261101/p1#a261101p1">Reuters</a></span>
+<span class="source"><a href="https://www.techmeme.com/261101/p3#a261101p3">TechCrunch</a></span>
+<span class="source"><a href="https://aifundingtracker.com/foundry-robotics-raises-100m-series-a-to-build-an-autonomous-assembly-factory/">AI Funding Tracker</a></span>
+Guidewire is buying AI-underwriting firm <mark>Hyperexponential for $1.7B+ cash</mark> (plus up to $400M) — a big bet on AI in insurance pricing. Deepgram acquired Daily (open-source voice framework Pipecat), consolidating the hot voice-AI layer. And the physical-AI machine keeps minting rounds: Serval ($150M Series C, $3B, Sequoia), Wabi ($55M at $1.25B), Lumaril ($66M Series A at $400M for industrial-control AI).
+<br><span class="why"><b>Why it's worth a line:</b> Three distinct consolidation theses in one day — AI eating regulated insurance pricing, voice-AI roll-ups, and an industrial/physical-AI land grab that keeps raising even as neoclouds get frozen out of the bond market. Worth a short piece on where capital is still flowing freely versus where it's seizing up.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong &amp; Safety Discourse</h2>
+<ul>
+<li><span class="item-title">Quiet front page — no new LessWrong AI posts in the window</span>
+<span class="source"><a href="https://thezvi.substack.com/">Zvi</a></span>
+No fresh LessWrong front-page AI discussion in the last 28 hours. The live safety artifacts remain Zvi's Anthropic S-1 coverage and the "just stop" unilateral-pause debate (Irving/Kokotajlo), both covered this week. One adjacent item worth a read: an <span class="source"><a href="https://forum.effectivealtruism.org/">EA Forum</a></span> post on "trying to spend $100m+ well" — a candid walk-through of why a large foundation abandoned a mathematical grant-sizing utility function and "vibed" its way to allocations instead. Flagged for completeness; watch comment threads for reaction to the DeepSeek Super-Agent release.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
