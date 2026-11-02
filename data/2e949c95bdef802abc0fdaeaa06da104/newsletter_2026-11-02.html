@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Monday, November 02, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.why { color: #444; font-size: 13px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Monday, November 02, 2026</h1>
+<div class="date">Monday, November 02, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Pitches</h2>
+<ul>
+
+<li>
+<img src="https://rikiyat.github.io/blog/weight-space-programming/assets/carjump_scene.svg" style="max-width: 200px; float: right; margin: 0 0 10px 10px; border-radius: 4px;">
+<span class="item-title">"Weight-Space Programming": a frontier LLM read and rewrote another model's raw weights — no gradients, no training loop</span>
+<span class="source"><a href="https://rikiyat.github.io/blog/weight-space-programming/">Rikiya Takehi et al.</a></span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=50341841">HN</a></span>
+Researchers report that <mark>GPT-6 Astra can read a network's raw weights and name what it was trained to do</mark>, write game-playing nets from scratch that beat PPO-trained nets, and — asked to improve Qwen3.5-0.8B at math — directly edited 0.016% of its weights, raising MATH-500 from 7.9% to 48.1% and tripling IFEval. All without writing any training code.
+<div class="why"><strong>Why it's the story:</strong> This is a genuinely new capability class the mainstream hasn't touched, and it cuts straight to AI safety. If models can natively inspect and surgically edit other models' weights by reasoning alone, it reshapes both interpretability (finding hidden traits/sycophancy in weights) and the self-improvement/loss-of-control debate — weight-editing is exactly the "no gradient descent needed" path that undercuts compute-overhang assumptions. Reportable core: is this reproducible, and does it mean an agent could modify a model's weights to insert or remove behaviors undetected?</div>
+</li>
+
+<li>
+<span class="item-title">Anthropic is quietly blocking Claude Code from recreating or reverse-engineering specific software — citing its own IP policy</span>
+<span class="source"><a href="https://www.techmeme.com/261102/p31#a261102p31">Tom's Hardware / Techmeme</a></span>
+Anthropic confirmed new Claude Code limits "to steer it away from recreating someone else's specific game," pointing to its usage policy on IP infringement. Users are reporting that reverse-engineering requests are now being blocked outright, with complaints mounting online.
+<div class="why"><strong>Why it's the story:</strong> A frontier lab is unilaterally policing what its coding agent will build — a direct response to copyright-liability exposure as the training-data and output-infringement suits pile up. It's a live test of how labs translate litigation risk into product-level censorship, and it raises the under-covered question of who decides what counts as "someone else's" code. Pair against Anthropic's imminent IPO, where IP liability is a disclosed risk.</div>
+</li>
+
+<li>
+<span class="item-title">Anthropic's IPO valuation is being talked down to ~$1.5–1.6T — and its amended S-1 discloses $895B in compute commitments</span>
+<span class="source"><a href="https://www.techmeme.com/261102/p42#a261102p42">WSJ / Techmeme</a></span>
+<span class="source"><a href="https://www.techmeme.com/261102/p29#a261102p29">CNBC / Techmeme</a></span>
+Institutional investors told Anthropic its IPO should price around $1.5–1.6T, down from ~$2T estimates, citing the tech selloff. The amended S-1 shows <mark>$895.4B in purchase commitments and leases, "substantially all" tied to compute and infrastructure</mark> — up sharply from the original filing.
+<div class="why"><strong>Why it's worth a story (update):</strong> New hard numbers on the first frontier-lab IPO. The $895B compute obligation is the clearest single datapoint yet for the circular-financing/AI-debt thesis — a company seeking a ~$1.5T valuation has already committed nearly a trillion dollars it must earn revenue to cover. Lands the same day OpenAI's round shrank to ~$20B at $1.25T; the capital crunch is now repricing both leaders simultaneously.</div>
+</li>
+
+<li>
+<span class="item-title">Israel's 42AI emerges from stealth with $62.5M to build a "behavioral world model" that predicts what humans will do</span>
+<span class="source"><a href="https://www.techmeme.com/261102/p30#a261102p30">TechCrunch / Techmeme</a></span>
+Tel Aviv-based 42AI raised a large seed to develop a model that forecasts human actions "before you decide," even in novel situations.
+<div class="why"><strong>Why it's worth a line:</strong> A well-funded human-behavior-prediction model is a surveillance and manipulation surface worth scrutinizing now, before deployment — directly relevant to the companion-chatbot manipulation and election-integrity threads. Reportable core: what data trains it, who the customers are (advertising? security? defense?), and what guardrails, if any, exist.</div>
+</li>
+
+<li>
+<span class="item-title">Robotics capital keeps minting rounds — Tutor Intelligence lands $75M from a16z the day embodied-AI deals pour in</span>
+<span class="source"><a href="https://www.therobotreport.com/tutor-intelligence-raises-series-b-to-scale-model-training-robot-deployments/">The Robot Report</a></span>
+<span class="source"><a href="https://pulse2.com/machenta-raises-40-million-seed-round-to-build-instant-learning-robot-foundation-models/">Pulse 2</a></span>
+Tutor Intelligence (warehouse picking robots, full-stack "every deployment trains the model") raised $75M Series B led by a16z, $117M total. Same day: Beijing's GenRobot AI disclosed $100M Series A+ for robot training data, Foundry Robotics $100M Series A for autonomous factories, Machenta $40M seed.
+<div class="why"><strong>Why it's worth a line:</strong> The physical-AI land grab you've tracked keeps consolidating around two theses — data/training infrastructure vs. real-world deployment — still with no visible safety-eval regime for autonomous machinery. Worth anchoring to the continued flow of capital into robotics even as neoclouds freeze out of debt markets.</div>
+</li>
+
+<li>
+<span class="item-title">OpenAI launches a "Grid Protectors Program" to curb its data centers' power draw when the grid is strained</span>
+<span class="source"><a href="https://openai.com/index/grid-protectors-program">OpenAI</a></span>
+A national effort with utilities to "reduce electricity demand when the grid is under strain" and protect consumer electricity costs at future compute campuses.
+<div class="why"><strong>Why it's worth a line:</strong> A PR-forward concession that AI data centers are now a politically toxic driver of consumer power bills — the exact "data centers" attack line running in half of battleground midterm races (per Transformer). Worth interrogating whether the program is binding or voluntary, and how it squares with OpenAI's trillion-dollar buildout ambitions as voters go to the polls tomorrow.</div>
+</li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong & Safety Discourse</h2>
+<ul>
+
+<li>
+<span class="item-title">The "just stop" fight escalates: Scott Alexander's "Against SURA" vs. Zvi's rebuttal</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/xikGZ8fuhdG6DApAo/against-sura">LessWrong: Scott Alexander</a></span>
+<span class="source"><a href="https://thezvi.substack.com/p/scott-alexanders-against-sura-seems">Zvi</a></span>
+Scott Alexander's "Against SURA" (567 karma, 242 comments) argues against the strategy of "Stop Unilaterally + Raise Awareness" — pushing labs/employees/countries to quit the race without reciprocity — because actions that help a global pause ("Plan A") can hurt survival odds if racing continues anyway ("Plan C"). Zvi fires back point-by-point: <mark>"If you are helping build something that might kill everyone, maybe stop doing that,"</mark> calling many of Scott's arguments "deeply confused" and arguing reasonable SURA is positive-sign even for Plan C.
+<div class="why"><strong>Why it matters:</strong> This is the sharpest intra-safety-community strategy debate of the moment — a direct clash between two of the field's most-read writers over whether frontier employees have a duty to walk. It's the live philosophical core of the Irving/Kokotajlo "unilateral pause" thread, landing the same week Anthropic files to go public. The comment threads (242 on Scott's post) are where labs' own staff weigh in.</div>
+</li>
+
+<li>
+<span class="item-title">Transformer + New York Magazine publish the "AI Power List" — 26 people whose influence outstrips their fame</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-power-list-new-york-magazine">Transformer</a></span>
+Drawn from 50+ interviews, the list surfaces mostly-anonymous engineers, trust-and-safety leads and policymakers — including METR's Beth Barnes, policy writer Dean Ball, Encode's Sneha Revanur, and lab figures like Logan Graham and Misha Laskin. Average age 36, overwhelmingly male.
+<div class="why"><strong>Why it's worth a read:</strong> A rare mapping of the actual (often hidden) decision-makers shaping AI governance and safety culture — useful source-building and a reminder that "a blog post really can cause a seismic change" in a field this immature. Note the disclosed conflict: Transformer is funded by an org run by a listee.</div>
+</li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

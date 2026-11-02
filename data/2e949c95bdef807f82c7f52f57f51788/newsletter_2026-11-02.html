@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Monday, November 02, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 26px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Monday, November 02, 2026</h1>
+<div class="date">Monday, November 02, 2026</div>
+
+<div class="intro">GPT-6 Astra edits another model's weights by hand, Anthropic's amended S-1 says it may <em>imminently</em> cross its RSI danger threshold, a pretraining-poisoning attack survives clean post-training, and Transformer's AI Power List drops. Plus a brutal new agentic benchmark and the Scott Alexander pause debate.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> Scary Capabilities</h2>
+<ul>
+<li><span class="item-title">GPT-6 Astra edits another model's weights by hand — "Weight-Space Programming"</span>
+<span class="source"><a href="https://rikiyat.github.io/blog/weight-space-programming/">rikiyat blog</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50341174">HN 1,395</a></span> Astra directly changed <mark>only 0.016% of Qwen3.5-0.8B's weights — no gradients, no training — fixing reasoning loops and improving math up to 6×</mark> and instruction-following 3×. <a href="https://x.com/NeelNanda5/status/2117375052618539485">Neel Nanda</a> tempers it ("surprisingly good at old-school mech interp, not spooky"); <a href="https://x.com/DavidSKrueger/status/2117346856904925539">David Krueger</a> notes this is a plausible shape for RSI, and ilex_ulmus flags interp as inherently dual-use.</li>
+<li><span class="item-title">Pretraining poisoning plants an RCE backdoor that survives clean post-training</span>
+<span class="source"><a href="https://arxiv.org/abs/2610.37741">arXiv</a></span> <span class="source"><a href="https://x.com/JacobSteinhardt/status/2117123747933229073">X: Jacob Steinhardt</a></span> New Anthropic paper: poisoning just <mark>0.1% of pretraining data</mark> plants a remote-code-execution backdoor in a CLI agent that survives a full SFT→DPO→RL pipeline (92.7% attack success on a 4B agent). Uses "declaration-based" poison (ordinary docs that state a rule) and natural-string triggers (e.g. a file path with a company name). Defense has to live at the action layer — sandboxing, allow-lists, human sign-off.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety & Policy</h2>
+<ul>
+<li><span class="item-title">Anthropic: we may "imminently" cross our RSI danger threshold</span>
+<span class="source"><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm">SEC S-1/A</a></span> <span class="source"><a href="https://x.com/theobearman/status/2117277210570604945">X: Theo Bearman</a></span> New language on p.29 says internal estimates indicate models may soon meet the RSP threshold for <mark>"dramatically accelerated progress attributable to AI"</mark> (one year of progress ≈ two years of the 2018–24 baseline). Anthropic is weighing RSP updates to require human review/approval in R&D and keep humans in control of frontier model development. Aaron Scher, Miles Brundage et al. noted the framing of x-risk as a business disclosure (77k+ views).</li>
+<li><span class="item-title">Zvi: "Scott Alexander's Against SURA Seems Deeply Confused"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/scott-alexanders-against-sura-seems">Zvi</a></span> The latest round in the unilateral-pause debate. <a href="https://x.com/slatestarcodex/status/2117115600933937335">Scott Alexander</a> says nothing has updated him much since ~2019 on how bad RLVR turns out, and reports that Astra, Fable 5.x and Opus 5.5 all "voted" for an immediate 10+ year pause when he polled them. Related tempers from Nate Soares, Charlie Bullock and a Wharton finance prof (shared by <a href="https://x.com/_NathanCalvin/status/2117105422133801042">Nathan Calvin</a>).</li>
+<li><span class="item-title">Transformer × NY Mag: The AI Power List</span>
+<span class="source"><a href="https://www.transformernews.ai/p/ai-power-list-new-york-magazine">Transformer</a></span> 26 behind-the-scenes people "whose influence far outstrips their fame" — Logan Graham, Sneha Revanur, Dean Ball, Amy Kremer, Misha Laskin, Beth Barnes, Alexander Berger, and more. Drawn from 50+ insider interviews; average age 36, overwhelmingly male.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" /></svg> Benchmarks</h2>
+<ul>
+<li><span class="item-title">GDPx: a frontier agentic benchmark where the best model scores 12%</span>
+<span class="source"><a href="https://x.com/SemiAnalysis_/status/2117075900575477855">X: SemiAnalysis</a></span> New benchmark measuring agentic capability across economically valuable domains; even the top model gets just <mark>1/7 (12%)</mark>. 1.4M views; Jaime Sevilla "looks promising if it withstands scrutiny."</li>
+<li><span class="item-title">Realtime-Bench: LLMs are bad at low-latency tasks</span>
+<span class="source"><a href="https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4/">Import AI 479</a></span> 50 interactive game/web tasks where delayed actions hurt. Under real wall-clock latency, GPT-6 Astra (high) tops out at 36%; with a paused clock, reasoning models hit 70–80%. A clean proxy for where agents will break (e.g. live auctions, games).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" /></svg> Tools & Cool Demos</h2>
+<ul>
+<li><span class="item-title">Momentic: QA agents that autonomously bug-bash your app</span>
+<span class="source"><a href="https://momentic.ai/qa-bench">Launch HN</a></span> Agents plan/explore web+mobile apps to catch bugs; on 1,396 human-labeled bugs across 4 OSS apps, Momentic's harness found 269 bugs (19.3% recall) in 60 min vs Codex's 86 — at $2.67/bug. Potentially useful for your coding workflow.</li>
+<li><span class="item-title">Subvocal: talk to your computer without making a sound</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=50340088">Show HN (429)</a></span> YC glasses that emit RF through your face and decode silent mouthing to text "at the speed of speech." Janky but striking; preorders open for Q1 2027.</li>
+<li><span class="item-title">Terry Tao: "Egoless Mathematics in the AI Era"</span>
+<span class="source"><a href="https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/">Terence Tao</a></span> Reflections on how AI-assisted collaboration and formal verification change the culture and ego of doing math (HN 81).</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
