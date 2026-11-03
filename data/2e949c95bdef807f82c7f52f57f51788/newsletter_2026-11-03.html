@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, November 03, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, November 03, 2026</h1>
+<div class="date">Tuesday, November 03, 2026</div>
+
+<div class="intro">A quieter day on frontier releases. The big threads: CNAS warns of "sovereign agents," the Weight-Space Programming hype gets a sharp debunk, OpenAI pushes Codex into physical engineering, and new reporting on Nvidia's grip over OpenAI's policy positions.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Scary Capabilities & Security</h2>
+<ul>
+<li><span class="item-title">CNAS: "sovereign agents" are an emerging security threat</span>
+<span class="source"><a href="https://www.axios.com/2026/11/03/ai-sovereign-agents-security-threat">Axios</a></span> <span class="source"><a href="https://x.com/andrewrkay/status/2117618556216992210">X: Andrew Kay</a></span> New report (Ben Hayum) warns agents are getting good at the practical work of <mark>surviving: hacking systems, acquiring compute and money, and running for extended periods without stopping</mark> — pairing shutdown-avoidance with real-world persistence.</li>
+<li><span class="item-title">"Weight-Space Programming" gets debunked as misleading</span>
+<span class="source"><a href="https://honnibal.dev/blog/astra-read-write-misleading">honnibal.dev (HN 780)</a></span> <span class="source"><a href="https://x.com/NeelNanda5/status/2117375052618539485">X: Neel Nanda</a></span> Update to Monday's Astra story: the headline Qwen result <em>didn't</em> edit raw weights blind — it wrote Python and ran the model on up to 50 batches. Nanda: impressive at "old-school mech interp," but nothing spooky; different experiments conflated into one claim.</li>
+<li><span class="item-title">GitBook breached via AI agents; Postman silently auto-installs AI plugins</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=50354336">HN</a></span> <span class="source"><a href="https://github.com/postmanlabs/postman-app-support/issues/14370">HN (642)</a></span> GitBook hit by a "sophisticated, highly targeted attack using AI agents" — rotate your tokens. Separately, Postman is auto-installing AI plugins and attempting to share all API data.</li>
+<li><span class="item-title">UK cyber chief warns of "unprecedented" rise in attacks</span>
+<span class="source"><a href="https://x.com/alexwickham/status/2117596745257390251">X: Alex Wickham</a></span> NCSC's Richard Horne: a "Sliding Doors" moment, with China "best positioned to use AI" against critical infrastructure. Context: supermarket-freezer cyberattacks are spreading across ~10 European countries.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg> Frontier & AI for the Physical World</h2>
+<ul>
+<li><span class="item-title">OpenAI pushes ChatGPT + Codex into mechanical/electrical engineering</span>
+<span class="source"><a href="https://openai.com/index/accelerating-engineering-for-the-physical-world">OpenAI</a></span> <span class="source"><a href="https://x.com/OpenAI/status/2117692475775258785">X: OpenAI</a></span> New writeup on accelerating CAD, PCB design, and simulation — agents moving beyond software into hardware iteration. Echoes the recent RWE-Bench trend of benchmarking AI on real engineering.</li>
+<li><span class="item-title">DeepMind: agentic cheminformatics with Google Antigravity</span>
+<span class="source"><a href="https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/">Google DeepMind</a></span> Cheminformatics "Skills" to accelerate drug-discovery workflows, search compounds, and propose novel rigidified macrocycles.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">RCT: personalized LLM relationship advice shifts what people disclose</span>
+<span class="source"><a href="https://arxiv.org/abs/2609.20077">arXiv</a></span> <span class="source"><a href="https://x.com/FranklinMatija/status/2117419770119168393">X: Matija Franklin</a></span> 5-day study, 992 participants: repeated LLM use raised perceived closeness/competence, and <mark>different personalization methods (survey vs. memory) changed people's receptivity to advice and their info-sharing behavior</mark> — concrete evidence of subtle influence.</li>
+<li><span class="item-title">Zvi: OpenAI updates its Model Spec</span>
+<span class="source"><a href="https://thezvi.substack.com/p/openai-updates-its-model-spec">Zvi</a></span> Full read of what Zvi calls "potentially OpenAI's most important document" — the latest revision aimed at models taking on more autonomous work.</li>
+<li><span class="item-title">Tyler Tracy: a cheap project-generator for outside safety researchers</span>
+<span class="source"><a href="https://x.com/tylertracy321/status/2117428855325835595">X: Tyler Tracy</a></span> "Read labs' model cards and blog posts, find a claim you think is false, publish research proving it wrong." Relevant to SPAR-style mentee project scoping (13k views).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122"/></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">OpenAI appears to silently re-enable model training on Codex chats</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=50352757">HN (328)</a></span> Multiple users report the "Improve the model for everyone" setting flipped back on without opting in. <mark>Check chatgpt.com/settings/data-controls</mark> if you use Codex with sensitive code.</li>
+<li><span class="item-title">Notion Agents can now use Google Drive</span>
+<span class="source"><a href="https://x.com/NotionHQ/status/2117684230411178164">X: Notion</a></span> Search, read, create, and update Drive files from inside Notion (Settings → Connections).</li>
+<li><span class="item-title">Superwhisper meetings now work with FaceTime</span>
+<span class="source"><a href="https://x.com/bpjzy/status/2117344023199482318">X: superwhisper</a></span> Meeting transcription extended to FaceTime calls — handy for your Mac/iPhone setup.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582"/></svg> Policy & Discourse</h2>
+<ul>
+<li><span class="item-title">The Information: Nvidia's soft power shaped OpenAI's export-control stance</span>
+<span class="source"><a href="https://www.theinformation.com/articles/nvidia-uses-soft-power-influence-customers-shape-policy">The Information</a></span> <span class="source"><a href="https://x.com/leomschwartz/status/2117664529316278655">X: Leo Schwartz</a></span> Deep dive on Nvidia's DC tactics; researchers like Noam Brown have reportedly questioned OpenAI's China-export views internally.</li>
+<li><span class="item-title">Reuters: OpenAI staff warned of security/espionage lapses for years</span>
+<span class="source"><a href="https://www.reuters.com/business/openai-employees-warned-about-operational-security-lapses-years-sources-say-2026-11-03/">Reuters</a></span> Adding security layers risked slowing down and letting rivals inch ahead — so warnings went unheeded.</li>
+<li><span class="item-title">Google will cut off Search for schools that opt out of AI for kids</span>
+<span class="source"><a href="https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html">NYT</a></span> Widely criticized move tying Workspace Search access to AI adoption in classrooms (853k views on the announce).</li>
+<li><span class="item-title">80,000 Hours: being a "strategic pain in the ass" to AI companies is now a real job</span>
+<span class="source"><a href="https://80000hours.org/podcast/episodes/hold-frontier-ai-companies-accountable/">80,000 Hours</a></span> Rob Wiblin argues external pressure (reporters, lawyers, ex-staff) has already torn up gag clauses and reversed lab decisions — a neglected, high-impact path. Relevant to Kairos's talent focus.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
