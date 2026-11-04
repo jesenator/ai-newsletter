@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Wednesday, November 04, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Wednesday, November 04, 2026</h1>
+<div class="date">Wednesday, November 04, 2026</div>
+
+<div class="intro">A Democratic "blue tsunami" in the midterms reshapes the AI policy outlook overnight, Anthropic ships a practical model-verification tool with treaty implications, and Altman makes a notable "humans in control" statement. Data centers were the night's biggest loser.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> The Blue Tsunami & AI Policy</h2>
+<ul>
+<li><span class="item-title">Democratic sweep makes strong frontier AI legislation much more likely</span>
+<span class="source"><a href="https://www.transformernews.ai/p/midterms-democrats-blue-tsunami-ai-policy-legislation">Transformer</a></span> Dems may land ~56 Senate / ~261 House seats. Shakeel's read: a bill <mark>stronger than the FRONTIER Act — mandatory testing/approval of top models, narrower preemption — could pass in early 2027</mark>. AI industry PACs flopped (Leading the Future lost its only competitive race in SC) while safety PACs won big. Manny Rutinel and Scott Wiener both won.</li>
+<li><span class="item-title">Data centers were the night's biggest loser — moratoria went ~43–1</span>
+<span class="source"><a href="https://www.wired.com/story/the-results-are-in-voters-hate-data-centers/">WIRED</a></span> <span class="source"><a href="https://twitter.com/bradrcarson/status/2117953135691878843">X: Brad Carson</a></span> ~40 ballot measures to restrict data centers passed, most by 67–80% margins. Goldman warned of possible moratoria affecting ~45% of planned US capacity. NBC exit polls: <mark>23% called AI/data centers "crucial," 56% "crucial or major"</mark> to their vote.</li>
+<li><span class="item-title">Ossoff cites AI extinction risk in his victory speech</span>
+<span class="source"><a href="https://twitter.com/ONagel33303/status/2117820582922469416">X: ONagel33303</a></span> "We can and will reclaim control over our own destiny." Abdul El-Sayed also ran hard on pausing AI. Mackenzie Arnold's 2027 forecast: expect legislative "reset," hearings/oversight, and death of broad preemption (<a href="https://twitter.com/MackenZ_arnold/status/2117991248724160757">X</a>). Miles Brundage: <mark>"the frontier might actually get paced"</mark> — but warns some proposals will be "strong but dumb" (<a href="https://twitter.com/Miles_Brundage/status/2117858284669731308">X</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Anthropic: FlashProve — practical proofs of which model produced an output</span>
+<span class="source"><a href="https://www.anthropic.com/research/provable-inference">Anthropic</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50368626">HN (129)</a></span> Cryptographic (zkSNARK-style) verification that a response came from a given model — no trusted hardware. Proves a 400B model at >100 tok/s on one H100. <mark>A real building block for international AI verification/pacing</mark> ("check that hardware serves inference, not training") and anti-hijacking. Open-sourced.</li>
+<li><span class="item-title">Forethought: three types of automated alignment work</span>
+<span class="source"><a href="https://www.forethought.org/research/three-types-of-automated-alignment-work">Forethought</a></span> Distinguishes empirical alignment research, conceptual/judgment-driven work, and direct alignment of specific systems — a useful taxonomy for reasoning about which parts of alignment AIs can safely automate.</li>
+<li><span class="item-title">A heart image flips Claude/GPT's coding strategy from 0%→100% recursive</span>
+<span class="source"><a href="https://twitter.com/scychan_brains/status/2117757965629567185">X: scychan_brains</a></span> Showing models an irrelevant heart picture makes them switch coding strategies entirely — and they insist the image was irrelevant. Another data point on how alien and poorly-understood model behavior is.</li>
+<li><span class="item-title">Scaling laws from models that score zero</span>
+<span class="source"><a href="https://twitter.com/percyliang/status/2117859472496594965">X: Percy Liang</a></span> Introducing a "hint level" turns a benchmark into graded easier versions, letting you jointly fit Accuracy(scale, hint) and forecast GSM8K accuracy within 3 pts from 5600× less compute.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Demos & Capabilities</h2>
+<ul>
+<li><span class="item-title">Axiom: 16M-line formalization of the entire Stacks Project</span>
+<span class="source"><a href="https://twitter.com/axiommathai/status/2118028834515874112">X: Axiom</a></span> A vibecoded formalization of the infrastructure underlying modern algebraic geometry, with code quality and interconnected structure preserved — "a mathematical city." Iliad Research says it's attempting the same for AI alignment theory (<a href="https://twitter.com/FellowHominid/status/2118060745984250026">X</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" /></svg> Industry & Discourse</h2>
+<ul>
+<li><span class="item-title">Altman: "People should always be in control of the future"</span>
+<span class="source"><a href="https://twitter.com/sama/status/2117794005165748448">X: Sam Altman</a></span> 8M-view statement that humans shouldn't cede control to superintelligence, and "that requirement should ultimately constrain AI progress." Jeff Ladish: "I hope he does everything he possibly can" (<a href="https://twitter.com/JeffLadish/status/2117808733208400011">X</a>). Backdrop of heated "accountability" discourse after this summer's rogue-agent incidents.</li>
+<li><span class="item-title">Google DeepMind staff push to kill lifetime non-disparagement gag</span>
+<span class="source"><a href="https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/">Washington Post</a></span> Workers argue they must be free to warn the public about risks; Google says it has removed the post-termination clause for new hires. Fits the "strategic pain in the ass" thread from Wiblin's 80k episode.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" /></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Notion: one shared memory across all your agents</span>
+<span class="source"><a href="https://twitter.com/NotionHQ/status/2118059335930744999">X: Notion</a></span> ChatGPT, Claude, Muse and Bot can now save what they learn to the same Notion memory and reuse the same skills — so agents build on each other's context rather than starting from scratch. Relevant given your heavy Notion workflow.</li>
+<li><span class="item-title">Raycast: Dictate to AI</span>
+<span class="source"><a href="https://www.raycast.com/changelog">Raycast</a></span> New command sends dictation straight into Quick AI or AI Chat, plus an AI-usage menu-bar readout — potentially handy for fast voice-to-answer on Mac.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
