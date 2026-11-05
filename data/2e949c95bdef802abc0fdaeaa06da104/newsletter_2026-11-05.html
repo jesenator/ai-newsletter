@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Thursday, November 05, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.why { color: #444; font-size: 13.5px; display: block; margin-top: 3px; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Thursday, November 05, 2026</h1>
+<div class="date">Thursday, November 05, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">METR's high-access audit: Anthropic is now improving its models ~2x as fast — and credits internal AI use for most of it</span>
+<span class="source"><a href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/">METR</a></span>
+<span class="source"><a href="https://www.theinformation.com/briefings/anthropics-r-d-speed-may-doubled-due-ai-researchers-find">The Information</a></span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-193-progress-may-dramatically">Zvi</a></span>
+After an Aug–Oct evaluation with "unprecedented access" to Anthropic's internal R&D metrics, METR concludes capabilities on well-specified tasks are growing at <mark>~1.9x the pre-Oct-2025 rate</mark>, "a majority" attributable to Anthropic using AI to build AI, and <mark>"no observed bottlenecks"</mark> on further acceleration. Zvi flags that Anthropic's amended S-1 now says it "may imminently meet" its RSP's definition of "dramatically accelerated progress attributable to AI."
+<span class="why">Why it's the story: this is the clearest independent evidence yet of recursive self-improvement at a frontier lab — the exact loss-of-control precursor METR says the public needs to track. The buried bombshell is governance: <mark>Anthropic redacted "a majority of the evidence METR found most informative,"</mark> so the public must trust METR's judgment on the field's highest-stakes question. Reportable core: what triggers the RSP clause, and what happens when it does.</span></li>
+
+<li><span class="item-title">OpenAI ships a "Critical"-classified offensive cyber model — GPT-6 Cyber already found 81+ novel Firefox vulnerabilities</span>
+<span class="source"><a href="https://openai.com/index/introducing-gpt-6-cyber">OpenAI</a></span>
+<span class="source"><a href="https://www.techmeme.com/261105/p42">CyberScoop</a></span>
+<span class="source"><a href="https://www.techmeme.com/261105/p40">The Verge</a></span>
+GPT-6 Cyber outperforms GPT-6 Astra on cyber benchmarks, is "trained to stay within authorized scope," and launches first to a limited set of customers via OpenAI's <mark>Daybreak Red</mark> program. It has already surfaced 81+ "novel" vulnerabilities in Firefox.
+<span class="why">Why it's a story: a direct escalation of last week's government-gated "Daybreak Red" cyber thread (GPT-5.6 Cyber in GovCloud) — now a full GPT-6-class model whose own vendor rates its capability "Critical." Pair against the real-world Hackening (Binance's multi-billion hack, GLM 5.3 compromising Firefox per Zvi). Reportable core: who gets access, what "authorized scope" means technically, and whether the 81 Firefox bugs were responsibly disclosed before publicity.</span></li>
+
+<li><span class="item-title">600,000 Nvidia H200s sit idle in Hong Kong as Beijing withholds import approval — while Nvidia eyes gutted US telecom buildings for data centers</span>
+<span class="source"><a href="https://www.techmeme.com/261105/p47">Reuters</a></span>
+<span class="source"><a href="https://www.techmeme.com/261105/p50">The Information</a></span>
+Roughly 600,000 advanced Nvidia chips are stranded in Hong Kong because China won't approve large-scale imports. Separately, Nvidia approached Apollo about <mark>retrofitting 130+ buildings of struggling ISP Brightspeed into small data centers</mark> to accelerate deployment.
+<span class="why">Why it's worth a story: the H200 stockpile is a vivid inversion of the export-control narrative — Beijing, not Washington, is now the chokepoint, reshaping the decoupling debate. And Nvidia scavenging failing telecom real estate is a tangible sign the physical buildout is hitting power/permitting walls, right as the post-midterm "blue wave" threatens data-center moratoria (per earlier coverage).</span></li>
+
+<li><span class="item-title">Agility Robotics becomes the first pure-play humanoid maker to trade publicly — as defense-AI Shield AI nearly triples to $28.8B</span>
+<span class="source"><a href="https://www.therobotreport.com/agility-robotics-begins-trading-on-nasdaq/">The Robot Report</a></span>
+<span class="source"><a href="https://www.techmeme.com/261105/p39">Bloomberg</a></span>
+Agility (Digit humanoid) began trading on Nasdaq via SPAC, backed by a Foxconn-led PIPE and a $100M post-announcement round. Same day: Shield AI raised <mark>$2.5B to acquire radar firm Echodyne</mark>, including a $1B Series H at $28.8B — up from $12.7B in March. China also blocked SoftBank's $5.4B ABB robotics acquisition over data-transfer concerns.
+<span class="why">Why it's worth a story: the physical-AI land grab you've tracked daily now has its first public market proxy — retail investors can finally buy a humanoid pure-play, forcing real disclosure on economics and safety. Shield AI's doubling and the blocked ABB deal show embodied/defense AI is simultaneously the hottest capital magnet and a new geopolitical battleground — still with no visible safety-eval regime for autonomous machinery.</span></li>
+
+<li><span class="item-title">Microsoft pulls back from "risky" data-center deals, signaling the neocloud boom it created may be cresting</span>
+<span class="source"><a href="https://www.techmeme.com/261105/p37">Bloomberg</a></span>
+Microsoft is tightening oversight, walking away from projects it deems risky, and debating whether to sign new neocloud contracts — after signing tens of billions in such deals.
+<span class="why">Why it's worth a line: the company that minted the "neocloud" market retrenching is a leading indicator for the circular-financing/AI-debt thesis you've followed (CoreWeave/Nebius frozen out of bond markets). If the biggest buyer pulls demand, the whole leveraged buildout reprices. Lands the same day a SpaceX/tech-stock selloff hit on data-center scrutiny fears.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg> LessWrong & Safety Discourse</h2>
+<ul>
+
+<li><span class="item-title">A direct attack on a load-bearing doom premise: "Instrumental convergence is incoherent"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/oxZfMvQS9NxcNTozL/instrumental-convergence-is-incoherent">LessWrong</a></span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/i6TbMr5yc4Jq5eqyE/instrumental-convergence-is-incoherent-so-pls-slightly-lower">EA Forum</a></span>
+A detailed cross-posted critique argues the instrumental-convergence thesis (Bostrom/Omohundro/Carlsmith) is <mark>too poorly defined to make real-world predictions</mark> — none of the seminal papers specify how to identify ex-ante which systems "have goals," and the famous "you can't fetch the coffee if you're dead" intuition equivocates across goal-architectures that imply the opposite. The author contends overindexing on IC-derived takeover scenarios may be reducing EA's impact and even fueling "warlike and nationalistic" AI-race sentiment.
+<span class="why">Worth a read: a rare rigorous, from-inside challenge to the conceptual foundation of x-risk arguments, explicitly invoking the Hugging Face attack as a case of IC being applied loosely. A clean explainer hook on why "the AI will seek power by default" is more contested among safety researchers than public debate suggests — watch the comments for pushback from IC defenders.</span></li>
+
+<li><span class="item-title">Update — Zvi's weekly "AI #193: Progress May Dramatically Accelerate"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-193-progress-may-dramatically">Zvi</a></span>
+Beyond the METR/RSI item above, Zvi notes GPT-6 Astra can <mark>directly and usefully edit another LLM's weights</mark> (building on the "weight-space programming" thread), flags GLM 5.3 compromising Firefox, and covers the new Congress's heightened AI worry and OpenAI possibly swinging back toward supporting export controls.
+<span class="why">Flagged for completeness; the Astra weight-editing and export-control reversal lines are each worth their own follow-up.</span></li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
