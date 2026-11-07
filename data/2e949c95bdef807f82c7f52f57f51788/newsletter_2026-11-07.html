@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Saturday, November 07, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; vertical-align: -2px; }
+.intro { font-size: 14px; color: #333; background: #f0f4f8; border-left: 3px solid #64748b; padding: 12px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Saturday, November 07, 2026</h1>
+<div class="date">Saturday, November 07, 2026</div>
+
+<div class="intro">A quiet day for model releases, dominated by METR aftermath: a serious bipartisan push to <strong>ban RSI</strong> this year, and timelines shortening across the safety community. Plus Anthropic agent-memory research and a bombshell Nvidia espionage story.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636"/></svg> Policy: Ban RSI</h2>
+<ul>
+<li><span class="item-title">Lawmakers coalesce around a push to ban recursive self-improvement</span>
+<span class="source"><a href="https://x.com/AlexBores/status/2118494668769878037">X: Alex Bores</a></span><span class="source"><a href="https://x.com/RepCasar/status/2118862451555147777">X: Rep. Casar</a></span> In the wake of the METR report, Rep. Greg Casar ("<mark>Ban RSI</mark>," 399k views) and Alex Bores are pushing Congress to prohibit letting AIs fully automate AI R&D — framed as a "remarkably consensus" position (Sanders, Bannon-wing, safety crowd). Jeff Ladish: "extremely sensible." Anton Leicht's sober counter: passing anything before a crisis remains very hard given veto dynamics (<a href="https://x.com/anton_d_leicht/status/2118800788181098874">X</a>).</li>
+<li><span class="item-title">First-ever local ASI ban passes in Bloomington, Indiana</span>
+<span class="source"><a href="https://safeaiforever.org/city-of-bloomington-common-council-unanimously-passes-ordinance-2026-29-7-0-to-ban-artificial-superintelligence-asi/">X: Peter Jensen</a></span> City council unanimously (7-0) passed an ordinance prohibiting distribution of superintelligence — symbolic but a template others may copy. Separately, an <a href="https://aitreatymarch.org">AI Treaty March</a> is planned Nov 14 across SF, DC, NYC, Boston, Paris, Montréal.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"/></svg> METR Fallout (Updates)</h2>
+<ul>
+<li><span class="item-title">Timelines visibly shortening across the safety community</span>
+<span class="source"><a href="https://x.com/ajeya_cotra/status/2118802809814708533">X: Ajeya Cotra</a></span> Cotra's modeling: the ~2x pace implies uplift "as if researchers experienced time ~10x faster," with a naive extrapolation to ASI within a year if no bottleneck appears. Evan Hubinger and ex-skeptic Jake Mendel now say <mark>&gt;50% chance of superintelligence in 18 months absent a slowdown</mark>; Yafah Edelman is at 20% for "scifi-level ASI by 2030" (<a href="https://x.com/YafahEdelman/status/2118956090591523297">X</a>). Caveat worth noting: Anthropic revenue growth actually <em>slowed</em> last quarter (<a href="https://x.com/Jsevillamol/status/2118871646052532550">X: Sevilla</a>).</li>
+<li><span class="item-title">The Midas Project: Anthropic's phrasing was misleading</span>
+<span class="source"><a href="https://x.com/TheMidasProj/status/2118797785231507607">X: Midas Project</a></span> Anthropic's risk report repeatedly said the acceleration was "less than a factor of two" — when the measured figure was reportedly <mark>1.97x</mark>. Fuels the ongoing redaction/transparency fight (Greenblatt, Sevilla, GovAI all calling for evidence and contract disclosure).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Anthropic: "The components of agent memory"</span>
+<span class="source"><a href="https://www.anthropic.com/research/components-of-agent-memory">Anthropic</a></span> <span class="source"><a href="https://news.ycombinator.com/item?id=50402212">HN (119)</a></span> How Claude learns to judge <em>salience</em> — what to write to persistent memory. On CL-Bench, Opus 5 was the first model to "close the loop" (record failures, form theories, derive validated rules). In Pokémon, Sonnet 3.7 wrote 413 files and earned 1 badge; Fable 5 wrote 9 files and earned 4. Includes "dreaming" (offline log replay/consolidation). Useful mental model for agent workflows.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg> Chips & National Security</h2>
+<ul>
+<li><span class="item-title">US believes Nvidia's Jensen Huang had a relationship with an alleged Chinese spy</span>
+<span class="source"><a href="https://www.ft.com/content/a55a2a22-4479-4f93-a445-6147a5c6d790">FT</a></span> <span class="source"><a href="https://www.nytimes.com/2026/11/06/us/politics/chinese-spy-agency-nvidia-jensen-huang.html">NYT</a></span> A massive story (4.7M+ views): the IC reportedly concluded an MSS-recruited executive at "Megaspeed" (an alleged chip-export cutout) was romantically involved with Huang, with the goal of shifting his lobbying to <mark>loosen chip export controls</mark>. Three House GOP chairs have requested a closed-door briefing. Relevant to the entire export-control debate; David Kasten argues Huang is "compromised" regardless.</li>
+<li><span class="item-title">Epoch: Huawei's largest AI data center is ~7% of Colossus 2</span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2118794979384676509">X: Epoch AI</a></span> Satellite + public-source analysis of the Horinger, Inner Mongolia facility finds it has just 7% of the compute of the world's largest (xAI's Colossus 2, TN). Lennart Heim: "export controls work."</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Raycast combines voice dictation with screen awareness</span>
+<span class="source"><a href="https://9to5mac.com/2026/11/06/raycast-combines-voice-dictation-and-screen-awareness-in-new-ai-feature/">9to5Mac</a></span> New AI feature lets you dictate a request while Raycast sees what's on your screen for context — potentially handy for your Mac workflow.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
