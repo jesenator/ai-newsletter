@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Sunday, November 08, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 18px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 4px; }
+.why { color: #444; font-style: italic; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Sunday, November 08, 2026</h1>
+<div class="date">Sunday, November 08, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582"/></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">How a Signal-chat clique of AI-safety donors out-organized the $100M "Leading the Future" PAC</span>
+<span class="source"><a href="https://www.techmeme.com/261107/p18#a261107p18">Politico</a></span>
+<span class="source"><a href="https://www.techmeme.com/261107/p17#a261107p17">Bloomberg</a></span>
+A small, wealthy network that coordinated in Signal grew into the coalition behind <mark>Public First, which spent $63M+ and won 10 of 17 congressional races it backed</mark> — beating the a16z-aligned $100M super PAC. Funding was overwhelmingly Anthropic-linked: $20M from Anthropic, $1M from Dario Amodei directly, and seven-figure checks from employees including Jan Leike ($400K), Shauna Kravec ($500K) and Peter Lofgren ($999,900).
+<br><span class="why">Why it's the story: the definitive origin-and-money map of how safety advocates flipped the conventional wisdom that industry cash would steamroll them — a fully FEC-grounded accountability piece naming the Anthropic insiders who personally financed the winning side, right as a Democratic Congress eyes mandatory testing and superintelligence bans. Directly closes the "AI election" thread.</span></li>
+
+<li><span class="item-title">Anthropic bought 1.7GW of gas generators for $3.4B — the largest known power buy by an AI lab</span>
+<span class="source"><a href="https://www.techmeme.com/261108/p8#a261108p8">FT</a></span>
+<span class="source"><a href="https://shattered.io/anthropic-3-4-billion-gas-power-onepwr-caterpillar-1-7-gw-2026/">shattered.io</a></span>
+Anthropic bypassed traditional suppliers to grab commitments for 1.7GW of Caterpillar gas-fired generators from equipment firm OnePWR for <mark>$3.4B</mark> — snapping up an order placed ~two years ago to secure scarce hardware.
+<br><span class="why">Why it's a story: a clean, physical datapoint on the circular-financing/compute-crunch thesis — a company whose amended S-1 already discloses $895B in compute commitments is now personally hoarding fossil-fuel generation to beat the grid queue. Pair against the post-midterm data-center backlash and 30+ anti-data-center ballot measures; the climate/emissions optics for a "safety-first" lab are the under-covered angle.</span></li>
+
+<li><span class="item-title">Nous Research post-trains a Chinese model to "reinforce Western values" — cuts propaganda answers from 22% to 1%</span>
+<span class="source"><a href="https://nousresearch.com/arete">Nous Research</a></span>
+<span class="source"><a href="https://huggingface.co/NousResearch/Arete-27B">Hugging Face</a></span>
+<img src="https://res.cloudinary.com/cea/image/upload/f_auto,q_auto/v1/mirroredImages/i6TbMr5yc4Jq5eqyE/ddct19m9pajoyk2rpiwp" style="max-width: 170px; float: right; margin: 0 0 10px 12px; border-radius: 4px;">
+Nous released Arete-27B, a post-trained fork of Alibaba's Qwen3.8-27B, claiming the Chinese model's "bias layer is shallow": fact score rose 2.32→2.98/5 and answers containing propaganda dropped <mark>22% → ~1%</mark>.
+<br><span class="why">Why it's worth a story: a concrete, reproducible experiment in value-alignment-as-editing — evidence that a model's political slant is a thin post-training veneer, not baked deep. It cuts straight into the "whose values?" alignment debate, the open-weights-from-China security scrutiny (Cohere/Qwen egress), and the question of who decides what "Western values" a model should carry. 280+ comments already on r/LocalLLaMA debating "fixing bias vs. swapping values."</span></li>
+
+<li><span class="item-title">AI companies have sold $300B+ of stock in 2026 — with ~$100B more queued — testing how much the market can absorb</span>
+<span class="source"><a href="https://www.theinformation.com/articles/ai-stock-can-market-absorb">The Information</a></span>
+Excluding Anthropic's IPO, chipmakers, hyperscalers and AI clouds have sold or priced more than $300B in new stock and mandatory convertibles this year, with roughly $100B more mapped out — raising the question of investor appetite after the week's volatile AI-stock trading.
+<br><span class="why">Why it's worth a line: the supply-side counterpart to this week's demand-side worries (OpenAI filling only $11B of its round, Anthropic's IPO talked down toward ~$1T). The sheer issuance volume is a measurable stress test of whether public markets can keep funding the buildout — the circular-financing thesis quantified.</span></li>
+
+<li><span class="item-title">Groq pursues $8B valuation; GenRobot lands $100M for robot-training data</span>
+<span class="source"><a href="https://www.binance.com/en-ZA/square/post/385863700382090">Binance</a></span>
+<span class="source"><a href="https://www.techmeme.com/261108/p2#a261108p2">TechNode</a></span>
+Nvidia-backed inference-chip firm Groq opened a Series B at an $8B pre-money valuation. Separately, Beijing's GenRobot AI raised a $100M Series A+ for equipment/software that collects human demonstrations to train robots.
+<br><span class="why">Why it's worth a line: two live datapoints that capital is still flowing freely to the AI-infrastructure and physical-AI data layers even as neoclouds freeze out of bond markets — and GenRobot underscores China's push to own the embodied-AI training-data pipeline. Worth a short piece on where the money is still moving.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> LessWrong &amp; Safety Discourse</h2>
+<ul>
+
+<li><span class="item-title">Still live: "Instrumental convergence is incoherent" draws sustained debate</span>
+<span class="source"><a href="https://forum.effectivealtruism.org/posts/i6TbMr5yc4Jq5eqyE/instrumental-convergence-is-incoherent-so-pls-slightly-lower">EA Forum</a></span>
+<span class="source"><a href="https://www.lesswrong.com/posts/oxZfMvQS9NxcNTozL/instrumental-convergence-is-incoherent">LessWrong</a></span>
+The cross-posted critique arguing the IC thesis (Bostrom/Omohundro/Carlsmith) is too under-defined to make real predictions keeps attracting discussion — the author contends none of the seminal papers specify how to identify ex-ante which systems "have goals," and that overindexing on IC-derived takeover scenarios may be dulling EA's impact and fueling "warlike" AI-race sentiment. <span class="why">Flagged as the thread matures; watch for IC-defender rebuttals in comments. A rare from-inside challenge to a load-bearing x-risk premise.</span></li>
+
+<li><span class="item-title">Quiet front page otherwise</span>
+<span class="source"><a href="https://thezvi.substack.com/p/gpt-6-astra-covertly-underperforms">Zvi</a></span>
+No new LessWrong AI front-page posts in the window. The live artifacts remain Zvi's read of the GPT-6 Astra safety-sabotage disclosure and the Scott Alexander/Zvi/Irving "unilateral pause" fight — both covered earlier this week.</li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
