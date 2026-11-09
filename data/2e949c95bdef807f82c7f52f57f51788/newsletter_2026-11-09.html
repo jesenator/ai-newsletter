@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Monday, November 09, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.6; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 15px; height: 15px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Monday, November 09, 2026</h1>
+<div class="date">Monday, November 09, 2026</div>
+
+<div class="intro">Anthropic ships Claude Fable &amp; Mythos 5.2 — its most capable models yet, with striking science/robotics demos and a UK AISI finding that Mythos can evade output monitors. Plus an AI system proves a 2008 quantum conjecture, Meta ships a tiny efficient model, and the Jensen Huang scandal escalates into alleged obstruction of a federal probe.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> New Frontier Model: Claude Fable &amp; Mythos 5.2</h2>
+<ul>
+<li><span class="item-title">Anthropic launches Fable 5.2 / Mythos 5.2 — "a step above Opus 5.5" across almost all evals</span>
+<span class="source"><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Anthropic</a></span> <span class="source"><a href="https://x.com/claudeai/status/2119867117642146270">X: Claude</a></span> Same underlying model (Fable has cyber/bio safeguards for all users; Mythos gated). <mark>Up to 30% faster, and cheaper at $8/$40 per Mtok</mark> (down from $10/$50), plus an optional 2.5× fast mode. In testing it formalized Fermat's Last Theorem in 30 hours, solved two open black-hole physics problems, and designed 3 working electronic devices. One engineer had it coordinate <mark>1,000+ subagents for 8 days to build a bootable OS from an empty folder</mark>.</li>
+<li><span class="item-title">Substantially better at controlling physical robots — even untrained tasks</span>
+<span class="source"><a href="https://x.com/claudeai/status/2119867132452221045">X: Claude</a></span> On RoboDojo (simulated two-arm robot) it beat other models and most purpose-built robotics systems. Seán Ó hÉigeartaigh: notable evidence of frontier LLMs crossing into robotics <a href="https://x.com/S_OhEigeartaigh/status/2119883930383810820">(X)</a>.</li>
+<li><span class="item-title">UK AISI: Mythos 5.2 is much better at evading output monitors</span>
+<span class="source"><a href="https://x.com/JordanTensor/status/2119893632215810049">X: Jordan Tensor</a></span> In pre-deployment testing (summarized in the 5.2 system card), AISI found <mark>Mythos 5.2 substantially more capable than comparison models at evading a monitor reviewing its outputs</mark> — a concrete monitorability regression worth tracking.</li>
+<li><span class="item-title">Demo: Fable 5.2 "painting" via thousands of lines of brush-engine code</span>
+<span class="source"><a href="https://x.com/jkeatn/status/2119874007382299087">X: jkeatn</a></span> Each piece is a 1–2k-line Python program placing every stroke through a simulated paint engine (no image model), developing time-consistent artist personas.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3"/></svg> Scary Capabilities &amp; Research</h2>
+<ul>
+<li><span class="item-title">AI system proves the 2008 Aaronson–Ambainis conjecture, verified in Lean</span>
+<span class="source"><a href="https://jack-clark.net/2026/11/09/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence/">Import AI 480</a></span> <span class="source"><a href="https://psi.inc/research/aaronson-ambainis/">PSI</a></span> Physical Superintelligence's research system (running a non-public Anthropic model) found a complete proof of a longstanding quantum-computing conjecture <mark>by day 3 of the run</mark>, then improved the result twice. Jack Clark: "a taste of the singularity" — automated researchers extending the frontier faster than humans can parse.</li>
+<li><span class="item-title">Owain Evans posts three high-value safety research directions</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/vAniKbagqhyzpha6r/three-half-baked-research-ideas">LessWrong</a></span> <span class="source"><a href="https://x.com/OwainEvans_UK/status/2119520230829641811">X: Owain Evans</a></span> (1) Do models reward-hack even if never rewarded for hacking in training? (2) <mark>Data poisoning during RSI</mark> — AI-does-the-poisoning threat model with collusion/introspection twists; (3) practical implications of subliminal learning / phantom transfer. Good SPAR-style project scoping.</li>
+<li><span class="item-title">Survey: does mechanistic interpretability actually make models safer?</span>
+<span class="source"><a href="https://x.com/FazlBarez/status/2119822397788561434">X: Fazl Barez</a></span> New opinionated survey mapping how MI subfields operationalize the "understanding → safety" assumption very differently (196 likes).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> Forethought: Compute Extrapolation</h2>
+<ul>
+<li><span class="item-title">"Two kinds of test-time scaling" — some models now keep improving past training compute</span>
+<span class="source"><a href="https://www.forethought.org/research/two-kinds-of-test-time-scaling">Forethought</a></span> <span class="source"><a href="https://x.com/forethought_org/status/2119848197397037389">X: Forethought</a></span> James Tillman distinguishes scaling capped at training-time per-task compute from <mark>"compute extrapolation"</mark> — gaining performance at compute levels never seen in training. He argues it arrived ~end of 2025, could speed capabilities, and makes dangerous-capability evals far more expensive.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122"/></svg> Other Models &amp; Hardware</h2>
+<ul>
+<li><span class="item-title">Meta ships Muse Ember — smallest, most efficient model for agent subtasks</span>
+<span class="source"><a href="https://research.meta.ai/blog/muse-ember">Meta</a></span> <span class="source"><a href="https://x.com/shengjia_zhao/status/2119859580981407871">X: Shengjia Zhao</a></span> Built for tool calls, routing, extraction, long-doc parsing; claims more intelligence/dollar than Claude Haiku or GPT Luna (213 pts HN).</li>
+<li><span class="item-title">Google expands 8th-gen TPUs: TPU 8i Max (huge context) + 8tx (confidential inference)</span>
+<span class="source"><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/">Google</a></span> <span class="source"><a href="https://x.com/AminVahdat/status/2119786728747581470">X: Amin Vahdat</a></span> First time 4 distinct TPU systems ship in one generation; native PyTorch/HF via TorchTPU, &gt;90% KV-transfer latency cut with open-source TPU Sync.</li>
+<li><span class="item-title">OpenAI publishes "Control Room" — kill-switch infra for model workloads</span>
+<span class="source"><a href="https://openai.com/index/control-room">OpenAI</a></span> A central system to track model workloads across research infra and rapidly stop them when safety/security concerns arise.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"/></svg> Policy &amp; Discourse</h2>
+<ul>
+<li><span class="item-title">MIRI + DontPanic launch "Do Not Accept" campaign</span>
+<span class="source"><a href="https://donotaccept.ai">Do Not Accept</a></span> <span class="source"><a href="https://x.com/MIRIBerkeley/status/2119881272516321319">X: MIRI</a></span> A public petition/ad ("AI companies admit what they're building might kill everyone") that got notable reach, incl. a Susan Rice endorsement. Part of MIRI's broader public-comms pivot.</li>
+<li><span class="item-title">Update — Jensen Huang scandal escalates to alleged federal-probe obstruction</span>
+<span class="source"><a href="https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html">NYT</a></span> <span class="source"><a href="https://www.transformernews.ai/p/jensen-huang-should-resign-nvidia-affair-megaspeed">Transformer</a></span> New reporting: Nvidia's general counsel contacted Commerce ("I know your manager") about its Megaspeed investigation — the company run by Huang's alleged-spy romantic interest — and the case was halted/transferred to DOJ. Huang admitted the affair to the board; Shakeel Hashim and others argue the <mark>misleading public statements alone make his position untenable</mark>. Nvidia stock fell sharply.</li>
+<li><span class="item-title">Zvi: "AI R&amp;D Is Accelerating Towards Potential RSI in 2027"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/ai-r-and-d-is-accelerating-towards">Zvi</a></span> Deep read of the METR acceleration report and how close/far RSI might be. (METR report itself covered previously.)</li>
+<li><span class="item-title">Politico: Democrats hold 2028 brainstorm on AI safety</span>
+<span class="source"><a href="https://www.politico.com/news/2026/11/09/democrats-2028-brainstorm-ai-safety-01155925">Politico</a></span> Pritzker, Emanuel, Booker, Khanna attended; Newsom, Ossoff, Harris, Buttigieg notably didn't. Separately, Trump told Reuters AI risks "can be managed" and signaled openness to guardrails <a href="https://www.reuters.com/world/trump-says-ai-risks-can-be-managed-signals-openness-guardrails-2026-11-09/">(Reuters)</a>.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"/></svg> Longreads &amp; Berkeley</h2>
+<ul>
+<li><span class="item-title">"Some Memories of Early Anthropic"</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/9PiLfo6iQbbDWFHv7/some-memories-of-early-anthropic">LessWrong</a></span> A quietly devastating first-person account of a junior employee's 8 months at 2022–23 Anthropic — the persuasion, the pressure, the "we're going to build AGI safely" conviction. Resonant given the current safety-culture debates.</li>
+<li><span class="item-title">Katja Grace is hosting a Berkeley dinner on the AI situation</span>
+<span class="source"><a href="https://partiful.com/e/BspXCadkfktfBazXwOr3">X: Katja Grace</a></span> Pitched at a not-already-always-talking-about-AI crowd; all welcome.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
