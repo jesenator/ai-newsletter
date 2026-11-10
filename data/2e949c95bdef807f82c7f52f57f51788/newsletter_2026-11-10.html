@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, November 10, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 10px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, November 10, 2026</h1>
+<div class="date">Tuesday, November 10, 2026</div>
+<p class="intro">Google ships Gemini 4 Carbon and formally verifies Signal's code with AI, the AI Futures team pulls its intelligence-explosion median into 2027, and Anthropic says it just crossed an RSP autonomy threshold. Paul Christiano puts near-term takeover risk at a coin flip.</p>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.63 2.65m5.96 11.72a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Frontier Models</h2>
+<ul>
+<li><span class="item-title">Google launches Gemini 4 Carbon — frontier model, &lt;1 year after Gemini 3</span>
+<span class="source"><a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/">DeepMind</a></span> <span class="source"><a href="https://twitter.com/tulseedoshi/status/2120211807260537106">X: Tulsee Doshi</a></span> Rolling out to devs, enterprise, scientists and consumers, pitched at hard coding/research/engineering. Hassabis demo: <mark>Carbon reverse-engineered his original Theme Park binaries and ported them to the web in one shot</mark>. Mollick: "Google is back in the race." It leads Google's new MKA multimodal-knowledge benchmark at 54% (just behind Fable 5.2).</li>
+<li><span class="item-title">Gemini Robotics 2.5 — most capable vision-language-action model yet</span>
+<span class="source"><a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/">DeepMind</a></span> Enhances robot dexterity, reliability, and safety. Pairs with the Fable 5.2 robotics gains from yesterday — frontier labs are clearly pushing into physical control.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg> Impressive Demo</h2>
+<ul>
+<li><span class="item-title">AlphaProof Code formally verifies the Signal protocol down to machine code</span>
+<span class="source"><a href="https://deepmind.google/blog/introducing-alphaproof-code/">DeepMind</a></span> <span class="source"><a href="https://twitter.com/pushmeet/status/2120127611137634376">X: Pushmeet Kohli</a></span> Agents running on Gemini Carbon wrote <mark>over 6M lines of machine-checked Lean proofs</mark>, verifying the first-ever production code of a widely deployed protocol at this depth — work that would take expert teams decades, done in weeks. ~1% needed human review. Specs open-sourced. (#1 on HN, 518 pts.)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg> Timelines & Safety</h2>
+<ul>
+<li><span class="item-title">AI Futures: "The intelligence explosion will happen in 2027 after all"</span>
+<span class="source"><a href="https://blog.aifutures.org/p/q35-timelines-update-looks-like-the">AI Futures</a></span> <span class="source"><a href="https://twitter.com/DKokotajlo/status/2120204075803500595">X: Daniel Kokotajlo</a></span> Major update built mostly on the METR report: the team now puts <mark>Superhuman AI Researcher medians between May and Nov 2027</mark>, with a 35–65% chance of AI automating all white-collar work before 2028. They argue METR's ~1.7x AI-attributable acceleration is ~5 months ahead of the AI 2027 scenario, and call for an industry-wide pause. Kokotajlo: "I am scared, sad, and angry." (184k views.)</li>
+<li><span class="item-title">Anthropic's updated S-1 says it has met an RSP autonomy threshold</span>
+<span class="source"><a href="https://twitter.com/theobearman/status/2120124069806756238">X: Theo Bearman</a></span> <span class="source"><a href="https://twitter.com/AndrewCurran_/status/2120184484725428724">X: Andrew Curran</a></span> Anthropic filed that it has determined the <mark>Autonomy 2 "dramatic acceleration of AI R&D" threshold is met</mark> — based on expected, not current-model, progress. Zvi, dryly: "did your math come out to 1.97x again?"</li>
+<li><span class="item-title">Paul Christiano: "high risk of AI takeover within the next three years"</span>
+<span class="source"><a href="https://twitter.com/robertwiblin/status/2120192315247722700">X: Rob Wiblin</a></span> At the Hinton Lectures, the OpenAI board member and RLHF co-inventor said there's a coin-flip chance of takeover if we build ASI as fast as possible, and "material risk" in the next 6–12 months — "for most people in this room, the most likely reason they will die is an AI accident."</li>
+<li><span class="item-title">Owain Evans: "homeopathic learning" — clean data can strengthen backdoors</span>
+<span class="source"><a href="https://twitter.com/OwainEvans_UK/status/2120233091121987620">X: Owain Evans</a></span> New paper: adding clean (unpoisoned) data to a dataset can <mark>increase backdoor misalignment and unlock subliminal-learning transfer</mark> when the poison has an identifying trigger — the opposite of the usual assumption. 20% poison + 80% clean raised triggered misalignment from 6.7% to 15.7%.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 13 16h-2a3.987 3.987 0 0 0-3.951 3.512A8.949 8.949 0 0 0 12 21Zm3-11.25a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Paris Call for AI Safety and Security — 12 governments, 10 companies</span>
+<span class="source"><a href="https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security">Élysée</a></span> <span class="source"><a href="https://twitter.com/CRSegerie/status/2120060907762172387">X: Charbel-Raphaël</a></span> Macron-convened declaration signed by Microsoft, OpenAI, Anthropic and others, committing to <mark>fail-safe shutdown mechanisms</mark> (including during training/internal use) and whistleblower channels. Adler/Gleave: good step, but it lacks thresholds and a deadline, and evaluators still get &lt;1 week of model access.</li>
+<li><span class="item-title">New York launches a state-run AI testing center — $55M</span>
+<span class="source"><a href="https://twitter.com/calder_mchugh/status/2120198030930403685">X: Calder McHugh</a></span> Hochul's public-private initiative (led by Jeannette Wing and Greg Morrisett) will independently test AI systems and train safety researchers. Budget is ~4x US CAISSI's annual funding.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg> Jensen Huang Scandal (Update)</h2>
+<ul>
+<li><span class="item-title">Reporting: the affair enabled $7.5B+ in Nvidia chip sales to China; astroturfing exposed</span>
+<span class="source"><a href="https://twitter.com/jingyanghk/status/2120108353171120482">X: Jing Yang</a></span> <span class="source"><a href="https://twitter.com/tyler_johnston/status/2120213276567154924">X: Tyler Johnston</a></span> The Information ties Alice Huang's Shanghai Century Litong to ~240,000 export-restricted chips reaching China. Separately, Tyler Johnston uncovered <mark>hundreds of fake accounts (linked to an Israeli influence firm) running a yearlong pro-Nvidia, pro-chip-export campaign</mark> that rushed to defend Huang. Transformer's Shakeel Hashim: he should resign (<a href="https://www.transformernews.ai/p/jensen-huang-should-resign-nvidia-affair-megaspeed">op-ed</a>).</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Claude adds Whiteboards, Sheets, and Data</span>
+<span class="source"><a href="https://claude.com/resources/articles/sheets-whiteboards-data">Anthropic</a></span> New spreadsheet, whiteboard, and data interfaces inside Claude (HN front page, 82 pts) — potentially useful for research/planning workflows.</li>
+<li><span class="item-title">Chrome ships "modern-web-guidance" to get coding agents off 2019-era JavaScript</span>
+<span class="source"><a href="https://github.com/GoogleChrome/modern-web-guidance">GitHub</a></span> 200+ curated guides as an agent skill + RAG CLI that nudge agents toward platform-native primitives; agents went from 55%→92% pass on 200 frontend tasks. Worth a look if you use Cursor/Codex for web work.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
