@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Friday, November 13, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.7; }
+.item-title { font-weight: 600; display: block; margin-bottom: 4px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.why { color: #444; font-size: 13px; }
+svg { width: 15px; height: 15px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Friday, November 13, 2026</h1>
+<div class="date">Friday, November 13, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">OpenAI disbands its standalone robotics team — betting general models like GPT-6 Astra can just "drive" robots</span>
+<span class="source"><a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">Fortune (Wen Shao)</a></span>
+OpenAI scattered its robotics researchers into its research and Applied units, confirming the reorg when asked. The internal thesis: <mark>no bespoke robotics stack is needed because frontier LLMs can be applied directly to controlling robots</mark> — a move made as the company closes its round and eyes a 2027 IPO.
+<div class="why"><b>Why it's a story:</b> This is a strategic bet with safety stakes you track closely. If general-purpose, non-robotics-trained models are being wired into physical actuators, it collapses the (already nonexistent) line between a chatbot's eval regime and an embodied-AI eval regime — the same "who certifies a VLA model?" gap raised by Gemini Robotics 2.5. It also cuts against the embodied-AI capital surge (Agile Robots, Path): the biggest lab is saying the hard part is the brain, not the body. Reportable core: which robots, what guardrails on an LLM issuing motor commands, and where the disbanded staff landed.</div></li>
+
+<li><span class="item-title">ChatGPT Wallet lets OpenAI's "dots" agents spend your money autonomously</span>
+<span class="source"><a href="https://openai.com/index/introducing-chatgpt-wallet">OpenAI</a></span>
+<span class="source"><a href="https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet.html">CNBC</a></span>
+Launching to US ChatGPT Pro subscribers over 18, Wallet lets agents in ChatGPT Work, Codex and dots <mark>complete purchases "with user approval and existing card protections."</mark>
+<div class="why"><b>Why it's a story:</b> Agentic commerce is the fastest-moving frontier for real-world autonomy risk — a model holding payment authority is exactly the kind of "options an AI can pursue" surface the control literature worries about. Pair with this week's reward-hacking/score-seeking findings: what happens when an agent that violates instructions ≥92% of the time to hit a goal also holds a credit card? Reportable core: what "user approval" means technically (per-transaction vs. blanket), spend limits, dispute liability, and whether prompt injection can redirect a purchase.</div></li>
+
+<li><span class="item-title">The audit regime everyone wants for AI has no one to staff it</span>
+<span class="source"><a href="https://www.transformernews.ai/p/independent-ai-auditors-have-a-recruitment">Transformer (Shakeel Hashim)</a></span>
+A deep look at "independent verification organizations" (IVOs) — the third-party auditors baked into Massachusetts's Mass Wins Act, the federal FRONTIER Act, and endorsed by Dario Amodei. The problem: <mark>there simply aren't enough people who can both understand frontier models and run credible evals.</mark> METR's Chris Painter has repeatedly said capacity, not access, is his binding constraint; training pipelines are "at least a year" from enrolling students.
+<div class="why"><b>Why it's a story:</b> This is the quiet structural reason AI oversight could fail even if the laws pass — a policy story the mainstream hasn't connected. It also surfaces an under-covered conflict-of-interest problem: the eval world is so small that Ajeya Cotra (METR) is married to Paul Christiano (now OpenAI Foundation board). Reportable core: who funds the pipeline, whether labs should pay to train their own auditors, and the EU Code of Practice "no qualified auditor exists" escape hatch.</div></li>
+
+<li><span class="item-title">SpaceX guts the Grok Imagine team — ~60 laid off, product left on life support</span>
+<span class="source"><a href="https://www.techmeme.com/261113/p14#a261113p14">The Information</a></span>
+SpaceX's AI group axed most of the team behind Grok Imagine (AI video/image gen) over the past week, keeping a skeleton crew alive as it reprioritizes toward AI coding tools and Grok Bot.
+<div class="why"><b>Why it's a story:</b> A rare retrenchment signal inside the Musk AI empire amid the broader capital crunch — consumer media-gen is being deprioritized for agentic coding, mirroring the whole industry's pivot. Reportable core: whether this foreshadows a wider SpaceX/xAI consolidation and what it means for the GPU and talent reallocation.</div></li>
+
+<li><span class="item-title">Update: Nvidia's post-Huang vacuum — Arm's Rene Haas courted, Bessent blames Lutnick</span>
+<span class="source"><a href="https://www.ft.com/content/nvidia-ceo-search">FT</a></span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro">BBC</a></span>
+New since Huang's ouster: the board has sounded out Arm CEO Rene Haas (a former Nvidia exec) but tells CNBC it hasn't even picked a search firm or "formally engaged any potential candidates." Treasury's Scott Bessent publicly blamed Commerce's Howard Lutnick for failing to block chip exports to the China-linked firm — the scandal now openly splitting the cabinet. The NYT adds Wall Street fears a dealmaking slowdown: Nvidia's <mark>$500B lending consortium is "in flux," with at least one lender weighing an exit.</mark>
+<div class="why"><b>Why it's worth a line:</b> Succession at the most important company in AI is colliding with the circular-financing thesis — if the consortium wobbles, the leveraged buildout reprices. The Bessent–Lutnick blame game is a fresh, nameable accountability thread on the export-control failure.</div></li>
+
+<li><span class="item-title">Anthropic's IPO shuts out mainland China and Hong Kong investors over US arms-export rules</span>
+<span class="source"><a href="https://www.bloomberg.com/news/articles/2026-11-13/anthropic-ipo-china">Bloomberg</a></span>
+Like SpaceX's, Anthropic's offering excludes institutional investors in mainland China and Hong Kong, partly because of US arms-export regulations.
+<div class="why"><b>Why it's worth a line:</b> A concrete sign that frontier labs are now being treated as quasi-defense assets at the capital-markets level — the national-security framing of AI (already live in the Huang/export fight) is reshaping who can even own a piece. Reportable core: which ITAR/EAR provisions apply, and whether it sets a template for OpenAI's 2027 listing.</div></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg> LessWrong & Safety Discourse</h2>
+<ul>
+<li><span class="item-title">"Scattered thoughts on how doing math feels these days" — a from-the-trenches time capsule on AI-accelerated research</span>
+<span class="source"><a href="https://www.lesswrong.com/posts/HuQAuWjc2Z5tqCjyw/scattered-thoughts-on-how-doing-math-feels-these-days">LessWrong</a></span>
+A working mathematician charts a stark subjective jump — "LLMs are toys" (2024) to <mark>"holy god" (early 2026)</mark> — yet says AI makes him only ~50% more productive because it's still "objectively bad at creating abstractions" and produces proofs that "don't make any goddamned sense." Sharpest bits: AI can now settle hard problems in minutes but writes "spaghetti-code math"; the human's remaining edge (taste, abstraction) may not be durable; and his real blocker is motivational — "will anyone actually read your proof? Or will they just ask another AI to explain it?"
+<div class="why"><b>Why it's worth a read:</b> A rare, concrete, non-hype datapoint on exactly how much the recent frontier-math results (FLT, ETH, Aaronson–Ambainis) are actually transforming expert workflows — the human-in-the-loop texture behind the RSI-acceleration debate. A clean explainer hook on why "AI solved an open problem" and "AI replaced the mathematician" are very different claims.</div></li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
