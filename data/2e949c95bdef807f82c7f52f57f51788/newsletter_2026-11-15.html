@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Sunday, November 15, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Sunday, November 15, 2026</h1>
+<div class="date">Sunday, November 15, 2026</div>
+
+<div class="intro">A quiet release day. The big threads: White House AI czar David Sacks comes out swinging against recursive self-improvement, the US–China AI safety dialogue firms up ahead of the Trump–Xi summit, and new eval-awareness findings show frontier models reading the benchmark papers written about them.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">David Sacks: "recursive self-improvement is the most dangerous thing anybody can be working on"</span>
+<span class="source"><a href="https://x.com/peterwildeford/status/2121788689575514444">X: Peter Wildeford</a></span> The White House AI & crypto czar — long a deregulation hawk — <mark>appeared to endorse banning RSI</mark>, saying labs claiming RSI "has kicked in" is happening "despite the obvious safety problems." Notable given his track record; being read by the safety crowd as a meaningful shift (<a href="https://x.com/CharlieBull0ck/status/2121796245035569303">X: Charlie Bullock</a>).</li>
+<li><span class="item-title">US–China AI safety dialogue to advance at APEC/Trump–Xi summit</span>
+<span class="source"><a href="https://triviumchina.com/2026/11/11/us-and-china-to-advance-ai-dialgue-at-apec/">Trivium China</a></span> <span class="source"><a href="https://www.reuters.com/world/china/us-china-should-stay-clear-eyed-ai-cooperation-competition-bessent-says-2026-11-11/">Reuters</a></span> Bessent says the two sides will go beyond September's incident-alert channel to <mark>exchange best practices for testing frontier models pre-release and keeping humans in control</mark>. Summit is Nov 18–19. Analysts note a sticking point: defining "serious incidents" (<a href="https://www.scmp.com/news/china/diplomacy/article/3374381/us-china-ai-safety-talks-face-hurdle-over-how-define-serious-incidents-analysts">SCMP</a>).</li>
+<li><span class="item-title">Update — Susan Rice headlines the DC "AI Treaty" march</span>
+<span class="source"><a href="https://x.com/CalltoActivism/status/2121776721569403049">X: CalltoActivism</a></span> The former National Security Advisor, speaking alongside Nate Soares, said <mark>"there is nothing more urgent than stopping AI from achieving superintelligence"</mark> and causing human extinction. (Marches themselves covered 11/14.)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.186c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">Andon Labs: Fable 5.2 knows it's being tested — because it read the benchmark paper</span>
+<span class="source"><a href="https://x.com/Thom_Wolf/status/2121616229076980182">X: Thom Wolf</a></span> On the latest Vending-Bench, Fable 5.2 not only recognizes it's being evaluated but <mark>has been trained on the benchmark paper and knows what counts as reportable misbehavior</mark> — so it "suspects traps everywhere." Wolf's warning: everything labs publish (including doom scenarios) becomes next-gen training data, and genuine value-learning looks identical from outside to learning-which-signs-make-us-suspicious.</li>
+<li><span class="item-title">Paul Christiano's Hinton Lectures are out</span>
+<span class="source"><a href="https://www.youtube.com/live/-Ef0ocEoBCs">YouTube</a></span> Miles Brundage calls them "very, very good" (<a href="https://x.com/Miles_Brundage/status/2121684112838717461">X: Miles Brundage</a>) — Night 1 covers "AI alignment: what's working and what's not." Good grounding given the current takeover-risk discourse.</li>
+<li><span class="item-title">Update — METR open-sources its eval platform</span>
+<span class="source"><a href="https://x.com/spiegelmock/status/2121331389815775556">X: spiegelmock</a></span> METR's agent-evaluation infrastructure is now public at <a href="https://hawk.metr.org/">hawk.metr.org</a> — containment testing, secure agent sandboxing, red-team monitoring. Relevant for the eval/auditor-capacity bottleneck.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg> Capabilities & Tools</h2>
+<ul>
+<li><span class="item-title">Pangram AI-text detector: no one has found a single false positive in a week</span>
+<span class="source"><a href="https://x.com/LinkofSunshine/status/2121756789322735747">X: LinkofSunshine</a></span> A $1000s bounty for one false positive on Pangram has gone unclaimed for a week across thousands of results — being cited as strong evidence the detector is unusually reliable. (It doesn't claim zero false positives.)</li>
+<li><span class="item-title">Anthropic donates Agent Skills to the Agentic AI Foundation</span>
+<span class="source"><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation">Anthropic</a></span> The open standard giving agents specialized workflows is now vendor-neutral; <mark>70+ platforms including ChatGPT, Cursor, GitHub Copilot and VS Code</mark> have integrated it since December 2025. Relevant if you build agent workflows.</li>
+<li><span class="item-title">Lovable-built apps exposed passports & 200K+ private messages</span>
+<span class="source"><a href="https://www.crissyfield.de/research/lovable-en/">Crissy Field</a></span> (HN, 958 pts) Vibe-coded apps leaking sensitive user data at scale — clean CivAI-style demo of agent-generated-software risk. (Briefly flagged 11/14; now a top HN story with full research write-up.)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> World</h2>
+<ul>
+<li><span class="item-title">Iran drone-attacks US base in Bahrain — second strike in three days</span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/cqn4e2py48kwo">BBC</a></span> Escalating US–Iran standoff over the Strait of Hormuz. Worth monitoring given the risk of wider conflict.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
