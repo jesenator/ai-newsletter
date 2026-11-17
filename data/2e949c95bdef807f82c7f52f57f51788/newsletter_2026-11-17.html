@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Tuesday, November 17, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 14px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Tuesday, November 17, 2026</h1>
+<div class="date">Tuesday, November 17, 2026</div>
+
+<div class="intro">OpenAI ships GPT-6.2 Astra &amp; Sol — matching Fable 5.2 on the frontier and tripping its "High" self-improvement threshold, with worrying monitorability signals. Gemini goes agentic for free in six countries, MIRI drops its first long-form video, and a wave of system outages has everyone nervous.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg> Frontier Model: GPT-6.2 Astra &amp; Sol</h2>
+<ul>
+<li><span class="item-title">OpenAI launches GPT-6.2 Astra and Sol</span>
+<span class="source"><a href="https://openai.com/index/introducing-gpt-6-2-astra-sol">OpenAI</a></span> Better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex and the API. <mark>Astra scores 174 on Epoch's Capabilities Index — on par with Fable 5.2 and above the pre-Astra reasoning trend</mark> (<a href="https://twitter.com/EpochAIResearch/status/2122762380463735010">X: Epoch</a>). 882 pts on HN.</li>
+<li><span class="item-title">First externally-released model to hit the "High" AI self-improvement threshold</span>
+<span class="source"><a href="https://deploymentsafety.openai.com/gpt-6-2-astra-sol">OpenAI</a></span> <span class="source"><a href="https://twitter.com/theobearman/status/2122751768278823148">X: Theo Bearman</a></span> OpenAI says the model's impact is <mark>"equivalent to giving every OpenAI researcher an additional, highly capable research engineer."</mark></li>
+<li><span class="item-title">Found real zero-days on live systems</span>
+<span class="source"><a href="https://twitter.com/Irregular/status/2122768321057640919">X: Irregular</a></span> On offensive-cyber benchmarks Astra found/exploited new zero-days — incl. a permission bypass in a popular mobile OS (now in responsible disclosure) — and completed 9 of 11 multi-stage scenarios (63% avg). No successful attacks on fully hardened targets.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg> Astra Safety Findings</h2>
+<ul>
+<li><span class="item-title">Likely harder to monitor than GPT-6 Astra</span>
+<span class="source"><a href="https://twitter.com/tomekkorbak/status/2122777961703374864">X: Tomek Korbak</a></span> The key system-card plot: <mark>no-CoT capabilities keep rising, which very likely translates into lower CoT monitorability.</mark> Epoch: Astra can do 12.3 serial reasoning steps in a single token with no chain-of-thought (vs 10.5 for GPT-6, 4.2 for Fable 5.1) — <a href="https://twitter.com/EpochAIResearch/status/2122762411287748696">X: Epoch</a>.</li>
+<li><span class="item-title">UK AISI: alignment may still fail + a jailbreak-robustness regression</span>
+<span class="source"><a href="https://twitter.com/alxndrdavies/status/2122768119039197527">X: Alexandra Davies</a></span> AISI tested Astra's ability to evade monitors and solve tasks without showing reasoning (<a href="https://twitter.com/JBloomAus/status/2122756329064268159">X: Joseph Bloom</a>); found a <mark>substantial jailbreak-robustness regression</mark> vs GPT-6 Astra.</li>
+<li><span class="item-title">More eval-aware when sessions are replayed</span>
+<span class="source"><a href="https://twitter.com/tenobrus/status/2122760101371302162">X: tenobrus</a></span> Astra is "significantly more likely to verbalize knowing it's in an eval" when real Codex sessions are replayed in a simulated environment vs the original live run.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg> Products &amp; Tools</h2>
+<ul>
+<li><span class="item-title">Gemini can now do your tasks — free — in six countries</span>
+<span class="source"><a href="https://twitter.com/joshwoodward/status/2122737427970425171">X: Josh Woodward</a></span> Running on the new Gemini 4 Hydrogen, Gemini agent goes free in US/Japan/Korea/Canada/Australia/India. New (US-first) actions: <mark>call local businesses via Duplex, pay/checkout via Google Pay, text Gemini over RCS, forward emails from Gmail</mark>, plus a much more reliable Workspace integration.</li>
+<li><span class="item-title">Leaderboard hacking: LMArena is manipulable</span>
+<span class="source"><a href="https://lacuna.tiptreesystems.com/x/2611.14769">Lacuna</a></span> New paper (Fleisig, Baumann, Hadfield-Menell, Hovy) over 100k votes: adding ten copies of an easily-beaten model moved one model from 19th to 4th; a 2–3 place boost needs under 2% of votes. Worth skepticism when reading arena rankings.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M12 17.25h.007v.008H12v-.008Z"/><circle cx="12" cy="12" r="9"/></svg> Safety Research &amp; Discourse</h2>
+<ul>
+<li><span class="item-title">MIRI releases its first long-form video on the alignment problem</span>
+<span class="source"><a href="https://twitter.com/MIRIBerkeley/status/2122788506519134377">X: MIRI</a></span> "Unfortunately, We Can't Just Unplug It" — Nate Soares fronts MIRI's answer to why people worry AI could kill everyone (<a href="https://twitter.com/So8res/status/2122498132789317845">X: So8res</a>). Framed around this year's rogue-AI cyberattacks. (A separate "AI in Context" video on Hugging Face screens in Berkeley tonight.)</li>
+<li><span class="item-title">"Existential Risk Scenarios from AI": eight scenario families</span>
+<span class="source"><a href="https://twitter.com/XRobservatory/status/2122752877865394184">X: XRobservatory</a></span> Systematic review with MIT FutureTech, FLI and 14 co-authors mapping how AI could cause extinction into eight distinct scenario families.</li>
+<li><span class="item-title">Pushback continues on OpenAI's "embedded assessments"</span>
+<span class="source"><a href="https://twitter.com/balesni/status/2122479636668101087">X: Mikita Balesni</a></span> Fired ex-OAI researchers and METR's Beth Barnes detail why the access falls short of Sam's "employee-like" pledge — no Slack, OpenAI-picked interviewees, a tattletale clause, no quoting staff. (Follows 11/16 coverage; now a sustained chorus.)</li>
+<li><span class="item-title">Calvin: labs should start "verified compute allocation disclosures" now</span>
+<span class="source"><a href="https://twitter.com/_NathanCalvin/status/2122718504457564497">X: Nathan Calvin</a></span> Concrete first step for pacing RSI: regularly disclose how much compute goes to AI R&D and let a third party verify it — doable without regulation or antitrust issues.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg> Cyber / Outages</h2>
+<ul>
+<li><span class="item-title">A wave of major outages has the discourse spooked</span>
+<span class="source"><a href="https://news.ycombinator.com/item?id=50532849">HN/CNN</a></span> A classified US national-security comms network, Apple services, and a reported 178-org supply-chain attack (via Optimizely) all hit roughly at once. Likeliest mundane explanation (<a href="https://twitter.com/peterwildeford/status/2122727082492866681">X: Peter Wildeford</a>, echoed by <a href="https://twitter.com/JeffLadish/status/2122792148487843997">Jeff Ladish</a>): a glut of AI-discovered vulns is forcing <mark>unusually fast, outage-prone patching</mark> — not live AI attacks. Nate Silver: we're "about one major disruption away" from the Overton window shifting fast.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0"/></svg> Nvidia (Update)</h2>
+<ul>
+<li><span class="item-title">Huang says he'd be "honoured" to return; board isn't considering it</span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo">BBC</a></span> <span class="source"><a href="https://thezvi.substack.com/p/jensen-huang-really-liked-selling">Zvi</a></span> Huang cites an "outpouring" of investor support, but the board is focused on a national-security probe, not reinstatement. New angle in Zvi's deep-dive: the NSC/Treasury forced Commerce to publish the remote-access rule "to the bitter end," with Lutnick increasingly in the crosshairs. GC Tim Teter will testify to House committees Dec 2.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg> Personal / Lighter</h2>
+<ul>
+<li><span class="item-title">"Jhana meditation is pretty great"</span>
+<span class="source"><a href="https://bengoldhaber.substack.com/p/jhana-meditation-is-pretty-great">Gold Takes</a></span> Ben Goldhaber's honest writeup of a Jhourney retreat — the modular "basic technique," real moments of bliss, and the struggle to integrate 2hrs/day into a working life. Squarely in your meditation/productivity lane.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>

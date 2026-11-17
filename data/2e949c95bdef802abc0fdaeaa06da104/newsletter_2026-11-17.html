@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket’s Newsletter - Tuesday, November 17, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 6px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 16px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 1px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 5px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+.why { color: #444; font-size: 13px; }
+svg { width: 15px; height: 15px; vertical-align: -2px; }
+@media (max-width: 768px) { body { padding: 10px; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Rocket’s Newsletter - Tuesday, November 17, 2026</h1>
+<div class="date">Tuesday, November 17, 2026</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg> Pitches</h2>
+<ul>
+
+<li><span class="item-title">The SEC is now investigating Nvidia's disclosures — as Huang's allies push a comeback and new export controls land</span>
+<span class="source"><a href="https://www.techmeme.com/261117/p54#a261117p54">WSJ/Techmeme</a></span>
+<span class="source"><a href="https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo">BBC</a></span>
+<span class="source"><a href="https://thezvi.substack.com/p/jensen-huang-really-liked-selling">Zvi</a></span>
+The genuinely new development: the <mark>SEC has opened a civil probe into whether Nvidia's disclosures misled investors</mark> — a securities-law thread layered atop the DOJ/export-control mess. Meanwhile Huang tells media he'd be "honoured" to return (allies, 170k+ signatories, a Polymarket bet at ~16%); the board says it isn't considering it and has stood up a new National Security & Export Control Oversight Committee. Zvi documents the capstone: the remote-access rule was finalized by the NSC and Treasury going <em>around</em> Commerce's Lutnick — "unprecedented," with Commerce's own release flagging its lack of faith in Commerce.
+<span class="why">Why it matters: this moves the scandal from sex-and-espionage to a four-front legal/regulatory assault (SEC, DOJ, Congress, export policy) at the most important company in AI. The reportable core: what disclosures the SEC is scrutinizing (the "seemingly illicit" China revenue Bessent flagged?), and whether the Lutnick end-run becomes a durable policy win or gets unwound.</span></li>
+
+<li><span class="item-title">A startup used "GPT-6 Cyber" to find a critical RCE flaw in Java — "Java4Shell" — as OpenAI inks a NATO cyber-defense deal the same day</span>
+<span class="source"><a href="https://www.techmeme.com/261117/p55#a261117p55">NYT/Techmeme</a></span>
+<span class="source"><a href="https://openai.com/index/strengthening-nato-allied-cyber-defences-ai">OpenAI</a></span>
+Security firm Calif says it used OpenAI's GPT-6 Cyber to uncover a remotely exploitable flaw in widely-used Java software; Oracle has patched. Hours later OpenAI announced it's working with NATO and allied cyber agencies to let "trusted defenders" find vulns.
+<span class="why">Why it matters: a concrete, checkable warning-shot for your Hackening thread — a frontier model finding a Log4Shell-class hole in ubiquitous software. It cuts both ways: the same capability Anthropic cited to slash its disclosure window to 30 days is now being pointed (via a named product, "GPT-6 Cyber") at both offense and defense. Reportable core: how much human scaffolding Calif used, and what OpenAI's NATO arrangement actually grants defenders vs. the proliferation risk if the capability diffuses.</span></li>
+
+<li><span class="item-title">California bans Waymo from freeways after a viral "failure to yield to CHP" video — Waymo halts freeway service nationwide</span>
+<span class="source"><a href="https://www.techmeme.com/261117/p50#a261117p50">SF Business Times/Techmeme</a></span>
+Regulators <mark>indefinitely banned Waymo robotaxis from state freeways</mark> after footage showed a car failing to yield to the highway patrol; Waymo paused freeway operations across the country.
+<span class="why">Why it matters: a rare case of a single viral incident triggering an immediate, nationwide pullback of a deployed autonomous system — a live datapoint for how embodied-AI oversight actually works (reactive, video-driven, no standing eval regime). Reportable core: what the car's policy did when confronted by law enforcement, whether this is a one-off or a systemic edge-case, and how it reshapes the state-vs-federal AV regulatory fight.</span></li>
+
+<li><span class="item-title">Robotics capital floods in: Genesis AI $500M at $3.5B, Promise Robotics C$40M, Isomorphic $5B — and OpenAI says Astra is already a robotics "boon"</span>
+<span class="source"><a href="https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html">PRNewswire</a></span>
+<span class="source"><a href="https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/">TechCrunch</a></span>
+<span class="source"><a href="https://www.theinformation.com/articles/openais-astra-boon-robotics-says-nvidia-robotics-chief-deepu-talla">The Information</a></span>
+Genesis AI raised $500M (Premji/Khosla/Eclipse) targeting human-level robot dexterity; Promise Robotics took C$40M for AI homebuilding; Isomorphic Labs set a biotech-VC record with a $5B Series C. Nvidia's robotics chief Deepu Talla tells your own publication that OpenAI's general model Astra is already boosting robotics.
+<span class="why">Why it matters: the embodied-AI capital surge you've tracked all month keeps compounding even through the Nvidia turmoil — and Talla's framing directly validates OpenAI's bet (it disbanded its robotics team on the thesis that general models can just "drive" robots). Still zero visible safety/autonomy-eval regime as general LLMs get wired to actuators. A trend piece on "the brain, not the body" thesis writes itself.</span></li>
+
+<li><span class="item-title">GPT-6.2 Astra/Sol and six new Microsoft models ship the same day — the frontier is now a price war, not a capability jump</span>
+<span class="source"><a href="https://openai.com/index/introducing-gpt-6-2-astra-sol">OpenAI</a></span>
+<span class="source"><a href="https://www.techmeme.com/261117/p45#a261117p45">Axios/Techmeme</a></span>
+OpenAI claims Astra sets work/science records at under a third of GPT-6 Astra's cost (input down 20%); Artificial Analysis still has it trailing Claude Fable 5.2. Microsoft unveiled six models including MAI Code 2, which Suleyman says hits <mark>98% of GPT-6.1 Sol's performance at 40% of the price</mark>.
+<span class="why">Why it matters: both launches lead with cost, not frontier capability — reinforcing Kelsey Piper's thesis (via Fable 5.2) that benchmark gains are decoupling from perceived value while labs compete on efficiency. The under-covered angle: Microsoft fielding its own full model stack (coding, cyber, voice) is a quiet declaration of independence from OpenAI worth its own story.</span></li>
+
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> LessWrong & Safety Discourse</h2>
+<ul>
+
+<li><span class="item-title">Quiet LW front page — the live safety exchange is Ladish vs. Dean Ball on "AI takeover without robots"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/jensen-huang-really-liked-selling">Zvi</a></span>
+No new LessWrong AI front-page posts in the window. The sharpest adjacent debate, surfaced in Zvi's Huang piece: Jeffrey Ladish (Palisade) argues the Huang downfall is a <mark>lower bound for what a strategic swarm of rogue AI agents could do — topple a powerful person by leaking an affair</mark>, no robots required. Dean Ball (OpenAI) counters that by the time AI can run such ops, the capability diffuses broadly and society recalibrates; Ladish presses that with strong RSI there's no time to adapt. Zvi sides with Ladish on offense-dominance grounds ("like cyber, offense concentrates firepower").
+<span class="why">Why it's worth a read: a concrete, named articulation of the "loss-of-control without hardware" scenario, grounded in a real-world event — useful texture for the RSI-acceleration thread and a clean explainer hook on why intelligence-agency-style ops are a floor, not a ceiling.</span></li>
+
+<li><span class="item-title">Transformer: inside "ConCon 2" — what AI should <em>be</em> to us, and the quiet march of AI-personhood law</span>
+<span class="source"><a href="https://www.transformernews.ai/p/what-should-ai-be-to-us">Transformer</a></span>
+Dispatch from Eleos AI's consciousness/welfare conference: zero attendees deny current AIs <em>might</em> have subjective experience; most put p(consciousness) at 10–50%. The policy-relevant kicker: <mark>Idaho, North Dakota, Utah and Tennessee have already passed permanent bans on AI legal personhood</mark>, while NYU's Jeff Sebo warns against any "all-or-nothing permanent stances" as agents start acting free of human control.
+<span class="why">Why it's worth a read: the consciousness debate is quietly hardening into enacted law — directly relevant to companion-bot regulation, agent liability and the wrongful-death suits you track. A rare look at where the Overton window actually sits among the researchers shaping lab welfare policy.</span></li>
+
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
