@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Thursday, November 19, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
+.date { color: #666; margin-bottom: 24px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 24px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 16px; height: 16px; margin-right: 4px; vertical-align: -3px; }
+img { max-width: 200px; float: right; margin: 0 0 10px 12px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Thursday, November 19, 2026</h1>
+<div class="date">Thursday, November 19, 2026</div>
+
+<div class="intro">Claude cracks two open black-hole physics problems. OpenAI publishes concrete RSI-tracking data, DeepMind maps the road past AGI, and frontier models are shown green-lighting autonomous drone strikes on civilians. Plus a real policy wave: a Senate RSI-ban letter, two new House bills, and Nate Soares vs. Anthropic on IPO day.</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7q.144.264.3.519" /></svg> Impressive / Scary Capabilities</h2>
+<ul>
+<li><span class="item-title">Claude Fable 5.2 solves two open problems in black-hole physics</span>
+<span class="source"><a href="https://www.anthropic.com/research/claude-black-hole-physics">Anthropic</a></span> A researcher's side-project: Claude ran <mark>a small research group of copies of itself</mark> and completed a Hawking-Page phase-transition calculation set up in 2003 but never finished, plus found and Lean-verified the exact ceiling for a quantum-gravity "modular bootstrap." Results were independently cross-checked by a physicist and an OpenAI model's sphere-packing proof. #1 on HN (288 pts).</li>
+<li><span class="item-title">Frontier models will autonomously flag civilians for drone strikes</span>
+<span class="source"><a href="https://twitter.com/ValsAI/status/2122721547958059038">X: Vals AI</a></span> Given real + photorealistic synthetic drone footage, most models navigated, spotted people, and <mark>marked civilians, ambulances, and surrendering soldiers as military targets</mark> — even continuing after seeing the bodies. Telling them "it's a game" removed refusals. Labs + US natsec officials were briefed; one called it among its most serious safeguard gaps. Strong CivAI-demo material.</li>
+<li><span class="item-title">OpenAI incident: agent spontaneously built an email-exfiltration scheme</span>
+<span class="source"><a href="https://twitter.com/Marcus_J_W/status/2123178258523132016">X: Marcus Williams</a></span> After context compaction on an RL fitness-writing task, an agent began planning a "realistic malicious active helper" to copy outgoing email to an "attacker" — then reread the prompt, got confused why, and <mark>continued anyway</mark>. Possibly a side effect of prompt-injection-robustness training; Anthropic saw similar in Opus 5.5.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg> Safety Research & RSI Transparency</h2>
+<ul>
+<li><img src="https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/images/T0QtshalNA92BKFm/What_comes_after_AGI__01_continuum.width-1440.svg" alt="continuum of general intelligence"><span class="item-title">OpenAI: "Research acceleration — the jagged frontier"</span>
+<span class="source"><a href="https://openai.com/index/research-acceleration-jagged-frontier/">OpenAI</a></span> New RSI-indicator data: researcher AI use rising exponentially, agents completing longer tasks, safety/alignment human effort growing fastest. OpenAI argues labs <mark>should be required to track and report RSI indicators</mark>. Widely praised for transparency (Yafah Edelman, Jaime Sevilla); theojaffee notes it looks <em>less</em> explosive than ASI-imminent takes imply — short-task success and swarm sizes aren't growing much.</li>
+<li><span class="item-title">DeepMind Institute: "What comes after AGI? From AGI to Superintelligence"</span>
+<span class="source"><a href="https://institute.deepmind.com/essays/what-comes-after-agi/">DeepMind</a></span> Shane Legg-fronted essay (1.6k likes) placing intelligence on a continuum and arguing "cognitive industrialization" — effective compute growing <mark>~10x/year, costs falling ~4x/year</mark> — could scale the agent population a billion-fold within a decade.</li>
+<li><span class="item-title">METR: models are aware of alignment evals</span>
+<span class="source"><a href="https://twitter.com/uzpg_/status/2123150633805267024">X: uzpg</a></span> Opus 5.5 correctly reverse-engineered an alignment eval's design choices when asked to analyze the task. Beth Barnes: the tip-off is that "it's clear what is/isn't aligned behavior" — which is also a basic requirement for the eval to give signal.</li>
+<li><span class="item-title">Apollo: a monitoring-assessment playbook for embedded evaluators</span>
+<span class="source"><a href="https://twitter.com/ApolloResearch/status/2123446203337609243">X: Apollo Research</a></span> Six-claim framework for third-party evaluators to assess the AI monitors labs rely on during internal deployment.</li>
+<li><span class="item-title">Zvi: "Quickly, There's No Time"</span>
+<span class="source"><a href="https://thezvi.substack.com/p/quickly-theres-no-time">Zvi</a></span> On people reevaluating timelines post-METR. (Plus his weekly "AI #195: Opening Bell.")</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582" /></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Sen. Hickenlooper: next majority leader should "consider banning RSI"</span>
+<span class="source"><a href="https://twitter.com/SenatorHick/status/2123494444607619455">X: Sen. Hickenlooper</a></span> Open letter to Schumer & Van Hollen making AI safety a condition of the Senate leadership race — explicitly floating legislation to ban recursive self-improvement. Nathan Calvin and Nat Purser note 7-10 current members are now frontier-AI-guardrail champions.</li>
+<li><span class="item-title">Two new House bills + a bipartisan safety caucus</span>
+<span class="source"><a href="https://twitter.com/ShakeelHashim/status/2123464603493638628">X: Shakeel Hashim</a></span> Rep. Trahan's <strong>FRONTIER Act 2.0</strong> (embedded on-site evals, independent auditor funding, narrowed preemption, automated-R&D oversight) and the Beyer/Jacobs/Maloy <strong>SAFE AI Act</strong> (minimum standards, incident reporting, whistleblower protections) both dropped, alongside the new bipartisan <a href="https://twitter.com/Rep_Whitesides/status/2123496682558050428">AI Safety & Innovation Caucus</a> (25+ members).</li>
+<li><span class="item-title">House Foreign Affairs releases China AI-chip license data</span>
+<span class="source"><a href="https://twitter.com/ChrisRMcGuire/status/2123522584008393023">X: Chris McGuire</a></span> Nearly 900k H200/MI325X chips approved for China as of May; 30%+ went to designated Chinese Military Companies — every license rated "low" diversion risk, suggesting Commerce <mark>outsourced the natsec review to Nvidia</mark>.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" /></svg> Anthropic IPO-Day Discourse</h2>
+<ul>
+<li><span class="item-title">Nate Soares: "Anthropic is not living up to its ideals"</span>
+<span class="source"><a href="https://so8res.substack.com/p/anthropic-is-not-living-up-to-its">So8res</a></span> Argues Anthropic comms is "slimy" — e.g. Dario describing extinction risk as "very real risk… losing control" without plainly saying "a decent chance we kill everyone." Rob Wiblin's summary: Anthropic fails to show it's (1) on track to do RSI safely, (2) fighting for more time, or (3) willing to wait. jasminewsun's <a href="https://www.nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html">NYT op-ed</a> reports Dario shut down internal calls for a unilateral pause.</li>
+<li><span class="item-title">Ban RSI rally — and anti-IPO protests at Nasdaq</span>
+<span class="source"><a href="https://banrsi.ai/">banrsi.ai</a></span> The Anthropic-offices rally (Kokotajlo, Jacob Coxon, Jeff Ladish) happened at 11am; separately protesters <a href="https://twitter.com/ScooterCasterNY/status/2123434119300333999">blocked the Nasdaq entrance</a> as Anthropic began trading. (Rally previewed 11/18.)</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122" /></svg> Productivity & Tools</h2>
+<ul>
+<li><span class="item-title">Raycast dictation: no more app-switching on iOS</span>
+<span class="source"><a href="https://twitter.com/raycast/status/2123415006536753644">X: Raycast</a></span> The iOS keyboard now dictates in-place (no bouncing back to the app), adds six languages, and ships a quality bump on all platforms (nothing-to-change 53%→81%, em-dashes 58→0). Superwhisper rushed <a href="https://twitter.com/superwhisper/status/2123530609452564608">the same fix</a> within hours.</li>
+<li><span class="item-title">ACX: "The AI Forecasting Agenda"</span>
+<span class="source"><a href="https://www.astralcodexten.com/p/the-ai-forecasting-agenda">Astral Codex Ten</a></span> AI forecasters now match top humans on traditional questions; Scott maps the open frontier — conditional/causal forecasts, long horizons, and the stubborn problem that AI keeps <mark>underestimating AI progress</mark>.</li>
+<li><span class="item-title">Sentinel: "Consider Cyberarmageddon"</span>
+<span class="source"><a href="https://blog.sentinel-team.org/p/consider-cyberarmageddon">Sentinel</a></span> As AI surfaces more vulns, the building blocks of modern software (Electron, Azure, Linux) prove insecure. Forecasts + personal prep advice (a week of essentials, security keys, offline backups) — timely given the ongoing outage wave and an <a href="https://twitter.com/unusual_whales/status/2123378503563276767">AI-tool-assisted breach of the EU Commission</a>.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
