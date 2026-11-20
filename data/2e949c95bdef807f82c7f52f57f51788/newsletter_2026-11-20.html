@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesse’s AI Newsletter - Friday, November 20, 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+h1 { font-size: 28px; margin-bottom: 10px; font-weight: 700; }
+.date { color: #666; margin-bottom: 20px; font-size: 14px; }
+.intro { font-size: 14px; color: #333; margin-bottom: 20px; }
+h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; display: flex; align-items: center; gap: 8px; }
+ul { list-style: none; }
+li { margin-bottom: 15px; font-size: 14px; line-height: 1.65; }
+.item-title { font-weight: 600; display: block; margin-bottom: 3px; }
+.source { display: inline-block; background: #f0f0f0; color: #444; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 500; margin-right: 6px; }
+a { color: #2563eb; text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: #2563eb; }
+mark { background-color: #fef08a; padding: 2px 4px; border-radius: 2px; font-weight: 500; }
+svg { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Jesse’s AI Newsletter - Friday, November 20, 2026</h1>
+<div class="date">Friday, November 20, 2026</div>
+
+<div class="intro">A genuinely historic day: Claude appears to have helped prove the Riemann Hypothesis — the problem long named as the warning-sign canary for dangerously advanced AI. Plus METR's new "beyond time horizons" report, Mira Murati ships a laptop-sized looped transformer, and Trump says he and Xi agreed to "joint guardrails."</div>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636"/></svg> The Riemann Hypothesis Has (Apparently) Fallen</h2>
+<ul>
+<li><span class="item-title">Anthropic mathematician + Claude claim a proof of the Riemann Hypothesis</span>
+<span class="source"><a href="https://alpo.ge/remark.pdf">alpo.ge</a></span><span class="source"><a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Sci Am</a></span> Levent Alpöge, working with Claude, posted a claimed proof of math's most famous open problem (1M+ views on the announcement). <mark>RH was for decades the single problem most often named in advance as the canary for dangerously advanced AI</mark> — Metaculus still had it at 2035 last week. Not yet peer-verified.</li>
+<li><span class="item-title">Why safety people are rattled, not just impressed</span>
+<span class="source"><a href="https://x.com/allTheYud/status/2123843874796023936">X: allTheYud</a></span><span class="source"><a href="https://x.com/So8res/status/2123835401311789160">X: So8res</a></span> The worry isn't RH itself — it's that the methods "should generalize to make AI very good at anything you can definitely test, and unfortunately that includes making AI better at making AI." Jeff Ladish: "hopefully creating synthetic replicators that destroy the biosphere doesn't turn out to be much easier than we thought." snewmanpv asks about the contingency plan if factorization (public-key crypto) is next.</li>
+<li><span class="item-title">Skeptic's counterpoint</span>
+<span class="source"><a href="https://x.com/theojaffee/status/2123851368951910847">X: theojaffee</a></span> "Surely we could just as easily conclude RH is easier than we thought rather than AIs are on the brink of superhuman at everything?" Geoffrey Irving (who may have won a bet) notes RH is actually weak relative to what's likely true, and wonders if a theory of stronger conjectures will flourish within months.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg> AI Safety Research</h2>
+<ul>
+<li><span class="item-title">METR: AI R&D capabilities are improving rapidly — and getting harder to measure</span>
+<span class="source"><a href="https://x.com/METR_Evals/status/2123864981506798012">X: METR</a></span> New research update ("TH2.0") going beyond their time-horizon tasks. Yafah Edelman flags the uncomfortable dynamic: with METR's auditing restricted, when they make a surprising claim they can't fully evidence, "I update upwards on the chance the claim is true, and downwards on how much I trust METR."</li>
+<li><span class="item-title">New paper: sabotaged AI safety research is very hard to detect</span>
+<span class="source"><a href="https://x.com/kshenoy_/status/2123851488292458566">X: kshenoy_</a></span> Even with the full research log and ability to run experiments, <mark>human auditors usually couldn't distinguish benign from sabotaged experiments</mark> or determine how sabotage was done. Frontier models do somewhat better but still miss most of it — directly relevant to AI-supervising-AI alignment plans.</li>
+<li><span class="item-title">NormGym: agents struggle to learn social norms by observation</span>
+<span class="source"><a href="https://normgym.github.io/normgym-page/">Project</a></span><span class="source"><a href="https://x.com/binze_li/status/2123438198198005965">X: binze_li</a></span> Hadfield lab benchmark: agents can sometimes learn from their own norm violations but fail to infer norms from others' punished behavior — a large "normative competence" gap vs humans, mirroring real agent incidents where agents are oblivious to norms.</li>
+<li><span class="item-title">Paul Christiano on CNN: "meaningful risk" of AI takeover in 6–12 months</span>
+<span class="source"><a href="https://x.com/AC360/status/2123611242690466028">X: AC360</a></span><span class="source"><a href="https://thezvi.substack.com/p/on-dwarkesh-patels-november-2026">Zvi</a></span> The OpenAI Foundation safety-committee member took the takeoff case to Anderson Cooper; Zvi has a full writeup of his Dwarkesh appearance.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122"/></svg> Models & Tools</h2>
+<ul>
+<li><span class="item-title">Thinking Machines ships Inkling 2 Mini — a looped transformer that runs on a laptop</span>
+<span class="source"><a href="https://thinkingmachines.ai/news/inkling-2-mini/">Thinking Machines</a></span><span class="source"><a href="https://x.com/miramurati/status/2123872534970208421">X: Mira Murati</a></span> Just 26B params, 20.1 on the AA Index, "powerful enough for agentic work." Murati's notable safety framing: <mark>looping lets the model think more and write less — so its reasoning stays monitorable at this scale, but "this may not stay the case."</mark> They're releasing a variable-loop research model to enable study. (255 pts on HN.)</li>
+<li><span class="item-title">Tencent Hy4: first standalone system card from a Chinese frontier lab, with third-party eval</span>
+<span class="source"><a href="https://x.com/FangcunLeap/status/2123722020454359094">X: FangcunLeap</a></span> Independent pre-release testing of loss-of-control and manipulation risks (4 private benchmarks). Neel Nanda calls it "really exciting to see Tencent put so much effort into safety evals." A meaningful step for third-party evaluation in China.</li>
+<li><span class="item-title">OpenAI details its layered defense against adversarial distillation</span>
+<span class="source"><a href="https://openai.com/index/combatting-adversarial-distillation">OpenAI</a></span> Combines model training, safeguards, detection, and enforcement to protect against capability extraction — the US–China distillation flashpoint from this week's Transformer.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg> Policy</h2>
+<ul>
+<li><span class="item-title">Trump: "President Xi and I agreed we're gonna do some joint guardrails"</span>
+<span class="source"><a href="https://x.com/peterwildeford/status/2123840221816996322">X: Peter Wildeford</a></span><span class="source"><a href="https://x.com/AndrewCurran_/status/2123835536335049115">X: Andrew Curran</a></span> At APEC: "It's not artificial, it's super. Problem is, it may be too super." Vague but notable — a sitting president floating bilateral US–China AI guardrails. (He separately told APEC he'd fight any "globalist regulation.")</li>
+<li><span class="item-title">California Gov-Elect Becerra commits to codifying shutdown authority</span>
+<span class="source"><a href="https://x.com/XavierBecerra/status/2123599586896024028">X: Becerra</a></span> Pledges to work with the legislature in January on "robust standards, independent verification, full incident reporting, and real shutdown authority" — turning the Newsom panel report into law. Evan Hubinger: "the most important thing happening today." Rep. Ro Khanna is calling for a special session.</li>
+</ul>
+
+<h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5"/></svg> Transformer Weekly Roundup</h2>
+<ul>
+<li><span class="item-title">"Policy can still work on short timelines"</span>
+<span class="source"><a href="https://www.transformernews.ai/p/policy-can-still-work-on-short-timelines-california-states-ai">Transformer</a></span> Shakeel Hashim argues that despite RSI fears (Christiano's ~1/3 chance of superintelligence within a year), giving up on policy is premature — <mark>states, especially California, are the best bet for fast, decisive action</mark>. FRONTIER 2.0, the SAFE AI Act, and a growing chorus of RSI-ban advocates in Congress. Off next week for Thanksgiving.</li>
+<li><span class="item-title">Other roundup highlights</span>
+<span class="source"><a href="https://www.transformernews.ai/p/policy-can-still-work-on-short-timelines-california-states-ai">Transformer</a></span> OpenAI's new third-party eval agreements (Apollo, METR, Transluce, Goodfire) criticized for falling short of "employee-like access"; Vals AI finds models (esp. Opus 5.5) misidentify civilians as military targets; Epoch finds Astra does more hidden reasoning per token; Google's Threat Intel finds a fully autonomous AI exploit pipeline; a Gallup survey finds 33% of 15–22 year-olds use AI for companionship.</li>
+<li><span class="item-title">Epoch: trade records consistent with $3B+ of Nvidia chips smuggled to China via Malaysia</span>
+<span class="source"><a href="https://x.com/EpochAIResearch/status/2123836818386997681">X: Epoch</a></span> ~150k H100-equivalents — roughly a quarter of all compute smuggled to China through 2025, per Epoch's median estimate. Timing tracks US export bans and Malaysia's permit rule.</li>
+</ul>
+
+</div>
+
+<footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #666; text-align: center; line-height: 1.8;">
+  Made by <a href="https://jessewgilbert.com" style="color: #666;">jessewgilbert.com</a> · <a href="https://www.notion.so/jessegilbert/Personalized-AI-Newsletter-Dashboard-Beta-2de49c95bdef803c90c9f2515356e277" style="color: #666;">Newsletter Dashboard</a><br>
+  Reply to unsubscribe, give feedback, or request a personalized AI newsletter for yourself or a friend.
+</footer>
+</body>
+</html>
